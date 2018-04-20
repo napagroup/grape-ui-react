@@ -1,5 +1,5 @@
 {
-  "name": "grape-ui",
+  "name": "grape-ui-react",
   "version": "0.0.2",
   "description": "A React component library built with styled-components.",
   "main": "lib/index.js",
