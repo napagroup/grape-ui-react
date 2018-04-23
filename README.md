@@ -1,34 +1,45 @@
-# grape-ui
+# Grape UI
 
 # Project Title
 A React component library built with styled-components.
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will allow you to use the extensible Grape UI component library in any React project.
 
 ### Prerequisites
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+- ReactJS
+- Styled Components
 
 ### Installing
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+Add GrapeUI as a dependency to your project
 
 ```
-Give the example
+"dependencies": {
+  ...
+  "grape-ui-react": "git+https://bitbucket.org/napagroupnyc/grape-ui-react/grape-ui-react.git",
+  ...
+},
 ```
 
-And repeat
+Import Grape UI components into your project
 
 ```
-until finished
+import { Button } from 'grape-ui-react';
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Use the components in your app
+
+```
+render() {
+  return (
+    <div className="App">
+      ...
+        <Button>Grape UI Button</Button>
+      ...
+    </div>
+  );
+}
+```
 
 ## Running the tests
 Explain how to run the automated tests for this system
