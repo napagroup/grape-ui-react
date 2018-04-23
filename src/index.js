@@ -1,5 +1,5 @@
-export { Button } from './elements/Button';
+import Button from './elements/Button';
 
-export default {
+module.exports = {
     Button,
 };
