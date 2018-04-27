@@ -51,28 +51,6 @@
     "setupTestFrameworkScriptFile": "<rootDir>/src/internals/testing/test-bundler.js",
     "testRegex": "tests/.*\\.test\\.js$"
   },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "extends": "airbnb",
-    "env": {
-      "browser": true,
-      "node": true,
-      "jest": true,
-      "es6": true
-    },
-    "plugins": [
-      "redux-saga",
-      "react",
-      "jsx-a11y"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 6,
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "jsx": true
-      }
-    }
-  },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "polished": "^1.9.2",

@@ -15,4 +15,17 @@ describe('global-styles', () => {
     expect(generateGlobalStyles([])).toBeTruthy();
     expect(generateGlobalStyles([true, false])).toBeTruthy();
   });
+  it('should override only the intended values', () => {
+    const defaultGlobals = getDefaultGlobalStyles();
+    const actualBreakpointXs = '33em';
+    const actual = generateGlobalStyles({ breakpoints: { xs: actualBreakpointXs } });
+
+    const { breakpoints: defaultBreakpoints } = defaultGlobals;
+    const { breakpoints: actualBreakpoints } = actual;
+    expect(actualBreakpoints.xs).toEqual(actualBreakpointXs);
+    expect(actualBreakpoints.sm).toEqual(defaultBreakpoints.sm);
+    expect(actualBreakpoints.md).toEqual(defaultBreakpoints.md);
+    expect(actualBreakpoints.lg).toEqual(defaultBreakpoints.lg);
+    expect(actualBreakpoints.xl).toEqual(defaultBreakpoints.xl);
+  });
 });
