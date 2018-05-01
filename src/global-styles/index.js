@@ -1,6 +1,7 @@
 import * as breakpoints from '../assets/json/breakpoints.json';
 import * as colors from '../assets/json/colors.json';
 import * as fontFamily from '../assets/json/fontFamily.json';
+import * as fontSize from '../assets/json/fontSize.json';
 import * as shadow from '../assets/json/shadow.json';
 import * as zIndex from '../assets/json/zIndex.json';
 

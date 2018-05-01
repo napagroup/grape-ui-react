@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { native as fontFamilyNative } from '../../assets/json/fontFamily';
 import { base as fontSizeBase } from '../../assets/json/fontSize';
 
