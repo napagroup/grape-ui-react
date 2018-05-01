@@ -8,6 +8,7 @@ export const getDefaultGlobalStyles = () => ({
   breakpoints: { ...breakpoints },
   colors: { ...colors },
   fontFamily: { ...fontFamily },
+  fontSize: { ...fontSize },
   shadow: { ...shadow },
   zIndex: { ...zIndex },
 });
@@ -18,6 +19,7 @@ export const generateGlobalStyles = (overrides = {}) => {
       breakpoints: breakpointOverrides = {},
       colors: colorsOverrides = {},
       fontFamily: fontFamilyOverrides = {},
+      fontSize: fontSizeOverrides = {},
       shadow: shadowOverrides = {},
       zIndex: zIndexOverrides = {},
     } = overrides;
@@ -25,6 +27,7 @@ export const generateGlobalStyles = (overrides = {}) => {
       breakpoints: { ...breakpoints, ...breakpointOverrides },
       colors: { ...colors, ...colorsOverrides },
       fontFamily: { ...fontFamily, ...fontFamilyOverrides },
+      fontSize: { ...fontSize, ...fontSizeOverrides },
       shadow: { ...shadow, ...shadowOverrides },
       zIndex: { ...zIndex, ...zIndexOverrides },
     };

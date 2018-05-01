@@ -11,4 +11,7 @@ const textStylesBase = css`
   line-height: 1.5;
 `;
 
-export default textStylesBase;
+export const Paragraph = styled.p`
+  ${textStylesBase}
+`;
+
