@@ -11,7 +11,7 @@ export const textStylesBase = props => {
     font-family: ${baseFontFamily};
     font-size: ${baseFontSize};
     line-height: 1.5;
-    ${italic ? 'text-style: italic;' : ''}
+    ${italic ? 'font-style: italic;' : ''}
   `;
   return Primitive;
 };
