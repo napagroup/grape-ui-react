@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { native as fontFamilyNative } from '../../assets/json/fontFamily';
-import { base as fontSizeBase } from '../../assets/json/fontSize';
+import { native as fontFamilyNative } from '../../assets/json/fontFamily.json';
+import { base as fontSizeBase } from '../../assets/json/fontSize.json';
 
 const baseFontFamily = fontFamilyNative;
 const baseFontSize = fontSizeBase;
