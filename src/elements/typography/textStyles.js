@@ -3,13 +3,13 @@ import { css } from 'styled-components';
 
 export const textStylesBase = props => {
   const { italic, lg, sm, } = props;
-  let fontSize = '100%';
-  if (sm) {
-    fontSize = '80%';
-  }
-  else if (lg) {
-    fontSize = '120%';
-  }
+  const fontSize = '100%';
+  // if (sm) {
+  //   fontSize = '80%';
+  // }
+  // else if (lg) {
+  //   fontSize = '120%';
+  // }
   const Primitive = css`
     font-size: ${fontSize};
     line-height: 1.5;
