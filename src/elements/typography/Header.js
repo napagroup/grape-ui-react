@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { textStylesBaseFactory } from './textStyles';
+import { textStylesBase } from './textStyles';
 
-const Header = styled.h1`
-  ${textStyleBaseFactory({textStyleBaseElementType: 'h1'})}
+export const Header = styled.h1`
+  ${textStylesBase}
 `;
 
-export { Header };

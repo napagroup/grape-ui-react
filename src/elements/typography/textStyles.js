@@ -1,40 +1,32 @@
+import PropTypes from 'prop-types';
 import { css } from 'styled-components';
-import * as fontSizeAssets from '../../assets/json/fontSize.json';
 
-// export const textStylesBase = props => {
-//   const { italic, lg, sm, } = props;
-//   const baseFontFamily = fontFamilyNative;
-//   let fontSize = fontSizeAssets.p.base;
-//   if (sm) { fontSize = fontSizeAssets.p.sm; }
-//   if (lg) { fontSize = fontSizeAssets.p.lg; }
-//   const Primitive = css`
-//     font-family: ${baseFontFamily};
-//     font-size: ${fontSize};
-//     line-height: 1.5;
-//     ${italic ? 'font-style: italic;' : ''}
-//   `;
-//   return Primitive;
-// };
-
-export const textStyleBaseFactory = ({ textStyleBaseElementType }) => {
-  const sourceAsset = fontSizeAssets[textStyleBaseElementType];
-  const fontSize = sourceAsset.base;
-  const actualStyle = css`
+export const textStylesBase = props => {
+  const { italic, lg, sm, } = props;
+  let fontSize = '100%';
+  if (sm) {
+    fontSize = '80%';
+  }
+  else if (lg) {
+    fontSize = '120%';
+  }
+  const Primitive = css`
     font-size: ${fontSize};
     line-height: 1.5;
+    ${italic ? 'font-style: italic;' : ''}
   `;
-  return actualStyle;
+  return Primitive;
 };
 
-// textStylesBase.propTypes = {
-//   elementType: PropTypes.string.isRequired,
-//   italic: PropTypes.bool,
-//   lg: PropTypes.bool,
-//   sm: PropTypes.bool,
-// };
+textStylesBase.propTypes = {
+  italic: PropTypes.bool,
+  lg: PropTypes.bool,
+  sm: PropTypes.bool,
+};
 
-// textStylesBase.defaultProps = {
-//   italic: false,
-//   lg: false,
-//   sm: false,
-// };
+textStylesBase.defaultProps = {
+  italic: false,
+  lg: false,
+  sm: false,
+};
+
