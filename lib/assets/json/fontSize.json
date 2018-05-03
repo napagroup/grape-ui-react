@@ -1,38 +1,14 @@
 {
   "baseFontSize": "1rem",
+  "h1": "2.5rem",
+  "h2": "2rem",
+  "h3": "1.75rem",
+  "h4": "1.5rem",
+  "h5": "1.25rem",
+  "h6": "1rem",
   "sizeVariants": {
     "sm": "80%",
     "base": "100%",
     "lg": "120%"
-  },
-  "h1": {
-    "sm": "2rem",
-    "base": "2.5rem",
-    "lg": "3rem"
-  },
-  "h2": {
-    "sm": "1.6rem",
-    "base": "2rem",
-    "lg": "2.4rem"
-  },
-  "h3": {
-    "sm": "1.4rem",
-    "base": "1.75rem",
-    "lg": "2.1rem"
-  },
-  "h4": {
-    "sm": "1.2rem",
-    "base": "1.5rem",
-    "lg": "1.8rem"
-  },
-  "h5": {
-    "sm": "1rem",
-    "base": "1.25rem",
-    "lg": "1.5rem"
-  },
-  "h6": {
-    "sm": "0.8rem",
-    "base": "1rem",
-    "lg": "1.2rem"
   }
 }
