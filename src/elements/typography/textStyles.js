@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { css } from 'styled-components';
 
 export const textStylesBase = props => {
-  const { italic, } = props;
+  const { italic, lg, sm, } = props;
   let fontSize = '100%';
   if (lg) { fontSize = '120%' } else if (sm) { fontSize = '80%' }
   const Primitive = css`
