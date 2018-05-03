@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import textStylesBase from './textStyles';
+import { textStylesBase } from './textStyles';
 
 export const Paragraph = styled.p`
   ${textStylesBase}
