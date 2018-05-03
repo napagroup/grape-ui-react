@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import { css } from 'styled-components';
-import sizeVariations from '../../assets/json/fontSize.json'
+import sizeVariants from '../../assets/json/fontSize.json'
 
 export const textStylesBase = props => {
   const { italic, lg, sm, } = props;
-  let fontSize = sizeVariations.base;
+  let fontSize = sizeVariants.base;
   if (lg) {
-    fontSize = sizeVariations.lg
+    fontSize = sizeVariants.lg
   } else if (sm) {
-    fontSize = sizeVariations.sm
+    fontSize = sizeVariants.sm
   }
   const Primitive = css`
     font-size: ${fontSize};

@@ -1,4 +1,4 @@
-import { Header } from '../typography/Header';
+import { Header } from '../Header';
 
 describe('Header Component', () => {
   it('should return a Header object', () => {
