@@ -1,10 +1,15 @@
 import PropTypes from 'prop-types';
 import { css } from 'styled-components';
+import sizeVariations from '../../assets/json/fontSize.json'
 
 export const textStylesBase = props => {
   const { italic, lg, sm, } = props;
-  let fontSize = '100%';
-  if (lg) { fontSize = '120%' } else if (sm) { fontSize = '80%' }
+  let fontSize = sizeVariations.base;
+  if (lg) {
+    fontSize = sizeVariations.lg
+  } else if (sm) {
+    fontSize = sizeVariations.sm
+  }
   const Primitive = css`
     font-size: ${fontSize};
     line-height: 1.5;

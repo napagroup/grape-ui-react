@@ -1,8 +1,9 @@
 {
-	"p": {
-    "sm": "0.8rem",
-    "base": "1rem",
-    "lg": "1.2rem"
+  "baseFontSize": "1rem",
+  "sizeVariants": {
+    "sm": "80%",
+    "base": "100%",
+    "lg": "120%"
   },
   "h1": {
     "sm": "2rem",

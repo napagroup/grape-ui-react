@@ -7,6 +7,6 @@ export const GrapeGlobal = injectGlobal`
     font-family: ${fontFamilyAssets.native};
   }
   body {
-    font-size: ${fontSizeAssets.p.base};
+    font-size: ${fontSizeAssets.baseFontSize};
   }
 `;
