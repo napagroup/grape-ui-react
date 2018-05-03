@@ -3,8 +3,8 @@ import { textStylesBase } from './textStyles';
 import * as fontSize from '../../assets/json/fontSize.json';
 
 const Header = styled.h1`
-  ${textStylesBase}
   font-size: ${fontSize.h1};
+  ${textStylesBase}
 `;
 
 Header.h1 = Header;
