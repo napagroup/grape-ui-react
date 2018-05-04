@@ -1,10 +1,11 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import { css } from 'styled-components';
 import * as fontSizeObject from '../../assets/json/fontSize.json';
 
 export const textStylesBase = props => {
   const {
-    fontSizeBase, italic, lg, sm,
+    fontColor, fontSizeBase, italic, lg, sm,
   } = props;
   const fontSizeVariants = fontSizeObject.sizeVariants;
   let sizeVariant = fontSizeVariants.base;
@@ -14,6 +15,7 @@ export const textStylesBase = props => {
     sizeVariant = fontSizeVariants.sm;
   }
   const Primitive = css`
+    color: ${fontColor};
     font-size: calc(${fontSizeBase} * ${sizeVariant});
     line-height: 1.5;
     ${italic ? 'font-style: italic;' : ''}
@@ -22,6 +24,7 @@ export const textStylesBase = props => {
 };
 
 textStylesBase.propTypes = {
+  fontColor: PropTypes.string,
   fontSizeBase: PropTypes.string,
   italic: PropTypes.bool,
   lg: PropTypes.bool,
@@ -29,7 +32,8 @@ textStylesBase.propTypes = {
 };
 
 textStylesBase.defaultProps = {
-  fontSizeBase: "1rem",
+  fontColor: 'red',
+  fontSizeBase: '1rem',
   italic: false,
   lg: PropTypes.bool,
   sm: PropTypes.bool,
