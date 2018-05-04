@@ -27,7 +27,7 @@ describe('Header.h1 Component', () => {
 });
 
 describe('Header Elements Component', () => {
-  it('should return a h2 element', () => {
+  it('should return a Header.h2 object', () => {
     const component = renderer.create(<Header.h2>Lorem Ipsum</Header.h2>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
