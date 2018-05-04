@@ -3,7 +3,7 @@ import * as fontSizeObject from '../../assets/json/fontSize.json';
 
 export const textStylesBase = ({
   fontSizeBase = fontSizeObject.baseFontSize,
-  italic =  true,
+  italic =  false,
   lg = false,
   sm = false,
 }) => {
