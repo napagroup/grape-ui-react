@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paragraph Component should return a Paragraph object with font-size: lg 1`] = `
+.c0 {
+  font-size: 120%;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+<p
+  className="c0"
+>
+  Lorem Ipsum
+</p>
+`;
+
+exports[`Paragraph Component should return a Paragraph object with font-size: sm 1`] = `
+.c0 {
+  font-size: 80%;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+<p
+  className="c0"
+>
+  Lorem Ipsum
+</p>
+`;
+
+exports[`Paragraph Component should return a Paragraph object with font-style: base 1`] = `
+.c0 {
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+<p
+  className="c0"
+>
+  Lorem Ipsum
+</p>
+`;
+
+exports[`Paragraph Component should return a Paragraph object with font-style: italic 1`] = `
+.c0 {
+  font-size: 100%;
+  line-height: 1.5;
+  font-style: italic;
+  margin: 0 0 1rem;
+}
+
+<p
+  className="c0"
+>
+  Lorem Ipsum
+</p>
+`;
