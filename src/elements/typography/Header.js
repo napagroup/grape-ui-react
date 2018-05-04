@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import { textStylesBase } from './textStyles';
 import * as fontSize from '../../assets/json/fontSize.json';
