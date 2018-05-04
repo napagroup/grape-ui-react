@@ -7,7 +7,7 @@ export const Paragraph = props => {
   const actualBase = textStylesBase(props);
   const ProtoParagraph = styled.p`
     ${actualBase}
-    margin: 0 1rem;
+    margin: 0 0 1rem;
   `;
   return <ProtoParagraph {...otherProps} />;
 };
