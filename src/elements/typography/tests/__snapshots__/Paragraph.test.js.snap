@@ -2,9 +2,10 @@
 
 exports[`Paragraph Component should return a Paragraph object with font-size: lg 1`] = `
 .c0 {
-  font-size: 120%;
+  font-size: calc(1rem * 1.2);
   line-height: 1.5;
-  margin: 0 0 1rem;
+  font-style: italic;
+  margin: 0 1rem;
 }
 
 <p
@@ -16,9 +17,10 @@ exports[`Paragraph Component should return a Paragraph object with font-size: lg
 
 exports[`Paragraph Component should return a Paragraph object with font-size: sm 1`] = `
 .c0 {
-  font-size: 80%;
+  font-size: calc(1rem * .8);
   line-height: 1.5;
-  margin: 0 0 1rem;
+  font-style: italic;
+  margin: 0 1rem;
 }
 
 <p
@@ -30,9 +32,10 @@ exports[`Paragraph Component should return a Paragraph object with font-size: sm
 
 exports[`Paragraph Component should return a Paragraph object with font-style: base 1`] = `
 .c0 {
-  font-size: 100%;
+  font-size: calc(1rem * 1);
   line-height: 1.5;
-  margin: 0 0 1rem;
+  font-style: italic;
+  margin: 0 1rem;
 }
 
 <p
@@ -44,10 +47,10 @@ exports[`Paragraph Component should return a Paragraph object with font-style: b
 
 exports[`Paragraph Component should return a Paragraph object with font-style: italic 1`] = `
 .c0 {
-  font-size: 100%;
+  font-size: calc(1rem * 1);
   line-height: 1.5;
   font-style: italic;
-  margin: 0 0 1rem;
+  margin: 0 1rem;
 }
 
 <p

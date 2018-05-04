@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Elements Component should return a Header.h2 object 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  font-style: italic;
+  font-size: calc(2em * 1);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+<h2
+  className="c0"
+>
+  Lorem Ipsum
+</h2>
+`;
+
+exports[`Header Elements Component should return a Header.h3 object 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  font-style: italic;
+  font-size: calc(1.75em * 1);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+<h3
+  className="c0"
+>
+  Lorem Ipsum
+</h3>
+`;
+
+exports[`Header Elements Component should return a Header.h4 object 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  font-style: italic;
+  font-size: calc(1.5em * 1);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+<h4
+  className="c0"
+>
+  Lorem Ipsum
+</h4>
+`;
+
+exports[`Header Elements Component should return a Header.h5 object 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  font-style: italic;
+  font-size: calc(1.25em * 1);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+<h5
+  className="c0"
+>
+  Lorem Ipsum
+</h5>
+`;
+
+exports[`Header Elements Component should return a Header.h6 object 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  font-style: italic;
+  font-size: calc(1em * 1);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+<h6
+  className="c0"
+>
+  Lorem Ipsum
+</h6>
+`;
+
+exports[`Header.h1 Component should return a Header object with font-size: lg 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with font-size: sm 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with font-style: base 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with font-style: italic 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
