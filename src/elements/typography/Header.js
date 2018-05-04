@@ -2,10 +2,13 @@ import styled from 'styled-components';
 import { textStylesBase } from './textStyles';
 import * as fontSize from '../../assets/json/fontSize.json';
 
-const Header = styled.h1`
-  font-size: ${fontSize.h1};
-  ${textStylesBase}
-`;
+const Header = props => {
+  const fontSizeBase = fontSize.h1;
+  const HeaderPrimitive = styled.h1`
+    ${textStylesBase}
+  `;
+  return HeaderPrimitive;
+}
 
 Header.h1 = Header;
 Header.h2 = Header.withComponent('h2').extend`font-size: ${fontSize.h2};`;

@@ -1,7 +1,7 @@
 import { textStylesBase } from '../textStyles';
 
-describe('TextStyles Component', () => {
-  it('should return a TextStyles object', () => {
+describe('Given a TextStyles Component', () => {
+  it('should return a base font size ', () => {
     expect(textStylesBase).toBeTruthy();
   });
 });
