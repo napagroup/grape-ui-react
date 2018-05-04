@@ -27,7 +27,7 @@ textStylesBase.propTypes = {
 };
 
 textStylesBase.defaultProps = {
-  fontSizeBase: fontSizeObject.base,
+  fontSizeBase: fontSizeObject.baseFontSize,
   italic: false,
   lg: PropTypes.bool,
   sm: PropTypes.bool,
