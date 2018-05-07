@@ -1,9 +1,8 @@
-import { css } from 'styled-components';
 import * as fontSizeObject from '../../assets/json/fontSize.json';
 
 export const textStylesBase = ({
   fontSizeBase = fontSizeObject.baseFontSize,
-  italic =  false,
+  italic = false,
   lg = false,
   sm = false,
 }) => {
