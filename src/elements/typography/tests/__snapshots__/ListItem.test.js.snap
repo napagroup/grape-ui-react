@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem Component should return a ListItem object with font-size: lg 1`] = `
+.c0 {
+  font-size: calc(1rem * 1.2);
+  line-height: 1.5;
+}
+
+<li
+  className="c0"
+>
+  Lorem Ipsum
+</li>
+`;
+
+exports[`ListItem Component should return a ListItem object with font-size: sm 1`] = `
+.c0 {
+  font-size: calc(1rem * .8);
+  line-height: 1.5;
+}
+
+<li
+  className="c0"
+>
+  Lorem Ipsum
+</li>
+`;
+
+exports[`ListItem Component should return a ListItem object with font-style: base 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  line-height: 1.5;
+}
+
+<li
+  className="c0"
+>
+  Lorem Ipsum
+</li>
+`;
+
+exports[`ListItem Component should return a ListItem object with font-style: italic 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+<li
+  className="c0"
+>
+  Lorem Ipsum
+</li>
+`;

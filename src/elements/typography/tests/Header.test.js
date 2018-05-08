@@ -27,28 +27,28 @@ describe('Header.h1 Component', () => {
 });
 
 describe('Header Elements Component', () => {
-  it('should return a Header.h2 object', () => {
-    const component = renderer.create(<Header.h2>Lorem Ipsum</Header.h2>);
+  it('should return a Header h2 object', () => {
+    const component = renderer.create(<Header h2>Lorem Ipsum</Header>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-  it('should return a Header.h3 object', () => {
-    const component = renderer.create(<Header.h3>Lorem Ipsum</Header.h3>);
+  it('should return a Header h3 object', () => {
+    const component = renderer.create(<Header h3>Lorem Ipsum</Header>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-  it('should return a Header.h4 object', () => {
-    const component = renderer.create(<Header.h4>Lorem Ipsum</Header.h4>);
+  it('should return a Header h4 object', () => {
+    const component = renderer.create(<Header h4>Lorem Ipsum</Header>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-  it('should return a Header.h5 object', () => {
-    const component = renderer.create(<Header.h5>Lorem Ipsum</Header.h5>);
+  it('should return a Header h5 object', () => {
+    const component = renderer.create(<Header h5>Lorem Ipsum</Header>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-  it('should return a Header.h6 object', () => {
-    const component = renderer.create(<Header.h6>Lorem Ipsum</Header.h6>);
+  it('should return a Header h6 object', () => {
+    const component = renderer.create(<Header h6>Lorem Ipsum</Header>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

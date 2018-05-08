@@ -4,7 +4,7 @@ exports[`Paragraph Component should return a Paragraph object with font-size: lg
 .c0 {
   font-size: calc(1rem * 1.2);
   line-height: 1.5;
-  margin: 0 1rem;
+  margin: 0 0 1rem;
 }
 
 <p
@@ -18,7 +18,7 @@ exports[`Paragraph Component should return a Paragraph object with font-size: sm
 .c0 {
   font-size: calc(1rem * .8);
   line-height: 1.5;
-  margin: 0 1rem;
+  margin: 0 0 1rem;
 }
 
 <p
@@ -32,7 +32,7 @@ exports[`Paragraph Component should return a Paragraph object with font-style: b
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
-  margin: 0 1rem;
+  margin: 0 0 1rem;
 }
 
 <p
@@ -47,7 +47,7 @@ exports[`Paragraph Component should return a Paragraph object with font-style: i
   font-size: calc(1rem * 1);
   line-height: 1.5;
   font-style: italic;
-  margin: 0 1rem;
+  margin: 0 0 1rem;
 }
 
 <p
