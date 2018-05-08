@@ -13,7 +13,7 @@ const headerFactory = (props, headerTag = 'h1') => {
   const Primitive = styled[headerTag]`
     ${baseStyles}
   `;
-  return <Primitive { ...otherProps } />;
+  return <Primitive {...otherProps} />;
 };
 
 const Header = props => headerFactory(props);

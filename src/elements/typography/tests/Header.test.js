@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header } from '../Header';
 import renderer from 'react-test-renderer';
-import 'jest-styled-components'
+import 'jest-styled-components';
 
 describe('Header.h1 Component', () => {
   it('should return a Header object with font-style: base', () => {
