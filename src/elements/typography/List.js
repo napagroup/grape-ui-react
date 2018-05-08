@@ -6,19 +6,21 @@ import * as gridSchema from '../../assets/json/grid.json';
 
 const listFactory = (props, listTag = 'ul') => {
   const { unstyled, ...otherProps } = props;
-  let paddingLeft = '2.5rem';
-  let listStyle = '';
-  if (unstyled) {
-    paddingLeft = '0';
-    listStyle = 'list-style: none;';
-  };
   const ProtoList = styled[listTag]`
     ${textStylesBase({})}
     margin: 0 0 ${gridSchema.gutter};
-    padding-left: ${paddingLeft};
-    ${listStyle}
+    padding-left:  ${unstyled ? '0' : '2.5rem'};
+    ${unstyled ? 'list-style: none;' : ''}
   `;
   return <ProtoList {...otherProps} />;
+};
+
+listFactory.propTypes = {
+  unstyled: PropTypes.bool,
+};
+
+listFactory.defaultProps = {
+  unstyled: false,
 };
 
 const List = props => listFactory(props);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ListItem } from '../ListItem';
 import renderer from 'react-test-renderer';
-import 'jest-styled-components'
+import 'jest-styled-components';
 
 describe('ListItem Component', () => {
   it('should return a ListItem object with font-style: base', () => {

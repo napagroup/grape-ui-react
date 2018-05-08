@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from '../Text';
 import renderer from 'react-test-renderer';
-import 'jest-styled-components'
+import 'jest-styled-components';
 
 describe('Text Component', () => {
   it('should return a Text object with font-style: base', () => {

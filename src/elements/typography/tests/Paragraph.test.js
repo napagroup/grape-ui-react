@@ -1,7 +1,7 @@
 import React from 'react';
 import { Paragraph } from '../Paragraph';
 import renderer from 'react-test-renderer';
-import 'jest-styled-components'
+import 'jest-styled-components';
 
 describe('Paragraph Component', () => {
   it('should return a Paragraph object with font-style: base', () => {
