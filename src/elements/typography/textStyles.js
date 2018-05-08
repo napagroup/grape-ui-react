@@ -1,22 +1,22 @@
-import * as fontSizeObject from '../../assets/json/fontSize.json';
+import * as fontSizeSchema from '../../assets/json/fontSize.json';
 
 export const textStylesBase = ({
-  fontSizeBase = fontSizeObject.baseFontSize,
+  fontSizeBase = fontSizeSchema.baseFontSize,
   italic = false,
   lg = false,
   sm = false,
 }) => {
-  const fontSizeVariants = fontSizeObject.sizeVariants;
-  let sizeVariant = fontSizeVariants.base;
+  const { sizeVariants } = fontSizeSchema;
+  const { base: schemaBase, sm: schemaSm, lg: schemaLg } = sizeVariants;
+  let scaleFactor = schemaBase;
   if (lg) {
-    sizeVariant = fontSizeVariants.lg;
+    scaleFactor = schemaLg;
   } else if (sm) {
-    sizeVariant = fontSizeVariants.sm;
+    scaleFactor = schemaSm;
   }
-  const Primitive = `
-    font-size: calc(${fontSizeBase} * ${sizeVariant});
+  return `
+    font-size: calc(${fontSizeBase} * ${scaleFactor});
     line-height: 1.5;
     ${italic ? 'font-style: italic;' : ''}
   `;
-  return Primitive;
 };

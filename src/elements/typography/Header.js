@@ -1,52 +1,27 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { textStylesBase } from './textStyles';
-import * as fontSizeObject from '../../assets/json/fontSize.json';
+import * as fontSizeSchema from '../../assets/json/fontSize.json';
 
-export const Header = props => {
-  const { h2, h3, h4, h5, h6, ...otherProps } = props;
-  let headingElement = 'h1';
-  let headingFontSize = fontSizeObject.h1;
-  if (h2) {
-    headingElement = 'h2';
-    headingFontSize = fontSizeObject.h2;
-  } else if (h3) {
-    headingElement = 'h3';
-    headingFontSize = fontSizeObject.h3;
-  } else if (h4) {
-    headingElement = 'h4';
-    headingFontSize = fontSizeObject.h4;
-  } else if (h5) {
-    headingElement = 'h5';
-    headingFontSize = fontSizeObject.h5;
-  } else if (h6) {
-    headingElement = 'h6';
-    headingFontSize = fontSizeObject.h6;
-  }
+const headerFactory = (props, headerTag = 'h1') => {
+  const { ...otherProps } = props;
   const overrides = {
     ...props,
-    fontSizeBase: headingFontSize,
+    fontSizeBase: fontSizeSchema[headerTag],
   };
-  const actualBase = textStylesBase(overrides);
-  const ProtoHeader = styled[headingElement]`
-    ${actualBase}
+  const baseStyles = textStylesBase(overrides);
+  const Primitive = styled[headerTag]`
+    ${baseStyles}
   `;
-  return <ProtoHeader {...otherProps} />;
+  return <Primitive { ...otherProps } />;
 };
 
-Header.propTypes = {
-  h2: PropTypes.bool,
-  h3: PropTypes.bool,
-  h4: PropTypes.bool,
-  h5: PropTypes.bool,
-  h6: PropTypes.bool,
-};
+const Header = props => headerFactory(props);
 
-Header.defaultProps = {
-  h2: false,
-  h3: false,
-  h4: false,
-  h5: false,
-  h6: false,
-};
+Header.h1 = Header;
+Header.h2 = props => headerFactory(props, 'h2');
+Header.h3 = props => headerFactory(props, 'h3');
+Header.h4 = props => headerFactory(props, 'h4');
+Header.h5 = props => headerFactory(props, 'h5');
+Header.h6 = props => headerFactory(props, 'h6');
+export { Header };
