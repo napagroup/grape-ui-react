@@ -4,6 +4,7 @@ exports[`ListItem Component should return a ListItem object with font-size: lg 1
 .c0 {
   font-size: calc(1rem * 1.2);
   line-height: 1.5;
+  margin-bottom: calc(1rem / 4);
 }
 
 <li
@@ -17,6 +18,7 @@ exports[`ListItem Component should return a ListItem object with font-size: sm 1
 .c0 {
   font-size: calc(1rem * .8);
   line-height: 1.5;
+  margin-bottom: calc(1rem / 4);
 }
 
 <li
@@ -30,6 +32,7 @@ exports[`ListItem Component should return a ListItem object with font-style: bas
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
+  margin-bottom: calc(1rem / 4);
 }
 
 <li
@@ -44,6 +47,7 @@ exports[`ListItem Component should return a ListItem object with font-style: ita
   font-size: calc(1rem * 1);
   line-height: 1.5;
   font-style: italic;
+  margin-bottom: calc(1rem / 4);
 }
 
 <li

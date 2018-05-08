@@ -2,8 +2,10 @@
 
 exports[`List Component should return a List object with font-size: lg 1`] = `
 .c0 {
-  font-size: calc(1rem * 1.2);
+  font-size: calc(1rem * 1);
   line-height: 1.5;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
 }
 
 <ul
@@ -15,8 +17,10 @@ exports[`List Component should return a List object with font-size: lg 1`] = `
 
 exports[`List Component should return a List object with font-size: sm 1`] = `
 .c0 {
-  font-size: calc(1rem * .8);
+  font-size: calc(1rem * 1);
   line-height: 1.5;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
 }
 
 <ul
@@ -30,6 +34,8 @@ exports[`List Component should return a List object with font-style: base 1`] = 
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
 }
 
 <ul
@@ -43,7 +49,8 @@ exports[`List Component should return a List object with font-style: italic 1`] 
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
-  font-style: italic;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
 }
 
 <ul
@@ -51,4 +58,96 @@ exports[`List Component should return a List object with font-style: italic 1`] 
 >
   Lorem Ipsum
 </ul>
+`;
+
+exports[`List Specific Styling should return an unstyled List object 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  line-height: 1.5;
+  margin: 0 0 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`Numbered List Component should return a Numbered List object with font-size: sm 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  line-height: 1.5;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Component should return a Numbered List object with font-style: base 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  line-height: 1.5;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Component should return a Numbered List object with font-style: italic 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  line-height: 1.5;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Component should return a Numbered Numbered List object with font-size: lg 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  line-height: 1.5;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Specific Styling should return an unstyled Numbered List object 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  line-height: 1.5;
+  margin: 0 0 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
 `;
