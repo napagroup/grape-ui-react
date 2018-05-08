@@ -1,3 +1,4 @@
+import * as colorSchema from '../../assets/json/colors.json';
 import * as fontSizeSchema from '../../assets/json/fontSize.json';
 
 export const textStylesBase = ({
