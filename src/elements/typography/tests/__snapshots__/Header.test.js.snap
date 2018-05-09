@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Header Elements Component should return a Header h1 object 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  color: inherit;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
 exports[`Header Elements Component should return a Header h2 object 1`] = `
 .c0 {
   font-size: calc(2em * 1);
@@ -63,6 +77,90 @@ exports[`Header Elements Component should return a Header h6 object 1`] = `
 >
   Lorem Ipsum
 </h6>
+`;
+
+exports[`Header.h1 Component should return a Header object with a base color (implicit) 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  color: [object Object];
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with a base color 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,49.2%);
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with a base font-style 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  color: inherit;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with a dark color 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,29.2%);
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with a light color 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,69.2%);
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with color: green.base 1`] = `
+.c0 {
+  font-size: calc(2.5em * 1);
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,49.2%);
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
 `;
 
 exports[`Header.h1 Component should return a Header object with font-size: lg 1`] = `

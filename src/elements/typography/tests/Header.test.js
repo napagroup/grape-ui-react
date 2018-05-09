@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
 describe('Header.h1 Component', () => {
-  it('should return a Header object with font-style: base', () => {
+  it('should return a Header object with a base font-style', () => {
     const component = renderer.create(<Header>Lorem Ipsum</Header>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -24,9 +24,34 @@ describe('Header.h1 Component', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Header object with a base color (implicit)', () => {
+    const component = renderer.create(<Header color="green">Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Header object with a base color', () => {
+    const component = renderer.create(<Header color="green.base">Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Header object with a light color', () => {
+    const component = renderer.create(<Header color="green.light">Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Header object with a dark color', () => {
+    const component = renderer.create(<Header color="green.dark">Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
 
 describe('Header Elements Component', () => {
+  it('should return a Header h1 object', () => {
+    const component = renderer.create(<Header.h1>Lorem Ipsum</Header.h1>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
   it('should return a Header h2 object', () => {
     const component = renderer.create(<Header.h2>Lorem Ipsum</Header.h2>);
     const tree = component.toJSON();

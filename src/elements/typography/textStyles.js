@@ -1,8 +1,8 @@
-import * as colorSchema from '../../assets/json/colors.json';
 import * as fontSizeSchema from '../../assets/json/fontSize.json';
 
 export const textStylesBase = ({
   fontSizeBase = fontSizeSchema.baseFontSize,
+  colorBase = 'inherit',
   italic = false,
   lg = false,
   sm = false,
@@ -19,5 +19,6 @@ export const textStylesBase = ({
     font-size: calc(${fontSizeBase} * ${scaleFactor});
     line-height: 1.5;
     ${italic ? 'font-style: italic;' : ''}
+    color: ${colorBase};
   `;
 };
