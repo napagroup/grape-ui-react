@@ -4,9 +4,11 @@ import * as fontSizeSchema from '../../assets/json/fontSize.json';
 const defaultTextStylesBase = {
   fontSizeBase: fontSizeSchema.baseFontSize,
   color: 'inherit',
+  fontWeight: 'inherit',
   italic: false,
   lg: false,
   sm: false,
+  textAlign: 'inherit',
 };
 
 const getScaleFactor = props => {
@@ -39,11 +41,16 @@ export const textStylesBase = (props = {}) => {
     color: getColor(props),
   };
   const scaleFactor = getScaleFactor(props);
-  const { fontSizeBase, italic, color } = overrides;
+  const {
+    fontSizeBase, italic, color, fontWeight, textAlign,
+  } = overrides;
   return `
     font-size: calc(${fontSizeBase} * ${scaleFactor});
+    font-weight: ${fontWeight};
     line-height: 1.5;
     ${italic ? 'font-style: italic;' : ''}
     color: ${color};
+    text-align: ${textAlign};
   `;
 };
+

@@ -24,4 +24,14 @@ describe('Paragraph Component', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Paragraph object with text-align: right', () => {
+    const component = renderer.create(<Paragraph textAlign="right">Lorem Ipsum</Paragraph>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Paragraph object with font-weight: bold', () => {
+    const component = renderer.create(<Paragraph fontWeight="bold">Lorem Ipsum</Paragraph>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

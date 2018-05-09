@@ -3,29 +3,34 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { textStylesBase } from './textStyles';
 import * as fontSizeSchema from '../../assets/json/fontSize.json';
+import * as gridSchema from '../../assets/json/grid.json';
 
 const headerFactory = ({ props, tag = 'h1' }) => {
-  const { color, ...otherProps } = props;
+  const { color, display, ...otherProps } = props;
   const overrides = {
     ...props,
     color,
-    fontSizeBase: fontSizeSchema[tag],
+    fontSizeBase: display ? fontSizeSchema.display[tag] : fontSizeSchema[tag],
+    fontWeight: display ? '300' : 'inherit',
   };
   const baseStyles = textStylesBase(overrides);
   const Primitive = styled[tag]`
     ${baseStyles}
+    margin: 0 0 ${gridSchema.gutter};
   `;
   return <Primitive {...otherProps} />;
 };
 
 headerFactory.propTypes = {
   color: PropTypes.string,
+  display: PropTypes.bool,
   props: PropTypes.any.isRequired,
   tag: PropTypes.string,
 };
 
 headerFactory.defaultProps = {
   color: 'inherit',
+  display: false,
   tag: 'h1',
 };
 
