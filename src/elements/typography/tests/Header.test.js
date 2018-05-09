@@ -24,6 +24,11 @@ describe('Header.h1 Component', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Header object with font-size: display', () => {
+    const component = renderer.create(<Header display>Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
   it('should return a Header object with a base color (implicit)', () => {
     const component = renderer.create(<Header color="green">Lorem Ipsum</Header>);
     const tree = component.toJSON();

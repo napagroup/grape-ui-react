@@ -6,11 +6,14 @@ import { resolveColor } from '../../utils/componentHelpers';
 import * as fontSizeSchema from '../../assets/json/fontSize.json';
 
 const headerFactory = ({ props, tag = 'h1' }) => {
-  const { color, ...otherProps } = props;
+  const { color, display, ...otherProps } = props;
+  let fontSizeSchemaVariable = fontSizeSchema;
+  if (display) { fontSizeSchemaVariable = fontSizeSchema.display }
   const overrides = {
     ...props,
-    fontSizeBase: fontSizeSchema[tag],
     colorBase: resolveColor(color),
+    fontSizeBase: fontSizeSchemaVariable[tag],
+    fontWeight: display ? '300' : 'inherit',
   };
   const baseStyles = textStylesBase(overrides);
   const Primitive = styled[tag]`
@@ -21,12 +24,14 @@ const headerFactory = ({ props, tag = 'h1' }) => {
 
 headerFactory.propTypes = {
   color: PropTypes.string,
+  display: PropTypes.bool,
   props: PropTypes.any.isRequired,
   tag: PropTypes.string,
 };
 
 headerFactory.defaultProps = {
   color: 'inherit',
+  display: false,
   tag: 'h1',
 };
 

@@ -1,5 +1,13 @@
 {
   "baseFontSize": "1rem",
+  "display": {
+    "h1": "6rem",
+    "h2": "4.8rem",
+    "h3": "4.2rem",
+    "h4": "3.6rem",
+    "h5": "3rem",
+    "h6": "2.4rem"
+  },
   "h1": "2.5rem",
   "h2": "2rem",
   "h3": "1.75rem",
