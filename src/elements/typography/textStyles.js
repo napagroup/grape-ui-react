@@ -32,14 +32,17 @@ const getColor = props => {
 };
 
 export const textStylesBase = (props = {}) => {
+  let overrides = null;
   if (!props || Array.isArray(props)) {
-    return null;
+    overrides = defaultTextStylesBase;
+  } else {
+    overrides = {
+      ...defaultTextStylesBase,
+      ...props,
+      color: getColor(props),
+    };
   }
-  const overrides = {
-    ...defaultTextStylesBase,
-    ...props,
-    color: getColor(props),
-  };
+
   const scaleFactor = getScaleFactor(props);
   const {
     fontSizeBase, italic, color, fontWeight, textAlign,
