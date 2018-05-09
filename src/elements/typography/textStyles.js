@@ -34,7 +34,6 @@ export const textStylesBase = ({
     ${italic ? 'font-style: italic;' : ''}
     color: ${colorBase};
     text-align: ${textAlign};
-    ${kerning ? 'font-kerning: normal;' : ''}
   `;
 };
 
