@@ -34,4 +34,9 @@ describe('Paragraph Component', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Paragraph object with a lead paragraph stlying', () => {
+    const component = renderer.create(<Paragraph lead>Lorem Ipsum</Paragraph>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

@@ -1,5 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Paragraph Component should return a Paragraph object with a lead paragraph stlying 1`] = `
+.c0 {
+  font-size: calc(1rem * 1.2);
+  font-weight: 300;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<p
+  className="c0"
+>
+  Lorem Ipsum
+</p>
+`;
+
 exports[`Paragraph Component should return a Paragraph object with font-size: lg 1`] = `
 .c0 {
   font-size: calc(1rem * 1.2);
