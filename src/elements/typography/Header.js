@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { textStylesBase } from './textStyles';
 import { resolveColor } from '../../utils/componentHelpers';
 import * as fontSizeSchema from '../../assets/json/fontSize.json';
+import * as gridSchema from '../../assets/json/grid.json';
 
 const headerFactory = ({ props, tag = 'h1' }) => {
   const { color, display, ...otherProps } = props;
@@ -16,6 +17,7 @@ const headerFactory = ({ props, tag = 'h1' }) => {
   const baseStyles = textStylesBase(overrides);
   const Primitive = styled[tag]`
     ${baseStyles}
+    margin: 0 0 ${gridSchema.gutter};
   `;
   return <Primitive {...otherProps} />;
 };

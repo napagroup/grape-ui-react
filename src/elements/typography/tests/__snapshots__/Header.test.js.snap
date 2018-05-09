@@ -7,6 +7,7 @@ exports[`Header Elements Component should return a Header h1 object 1`] = `
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h1
@@ -23,6 +24,7 @@ exports[`Header Elements Component should return a Header h2 object 1`] = `
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h2
@@ -39,6 +41,7 @@ exports[`Header Elements Component should return a Header h3 object 1`] = `
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h3
@@ -55,6 +58,7 @@ exports[`Header Elements Component should return a Header h4 object 1`] = `
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h4
@@ -71,6 +75,7 @@ exports[`Header Elements Component should return a Header h5 object 1`] = `
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h5
@@ -87,6 +92,7 @@ exports[`Header Elements Component should return a Header h6 object 1`] = `
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h6
@@ -103,6 +109,7 @@ exports[`Header.h1 Component should return a Header object with a base color (im
   line-height: 1.5;
   color: hsl(122.4,39.4%,49.2%);
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h1
@@ -119,6 +126,7 @@ exports[`Header.h1 Component should return a Header object with a base color 1`]
   line-height: 1.5;
   color: hsl(122.4,39.4%,49.2%);
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h1
@@ -135,6 +143,7 @@ exports[`Header.h1 Component should return a Header object with a base font-styl
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h1
@@ -151,6 +160,7 @@ exports[`Header.h1 Component should return a Header object with a dark color 1`]
   line-height: 1.5;
   color: hsl(122.4,39.4%,29.2%);
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h1
@@ -167,6 +177,7 @@ exports[`Header.h1 Component should return a Header object with a light color 1`
   line-height: 1.5;
   color: hsl(122.4,39.4%,69.2%);
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h1
@@ -183,6 +194,7 @@ exports[`Header.h1 Component should return a Header object with font-size: displ
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h1
@@ -199,6 +211,7 @@ exports[`Header.h1 Component should return a Header object with font-size: lg 1`
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h1
@@ -215,6 +228,7 @@ exports[`Header.h1 Component should return a Header object with font-size: sm 1`
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h1
@@ -232,6 +246,7 @@ exports[`Header.h1 Component should return a Header object with font-style: ital
   font-style: italic;
   color: inherit;
   text-align: inherit;
+  margin: 0 0 1rem;
 }
 
 <h1
