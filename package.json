@@ -6,8 +6,9 @@
   "scripts": {
     "build": "babel src/ -d lib --ignore '**/*.json && babel src/assets --out-dir lib/assets --copy-files",
     "build:clean": "rimraf ./build",
-    "lint": "eslint src/**; exit 0",
+    "lint": "npm run lint:js",
     "lint:js": "npm run lint:eslint -- .",
+    "lint:eslint": "eslint",
     "lint:fix": "eslint --fix .",
     "lint:watch": "esw -w src/**",
     "prepublish": "npm run build",
@@ -49,7 +50,9 @@
       ".*\\.(css|less|styl|scss|sass)$": "<rootDir>/internals/mocks/cssModule.js",
       ".*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/internals/mocks/image.js"
     },
-    "modulePathIgnorePatterns": ["<rootDir>/lib"],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/lib"
+    ],
     "setupTestFrameworkScriptFile": "<rootDir>/src/internals/testing/test-bundler.js",
     "testRegex": "tests/.*\\.test\\.js$"
   },

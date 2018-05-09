@@ -7,7 +7,7 @@ import * as gridSchema from '../../assets/json/grid.json';
 const listFactory = (props, listTag = 'ul') => {
   const { unstyled, ...otherProps } = props;
   const ProtoList = styled[listTag]`
-    ${textStylesBase({})}
+    ${textStylesBase()}
     margin: 0 0 ${gridSchema.gutter};
     padding-left:  ${unstyled ? '0' : '2.5rem'};
     ${unstyled ? 'list-style: none;' : ''}

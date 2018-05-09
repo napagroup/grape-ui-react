@@ -3,7 +3,9 @@
 exports[`Paragraph Component should return a Paragraph object with font-size: lg 1`] = `
 .c0 {
   font-size: calc(1rem * 1.2);
+  font-weight: inherit;
   line-height: 1.5;
+  color: inherit;
   text-align: inherit;
   margin: 0 0 1rem;
 }
@@ -18,7 +20,9 @@ exports[`Paragraph Component should return a Paragraph object with font-size: lg
 exports[`Paragraph Component should return a Paragraph object with font-size: sm 1`] = `
 .c0 {
   font-size: calc(1rem * .8);
+  font-weight: inherit;
   line-height: 1.5;
+  color: inherit;
   text-align: inherit;
   margin: 0 0 1rem;
 }
@@ -33,7 +37,9 @@ exports[`Paragraph Component should return a Paragraph object with font-size: sm
 exports[`Paragraph Component should return a Paragraph object with font-style: base 1`] = `
 .c0 {
   font-size: calc(1rem * 1);
+  font-weight: inherit;
   line-height: 1.5;
+  color: inherit;
   text-align: inherit;
   margin: 0 0 1rem;
 }
@@ -48,8 +54,10 @@ exports[`Paragraph Component should return a Paragraph object with font-style: b
 exports[`Paragraph Component should return a Paragraph object with font-style: italic 1`] = `
 .c0 {
   font-size: calc(1rem * 1);
+  font-weight: inherit;
   line-height: 1.5;
   font-style: italic;
+  color: inherit;
   text-align: inherit;
   margin: 0 0 1rem;
 }
@@ -61,10 +69,30 @@ exports[`Paragraph Component should return a Paragraph object with font-style: i
 </p>
 `;
 
+exports[`Paragraph Component should return a Paragraph object with font-weight: bold 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  font-weight: bold;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<p
+  className="c0"
+  fontWeight="bold"
+>
+  Lorem Ipsum
+</p>
+`;
+
 exports[`Paragraph Component should return a Paragraph object with text-align: right 1`] = `
 .c0 {
   font-size: calc(1rem * 1);
+  font-weight: inherit;
   line-height: 1.5;
+  color: inherit;
   text-align: right;
   margin: 0 0 1rem;
 }
