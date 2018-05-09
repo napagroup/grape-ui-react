@@ -4,6 +4,7 @@ exports[`List Component should return a List object with font-size: lg 1`] = `
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
+  text-align: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -19,6 +20,7 @@ exports[`List Component should return a List object with font-size: sm 1`] = `
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
+  text-align: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -34,6 +36,7 @@ exports[`List Component should return a List object with font-style: base 1`] = 
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
+  text-align: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -49,6 +52,7 @@ exports[`List Component should return a List object with font-style: italic 1`] 
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
+  text-align: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -64,6 +68,7 @@ exports[`List Specific Styling should return an unstyled List object 1`] = `
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
+  text-align: inherit;
   margin: 0 0 1rem;
   padding-left: 0;
   list-style: none;
@@ -80,6 +85,7 @@ exports[`Numbered List Component should return a Numbered List object with font-
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
+  text-align: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -95,6 +101,7 @@ exports[`Numbered List Component should return a Numbered List object with font-
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
+  text-align: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -110,6 +117,7 @@ exports[`Numbered List Component should return a Numbered List object with font-
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
+  text-align: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -125,6 +133,7 @@ exports[`Numbered List Component should return a Numbered Numbered List object w
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
+  text-align: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -140,6 +149,7 @@ exports[`Numbered List Specific Styling should return an unstyled Numbered List 
 .c0 {
   font-size: calc(1rem * 1);
   line-height: 1.5;
+  text-align: inherit;
   margin: 0 0 1rem;
   padding-left: 0;
   list-style: none;

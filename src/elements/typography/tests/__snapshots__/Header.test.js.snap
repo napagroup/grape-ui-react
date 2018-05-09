@@ -4,6 +4,7 @@ exports[`Header Elements Component should return a Header h2 object 1`] = `
 .c0 {
   font-size: calc(2em * 1);
   line-height: 1.5;
+  text-align: inherit;
 }
 
 <h2
@@ -17,6 +18,7 @@ exports[`Header Elements Component should return a Header h3 object 1`] = `
 .c0 {
   font-size: calc(1.75em * 1);
   line-height: 1.5;
+  text-align: inherit;
 }
 
 <h3
@@ -30,6 +32,7 @@ exports[`Header Elements Component should return a Header h4 object 1`] = `
 .c0 {
   font-size: calc(1.5em * 1);
   line-height: 1.5;
+  text-align: inherit;
 }
 
 <h4
@@ -43,6 +46,7 @@ exports[`Header Elements Component should return a Header h5 object 1`] = `
 .c0 {
   font-size: calc(1.25em * 1);
   line-height: 1.5;
+  text-align: inherit;
 }
 
 <h5
@@ -56,6 +60,7 @@ exports[`Header Elements Component should return a Header h6 object 1`] = `
 .c0 {
   font-size: calc(1em * 1);
   line-height: 1.5;
+  text-align: inherit;
 }
 
 <h6
@@ -69,6 +74,7 @@ exports[`Header.h1 Component should return a Header object with font-size: lg 1`
 .c0 {
   font-size: calc(2.5em * 1.2);
   line-height: 1.5;
+  text-align: inherit;
 }
 
 <h1
@@ -82,6 +88,7 @@ exports[`Header.h1 Component should return a Header object with font-size: sm 1`
 .c0 {
   font-size: calc(2.5em * .8);
   line-height: 1.5;
+  text-align: inherit;
 }
 
 <h1
@@ -95,6 +102,7 @@ exports[`Header.h1 Component should return a Header object with font-style: base
 .c0 {
   font-size: calc(2.5em * 1);
   line-height: 1.5;
+  text-align: inherit;
 }
 
 <h1
@@ -109,6 +117,7 @@ exports[`Header.h1 Component should return a Header object with font-style: ital
   font-size: calc(2.5em * 1);
   line-height: 1.5;
   font-style: italic;
+  text-align: inherit;
 }
 
 <h1

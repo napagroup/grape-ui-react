@@ -1,12 +1,11 @@
 import { injectGlobal } from 'styled-components';
-import * as fontSizeAssets from '../assets/json/fontSize.json';
-import * as fontFamilyAssets from '../assets/json/fontFamily.json';
+import * as breakpointSchema from '../assets/json/breakpoints.json';
+import * as fontSizeSchema from '../assets/json/fontSize.json';
+import * as fontFamilySchema from '../assets/json/fontFamily.json';
 
 export const GrapeGlobal = injectGlobal`
   html {
-    font-family: ${fontFamilyAssets.native};
-  }
-  body {
-    font-size: ${fontSizeAssets.baseFontSize};
+    font-family: ${fontFamilySchema.base};
+    font-size: ${fontSizeSchema.baseFontSize};
   }
 `;
