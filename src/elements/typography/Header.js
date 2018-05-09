@@ -2,15 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { textStylesBase } from './textStyles';
-import { resolveColor } from '../../utils/componentHelpers';
 import * as fontSizeSchema from '../../assets/json/fontSize.json';
 
 const headerFactory = ({ props, tag = 'h1' }) => {
   const { color, ...otherProps } = props;
   const overrides = {
     ...props,
+    color,
     fontSizeBase: fontSizeSchema[tag],
-    colorBase: resolveColor(color),
   };
   const baseStyles = textStylesBase(overrides);
   const Primitive = styled[tag]`
