@@ -7,12 +7,10 @@ import * as fontSizeSchema from '../../assets/json/fontSize.json';
 
 const headerFactory = ({ props, tag = 'h1' }) => {
   const { color, display, ...otherProps } = props;
-  let fontSizeSchemaVariable = fontSizeSchema;
-  if (display) { fontSizeSchemaVariable = fontSizeSchema.display }
   const overrides = {
     ...props,
     colorBase: resolveColor(color),
-    fontSizeBase: fontSizeSchemaVariable[tag],
+    fontSizeBase: display ? fontSizeSchema.display[tag] : fontSizeSchema[tag],
     fontWeight: display ? '300' : 'inherit',
   };
   const baseStyles = textStylesBase(overrides);
