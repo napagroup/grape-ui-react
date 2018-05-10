@@ -6,12 +6,11 @@ import { ListItem } from './elements/typography/ListItem';
 import { Paragraph } from './elements/typography/Paragraph';
 import { Text } from './elements/typography/Text';
 import { textStylesBase } from './elements/typography/textStyles';
-import { generateGlobalStyles, getDefaultGlobalStyles } from './global-styles';
+import { getGlobalStyles } from './global-styles';
 
 module.exports = {
   Button,
-  generateGlobalStyles,
-  getDefaultGlobalStyles,
+  getGlobalStyles,
   GlobalStyles,
   Header,
   List,

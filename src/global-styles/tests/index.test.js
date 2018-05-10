@@ -1,4 +1,4 @@
-import { generateGlobalStyles, getDefaultGlobalStyles } from '../index';
+import { getGlobalStyles } from '../index';
 
 const assertGlobalStyleInterface = globalStyles => {
   expect(globalStyles).toHaveProperty('breakpoints');
@@ -11,31 +11,26 @@ const assertGlobalStyleInterface = globalStyles => {
 
 describe('When using default global styles', () => {
   it('should return a well defined structure', () => {
-    const defaultStyles = getDefaultGlobalStyles();
+    const defaultStyles = getGlobalStyles();
     assertGlobalStyleInterface(defaultStyles);
   });
 });
 
 describe('When generating global styles', () => {
   it('should not break with invalid overrides (e.g. numbers, strings booleans, arrays)', () => {
-    expect(generateGlobalStyles(6)).toBeTruthy();
-    expect(generateGlobalStyles('6')).toBeTruthy();
-    expect(generateGlobalStyles(true)).toBeTruthy();
-    expect(generateGlobalStyles(false)).toBeTruthy();
-    expect(generateGlobalStyles({ heart: 'water' })).toBeTruthy();
-    expect(generateGlobalStyles([])).toBeTruthy();
-    expect(generateGlobalStyles([true, false])).toBeTruthy();
-  });
-
-  it('should return a well defined structure', () => {
-    const defaultStyles = generateGlobalStyles();
-    assertGlobalStyleInterface(defaultStyles);
+    expect(getGlobalStyles(6)).toBeTruthy();
+    expect(getGlobalStyles('6')).toBeTruthy();
+    expect(getGlobalStyles(true)).toBeTruthy();
+    expect(getGlobalStyles(false)).toBeTruthy();
+    expect(getGlobalStyles({ heart: 'water' })).toBeTruthy();
+    expect(getGlobalStyles([])).toBeTruthy();
+    expect(getGlobalStyles([true, false])).toBeTruthy();
   });
 
   it('should override only the intended values', () => {
-    const expectedGlobals = getDefaultGlobalStyles();
+    const expectedGlobals = getGlobalStyles();
     const expectedBreakpointXs = '33em';
-    const actualGlobals = generateGlobalStyles({ breakpoints: { xs: expectedBreakpointXs } });
+    const actualGlobals = getGlobalStyles({ breakpoints: { xs: expectedBreakpointXs } });
     const { breakpoints: expectedBreakpoints } = expectedGlobals;
     const { breakpoints: actualBreakpoints } = actualGlobals;
 
@@ -47,7 +42,7 @@ describe('When generating global styles', () => {
   });
 
   it('should continue to return a well defined structure upon overriding values', () => {
-    const actualGlobals = generateGlobalStyles({ breakpoints: { xs: '33em' } });
+    const actualGlobals = getGlobalStyles({ breakpoints: { xs: '33em' } });
     assertGlobalStyleInterface(actualGlobals);
   });
 });

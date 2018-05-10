@@ -5,16 +5,7 @@ import * as fontSize from '../assets/json/fontSize.json';
 import * as shadow from '../assets/json/shadow.json';
 import * as zIndex from '../assets/json/zIndex.json';
 
-export const getDefaultGlobalStyles = () => ({
-  breakpoints: { ...breakpoints },
-  colors: { ...colors },
-  fontFamily: { ...fontFamily },
-  fontSize: { ...fontSize },
-  shadow: { ...shadow },
-  zIndex: { ...zIndex },
-});
-
-export const generateGlobalStyles = (overrides = {}) => {
+export const getGlobalStyles = (overrides = {}) => {
   if (overrides instanceof Object && !Array.isArray(overrides)) {
     const {
       breakpoints: breakpointOverrides = {},
@@ -33,5 +24,5 @@ export const generateGlobalStyles = (overrides = {}) => {
       zIndex: { ...zIndex, ...zIndexOverrides },
     };
   }
-  return getDefaultGlobalStyles();
+  return getGlobalStyles();
 };
