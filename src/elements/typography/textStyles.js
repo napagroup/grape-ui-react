@@ -2,8 +2,8 @@ import { resolveColor } from '../../utils/componentHelpers';
 import * as fontSizeSchema from '../../assets/json/fontSize.json';
 
 const defaultTextStylesBase = {
-  fontSizeBase: fontSizeSchema.baseFontSize,
   color: 'inherit',
+  fontSizeBase: fontSizeSchema.baseFontSize,
   fontWeight: 'inherit',
   italic: false,
   lg: false,
