@@ -1,6 +1,7 @@
 import { injectGlobal } from 'styled-components';
-import * as fontSizeSchema from '../assets/json/fontSize.json';
-import * as fontFamilySchema from '../assets/json/fontFamily.json';
+import { getGlobalStyles } from 'src/global-styles';
+
+const { fontSize: fontSizeSchema, fontFamily: fontFamilySchema } = getGlobalStyles();
 
 export const GrapeGlobal = injectGlobal`
   html {

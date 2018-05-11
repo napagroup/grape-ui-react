@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { textStylesBase } from './textStyles';
-import * as fontSizeSchema from '../../assets/json/fontSize.json';
-import * as gridSchema from '../../assets/json/grid.json';
+import { getGlobalStyles } from 'src/global-styles';
+
+const { fontSize: fontSizeSchema, grid: gridSchema } = getGlobalStyles();
 
 const headerFactory = ({ props, tag = 'h1' }) => {
   const { color, display, ...otherProps } = props;

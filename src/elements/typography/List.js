@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { textStylesBase } from './textStyles';
-import * as gridSchema from '../../assets/json/grid.json';
+import { getGlobalStyles } from 'src/global-styles';
+
+const { grid: gridSchema } = getGlobalStyles();
 
 const listFactory = (props, listTag = 'ul') => {
   const { unstyled, ...otherProps } = props;

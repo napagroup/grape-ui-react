@@ -1,4 +1,3 @@
-// import * as colorSchema from '../../assets/json/colors.json';
 import { getGlobalStyles } from 'src/global-styles';
 import { isKeyNestedProp, resolve } from 'utils/objectHelpers';
 

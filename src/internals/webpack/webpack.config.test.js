@@ -1,5 +1,4 @@
 const path = require('path')
-console.log('__dirname', __dirname)
 module.exports = {
   entry: path.join(process.cwd(), 'src/index.js'),
   output: {
