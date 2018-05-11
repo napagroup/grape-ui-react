@@ -1,5 +1,5 @@
 import { getGlobalStyles } from 'src/global-styles';
-import { isKeyNestedProp, resolve } from 'utils/objectHelpers';
+import { isKeyNestedProp, resolve } from 'src/utils/objectHelpers';
 
 const { colors: colorSchema } = getGlobalStyles();
 const defaultValue = 'inherit';
