@@ -1,9 +1,9 @@
-import * as breakpoints from '../assets/json/breakpoints.json';
-import * as colors from '../assets/json/colors.json';
-import * as fontFamily from '../assets/json/fontFamily.json';
-import * as fontSize from '../assets/json/fontSize.json';
-import * as shadow from '../assets/json/shadow.json';
-import * as zIndex from '../assets/json/zIndex.json';
+import * as breakpoints from 'src/assets/json/breakpoints.json';
+import * as colors from 'src/assets/json/colors.json';
+import * as fontFamily from 'src/assets/json/fontFamily.json';
+import * as fontSize from 'src/assets/json/fontSize.json';
+import * as shadow from 'src/assets/json/shadow.json';
+import * as zIndex from 'src/assets/json/zIndex.json';
 
 export const getGlobalStyles = (overrides = {}) => {
   if (overrides instanceof Object && !Array.isArray(overrides)) {

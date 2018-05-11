@@ -1,7 +1,8 @@
 {
   "plugins": [
     ["transform-object-rest-spread", { "useBuiltIns": true }],
-    "transform-es2015-modules-commonjs"
+    "transform-es2015-modules-commonjs",
+    [ "babel-plugin-webpack-alias", { "config": "src/internals/webpack/webpack.config.js" } ]
   ],
   "presets": [
     [
@@ -28,7 +29,8 @@
     "test": {
       "plugins": [
         "transform-es2015-modules-commonjs",
-        "dynamic-import-node"
+        "dynamic-import-node",
+        [ "babel-plugin-webpack-alias", { "config": "src/internals/webpack/webpack.config.test.js" } ]
       ]
     }
   }

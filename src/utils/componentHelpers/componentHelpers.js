@@ -1,6 +1,6 @@
 // import * as colorSchema from '../../assets/json/colors.json';
-import { getGlobalStyles } from '../../global-styles';
-import { isKeyNestedProp, resolve } from '../objectHelpers';
+import { getGlobalStyles } from 'src/global-styles';
+import { isKeyNestedProp, resolve } from 'utils/objectHelpers';
 
 const { colors: colorSchema } = getGlobalStyles();
 const defaultValue = 'inherit';
