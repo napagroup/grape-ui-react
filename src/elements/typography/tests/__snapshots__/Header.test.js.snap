@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Elements Component should return a Header h1 object 1`] = `
+.c0 {
+  font-size: calc(2.5rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header Elements Component should return a Header h2 object 1`] = `
+.c0 {
+  font-size: calc(2rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h2
+  className="c0"
+>
+  Lorem Ipsum
+</h2>
+`;
+
+exports[`Header Elements Component should return a Header h3 object 1`] = `
+.c0 {
+  font-size: calc(1.75rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h3
+  className="c0"
+>
+  Lorem Ipsum
+</h3>
+`;
+
+exports[`Header Elements Component should return a Header h4 object 1`] = `
+.c0 {
+  font-size: calc(1.5rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h4
+  className="c0"
+>
+  Lorem Ipsum
+</h4>
+`;
+
+exports[`Header Elements Component should return a Header h5 object 1`] = `
+.c0 {
+  font-size: calc(1.25rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h5
+  className="c0"
+>
+  Lorem Ipsum
+</h5>
+`;
+
+exports[`Header Elements Component should return a Header h6 object 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h6
+  className="c0"
+>
+  Lorem Ipsum
+</h6>
+`;
+
+exports[`Header.h1 Component should return a Header object with a base color (implicit) 1`] = `
+.c0 {
+  font-size: calc(2.5rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,49.2%);
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with a base color 1`] = `
+.c0 {
+  font-size: calc(2.5rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,49.2%);
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with a base font-style 1`] = `
+.c0 {
+  font-size: calc(2.5rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with a dark color 1`] = `
+.c0 {
+  font-size: calc(2.5rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,29.2%);
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with a light color 1`] = `
+.c0 {
+  font-size: calc(2.5rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,69.2%);
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with font-size: display 1`] = `
+.c0 {
+  font-size: calc(6rem * 1);
+  font-weight: 300;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with font-size: lg 1`] = `
+.c0 {
+  font-size: calc(2.5rem * 1.2);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with font-size: sm 1`] = `
+.c0 {
+  font-size: calc(2.5rem * .8);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component should return a Header object with font-style: italic 1`] = `
+.c0 {
+  font-size: calc(2.5rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  font-style: italic;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;

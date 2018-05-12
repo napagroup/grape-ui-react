@@ -1,9 +1,12 @@
 import { Button } from './elements/Button';
-import { generateGlobalStyles, getDefaultGlobalStyles } from './global-styles';
+import { grapeHtmlStylesInjector } from './elements/GrapeHtmlStylesInjector';
+import * as Typography from './elements/typography';
+import { getGlobalStyles } from './global-styles';
 
 module.exports = {
   Button,
-  generateGlobalStyles,
-  getDefaultGlobalStyles,
+  getGlobalStyles,
+  grapeHtmlStylesInjector,
+  ...Typography,
 };
 

@@ -10,3 +10,4 @@ stats.json
 npm-debug.log
 .idea
 *.log
+npm-debug.log.*
