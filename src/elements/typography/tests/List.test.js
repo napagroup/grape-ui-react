@@ -32,6 +32,11 @@ describe('List Specific Styling', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return an inline List object', () => {
+    const component = renderer.create(<List inline>Lorem Ipsum</List>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
 
 describe('Numbered List Component', () => {
@@ -60,6 +65,11 @@ describe('Numbered List Component', () => {
 describe('Numbered List Specific Styling', () => {
   it('should return an unstyled Numbered List object', () => {
     const component = renderer.create(<List.ol unstyled>Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return an inline Numbered List object', () => {
+    const component = renderer.create(<List.ol inline>Lorem Ipsum</List.ol>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

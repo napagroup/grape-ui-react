@@ -72,6 +72,32 @@ exports[`List Component should return a List object with font-style: italic 1`] 
 </ul>
 `;
 
+exports[`List Specific Styling should return an inline List object 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+  padding-left: 0;
+}
+
+.c0 > li {
+  display: inline-block;
+}
+
+.c0 > li:not(:last-child) {
+  margin-right: calc(1rem / 2);
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
 exports[`List Specific Styling should return an unstyled List object 1`] = `
 .c0 {
   font-size: calc(1rem * 1);
@@ -81,6 +107,9 @@ exports[`List Specific Styling should return an unstyled List object 1`] = `
   text-align: inherit;
   margin: 0 0 1rem;
   padding-left: 0;
+}
+
+.c0 > li {
   list-style: none;
 }
 
@@ -163,6 +192,32 @@ exports[`Numbered List Component should return a Numbered Numbered List object w
 </ol>
 `;
 
+exports[`Numbered List Specific Styling should return an inline Numbered List object 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+  padding-left: 0;
+}
+
+.c0 > li {
+  display: inline-block;
+}
+
+.c0 > li:not(:last-child) {
+  margin-right: calc(1rem / 2);
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
 exports[`Numbered List Specific Styling should return an unstyled Numbered List object 1`] = `
 .c0 {
   font-size: calc(1rem * 1);
@@ -172,6 +227,9 @@ exports[`Numbered List Specific Styling should return an unstyled Numbered List 
   text-align: inherit;
   margin: 0 0 1rem;
   padding-left: 0;
+}
+
+.c0 > li {
   list-style: none;
 }
 

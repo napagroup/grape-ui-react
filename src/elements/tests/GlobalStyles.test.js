@@ -1,7 +1,7 @@
-import { GlobalStyles } from '../GlobalStyles';
+import { GrapeHtmlStylesInjector } from '../GrapeHtmlStylesInjector';
 
 describe('GlobalStyles Component', () => {
   it('should return as undefined', () => {
-    expect(GlobalStyles).toBeUndefined();
+    expect(GrapeHtmlStylesInjector).toBeUndefined();
   });
 });
