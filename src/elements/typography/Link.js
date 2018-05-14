@@ -32,10 +32,10 @@ const linkFactory = props => {
   const baseStyles = textStylesBase(overrides);
   const css = `
     ${baseStyles}
+    text-decoration: none;
     &:hover,
     &:active {
       color: ${resolveColor(overrides.hoverColor)};
-      text-decoration: none;
     }
   `;
   return linkPrimitiveFactory(otherProps, css);
