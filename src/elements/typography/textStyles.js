@@ -1,5 +1,7 @@
-import { resolveColor } from '../../utils/componentHelpers';
-import * as fontSizeSchema from '../../assets/json/fontSize.json';
+import { resolveColor } from 'src/utils/componentHelpers';
+import { getGlobalStyles } from 'src/global-styles';
+
+const { fontSize: fontSizeSchema } = getGlobalStyles();
 
 const defaultTextStylesBase = {
   color: 'inherit',
