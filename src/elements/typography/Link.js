@@ -1,39 +1,63 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { textStylesBase } from './textStyles';
-import { getGlobalStyles } from 'src/global-styles';
+import { resolveColor } from 'src/utils/componentHelpers';
 import { Link as ReactRouterLink } from 'react-router-dom';
 
-const { colors: colorsSchema } = getGlobalStyles();
+const linkPrimitiveFactory = (props, css) => {
+  const { to, ...otherProps } = props;
+  let propsForPrimitive = null;
+  let Primitive = null;
+  if (to) {
+    Primitive = styled(ReactRouterLink)`${css}`;
+    propsForPrimitive = props;
+  } else {
+    Primitive = styled.a`${css}`;
+    propsForPrimitive = otherProps;
+  }
+  return <Primitive {...propsForPrimitive} />;
+};
 
 const linkFactory = props => {
   const {
-    tag: propsTag, ...otherProps
+    color, hoverColor, ...otherProps
   } = props;
 
-  const tag = propsTag || 'a';
   const overrides = {
     ...props,
-    color: colorsSchema.brandLink,
+    color: color || 'brandLink',
+    hoverColor: hoverColor || 'brandLinkHover',
   };
   const baseStyles = textStylesBase(overrides);
-  const Primitive = styled[tag]`
+  const css = `
     ${baseStyles}
     &:hover,
     &:active {
-      color: ${colorsSchema.brandLinkHover}
+      color: ${resolveColor(overrides.hoverColor)};
       text-decoration: none;
     }
   `;
-  return <Primitive {...otherProps} />;
+  return linkPrimitiveFactory(otherProps, css);
 };
 
 linkFactory.propTypes = {
-  tag: PropTypes.string,
+  color: PropTypes.string,
+  hoverColor: PropTypes.string,
 };
 
 linkFactory.defaultProps = {
-  tag: 'a',
+  color: '',
+  hoverColor: '',
 };
+
+linkPrimitiveFactory.propTypes = {
+  to: PropTypes.string,
+};
+
+linkPrimitiveFactory.defaultProps = {
+  to: '',
+};
+const Link = props => linkFactory(props);
 
 export { Link };

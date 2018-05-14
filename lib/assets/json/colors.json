@@ -34,7 +34,7 @@
     "dark": "hsl(186.8, 100%, 21.6%)",
     "light": "hsl(186.8, 100%, 61.6%)"
   },
-  "brankLinkHover": {
+  "brandLinkHover": {
     "base": "hsl(207, 90%, 54%)",
     "dark": "hsl(207, 90%, 34%)",
     "light": "hsl(207, 90%, 74%)"
