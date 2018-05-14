@@ -4,7 +4,7 @@
   "description": "A React component library built with styled-components.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src/ -d lib --ignore '**/*.json && babel src/assets --out-dir lib/assets --copy-files",
+    "build": "babel src/ -d lib --ignore **/*.json && babel src/assets --out-dir lib/assets --copy-files",
     "build:clean": "rimraf ./build",
     "lint": "npm run lint:js",
     "lint:js": "npm run lint:eslint -- .",
