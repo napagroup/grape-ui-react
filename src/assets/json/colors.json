@@ -29,6 +29,16 @@
     "dark": "hsl(0, 0%, 90%)",
     "light": "hsl(0, 0%, 100%)"
   },
+  "brandLink": {
+    "base": "hsl(186.8, 100%, 41.6%)",
+    "dark": "hsl(186.8, 100%, 21.6%)",
+    "light": "hsl(186.8, 100%, 61.6%)"
+  },
+  "brankLinkHover": {
+    "base": "hsl(207, 90%, 54%)",
+    "dark": "hsl(207, 90%, 34%)",
+    "light": "hsl(207, 90%, 74%)"
+  },
   "brandPrimary": {
     "base": "hsl(323.3, 84.6%, 28%)",
     "dark": "hsl(302.9, 33.9%, 23.7%)",
