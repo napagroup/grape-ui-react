@@ -7,6 +7,7 @@ const assertGlobalStyleInterface = globalStyles => {
   expect(globalStyles).toHaveProperty('fontSize');
   expect(globalStyles).toHaveProperty('shadow');
   expect(globalStyles).toHaveProperty('zIndex');
+  expect(globalStyles).toHaveProperty('grid');
 };
 
 describe('When using default global styles', () => {
