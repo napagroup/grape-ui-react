@@ -53,7 +53,8 @@
     },
     "modulePathIgnorePatterns": [
       "<rootDir>/lib",
-      "<rootDir>/src/internals"
+      "<rootDir>/src/internals",
+      "<rootDir>/src/elements/typography/index.js"
     ],
     "setupTestFrameworkScriptFile": "<rootDir>/src/internals/testing/test-bundler.js",
     "testRegex": "tests/.*\\.test\\.js$"

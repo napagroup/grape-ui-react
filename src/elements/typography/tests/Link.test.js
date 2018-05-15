@@ -10,7 +10,12 @@ describe('Link Component', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-  it('should return a react router tag', () => {
+  it('should return an anchor tag with an href, given the href attribute', () => {
+    const component = renderer.create(<Link href="./home">Lorem Ipsum</Link>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a react router tag, given a \'to\' attribute', () => {
     const component = renderer.create(<Router><Link to="./home">Lorem Ipsum</Link></Router>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
