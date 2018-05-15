@@ -55,13 +55,13 @@ exports[`Link Component should return an anchor tag with an href, given the href
   line-height: 1.5;
   color: hsl(186.8,100%,41.6%);
   text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 <a
