@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link Component should return a react router tag, given a 'to' attribute 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: hsl(186.8,100%,41.6%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+  href="./home"
+  onClick={[Function]}
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component should return an anchor tag 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: hsl(186.8,100%,41.6%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component should return an anchor tag with an href, given the href attribute 1`] = `
+.c0 {
+  font-size: calc(1rem * 1);
+  font-weight: inherit;
+  line-height: 1.5;
+  color: hsl(186.8,100%,41.6%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+  href="./home"
+>
+  Lorem Ipsum
+</a>
+`;
