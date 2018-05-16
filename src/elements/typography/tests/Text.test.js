@@ -34,4 +34,9 @@ describe('Text Component', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Text object with text-align: right', () => {
+    const component = renderer.create(<Text textAlign="right">Lorem Ipsum</Text>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

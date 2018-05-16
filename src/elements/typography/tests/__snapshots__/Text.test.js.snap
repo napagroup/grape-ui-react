@@ -128,3 +128,24 @@ exports[`Text Component should return a Text object with kerning: 1px 1`] = `
   Lorem Ipsum
 </span>
 `;
+
+exports[`Text Component should return a Text object with text-align: right 1`] = `
+.c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: calc(1rem * 1);
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: right;
+}
+
+<span
+  className="c0"
+>
+  Lorem Ipsum
+</span>
+`;

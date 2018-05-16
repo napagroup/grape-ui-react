@@ -1,10 +1,15 @@
 import { textStylesBase } from '../textStyles';
+import { getGlobalStyles } from 'src/global-styles';
+
+const { fontFamily: fontFamilySchema } = getGlobalStyles();
 
 const defaultParams = {
   color: 'inherit',
+  fontFamily: 'base',
   fontSizeBase: '1rem',
   fontWeight: 'inherit',
   italic: false,
+  kerning: 'inherit',
   lg: false,
   sm: false,
   textAlign: 'inherit',
@@ -12,13 +17,13 @@ const defaultParams = {
 };
 
 const renderTest = ({
-  fontSizeBase, italic, color, fontWeight, textAlign, scaleFactor,
+  fontFamily, fontSizeBase, kerning, italic, color, fontWeight, textAlign, scaleFactor,
 }) =>
   `
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: ${fontFamilySchema[fontFamily]};
     font-size: calc(${fontSizeBase} * ${scaleFactor});
     font-weight: ${fontWeight};
-    letter-spacing: inherit;
+    letter-spacing: ${kerning};
     line-height: 1.5;
     ${italic ? 'font-style: italic;' : ''}
     color: ${color};
@@ -45,12 +50,12 @@ describe('When resolving base text-styles', () => {
 });
 
 describe('When overriding text-styles', () => {
-  it('should override color style when passed in a valid color', () => {
-    const green = 'hsl(122.4, 39.4%, 49.2%)';
-    const actualTextStyles = textStylesBase({ color: 'green' });
+  it('should override the font-family', () => {
+    const fontFamily = 'sansSerif';
+    const actualTextStyles = textStylesBase({ fontFamily });
     expect(actualTextStyles).toEqual(renderTest({
       ...defaultParams,
-      color: green,
+      fontFamily,
     }));
   });
   it('should override font-size calc when passed in sm', () => {
@@ -65,6 +70,38 @@ describe('When overriding text-styles', () => {
     expect(actualTextStyles).toEqual(renderTest({
       ...defaultParams,
       scaleFactor: '1.2',
+    }));
+  });
+  it('should override the font-weight', () => {
+    const fontWeight = 'bolder';
+    const actualTextStyles = textStylesBase({ fontWeight });
+    expect(actualTextStyles).toEqual(renderTest({
+      ...defaultParams,
+      fontWeight,
+    }));
+  });
+  it('should override the letter-spacing when passed in kerning', () => {
+    const kerning = 'normal';
+    const actualTextStyles = textStylesBase({ kerning });
+    expect(actualTextStyles).toEqual(renderTest({
+      ...defaultParams,
+      kerning,
+    }));
+  });
+  it('should override color style when passed in a valid color', () => {
+    const green = 'hsl(122.4, 39.4%, 49.2%)';
+    const actualTextStyles = textStylesBase({ color: 'green' });
+    expect(actualTextStyles).toEqual(renderTest({
+      ...defaultParams,
+      color: green,
+    }));
+  });
+  it('should override the text alignment when passed in textAlign', () => {
+    const textAlign = 'right';
+    const actualTextStyles = textStylesBase({ textAlign });
+    expect(actualTextStyles).toEqual(renderTest({
+      ...defaultParams,
+      textAlign,
     }));
   });
 });
