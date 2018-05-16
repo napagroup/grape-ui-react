@@ -15,8 +15,10 @@ const renderTest = ({
   fontSizeBase, italic, color, fontWeight, textAlign, scaleFactor,
 }) =>
   `
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: calc(${fontSizeBase} * ${scaleFactor});
     font-weight: ${fontWeight};
+    letter-spacing: inherit;
     line-height: 1.5;
     ${italic ? 'font-style: italic;' : ''}
     color: ${color};

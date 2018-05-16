@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
 describe('ListItem Component', () => {
-  it('should return a ListItem object with font-style: base', () => {
+  it('should return a ListItem object with base styling', () => {
     const component = renderer.create(<ListItem>Lorem Ipsum</ListItem>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

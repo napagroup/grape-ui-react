@@ -1,13 +1,15 @@
 import { resolveColor } from 'src/utils/componentHelpers';
 import { getGlobalStyles } from 'src/global-styles';
 
-const { fontSize: fontSizeSchema } = getGlobalStyles();
+const { fontFamily: fontFamilySchema, fontSize: fontSizeSchema } = getGlobalStyles();
 
 const defaultTextStylesBase = {
   color: 'inherit',
+  fontFamily: fontFamilySchema.base,
   fontSizeBase: fontSizeSchema.baseFontSize,
   fontWeight: 'inherit',
   italic: false,
+  kerning: 'inherit',
   lg: false,
   sm: false,
   textAlign: 'inherit',
@@ -42,16 +44,25 @@ export const textStylesBase = (props = {}) => {
       ...defaultTextStylesBase,
       ...props,
       color: getColor(props),
+      fontFamily: fontFamilySchema[props.fontFamily] || defaultTextStylesBase.fontFamily,
     };
   }
 
   const scaleFactor = getScaleFactor(props);
   const {
-    fontSizeBase, italic, color, fontWeight, textAlign,
+    color,
+    fontFamily,
+    fontSizeBase,
+    fontWeight,
+    italic,
+    kerning,
+    textAlign,
   } = overrides;
   return `
+    font-family: ${fontFamily};
     font-size: calc(${fontSizeBase} * ${scaleFactor});
     font-weight: ${fontWeight};
+    letter-spacing: ${kerning};
     line-height: 1.5;
     ${italic ? 'font-style: italic;' : ''}
     color: ${color};

@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
 describe('Text Component', () => {
-  it('should return a Text object with font-style: base', () => {
+  it('should return a Text object with base styling', () => {
     const component = renderer.create(<Text>Lorem Ipsum</Text>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -21,6 +21,16 @@ describe('Text Component', () => {
   });
   it('should return a Text object with font-size: sm', () => {
     const component = renderer.create(<Text sm>Lorem Ipsum</Text>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Text object with font-family: serif', () => {
+    const component = renderer.create(<Text fontFamily="serif">Lorem Ipsum</Text>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Text object with kerning: 1px', () => {
+    const component = renderer.create(<Text kerning="1px">Lorem Ipsum</Text>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

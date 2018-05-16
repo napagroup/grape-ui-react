@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
 describe('List Component', () => {
-  it('should return a List object with font-style: base', () => {
+  it('should return a List object with base styling', () => {
     const component = renderer.create(<List>Lorem Ipsum</List>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -40,7 +40,7 @@ describe('List Specific Styling', () => {
 });
 
 describe('Numbered List Component', () => {
-  it('should return a Numbered List object with font-style: base', () => {
+  it('should return a Numbered List object with base styling', () => {
     const component = renderer.create(<List.ol>Lorem Ipsum</List.ol>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

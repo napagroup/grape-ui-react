@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
 describe('Paragraph Component', () => {
-  it('should return a Paragraph object with font-style: base', () => {
+  it('should return a Paragraph object with base styling', () => {
     const component = renderer.create(<Paragraph>Lorem Ipsum</Paragraph>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

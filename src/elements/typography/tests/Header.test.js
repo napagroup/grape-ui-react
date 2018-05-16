@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
 describe('Header.h1 Component', () => {
-  it('should return a Header object with a base font-style', () => {
+  it('should return a Header object with base styling', () => {
     const component = renderer.create(<Header>Lorem Ipsum</Header>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

@@ -2,8 +2,35 @@
 
 exports[`Paragraph Component should return a Paragraph object with a lead paragraph stlying 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: calc(1rem * 1.2);
   font-weight: 300;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+}
+
+<p
+  className="c0"
+>
+  Lorem Ipsum
+</p>
+`;
+
+exports[`Paragraph Component should return a Paragraph object with base styling 1`] = `
+.c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: calc(1rem * 1);
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
@@ -19,8 +46,13 @@ exports[`Paragraph Component should return a Paragraph object with a lead paragr
 
 exports[`Paragraph Component should return a Paragraph object with font-size: lg 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: calc(1rem * 1.2);
   font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
@@ -36,25 +68,13 @@ exports[`Paragraph Component should return a Paragraph object with font-size: lg
 
 exports[`Paragraph Component should return a Paragraph object with font-size: sm 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: calc(1rem * .8);
   font-weight: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  margin: 0 0 1rem;
-}
-
-<p
-  className="c0"
->
-  Lorem Ipsum
-</p>
-`;
-
-exports[`Paragraph Component should return a Paragraph object with font-style: base 1`] = `
-.c0 {
-  font-size: calc(1rem * 1);
-  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
@@ -70,8 +90,13 @@ exports[`Paragraph Component should return a Paragraph object with font-style: b
 
 exports[`Paragraph Component should return a Paragraph object with font-style: italic 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: calc(1rem * 1);
   font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   font-style: italic;
   color: inherit;
@@ -88,8 +113,13 @@ exports[`Paragraph Component should return a Paragraph object with font-style: i
 
 exports[`Paragraph Component should return a Paragraph object with font-weight: bold 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: calc(1rem * 1);
   font-weight: bold;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
@@ -106,8 +136,13 @@ exports[`Paragraph Component should return a Paragraph object with font-weight: 
 
 exports[`Paragraph Component should return a Paragraph object with text-align: right 1`] = `
 .c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: calc(1rem * 1);
   font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   color: inherit;
   text-align: right;
