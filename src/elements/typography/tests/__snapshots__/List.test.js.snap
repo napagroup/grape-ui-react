@@ -150,6 +150,54 @@ exports[`List Specific Styling should return an unstyled List object 1`] = `
 </ul>
 `;
 
+exports[`Numbered List Component should return a List object with Alpha lowercase 1`] = `
+.c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: calc(1rem * 1);
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+  type="a"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Component should return a List object with Alpha uppercase 1`] = `
+.c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: calc(1rem * 1);
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+  type="A"
+>
+  Lorem Ipsum
+</ol>
+`;
+
 exports[`Numbered List Component should return a Numbered List object with base styling 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -214,6 +262,54 @@ exports[`Numbered List Component should return a Numbered List object with font-
 
 <ol
   className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Component should return a Numbered List object with roman numerals lowercase 1`] = `
+.c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: calc(1rem * 1);
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+  type="i"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Component should return a Numbered List object with roman numerals uppercase 1`] = `
+.c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: calc(1rem * 1);
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+  type="I"
 >
   Lorem Ipsum
 </ol>

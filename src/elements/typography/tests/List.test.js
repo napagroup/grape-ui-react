@@ -60,6 +60,26 @@ describe('Numbered List Component', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Numbered List object with roman numerals uppercase', () => {
+    const component = renderer.create(<List.ol type="I">Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Numbered List object with roman numerals lowercase', () => {
+    const component = renderer.create(<List.ol type="i">Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List object with Alpha uppercase', () => {
+    const component = renderer.create(<List.ol type="A">Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List object with Alpha lowercase', () => {
+    const component = renderer.create(<List.ol type="a">Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
 
 describe('Numbered List Specific Styling', () => {
