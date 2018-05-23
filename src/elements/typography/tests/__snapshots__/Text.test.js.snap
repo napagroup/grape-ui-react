@@ -23,7 +23,7 @@ exports[`Text Component should return a Text object with base styling 1`] = `
 
 exports[`Text Component should return a Text object with font-family: serif 1`] = `
 .c0 {
-  font-family: Frutiger,"Frutiger Linotype",Univers,Calibri,"Gill Sans","Gill Sans MT","Myriad Pro",Myriad,"DejaVu Sans Condensed","Liberation Sans","Nimbus Sans L",Tahoma,Geneva,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"Apple Garamond","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;
   font-size: calc(100% * 1);
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
