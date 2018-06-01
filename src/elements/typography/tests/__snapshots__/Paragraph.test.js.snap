@@ -12,6 +12,8 @@ exports[`Paragraph Component should return a Paragraph object with a lead paragr
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
 }
 
@@ -34,6 +36,8 @@ exports[`Paragraph Component should return a Paragraph object with base styling 
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
 }
 
@@ -56,6 +60,8 @@ exports[`Paragraph Component should return a Paragraph object with font-size: lg
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
 }
 
@@ -78,6 +84,8 @@ exports[`Paragraph Component should return a Paragraph object with font-size: sm
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
 }
 
@@ -101,6 +109,8 @@ exports[`Paragraph Component should return a Paragraph object with font-style: i
   font-style: italic;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
 }
 
@@ -123,6 +133,8 @@ exports[`Paragraph Component should return a Paragraph object with font-weight: 
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
 }
 
@@ -146,6 +158,8 @@ exports[`Paragraph Component should return a Paragraph object with text-align: r
   line-height: 1.5;
   color: inherit;
   text-align: right;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
 }
 

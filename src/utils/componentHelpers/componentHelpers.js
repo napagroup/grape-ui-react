@@ -1,5 +1,6 @@
 import { getGlobalStyles } from 'src/global-styles';
 import { isKeyNestedProp, resolveToProperty } from 'src/utils/objectHelpers';
+import except from 'except';
 
 const { colors: colorSchema } = getGlobalStyles();
 const defaultValue = 'inherit';
@@ -12,4 +13,16 @@ const resolveColor = color => {
   return resolvedValue || defaultValue;
 };
 
-export { resolveColor };
+const passThrough = (component, props) => {
+  const omit = Object.keys(component.propTypes || {});
+  return except(props, omit);
+};
+const addPassthroughMethod = component => {
+  const refComponent = component;
+  refComponent.prototype.passThrough = () => {
+    const omit = Object.keys(component.propTypes || {});
+    return except(this.props, omit);
+  };
+};
+
+export { resolveColor, passThrough, addPassthroughMethod };

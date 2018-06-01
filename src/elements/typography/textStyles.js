@@ -3,7 +3,7 @@ import { getGlobalStyles } from 'src/global-styles';
 
 const { fontFamily: fontFamilySchema, fontSize: fontSizeSchema } = getGlobalStyles();
 
-const defaultTextStylesBase = {
+export const defaultTextStylesBase = {
   color: 'inherit',
   fontFamily: fontFamilySchema.base,
   fontSizeBase: fontSizeSchema.baseFontSize,
@@ -13,6 +13,7 @@ const defaultTextStylesBase = {
   lg: false,
   sm: false,
   textAlign: 'inherit',
+  textDecoration: 'inherit',
 };
 
 const getScaleFactor = props => {
@@ -57,6 +58,7 @@ export const textStylesBase = (props = {}) => {
     italic,
     kerning,
     textAlign,
+    textDecoration,
   } = overrides;
   return `
     font-family: ${fontFamily};
@@ -67,6 +69,7 @@ export const textStylesBase = (props = {}) => {
     ${italic ? 'font-style: italic;' : ''}
     color: ${color};
     text-align: ${textAlign};
+    text-decoration: ${textDecoration};
   `;
 };
 

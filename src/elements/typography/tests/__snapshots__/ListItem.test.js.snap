@@ -12,6 +12,8 @@ exports[`ListItem Component should return a ListItem object with base styling 1`
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin-bottom: calc(1rem / 4);
 }
 
@@ -34,6 +36,8 @@ exports[`ListItem Component should return a ListItem object with font-size: lg 1
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin-bottom: calc(1rem / 4);
 }
 
@@ -56,6 +60,8 @@ exports[`ListItem Component should return a ListItem object with font-size: sm 1
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin-bottom: calc(1rem / 4);
 }
 
@@ -79,6 +85,8 @@ exports[`ListItem Component should return a ListItem object with font-style: ita
   font-style: italic;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin-bottom: calc(1rem / 4);
 }
 

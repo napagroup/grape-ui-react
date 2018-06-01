@@ -61,6 +61,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "except": "^0.1.3",
     "polished": "^1.9.2",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",

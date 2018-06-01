@@ -12,6 +12,8 @@ exports[`List Component should return a List object with base styling 1`] = `
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -35,6 +37,8 @@ exports[`List Component should return a List object with font-size: lg 1`] = `
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -58,6 +62,8 @@ exports[`List Component should return a List object with font-size: sm 1`] = `
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -81,6 +87,8 @@ exports[`List Component should return a List object with font-style: italic 1`] 
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -104,6 +112,8 @@ exports[`List Specific Styling should return an inline List object 1`] = `
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 0;
 }
@@ -135,6 +145,8 @@ exports[`List Specific Styling should return an unstyled List object 1`] = `
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 0;
 }
@@ -162,6 +174,8 @@ exports[`Numbered List Component should return a List object with Alpha lowercas
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -186,6 +200,8 @@ exports[`Numbered List Component should return a List object with Alpha uppercas
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -210,6 +226,8 @@ exports[`Numbered List Component should return a Numbered List object with base 
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -233,6 +251,8 @@ exports[`Numbered List Component should return a Numbered List object with font-
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -256,6 +276,8 @@ exports[`Numbered List Component should return a Numbered List object with font-
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -279,6 +301,8 @@ exports[`Numbered List Component should return a Numbered List object with roman
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -303,6 +327,8 @@ exports[`Numbered List Component should return a Numbered List object with roman
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -327,6 +353,8 @@ exports[`Numbered List Component should return a Numbered Numbered List object w
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 2.5rem;
 }
@@ -350,6 +378,8 @@ exports[`Numbered List Specific Styling should return an inline Numbered List ob
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 0;
 }
@@ -381,6 +411,8 @@ exports[`Numbered List Specific Styling should return an unstyled Numbered List 
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   margin: 0 0 1rem;
   padding-left: 0;
 }

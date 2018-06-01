@@ -14,10 +14,11 @@ const defaultParams = {
   sm: false,
   textAlign: 'inherit',
   scaleFactor: '1',
+  textDecoration: 'inherit',
 };
 
 const renderTest = ({
-  fontFamily, fontSizeBase, kerning, italic, color, fontWeight, textAlign, scaleFactor,
+  fontFamily, fontSizeBase, kerning, italic, color, fontWeight, textAlign, scaleFactor, textDecoration,
 }) =>
   `
     font-family: ${fontFamilySchema[fontFamily]};
@@ -28,6 +29,7 @@ const renderTest = ({
     ${italic ? 'font-style: italic;' : ''}
     color: ${color};
     text-align: ${textAlign};
+    text-decoration: ${textDecoration};
   `;
 const defaultTextStyles = renderTest(defaultParams);
 describe('When resolving base text-styles', () => {
@@ -88,6 +90,13 @@ describe('When overriding text-styles', () => {
       kerning,
     }));
   });
+  it('should override the font-style to italic', () => {
+    const actualTextStyles = textStylesBase({ italic: true });
+    expect(actualTextStyles).toEqual(renderTest({
+      ...defaultParams,
+      italic: true,
+    }));
+  });
   it('should override color style when passed in a valid color', () => {
     const green = 'hsl(122.4, 39.4%, 49.2%)';
     const actualTextStyles = textStylesBase({ color: 'green' });
@@ -102,6 +111,14 @@ describe('When overriding text-styles', () => {
     expect(actualTextStyles).toEqual(renderTest({
       ...defaultParams,
       textAlign,
+    }));
+  });
+  it('should override the text decoration when passed in textDecoration', () => {
+    const textDecoration = 'underline';
+    const actualTextStyles = textStylesBase({ textDecoration });
+    expect(actualTextStyles).toEqual(renderTest({
+      ...defaultParams,
+      textDecoration,
     }));
   });
 });

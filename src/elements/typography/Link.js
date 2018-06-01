@@ -2,26 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { textStylesBase } from './textStyles';
-import { resolveColor } from 'src/utils/componentHelpers';
+import { resolveColor, passThrough } from 'src/utils/componentHelpers';
 import { Link as ReactRouterLink } from 'react-router-dom';
 
-const linkPrimitiveFactory = (props, css) => {
-  const { to, ...otherProps } = props;
-  let propsForPrimitive = null;
-  let Primitive = null;
-  if (to) {
-    Primitive = styled(ReactRouterLink)`${css}`;
-    propsForPrimitive = props;
-  } else {
-    Primitive = styled.a`${css}`;
-    propsForPrimitive = otherProps;
-  }
-  return <Primitive {...propsForPrimitive} />;
+const getLinkInstance = (props, css) => {
+  const { to } = props;
+  return to ? styled(ReactRouterLink)`${css}` : styled.a`${css}`;
 };
 
-const linkFactory = props => {
+const LinkFactory = props => {
   const {
-    color, hoverColor, ...otherProps
+    color, hoverColor, to,
   } = props;
 
   const overrides = {
@@ -38,26 +29,27 @@ const linkFactory = props => {
       color: ${resolveColor(overrides.hoverColor)};
     }
   `;
-  return linkPrimitiveFactory(otherProps, css);
+  const Primitive = getLinkInstance(props, css);
+  const passThroughProps = passThrough(LinkFactory, props);
+  if (to) {
+    // reintroduce to prop back; attribute is needed for React Router Link
+    passThroughProps.to = to;
+  }
+  return <Primitive {...passThroughProps} />;
 };
 
-linkFactory.propTypes = {
+LinkFactory.propTypes = {
   color: PropTypes.string,
   hoverColor: PropTypes.string,
-};
-
-linkFactory.defaultProps = {
-  color: '',
-  hoverColor: '',
-};
-
-linkPrimitiveFactory.propTypes = {
   to: PropTypes.string,
 };
 
-linkPrimitiveFactory.defaultProps = {
+LinkFactory.defaultProps = {
+  color: 'brandLink',
+  hoverColor: 'brandLinkHover',
   to: '',
 };
-const Link = props => linkFactory(props);
+
+const Link = props => LinkFactory(props);
 
 export { Link };

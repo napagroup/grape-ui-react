@@ -3,32 +3,14 @@ import { Header } from '../Header';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-describe('Header.h1 Component', () => {
+describe('Header.h1 Component base', () => {
   it('should return a Header object with base styling', () => {
     const component = renderer.create(<Header>Lorem Ipsum</Header>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-  it('should return a Header object with font-style: italic', () => {
-    const component = renderer.create(<Header italic>Lorem Ipsum</Header>);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-  it('should return a Header object with font-size: lg', () => {
-    const component = renderer.create(<Header lg>Lorem Ipsum</Header>);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-  it('should return a Header object with font-size: sm', () => {
-    const component = renderer.create(<Header sm>Lorem Ipsum</Header>);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-  it('should return a Header object with font-size: display', () => {
-    const component = renderer.create(<Header display>Lorem Ipsum</Header>);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+});
+describe('Header.h1 Component specified styles', () => {
   it('should return a Header object with a base color (implicit)', () => {
     const component = renderer.create(<Header color="green">Lorem Ipsum</Header>);
     const tree = component.toJSON();
@@ -49,9 +31,53 @@ describe('Header.h1 Component', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Header object with font-size: display', () => {
+    const component = renderer.create(<Header display>Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Header object with a specified font-family', () => {
+    const component = renderer.create(<Header fontFamily="monospace">Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Header object with a specified font-weight', () => {
+    const component = renderer.create(<Header fontFamily="monospace">Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Header object with font-style: italic', () => {
+    const component = renderer.create(<Header italic>Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Header object with font-size: lg', () => {
+    const component = renderer.create(<Header lg>Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Header object with font-size: sm', () => {
+    const component = renderer.create(<Header sm>Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Header object with a specified kerning', () => {
+    const component = renderer.create(<Header kerning="2px">Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Header object with a specified text-align', () => {
+    const component = renderer.create(<Header textAlign="right">Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Header object with a specified text-decoration', () => {
+    const component = renderer.create(<Header textDecoration="underline">Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
-
-describe('Header Elements Component', () => {
+describe('Header Element sizes', () => {
   it('should return a Header h1 object', () => {
     const component = renderer.create(<Header.h1>Lorem Ipsum</Header.h1>);
     const tree = component.toJSON();
