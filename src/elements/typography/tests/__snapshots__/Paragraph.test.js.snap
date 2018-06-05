@@ -3,7 +3,7 @@
 exports[`Paragraph Component should return a Paragraph object with a lead paragraph stlying 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: calc(1rem * 1.2);
+  font-size: 1.2rem;
   font-weight: 300;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -27,7 +27,7 @@ exports[`Paragraph Component should return a Paragraph object with a lead paragr
 exports[`Paragraph Component should return a Paragraph object with base styling 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: calc(1rem * 1);
+  font-size: 1rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -51,7 +51,7 @@ exports[`Paragraph Component should return a Paragraph object with base styling 
 exports[`Paragraph Component should return a Paragraph object with font-size: lg 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: calc(1rem * 1.2);
+  font-size: 1.2rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -75,7 +75,7 @@ exports[`Paragraph Component should return a Paragraph object with font-size: lg
 exports[`Paragraph Component should return a Paragraph object with font-size: sm 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: calc(1rem * .8);
+  font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -99,7 +99,7 @@ exports[`Paragraph Component should return a Paragraph object with font-size: sm
 exports[`Paragraph Component should return a Paragraph object with font-style: italic 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: calc(1rem * 1);
+  font-size: 1rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -124,7 +124,7 @@ exports[`Paragraph Component should return a Paragraph object with font-style: i
 exports[`Paragraph Component should return a Paragraph object with font-weight: bold 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: calc(1rem * 1);
+  font-size: 1rem;
   font-weight: bold;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -149,7 +149,7 @@ exports[`Paragraph Component should return a Paragraph object with font-weight: 
 exports[`Paragraph Component should return a Paragraph object with text-align: right 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: calc(1rem * 1);
+  font-size: 1rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;

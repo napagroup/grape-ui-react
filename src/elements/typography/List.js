@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { textStylesBase } from './textStyles';
 import { getGlobalStyles } from 'src/global-styles';
+import { getScaledSize } from './utils';
 
 const { grid: gridSchema } = getGlobalStyles();
 
@@ -11,7 +12,7 @@ const getInLineStyles = inline => {
     > li {
       display: inline-block;
       &:not(:last-child) {
-        margin-right: calc(${gridSchema.gutter} / 2);
+        margin-right: ${getScaledSize(gridSchema.gutter, 0.5)};
       }
     }
   `;

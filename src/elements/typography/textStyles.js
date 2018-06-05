@@ -1,5 +1,6 @@
 import { resolveColor } from 'src/utils/componentHelpers';
 import { getGlobalStyles } from 'src/global-styles';
+import { getScaledFontSize } from './utils';
 
 const { fontFamily: fontFamilySchema, fontSize: fontSizeSchema } = getGlobalStyles();
 
@@ -62,7 +63,7 @@ export const textStylesBase = (props = {}) => {
   } = overrides;
   return `
     font-family: ${fontFamily};
-    font-size: calc(${fontSizeBase} * ${scaleFactor});
+    font-size: ${getScaledFontSize(fontSizeBase, scaleFactor)};
     font-weight: ${fontWeight};
     letter-spacing: ${kerning};
     line-height: 1.5;

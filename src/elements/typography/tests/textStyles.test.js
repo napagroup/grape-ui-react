@@ -1,5 +1,6 @@
 import { textStylesBase } from '../textStyles';
 import { getGlobalStyles } from 'src/global-styles';
+import { getScaledFontSize } from '../utils';
 
 const { fontFamily: fontFamilySchema } = getGlobalStyles();
 
@@ -22,7 +23,7 @@ const renderTest = ({
 }) =>
   `
     font-family: ${fontFamilySchema[fontFamily]};
-    font-size: calc(${fontSizeBase} * ${scaleFactor});
+    font-size: ${getScaledFontSize(fontSizeBase, scaleFactor)};
     font-weight: ${fontWeight};
     letter-spacing: ${kerning};
     line-height: 1.5;
