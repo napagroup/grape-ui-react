@@ -48,8 +48,8 @@ describe('Typography Utils', () => {
 
   describe('Given calculating scaled font size', () => {
     describe('When size or scaleFactor is null or undefined', () => {
-      it('should return default font size of 12px', () => {
-        const expectedSize = '12px';
+      it('should return default font size of 1rem', () => {
+        const expectedSize = '1rem';
         const scaledSize = getScaledFontSize();
         expect(scaledSize).toEqual(expectedSize);
       });

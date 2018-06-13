@@ -2,8 +2,8 @@
 
 exports[`List Component should return a List object with base styling 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -27,7 +27,7 @@ exports[`List Component should return a List object with base styling 1`] = `
 
 exports[`List Component should return a List object with font-size: lg 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 1.2rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -52,7 +52,7 @@ exports[`List Component should return a List object with font-size: lg 1`] = `
 
 exports[`List Component should return a List object with font-size: sm 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -77,8 +77,8 @@ exports[`List Component should return a List object with font-size: sm 1`] = `
 
 exports[`List Component should return a List object with font-style: italic 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -103,8 +103,8 @@ exports[`List Component should return a List object with font-style: italic 1`] 
 
 exports[`List Specific Styling should return a List object with a base color (implicit) 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -128,8 +128,8 @@ exports[`List Specific Styling should return a List object with a base color (im
 
 exports[`List Specific Styling should return a List object with a base color 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -153,8 +153,8 @@ exports[`List Specific Styling should return a List object with a base color 1`]
 
 exports[`List Specific Styling should return a List object with a dark color 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -178,8 +178,8 @@ exports[`List Specific Styling should return a List object with a dark color 1`]
 
 exports[`List Specific Styling should return a List object with a light color 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -204,7 +204,7 @@ exports[`List Specific Styling should return a List object with a light color 1`
 exports[`List Specific Styling should return a List object with a specified font-family 1`] = `
 .c0 {
   font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
-  font-size: 1rem;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -228,8 +228,8 @@ exports[`List Specific Styling should return a List object with a specified font
 
 exports[`List Specific Styling should return a List object with a specified font-weight 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: bold;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -253,8 +253,8 @@ exports[`List Specific Styling should return a List object with a specified font
 
 exports[`List Specific Styling should return a List object with a specified kerning 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: 2px;
   -moz-letter-spacing: 2px;
@@ -278,8 +278,8 @@ exports[`List Specific Styling should return a List object with a specified kern
 
 exports[`List Specific Styling should return a List object with a specified text-align 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -303,8 +303,8 @@ exports[`List Specific Styling should return a List object with a specified text
 
 exports[`List Specific Styling should return a List object with a specified text-decoration 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -328,7 +328,7 @@ exports[`List Specific Styling should return a List object with a specified text
 
 exports[`List Specific Styling should return a List object with font-size: sm 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -353,8 +353,8 @@ exports[`List Specific Styling should return a List object with font-size: sm 1`
 
 exports[`List Specific Styling should return an inline List object 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -386,8 +386,8 @@ exports[`List Specific Styling should return an inline List object 1`] = `
 
 exports[`List Specific Styling should return an unstyled List object 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -415,8 +415,8 @@ exports[`List Specific Styling should return an unstyled List object 1`] = `
 
 exports[`Numbered List Component should return a List object with Alpha lowercase 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -441,8 +441,8 @@ exports[`Numbered List Component should return a List object with Alpha lowercas
 
 exports[`Numbered List Component should return a List object with Alpha uppercase 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -467,8 +467,8 @@ exports[`Numbered List Component should return a List object with Alpha uppercas
 
 exports[`Numbered List Component should return a Numbered List object with base styling 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -492,7 +492,7 @@ exports[`Numbered List Component should return a Numbered List object with base 
 
 exports[`Numbered List Component should return a Numbered List object with font-size: sm 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -517,8 +517,8 @@ exports[`Numbered List Component should return a Numbered List object with font-
 
 exports[`Numbered List Component should return a Numbered List object with font-style: italic 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -543,8 +543,8 @@ exports[`Numbered List Component should return a Numbered List object with font-
 
 exports[`Numbered List Component should return a Numbered List object with roman numerals lowercase 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -569,8 +569,8 @@ exports[`Numbered List Component should return a Numbered List object with roman
 
 exports[`Numbered List Component should return a Numbered List object with roman numerals uppercase 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -595,7 +595,7 @@ exports[`Numbered List Component should return a Numbered List object with roman
 
 exports[`Numbered List Component should return a Numbered Numbered List object with font-size: lg 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 1.2rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -620,8 +620,8 @@ exports[`Numbered List Component should return a Numbered Numbered List object w
 
 exports[`Numbered List Specific Styling should return a List.ol object with a base color (implicit) 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -645,8 +645,8 @@ exports[`Numbered List Specific Styling should return a List.ol object with a ba
 
 exports[`Numbered List Specific Styling should return a List.ol object with a base color 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -670,8 +670,8 @@ exports[`Numbered List Specific Styling should return a List.ol object with a ba
 
 exports[`Numbered List Specific Styling should return a List.ol object with a dark color 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -695,8 +695,8 @@ exports[`Numbered List Specific Styling should return a List.ol object with a da
 
 exports[`Numbered List Specific Styling should return a List.ol object with a light color 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -721,7 +721,7 @@ exports[`Numbered List Specific Styling should return a List.ol object with a li
 exports[`Numbered List Specific Styling should return a List.ol object with a specified font-family 1`] = `
 .c0 {
   font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
-  font-size: 1rem;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -745,8 +745,8 @@ exports[`Numbered List Specific Styling should return a List.ol object with a sp
 
 exports[`Numbered List Specific Styling should return a List.ol object with a specified font-weight 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: bold;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -770,8 +770,8 @@ exports[`Numbered List Specific Styling should return a List.ol object with a sp
 
 exports[`Numbered List Specific Styling should return a List.ol object with a specified kerning 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: 2px;
   -moz-letter-spacing: 2px;
@@ -795,8 +795,8 @@ exports[`Numbered List Specific Styling should return a List.ol object with a sp
 
 exports[`Numbered List Specific Styling should return a List.ol object with a specified text-align 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -820,8 +820,8 @@ exports[`Numbered List Specific Styling should return a List.ol object with a sp
 
 exports[`Numbered List Specific Styling should return a List.ol object with a specified text-decoration 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -845,7 +845,7 @@ exports[`Numbered List Specific Styling should return a List.ol object with a sp
 
 exports[`Numbered List Specific Styling should return a List.ol object with font-size: sm 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -870,8 +870,8 @@ exports[`Numbered List Specific Styling should return a List.ol object with font
 
 exports[`Numbered List Specific Styling should return an inline Numbered List object 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -903,8 +903,8 @@ exports[`Numbered List Specific Styling should return an inline Numbered List ob
 
 exports[`Numbered List Specific Styling should return an unstyled Numbered List object 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;

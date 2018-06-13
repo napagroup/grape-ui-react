@@ -2,7 +2,7 @@
 
 exports[`Header Element sizes should return a Header h1 object 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 2.5rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -26,7 +26,7 @@ exports[`Header Element sizes should return a Header h1 object 1`] = `
 
 exports[`Header Element sizes should return a Header h2 object 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 2rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -50,7 +50,7 @@ exports[`Header Element sizes should return a Header h2 object 1`] = `
 
 exports[`Header Element sizes should return a Header h3 object 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 1.75rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -74,7 +74,7 @@ exports[`Header Element sizes should return a Header h3 object 1`] = `
 
 exports[`Header Element sizes should return a Header h4 object 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 1.5rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -98,7 +98,7 @@ exports[`Header Element sizes should return a Header h4 object 1`] = `
 
 exports[`Header Element sizes should return a Header h5 object 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 1.25rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -122,7 +122,7 @@ exports[`Header Element sizes should return a Header h5 object 1`] = `
 
 exports[`Header Element sizes should return a Header h6 object 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 1rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -146,7 +146,7 @@ exports[`Header Element sizes should return a Header h6 object 1`] = `
 
 exports[`Header.h1 Component base should return a Header object with base styling 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 2.5rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -170,7 +170,7 @@ exports[`Header.h1 Component base should return a Header object with base stylin
 
 exports[`Header.h1 Component specified styles should return a Header object with a base color (implicit) 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 2.5rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -194,7 +194,7 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 exports[`Header.h1 Component specified styles should return a Header object with a base color 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 2.5rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -218,7 +218,7 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 exports[`Header.h1 Component specified styles should return a Header object with a dark color 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 2.5rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -242,7 +242,7 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 exports[`Header.h1 Component specified styles should return a Header object with a light color 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 2.5rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -290,7 +290,7 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 exports[`Header.h1 Component specified styles should return a Header object with a specified font-weight 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 2.5rem;
   font-weight: bold;
   -webkit-letter-spacing: inherit;
@@ -314,7 +314,7 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 exports[`Header.h1 Component specified styles should return a Header object with a specified font-weight overriding the display font-weight 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 6rem;
   font-weight: bold;
   -webkit-letter-spacing: inherit;
@@ -338,7 +338,7 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 exports[`Header.h1 Component specified styles should return a Header object with a specified kerning 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 2.5rem;
   font-weight: inherit;
   -webkit-letter-spacing: 2px;
@@ -362,7 +362,7 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 exports[`Header.h1 Component specified styles should return a Header object with a specified text-align 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 2.5rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -386,7 +386,7 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 exports[`Header.h1 Component specified styles should return a Header object with a specified text-decoration 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 2.5rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -410,7 +410,7 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 exports[`Header.h1 Component specified styles should return a Header object with font-size: display 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 6rem;
   font-weight: 300;
   -webkit-letter-spacing: inherit;
@@ -434,7 +434,7 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 exports[`Header.h1 Component specified styles should return a Header object with font-size: lg 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 3rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -458,7 +458,7 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 exports[`Header.h1 Component specified styles should return a Header object with font-size: sm 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 2rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -482,7 +482,7 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 exports[`Header.h1 Component specified styles should return a Header object with font-style: italic 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 2.5rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
