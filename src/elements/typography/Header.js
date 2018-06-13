@@ -10,14 +10,14 @@ const { fontSize: fontSizeSchema, grid: gridSchema } = getGlobalStyles();
 
 const HeaderFactory = props => {
   const {
-    display, tag: propsTag,
+    display, fontWeight, tag: propsTag,
   } = props;
 
   const tag = propsTag || 'h1';
   const overrides = {
     ...props,
     fontSizeBase: display ? fontSizeSchema.display[tag] : fontSizeSchema[tag],
-    fontWeight: display ? '300' : defaultTextStylesBase.fontWeight,
+    fontWeight: fontWeight || (display ? '300' : defaultTextStylesBase.fontWeight),
   };
   const baseStyles = textStylesBase(overrides);
   const Primitive = styled[tag]`

@@ -37,6 +37,56 @@ describe('List Specific Styling', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a List object with a base color (implicit)', () => {
+    const component = renderer.create(<List color="green">Lorem Ipsum</List>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List object with a base color', () => {
+    const component = renderer.create(<List color="green.base">Lorem Ipsum</List>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List object with a light color', () => {
+    const component = renderer.create(<List color="green.light">Lorem Ipsum</List>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List object with a dark color', () => {
+    const component = renderer.create(<List color="green.dark">Lorem Ipsum</List>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List object with a specified font-family', () => {
+    const component = renderer.create(<List fontFamily="monospace">Lorem Ipsum</List>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List object with a specified font-weight', () => {
+    const component = renderer.create(<List fontWeight="bold">Lorem Ipsum</List>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List object with font-size: sm', () => {
+    const component = renderer.create(<List sm>Lorem Ipsum</List>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List object with a specified kerning', () => {
+    const component = renderer.create(<List kerning="2px">Lorem Ipsum</List>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List object with a specified text-align', () => {
+    const component = renderer.create(<List textAlign="right">Lorem Ipsum</List>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List object with a specified text-decoration', () => {
+    const component = renderer.create(<List textDecoration="underline">Lorem Ipsum</List>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
 
 describe('Numbered List Component', () => {
@@ -93,4 +143,55 @@ describe('Numbered List Specific Styling', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a List.ol object with a base color (implicit)', () => {
+    const component = renderer.create(<List.ol color="green">Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List.ol object with a base color', () => {
+    const component = renderer.create(<List.ol color="green.base">Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List.ol object with a light color', () => {
+    const component = renderer.create(<List.ol color="green.light">Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List.ol object with a dark color', () => {
+    const component = renderer.create(<List.ol color="green.dark">Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List.ol object with a specified font-family', () => {
+    const component = renderer.create(<List.ol fontFamily="monospace">Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List.ol object with a specified font-weight', () => {
+    const component = renderer.create(<List.ol fontWeight="bold">Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List.ol object with font-size: sm', () => {
+    const component = renderer.create(<List.ol sm>Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List.ol object with a specified kerning', () => {
+    const component = renderer.create(<List.ol kerning="2px">Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List.ol object with a specified text-align', () => {
+    const component = renderer.create(<List.ol textAlign="right">Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a List.ol object with a specified text-decoration', () => {
+    const component = renderer.create(<List.ol textDecoration="underline">Lorem Ipsum</List.ol>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
+

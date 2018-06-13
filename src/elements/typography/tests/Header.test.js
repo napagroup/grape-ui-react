@@ -42,7 +42,12 @@ describe('Header.h1 Component specified styles', () => {
     expect(tree).toMatchSnapshot();
   });
   it('should return a Header object with a specified font-weight', () => {
-    const component = renderer.create(<Header fontFamily="monospace">Lorem Ipsum</Header>);
+    const component = renderer.create(<Header fontWeight="bold">Lorem Ipsum</Header>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('should return a Header object with a specified font-weight overriding the display font-weight', () => {
+    const component = renderer.create(<Header display fontWeight="bold">Lorem Ipsum</Header>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

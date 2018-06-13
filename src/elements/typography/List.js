@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { textStylesBase } from './textStyles';
+import { defaultTextStylesBase, textStylesBase } from './textStyles';
 import { getGlobalStyles } from 'src/global-styles';
 import { getScaledSize } from './utils';
+import { passThrough } from '../../utils/componentHelpers';
 
 const { grid: gridSchema } = getGlobalStyles();
 
@@ -19,37 +20,54 @@ const getInLineStyles = inline => {
   return `${inline ? inlineStyles : ''}`;
 };
 
-const listFactory = props => {
+const ListFactory = props => {
   const {
-    inline, unstyled, tag: listTag, ...otherProps
+    inline, unstyled, tag: listTag,
   } = props;
   const tag = listTag || 'ul';
-
   const ProtoList = styled[tag]`
-    ${textStylesBase()}
+    ${textStylesBase(props)}
     margin: 0 0 ${gridSchema.gutter};
     padding-left:  ${(unstyled || inline) ? '0' : '2.5rem'};
     ${unstyled ? '> li { list-style: none; }' : ''}
     ${getInLineStyles(inline)}
   `;
-  return <ProtoList {...otherProps} />;
+  return <ProtoList {...passThrough(ListFactory, props)} />;
 };
 
-listFactory.propTypes = {
+ListFactory.propTypes = {
+  color: PropTypes.string,
+  display: PropTypes.bool,
+  fontFamily: PropTypes.string,
+  fontWeight: PropTypes.string,
   inline: PropTypes.bool,
+  kerning: PropTypes.string,
+  lg: PropTypes.bool,
+  sm: PropTypes.bool,
   tag: PropTypes.string,
+  textAlign: PropTypes.string,
+  textDecoration: PropTypes.string,
   unstyled: PropTypes.bool,
 };
 
-listFactory.defaultProps = {
+ListFactory.defaultProps = {
+  color: defaultTextStylesBase.color,
+  display: false,
+  fontFamily: defaultTextStylesBase.fontFamily,
+  fontWeight: defaultTextStylesBase.fontWeight,
   inline: false,
+  kerning: defaultTextStylesBase.kerning,
+  lg: defaultTextStylesBase.lg,
+  sm: defaultTextStylesBase.sm,
   tag: 'ul',
+  textAlign: defaultTextStylesBase.textAlign,
+  textDecoration: defaultTextStylesBase.textDecoration,
   unstyled: false,
 };
 
-const List = props => listFactory(props);
+const List = props => ListFactory(props);
 
 List.ul = List;
-List.ol = props => listFactory({ ...props, tag: 'ol' });
+List.ol = props => ListFactory({ ...props, tag: 'ol' });
 
 export { List };

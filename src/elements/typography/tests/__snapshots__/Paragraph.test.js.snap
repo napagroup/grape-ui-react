@@ -1,30 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Paragraph Component should return a Paragraph object with a lead paragraph stlying 1`] = `
-.c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 1.2rem;
-  font-weight: 300;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  margin: 0 0 1rem;
-}
-
-<p
-  className="c0"
->
-  Lorem Ipsum
-</p>
-`;
-
-exports[`Paragraph Component should return a Paragraph object with base styling 1`] = `
+exports[`Paragraph Component base should return a Paragraph object with base styling 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1rem;
@@ -48,7 +24,103 @@ exports[`Paragraph Component should return a Paragraph object with base styling 
 </p>
 `;
 
-exports[`Paragraph Component should return a Paragraph object with font-size: lg 1`] = `
+exports[`Paragraph Component specified styles should return a Paragraph object with a bold font-weight 1`] = `
+.c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: bold;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<p
+  className="c0"
+>
+  Lorem Ipsum
+</p>
+`;
+
+exports[`Paragraph Component specified styles should return a Paragraph object with a green color 1`] = `
+.c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,49.2%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<p
+  className="c0"
+>
+  Lorem Ipsum
+</p>
+`;
+
+exports[`Paragraph Component specified styles should return a Paragraph object with a lead paragraph stlying 1`] = `
+.c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1.2rem;
+  font-weight: 300;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<p
+  className="c0"
+>
+  Lorem Ipsum
+</p>
+`;
+
+exports[`Paragraph Component specified styles should return a Paragraph object with a serif font-family 1`] = `
+.c0 {
+  font-family: "Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"Apple Garamond","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;
+  font-size: 1rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<p
+  className="c0"
+>
+  Lorem Ipsum
+</p>
+`;
+
+exports[`Paragraph Component specified styles should return a Paragraph object with font-size: lg 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
@@ -72,7 +144,7 @@ exports[`Paragraph Component should return a Paragraph object with font-size: lg
 </p>
 `;
 
-exports[`Paragraph Component should return a Paragraph object with font-size: sm 1`] = `
+exports[`Paragraph Component specified styles should return a Paragraph object with font-size: sm 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
@@ -96,7 +168,7 @@ exports[`Paragraph Component should return a Paragraph object with font-size: sm
 </p>
 `;
 
-exports[`Paragraph Component should return a Paragraph object with font-style: italic 1`] = `
+exports[`Paragraph Component specified styles should return a Paragraph object with font-style: italic 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1rem;
@@ -121,15 +193,15 @@ exports[`Paragraph Component should return a Paragraph object with font-style: i
 </p>
 `;
 
-exports[`Paragraph Component should return a Paragraph object with font-weight: bold 1`] = `
+exports[`Paragraph Component specified styles should return a Paragraph object with specified kerning 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1rem;
-  font-weight: bold;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
   line-height: 1.5;
   color: inherit;
   text-align: inherit;
@@ -140,13 +212,12 @@ exports[`Paragraph Component should return a Paragraph object with font-weight: 
 
 <p
   className="c0"
-  fontWeight="bold"
 >
   Lorem Ipsum
 </p>
 `;
 
-exports[`Paragraph Component should return a Paragraph object with text-align: right 1`] = `
+exports[`Paragraph Component specified styles should return a Paragraph object with text-align: right 1`] = `
 .c0 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1rem;
@@ -160,6 +231,30 @@ exports[`Paragraph Component should return a Paragraph object with text-align: r
   text-align: right;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<p
+  className="c0"
+>
+  Lorem Ipsum
+</p>
+`;
+
+exports[`Paragraph Component specified styles should return a Paragraph object with text-decoration: underline 1`] = `
+.c0 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
   margin: 0 0 1rem;
 }
 
