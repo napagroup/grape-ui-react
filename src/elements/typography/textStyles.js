@@ -65,7 +65,7 @@ export const textStylesBase = (props = {}) => {
   } = overrides;
   return `
     font-family: ${fontFamily};
-    font-size: ${scaleFactor ? getScaledFontSize(fontSizeBase, scaleFactor) : 'inherit'};
+    font-size: ${scaleFactor ? getScaledFontSize(fontSizeBase, scaleFactor) : fontSizeBase};
     font-weight: ${fontWeight};
     letter-spacing: ${kerning};
     line-height: 1.5;
