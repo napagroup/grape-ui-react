@@ -6,8 +6,8 @@ const { fontFamily: fontFamilySchema } = getGlobalStyles();
 
 const defaultParams = {
   color: 'inherit',
-  fontFamily: 'base',
-  fontSizeBase: '1rem',
+  fontFamily: 'inherit',
+  fontSizeBase: 'inherit',
   fontWeight: 'inherit',
   italic: false,
   kerning: 'inherit',
@@ -23,7 +23,7 @@ const renderTest = ({
 }) =>
   `
     font-family: ${fontFamilySchema[fontFamily]};
-    font-size: ${getScaledFontSize(fontSizeBase, scaleFactor)};
+    font-size: ${scaleFactor ? getScaledFontSize(fontSizeBase, scaleFactor) : 'inherit'};
     font-weight: ${fontWeight};
     letter-spacing: ${kerning};
     line-height: 1.5;
