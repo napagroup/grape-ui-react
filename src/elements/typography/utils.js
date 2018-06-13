@@ -22,4 +22,4 @@ export const getScaledSize = (size, scaleFactor, defaultSize, defaultUnit) => {
   return (floatSize * floatScaleFactor).toString() + unit;
 };
 
-export const getScaledFontSize = (size, scaleFactor) => getScaledSize(size, scaleFactor, 12, 'px');
+export const getScaledFontSize = (size, scaleFactor) => getScaledSize(size, scaleFactor, 1, 'rem');
