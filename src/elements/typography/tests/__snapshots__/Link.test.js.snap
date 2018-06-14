@@ -1,0 +1,425 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link Component base should return a react router tag, given a 'to' attribute 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(186.8,100%,41.6%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+  href="/home"
+  onClick={[Function]}
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component base should return an anchor tag 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(186.8,100%,41.6%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component base should return an anchor tag with an href, given the href attribute 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(186.8,100%,41.6%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+  href="./home"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component specified styles should return a Link object with a base color (implicit) 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,49.2%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component specified styles should return a Link object with a base color 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,49.2%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component specified styles should return a Link object with a dark color 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,29.2%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component specified styles should return a Link object with a light color 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,69.2%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component specified styles should return a Link object with a specified font-family 1`] = `
+.c0 {
+  font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(186.8,100%,41.6%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component specified styles should return a Link object with a specified font-weight 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(186.8,100%,41.6%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component specified styles should return a Link object with a specified kerning 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: hsl(186.8,100%,41.6%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component specified styles should return a Link object with a specified text-align 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(186.8,100%,41.6%);
+  text-align: right;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component specified styles should return a Link object with a specified text-decoration 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(186.8,100%,41.6%);
+  text-align: inherit;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component specified styles should return a Link object with font-size: lg 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(186.8,100%,41.6%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component specified styles should return a Link object with font-size: sm 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(186.8,100%,41.6%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link Component specified styles should return a Link object with font-style: italic 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  font-style: italic;
+  color: hsl(186.8,100%,41.6%);
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;

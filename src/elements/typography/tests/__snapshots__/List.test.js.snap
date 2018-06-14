@@ -1,0 +1,931 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Component should return a List object with base styling 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Component should return a List object with font-size: lg 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Component should return a List object with font-size: sm 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Component should return a List object with font-style: italic 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  font-style: italic;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Specific Styling should return a List object with a base color (implicit) 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,49.2%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Specific Styling should return a List object with a base color 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,49.2%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Specific Styling should return a List object with a dark color 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,29.2%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Specific Styling should return a List object with a light color 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,69.2%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Specific Styling should return a List object with a specified font-family 1`] = `
+.c0 {
+  font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Specific Styling should return a List object with a specified font-weight 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Specific Styling should return a List object with a specified kerning 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Specific Styling should return a List object with a specified text-align 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: right;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Specific Styling should return a List object with a specified text-decoration 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Specific Styling should return a List object with font-size: sm 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Specific Styling should return an inline List object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 0;
+}
+
+.c0 > li {
+  display: inline-block;
+}
+
+.c0 > li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`List Specific Styling should return an unstyled List object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 0;
+}
+
+.c0 > li {
+  list-style: none;
+}
+
+<ul
+  className="c0"
+>
+  Lorem Ipsum
+</ul>
+`;
+
+exports[`Numbered List Component should return a List object with Alpha lowercase 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+  type="a"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Component should return a List object with Alpha uppercase 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+  type="A"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Component should return a Numbered List object with base styling 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Component should return a Numbered List object with font-size: sm 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Component should return a Numbered List object with font-style: italic 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  font-style: italic;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Component should return a Numbered List object with roman numerals lowercase 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+  type="i"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Component should return a Numbered List object with roman numerals uppercase 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+  type="I"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Component should return a Numbered Numbered List object with font-size: lg 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Specific Styling should return a List.ol object with a base color (implicit) 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,49.2%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Specific Styling should return a List.ol object with a base color 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,49.2%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Specific Styling should return a List.ol object with a dark color 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,29.2%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Specific Styling should return a List.ol object with a light color 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,69.2%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Specific Styling should return a List.ol object with a specified font-family 1`] = `
+.c0 {
+  font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Specific Styling should return a List.ol object with a specified font-weight 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Specific Styling should return a List.ol object with a specified kerning 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Specific Styling should return a List.ol object with a specified text-align 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: right;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Specific Styling should return a List.ol object with a specified text-decoration 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Specific Styling should return a List.ol object with font-size: sm 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 2.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Specific Styling should return an inline Numbered List object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 0;
+}
+
+.c0 > li {
+  display: inline-block;
+}
+
+.c0 > li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
+
+exports[`Numbered List Specific Styling should return an unstyled Numbered List object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+  padding-left: 0;
+}
+
+.c0 > li {
+  list-style: none;
+}
+
+<ol
+  className="c0"
+>
+  Lorem Ipsum
+</ol>
+`;
