@@ -1,0 +1,506 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Element sizes should return a Header h1 object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header Element sizes should return a Header h2 object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h2
+  className="c0"
+>
+  Lorem Ipsum
+</h2>
+`;
+
+exports[`Header Element sizes should return a Header h3 object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 1.75rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h3
+  className="c0"
+>
+  Lorem Ipsum
+</h3>
+`;
+
+exports[`Header Element sizes should return a Header h4 object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h4
+  className="c0"
+>
+  Lorem Ipsum
+</h4>
+`;
+
+exports[`Header Element sizes should return a Header h5 object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h5
+  className="c0"
+>
+  Lorem Ipsum
+</h5>
+`;
+
+exports[`Header Element sizes should return a Header h6 object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h6
+  className="c0"
+>
+  Lorem Ipsum
+</h6>
+`;
+
+exports[`Header.h1 Component base should return a Header object with base styling 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with a base color (implicit) 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,49.2%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with a base color 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,49.2%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with a dark color 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,29.2%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with a light color 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(122.4,39.4%,69.2%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with a specified font-family 1`] = `
+.c0 {
+  font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+  font-size: 2.5rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with a specified font-weight 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: bold;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with a specified font-weight overriding the display font-weight 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 6rem;
+  font-weight: bold;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with a specified kerning 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: 2px;
+  -moz-letter-spacing: 2px;
+  -ms-letter-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with a specified text-align 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: right;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with a specified text-decoration 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with font-size: display 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 6rem;
+  font-weight: 300;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with font-size: lg 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 3rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with font-size: sm 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
+exports[`Header.h1 Component specified styles should return a Header object with font-style: italic 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  font-style: italic;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 0 0 1rem;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
