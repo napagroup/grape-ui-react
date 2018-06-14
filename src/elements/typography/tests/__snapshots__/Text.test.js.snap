@@ -2,7 +2,7 @@
 
 exports[`Text Component base should return a Text object with base styling 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 100%;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -25,7 +25,7 @@ exports[`Text Component base should return a Text object with base styling 1`] =
 
 exports[`Text Component specified styles should return a Text object with a specified color 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 100%;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -48,7 +48,7 @@ exports[`Text Component specified styles should return a Text object with a spec
 
 exports[`Text Component specified styles should return a Text object with a specified text-align 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 100%;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -71,7 +71,7 @@ exports[`Text Component specified styles should return a Text object with a spec
 
 exports[`Text Component specified styles should return a Text object with a specified text-decoration 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 100%;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -94,7 +94,7 @@ exports[`Text Component specified styles should return a Text object with a spec
 
 exports[`Text Component specified styles should return a Text object with font-size: lg 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 120%;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -117,7 +117,7 @@ exports[`Text Component specified styles should return a Text object with font-s
 
 exports[`Text Component specified styles should return a Text object with font-size: sm 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 80%;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -140,7 +140,7 @@ exports[`Text Component specified styles should return a Text object with font-s
 
 exports[`Text Component specified styles should return a Text object with font-style: italic 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 100%;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -187,7 +187,7 @@ exports[`Text Component specified styles should return a Text object with specif
 
 exports[`Text Component specified styles should return a Text object with specified font-weight 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 100%;
   font-weight: bolder;
   -webkit-letter-spacing: inherit;
@@ -210,7 +210,7 @@ exports[`Text Component specified styles should return a Text object with specif
 
 exports[`Text Component specified styles should return a Text object with specified kerning 1`] = `
 .c0 {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: inherit;
   font-size: 100%;
   font-weight: inherit;
   -webkit-letter-spacing: 1px;

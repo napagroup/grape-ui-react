@@ -6,8 +6,8 @@ const { fontFamily: fontFamilySchema, fontSize: fontSizeSchema } = getGlobalStyl
 
 export const defaultTextStylesBase = {
   color: 'inherit',
-  fontFamily: fontFamilySchema.base,
-  fontSizeBase: fontSizeSchema.baseFontSize,
+  fontFamily: 'inherit',
+  fontSizeBase: 'inherit',
   fontWeight: 'inherit',
   italic: false,
   kerning: 'inherit',
@@ -25,6 +25,8 @@ const getScaleFactor = props => {
     scaleFactor = schemaLg;
   } else if (sm) {
     scaleFactor = schemaSm;
+  } else {
+    scaleFactor = null;
   }
   return scaleFactor;
 };
@@ -63,7 +65,7 @@ export const textStylesBase = (props = {}) => {
   } = overrides;
   return `
     font-family: ${fontFamily};
-    font-size: ${getScaledFontSize(fontSizeBase, scaleFactor)};
+    font-size: ${scaleFactor ? getScaledFontSize(fontSizeBase, scaleFactor) : fontSizeBase};
     font-weight: ${fontWeight};
     letter-spacing: ${kerning};
     line-height: 1.5;

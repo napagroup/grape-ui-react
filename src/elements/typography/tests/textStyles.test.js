@@ -1,29 +1,17 @@
-import { textStylesBase } from '../textStyles';
+import { textStylesBase, defaultTextStylesBase } from '../textStyles';
 import { getGlobalStyles } from 'src/global-styles';
 import { getScaledFontSize } from '../utils';
 
 const { fontFamily: fontFamilySchema } = getGlobalStyles();
 
-const defaultParams = {
-  color: 'inherit',
-  fontFamily: 'base',
-  fontSizeBase: '1rem',
-  fontWeight: 'inherit',
-  italic: false,
-  kerning: 'inherit',
-  lg: false,
-  sm: false,
-  textAlign: 'inherit',
-  scaleFactor: '1',
-  textDecoration: 'inherit',
-};
+const defaultParams = { ...defaultTextStylesBase };
 
 const renderTest = ({
   fontFamily, fontSizeBase, kerning, italic, color, fontWeight, textAlign, scaleFactor, textDecoration,
 }) =>
   `
-    font-family: ${fontFamilySchema[fontFamily]};
-    font-size: ${getScaledFontSize(fontSizeBase, scaleFactor)};
+    font-family: ${fontFamily};
+    font-size: ${scaleFactor ? getScaledFontSize(fontSizeBase, scaleFactor) : fontSizeBase};
     font-weight: ${fontWeight};
     letter-spacing: ${kerning};
     line-height: 1.5;
@@ -54,11 +42,11 @@ describe('When resolving base text-styles', () => {
 
 describe('When overriding text-styles', () => {
   it('should override the font-family', () => {
-    const fontFamily = 'sansSerif';
-    const actualTextStyles = textStylesBase({ fontFamily });
+    const fontFamilyType = fontFamilySchema.sansSerif;
+    const actualTextStyles = textStylesBase({ fontFamily: 'sansSerif' });
     expect(actualTextStyles).toEqual(renderTest({
       ...defaultParams,
-      fontFamily,
+      fontFamily: fontFamilyType,
     }));
   });
   it('should override font-size calc when passed in sm', () => {
