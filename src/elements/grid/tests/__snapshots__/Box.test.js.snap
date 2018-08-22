@@ -1,0 +1,1536 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box Component base should return a Box object with base styling 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component using custom theme breakpoints for Core Styling should return a Box object with overridden breakpoints for margin 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 2px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    margin: 7px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    margin: 8px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    margin: 18px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component using custom theme breakpoints for Core Styling should return a Box object with overridden breakpoints for margin top 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-top: 2px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    margin-top: 7px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    margin-top: 18px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component using custom theme breakpoints for Core Styling should return a Box object with overridden breakpoints for padding 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 2px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    padding: 7px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    padding: 18px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component using custom theme breakpoints for Core Styling should return a Box object with overridden breakpoints for padding top 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding-top: 2px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    padding-top: 7px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    padding-top: 8px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    padding-top: 18px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component using custom theme breakpoints for Core Styling should return a Box object with overridden breakpoints for width 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  width: 100%;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    width: 12.5%;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for display 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  display: block;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    display: inline-block;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for height 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  height: 1.1px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    height: 0.8px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    height: 0.6px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    height: 0.33px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for maxHeight 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  max-height: 1.1px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    max-height: 0.8px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    max-height: 0.6px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    max-height: 0.33px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for maxWidth 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  max-width: 1.1px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    max-width: 0.8px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    max-width: 0.6px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    max-width: 0.33px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for minHeight 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  min-height: 1px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    min-height: 0.5px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    min-height: 0.25px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    min-height: 0.125px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for minWidth 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  min-width: 1px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    min-width: 0.5px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    min-width: 0.25px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for size 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  height: 1px;
+  width: 1px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    height: 0.5px;
+    width: 0.5px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    height: 0.25px;
+    width: 0.25px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    height: 0.125px;
+    width: 0.125px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component using custom theme breakpoints for Position should return a Box object with overridden breakpoints for position 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  position: block;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    position: inline-block;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties Box Component with specified position properties should return a Box object with bottom 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  bottom: 0px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties Box Component with specified position properties should return a Box object with left 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties Box Component with specified position properties should return a Box object with position 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  position: absolute;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties Box Component with specified position properties should return a Box object with right 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  right: 0px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties Box Component with specified position properties should return a Box object with top 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  top: 0px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties Box Component with specified position properties should return a Box object with zIndex 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  z-index: 2;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with display 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  display: inline-block;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with display applied to different breakpoints 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  display: block;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    display: inline-block;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with height 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  height: 64px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with height applied to different breakpoints 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  height: 48px;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    height: 64px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with maxHeight 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  max-height: 1024px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with maxHeight applied to different breakpoints 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  max-height: 768px;
+}
+
+@media screen and (min-width:64em) {
+  .c0 {
+    max-height: 1024px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with maxWidth 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  max-width: 1024px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with maxWidth applied to different breakpoints 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  max-width: 768px;
+}
+
+@media screen and (min-width:64em) {
+  .c0 {
+    max-width: 1024px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with minHeight 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  min-height: 128px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with minHeight applied to different breakpoints 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  min-height: 384px;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    min-height: 512px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with minWidth 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  min-width: 128px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with minWidth applied to different breakpoints 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  min-width: 96px;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    min-width: 128px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with ratio 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  height: 0;
+  padding-bottom: 25%;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with size 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  height: 32px;
+  width: 32px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified layout properties should return a Box object with size applied to different breakpoints 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  height: 32px;
+  width: 32px;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    height: 48px;
+    width: 48px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified margins should return a Box object with margin 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified margins should return a Box object with margin bottom 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-bottom: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified margins should return a Box object with margin left 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-left: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified margins should return a Box object with margin left and right 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified margins should return a Box object with margin right 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-right: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified margins should return a Box object with margin top and bottom 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified margins should return a Box object with top margin 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-top: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified padding should return a Box object with padding 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified padding should return a Box object with padding bottom 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding-bottom: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified padding should return a Box object with padding left 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding-left: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified padding should return a Box object with padding left and right 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified padding should return a Box object with padding right 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding-right: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified padding should return a Box object with padding top 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding-top: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified padding should return a Box object with padding top and bottom 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified widths should return a Box object with a percentage width 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  width: 50%;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified widths should return a Box object with an exact pixel width 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  width: 256px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified widths should return a Box object with an exact pixel width in the stated unit 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  width: 2em;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Box Component with specified widths should return a Box object with width applied to different breakpoints 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  width: 100%;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    width: 50%;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;

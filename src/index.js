@@ -1,14 +1,21 @@
 import { Button } from './elements/Button';
 import { grapeHtmlStylesInjector } from './elements/GrapeHtmlStylesInjector';
-import * as Typography from './elements/typography';
+import { Box, Flex } from './elements/grid';
+import { Header, Link, List, ListItem, Paragraph, Text } from './elements/typography';
 import { getGlobalStyles } from './global-styles';
 import * as styledComponents from 'styled-components';
 
 module.exports = {
+  Box,
   Button,
+  Flex,
   getGlobalStyles,
   grapeHtmlStylesInjector,
-  ...Typography,
+  Header,
+  Link,
+  List,
+  ListItem,
+  Paragraph,
+  Text,
   styledComponents,
 };
-

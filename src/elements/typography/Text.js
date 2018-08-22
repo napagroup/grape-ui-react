@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { textStylesBase, defaultTextStylesBase } from './textStyles';
+import { defaultTextStylesBase } from './textStyles';
+import { withBaseStyles } from 'src/decorators';
 import { passThrough } from 'src/utils/componentHelpers';
 
 export const Text = props => {
@@ -9,10 +10,7 @@ export const Text = props => {
     ...props,
     fontSizeBase: '100%',
   };
-  const actualBase = textStylesBase(overrides);
-  const ProtoText = styled.span`
-    ${actualBase}
-  `;
+  const ProtoText = withBaseStyles(styled.span``, overrides);
   return <ProtoText {...passThrough(Text, props)} />;
 };
 

@@ -57,3 +57,4 @@ describe('Text Component specified styles', () => {
     expect(tree).toMatchSnapshot();
   });
 });
+

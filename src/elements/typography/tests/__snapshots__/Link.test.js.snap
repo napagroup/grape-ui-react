@@ -23,7 +23,7 @@ exports[`Link Component base should return a react router tag, given a 'to' attr
 
 <a
   className="c0"
-  href="/home"
+  href="./home"
   onClick={[Function]}
 >
   Lorem Ipsum
