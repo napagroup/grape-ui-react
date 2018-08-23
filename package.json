@@ -57,7 +57,10 @@
       "<rootDir>/src/elements/typography/index.js"
     ],
     "setupTestFrameworkScriptFile": "<rootDir>/src/internals/testing/test-bundler.js",
-    "testRegex": "tests/.*\\.test\\.js$"
+    "testRegex": "tests/.*\\.test\\.js$",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
@@ -66,6 +69,7 @@
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-image": "^1.4.1",
     "react-router-dom": "^4.2.2",
     "styled-components": "^3.2.6",
     "styled-system": "^2.3.1"
@@ -97,6 +101,9 @@
     "babel-preset-stage-0": "6.24.1",
     "coveralls": "^3.0.1",
     "cross-env": "^5.1.5",
+    "enzyme": "^3.4.4",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "enzyme-to-json": "^3.3.4",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.11.0",
