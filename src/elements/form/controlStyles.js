@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ControlLabel } from './ControlLabel';
+import { AssistiveText } from './AssistiveText';
 
 const ControlGroup = styled.div``;
-const AssistiveText = styled.small``;
-const ValidationText = styled.small``;
 
 const ControlStylesBase = props => {
   const {
@@ -22,7 +21,7 @@ const ControlStylesBase = props => {
     } else if (text && !error) {
       return <AssistiveText id={`${id}Help`}>{text}</AssistiveText>;
     }
-    return <ValidationText id={`${id}Help`}>{error}</ValidationText>;
+    return <AssistiveText color="brandDanger" id={`${id}Error`}>{error}</AssistiveText>;
   };
 
 
