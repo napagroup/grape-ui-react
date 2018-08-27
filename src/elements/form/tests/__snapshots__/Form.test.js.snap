@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Component base should return a Form object with class inline 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+
+<Form
+  formInline={true}
+>
+  <styled.form
+    className="form-inline"
+  >
+    <form
+      className="form-inline c0"
+    />
+  </styled.form>
+</Form>
+`;
+
+exports[`Form Component base should return a Form object without class inline 1`] = `
+<Form
+  formInline={false}
+>
+  <styled.form
+    className=""
+  >
+    <form
+      className=""
+    />
+  </styled.form>
+</Form>
+`;
