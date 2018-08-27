@@ -3,16 +3,12 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { passThrough } from 'src/utils/componentHelpers';
 import { withStyledSystem } from 'src/decorators';
-import {
-  width,
-  display,
-} from 'styled-system';
+import { width, display } from 'styled-system';
 
 export const Form = props => {
   const { formInline } = props;
   const overrides = {
     ...props,
-    className: !formInline ? '' : 'form-inline',
     width: !formInline ? '' : 'auto',
     display: !formInline ? '' : 'flex',
 
