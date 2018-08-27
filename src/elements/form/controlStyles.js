@@ -7,16 +7,13 @@ const ControlLabel = styled.label``;
 const AssistiveText = styled.small``;
 const ValidationText = styled.small``;
 
-export const defaultControlStylesBase = {
-  assistiveText: '',
-  controlLabel: '',
-  controlId: '',
-  validationError: '',
-};
-
-export const controlStylesBase = props => {
+const ControlStylesBase = props => {
   const {
-    controlLabel, controlId, assistiveText, validationError,
+    controlLabel,
+    controlId,
+    assistiveText,
+    validationError,
+    children,
   } = props;
 
   const displayAssistive = (text, error, id) => {
@@ -28,20 +25,54 @@ export const controlStylesBase = props => {
     return <ValidationText id={`${id}Help`}>{error}</ValidationText>;
   };
 
-  //   let overrides = null;
-  //   if (!props || Array.isArray(props)) {
-  //     overrides = defaultControlStylesBase;
-  //   } else {
-  //     overrides = {
-  //       ...defaultControlStylesBase,
-  //       ...props,
-  //     };
-  //   }
 
   return (
     <ControlGroup>
       <ControlLabel for={controlId}>{controlLabel}</ControlLabel>
+      {children}
       {displayAssistive(assistiveText, validationError, controlId)}
     </ControlGroup>
   );
 };
+
+ControlStylesBase.propTypes = {
+  assistiveText: PropTypes.string,
+  children: PropTypes.any.isRequired,
+  controlId: PropTypes.string.isRequired,
+  controlLabel: PropTypes.string.isRequired,
+  validationError: PropTypes.string,
+};
+
+ControlStylesBase.defaultProps = {
+  assistiveText: '',
+  validationError: '',
+};
+
+const withControlStyles = Child => {
+  class ControlStylesComponent extends React.Component {
+    render() {
+      const {
+        controlLabel,
+        controlId,
+        assistiveText,
+        validationError,
+        ...otherProps
+      } = this.props;
+      const controlJSX = (<ControlStylesBase assistiveText={assistiveText} controlId={controlId} controlLabel={controlLabel} validationError={validationError} > <Child {...otherProps} /> </ControlStylesBase>);
+      return `${controlJSX}`;
+    }
+  }
+  ControlStylesComponent.propTypes = {
+    assistiveText: PropTypes.string,
+    controlId: PropTypes.string.isRequired,
+    controlLabel: PropTypes.string.isRequired,
+    validationError: PropTypes.string,
+  };
+  ControlStylesComponent.defaultProps = {
+    assistiveText: '',
+    validationError: '',
+  };
+  return ControlStylesComponent;
+};
+
+export { ControlStylesBase, withControlStyles };
