@@ -6,7 +6,7 @@ import { AssistiveText } from './AssistiveText';
 
 const ControlGroup = styled.div``;
 
-const ControlStylesBase = props => {
+const ControlGroupBase = props => {
   const {
     controlLabel,
     controlId,
@@ -34,7 +34,7 @@ const ControlStylesBase = props => {
   );
 };
 
-ControlStylesBase.propTypes = {
+ControlGroupBase.propTypes = {
   assistiveText: PropTypes.string,
   children: PropTypes.any.isRequired,
   controlId: PropTypes.string.isRequired,
@@ -42,12 +42,12 @@ ControlStylesBase.propTypes = {
   validationError: PropTypes.string,
 };
 
-ControlStylesBase.defaultProps = {
+ControlGroupBase.defaultProps = {
   assistiveText: '',
   validationError: '',
 };
 
-const withControlStyles = Child => {
+const withControlGroup = Child => {
   class ControlStylesComponent extends React.Component {
     render() {
       const {
@@ -57,7 +57,7 @@ const withControlStyles = Child => {
         validationError,
         ...otherProps
       } = this.props;
-      const controlJSX = (<ControlStylesBase assistiveText={assistiveText} controlId={controlId} controlLabel={controlLabel} validationError={validationError} > <Child {...otherProps} /> </ControlStylesBase>);
+      const controlJSX = (<ControlGroupBase assistiveText={assistiveText} controlId={controlId} controlLabel={controlLabel} validationError={validationError} > <Child {...otherProps} /> </ControlGroupBase>);
       return `${controlJSX}`;
     }
   }
@@ -74,4 +74,4 @@ const withControlStyles = Child => {
   return ControlStylesComponent;
 };
 
-export { ControlStylesBase, withControlStyles };
+export { ControlGroupBase, withControlGroup };
