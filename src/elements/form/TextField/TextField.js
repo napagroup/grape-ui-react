@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import styled from 'styled-components';
-import { withControlGroup } from '../../ControlGroup';
+import { withControlGroup } from 'src/elements/form/ControlGroup/ControlGroup';
 import { passThrough } from 'src/utils/componentHelpers';
-import { TextFieldControl } from '.';
+import { TextFieldComponent } from '.';
 
 export const TextField = props => {
   const overrides = {
     ...props,
   };
-  const child = <TextFieldControl {...passThrough(TextField, overrides)} />;
+  const child = <TextFieldComponent {...passThrough(TextField, overrides)} />;
   console.log('TextField - child', child);
   const ProtoTextField = withControlGroup(child, overrides);
   return <ProtoTextField />;

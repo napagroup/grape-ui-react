@@ -14,7 +14,7 @@ describe('Assistive Text Component base', () => {
     expect(toJson(component.find('AssistiveText'))).toMatchSnapshot();
   });
   it('should return an Assistive Text object with danger text color', () => {
-    const component = mount(<AssistiveText id="assitiveTextIdError" color="brandDanger">Error text is here</AssistiveText>);
+    const component = mount(<AssistiveText color="brandDanger" id="assitiveTextIdError">Error text is here</AssistiveText>);
     expect(toJson(component.find('AssistiveText'))).toMatchSnapshot();
   });
 });

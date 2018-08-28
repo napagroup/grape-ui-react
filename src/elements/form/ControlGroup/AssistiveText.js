@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { defaultTextStylesBase } from '../../../typography/textStyles';
+import { defaultTextStylesBase } from 'src/elements/typography/textStyles';
 import { withBaseStyles } from 'src/decorators';
 import { passThrough } from 'src/utils/componentHelpers';
 
-export const TextFieldControl = props => {
+export const AssistiveText = props => {
   const overrides = {
     ...props,
     sm: true,
   };
-  const ProtoTextFieldControl = withBaseStyles(styled.input``, overrides);
-  return <ProtoTextFieldControl {...passThrough(TextFieldControl, props)} />;
+  const ProtoAssistiveText = withBaseStyles(styled.div``, overrides);
+  return <ProtoAssistiveText {...passThrough(AssistiveText, props)} />;
 };
 
-TextFieldControl.propTypes = {
+AssistiveText.propTypes = {
   color: PropTypes.string,
   fontFamily: PropTypes.string,
   fontWeight: PropTypes.string,
@@ -25,7 +25,7 @@ TextFieldControl.propTypes = {
   textDecoration: PropTypes.string,
 };
 
-TextFieldControl.defaultProps = {
+AssistiveText.defaultProps = {
   color: defaultTextStylesBase.color,
   fontFamily: defaultTextStylesBase.fontFamily,
   fontWeight: defaultTextStylesBase.fontWeight,

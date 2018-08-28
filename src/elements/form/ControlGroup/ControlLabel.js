@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { defaultTextStylesBase } from '../typography/textStyles';
+import { defaultTextStylesBase } from 'src/elements/typography/textStyles';
 import { withBaseStyles } from 'src/decorators';
 import { passThrough } from 'src/utils/componentHelpers';
 
-export const AssistiveText = props => {
+export const ControlLabel = props => {
   const overrides = {
     ...props,
     sm: true,
   };
-  const ProtoAssistiveText = withBaseStyles(styled.div``, overrides);
-  return <ProtoAssistiveText {...passThrough(AssistiveText, props)} />;
+  const ProtoControlLabel = withBaseStyles(styled.label``, overrides);
+  return <ProtoControlLabel {...passThrough(ControlLabel, props)} />;
 };
 
-AssistiveText.propTypes = {
+ControlLabel.propTypes = {
   color: PropTypes.string,
   fontFamily: PropTypes.string,
   fontWeight: PropTypes.string,
@@ -25,7 +25,7 @@ AssistiveText.propTypes = {
   textDecoration: PropTypes.string,
 };
 
-AssistiveText.defaultProps = {
+ControlLabel.defaultProps = {
   color: defaultTextStylesBase.color,
   fontFamily: defaultTextStylesBase.fontFamily,
   fontWeight: defaultTextStylesBase.fontWeight,

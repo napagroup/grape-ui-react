@@ -1,6 +1,7 @@
 import { getGlobalStyles } from '../index';
 
 const assertGlobalStyleInterface = globalStyles => {
+  expect(globalStyles).toHaveProperty('border');
   expect(globalStyles).toHaveProperty('breakpoints');
   expect(globalStyles).toHaveProperty('colors');
   expect(globalStyles).toHaveProperty('fontFamily');

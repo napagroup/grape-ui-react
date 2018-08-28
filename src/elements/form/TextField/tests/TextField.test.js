@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextField } from '../components/TextField/index';
+import { TextField } from '../TextField';
 import 'jest-styled-components';
 import Adapter from 'enzyme-adapter-react-16';
 import { configure, mount } from 'enzyme';
