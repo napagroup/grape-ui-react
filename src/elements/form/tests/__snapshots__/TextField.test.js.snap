@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField Component base should return a TextField object 1`] = `
+<TextField
+  assistiveText=""
+  controlId="exampleFullName"
+  controlLabel="Full name"
+  validationError=""
+>
+  <ControlGroupComponent
+    assistiveText=""
+    controlId=""
+    controlLabel=""
+    validationError=""
+  >
+    [object Object]
+  </ControlGroupComponent>
+</TextField>
+`;

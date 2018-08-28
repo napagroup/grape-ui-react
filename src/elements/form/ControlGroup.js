@@ -15,6 +15,8 @@ const ControlGroupBase = props => {
     children,
   } = props;
 
+  console.log('ControlGroupBase - props', props);
+
   const displayAssistive = (text, error, id) => {
     if (!text && !error) {
       return null;
@@ -37,18 +39,22 @@ const ControlGroupBase = props => {
 ControlGroupBase.propTypes = {
   assistiveText: PropTypes.string,
   children: PropTypes.any.isRequired,
-  controlId: PropTypes.string.isRequired,
-  controlLabel: PropTypes.string.isRequired,
+  controlId: PropTypes.string,
+  controlLabel: PropTypes.string,
+  // controlId: PropTypes.string.isRequired,
+  // controlLabel: PropTypes.string.isRequired,
   validationError: PropTypes.string,
 };
 
 ControlGroupBase.defaultProps = {
   assistiveText: '',
   validationError: '',
+  controlId: '',
+  controlLabel: '',
 };
 
-const withControlGroup = Child => {
-  class ControlStylesComponent extends React.Component {
+const withControlGroup = (Child, props) => {
+  class ControlGroupComponent extends React.Component {
     render() {
       const {
         controlLabel,
@@ -56,22 +62,28 @@ const withControlGroup = Child => {
         assistiveText,
         validationError,
         ...otherProps
-      } = this.props;
+      } = props;
+      // console.log('withControlGroup - props', props);
+      // console.log('withControlGroup - Child', Child);
       const controlJSX = (<ControlGroupBase assistiveText={assistiveText} controlId={controlId} controlLabel={controlLabel} validationError={validationError} > <Child {...otherProps} /> </ControlGroupBase>);
       return `${controlJSX}`;
     }
   }
-  ControlStylesComponent.propTypes = {
+  ControlGroupComponent.propTypes = {
     assistiveText: PropTypes.string,
-    controlId: PropTypes.string.isRequired,
-    controlLabel: PropTypes.string.isRequired,
+    controlId: PropTypes.string,
+    controlLabel: PropTypes.string,
+    // controlId: PropTypes.string.isRequired,
+    // controlLabel: PropTypes.string.isRequired,
     validationError: PropTypes.string,
   };
-  ControlStylesComponent.defaultProps = {
+  ControlGroupComponent.defaultProps = {
     assistiveText: '',
     validationError: '',
+    controlId: '',
+    controlLabel: '',
   };
-  return ControlStylesComponent;
+  return ControlGroupComponent;
 };
 
 export { ControlGroupBase, withControlGroup };
