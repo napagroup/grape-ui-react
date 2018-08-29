@@ -15,8 +15,6 @@ export const ControlGroupBase = props => {
     children,
   } = props;
 
-  // console.log('ControlGroupBase - children', children);
-
   const displayAssistive = (text, error, id) => {
     if (!text && !error) {
       return null;
@@ -25,9 +23,7 @@ export const ControlGroupBase = props => {
     }
     return <AssistiveText color="brandDanger" id={`${id}Error`}>{error}</AssistiveText>;
   };
-  // // eslint disable next-line
-  // const reactChildDom = React.Children.only(children);
-  // console.log('ControlGroupBase - reactChildDom', reactChildDom);
+
   return (
     <ControlGroup>
       <ControlLabel for={controlId}>{controlLabel}</ControlLabel>

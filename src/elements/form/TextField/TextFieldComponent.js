@@ -49,9 +49,6 @@ export const withTextFieldComponentConvertor = () => {
   class TextFieldComponentConvertor extends React.Component {
     render() {
       const {
-        // assistiveText,
-        // validationError,
-        // controlLabel,
         controlId,
         ...otherProps
       } = this.props;
@@ -61,14 +58,8 @@ export const withTextFieldComponentConvertor = () => {
   }
   TextFieldComponentConvertor.propTypes = {
     controlId: PropTypes.string,
-    // assistiveText: PropTypes.string,
-    // controlLabel: PropTypes.string,
-    // validationError: PropTypes.string,
   };
   TextFieldComponentConvertor.defaultProps = {
-    // assistiveText: '',
-    // validationError: '',
-    // controlLabel: '',
     controlId: '',
   };
   return TextFieldComponentConvertor;
