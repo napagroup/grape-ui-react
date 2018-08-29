@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 import { withControlGroup } from 'src/elements/form/ControlGroup/ControlGroup';
 import { passThrough } from 'src/utils/componentHelpers';
-import { TextFieldComponent, withTextFieldComponentConvertor } from '.';
+import { withTextFieldComponentConvertor } from '.';
 // import Adapter from 'enzyme-adapter-react-16';
 // import 'jest-styled-components';
 // import { configure, mount } from 'enzyme';
@@ -14,7 +14,6 @@ export const TextField = props => {
   const overrides = {
     ...props,
   };
-  console.log('controlId', controlId);
   const child = withTextFieldComponentConvertor(<div controlId={controlId} {...passThrough(TextField, overrides)} />);
   // const inputChild = () => (<input type="text" id={controlId} {...passThrough(TextField, overrides)} defaultValue="Replace this with textfield Component" />);
   const ProtoTextField = withControlGroup(child);

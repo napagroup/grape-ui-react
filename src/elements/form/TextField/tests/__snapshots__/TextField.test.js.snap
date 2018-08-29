@@ -79,10 +79,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
           </ControlLabel>
            
           <TextFieldComponentConvertor
-            assistiveText=""
             controlId="exampleFullName"
-            controlLabel=""
-            validationError=""
           >
             <TextFieldComponent
               borderColor="hsl(0, 0%, 25%)"
@@ -211,10 +208,7 @@ exports[`TextField Component base with assistive text should return a TextField 
           </ControlLabel>
            
           <TextFieldComponentConvertor
-            assistiveText=""
             controlId="exampleFullName"
-            controlLabel=""
-            validationError=""
           >
             <TextFieldComponent
               borderColor="hsl(0, 0%, 25%)"
@@ -365,10 +359,7 @@ exports[`TextField Component base with validation error should return a TextFiel
           </ControlLabel>
            
           <TextFieldComponentConvertor
-            assistiveText=""
             controlId="exampleFullName"
-            controlLabel=""
-            validationError=""
           >
             <TextFieldComponent
               borderColor="hsl(0, 0%, 25%)"

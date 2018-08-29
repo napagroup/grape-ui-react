@@ -21,7 +21,7 @@ describe('TextField Component base with assistive text', () => {
 });
 describe('TextField Component base with validation error', () => {
   it('should return a TextField object', () => {
-    const component = mount(<TextField controlId="exampleFullName" controlLabel="Full name" validationError="This is a require field."/>);
+    const component = mount(<TextField controlId="exampleFullName" controlLabel="Full name" validationError="This is a require field." />);
     expect(toJson(component.find('TextField'))).toMatchSnapshot();
   });
 });
