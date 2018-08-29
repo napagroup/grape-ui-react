@@ -1,5 +1,122 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`TextField  a large TextFieldComponent object should return a large TextFieldComponent object  1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+<TextField
+  assistiveText=""
+  controlId="exampleFullName"
+  controlLabel="Full name"
+  lg={true}
+  validationError=""
+>
+  <ControlGroupComponent
+    assistiveText=""
+    controlId="exampleFullName"
+    controlLabel="Full name"
+    lg={true}
+    validationError=""
+  >
+    <ControlGroupBase
+      assistiveText=""
+      controlId="exampleFullName"
+      controlLabel="Full name"
+      validationError=""
+    >
+      <styled.div>
+        <div
+          className=""
+        >
+          <ControlLabel
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            for="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.label
+              for="exampleFullName"
+            >
+              <label
+                className="c0"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
+           
+          <TextFieldComponentConvertor
+            controlId="exampleFullName"
+            lg={true}
+          >
+            <TextFieldComponent
+              borderColor="hsl(0, 0%, 25%)"
+              borderRadius="4px"
+              color="inherit"
+              fontFamily="inherit"
+              fontWeight="inherit"
+              id="exampleFullName"
+              kerning="inherit"
+              lg={true}
+              padding="1rem"
+              sm={false}
+              textAlign="inherit"
+              textDecoration="inherit"
+            >
+              <styled.input
+                id="exampleFullName"
+              >
+                <input
+                  className="c1"
+                  id="exampleFullName"
+                  type="text"
+                />
+              </styled.input>
+            </TextFieldComponent>
+          </TextFieldComponentConvertor>
+           
+        </div>
+      </styled.div>
+    </ControlGroupBase>
+  </ControlGroupComponent>
+</TextField>
+`;
+
 exports[`TextField Component base should return a TextField object 1`] = `
 .c0 {
   font-family: inherit;
@@ -92,6 +209,123 @@ exports[`TextField Component base should return a TextField object 1`] = `
               lg={false}
               padding="1rem"
               sm={false}
+              textAlign="inherit"
+              textDecoration="inherit"
+            >
+              <styled.input
+                id="exampleFullName"
+              >
+                <input
+                  className="c1"
+                  id="exampleFullName"
+                  type="text"
+                />
+              </styled.input>
+            </TextFieldComponent>
+          </TextFieldComponentConvertor>
+           
+        </div>
+      </styled.div>
+    </ControlGroupBase>
+  </ControlGroupComponent>
+</TextField>
+`;
+
+exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object  1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 2px;
+  padding: 1rem;
+}
+
+<TextField
+  assistiveText=""
+  controlId="exampleFullName"
+  controlLabel="Full name"
+  sm={true}
+  validationError=""
+>
+  <ControlGroupComponent
+    assistiveText=""
+    controlId="exampleFullName"
+    controlLabel="Full name"
+    sm={true}
+    validationError=""
+  >
+    <ControlGroupBase
+      assistiveText=""
+      controlId="exampleFullName"
+      controlLabel="Full name"
+      validationError=""
+    >
+      <styled.div>
+        <div
+          className=""
+        >
+          <ControlLabel
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            for="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.label
+              for="exampleFullName"
+            >
+              <label
+                className="c0"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
+           
+          <TextFieldComponentConvertor
+            controlId="exampleFullName"
+            sm={true}
+          >
+            <TextFieldComponent
+              borderColor="hsl(0, 0%, 25%)"
+              borderRadius="4px"
+              color="inherit"
+              fontFamily="inherit"
+              fontWeight="inherit"
+              id="exampleFullName"
+              kerning="inherit"
+              lg={false}
+              padding="1rem"
+              sm={true}
               textAlign="inherit"
               textDecoration="inherit"
             >

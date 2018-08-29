@@ -31,3 +31,15 @@ describe('TextField with some other props', () => {
     expect(toJson(component.find('TextField'))).toMatchSnapshot();
   });
 });
+describe('TextField  a large TextFieldComponent object', () => {
+  it('should return a large TextFieldComponent object ', () => {
+    const component = mount(<TextField controlId="exampleFullName" controlLabel="Full name" lg />);
+    expect(toJson(component.find('TextField'))).toMatchSnapshot();
+  });
+});
+describe('TextField a small TextFieldComponent object', () => {
+  it('should return a small TextFieldComponent object ', () => {
+    const component = mount(<TextField controlId="exampleFullName" controlLabel="Full name" sm />);
+    expect(toJson(component.find('TextField'))).toMatchSnapshot();
+  });
+});
