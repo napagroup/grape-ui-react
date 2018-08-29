@@ -26,7 +26,7 @@ export const ControlGroupBase = props => {
 
   return (
     <ControlGroup>
-      <ControlLabel for={controlId}>{controlLabel}</ControlLabel>
+      <ControlLabel htmlFor={controlId}>{controlLabel}</ControlLabel>
       {children}
       {displayAssistive(assistiveText, validationError, controlId)}
     </ControlGroup>

@@ -55,7 +55,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
           color="inherit"
           fontFamily="inherit"
           fontWeight="inherit"
-          for="exampleFullName"
+          htmlFor="exampleFullName"
           kerning="inherit"
           lg={false}
           sm={false}
@@ -63,10 +63,11 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
           textDecoration="inherit"
         >
           <styled.label
-            for="exampleFullName"
+            htmlFor="exampleFullName"
           >
             <label
               className="c0"
+              htmlFor="exampleFullName"
             >
               Full name
             </label>
@@ -156,7 +157,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
           color="inherit"
           fontFamily="inherit"
           fontWeight="inherit"
-          for="exampleFullName"
+          htmlFor="exampleFullName"
           kerning="inherit"
           lg={false}
           sm={false}
@@ -164,10 +165,11 @@ exports[`TextField Component base should return a TextField object 1`] = `
           textDecoration="inherit"
         >
           <styled.label
-            for="exampleFullName"
+            htmlFor="exampleFullName"
           >
             <label
               className="c0"
+              htmlFor="exampleFullName"
             >
               Full name
             </label>
@@ -258,7 +260,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
           color="inherit"
           fontFamily="inherit"
           fontWeight="inherit"
-          for="exampleFullName"
+          htmlFor="exampleFullName"
           kerning="inherit"
           lg={false}
           sm={false}
@@ -266,10 +268,11 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
           textDecoration="inherit"
         >
           <styled.label
-            for="exampleFullName"
+            htmlFor="exampleFullName"
           >
             <label
               className="c0"
+              htmlFor="exampleFullName"
             >
               Full name
             </label>
@@ -374,7 +377,7 @@ exports[`TextField with assistive text should return a TextField object contain 
           color="inherit"
           fontFamily="inherit"
           fontWeight="inherit"
-          for="exampleFullName"
+          htmlFor="exampleFullName"
           kerning="inherit"
           lg={false}
           sm={false}
@@ -382,10 +385,11 @@ exports[`TextField with assistive text should return a TextField object contain 
           textDecoration="inherit"
         >
           <styled.label
-            for="exampleFullName"
+            htmlFor="exampleFullName"
           >
             <label
               className="c0"
+              htmlFor="exampleFullName"
             >
               Full name
             </label>
@@ -499,7 +503,7 @@ exports[`TextField with some other props should return a TextField object contai
           color="inherit"
           fontFamily="inherit"
           fontWeight="inherit"
-          for="exampleFullName"
+          htmlFor="exampleFullName"
           kerning="inherit"
           lg={false}
           sm={false}
@@ -507,10 +511,11 @@ exports[`TextField with some other props should return a TextField object contai
           textDecoration="inherit"
         >
           <styled.label
-            for="exampleFullName"
+            htmlFor="exampleFullName"
           >
             <label
               className="c0"
+              htmlFor="exampleFullName"
             >
               Full name
             </label>
@@ -619,7 +624,7 @@ exports[`TextField with validation error should return a TextField object contai
           color="inherit"
           fontFamily="inherit"
           fontWeight="inherit"
-          for="exampleFullName"
+          htmlFor="exampleFullName"
           kerning="inherit"
           lg={false}
           sm={false}
@@ -627,10 +632,11 @@ exports[`TextField with validation error should return a TextField object contai
           textDecoration="inherit"
         >
           <styled.label
-            for="exampleFullName"
+            htmlFor="exampleFullName"
           >
             <label
               className="c0"
+              htmlFor="exampleFullName"
             >
               Full name
             </label>
