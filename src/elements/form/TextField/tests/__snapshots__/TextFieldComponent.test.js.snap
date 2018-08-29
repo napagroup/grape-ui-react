@@ -17,10 +17,16 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   padding: 1rem;
+  outline: 0;
+}
+
+.c0:focus {
+  border: 2px solid hsl(323.3,84.6%,28%);
 }
 
 <TextFieldComponent
   borderColor="hsl(0, 0%, 25%)"
+  borderColorActive="hsl(323.3, 84.6%, 28%)"
   borderRadius="4px"
   color="inherit"
   fontFamily="inherit"
@@ -58,10 +64,16 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   border: 1px solid hsl(0,0%,25%);
   border-radius: 8px;
   padding: 1rem;
+  outline: 0;
+}
+
+.c0:focus {
+  border: 2px solid hsl(323.3,84.6%,28%);
 }
 
 <TextFieldComponent
   borderColor="hsl(0, 0%, 25%)"
+  borderColorActive="hsl(323.3, 84.6%, 28%)"
   borderRadius="4px"
   color="inherit"
   fontFamily="inherit"
@@ -99,10 +111,16 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
   padding: 1rem;
+  outline: 0;
+}
+
+.c0:focus {
+  border: 2px solid hsl(323.3,84.6%,28%);
 }
 
 <TextFieldComponent
   borderColor="hsl(0, 0%, 25%)"
+  borderColorActive="hsl(323.3, 84.6%, 28%)"
   borderRadius="4px"
   color="inherit"
   fontFamily="inherit"
