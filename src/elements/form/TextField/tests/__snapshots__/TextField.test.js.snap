@@ -114,7 +114,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
 </TextField>
 `;
 
-exports[`TextField Component base with assistive text should return a TextField object 1`] = `
+exports[`TextField with assistive text should return a TextField object contain Assistive Text 1`] = `
 .c0 {
   font-family: inherit;
   font-size: 0.8rem;
@@ -265,7 +265,131 @@ exports[`TextField Component base with assistive text should return a TextField 
 </TextField>
 `;
 
-exports[`TextField Component base with validation error should return a TextField object 1`] = `
+exports[`TextField with some other props should return a TextField object contain input with those other props  1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+<TextField
+  assistiveText=""
+  controlId="exampleFullName"
+  controlLabel="Full name"
+  link="abc"
+  require={true}
+  validationError=""
+>
+  <ControlGroupComponent
+    assistiveText=""
+    controlId="exampleFullName"
+    controlLabel="Full name"
+    link="abc"
+    require={true}
+    validationError=""
+  >
+    <ControlGroupBase
+      assistiveText=""
+      controlId="exampleFullName"
+      controlLabel="Full name"
+      validationError=""
+    >
+      <styled.div>
+        <div
+          className=""
+        >
+          <ControlLabel
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            for="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.label
+              for="exampleFullName"
+            >
+              <label
+                className="c0"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
+           
+          <TextFieldComponentConvertor
+            controlId="exampleFullName"
+            link="abc"
+            require={true}
+          >
+            <TextFieldComponent
+              borderColor="hsl(0, 0%, 25%)"
+              borderRadius="4px"
+              color="inherit"
+              fontFamily="inherit"
+              fontWeight="inherit"
+              id="exampleFullName"
+              kerning="inherit"
+              lg={false}
+              link="abc"
+              padding="1rem"
+              require={true}
+              sm={false}
+              textAlign="inherit"
+              textDecoration="inherit"
+            >
+              <styled.input
+                id="exampleFullName"
+                link="abc"
+                require={true}
+              >
+                <input
+                  className="c1"
+                  id="exampleFullName"
+                  type="text"
+                />
+              </styled.input>
+            </TextFieldComponent>
+          </TextFieldComponentConvertor>
+           
+        </div>
+      </styled.div>
+    </ControlGroupBase>
+  </ControlGroupComponent>
+</TextField>
+`;
+
+exports[`TextField with validation error should return a TextField object contain Assistive Text with error style 1`] = `
 .c0 {
   font-family: inherit;
   font-size: 0.8rem;

@@ -13,15 +13,21 @@ describe('TextField Component base', () => {
     expect(toJson(component.find('TextField'))).toMatchSnapshot();
   });
 });
-describe('TextField Component base with assistive text', () => {
-  it('should return a TextField object', () => {
+describe('TextField with assistive text', () => {
+  it('should return a TextField object contain Assistive Text', () => {
     const component = mount(<TextField assistiveText="Please tell me your name" controlId="exampleFullName" controlLabel="Full name" />);
     expect(toJson(component.find('TextField'))).toMatchSnapshot();
   });
 });
-describe('TextField Component base with validation error', () => {
-  it('should return a TextField object', () => {
+describe('TextField with validation error', () => {
+  it('should return a TextField object contain Assistive Text with error style', () => {
     const component = mount(<TextField controlId="exampleFullName" controlLabel="Full name" validationError="This is a require field." />);
+    expect(toJson(component.find('TextField'))).toMatchSnapshot();
+  });
+});
+describe('TextField with some other props', () => {
+  it('should return a TextField object contain input with those other props ', () => {
+    const component = mount(<TextField controlId="exampleFullName" controlLabel="Full name" link="abc" require />);
     expect(toJson(component.find('TextField'))).toMatchSnapshot();
   });
 });
