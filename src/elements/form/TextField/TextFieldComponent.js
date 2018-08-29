@@ -44,3 +44,32 @@ TextFieldComponent.defaultProps = {
   borderRadius: defaultControlStylesBase.borderRadius,
   padding: defaultControlStylesBase.padding,
 };
+
+export const withTextFieldComponentConvertor = () => {
+  class TextFieldComponentConvertor extends React.Component {
+    render() {
+      const {
+        assistiveText,
+        validationError,
+        controlLabel,
+        controlId,
+        ...otherProps
+      } = this.props;
+      const controlJSX = (<TextFieldComponent id={controlId} {...otherProps} />);
+      return controlJSX;
+    }
+  }
+  TextFieldComponentConvertor.propTypes = {
+    assistiveText: PropTypes.string,
+    controlId: PropTypes.string,
+    controlLabel: PropTypes.string,
+    validationError: PropTypes.string,
+  };
+  TextFieldComponentConvertor.defaultProps = {
+    assistiveText: '',
+    validationError: '',
+    controlLabel: '',
+    controlId: '',
+  };
+  return TextFieldComponentConvertor;
+};

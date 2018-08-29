@@ -1,2 +1,2 @@
 export * from './TextField';
-export { TextFieldComponent } from './TextFieldComponent';
+export { TextFieldComponen, withTextFieldComponentConvertor } from './TextFieldComponent';

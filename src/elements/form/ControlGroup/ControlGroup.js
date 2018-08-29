@@ -15,7 +15,7 @@ export const ControlGroupBase = props => {
     children,
   } = props;
 
-  console.log('ControlGroupBase - children', children);
+  // console.log('ControlGroupBase - children', children);
 
   const displayAssistive = (text, error, id) => {
     if (!text && !error) {
@@ -60,7 +60,7 @@ export const withControlGroup = (Child, props) => {
         validationError,
         ...otherProps
       } = this.props;
-      const controlJSX = (<ControlGroupBase assistiveText={assistiveText} controlId={controlId} controlLabel={controlLabel} validationError={validationError} > <Child {...otherProps} /> </ControlGroupBase>);
+      const controlJSX = (<ControlGroupBase assistiveText={assistiveText} controlId={controlId} controlLabel={controlLabel} validationError={validationError} > <Child controlId={controlId} {...otherProps} /> </ControlGroupBase>);
       return controlJSX;
     }
   }
