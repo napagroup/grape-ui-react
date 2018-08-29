@@ -1,5 +1,6 @@
 {
   "borderColor": "hsl(0, 0%, 25%)",
+  "borderColorActive": "hsl(323.3, 84.6%, 28%)",
   "borderRadius": {
     "sm": "2px",
     "base": "4px",

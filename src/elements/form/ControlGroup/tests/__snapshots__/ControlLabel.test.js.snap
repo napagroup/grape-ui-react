@@ -2,6 +2,11 @@
 
 exports[`ControlLabel Component base should return a ControlLabel object 1`] = `
 .c0 {
+  position: absolute;
+  padding: 0 1rem;
+  background-color: white;
+  top: 1rem;
+  left: 1rem;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;

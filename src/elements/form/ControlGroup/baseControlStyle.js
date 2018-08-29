@@ -4,6 +4,7 @@ const { border: borderSchema, grid: gridSchema } = getGlobalStyles();
 
 export const defaultControlStylesBase = {
   borderColor: borderSchema.borderColor,
+  borderColorActive: borderSchema.borderColorActive,
   borderRadius: borderSchema.borderRadius.base,
   padding: gridSchema.gutter,
 };
@@ -43,5 +44,9 @@ export const controlStylesBase = (props = {}) => {
     border: 1px solid ${borderColor};
     border-radius: ${scaleFactor};
     padding: ${padding};
+    outline: 0;
+    &:focus {
+      border: 2px solid ${borderColorActive};
+    }
   `;
 };

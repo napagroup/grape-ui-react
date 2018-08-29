@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { ControlLabel } from './ControlLabel';
 import { AssistiveText } from './AssistiveText';
 
-const ControlGroup = styled.div``;
+const ControlGroup = styled.div` position: relative; background-color: white;`;
 
 export const ControlGroupBase = props => {
   const {
