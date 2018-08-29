@@ -6,7 +6,7 @@ import { AssistiveText } from './AssistiveText';
 
 const ControlGroup = styled.div``;
 
-const ControlGroupBase = props => {
+export const ControlGroupBase = props => {
   const {
     controlLabel,
     controlId,
@@ -15,7 +15,7 @@ const ControlGroupBase = props => {
     children,
   } = props;
 
-  console.log('ControlGroupBase - props', props);
+  console.log('ControlGroupBase - children', children);
 
   const displayAssistive = (text, error, id) => {
     if (!text && !error) {
@@ -25,8 +25,9 @@ const ControlGroupBase = props => {
     }
     return <AssistiveText color="brandDanger" id={`${id}Error`}>{error}</AssistiveText>;
   };
-
-
+  // // eslint disable next-line
+  // const reactChildDom = React.Children.only(children);
+  // console.log('ControlGroupBase - reactChildDom', reactChildDom);
   return (
     <ControlGroup>
       <ControlLabel for={controlId}>{controlLabel}</ControlLabel>
@@ -39,21 +40,17 @@ const ControlGroupBase = props => {
 ControlGroupBase.propTypes = {
   assistiveText: PropTypes.string,
   children: PropTypes.any.isRequired,
-  controlId: PropTypes.string,
-  controlLabel: PropTypes.string,
-  // controlId: PropTypes.string.isRequired,
-  // controlLabel: PropTypes.string.isRequired,
+  controlId: PropTypes.string.isRequired,
+  controlLabel: PropTypes.string.isRequired,
   validationError: PropTypes.string,
 };
 
 ControlGroupBase.defaultProps = {
   assistiveText: '',
   validationError: '',
-  controlId: '',
-  controlLabel: '',
 };
 
-const withControlGroup = (Child, props) => {
+export const withControlGroup = (Child, props) => {
   class ControlGroupComponent extends React.Component {
     render() {
       const {
@@ -62,28 +59,20 @@ const withControlGroup = (Child, props) => {
         assistiveText,
         validationError,
         ...otherProps
-      } = props;
-      // console.log('withControlGroup - props', props);
-      // console.log('withControlGroup - Child', Child);
+      } = this.props;
       const controlJSX = (<ControlGroupBase assistiveText={assistiveText} controlId={controlId} controlLabel={controlLabel} validationError={validationError} > <Child {...otherProps} /> </ControlGroupBase>);
-      return `${controlJSX}`;
+      return controlJSX;
     }
   }
   ControlGroupComponent.propTypes = {
     assistiveText: PropTypes.string,
-    controlId: PropTypes.string,
-    controlLabel: PropTypes.string,
-    // controlId: PropTypes.string.isRequired,
-    // controlLabel: PropTypes.string.isRequired,
+    controlId: PropTypes.string.isRequired,
+    controlLabel: PropTypes.string.isRequired,
     validationError: PropTypes.string,
   };
   ControlGroupComponent.defaultProps = {
     assistiveText: '',
     validationError: '',
-    controlId: '',
-    controlLabel: '',
   };
   return ControlGroupComponent;
 };
-
-export { ControlGroupBase, withControlGroup };
