@@ -18,17 +18,17 @@ export const TextFieldComponent = props => {
 };
 
 TextFieldComponent.propTypes = {
+  borderColor: PropTypes.string,
+  borderRadius: PropTypes.string,
   color: PropTypes.string,
   fontFamily: PropTypes.string,
   fontWeight: PropTypes.string,
   kerning: PropTypes.string,
   lg: PropTypes.bool,
+  padding: PropTypes.string,
   sm: PropTypes.bool,
   textAlign: PropTypes.string,
   textDecoration: PropTypes.string,
-  borderColor: PropTypes.string,
-  borderRadius: PropTypes.string,
-  padding: PropTypes.string,
 };
 
 TextFieldComponent.defaultProps = {
@@ -43,24 +43,4 @@ TextFieldComponent.defaultProps = {
   borderColor: defaultControlStylesBase.borderColor,
   borderRadius: defaultControlStylesBase.borderRadius,
   padding: defaultControlStylesBase.padding,
-};
-
-export const withTextFieldComponentConvertor = () => {
-  class TextFieldComponentConvertor extends React.Component {
-    render() {
-      const {
-        controlId,
-        ...otherProps
-      } = this.props;
-      const controlJSX = (<TextFieldComponent id={controlId} {...otherProps} />);
-      return controlJSX;
-    }
-  }
-  TextFieldComponentConvertor.propTypes = {
-    controlId: PropTypes.string,
-  };
-  TextFieldComponentConvertor.defaultProps = {
-    controlId: '',
-  };
-  return TextFieldComponentConvertor;
 };

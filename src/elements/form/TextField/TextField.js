@@ -1,17 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withControlGroup } from 'src/elements/form/ControlGroup/ControlGroup';
+import { ControlGroupBase } from 'src/elements/form/ControlGroup/ControlGroup';
 import { passThrough } from 'src/utils/componentHelpers';
-import { withTextFieldComponentConvertor } from '.';
+import { TextFieldComponent } from './TextFieldComponent';
 
 export const TextField = props => {
-  const { controlId } = props;
-  const overrides = {
-    ...props,
-  };
-  const child = withTextFieldComponentConvertor(<div controlId={controlId} {...passThrough(TextField, overrides)} />);
-  const ProtoTextField = withControlGroup(child);
-  return <ProtoTextField {...overrides} />;
+  const {
+    controlId,
+    assistiveText,
+    controlLabel,
+    validationError,
+  } = props;
+
+  const childProps = { id: controlId, ...passThrough(TextField, props) };
+  return (
+    <ControlGroupBase
+      assistiveText={assistiveText}
+      controlId={controlId}
+      controlLabel={controlLabel}
+      validationError={validationError}
+    >
+      <TextFieldComponent {...childProps} />
+    </ControlGroupBase>);
 };
 
 TextField.propTypes = {

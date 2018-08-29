@@ -41,79 +41,64 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
   lg={true}
   validationError=""
 >
-  <ControlGroupComponent
+  <ControlGroupBase
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
-    lg={true}
     validationError=""
   >
-    <ControlGroupBase
-      assistiveText=""
-      controlId="exampleFullName"
-      controlLabel="Full name"
-      validationError=""
-    >
-      <styled.div>
-        <div
-          className=""
+    <styled.div>
+      <div
+        className=""
+      >
+        <ControlLabel
+          color="inherit"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          for="exampleFullName"
+          kerning="inherit"
+          lg={false}
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
         >
-          <ControlLabel
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
+          <styled.label
             for="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
           >
-            <styled.label
-              for="exampleFullName"
+            <label
+              className="c0"
             >
-              <label
-                className="c0"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
-           
-          <TextFieldComponentConvertor
-            controlId="exampleFullName"
-            lg={true}
+              Full name
+            </label>
+          </styled.label>
+        </ControlLabel>
+        <TextFieldComponent
+          borderColor="hsl(0, 0%, 25%)"
+          borderRadius="4px"
+          color="inherit"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          id="exampleFullName"
+          kerning="inherit"
+          lg={true}
+          padding="1rem"
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
+        >
+          <styled.input
+            id="exampleFullName"
           >
-            <TextFieldComponent
-              borderColor="hsl(0, 0%, 25%)"
-              borderRadius="4px"
-              color="inherit"
-              fontFamily="inherit"
-              fontWeight="inherit"
+            <input
+              className="c1"
               id="exampleFullName"
-              kerning="inherit"
-              lg={true}
-              padding="1rem"
-              sm={false}
-              textAlign="inherit"
-              textDecoration="inherit"
-            >
-              <styled.input
-                id="exampleFullName"
-              >
-                <input
-                  className="c1"
-                  id="exampleFullName"
-                  type="text"
-                />
-              </styled.input>
-            </TextFieldComponent>
-          </TextFieldComponentConvertor>
-           
-        </div>
-      </styled.div>
-    </ControlGroupBase>
-  </ControlGroupComponent>
+              type="text"
+            />
+          </styled.input>
+        </TextFieldComponent>
+      </div>
+    </styled.div>
+  </ControlGroupBase>
 </TextField>
 `;
 
@@ -157,77 +142,64 @@ exports[`TextField Component base should return a TextField object 1`] = `
   controlLabel="Full name"
   validationError=""
 >
-  <ControlGroupComponent
+  <ControlGroupBase
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
     validationError=""
   >
-    <ControlGroupBase
-      assistiveText=""
-      controlId="exampleFullName"
-      controlLabel="Full name"
-      validationError=""
-    >
-      <styled.div>
-        <div
-          className=""
+    <styled.div>
+      <div
+        className=""
+      >
+        <ControlLabel
+          color="inherit"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          for="exampleFullName"
+          kerning="inherit"
+          lg={false}
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
         >
-          <ControlLabel
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
+          <styled.label
             for="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
           >
-            <styled.label
-              for="exampleFullName"
+            <label
+              className="c0"
             >
-              <label
-                className="c0"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
-           
-          <TextFieldComponentConvertor
-            controlId="exampleFullName"
+              Full name
+            </label>
+          </styled.label>
+        </ControlLabel>
+        <TextFieldComponent
+          borderColor="hsl(0, 0%, 25%)"
+          borderRadius="4px"
+          color="inherit"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          id="exampleFullName"
+          kerning="inherit"
+          lg={false}
+          padding="1rem"
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
+        >
+          <styled.input
+            id="exampleFullName"
           >
-            <TextFieldComponent
-              borderColor="hsl(0, 0%, 25%)"
-              borderRadius="4px"
-              color="inherit"
-              fontFamily="inherit"
-              fontWeight="inherit"
+            <input
+              className="c1"
               id="exampleFullName"
-              kerning="inherit"
-              lg={false}
-              padding="1rem"
-              sm={false}
-              textAlign="inherit"
-              textDecoration="inherit"
-            >
-              <styled.input
-                id="exampleFullName"
-              >
-                <input
-                  className="c1"
-                  id="exampleFullName"
-                  type="text"
-                />
-              </styled.input>
-            </TextFieldComponent>
-          </TextFieldComponentConvertor>
-           
-        </div>
-      </styled.div>
-    </ControlGroupBase>
-  </ControlGroupComponent>
+              type="text"
+            />
+          </styled.input>
+        </TextFieldComponent>
+      </div>
+    </styled.div>
+  </ControlGroupBase>
 </TextField>
 `;
 
@@ -272,79 +244,64 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   sm={true}
   validationError=""
 >
-  <ControlGroupComponent
+  <ControlGroupBase
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
-    sm={true}
     validationError=""
   >
-    <ControlGroupBase
-      assistiveText=""
-      controlId="exampleFullName"
-      controlLabel="Full name"
-      validationError=""
-    >
-      <styled.div>
-        <div
-          className=""
+    <styled.div>
+      <div
+        className=""
+      >
+        <ControlLabel
+          color="inherit"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          for="exampleFullName"
+          kerning="inherit"
+          lg={false}
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
         >
-          <ControlLabel
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
+          <styled.label
             for="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
           >
-            <styled.label
-              for="exampleFullName"
+            <label
+              className="c0"
             >
-              <label
-                className="c0"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
-           
-          <TextFieldComponentConvertor
-            controlId="exampleFullName"
-            sm={true}
+              Full name
+            </label>
+          </styled.label>
+        </ControlLabel>
+        <TextFieldComponent
+          borderColor="hsl(0, 0%, 25%)"
+          borderRadius="4px"
+          color="inherit"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          id="exampleFullName"
+          kerning="inherit"
+          lg={false}
+          padding="1rem"
+          sm={true}
+          textAlign="inherit"
+          textDecoration="inherit"
+        >
+          <styled.input
+            id="exampleFullName"
           >
-            <TextFieldComponent
-              borderColor="hsl(0, 0%, 25%)"
-              borderRadius="4px"
-              color="inherit"
-              fontFamily="inherit"
-              fontWeight="inherit"
+            <input
+              className="c1"
               id="exampleFullName"
-              kerning="inherit"
-              lg={false}
-              padding="1rem"
-              sm={true}
-              textAlign="inherit"
-              textDecoration="inherit"
-            >
-              <styled.input
-                id="exampleFullName"
-              >
-                <input
-                  className="c1"
-                  id="exampleFullName"
-                  type="text"
-                />
-              </styled.input>
-            </TextFieldComponent>
-          </TextFieldComponentConvertor>
-           
-        </div>
-      </styled.div>
-    </ControlGroupBase>
-  </ControlGroupComponent>
+              type="text"
+            />
+          </styled.input>
+        </TextFieldComponent>
+      </div>
+    </styled.div>
+  </ControlGroupBase>
 </TextField>
 `;
 
@@ -403,99 +360,86 @@ exports[`TextField with assistive text should return a TextField object contain 
   controlLabel="Full name"
   validationError=""
 >
-  <ControlGroupComponent
+  <ControlGroupBase
     assistiveText="Please tell me your name"
     controlId="exampleFullName"
     controlLabel="Full name"
     validationError=""
   >
-    <ControlGroupBase
-      assistiveText="Please tell me your name"
-      controlId="exampleFullName"
-      controlLabel="Full name"
-      validationError=""
-    >
-      <styled.div>
-        <div
-          className=""
+    <styled.div>
+      <div
+        className=""
+      >
+        <ControlLabel
+          color="inherit"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          for="exampleFullName"
+          kerning="inherit"
+          lg={false}
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
         >
-          <ControlLabel
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
+          <styled.label
             for="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
           >
-            <styled.label
-              for="exampleFullName"
+            <label
+              className="c0"
             >
-              <label
-                className="c0"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
-           
-          <TextFieldComponentConvertor
-            controlId="exampleFullName"
+              Full name
+            </label>
+          </styled.label>
+        </ControlLabel>
+        <TextFieldComponent
+          borderColor="hsl(0, 0%, 25%)"
+          borderRadius="4px"
+          color="inherit"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          id="exampleFullName"
+          kerning="inherit"
+          lg={false}
+          padding="1rem"
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
+        >
+          <styled.input
+            id="exampleFullName"
           >
-            <TextFieldComponent
-              borderColor="hsl(0, 0%, 25%)"
-              borderRadius="4px"
-              color="inherit"
-              fontFamily="inherit"
-              fontWeight="inherit"
+            <input
+              className="c1"
               id="exampleFullName"
-              kerning="inherit"
-              lg={false}
-              padding="1rem"
-              sm={false}
-              textAlign="inherit"
-              textDecoration="inherit"
-            >
-              <styled.input
-                id="exampleFullName"
-              >
-                <input
-                  className="c1"
-                  id="exampleFullName"
-                  type="text"
-                />
-              </styled.input>
-            </TextFieldComponent>
-          </TextFieldComponentConvertor>
-           
-          <AssistiveText
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
+              type="text"
+            />
+          </styled.input>
+        </TextFieldComponent>
+        <AssistiveText
+          color="inherit"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          id="exampleFullNameHelp"
+          kerning="inherit"
+          lg={false}
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
+        >
+          <styled.div
             id="exampleFullNameHelp"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
           >
-            <styled.div
+            <div
+              className="c2"
               id="exampleFullNameHelp"
             >
-              <div
-                className="c2"
-                id="exampleFullNameHelp"
-              >
-                Please tell me your name
-              </div>
-            </styled.div>
-          </AssistiveText>
-        </div>
-      </styled.div>
-    </ControlGroupBase>
-  </ControlGroupComponent>
+              Please tell me your name
+            </div>
+          </styled.div>
+        </AssistiveText>
+      </div>
+    </styled.div>
+  </ControlGroupBase>
 </TextField>
 `;
 
@@ -541,85 +485,68 @@ exports[`TextField with some other props should return a TextField object contai
   require={true}
   validationError=""
 >
-  <ControlGroupComponent
+  <ControlGroupBase
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
-    link="abc"
-    require={true}
     validationError=""
   >
-    <ControlGroupBase
-      assistiveText=""
-      controlId="exampleFullName"
-      controlLabel="Full name"
-      validationError=""
-    >
-      <styled.div>
-        <div
-          className=""
+    <styled.div>
+      <div
+        className=""
+      >
+        <ControlLabel
+          color="inherit"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          for="exampleFullName"
+          kerning="inherit"
+          lg={false}
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
         >
-          <ControlLabel
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
+          <styled.label
             for="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
           >
-            <styled.label
-              for="exampleFullName"
+            <label
+              className="c0"
             >
-              <label
-                className="c0"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
-           
-          <TextFieldComponentConvertor
-            controlId="exampleFullName"
+              Full name
+            </label>
+          </styled.label>
+        </ControlLabel>
+        <TextFieldComponent
+          borderColor="hsl(0, 0%, 25%)"
+          borderRadius="4px"
+          color="inherit"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          id="exampleFullName"
+          kerning="inherit"
+          lg={false}
+          link="abc"
+          padding="1rem"
+          require={true}
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
+        >
+          <styled.input
+            id="exampleFullName"
             link="abc"
             require={true}
           >
-            <TextFieldComponent
-              borderColor="hsl(0, 0%, 25%)"
-              borderRadius="4px"
-              color="inherit"
-              fontFamily="inherit"
-              fontWeight="inherit"
+            <input
+              className="c1"
               id="exampleFullName"
-              kerning="inherit"
-              lg={false}
-              link="abc"
-              padding="1rem"
-              require={true}
-              sm={false}
-              textAlign="inherit"
-              textDecoration="inherit"
-            >
-              <styled.input
-                id="exampleFullName"
-                link="abc"
-                require={true}
-              >
-                <input
-                  className="c1"
-                  id="exampleFullName"
-                  type="text"
-                />
-              </styled.input>
-            </TextFieldComponent>
-          </TextFieldComponentConvertor>
-           
-        </div>
-      </styled.div>
-    </ControlGroupBase>
-  </ControlGroupComponent>
+              type="text"
+            />
+          </styled.input>
+        </TextFieldComponent>
+      </div>
+    </styled.div>
+  </ControlGroupBase>
 </TextField>
 `;
 
@@ -678,98 +605,85 @@ exports[`TextField with validation error should return a TextField object contai
   controlLabel="Full name"
   validationError="This is a require field."
 >
-  <ControlGroupComponent
+  <ControlGroupBase
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
     validationError="This is a require field."
   >
-    <ControlGroupBase
-      assistiveText=""
-      controlId="exampleFullName"
-      controlLabel="Full name"
-      validationError="This is a require field."
-    >
-      <styled.div>
-        <div
-          className=""
+    <styled.div>
+      <div
+        className=""
+      >
+        <ControlLabel
+          color="inherit"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          for="exampleFullName"
+          kerning="inherit"
+          lg={false}
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
         >
-          <ControlLabel
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
+          <styled.label
             for="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
           >
-            <styled.label
-              for="exampleFullName"
+            <label
+              className="c0"
             >
-              <label
-                className="c0"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
-           
-          <TextFieldComponentConvertor
-            controlId="exampleFullName"
+              Full name
+            </label>
+          </styled.label>
+        </ControlLabel>
+        <TextFieldComponent
+          borderColor="hsl(0, 0%, 25%)"
+          borderRadius="4px"
+          color="inherit"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          id="exampleFullName"
+          kerning="inherit"
+          lg={false}
+          padding="1rem"
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
+        >
+          <styled.input
+            id="exampleFullName"
           >
-            <TextFieldComponent
-              borderColor="hsl(0, 0%, 25%)"
-              borderRadius="4px"
-              color="inherit"
-              fontFamily="inherit"
-              fontWeight="inherit"
+            <input
+              className="c1"
               id="exampleFullName"
-              kerning="inherit"
-              lg={false}
-              padding="1rem"
-              sm={false}
-              textAlign="inherit"
-              textDecoration="inherit"
-            >
-              <styled.input
-                id="exampleFullName"
-              >
-                <input
-                  className="c1"
-                  id="exampleFullName"
-                  type="text"
-                />
-              </styled.input>
-            </TextFieldComponent>
-          </TextFieldComponentConvertor>
-           
-          <AssistiveText
-            color="brandDanger"
-            fontFamily="inherit"
-            fontWeight="inherit"
+              type="text"
+            />
+          </styled.input>
+        </TextFieldComponent>
+        <AssistiveText
+          color="brandDanger"
+          fontFamily="inherit"
+          fontWeight="inherit"
+          id="exampleFullNameError"
+          kerning="inherit"
+          lg={false}
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
+        >
+          <styled.div
             id="exampleFullNameError"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
           >
-            <styled.div
+            <div
+              className="c2"
               id="exampleFullNameError"
             >
-              <div
-                className="c2"
-                id="exampleFullNameError"
-              >
-                This is a require field.
-              </div>
-            </styled.div>
-          </AssistiveText>
-        </div>
-      </styled.div>
-    </ControlGroupBase>
-  </ControlGroupComponent>
+              This is a require field.
+            </div>
+          </styled.div>
+        </AssistiveText>
+      </div>
+    </styled.div>
+  </ControlGroupBase>
 </TextField>
 `;

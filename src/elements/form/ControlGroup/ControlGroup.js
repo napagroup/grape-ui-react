@@ -45,30 +45,3 @@ ControlGroupBase.defaultProps = {
   assistiveText: '',
   validationError: '',
 };
-
-export const withControlGroup = (Child, props) => {
-  class ControlGroupComponent extends React.Component {
-    render() {
-      const {
-        controlLabel,
-        controlId,
-        assistiveText,
-        validationError,
-        ...otherProps
-      } = this.props;
-      const controlJSX = (<ControlGroupBase assistiveText={assistiveText} controlId={controlId} controlLabel={controlLabel} validationError={validationError} > <Child controlId={controlId} {...otherProps} /> </ControlGroupBase>);
-      return controlJSX;
-    }
-  }
-  ControlGroupComponent.propTypes = {
-    assistiveText: PropTypes.string,
-    controlId: PropTypes.string.isRequired,
-    controlLabel: PropTypes.string.isRequired,
-    validationError: PropTypes.string,
-  };
-  ControlGroupComponent.defaultProps = {
-    assistiveText: '',
-    validationError: '',
-  };
-  return ControlGroupComponent;
-};
