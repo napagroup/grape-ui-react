@@ -38,6 +38,7 @@ export const controlStylesBase = (props = {}) => {
   const scaleFactor = getScaleFactor(props);
   const {
     borderColor,
+    borderColorActive,
     padding,
   } = overrides;
   return `
