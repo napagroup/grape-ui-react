@@ -8,7 +8,7 @@ import { passThrough, resolveColor } from 'src/utils/componentHelpers';
 export const TextFieldComponent = props => {
   const { validationError } = props;
   const textBase = textStylesBase(props);
-  const controlBase = !validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger') });
+  const controlBase = !validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') });
   const ProtoBase = styled.input.attrs({
     type: 'text',
   })`

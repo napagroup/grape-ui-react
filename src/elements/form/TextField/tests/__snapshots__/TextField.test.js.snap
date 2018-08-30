@@ -1082,12 +1082,12 @@ exports[`TextField with validation error should return a TextField object contai
 }
 
 .c1:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+  border-color: hsl(4.1,89.6%,58.4%);
+  box-shadow: 0 0 0 1px hsl(4.1,89.6%,58.4%);
 }
 
 .c1:focus + label {
-  color: hsl(323.3,84.6%,28%);
+  color: hsl(4.1,89.6%,58.4%);
 }
 
 .c1[required] + label:after {
