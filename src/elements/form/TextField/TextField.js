@@ -15,7 +15,7 @@ export const TextField = props => {
     ...otherProps
   } = props;
   const preSpaceProps = {
-    pb: [1, 2, 3, 4],
+    pb: 3,
     pt: 1,
     ...otherProps,
   };
