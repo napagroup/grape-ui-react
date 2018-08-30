@@ -30,6 +30,10 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   color: hsl(323.3,84.6%,28%);
 }
 
+.c0[required] + label:after {
+  content: "*";
+}
+
 <TextFieldComponent
   borderColor="hsl(0, 0%, 25%)"
   borderRadius="4px"
@@ -83,6 +87,10 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   color: hsl(323.3,84.6%,28%);
 }
 
+.c0[required] + label:after {
+  content: "*";
+}
+
 <TextFieldComponent
   borderColor="hsl(0, 0%, 25%)"
   borderRadius="4px"
@@ -134,6 +142,10 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
 
 .c0:focus + label {
   color: hsl(323.3,84.6%,28%);
+}
+
+.c0[required] + label:after {
+  content: "*";
 }
 
 <TextFieldComponent

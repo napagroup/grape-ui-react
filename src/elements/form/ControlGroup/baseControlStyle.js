@@ -52,5 +52,6 @@ export const controlStylesBase = (props = {}) => {
       box-shadow: 0 0 0 1px ${activeColor};
       + label { color: ${activeColor}; }
     }
+    &[required] + label:after { content: "*" }
   `;
 };

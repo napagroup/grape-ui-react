@@ -21,13 +21,13 @@ describe('TextField with assistive text', () => {
 });
 describe('TextField with validation error', () => {
   it('should return a TextField object contain Assistive Text with error style', () => {
-    const component = mount(<TextField controlId="exampleFullName" controlLabel="Full name" validationError="This is a require field." />);
+    const component = mount(<TextField controlId="exampleFullName" controlLabel="Full name" validationError="This is a required field." />);
     expect(toJson(component.find('TextField'))).toMatchSnapshot();
   });
 });
 describe('TextField with some other props', () => {
   it('should return a TextField object contain input with those other props ', () => {
-    const component = mount(<TextField controlId="exampleFullName" controlLabel="Full name" link="abc" require />);
+    const component = mount(<TextField controlId="exampleFullName" controlLabel="Full name" link="abc" required />);
     expect(toJson(component.find('TextField'))).toMatchSnapshot();
   });
 });
