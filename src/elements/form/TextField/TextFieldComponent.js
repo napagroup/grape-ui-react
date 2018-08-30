@@ -4,24 +4,29 @@ import styled from 'styled-components';
 import { defaultTextStylesBase, textStylesBase } from 'src/elements/typography/textStyles';
 import { defaultControlStylesBase, controlStylesBase } from '../ControlGroup/baseControlStyle';
 import { passThrough } from 'src/utils/componentHelpers';
+import { width } from 'styled-system';
+import { withStyledSystem } from 'src/decorators';
 
 export const TextFieldComponent = props => {
   const textBase = textStylesBase(props);
   const controlBase = controlStylesBase(props);
-  const ProtoTextFieldComponent = styled.input.attrs({
+  const ProtoBase = styled.input.attrs({
     type: 'text',
   })`
     ${textBase}
     ${controlBase}
   `;
-  return <ProtoTextFieldComponent {...passThrough(TextFieldComponent, props)} />;
+  const ProtoStyledSystem = withStyledSystem(ProtoBase, props);
+  return <ProtoStyledSystem {...passThrough(TextFieldComponent, props)} />;
 };
 
 TextFieldComponent.propTypes = {
+  allowStyledWidth: PropTypes.bool,
   borderColor: PropTypes.string,
   borderColorActive: PropTypes.string,
   borderRadius: PropTypes.string,
   color: PropTypes.string,
+  disallowAllStyled: PropTypes.bool,
   fontFamily: PropTypes.string,
   fontWeight: PropTypes.string,
   kerning: PropTypes.string,
@@ -30,6 +35,7 @@ TextFieldComponent.propTypes = {
   sm: PropTypes.bool,
   textAlign: PropTypes.string,
   textDecoration: PropTypes.string,
+  ...width.propTypes,
 };
 
 TextFieldComponent.defaultProps = {
@@ -45,4 +51,7 @@ TextFieldComponent.defaultProps = {
   borderColorActive: defaultControlStylesBase.borderColorActive,
   borderRadius: defaultControlStylesBase.borderRadius,
   padding: defaultControlStylesBase.padding,
+  disallowAllStyled: true,
+  allowStyledWidth: true,
+  width: 1,
 };
