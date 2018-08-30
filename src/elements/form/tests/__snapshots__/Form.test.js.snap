@@ -9,6 +9,18 @@ exports[`Form Component base should return a Form object with class inline 1`] =
   width: auto;
 }
 
+.c0 > * {
+  margin: 0 0.5rem;
+}
+
+.c0 > *:first-child {
+  margin-left: 0;
+}
+
+.c0 > *:last-child {
+  margin-right: 0;
+}
+
 <Form
   formInline={true}
 >
