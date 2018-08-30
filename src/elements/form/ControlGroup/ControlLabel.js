@@ -12,20 +12,18 @@ const { grid: gridSchema } = getGlobalStyles();
 const padding = getScaledSize(gridSchema.gutter, 0.5);
 
 export const ControlLabel = props => {
+  const { validationError, color } = props;
   const overrides = {
     ...props,
     sm: true,
+    color: !validationError ? color : 'brandDanger',
   };
-  const { validationError, color } = props;
-  const coloring = !validationError ? color : resolveColor('brandDanger');
-
   const controlLabelStyle = `
     position: absolute;
     padding: 0 ${padding};
     background-color: white;
     top: -${padding};
     left: ${padding};
-    color:  ${coloring};
   `;
   const ProtoControlLabel = withBaseStyles(styled.label`${controlLabelStyle}`, overrides);
   return <ProtoControlLabel {...passThrough(ControlLabel, props)} />;
