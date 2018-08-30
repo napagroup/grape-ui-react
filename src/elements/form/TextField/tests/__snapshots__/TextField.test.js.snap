@@ -790,6 +790,7 @@ exports[`TextField with assistive text should return a TextField object contain 
 }
 
 .c3 {
+  padding: 0 0.5rem;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1122,6 +1123,7 @@ exports[`TextField with validation error should return a TextField object contai
 }
 
 .c3 {
+  padding: 0 0.5rem;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1173,7 +1175,7 @@ exports[`TextField with validation error should return a TextField object contai
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
-            validationError="This is a require field."
+            validationError="This is a required field."
           >
             <styled.input
               id="exampleFullName"
@@ -1196,7 +1198,7 @@ exports[`TextField with validation error should return a TextField object contai
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
-            validationError="This is a require field."
+            validationError="This is a required field."
           >
             <styled.label
               activeColor="blue"
