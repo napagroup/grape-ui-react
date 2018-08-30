@@ -13,6 +13,10 @@ const resolveColor = color => {
   return resolvedValue || defaultValue;
 };
 
+const removeSomeProps = (originalProps, toBeRemovedProps) => {
+  return except(originalProps, toBeRemovedProps);
+};
+
 const passThrough = (component, props) => {
   const omit = Object.keys(component.propTypes || {});
   return except(props, omit);
@@ -25,4 +29,4 @@ const addPassthroughMethod = component => {
   };
 };
 
-export { resolveColor, passThrough, addPassthroughMethod };
+export { resolveColor, passThrough, addPassthroughMethod, removeSomeProps };

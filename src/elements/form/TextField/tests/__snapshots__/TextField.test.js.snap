@@ -2,6 +2,7 @@
 
 exports[`TextField  a large TextFieldComponent object should return a large TextFieldComponent object  1`] = `
 .c0 {
+  padding-bottom: 1;
   position: relative;
   background-color: white;
 }
@@ -61,67 +62,73 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
+    paddingBottom="1"
     validationError=""
   >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <ControlLabel
-          color="inherit"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          htmlFor="exampleFullName"
-          kerning="inherit"
-          lg={false}
-          sm={false}
-          textAlign="inherit"
-          textDecoration="inherit"
+    <ControlGroup
+      paddingBottom="1"
+    >
+      <styled.div>
+        <div
+          className="c0"
         >
-          <styled.label
+          <ControlLabel
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
             htmlFor="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <label
-              className="c1"
+            <styled.label
               htmlFor="exampleFullName"
             >
-              Full name
-            </label>
-          </styled.label>
-        </ControlLabel>
-        <TextFieldComponent
-          borderColor="hsl(0, 0%, 25%)"
-          borderColorActive="hsl(323.3, 84.6%, 28%)"
-          borderRadius="4px"
-          color="inherit"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          id="exampleFullName"
-          kerning="inherit"
-          lg={true}
-          padding="1rem"
-          sm={false}
-          textAlign="inherit"
-          textDecoration="inherit"
-        >
-          <styled.input
+              <label
+                className="c1"
+                htmlFor="exampleFullName"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
+          <TextFieldComponent
+            borderColor="hsl(0, 0%, 25%)"
+            borderColorActive="hsl(323.3, 84.6%, 28%)"
+            borderRadius="4px"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
             id="exampleFullName"
+            kerning="inherit"
+            lg={true}
+            padding="1rem"
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <input
-              className="c2"
+            <styled.input
               id="exampleFullName"
-              type="text"
-            />
-          </styled.input>
-        </TextFieldComponent>
-      </div>
-    </styled.div>
+            >
+              <input
+                className="c2"
+                id="exampleFullName"
+                type="text"
+              />
+            </styled.input>
+          </TextFieldComponent>
+        </div>
+      </styled.div>
+    </ControlGroup>
   </ControlGroupBase>
 </TextField>
 `;
 
 exports[`TextField Component base should return a TextField object 1`] = `
 .c0 {
+  padding-bottom: 1;
   position: relative;
   background-color: white;
 }
@@ -180,67 +187,73 @@ exports[`TextField Component base should return a TextField object 1`] = `
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
+    paddingBottom="1"
     validationError=""
   >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <ControlLabel
-          color="inherit"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          htmlFor="exampleFullName"
-          kerning="inherit"
-          lg={false}
-          sm={false}
-          textAlign="inherit"
-          textDecoration="inherit"
+    <ControlGroup
+      paddingBottom="1"
+    >
+      <styled.div>
+        <div
+          className="c0"
         >
-          <styled.label
+          <ControlLabel
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
             htmlFor="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <label
-              className="c1"
+            <styled.label
               htmlFor="exampleFullName"
             >
-              Full name
-            </label>
-          </styled.label>
-        </ControlLabel>
-        <TextFieldComponent
-          borderColor="hsl(0, 0%, 25%)"
-          borderColorActive="hsl(323.3, 84.6%, 28%)"
-          borderRadius="4px"
-          color="inherit"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          id="exampleFullName"
-          kerning="inherit"
-          lg={false}
-          padding="1rem"
-          sm={false}
-          textAlign="inherit"
-          textDecoration="inherit"
-        >
-          <styled.input
+              <label
+                className="c1"
+                htmlFor="exampleFullName"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
+          <TextFieldComponent
+            borderColor="hsl(0, 0%, 25%)"
+            borderColorActive="hsl(323.3, 84.6%, 28%)"
+            borderRadius="4px"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
             id="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            padding="1rem"
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <input
-              className="c2"
+            <styled.input
               id="exampleFullName"
-              type="text"
-            />
-          </styled.input>
-        </TextFieldComponent>
-      </div>
-    </styled.div>
+            >
+              <input
+                className="c2"
+                id="exampleFullName"
+                type="text"
+              />
+            </styled.input>
+          </TextFieldComponent>
+        </div>
+      </styled.div>
+    </ControlGroup>
   </ControlGroupBase>
 </TextField>
 `;
 
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object  1`] = `
 .c0 {
+  padding-bottom: 1;
   position: relative;
   background-color: white;
 }
@@ -300,67 +313,202 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
+    paddingBottom="1"
     validationError=""
   >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <ControlLabel
-          color="inherit"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          htmlFor="exampleFullName"
-          kerning="inherit"
-          lg={false}
-          sm={false}
-          textAlign="inherit"
-          textDecoration="inherit"
+    <ControlGroup
+      paddingBottom="1"
+    >
+      <styled.div>
+        <div
+          className="c0"
         >
-          <styled.label
+          <ControlLabel
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
             htmlFor="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <label
-              className="c1"
+            <styled.label
               htmlFor="exampleFullName"
             >
-              Full name
-            </label>
-          </styled.label>
-        </ControlLabel>
-        <TextFieldComponent
-          borderColor="hsl(0, 0%, 25%)"
-          borderColorActive="hsl(323.3, 84.6%, 28%)"
-          borderRadius="4px"
-          color="inherit"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          id="exampleFullName"
-          kerning="inherit"
-          lg={false}
-          padding="1rem"
-          sm={true}
-          textAlign="inherit"
-          textDecoration="inherit"
-        >
-          <styled.input
+              <label
+                className="c1"
+                htmlFor="exampleFullName"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
+          <TextFieldComponent
+            borderColor="hsl(0, 0%, 25%)"
+            borderColorActive="hsl(323.3, 84.6%, 28%)"
+            borderRadius="4px"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
             id="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            padding="1rem"
+            sm={true}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <input
-              className="c2"
+            <styled.input
               id="exampleFullName"
-              type="text"
-            />
-          </styled.input>
-        </TextFieldComponent>
-      </div>
-    </styled.div>
+            >
+              <input
+                className="c2"
+                id="exampleFullName"
+                type="text"
+              />
+            </styled.input>
+          </TextFieldComponent>
+        </div>
+      </styled.div>
+    </ControlGroup>
+  </ControlGroupBase>
+</TextField>
+`;
+
+exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object with space mb  1`] = `
+.c0 {
+  margin: 1;
+  padding-bottom: 1;
+  position: relative;
+  background-color: white;
+}
+
+.c1 {
+  position: absolute;
+  padding: 0 0.5rem;
+  background-color: white;
+  top: -0.5rem;
+  left: 0.5rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  padding: 1rem;
+  outline: 0;
+}
+
+.c2:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+<TextField
+  assistiveText=""
+  controlId="exampleFullName2"
+  controlLabel="Full name2"
+  m="1"
+  validationError=""
+>
+  <ControlGroupBase
+    assistiveText=""
+    controlId="exampleFullName2"
+    controlLabel="Full name2"
+    margin="1"
+    paddingBottom="1"
+    validationError=""
+  >
+    <ControlGroup
+      margin="1"
+      paddingBottom="1"
+    >
+      <styled.div>
+        <div
+          className="c0"
+        >
+          <ControlLabel
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            htmlFor="exampleFullName2"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.label
+              htmlFor="exampleFullName2"
+            >
+              <label
+                className="c1"
+                htmlFor="exampleFullName2"
+              >
+                Full name2
+              </label>
+            </styled.label>
+          </ControlLabel>
+          <TextFieldComponent
+            borderColor="hsl(0, 0%, 25%)"
+            borderColorActive="hsl(323.3, 84.6%, 28%)"
+            borderRadius="4px"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            id="exampleFullName2"
+            kerning="inherit"
+            lg={false}
+            padding="1rem"
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.input
+              id="exampleFullName2"
+            >
+              <input
+                className="c2"
+                id="exampleFullName2"
+                type="text"
+              />
+            </styled.input>
+          </TextFieldComponent>
+        </div>
+      </styled.div>
+    </ControlGroup>
   </ControlGroupBase>
 </TextField>
 `;
 
 exports[`TextField with assistive text should return a TextField object contain Assistive Text 1`] = `
 .c0 {
+  padding-bottom: 1;
   position: relative;
   background-color: white;
 }
@@ -434,89 +582,95 @@ exports[`TextField with assistive text should return a TextField object contain 
     assistiveText="Please tell me your name"
     controlId="exampleFullName"
     controlLabel="Full name"
+    paddingBottom="1"
     validationError=""
   >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <ControlLabel
-          color="inherit"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          htmlFor="exampleFullName"
-          kerning="inherit"
-          lg={false}
-          sm={false}
-          textAlign="inherit"
-          textDecoration="inherit"
+    <ControlGroup
+      paddingBottom="1"
+    >
+      <styled.div>
+        <div
+          className="c0"
         >
-          <styled.label
+          <ControlLabel
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
             htmlFor="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <label
-              className="c1"
+            <styled.label
               htmlFor="exampleFullName"
             >
-              Full name
-            </label>
-          </styled.label>
-        </ControlLabel>
-        <TextFieldComponent
-          borderColor="hsl(0, 0%, 25%)"
-          borderColorActive="hsl(323.3, 84.6%, 28%)"
-          borderRadius="4px"
-          color="inherit"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          id="exampleFullName"
-          kerning="inherit"
-          lg={false}
-          padding="1rem"
-          sm={false}
-          textAlign="inherit"
-          textDecoration="inherit"
-        >
-          <styled.input
+              <label
+                className="c1"
+                htmlFor="exampleFullName"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
+          <TextFieldComponent
+            borderColor="hsl(0, 0%, 25%)"
+            borderColorActive="hsl(323.3, 84.6%, 28%)"
+            borderRadius="4px"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
             id="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            padding="1rem"
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <input
-              className="c2"
+            <styled.input
               id="exampleFullName"
-              type="text"
-            />
-          </styled.input>
-        </TextFieldComponent>
-        <AssistiveText
-          color="inherit"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          id="exampleFullNameHelp"
-          kerning="inherit"
-          lg={false}
-          sm={false}
-          textAlign="inherit"
-          textDecoration="inherit"
-        >
-          <styled.div
+            >
+              <input
+                className="c2"
+                id="exampleFullName"
+                type="text"
+              />
+            </styled.input>
+          </TextFieldComponent>
+          <AssistiveText
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
             id="exampleFullNameHelp"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <div
-              className="c3"
+            <styled.div
               id="exampleFullNameHelp"
             >
-              Please tell me your name
-            </div>
-          </styled.div>
-        </AssistiveText>
-      </div>
-    </styled.div>
+              <div
+                className="c3"
+                id="exampleFullNameHelp"
+              >
+                Please tell me your name
+              </div>
+            </styled.div>
+          </AssistiveText>
+        </div>
+      </styled.div>
+    </ControlGroup>
   </ControlGroupBase>
 </TextField>
 `;
 
 exports[`TextField with some other props should return a TextField object contain input with those other props  1`] = `
 .c0 {
+  padding-bottom: 1;
   position: relative;
   background-color: white;
 }
@@ -577,71 +731,77 @@ exports[`TextField with some other props should return a TextField object contai
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
+    paddingBottom="1"
     validationError=""
   >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <ControlLabel
-          color="inherit"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          htmlFor="exampleFullName"
-          kerning="inherit"
-          lg={false}
-          sm={false}
-          textAlign="inherit"
-          textDecoration="inherit"
+    <ControlGroup
+      paddingBottom="1"
+    >
+      <styled.div>
+        <div
+          className="c0"
         >
-          <styled.label
+          <ControlLabel
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
             htmlFor="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <label
-              className="c1"
+            <styled.label
               htmlFor="exampleFullName"
             >
-              Full name
-            </label>
-          </styled.label>
-        </ControlLabel>
-        <TextFieldComponent
-          borderColor="hsl(0, 0%, 25%)"
-          borderColorActive="hsl(323.3, 84.6%, 28%)"
-          borderRadius="4px"
-          color="inherit"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          id="exampleFullName"
-          kerning="inherit"
-          lg={false}
-          link="abc"
-          padding="1rem"
-          require={true}
-          sm={false}
-          textAlign="inherit"
-          textDecoration="inherit"
-        >
-          <styled.input
+              <label
+                className="c1"
+                htmlFor="exampleFullName"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
+          <TextFieldComponent
+            borderColor="hsl(0, 0%, 25%)"
+            borderColorActive="hsl(323.3, 84.6%, 28%)"
+            borderRadius="4px"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
             id="exampleFullName"
+            kerning="inherit"
+            lg={false}
             link="abc"
+            padding="1rem"
             require={true}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <input
-              className="c2"
+            <styled.input
               id="exampleFullName"
-              type="text"
-            />
-          </styled.input>
-        </TextFieldComponent>
-      </div>
-    </styled.div>
+              link="abc"
+              require={true}
+            >
+              <input
+                className="c2"
+                id="exampleFullName"
+                type="text"
+              />
+            </styled.input>
+          </TextFieldComponent>
+        </div>
+      </styled.div>
+    </ControlGroup>
   </ControlGroupBase>
 </TextField>
 `;
 
 exports[`TextField with validation error should return a TextField object contain Assistive Text with error style 1`] = `
 .c0 {
+  padding-bottom: 1;
   position: relative;
   background-color: white;
 }
@@ -715,83 +875,88 @@ exports[`TextField with validation error should return a TextField object contai
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
+    paddingBottom="1"
     validationError="This is a require field."
   >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <ControlLabel
-          color="inherit"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          htmlFor="exampleFullName"
-          kerning="inherit"
-          lg={false}
-          sm={false}
-          textAlign="inherit"
-          textDecoration="inherit"
+    <ControlGroup
+      paddingBottom="1"
+    >
+      <styled.div>
+        <div
+          className="c0"
         >
-          <styled.label
+          <ControlLabel
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
             htmlFor="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <label
-              className="c1"
+            <styled.label
               htmlFor="exampleFullName"
             >
-              Full name
-            </label>
-          </styled.label>
-        </ControlLabel>
-        <TextFieldComponent
-          borderColor="hsl(0, 0%, 25%)"
-          borderColorActive="hsl(323.3, 84.6%, 28%)"
-          borderRadius="4px"
-          color="inherit"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          id="exampleFullName"
-          kerning="inherit"
-          lg={false}
-          padding="1rem"
-          sm={false}
-          textAlign="inherit"
-          textDecoration="inherit"
-        >
-          <styled.input
+              <label
+                className="c1"
+                htmlFor="exampleFullName"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
+          <TextFieldComponent
+            borderColor="hsl(0, 0%, 25%)"
+            borderColorActive="hsl(323.3, 84.6%, 28%)"
+            borderRadius="4px"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
             id="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            padding="1rem"
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <input
-              className="c2"
+            <styled.input
               id="exampleFullName"
-              type="text"
-            />
-          </styled.input>
-        </TextFieldComponent>
-        <AssistiveText
-          color="brandDanger"
-          fontFamily="inherit"
-          fontWeight="inherit"
-          id="exampleFullNameError"
-          kerning="inherit"
-          lg={false}
-          sm={false}
-          textAlign="inherit"
-          textDecoration="inherit"
-        >
-          <styled.div
+            >
+              <input
+                className="c2"
+                id="exampleFullName"
+                type="text"
+              />
+            </styled.input>
+          </TextFieldComponent>
+          <AssistiveText
+            color="brandDanger"
+            fontFamily="inherit"
+            fontWeight="inherit"
             id="exampleFullNameError"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
           >
-            <div
-              className="c3"
+            <styled.div
               id="exampleFullNameError"
             >
-              This is a require field.
-            </div>
-          </styled.div>
-        </AssistiveText>
-      </div>
-    </styled.div>
+              <div
+                className="c3"
+                id="exampleFullNameError"
+              >
+                This is a require field.
+              </div>
+            </styled.div>
+          </AssistiveText>
+        </div>
+      </styled.div>
+    </ControlGroup>
   </ControlGroupBase>
 </TextField>
 `;
