@@ -3,8 +3,28 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ControlLabel } from './ControlLabel';
 import { AssistiveText } from './AssistiveText';
+import { space } from 'styled-system';
 
-const ControlGroup = styled.div` position: relative; background-color: white;`;
+const ControlGroup = props => {
+  const {
+    controlLabel,
+    controlId,
+    assistiveText,
+    validationError,
+    children,
+    ...otherProps
+  } = props;
+  const propsPass = {
+    controlLabel, controlId, assistiveText, validationError, children,
+  };
+
+  const ProtoControlGroup = styled.div` ${(otherProps)} position: relative; background-color: white;`;
+  return <ProtoControlGroup {...propsPass} />;
+};
+
+ControlGroup.propTypes = {
+  ...space.propTypes,
+};
 
 export const ControlGroupBase = props => {
   const {
@@ -13,6 +33,7 @@ export const ControlGroupBase = props => {
     assistiveText,
     validationError,
     children,
+    ...otherProps
   } = props;
 
   const displayAssistive = (text, error, id) => {
@@ -25,7 +46,7 @@ export const ControlGroupBase = props => {
   };
 
   return (
-    <ControlGroup>
+    <ControlGroup {...otherProps}>
       <ControlLabel htmlFor={controlId}>{controlLabel}</ControlLabel>
       {children}
       {displayAssistive(assistiveText, validationError, controlId)}

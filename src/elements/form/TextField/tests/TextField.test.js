@@ -49,3 +49,9 @@ describe('TextField with a responsive width', () => {
     expect(toJson(component.find('TextField'))).toMatchSnapshot();
   });
 });
+describe('TextField a small TextFieldComponent object', () => {
+  it('should return a small TextFieldComponent object with space mb ', () => {
+    const component = mount(<TextField controlId="exampleFullName2" controlLabel="Full name2" m="1" />);
+    expect(toJson(component.find('TextField'))).toMatchSnapshot();
+  });
+});
