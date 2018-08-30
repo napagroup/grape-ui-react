@@ -54,8 +54,8 @@ export const controlStylesBase = (props = {}) => {
     }
     &[required] + label:after { content: "*" }
     &[disabled] {
-      opacity: 0.2;
-      ~ * { color: rgba(0,0,0,0.2); }
+      opacity: 0.3;
+      ~ * { color: rgba(0,0,0,0.3); }
     }
   `;
 };
