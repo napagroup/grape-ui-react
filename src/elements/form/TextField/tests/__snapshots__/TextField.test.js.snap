@@ -47,7 +47,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 
 .c2:focus {
   border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 <TextField
@@ -167,7 +167,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
 
 .c2:focus {
   border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 <TextField
@@ -286,7 +286,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 .c2:focus {
   border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 <TextField
@@ -406,7 +406,7 @@ exports[`TextField with assistive text should return a TextField object contain 
 
 .c2:focus {
   border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c3 {
@@ -562,7 +562,7 @@ exports[`TextField with some other props should return a TextField object contai
 
 .c2:focus {
   border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 <TextField
@@ -687,7 +687,7 @@ exports[`TextField with validation error should return a TextField object contai
 
 .c2:focus {
   border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c3 {
