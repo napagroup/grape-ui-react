@@ -53,5 +53,9 @@ export const controlStylesBase = (props = {}) => {
       + label { color: ${activeColor}; }
     }
     &[required] + label:after { content: "*" }
+    &[disabled] {
+      opacity: 0.5;
+      + label { opacity: 0.5; }
+    }
   `;
 };

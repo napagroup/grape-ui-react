@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { defaultTextStylesBase } from 'src/elements/typography/textStyles';
 import { withBaseStyles } from 'src/decorators';
-import { passThrough, resolveColor } from 'src/utils/componentHelpers';
+import { passThrough } from 'src/utils/componentHelpers';
 import { getGlobalStyles } from 'src/global-styles';
 import { getScaledSize } from 'src/elements/typography/utils';
 

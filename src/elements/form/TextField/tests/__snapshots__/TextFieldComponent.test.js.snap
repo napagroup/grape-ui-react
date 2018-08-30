@@ -34,6 +34,14 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   content: "*";
 }
 
+.c0[disabled] {
+  opacity: 0.5;
+}
+
+.c0[disabled] + label {
+  opacity: 0.5;
+}
+
 <TextFieldComponent
   borderColor="hsl(0, 0%, 25%)"
   borderRadius="4px"
@@ -91,6 +99,14 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   content: "*";
 }
 
+.c0[disabled] {
+  opacity: 0.5;
+}
+
+.c0[disabled] + label {
+  opacity: 0.5;
+}
+
 <TextFieldComponent
   borderColor="hsl(0, 0%, 25%)"
   borderRadius="4px"
@@ -146,6 +162,14 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
 
 .c0[required] + label:after {
   content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.5;
+}
+
+.c0[disabled] + label {
+  opacity: 0.5;
 }
 
 <TextFieldComponent

@@ -42,6 +42,14 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
   content: "*";
 }
 
+.c1[disabled] {
+  opacity: 0.5;
+}
+
+.c1[disabled] + label {
+  opacity: 0.5;
+}
+
 .c2 {
   position: absolute;
   padding: 0 0.5rem;
@@ -186,6 +194,14 @@ exports[`TextField Component base should return a TextField object 1`] = `
   content: "*";
 }
 
+.c1[disabled] {
+  opacity: 0.5;
+}
+
+.c1[disabled] + label {
+  opacity: 0.5;
+}
+
 .c2 {
   position: absolute;
   padding: 0 0.5rem;
@@ -287,6 +303,161 @@ exports[`TextField Component base should return a TextField object 1`] = `
 </TextField>
 `;
 
+exports[`TextField a small TextFieldComponent object should return a disabled TextFieldComponent 1`] = `
+.c0 {
+  padding-bottom: 16px;
+  padding-top: 4px;
+  position: relative;
+  background-color: white;
+  width: 100%;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1[required] + label:after {
+  content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.5;
+}
+
+.c1[disabled] + label {
+  opacity: 0.5;
+}
+
+.c2 {
+  position: absolute;
+  padding: 0 0.5rem;
+  background-color: white;
+  top: -0.5rem;
+  left: 0.5rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<TextField
+  activeColor="red"
+  assistiveText=""
+  controlId="exampleFullName2"
+  controlLabel="Full name2"
+  disabled={true}
+  validationError=""
+>
+  <ControlGroupBase
+    activeColor="red"
+    assistiveText=""
+    controlId="exampleFullName2"
+    controlLabel="Full name2"
+    paddingBottom="16px"
+    paddingTop="4px"
+    validationError=""
+  >
+    <ControlGroup
+      paddingBottom="16px"
+      paddingTop="4px"
+    >
+      <styled.div>
+        <div
+          className="c0"
+        >
+          <TextFieldComponent
+            borderColor="hsl(0, 0%, 25%)"
+            borderRadius="4px"
+            color="inherit"
+            disabled={true}
+            fontFamily="inherit"
+            fontWeight="inherit"
+            id="exampleFullName2"
+            kerning="inherit"
+            lg={false}
+            padding="1rem"
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+            validationError=""
+          >
+            <styled.input
+              disabled={true}
+              id="exampleFullName2"
+            >
+              <input
+                className="c1"
+                disabled={true}
+                id="exampleFullName2"
+                type="text"
+              />
+            </styled.input>
+          </TextFieldComponent>
+          <ControlLabel
+            activeColor="red"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            htmlFor="exampleFullName2"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+            validationError=""
+          >
+            <styled.label
+              activeColor="red"
+              htmlFor="exampleFullName2"
+            >
+              <label
+                className="c2"
+                htmlFor="exampleFullName2"
+              >
+                Full name2
+              </label>
+            </styled.label>
+          </ControlLabel>
+        </div>
+      </styled.div>
+    </ControlGroup>
+  </ControlGroupBase>
+</TextField>
+`;
+
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object  1`] = `
 .c0 {
   padding-bottom: 16px;
@@ -327,6 +498,14 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 .c1[required] + label:after {
   content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.5;
+}
+
+.c1[disabled] + label {
+  opacity: 0.5;
 }
 
 .c2 {
@@ -473,6 +652,14 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   content: "*";
 }
 
+.c1[disabled] {
+  opacity: 0.5;
+}
+
+.c1[disabled] + label {
+  opacity: 0.5;
+}
+
 .c2 {
   position: absolute;
   padding: 0 0.5rem;
@@ -615,6 +802,14 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 .c1[required] + label:after {
   content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.5;
+}
+
+.c1[disabled] + label {
+  opacity: 0.5;
 }
 
 .c2 {
@@ -761,6 +956,14 @@ exports[`TextField with assistive text should return a TextField object contain 
 
 .c1[required] + label:after {
   content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.5;
+}
+
+.c1[disabled] + label {
+  opacity: 0.5;
 }
 
 .c2 {
@@ -944,6 +1147,14 @@ exports[`TextField with some other props should return a TextField object contai
   content: "*";
 }
 
+.c1[disabled] {
+  opacity: 0.5;
+}
+
+.c1[disabled] + label {
+  opacity: 0.5;
+}
+
 .c2 {
   position: absolute;
   padding: 0 0.5rem;
@@ -1092,6 +1303,14 @@ exports[`TextField with validation error should return a TextField object contai
 
 .c1[required] + label:after {
   content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.5;
+}
+
+.c1[disabled] + label {
+  opacity: 0.5;
 }
 
 .c2 {
