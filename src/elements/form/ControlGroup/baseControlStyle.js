@@ -50,6 +50,7 @@ export const controlStylesBase = (props = {}) => {
     &:focus {
       border-color: ${activeColor};
       box-shadow: 0 0 0 1px ${activeColor};
+      + label { color: ${activeColor}; }
     }
   `;
 };

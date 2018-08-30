@@ -55,12 +55,12 @@ export const ControlGroupBase = props => {
 
   return (
     <ControlGroup {...otherProps}>
+      {children}
       <ControlLabel
         activeColor={activeColor}
         htmlFor={controlId}
       >{controlLabel}
       </ControlLabel>
-      {children}
       {displayAssistive(assistiveText, validationError, controlId)}
     </ControlGroup>
   );

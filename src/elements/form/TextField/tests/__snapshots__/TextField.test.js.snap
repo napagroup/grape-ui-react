@@ -10,27 +10,6 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 }
 
 .c1 {
-  position: absolute;
-  padding: 0 0.5rem;
-  background-color: white;
-  top: -0.5rem;
-  left: 0.5rem;
-  color: inherit;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c2 {
   font-family: inherit;
   font-size: 1.2rem;
   font-weight: inherit;
@@ -50,9 +29,34 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
   width: 100%;
 }
 
-.c2:focus {
+.c1:focus {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c2 {
+  position: absolute;
+  padding: 0 0.5rem;
+  background-color: white;
+  top: -0.5rem;
+  left: 0.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
 }
 
 <TextField
@@ -80,30 +84,6 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
         <div
           className="c0"
         >
-          <ControlLabel
-            activeColor="blue"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-          >
-            <styled.label
-              activeColor="blue"
-              htmlFor="exampleFullName"
-            >
-              <label
-                className="c1"
-                htmlFor="exampleFullName"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
             borderRadius="4px"
@@ -122,12 +102,36 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
               id="exampleFullName"
             >
               <input
-                className="c2"
+                className="c1"
                 id="exampleFullName"
                 type="text"
               />
             </styled.input>
           </TextFieldComponent>
+          <ControlLabel
+            activeColor="blue"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            htmlFor="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.label
+              activeColor="blue"
+              htmlFor="exampleFullName"
+            >
+              <label
+                className="c2"
+                htmlFor="exampleFullName"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
         </div>
       </styled.div>
     </ControlGroup>
@@ -145,27 +149,6 @@ exports[`TextField Component base should return a TextField object 1`] = `
 }
 
 .c1 {
-  position: absolute;
-  padding: 0 0.5rem;
-  background-color: white;
-  top: -0.5rem;
-  left: 0.5rem;
-  color: inherit;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c2 {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -185,9 +168,34 @@ exports[`TextField Component base should return a TextField object 1`] = `
   width: 100%;
 }
 
-.c2:focus {
+.c1:focus {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c2 {
+  position: absolute;
+  padding: 0 0.5rem;
+  background-color: white;
+  top: -0.5rem;
+  left: 0.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
 }
 
 <TextField
@@ -214,30 +222,6 @@ exports[`TextField Component base should return a TextField object 1`] = `
         <div
           className="c0"
         >
-          <ControlLabel
-            activeColor="blue"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-          >
-            <styled.label
-              activeColor="blue"
-              htmlFor="exampleFullName"
-            >
-              <label
-                className="c1"
-                htmlFor="exampleFullName"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
             borderRadius="4px"
@@ -256,12 +240,36 @@ exports[`TextField Component base should return a TextField object 1`] = `
               id="exampleFullName"
             >
               <input
-                className="c2"
+                className="c1"
                 id="exampleFullName"
                 type="text"
               />
             </styled.input>
           </TextFieldComponent>
+          <ControlLabel
+            activeColor="blue"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            htmlFor="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.label
+              activeColor="blue"
+              htmlFor="exampleFullName"
+            >
+              <label
+                className="c2"
+                htmlFor="exampleFullName"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
         </div>
       </styled.div>
     </ControlGroup>
@@ -279,27 +287,6 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c1 {
-  position: absolute;
-  padding: 0 0.5rem;
-  background-color: white;
-  top: -0.5rem;
-  left: 0.5rem;
-  color: inherit;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c2 {
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -319,9 +306,34 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   width: 100%;
 }
 
-.c2:focus {
+.c1:focus {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c2 {
+  position: absolute;
+  padding: 0 0.5rem;
+  background-color: white;
+  top: -0.5rem;
+  left: 0.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
 }
 
 <TextField
@@ -349,30 +361,6 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
         <div
           className="c0"
         >
-          <ControlLabel
-            activeColor="blue"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-          >
-            <styled.label
-              activeColor="blue"
-              htmlFor="exampleFullName"
-            >
-              <label
-                className="c1"
-                htmlFor="exampleFullName"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
             borderRadius="4px"
@@ -391,12 +379,36 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
               id="exampleFullName"
             >
               <input
-                className="c2"
+                className="c1"
                 id="exampleFullName"
                 type="text"
               />
             </styled.input>
           </TextFieldComponent>
+          <ControlLabel
+            activeColor="blue"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            htmlFor="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.label
+              activeColor="blue"
+              htmlFor="exampleFullName"
+            >
+              <label
+                className="c2"
+                htmlFor="exampleFullName"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
         </div>
       </styled.div>
     </ControlGroup>
@@ -414,27 +426,6 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c1 {
-  position: absolute;
-  padding: 0 0.5rem;
-  background-color: white;
-  top: -0.5rem;
-  left: 0.5rem;
-  color: inherit;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c2 {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -454,9 +445,34 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   width: 100%;
 }
 
-.c2:focus {
+.c1:focus {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c2 {
+  position: absolute;
+  padding: 0 0.5rem;
+  background-color: white;
+  top: -0.5rem;
+  left: 0.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
 }
 
 <TextField
@@ -483,30 +499,6 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
         <div
           className="c0"
         >
-          <ControlLabel
-            activeColor="red"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName2"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-          >
-            <styled.label
-              activeColor="red"
-              htmlFor="exampleFullName2"
-            >
-              <label
-                className="c1"
-                htmlFor="exampleFullName2"
-              >
-                Full name2
-              </label>
-            </styled.label>
-          </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
             borderRadius="4px"
@@ -525,12 +517,36 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
               id="exampleFullName2"
             >
               <input
-                className="c2"
+                className="c1"
                 id="exampleFullName2"
                 type="text"
               />
             </styled.input>
           </TextFieldComponent>
+          <ControlLabel
+            activeColor="red"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            htmlFor="exampleFullName2"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.label
+              activeColor="red"
+              htmlFor="exampleFullName2"
+            >
+              <label
+                className="c2"
+                htmlFor="exampleFullName2"
+              >
+                Full name2
+              </label>
+            </styled.label>
+          </ControlLabel>
         </div>
       </styled.div>
     </ControlGroup>
@@ -549,27 +565,6 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c1 {
-  position: absolute;
-  padding: 0 0.5rem;
-  background-color: white;
-  top: -0.5rem;
-  left: 0.5rem;
-  color: inherit;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c2 {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -589,9 +584,34 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   width: 100%;
 }
 
-.c2:focus {
+.c1:focus {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c2 {
+  position: absolute;
+  padding: 0 0.5rem;
+  background-color: white;
+  top: -0.5rem;
+  left: 0.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
 }
 
 <TextField
@@ -621,30 +641,6 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
         <div
           className="c0"
         >
-          <ControlLabel
-            activeColor="blue"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName2"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-          >
-            <styled.label
-              activeColor="blue"
-              htmlFor="exampleFullName2"
-            >
-              <label
-                className="c1"
-                htmlFor="exampleFullName2"
-              >
-                Full name2
-              </label>
-            </styled.label>
-          </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
             borderRadius="4px"
@@ -663,12 +659,36 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
               id="exampleFullName2"
             >
               <input
-                className="c2"
+                className="c1"
                 id="exampleFullName2"
                 type="text"
               />
             </styled.input>
           </TextFieldComponent>
+          <ControlLabel
+            activeColor="blue"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            htmlFor="exampleFullName2"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.label
+              activeColor="blue"
+              htmlFor="exampleFullName2"
+            >
+              <label
+                className="c2"
+                htmlFor="exampleFullName2"
+              >
+                Full name2
+              </label>
+            </styled.label>
+          </ControlLabel>
         </div>
       </styled.div>
     </ControlGroup>
@@ -686,27 +706,6 @@ exports[`TextField with assistive text should return a TextField object contain 
 }
 
 .c1 {
-  position: absolute;
-  padding: 0 0.5rem;
-  background-color: white;
-  top: -0.5rem;
-  left: 0.5rem;
-  color: inherit;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c2 {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -726,9 +725,34 @@ exports[`TextField with assistive text should return a TextField object contain 
   width: 100%;
 }
 
-.c2:focus {
+.c1:focus {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c2 {
+  position: absolute;
+  padding: 0 0.5rem;
+  background-color: white;
+  top: -0.5rem;
+  left: 0.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
 }
 
 .c3 {
@@ -770,30 +794,6 @@ exports[`TextField with assistive text should return a TextField object contain 
         <div
           className="c0"
         >
-          <ControlLabel
-            activeColor="blue"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-          >
-            <styled.label
-              activeColor="blue"
-              htmlFor="exampleFullName"
-            >
-              <label
-                className="c1"
-                htmlFor="exampleFullName"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
             borderRadius="4px"
@@ -812,12 +812,36 @@ exports[`TextField with assistive text should return a TextField object contain 
               id="exampleFullName"
             >
               <input
-                className="c2"
+                className="c1"
                 id="exampleFullName"
                 type="text"
               />
             </styled.input>
           </TextFieldComponent>
+          <ControlLabel
+            activeColor="blue"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            htmlFor="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.label
+              activeColor="blue"
+              htmlFor="exampleFullName"
+            >
+              <label
+                className="c2"
+                htmlFor="exampleFullName"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
           <AssistiveText
             color="inherit"
             fontFamily="inherit"
@@ -857,27 +881,6 @@ exports[`TextField with some other props should return a TextField object contai
 }
 
 .c1 {
-  position: absolute;
-  padding: 0 0.5rem;
-  background-color: white;
-  top: -0.5rem;
-  left: 0.5rem;
-  color: inherit;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c2 {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -897,9 +900,34 @@ exports[`TextField with some other props should return a TextField object contai
   width: 100%;
 }
 
-.c2:focus {
+.c1:focus {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c2 {
+  position: absolute;
+  padding: 0 0.5rem;
+  background-color: white;
+  top: -0.5rem;
+  left: 0.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
 }
 
 <TextField
@@ -928,30 +956,6 @@ exports[`TextField with some other props should return a TextField object contai
         <div
           className="c0"
         >
-          <ControlLabel
-            activeColor="blue"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-          >
-            <styled.label
-              activeColor="blue"
-              htmlFor="exampleFullName"
-            >
-              <label
-                className="c1"
-                htmlFor="exampleFullName"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
             borderRadius="4px"
@@ -974,12 +978,36 @@ exports[`TextField with some other props should return a TextField object contai
               require={true}
             >
               <input
-                className="c2"
+                className="c1"
                 id="exampleFullName"
                 type="text"
               />
             </styled.input>
           </TextFieldComponent>
+          <ControlLabel
+            activeColor="blue"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            htmlFor="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.label
+              activeColor="blue"
+              htmlFor="exampleFullName"
+            >
+              <label
+                className="c2"
+                htmlFor="exampleFullName"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
         </div>
       </styled.div>
     </ControlGroup>
@@ -997,27 +1025,6 @@ exports[`TextField with validation error should return a TextField object contai
 }
 
 .c1 {
-  position: absolute;
-  padding: 0 0.5rem;
-  background-color: white;
-  top: -0.5rem;
-  left: 0.5rem;
-  color: inherit;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c2 {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -1037,9 +1044,34 @@ exports[`TextField with validation error should return a TextField object contai
   width: 100%;
 }
 
-.c2:focus {
+.c1:focus {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c2 {
+  position: absolute;
+  padding: 0 0.5rem;
+  background-color: white;
+  top: -0.5rem;
+  left: 0.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
 }
 
 .c3 {
@@ -1081,30 +1113,6 @@ exports[`TextField with validation error should return a TextField object contai
         <div
           className="c0"
         >
-          <ControlLabel
-            activeColor="blue"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-          >
-            <styled.label
-              activeColor="blue"
-              htmlFor="exampleFullName"
-            >
-              <label
-                className="c1"
-                htmlFor="exampleFullName"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
             borderRadius="4px"
@@ -1123,12 +1131,36 @@ exports[`TextField with validation error should return a TextField object contai
               id="exampleFullName"
             >
               <input
-                className="c2"
+                className="c1"
                 id="exampleFullName"
                 type="text"
               />
             </styled.input>
           </TextFieldComponent>
+          <ControlLabel
+            activeColor="blue"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            htmlFor="exampleFullName"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.label
+              activeColor="blue"
+              htmlFor="exampleFullName"
+            >
+              <label
+                className="c2"
+                htmlFor="exampleFullName"
+              >
+                Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
           <AssistiveText
             color="brandDanger"
             fontFamily="inherit"
