@@ -5,11 +5,10 @@ import { defaultTextStylesBase } from 'src/elements/typography/textStyles';
 import { withBaseStyles } from 'src/decorators';
 import { passThrough } from 'src/utils/componentHelpers';
 import { getGlobalStyles } from 'src/global-styles';
-import { getScaledSize } from 'src/elements/typography/utils';
 
 const { grid: gridSchema } = getGlobalStyles();
 
-const padding = getScaledSize(gridSchema.gutter, 0.5);
+const padding = gridSchema.gutter;
 
 export const AssistiveText = props => {
   const overrides = {
