@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { defaultTextStylesBase } from 'src/elements/typography/textStyles';
 import { withBaseStyles } from 'src/decorators';
-import { passThrough } from 'src/utils/componentHelpers';
+import { passThrough, resolveColor } from 'src/utils/componentHelpers';
 import { getGlobalStyles } from 'src/global-styles';
 import { getScaledSize } from 'src/elements/typography/utils';
 
@@ -17,7 +17,7 @@ export const ControlLabel = props => {
     sm: true,
   };
   const { validationError, color } = props;
-  const coloring = !validationError ? color : 'brandDanger';
+  const coloring = !validationError ? color : resolveColor('brandDanger');
 
   const controlLabelStyle = `
     position: absolute;
@@ -25,7 +25,7 @@ export const ControlLabel = props => {
     background-color: white;
     top: -${padding};
     left: ${padding};
-    color: ${coloring};
+    color:  ${coloring};
   `;
   const ProtoControlLabel = withBaseStyles(styled.label`${controlLabelStyle}`, overrides);
   return <ProtoControlLabel {...passThrough(ControlLabel, props)} />;

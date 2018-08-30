@@ -1081,7 +1081,7 @@ exports[`TextField with validation error should return a TextField object contai
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid brandDanger;
+  border: 1px solid hsl(4.1,89.6%,58.4%);
   border-radius: 4px;
   padding: 1rem;
   outline: 0;
@@ -1107,7 +1107,7 @@ exports[`TextField with validation error should return a TextField object contai
   background-color: white;
   top: -0.5rem;
   left: 0.5rem;
-  color: brandDanger;
+  color: hsl(4.1,89.6%,58.4%);
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;

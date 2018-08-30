@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { defaultTextStylesBase, textStylesBase } from 'src/elements/typography/textStyles';
 import { defaultControlStylesBase, controlStylesBase } from '../ControlGroup/baseControlStyle';
-import { passThrough } from 'src/utils/componentHelpers';
+import { passThrough, resolveColor } from 'src/utils/componentHelpers';
 
 export const TextFieldComponent = props => {
   const { validationError } = props;
   const textBase = textStylesBase(props);
-  const controlBase = !validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: 'brandDanger' });
+  const controlBase = !validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger') });
   const ProtoBase = styled.input.attrs({
     type: 'text',
   })`
