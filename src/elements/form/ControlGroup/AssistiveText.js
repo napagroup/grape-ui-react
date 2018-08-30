@@ -4,13 +4,19 @@ import styled from 'styled-components';
 import { defaultTextStylesBase } from 'src/elements/typography/textStyles';
 import { withBaseStyles } from 'src/decorators';
 import { passThrough } from 'src/utils/componentHelpers';
+import { getGlobalStyles } from 'src/global-styles';
+import { getScaledSize } from 'src/elements/typography/utils';
+
+const { grid: gridSchema } = getGlobalStyles();
+
+const padding = getScaledSize(gridSchema.gutter, 0.5);
 
 export const AssistiveText = props => {
   const overrides = {
     ...props,
     sm: true,
   };
-  const ProtoAssistiveText = withBaseStyles(styled.div``, overrides);
+  const ProtoAssistiveText = withBaseStyles(styled.div`padding: 0 ${padding};`, overrides);
   return <ProtoAssistiveText {...passThrough(AssistiveText, props)} />;
 };
 

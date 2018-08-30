@@ -2,6 +2,7 @@
 
 exports[`Assistive Text Component base should return an Assistive Text object 1`] = `
 .c0 {
+  padding: 0 0.5rem;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -42,6 +43,7 @@ exports[`Assistive Text Component base should return an Assistive Text object 1`
 
 exports[`Assistive Text Component base should return an Assistive Text object with danger text color 1`] = `
 .c0 {
+  padding: 0 0.5rem;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
