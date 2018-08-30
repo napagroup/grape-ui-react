@@ -43,11 +43,11 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 }
 
 .c1[disabled] {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
-.c1[disabled] + label {
-  opacity: 0.5;
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.2);
 }
 
 .c2 {
@@ -195,11 +195,11 @@ exports[`TextField Component base should return a TextField object 1`] = `
 }
 
 .c1[disabled] {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
-.c1[disabled] + label {
-  opacity: 0.5;
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.2);
 }
 
 .c2 {
@@ -346,11 +346,11 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
 }
 
 .c1[disabled] {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
-.c1[disabled] + label {
-  opacity: 0.5;
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.2);
 }
 
 .c2 {
@@ -501,11 +501,11 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c1[disabled] {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
-.c1[disabled] + label {
-  opacity: 0.5;
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.2);
 }
 
 .c2 {
@@ -653,11 +653,11 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c1[disabled] {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
-.c1[disabled] + label {
-  opacity: 0.5;
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.2);
 }
 
 .c2 {
@@ -805,11 +805,11 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c1[disabled] {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
-.c1[disabled] + label {
-  opacity: 0.5;
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.2);
 }
 
 .c2 {
@@ -959,11 +959,11 @@ exports[`TextField with assistive text should return a TextField object contain 
 }
 
 .c1[disabled] {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
-.c1[disabled] + label {
-  opacity: 0.5;
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.2);
 }
 
 .c2 {
@@ -1148,11 +1148,11 @@ exports[`TextField with some other props should return a TextField object contai
 }
 
 .c1[disabled] {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
-.c1[disabled] + label {
-  opacity: 0.5;
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.2);
 }
 
 .c2 {
@@ -1306,11 +1306,11 @@ exports[`TextField with validation error should return a TextField object contai
 }
 
 .c1[disabled] {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
-.c1[disabled] + label {
-  opacity: 0.5;
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.2);
 }
 
 .c2 {
