@@ -13,9 +13,7 @@ const resolveColor = color => {
   return resolvedValue || defaultValue;
 };
 
-const removeSomeProps = (originalProps, toBeRemovedProps) => {
-  return except(originalProps, toBeRemovedProps);
-};
+const removeSomeProps = (originalProps, toBeRemovedProps) => except(originalProps, toBeRemovedProps);
 
 const passThrough = (component, props) => {
   const omit = Object.keys(component.propTypes || {});

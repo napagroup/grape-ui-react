@@ -43,15 +43,22 @@ describe('TextField a small TextFieldComponent object', () => {
     expect(toJson(component.find('TextField'))).toMatchSnapshot();
   });
 });
-describe('TextField with a responsive width', () => {
-  it('should return a TextFieldComponent object with a responsive width', () => {
-    const component = mount(<TextField controlId="exampleFullName" controlLabel="Full name" sm width={[1, 1 / 2, 1 / 3, 1 / 4]} />);
-    expect(toJson(component.find('TextField'))).toMatchSnapshot();
-  });
-});
 describe('TextField a small TextFieldComponent object', () => {
   it('should return a small TextFieldComponent object with space mb ', () => {
     const component = mount(<TextField controlId="exampleFullName2" controlLabel="Full name2" m="1" />);
     expect(toJson(component.find('TextField'))).toMatchSnapshot();
   });
 });
+describe('TextField a small TextFieldComponent object', () => {
+  it('should return a small TextFieldComponent object with a red activeColor ', () => {
+    const component = mount(<TextField activeColor="red" controlId="exampleFullName2" controlLabel="Full name2" />);
+    expect(toJson(component.find('TextField'))).toMatchSnapshot();
+  });
+});
+
+// describe('TextField a small TextFieldComponent object', () => {
+//   it('should return a small TextFieldComponent object with a red bgColor ', () => {
+//     const component = mount(<TextField controlId="exampleFullName2" controlLabel="Full name2" bgColor="red" />);
+//     expect(toJson(component.find('TextField'))).toMatchSnapshot();
+//   });
+// });

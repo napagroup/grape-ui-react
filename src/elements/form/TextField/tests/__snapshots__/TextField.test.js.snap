@@ -2,9 +2,10 @@
 
 exports[`TextField  a large TextFieldComponent object should return a large TextFieldComponent object  1`] = `
 .c0 {
-  padding-bottom: 1;
+  padding-bottom: 4px;
   position: relative;
   background-color: white;
+  width: 100%;
 }
 
 .c1 {
@@ -63,11 +64,11 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
-    paddingBottom="1"
+    paddingBottom="4px"
     validationError=""
   >
     <ControlGroup
-      paddingBottom="1"
+      paddingBottom="4px"
     >
       <styled.div>
         <div
@@ -96,12 +97,10 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
             </styled.label>
           </ControlLabel>
           <TextFieldComponent
-            allowStyledWidth={true}
             borderColor="hsl(0, 0%, 25%)"
             borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
-            disallowAllStyled={true}
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleFullName"
@@ -111,7 +110,6 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
-            width={1}
           >
             <styled.input
               id="exampleFullName"
@@ -132,9 +130,10 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 
 exports[`TextField Component base should return a TextField object 1`] = `
 .c0 {
-  padding-bottom: 1;
+  padding-bottom: 4px;
   position: relative;
   background-color: white;
+  width: 100%;
 }
 
 .c1 {
@@ -192,11 +191,11 @@ exports[`TextField Component base should return a TextField object 1`] = `
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
-    paddingBottom="1"
+    paddingBottom="4px"
     validationError=""
   >
     <ControlGroup
-      paddingBottom="1"
+      paddingBottom="4px"
     >
       <styled.div>
         <div
@@ -225,12 +224,10 @@ exports[`TextField Component base should return a TextField object 1`] = `
             </styled.label>
           </ControlLabel>
           <TextFieldComponent
-            allowStyledWidth={true}
             borderColor="hsl(0, 0%, 25%)"
             borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
-            disallowAllStyled={true}
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleFullName"
@@ -240,7 +237,6 @@ exports[`TextField Component base should return a TextField object 1`] = `
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
-            width={1}
           >
             <styled.input
               id="exampleFullName"
@@ -261,9 +257,10 @@ exports[`TextField Component base should return a TextField object 1`] = `
 
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object  1`] = `
 .c0 {
-  padding-bottom: 1;
+  padding-bottom: 4px;
   position: relative;
   background-color: white;
+  width: 100%;
 }
 
 .c1 {
@@ -322,11 +319,11 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
-    paddingBottom="1"
+    paddingBottom="4px"
     validationError=""
   >
     <ControlGroup
-      paddingBottom="1"
+      paddingBottom="4px"
     >
       <styled.div>
         <div
@@ -355,12 +352,10 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             </styled.label>
           </ControlLabel>
           <TextFieldComponent
-            allowStyledWidth={true}
             borderColor="hsl(0, 0%, 25%)"
             borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
-            disallowAllStyled={true}
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleFullName"
@@ -370,7 +365,6 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             sm={true}
             textAlign="inherit"
             textDecoration="inherit"
-            width={1}
           >
             <styled.input
               id="exampleFullName"
@@ -389,12 +383,144 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 </TextField>
 `;
 
+exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object with a red activeColor  1`] = `
+.c0 {
+  padding-bottom: 4px;
+  position: relative;
+  background-color: white;
+  width: 100%;
+}
+
+.c1 {
+  position: absolute;
+  padding: 0 0.5rem;
+  background-color: white;
+  top: -0.5rem;
+  left: 0.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c2:focus {
+  border-color: [object Object];
+  box-shadow: 0 0 0 1px [object Object];
+}
+
+<TextField
+  activeColor="red"
+  assistiveText=""
+  controlId="exampleFullName2"
+  controlLabel="Full name2"
+  validationError=""
+>
+  <ControlGroupBase
+    activeColor="red"
+    assistiveText=""
+    controlId="exampleFullName2"
+    controlLabel="Full name2"
+    paddingBottom="4px"
+    validationError=""
+  >
+    <ControlGroup
+      paddingBottom="4px"
+    >
+      <styled.div>
+        <div
+          className="c0"
+        >
+          <ControlLabel
+            activeColor="red"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            htmlFor="exampleFullName2"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.label
+              activeColor="red"
+              htmlFor="exampleFullName2"
+            >
+              <label
+                className="c1"
+                htmlFor="exampleFullName2"
+              >
+                Full name2
+              </label>
+            </styled.label>
+          </ControlLabel>
+          <TextFieldComponent
+            borderColor="hsl(0, 0%, 25%)"
+            borderRadius="4px"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            id="exampleFullName2"
+            kerning="inherit"
+            lg={false}
+            padding="1rem"
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+          >
+            <styled.input
+              id="exampleFullName2"
+            >
+              <input
+                className="c2"
+                id="exampleFullName2"
+                type="text"
+              />
+            </styled.input>
+          </TextFieldComponent>
+        </div>
+      </styled.div>
+    </ControlGroup>
+  </ControlGroupBase>
+</TextField>
+`;
+
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object with space mb  1`] = `
 .c0 {
   margin: 1;
-  padding-bottom: 1;
+  padding-bottom: 4px;
   position: relative;
   background-color: white;
+  width: 100%;
 }
 
 .c1 {
@@ -454,12 +580,12 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
     controlId="exampleFullName2"
     controlLabel="Full name2"
     margin="1"
-    paddingBottom="1"
+    paddingBottom="4px"
     validationError=""
   >
     <ControlGroup
       margin="1"
-      paddingBottom="1"
+      paddingBottom="4px"
     >
       <styled.div>
         <div
@@ -488,12 +614,10 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             </styled.label>
           </ControlLabel>
           <TextFieldComponent
-            allowStyledWidth={true}
             borderColor="hsl(0, 0%, 25%)"
             borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
-            disallowAllStyled={true}
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleFullName2"
@@ -503,7 +627,6 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
-            width={1}
           >
             <styled.input
               id="exampleFullName2"
@@ -522,174 +645,12 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 </TextField>
 `;
 
-exports[`TextField with a responsive width should return a TextFieldComponent object with a responsive width 1`] = `
-.c0 {
-  padding-bottom: 1;
-  position: relative;
-  background-color: white;
-}
-
-.c1 {
-  position: absolute;
-  padding: 0 0.5rem;
-  background-color: white;
-  top: -0.5rem;
-  left: 0.5rem;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c2 {
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 2px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
-}
-
-.c2:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-@media screen and (min-width:40em) {
-  .c2 {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width:52em) {
-  .c2 {
-    width: 33.33333333333333%;
-  }
-}
-
-@media screen and (min-width:64em) {
-  .c2 {
-    width: 25%;
-  }
-}
-
-<TextField
-  assistiveText=""
-  controlId="exampleFullName"
-  controlLabel="Full name"
-  sm={true}
-  validationError=""
-  width={
-    Array [
-      1,
-      0.5,
-      0.3333333333333333,
-      0.25,
-    ]
-  }
->
-  <ControlGroupBase
-    assistiveText=""
-    controlId="exampleFullName"
-    controlLabel="Full name"
-    paddingBottom="1"
-    validationError=""
-  >
-    <ControlGroup
-      paddingBottom="1"
-    >
-      <styled.div>
-        <div
-          className="c0"
-        >
-          <ControlLabel
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-          >
-            <styled.label
-              htmlFor="exampleFullName"
-            >
-              <label
-                className="c1"
-                htmlFor="exampleFullName"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
-          <TextFieldComponent
-            allowStyledWidth={true}
-            borderColor="hsl(0, 0%, 25%)"
-            borderColorActive="hsl(323.3, 84.6%, 28%)"
-            borderRadius="4px"
-            color="inherit"
-            disallowAllStyled={true}
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            padding="1rem"
-            sm={true}
-            textAlign="inherit"
-            textDecoration="inherit"
-            width={
-              Array [
-                1,
-                0.5,
-                0.3333333333333333,
-                0.25,
-              ]
-            }
-          >
-            <styled.input
-              id="exampleFullName"
-            >
-              <input
-                className="c2"
-                id="exampleFullName"
-                type="text"
-              />
-            </styled.input>
-          </TextFieldComponent>
-        </div>
-      </styled.div>
-    </ControlGroup>
-  </ControlGroupBase>
-</TextField>
-`;
-
 exports[`TextField with assistive text should return a TextField object contain Assistive Text 1`] = `
 .c0 {
-  padding-bottom: 1;
+  padding-bottom: 4px;
   position: relative;
   background-color: white;
+  width: 100%;
 }
 
 .c1 {
@@ -762,11 +723,11 @@ exports[`TextField with assistive text should return a TextField object contain 
     assistiveText="Please tell me your name"
     controlId="exampleFullName"
     controlLabel="Full name"
-    paddingBottom="1"
+    paddingBottom="4px"
     validationError=""
   >
     <ControlGroup
-      paddingBottom="1"
+      paddingBottom="4px"
     >
       <styled.div>
         <div
@@ -795,12 +756,10 @@ exports[`TextField with assistive text should return a TextField object contain 
             </styled.label>
           </ControlLabel>
           <TextFieldComponent
-            allowStyledWidth={true}
             borderColor="hsl(0, 0%, 25%)"
             borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
-            disallowAllStyled={true}
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleFullName"
@@ -810,7 +769,6 @@ exports[`TextField with assistive text should return a TextField object contain 
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
-            width={1}
           >
             <styled.input
               id="exampleFullName"
@@ -853,9 +811,10 @@ exports[`TextField with assistive text should return a TextField object contain 
 
 exports[`TextField with some other props should return a TextField object contain input with those other props  1`] = `
 .c0 {
-  padding-bottom: 1;
+  padding-bottom: 4px;
   position: relative;
   background-color: white;
+  width: 100%;
 }
 
 .c1 {
@@ -915,11 +874,11 @@ exports[`TextField with some other props should return a TextField object contai
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
-    paddingBottom="1"
+    paddingBottom="4px"
     validationError=""
   >
     <ControlGroup
-      paddingBottom="1"
+      paddingBottom="4px"
     >
       <styled.div>
         <div
@@ -948,12 +907,10 @@ exports[`TextField with some other props should return a TextField object contai
             </styled.label>
           </ControlLabel>
           <TextFieldComponent
-            allowStyledWidth={true}
             borderColor="hsl(0, 0%, 25%)"
             borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
-            disallowAllStyled={true}
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleFullName"
@@ -965,7 +922,6 @@ exports[`TextField with some other props should return a TextField object contai
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
-            width={1}
           >
             <styled.input
               id="exampleFullName"
@@ -988,9 +944,10 @@ exports[`TextField with some other props should return a TextField object contai
 
 exports[`TextField with validation error should return a TextField object contain Assistive Text with error style 1`] = `
 .c0 {
-  padding-bottom: 1;
+  padding-bottom: 4px;
   position: relative;
   background-color: white;
+  width: 100%;
 }
 
 .c1 {
@@ -1063,11 +1020,11 @@ exports[`TextField with validation error should return a TextField object contai
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
-    paddingBottom="1"
+    paddingBottom="4px"
     validationError="This is a require field."
   >
     <ControlGroup
-      paddingBottom="1"
+      paddingBottom="4px"
     >
       <styled.div>
         <div
@@ -1096,12 +1053,10 @@ exports[`TextField with validation error should return a TextField object contai
             </styled.label>
           </ControlLabel>
           <TextFieldComponent
-            allowStyledWidth={true}
             borderColor="hsl(0, 0%, 25%)"
             borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
-            disallowAllStyled={true}
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleFullName"
@@ -1111,7 +1066,6 @@ exports[`TextField with validation error should return a TextField object contai
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
-            width={1}
           >
             <styled.input
               id="exampleFullName"

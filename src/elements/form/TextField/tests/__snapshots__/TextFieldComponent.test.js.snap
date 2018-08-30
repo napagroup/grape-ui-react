@@ -1,87 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextField with a responsive width should return a TextFieldComponent object with a responsive width 1`] = `
-.c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
-}
-
-.c0:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-@media screen and (min-width:40em) {
-  .c0 {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width:52em) {
-  .c0 {
-    width: 33.33333333333333%;
-  }
-}
-
-@media screen and (min-width:64em) {
-  .c0 {
-    width: 25%;
-  }
-}
-
-<TextFieldComponent
-  allowStyledWidth={true}
-  borderColor="hsl(0, 0%, 25%)"
-  borderColorActive="hsl(323.3, 84.6%, 28%)"
-  borderRadius="4px"
-  color="inherit"
-  controlId="exampleFullName"
-  controlLabel="Full name"
-  disallowAllStyled={true}
-  fontFamily="inherit"
-  fontWeight="inherit"
-  kerning="inherit"
-  lg={false}
-  padding="1rem"
-  sm={false}
-  textAlign="inherit"
-  textDecoration="inherit"
-  width={
-    Array [
-      1,
-      0.5,
-      0.3333333333333333,
-      0.25,
-    ]
-  }
->
-  <styled.input
-    controlId="exampleFullName"
-    controlLabel="Full name"
-  >
-    <input
-      className="c0"
-      type="text"
-    />
-  </styled.input>
-</TextFieldComponent>
-`;
-
 exports[`TextFieldComponent base should return a TextFieldComponent object 1`] = `
 .c0 {
   font-family: inherit;
@@ -109,12 +27,10 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
 }
 
 <TextFieldComponent
-  allowStyledWidth={true}
   borderColor="hsl(0, 0%, 25%)"
   borderColorActive="hsl(323.3, 84.6%, 28%)"
   borderRadius="4px"
   color="inherit"
-  disallowAllStyled={true}
   fontFamily="inherit"
   fontWeight="inherit"
   kerning="inherit"
@@ -123,7 +39,6 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   sm={false}
   textAlign="inherit"
   textDecoration="inherit"
-  width={1}
 >
   <styled.input>
     <input
@@ -161,12 +76,10 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
 }
 
 <TextFieldComponent
-  allowStyledWidth={true}
   borderColor="hsl(0, 0%, 25%)"
   borderColorActive="hsl(323.3, 84.6%, 28%)"
   borderRadius="4px"
   color="inherit"
-  disallowAllStyled={true}
   fontFamily="inherit"
   fontWeight="inherit"
   kerning="inherit"
@@ -175,7 +88,6 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   sm={false}
   textAlign="inherit"
   textDecoration="inherit"
-  width={1}
 >
   <styled.input>
     <input
@@ -213,12 +125,10 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
 }
 
 <TextFieldComponent
-  allowStyledWidth={true}
   borderColor="hsl(0, 0%, 25%)"
   borderColorActive="hsl(323.3, 84.6%, 28%)"
   borderRadius="4px"
   color="inherit"
-  disallowAllStyled={true}
   fontFamily="inherit"
   fontWeight="inherit"
   kerning="inherit"
@@ -227,7 +137,6 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   sm={true}
   textAlign="inherit"
   textDecoration="inherit"
-  width={1}
 >
   <styled.input>
     <input

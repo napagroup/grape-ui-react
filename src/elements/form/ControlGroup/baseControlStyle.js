@@ -3,8 +3,8 @@ import { getGlobalStyles } from 'src/global-styles';
 const { border: borderSchema, grid: gridSchema } = getGlobalStyles();
 
 export const defaultControlStylesBase = {
+  activeColor: borderSchema.borderColorActive,
   borderColor: borderSchema.borderColor,
-  borderColorActive: borderSchema.borderColorActive,
   borderRadius: borderSchema.borderRadius.base,
   padding: gridSchema.gutter,
 };
@@ -37,8 +37,8 @@ export const controlStylesBase = (props = {}) => {
 
   const scaleFactor = getScaleFactor(props);
   const {
+    activeColor,
     borderColor,
-    borderColorActive,
     padding,
   } = overrides;
   return `
@@ -46,9 +46,10 @@ export const controlStylesBase = (props = {}) => {
     border-radius: ${scaleFactor};
     padding: ${padding};
     outline: 0;
+    width: 100%;
     &:focus {
-      border-color: ${borderColorActive};
-      box-shadow: 0 0 0 1px ${borderColorActive};
+      border-color: ${activeColor};
+      box-shadow: 0 0 0 1px ${activeColor};
     }
   `;
 };
