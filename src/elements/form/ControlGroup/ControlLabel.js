@@ -19,7 +19,7 @@ export const ControlLabel = props => {
     position: absolute;
     padding: 0 ${padding};
     background-color: white;
-    top: ${padding};
+    top: -${padding};
     left: ${padding};
   `;
   const ProtoControlLabel = withBaseStyles(styled.label`${controlLabelStyle}`, overrides);
