@@ -9,7 +9,7 @@ import { getScaledSize } from 'src/elements/typography/utils';
 
 const { grid: gridSchema } = getGlobalStyles();
 
-const padding = gridSchema.gutter;
+const padding = getScaledSize(gridSchema.gutter, 0.5);
 
 export const ControlLabel = props => {
   const overrides = {
@@ -20,7 +20,7 @@ export const ControlLabel = props => {
     position: absolute;
     padding: 0 ${padding};
     background-color: white;
-    top: ${getScaledSize(padding, -0.5)};
+    top: -${padding};
     left: ${padding};
   `;
   const ProtoControlLabel = withBaseStyles(styled.label`${controlLabelStyle}`, overrides);

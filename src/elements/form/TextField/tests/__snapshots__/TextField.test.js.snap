@@ -8,10 +8,10 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 
 .c1 {
   position: absolute;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   background-color: white;
   top: -0.5rem;
-  left: 1rem;
+  left: 0.5rem;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -128,10 +128,10 @@ exports[`TextField Component base should return a TextField object 1`] = `
 
 .c1 {
   position: absolute;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   background-color: white;
   top: -0.5rem;
-  left: 1rem;
+  left: 0.5rem;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -247,10 +247,10 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 .c1 {
   position: absolute;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   background-color: white;
   top: -0.5rem;
-  left: 1rem;
+  left: 0.5rem;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -367,10 +367,10 @@ exports[`TextField with assistive text should return a TextField object contain 
 
 .c1 {
   position: absolute;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   background-color: white;
   top: -0.5rem;
-  left: 1rem;
+  left: 0.5rem;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -523,10 +523,10 @@ exports[`TextField with some other props should return a TextField object contai
 
 .c1 {
   position: absolute;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   background-color: white;
   top: -0.5rem;
-  left: 1rem;
+  left: 0.5rem;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -648,10 +648,10 @@ exports[`TextField with validation error should return a TextField object contai
 
 .c1 {
   position: absolute;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   background-color: white;
   top: -0.5rem;
-  left: 1rem;
+  left: 0.5rem;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
