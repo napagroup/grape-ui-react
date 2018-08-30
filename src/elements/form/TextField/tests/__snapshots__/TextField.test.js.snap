@@ -97,6 +97,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.input
               id="exampleFullName"
@@ -119,6 +120,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.label
               activeColor="blue"
@@ -235,6 +237,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.input
               id="exampleFullName"
@@ -257,6 +260,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.label
               activeColor="blue"
@@ -374,6 +378,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             sm={true}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.input
               id="exampleFullName"
@@ -396,6 +401,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.label
               activeColor="blue"
@@ -512,6 +518,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.input
               id="exampleFullName2"
@@ -534,6 +541,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.label
               activeColor="red"
@@ -654,6 +662,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.input
               id="exampleFullName2"
@@ -676,6 +685,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.label
               activeColor="blue"
@@ -807,6 +817,7 @@ exports[`TextField with assistive text should return a TextField object contain 
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.input
               id="exampleFullName"
@@ -829,6 +840,7 @@ exports[`TextField with assistive text should return a TextField object contain 
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.label
               activeColor="blue"
@@ -971,6 +983,7 @@ exports[`TextField with some other props should return a TextField object contai
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.input
               id="exampleFullName"
@@ -995,6 +1008,7 @@ exports[`TextField with some other props should return a TextField object contai
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError=""
           >
             <styled.label
               activeColor="blue"
@@ -1037,7 +1051,7 @@ exports[`TextField with validation error should return a TextField object contai
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
+  border: 1px solid brandDanger;
   border-radius: 4px;
   padding: 1rem;
   outline: 0;
@@ -1059,7 +1073,7 @@ exports[`TextField with validation error should return a TextField object contai
   background-color: white;
   top: -0.5rem;
   left: 0.5rem;
-  color: inherit;
+  color: brandDanger;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1126,6 +1140,7 @@ exports[`TextField with validation error should return a TextField object contai
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError="This is a require field."
           >
             <styled.input
               id="exampleFullName"
@@ -1148,6 +1163,7 @@ exports[`TextField with validation error should return a TextField object contai
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
+            validationError="This is a require field."
           >
             <styled.label
               activeColor="blue"

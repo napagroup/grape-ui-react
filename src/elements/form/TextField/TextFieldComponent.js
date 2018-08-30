@@ -6,8 +6,9 @@ import { defaultControlStylesBase, controlStylesBase } from '../ControlGroup/bas
 import { passThrough } from 'src/utils/componentHelpers';
 
 export const TextFieldComponent = props => {
+  const { validationError } = props;
   const textBase = textStylesBase(props);
-  const controlBase = controlStylesBase(props);
+  const controlBase = !validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: 'brandDanger' });
   const ProtoBase = styled.input.attrs({
     type: 'text',
   })`
@@ -30,6 +31,7 @@ TextFieldComponent.propTypes = {
   sm: PropTypes.bool,
   textAlign: PropTypes.string,
   textDecoration: PropTypes.string,
+  validationError: PropTypes.string,
 };
 
 TextFieldComponent.defaultProps = {
@@ -45,4 +47,5 @@ TextFieldComponent.defaultProps = {
   borderColorActive: defaultControlStylesBase.borderColorActive,
   borderRadius: defaultControlStylesBase.borderRadius,
   padding: defaultControlStylesBase.padding,
+  validationError: '',
 };

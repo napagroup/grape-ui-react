@@ -42,6 +42,7 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   sm={false}
   textAlign="inherit"
   textDecoration="inherit"
+  validationError=""
 >
   <styled.input>
     <input
@@ -94,6 +95,7 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   sm={false}
   textAlign="inherit"
   textDecoration="inherit"
+  validationError=""
 >
   <styled.input>
     <input
@@ -146,6 +148,7 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   sm={true}
   textAlign="inherit"
   textDecoration="inherit"
+  validationError=""
 >
   <styled.input>
     <input

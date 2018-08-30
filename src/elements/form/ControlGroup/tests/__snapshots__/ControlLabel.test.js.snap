@@ -32,6 +32,7 @@ exports[`ControlLabel Component base should return a ControlLabel object 1`] = `
   sm={false}
   textAlign="inherit"
   textDecoration="inherit"
+  validationError=""
 >
   <styled.label
     for="forWhatId"

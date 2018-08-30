@@ -59,6 +59,7 @@ export const ControlGroupBase = props => {
       <ControlLabel
         activeColor={activeColor}
         htmlFor={controlId}
+        validationError={validationError}
       >{controlLabel}
       </ControlLabel>
       {displayAssistive(assistiveText, validationError, controlId)}

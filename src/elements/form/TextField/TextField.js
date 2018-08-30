@@ -31,7 +31,7 @@ export const TextField = props => {
       validationError={validationError}
       {...spaceProps}
     >
-      <TextFieldComponent {...childProps} />
+      <TextFieldComponent validationError={validationError} {...childProps} />
     </ControlGroupBase>);
 };
 

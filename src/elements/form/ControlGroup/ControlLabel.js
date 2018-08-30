@@ -16,13 +16,16 @@ export const ControlLabel = props => {
     ...props,
     sm: true,
   };
+  const { validationError, color } = props;
+  const coloring = !validationError ? color : 'brandDanger';
+
   const controlLabelStyle = `
     position: absolute;
     padding: 0 ${padding};
     background-color: white;
     top: -${padding};
     left: ${padding};
-    color: inherit;
+    color: ${coloring};
   `;
   const ProtoControlLabel = withBaseStyles(styled.label`${controlLabelStyle}`, overrides);
   return <ProtoControlLabel {...passThrough(ControlLabel, props)} />;
@@ -37,6 +40,7 @@ ControlLabel.propTypes = {
   sm: PropTypes.bool,
   textAlign: PropTypes.string,
   textDecoration: PropTypes.string,
+  validationError: PropTypes.string,
 };
 
 ControlLabel.defaultProps = {
@@ -48,4 +52,5 @@ ControlLabel.defaultProps = {
   sm: defaultTextStylesBase.sm,
   textAlign: defaultTextStylesBase.textAlign,
   textDecoration: defaultTextStylesBase.textDecoration,
+  validationError: '',
 };
