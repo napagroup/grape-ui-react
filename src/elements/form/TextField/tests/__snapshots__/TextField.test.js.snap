@@ -38,6 +38,10 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
   color: hsl(323.3,84.6%,28%);
 }
 
+.c1[required] + label:after {
+  content: "*";
+}
+
 .c2 {
   position: absolute;
   padding: 0 0.5rem;
@@ -177,6 +181,10 @@ exports[`TextField Component base should return a TextField object 1`] = `
   color: hsl(323.3,84.6%,28%);
 }
 
+.c1[required] + label:after {
+  content: "*";
+}
+
 .c2 {
   position: absolute;
   padding: 0 0.5rem;
@@ -313,6 +321,10 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 .c1:focus + label {
   color: hsl(323.3,84.6%,28%);
+}
+
+.c1[required] + label:after {
+  content: "*";
 }
 
 .c2 {
@@ -454,6 +466,10 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   color: hsl(323.3,84.6%,28%);
 }
 
+.c1[required] + label:after {
+  content: "*";
+}
+
 .c2 {
   position: absolute;
   padding: 0 0.5rem;
@@ -591,6 +607,10 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 .c1:focus + label {
   color: hsl(323.3,84.6%,28%);
+}
+
+.c1[required] + label:after {
+  content: "*";
 }
 
 .c2 {
@@ -732,6 +752,10 @@ exports[`TextField with assistive text should return a TextField object contain 
 
 .c1:focus + label {
   color: hsl(323.3,84.6%,28%);
+}
+
+.c1[required] + label:after {
+  content: "*";
 }
 
 .c2 {
@@ -909,6 +933,10 @@ exports[`TextField with some other props should return a TextField object contai
   color: hsl(323.3,84.6%,28%);
 }
 
+.c1[required] + label:after {
+  content: "*";
+}
+
 .c2 {
   position: absolute;
   padding: 0 0.5rem;
@@ -936,7 +964,7 @@ exports[`TextField with some other props should return a TextField object contai
   controlId="exampleFullName"
   controlLabel="Full name"
   link="abc"
-  require={true}
+  required={true}
   validationError=""
 >
   <ControlGroupBase
@@ -967,7 +995,7 @@ exports[`TextField with some other props should return a TextField object contai
             lg={false}
             link="abc"
             padding="1rem"
-            require={true}
+            required={true}
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
@@ -975,11 +1003,12 @@ exports[`TextField with some other props should return a TextField object contai
             <styled.input
               id="exampleFullName"
               link="abc"
-              require={true}
+              required={true}
             >
               <input
                 className="c1"
                 id="exampleFullName"
+                required={true}
                 type="text"
               />
             </styled.input>
@@ -1053,6 +1082,10 @@ exports[`TextField with validation error should return a TextField object contai
   color: hsl(323.3,84.6%,28%);
 }
 
+.c1[required] + label:after {
+  content: "*";
+}
+
 .c2 {
   position: absolute;
   padding: 0 0.5rem;
@@ -1094,7 +1127,7 @@ exports[`TextField with validation error should return a TextField object contai
   assistiveText=""
   controlId="exampleFullName"
   controlLabel="Full name"
-  validationError="This is a require field."
+  validationError="This is a required field."
 >
   <ControlGroupBase
     activeColor="blue"
@@ -1103,7 +1136,7 @@ exports[`TextField with validation error should return a TextField object contai
     controlLabel="Full name"
     paddingBottom="16px"
     paddingTop="4px"
-    validationError="This is a require field."
+    validationError="This is a required field."
   >
     <ControlGroup
       paddingBottom="16px"
@@ -1179,7 +1212,7 @@ exports[`TextField with validation error should return a TextField object contai
                 className="c3"
                 id="exampleFullNameError"
               >
-                This is a require field.
+                This is a required field.
               </div>
             </styled.div>
           </AssistiveText>
