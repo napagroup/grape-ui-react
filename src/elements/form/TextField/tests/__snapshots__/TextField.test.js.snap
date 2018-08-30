@@ -10,7 +10,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
   position: absolute;
   padding: 0 1rem;
   background-color: white;
-  top: -1rem;
+  top: -0.5rem;
   left: 1rem;
   font-family: inherit;
   font-size: 0.8rem;
@@ -46,7 +46,8 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 }
 
 .c2:focus {
-  border: 2px solid hsl(323.3,84.6%,28%);
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
 }
 
 <TextField
@@ -129,7 +130,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
   position: absolute;
   padding: 0 1rem;
   background-color: white;
-  top: -1rem;
+  top: -0.5rem;
   left: 1rem;
   font-family: inherit;
   font-size: 0.8rem;
@@ -165,7 +166,8 @@ exports[`TextField Component base should return a TextField object 1`] = `
 }
 
 .c2:focus {
-  border: 2px solid hsl(323.3,84.6%,28%);
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
 }
 
 <TextField
@@ -247,7 +249,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   position: absolute;
   padding: 0 1rem;
   background-color: white;
-  top: -1rem;
+  top: -0.5rem;
   left: 1rem;
   font-family: inherit;
   font-size: 0.8rem;
@@ -283,7 +285,8 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c2:focus {
-  border: 2px solid hsl(323.3,84.6%,28%);
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
 }
 
 <TextField
@@ -366,7 +369,7 @@ exports[`TextField with assistive text should return a TextField object contain 
   position: absolute;
   padding: 0 1rem;
   background-color: white;
-  top: -1rem;
+  top: -0.5rem;
   left: 1rem;
   font-family: inherit;
   font-size: 0.8rem;
@@ -402,7 +405,8 @@ exports[`TextField with assistive text should return a TextField object contain 
 }
 
 .c2:focus {
-  border: 2px solid hsl(323.3,84.6%,28%);
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
 }
 
 .c3 {
@@ -521,7 +525,7 @@ exports[`TextField with some other props should return a TextField object contai
   position: absolute;
   padding: 0 1rem;
   background-color: white;
-  top: -1rem;
+  top: -0.5rem;
   left: 1rem;
   font-family: inherit;
   font-size: 0.8rem;
@@ -557,7 +561,8 @@ exports[`TextField with some other props should return a TextField object contai
 }
 
 .c2:focus {
-  border: 2px solid hsl(323.3,84.6%,28%);
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
 }
 
 <TextField
@@ -645,7 +650,7 @@ exports[`TextField with validation error should return a TextField object contai
   position: absolute;
   padding: 0 1rem;
   background-color: white;
-  top: -1rem;
+  top: -0.5rem;
   left: 1rem;
   font-family: inherit;
   font-size: 0.8rem;
@@ -681,7 +686,8 @@ exports[`TextField with validation error should return a TextField object contai
 }
 
 .c2:focus {
-  border: 2px solid hsl(323.3,84.6%,28%);
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
 }
 
 .c3 {

@@ -21,7 +21,8 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
 }
 
 .c0:focus {
-  border: 2px solid hsl(323.3,84.6%,28%);
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
 }
 
 <TextFieldComponent
@@ -68,7 +69,8 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
 }
 
 .c0:focus {
-  border: 2px solid hsl(323.3,84.6%,28%);
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
 }
 
 <TextFieldComponent
@@ -115,7 +117,8 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
 }
 
 .c0:focus {
-  border: 2px solid hsl(323.3,84.6%,28%);
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 1px 0 0 hsl(323.3,84.6%,28%);
 }
 
 <TextFieldComponent

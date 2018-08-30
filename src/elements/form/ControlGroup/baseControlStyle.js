@@ -47,7 +47,8 @@ export const controlStylesBase = (props = {}) => {
     padding: ${padding};
     outline: 0;
     &:focus {
-      border: 2px solid ${borderColorActive};
+      border-color: ${borderColorActive};
+      box-shadow: 0 1px 0 0 ${borderColorActive};
     }
   `;
 };
