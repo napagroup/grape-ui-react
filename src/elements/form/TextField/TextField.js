@@ -6,7 +6,6 @@ import { TextFieldComponent } from './TextFieldComponent';
 import { space } from 'styled-system';
 
 export const TextField = props => {
-
   const {
     controlId,
     assistiveText,
@@ -14,8 +13,8 @@ export const TextField = props => {
     validationError,
     ...otherProps
   } = props;
-
-  const spaceProps = { ...space({ pb: '1', ...otherProps }) };
+  const preSpaceProps = { pb: '1', ...otherProps };
+  const spaceProps = { ...space(preSpaceProps) };
   const otherWithoutSpaceProps = removeSomeProps(otherProps, spaceProps);
   const childProps = { id: controlId, ...passThrough(TextField, otherWithoutSpaceProps) };
   return (
