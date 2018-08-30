@@ -3,6 +3,7 @@
 exports[`TextField  a large TextFieldComponent object should return a large TextFieldComponent object  1`] = `
 .c0 {
   padding-bottom: 4px;
+  padding-top: 4px;
   position: relative;
   background-color: white;
   width: 100%;
@@ -14,6 +15,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
   background-color: white;
   top: -0.5rem;
   left: 0.5rem;
+  color: inherit;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -53,7 +55,26 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c0 {
+    padding-bottom: 32px;
+  }
+}
+
 <TextField
+  activeColor="blue"
   assistiveText=""
   controlId="exampleFullName"
   controlLabel="Full name"
@@ -61,20 +82,54 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
   validationError=""
 >
   <ControlGroupBase
+    @media screen and (min-width: 40em)={
+      Object {
+        "paddingBottom": "8px",
+      }
+    }
+    @media screen and (min-width: 52em)={
+      Object {
+        "paddingBottom": "16px",
+      }
+    }
+    @media screen and (min-width: 64em)={
+      Object {
+        "paddingBottom": "32px",
+      }
+    }
+    activeColor="blue"
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
     paddingBottom="4px"
+    paddingTop="4px"
     validationError=""
   >
     <ControlGroup
+      @media screen and (min-width: 40em)={
+        Object {
+          "paddingBottom": "8px",
+        }
+      }
+      @media screen and (min-width: 52em)={
+        Object {
+          "paddingBottom": "16px",
+        }
+      }
+      @media screen and (min-width: 64em)={
+        Object {
+          "paddingBottom": "32px",
+        }
+      }
       paddingBottom="4px"
+      paddingTop="4px"
     >
       <styled.div>
         <div
           className="c0"
         >
           <ControlLabel
+            activeColor="blue"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -86,6 +141,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
             textDecoration="inherit"
           >
             <styled.label
+              activeColor="blue"
               htmlFor="exampleFullName"
             >
               <label
@@ -98,7 +154,6 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
           </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
-            borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
             fontFamily="inherit"
@@ -131,6 +186,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 exports[`TextField Component base should return a TextField object 1`] = `
 .c0 {
   padding-bottom: 4px;
+  padding-top: 4px;
   position: relative;
   background-color: white;
   width: 100%;
@@ -142,6 +198,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
   background-color: white;
   top: -0.5rem;
   left: 0.5rem;
+  color: inherit;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -181,27 +238,80 @@ exports[`TextField Component base should return a TextField object 1`] = `
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c0 {
+    padding-bottom: 32px;
+  }
+}
+
 <TextField
+  activeColor="blue"
   assistiveText=""
   controlId="exampleFullName"
   controlLabel="Full name"
   validationError=""
 >
   <ControlGroupBase
+    @media screen and (min-width: 40em)={
+      Object {
+        "paddingBottom": "8px",
+      }
+    }
+    @media screen and (min-width: 52em)={
+      Object {
+        "paddingBottom": "16px",
+      }
+    }
+    @media screen and (min-width: 64em)={
+      Object {
+        "paddingBottom": "32px",
+      }
+    }
+    activeColor="blue"
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
     paddingBottom="4px"
+    paddingTop="4px"
     validationError=""
   >
     <ControlGroup
+      @media screen and (min-width: 40em)={
+        Object {
+          "paddingBottom": "8px",
+        }
+      }
+      @media screen and (min-width: 52em)={
+        Object {
+          "paddingBottom": "16px",
+        }
+      }
+      @media screen and (min-width: 64em)={
+        Object {
+          "paddingBottom": "32px",
+        }
+      }
       paddingBottom="4px"
+      paddingTop="4px"
     >
       <styled.div>
         <div
           className="c0"
         >
           <ControlLabel
+            activeColor="blue"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -213,6 +323,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
             textDecoration="inherit"
           >
             <styled.label
+              activeColor="blue"
               htmlFor="exampleFullName"
             >
               <label
@@ -225,7 +336,6 @@ exports[`TextField Component base should return a TextField object 1`] = `
           </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
-            borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
             fontFamily="inherit"
@@ -258,6 +368,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object  1`] = `
 .c0 {
   padding-bottom: 4px;
+  padding-top: 4px;
   position: relative;
   background-color: white;
   width: 100%;
@@ -269,6 +380,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   background-color: white;
   top: -0.5rem;
   left: 0.5rem;
+  color: inherit;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -308,7 +420,26 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c0 {
+    padding-bottom: 32px;
+  }
+}
+
 <TextField
+  activeColor="blue"
   assistiveText=""
   controlId="exampleFullName"
   controlLabel="Full name"
@@ -316,20 +447,54 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   validationError=""
 >
   <ControlGroupBase
+    @media screen and (min-width: 40em)={
+      Object {
+        "paddingBottom": "8px",
+      }
+    }
+    @media screen and (min-width: 52em)={
+      Object {
+        "paddingBottom": "16px",
+      }
+    }
+    @media screen and (min-width: 64em)={
+      Object {
+        "paddingBottom": "32px",
+      }
+    }
+    activeColor="blue"
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
     paddingBottom="4px"
+    paddingTop="4px"
     validationError=""
   >
     <ControlGroup
+      @media screen and (min-width: 40em)={
+        Object {
+          "paddingBottom": "8px",
+        }
+      }
+      @media screen and (min-width: 52em)={
+        Object {
+          "paddingBottom": "16px",
+        }
+      }
+      @media screen and (min-width: 64em)={
+        Object {
+          "paddingBottom": "32px",
+        }
+      }
       paddingBottom="4px"
+      paddingTop="4px"
     >
       <styled.div>
         <div
           className="c0"
         >
           <ControlLabel
+            activeColor="blue"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -341,6 +506,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             textDecoration="inherit"
           >
             <styled.label
+              activeColor="blue"
               htmlFor="exampleFullName"
             >
               <label
@@ -353,7 +519,6 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
           </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
-            borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
             fontFamily="inherit"
@@ -386,6 +551,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object with a red activeColor  1`] = `
 .c0 {
   padding-bottom: 4px;
+  padding-top: 4px;
   position: relative;
   background-color: white;
   width: 100%;
@@ -433,8 +599,26 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c2:focus {
-  border-color: [object Object];
-  box-shadow: 0 0 0 1px [object Object];
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c0 {
+    padding-bottom: 32px;
+  }
 }
 
 <TextField
@@ -445,15 +629,47 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   validationError=""
 >
   <ControlGroupBase
+    @media screen and (min-width: 40em)={
+      Object {
+        "paddingBottom": "8px",
+      }
+    }
+    @media screen and (min-width: 52em)={
+      Object {
+        "paddingBottom": "16px",
+      }
+    }
+    @media screen and (min-width: 64em)={
+      Object {
+        "paddingBottom": "32px",
+      }
+    }
     activeColor="red"
     assistiveText=""
     controlId="exampleFullName2"
     controlLabel="Full name2"
     paddingBottom="4px"
+    paddingTop="4px"
     validationError=""
   >
     <ControlGroup
+      @media screen and (min-width: 40em)={
+        Object {
+          "paddingBottom": "8px",
+        }
+      }
+      @media screen and (min-width: 52em)={
+        Object {
+          "paddingBottom": "16px",
+        }
+      }
+      @media screen and (min-width: 64em)={
+        Object {
+          "paddingBottom": "32px",
+        }
+      }
       paddingBottom="4px"
+      paddingTop="4px"
     >
       <styled.div>
         <div
@@ -518,6 +734,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 .c0 {
   margin: 1;
   padding-bottom: 4px;
+  padding-top: 4px;
   position: relative;
   background-color: white;
   width: 100%;
@@ -529,6 +746,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   background-color: white;
   top: -0.5rem;
   left: 0.5rem;
+  color: inherit;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -568,7 +786,26 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c0 {
+    padding-bottom: 32px;
+  }
+}
+
 <TextField
+  activeColor="blue"
   assistiveText=""
   controlId="exampleFullName2"
   controlLabel="Full name2"
@@ -576,22 +813,56 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   validationError=""
 >
   <ControlGroupBase
+    @media screen and (min-width: 40em)={
+      Object {
+        "paddingBottom": "8px",
+      }
+    }
+    @media screen and (min-width: 52em)={
+      Object {
+        "paddingBottom": "16px",
+      }
+    }
+    @media screen and (min-width: 64em)={
+      Object {
+        "paddingBottom": "32px",
+      }
+    }
+    activeColor="blue"
     assistiveText=""
     controlId="exampleFullName2"
     controlLabel="Full name2"
     margin="1"
     paddingBottom="4px"
+    paddingTop="4px"
     validationError=""
   >
     <ControlGroup
+      @media screen and (min-width: 40em)={
+        Object {
+          "paddingBottom": "8px",
+        }
+      }
+      @media screen and (min-width: 52em)={
+        Object {
+          "paddingBottom": "16px",
+        }
+      }
+      @media screen and (min-width: 64em)={
+        Object {
+          "paddingBottom": "32px",
+        }
+      }
       margin="1"
       paddingBottom="4px"
+      paddingTop="4px"
     >
       <styled.div>
         <div
           className="c0"
         >
           <ControlLabel
+            activeColor="blue"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -603,6 +874,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             textDecoration="inherit"
           >
             <styled.label
+              activeColor="blue"
               htmlFor="exampleFullName2"
             >
               <label
@@ -615,7 +887,6 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
           </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
-            borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
             fontFamily="inherit"
@@ -648,6 +919,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 exports[`TextField with assistive text should return a TextField object contain Assistive Text 1`] = `
 .c0 {
   padding-bottom: 4px;
+  padding-top: 4px;
   position: relative;
   background-color: white;
   width: 100%;
@@ -659,6 +931,7 @@ exports[`TextField with assistive text should return a TextField object contain 
   background-color: white;
   top: -0.5rem;
   left: 0.5rem;
+  color: inherit;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -713,27 +986,80 @@ exports[`TextField with assistive text should return a TextField object contain 
   text-decoration: inherit;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c0 {
+    padding-bottom: 32px;
+  }
+}
+
 <TextField
+  activeColor="blue"
   assistiveText="Please tell me your name"
   controlId="exampleFullName"
   controlLabel="Full name"
   validationError=""
 >
   <ControlGroupBase
+    @media screen and (min-width: 40em)={
+      Object {
+        "paddingBottom": "8px",
+      }
+    }
+    @media screen and (min-width: 52em)={
+      Object {
+        "paddingBottom": "16px",
+      }
+    }
+    @media screen and (min-width: 64em)={
+      Object {
+        "paddingBottom": "32px",
+      }
+    }
+    activeColor="blue"
     assistiveText="Please tell me your name"
     controlId="exampleFullName"
     controlLabel="Full name"
     paddingBottom="4px"
+    paddingTop="4px"
     validationError=""
   >
     <ControlGroup
+      @media screen and (min-width: 40em)={
+        Object {
+          "paddingBottom": "8px",
+        }
+      }
+      @media screen and (min-width: 52em)={
+        Object {
+          "paddingBottom": "16px",
+        }
+      }
+      @media screen and (min-width: 64em)={
+        Object {
+          "paddingBottom": "32px",
+        }
+      }
       paddingBottom="4px"
+      paddingTop="4px"
     >
       <styled.div>
         <div
           className="c0"
         >
           <ControlLabel
+            activeColor="blue"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -745,6 +1071,7 @@ exports[`TextField with assistive text should return a TextField object contain 
             textDecoration="inherit"
           >
             <styled.label
+              activeColor="blue"
               htmlFor="exampleFullName"
             >
               <label
@@ -757,7 +1084,6 @@ exports[`TextField with assistive text should return a TextField object contain 
           </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
-            borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
             fontFamily="inherit"
@@ -812,6 +1138,7 @@ exports[`TextField with assistive text should return a TextField object contain 
 exports[`TextField with some other props should return a TextField object contain input with those other props  1`] = `
 .c0 {
   padding-bottom: 4px;
+  padding-top: 4px;
   position: relative;
   background-color: white;
   width: 100%;
@@ -823,6 +1150,7 @@ exports[`TextField with some other props should return a TextField object contai
   background-color: white;
   top: -0.5rem;
   left: 0.5rem;
+  color: inherit;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -862,7 +1190,26 @@ exports[`TextField with some other props should return a TextField object contai
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c0 {
+    padding-bottom: 32px;
+  }
+}
+
 <TextField
+  activeColor="blue"
   assistiveText=""
   controlId="exampleFullName"
   controlLabel="Full name"
@@ -871,20 +1218,54 @@ exports[`TextField with some other props should return a TextField object contai
   validationError=""
 >
   <ControlGroupBase
+    @media screen and (min-width: 40em)={
+      Object {
+        "paddingBottom": "8px",
+      }
+    }
+    @media screen and (min-width: 52em)={
+      Object {
+        "paddingBottom": "16px",
+      }
+    }
+    @media screen and (min-width: 64em)={
+      Object {
+        "paddingBottom": "32px",
+      }
+    }
+    activeColor="blue"
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
     paddingBottom="4px"
+    paddingTop="4px"
     validationError=""
   >
     <ControlGroup
+      @media screen and (min-width: 40em)={
+        Object {
+          "paddingBottom": "8px",
+        }
+      }
+      @media screen and (min-width: 52em)={
+        Object {
+          "paddingBottom": "16px",
+        }
+      }
+      @media screen and (min-width: 64em)={
+        Object {
+          "paddingBottom": "32px",
+        }
+      }
       paddingBottom="4px"
+      paddingTop="4px"
     >
       <styled.div>
         <div
           className="c0"
         >
           <ControlLabel
+            activeColor="blue"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -896,6 +1277,7 @@ exports[`TextField with some other props should return a TextField object contai
             textDecoration="inherit"
           >
             <styled.label
+              activeColor="blue"
               htmlFor="exampleFullName"
             >
               <label
@@ -908,7 +1290,6 @@ exports[`TextField with some other props should return a TextField object contai
           </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
-            borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
             fontFamily="inherit"
@@ -945,6 +1326,7 @@ exports[`TextField with some other props should return a TextField object contai
 exports[`TextField with validation error should return a TextField object contain Assistive Text with error style 1`] = `
 .c0 {
   padding-bottom: 4px;
+  padding-top: 4px;
   position: relative;
   background-color: white;
   width: 100%;
@@ -956,6 +1338,7 @@ exports[`TextField with validation error should return a TextField object contai
   background-color: white;
   top: -0.5rem;
   left: 0.5rem;
+  color: inherit;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1010,27 +1393,80 @@ exports[`TextField with validation error should return a TextField object contai
   text-decoration: inherit;
 }
 
+@media screen and (min-width:40em) {
+  .c0 {
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c0 {
+    padding-bottom: 32px;
+  }
+}
+
 <TextField
+  activeColor="blue"
   assistiveText=""
   controlId="exampleFullName"
   controlLabel="Full name"
   validationError="This is a require field."
 >
   <ControlGroupBase
+    @media screen and (min-width: 40em)={
+      Object {
+        "paddingBottom": "8px",
+      }
+    }
+    @media screen and (min-width: 52em)={
+      Object {
+        "paddingBottom": "16px",
+      }
+    }
+    @media screen and (min-width: 64em)={
+      Object {
+        "paddingBottom": "32px",
+      }
+    }
+    activeColor="blue"
     assistiveText=""
     controlId="exampleFullName"
     controlLabel="Full name"
     paddingBottom="4px"
+    paddingTop="4px"
     validationError="This is a require field."
   >
     <ControlGroup
+      @media screen and (min-width: 40em)={
+        Object {
+          "paddingBottom": "8px",
+        }
+      }
+      @media screen and (min-width: 52em)={
+        Object {
+          "paddingBottom": "16px",
+        }
+      }
+      @media screen and (min-width: 64em)={
+        Object {
+          "paddingBottom": "32px",
+        }
+      }
       paddingBottom="4px"
+      paddingTop="4px"
     >
       <styled.div>
         <div
           className="c0"
         >
           <ControlLabel
+            activeColor="blue"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -1042,6 +1478,7 @@ exports[`TextField with validation error should return a TextField object contai
             textDecoration="inherit"
           >
             <styled.label
+              activeColor="blue"
               htmlFor="exampleFullName"
             >
               <label
@@ -1054,7 +1491,6 @@ exports[`TextField with validation error should return a TextField object contai
           </ControlLabel>
           <TextFieldComponent
             borderColor="hsl(0, 0%, 25%)"
-            borderColorActive="hsl(323.3, 84.6%, 28%)"
             borderRadius="4px"
             color="inherit"
             fontFamily="inherit"
