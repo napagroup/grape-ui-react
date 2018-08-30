@@ -18,6 +18,7 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   border-radius: 4px;
   padding: 1rem;
   outline: 0;
+  width: 100%;
 }
 
 .c0:focus {
@@ -66,6 +67,7 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   border-radius: 8px;
   padding: 1rem;
   outline: 0;
+  width: 100%;
 }
 
 .c0:focus {
@@ -114,6 +116,7 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   border-radius: 2px;
   padding: 1rem;
   outline: 0;
+  width: 100%;
 }
 
 .c0:focus {

@@ -8,13 +8,13 @@ import { passThrough } from 'src/utils/componentHelpers';
 export const TextFieldComponent = props => {
   const textBase = textStylesBase(props);
   const controlBase = controlStylesBase(props);
-  const ProtoTextFieldComponent = styled.input.attrs({
+  const ProtoBase = styled.input.attrs({
     type: 'text',
   })`
     ${textBase}
     ${controlBase}
   `;
-  return <ProtoTextFieldComponent {...passThrough(TextFieldComponent, props)} />;
+  return <ProtoBase {...passThrough(TextFieldComponent, props)} />;
 };
 
 TextFieldComponent.propTypes = {

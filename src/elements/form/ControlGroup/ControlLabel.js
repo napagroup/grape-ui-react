@@ -22,6 +22,7 @@ export const ControlLabel = props => {
     background-color: white;
     top: -${padding};
     left: ${padding};
+    color: inherit;
   `;
   const ProtoControlLabel = withBaseStyles(styled.label`${controlLabelStyle}`, overrides);
   return <ProtoControlLabel {...passThrough(ControlLabel, props)} />;

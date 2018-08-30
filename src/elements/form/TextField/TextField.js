@@ -7,6 +7,7 @@ import { space } from 'styled-system';
 
 export const TextField = props => {
   const {
+    activeColor,
     controlId,
     assistiveText,
     controlLabel,
@@ -19,6 +20,7 @@ export const TextField = props => {
   const childProps = { id: controlId, ...passThrough(TextField, otherWithoutSpaceProps) };
   return (
     <ControlGroupBase
+      activeColor={activeColor}
       assistiveText={assistiveText}
       controlId={controlId}
       controlLabel={controlLabel}
@@ -30,6 +32,7 @@ export const TextField = props => {
 };
 
 TextField.propTypes = {
+  activeColor: PropTypes.string,
   assistiveText: PropTypes.string,
   controlId: PropTypes.string.isRequired,
   controlLabel: PropTypes.string.isRequired,
@@ -38,6 +41,7 @@ TextField.propTypes = {
 };
 
 TextField.defaultProps = {
+  activeColor: 'blue',
   assistiveText: '',
   validationError: '',
 };

@@ -17,8 +17,15 @@ const ControlGroup = props => {
   const propsPass = {
     controlLabel, controlId, assistiveText, validationError, children,
   };
-
-  const ProtoControlGroup = styled.div` ${(otherProps)} position: relative; background-color: white;`;
+  const stylesControlGroup = `
+    position: relative;
+    background-color: white;
+    width: 100%;
+  `;
+  const ProtoControlGroup = styled.div`
+    ${(otherProps)}
+    ${stylesControlGroup}
+  `;
   return <ProtoControlGroup {...propsPass} />;
 };
 
@@ -28,6 +35,7 @@ ControlGroup.propTypes = {
 
 export const ControlGroupBase = props => {
   const {
+    activeColor,
     controlLabel,
     controlId,
     assistiveText,
@@ -47,7 +55,11 @@ export const ControlGroupBase = props => {
 
   return (
     <ControlGroup {...otherProps}>
-      <ControlLabel htmlFor={controlId}>{controlLabel}</ControlLabel>
+      <ControlLabel
+        activeColor={activeColor}
+        htmlFor={controlId}
+      >{controlLabel}
+      </ControlLabel>
       {children}
       {displayAssistive(assistiveText, validationError, controlId)}
     </ControlGroup>
@@ -55,6 +67,7 @@ export const ControlGroupBase = props => {
 };
 
 ControlGroupBase.propTypes = {
+  activeColor: PropTypes.string,
   assistiveText: PropTypes.string,
   children: PropTypes.any.isRequired,
   controlId: PropTypes.string.isRequired,
@@ -63,6 +76,7 @@ ControlGroupBase.propTypes = {
 };
 
 ControlGroupBase.defaultProps = {
+  activeColor: 'blue',
   assistiveText: '',
   validationError: '',
 };
