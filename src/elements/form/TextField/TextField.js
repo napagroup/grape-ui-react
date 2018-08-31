@@ -27,8 +27,8 @@ export const TextField = props => {
   return (
     <ControlGroupBase
       activeColor={activeColor}
-      bgColor={bgColor}
       assistiveText={assistiveText}
+      bgColor={bgColor}
       controlId={controlId}
       controlLabel={controlLabel}
       validationError={validationError}

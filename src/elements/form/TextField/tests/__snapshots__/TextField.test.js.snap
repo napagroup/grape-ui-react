@@ -5,7 +5,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   width: 100%;
 }
 
@@ -30,12 +30,12 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 }
 
 .c1:focus {
-  border-color: brandPrimary;
-  box-shadow: 0 0 0 1px brandPrimary;
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c1:focus + label {
-  color: brandPrimary;
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1[required] + label:after {
@@ -51,7 +51,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 }
 
 .c2 {
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   left: 0.5rem;
   padding: 0 0.5rem;
   position: absolute;
@@ -73,7 +73,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 <TextField
   activeColor="brandPrimary"
   assistiveText=""
-  bgColor="white"
+  bgColor="white.light"
   controlId="exampleFullName"
   controlLabel="Full name"
   lg={true}
@@ -82,7 +82,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
   <ControlGroupBase
     activeColor="brandPrimary"
     assistiveText=""
-    bgColor="white"
+    bgColor="white.light"
     controlId="exampleFullName"
     controlLabel="Full name"
     paddingBottom="16px"
@@ -127,7 +127,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
           </TextFieldComponent>
           <ControlLabel
             activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 98%)"
+            bgColor="hsl(0, 0%, 100%)"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -163,7 +163,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   width: 100%;
 }
 
@@ -188,12 +188,12 @@ exports[`TextField Component base should return a TextField object 1`] = `
 }
 
 .c1:focus {
-  border-color: brandPrimary;
-  box-shadow: 0 0 0 1px brandPrimary;
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c1:focus + label {
-  color: brandPrimary;
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1[required] + label:after {
@@ -209,7 +209,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
 }
 
 .c2 {
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   left: 0.5rem;
   padding: 0 0.5rem;
   position: absolute;
@@ -231,7 +231,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
 <TextField
   activeColor="brandPrimary"
   assistiveText=""
-  bgColor="white"
+  bgColor="white.light"
   controlId="exampleFullName"
   controlLabel="Full name"
   validationError=""
@@ -239,7 +239,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
   <ControlGroupBase
     activeColor="brandPrimary"
     assistiveText=""
-    bgColor="white"
+    bgColor="white.light"
     controlId="exampleFullName"
     controlLabel="Full name"
     paddingBottom="16px"
@@ -284,7 +284,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
           </TextFieldComponent>
           <ControlLabel
             activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 98%)"
+            bgColor="hsl(0, 0%, 100%)"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -320,7 +320,7 @@ exports[`TextField a TextFieldComponent object should return a TextFieldComponen
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   width: 100%;
 }
 
@@ -345,12 +345,12 @@ exports[`TextField a TextFieldComponent object should return a TextFieldComponen
 }
 
 .c1:focus {
-  border-color: brandPrimary;
-  box-shadow: 0 0 0 1px brandPrimary;
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c1:focus + label {
-  color: brandPrimary;
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1[required] + label:after {
@@ -477,7 +477,7 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   width: 100%;
 }
 
@@ -501,7 +501,7 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
 }
 
 .c2 {
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   left: 0.5rem;
   padding: 0 0.5rem;
   position: absolute;
@@ -523,7 +523,7 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
 <TextField
   activeColor="red"
   assistiveText=""
-  bgColor="white"
+  bgColor="white.light"
   controlId="exampleFullName2"
   controlLabel="Full name2"
   plainText={true}
@@ -532,7 +532,7 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
   <ControlGroupBase
     activeColor="red"
     assistiveText=""
-    bgColor="white"
+    bgColor="white.light"
     controlId="exampleFullName2"
     controlLabel="Full name2"
     paddingBottom="16px"
@@ -577,7 +577,7 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
           </TextFieldComponent>
           <ControlLabel
             activeColor="red"
-            bgColor="hsl(0, 0%, 98%)"
+            bgColor="hsl(0, 0%, 100%)"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -613,7 +613,7 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   width: 100%;
 }
 
@@ -638,12 +638,12 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
 }
 
 .c1:focus {
-  border-color: brandPrimary;
-  box-shadow: 0 0 0 1px brandPrimary;
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c1:focus + label {
-  color: brandPrimary;
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1[required] + label:after {
@@ -659,7 +659,7 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
 }
 
 .c2 {
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   left: 0.5rem;
   padding: 0 0.5rem;
   position: absolute;
@@ -681,7 +681,7 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
 <TextField
   activeColor="red"
   assistiveText=""
-  bgColor="white"
+  bgColor="white.light"
   controlId="exampleFullName2"
   controlLabel="Full name2"
   disabled={true}
@@ -690,7 +690,7 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
   <ControlGroupBase
     activeColor="red"
     assistiveText=""
-    bgColor="white"
+    bgColor="white.light"
     controlId="exampleFullName2"
     controlLabel="Full name2"
     paddingBottom="16px"
@@ -738,7 +738,7 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
           </TextFieldComponent>
           <ControlLabel
             activeColor="red"
-            bgColor="hsl(0, 0%, 98%)"
+            bgColor="hsl(0, 0%, 100%)"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -774,7 +774,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   width: 100%;
 }
 
@@ -799,12 +799,12 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c1:focus {
-  border-color: brandPrimary;
-  box-shadow: 0 0 0 1px brandPrimary;
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c1:focus + label {
-  color: brandPrimary;
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1[required] + label:after {
@@ -820,7 +820,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c2 {
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   left: 0.5rem;
   padding: 0 0.5rem;
   position: absolute;
@@ -842,7 +842,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 <TextField
   activeColor="brandPrimary"
   assistiveText=""
-  bgColor="white"
+  bgColor="white.light"
   controlId="exampleFullName"
   controlLabel="Full name"
   sm={true}
@@ -851,7 +851,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   <ControlGroupBase
     activeColor="brandPrimary"
     assistiveText=""
-    bgColor="white"
+    bgColor="white.light"
     controlId="exampleFullName"
     controlLabel="Full name"
     paddingBottom="16px"
@@ -896,7 +896,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
           </TextFieldComponent>
           <ControlLabel
             activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 98%)"
+            bgColor="hsl(0, 0%, 100%)"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -932,7 +932,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   width: 100%;
 }
 
@@ -957,12 +957,12 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c1:focus {
-  border-color: brandPrimary;
-  box-shadow: 0 0 0 1px brandPrimary;
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c1:focus + label {
-  color: brandPrimary;
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1[required] + label:after {
@@ -978,7 +978,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c2 {
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   left: 0.5rem;
   padding: 0 0.5rem;
   position: absolute;
@@ -1000,7 +1000,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 <TextField
   activeColor="red"
   assistiveText=""
-  bgColor="white"
+  bgColor="white.light"
   controlId="exampleFullName2"
   controlLabel="Full name2"
   validationError=""
@@ -1008,7 +1008,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   <ControlGroupBase
     activeColor="red"
     assistiveText=""
-    bgColor="white"
+    bgColor="white.light"
     controlId="exampleFullName2"
     controlLabel="Full name2"
     paddingBottom="16px"
@@ -1053,7 +1053,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
           </TextFieldComponent>
           <ControlLabel
             activeColor="red"
-            bgColor="hsl(0, 0%, 98%)"
+            bgColor="hsl(0, 0%, 100%)"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -1090,7 +1090,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   width: 100%;
 }
 
@@ -1115,12 +1115,12 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c1:focus {
-  border-color: brandPrimary;
-  box-shadow: 0 0 0 1px brandPrimary;
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c1:focus + label {
-  color: brandPrimary;
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1[required] + label:after {
@@ -1136,7 +1136,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c2 {
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   left: 0.5rem;
   padding: 0 0.5rem;
   position: absolute;
@@ -1158,7 +1158,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 <TextField
   activeColor="brandPrimary"
   assistiveText=""
-  bgColor="white"
+  bgColor="white.light"
   controlId="exampleFullName2"
   controlLabel="Full name2"
   m="1"
@@ -1167,7 +1167,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   <ControlGroupBase
     activeColor="brandPrimary"
     assistiveText=""
-    bgColor="white"
+    bgColor="white.light"
     controlId="exampleFullName2"
     controlLabel="Full name2"
     margin="1"
@@ -1214,7 +1214,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
           </TextFieldComponent>
           <ControlLabel
             activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 98%)"
+            bgColor="hsl(0, 0%, 100%)"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -1250,7 +1250,7 @@ exports[`TextField with assistive text should return a TextField object contain 
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   width: 100%;
 }
 
@@ -1275,12 +1275,12 @@ exports[`TextField with assistive text should return a TextField object contain 
 }
 
 .c1:focus {
-  border-color: brandPrimary;
-  box-shadow: 0 0 0 1px brandPrimary;
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c1:focus + label {
-  color: brandPrimary;
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1[required] + label:after {
@@ -1296,7 +1296,7 @@ exports[`TextField with assistive text should return a TextField object contain 
 }
 
 .c2 {
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   left: 0.5rem;
   padding: 0 0.5rem;
   position: absolute;
@@ -1334,7 +1334,7 @@ exports[`TextField with assistive text should return a TextField object contain 
 <TextField
   activeColor="brandPrimary"
   assistiveText="Please tell me your name"
-  bgColor="white"
+  bgColor="white.light"
   controlId="exampleFullName"
   controlLabel="Full name"
   validationError=""
@@ -1342,7 +1342,7 @@ exports[`TextField with assistive text should return a TextField object contain 
   <ControlGroupBase
     activeColor="brandPrimary"
     assistiveText="Please tell me your name"
-    bgColor="white"
+    bgColor="white.light"
     controlId="exampleFullName"
     controlLabel="Full name"
     paddingBottom="16px"
@@ -1387,7 +1387,7 @@ exports[`TextField with assistive text should return a TextField object contain 
           </TextFieldComponent>
           <ControlLabel
             activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 98%)"
+            bgColor="hsl(0, 0%, 100%)"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -1445,7 +1445,7 @@ exports[`TextField with some other props should return a TextField object contai
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   width: 100%;
 }
 
@@ -1470,12 +1470,12 @@ exports[`TextField with some other props should return a TextField object contai
 }
 
 .c1:focus {
-  border-color: brandPrimary;
-  box-shadow: 0 0 0 1px brandPrimary;
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c1:focus + label {
-  color: brandPrimary;
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1[required] + label:after {
@@ -1491,7 +1491,7 @@ exports[`TextField with some other props should return a TextField object contai
 }
 
 .c2 {
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   left: 0.5rem;
   padding: 0 0.5rem;
   position: absolute;
@@ -1513,7 +1513,7 @@ exports[`TextField with some other props should return a TextField object contai
 <TextField
   activeColor="brandPrimary"
   assistiveText=""
-  bgColor="white"
+  bgColor="white.light"
   controlId="exampleFullName"
   controlLabel="Full name"
   link="abc"
@@ -1523,7 +1523,7 @@ exports[`TextField with some other props should return a TextField object contai
   <ControlGroupBase
     activeColor="brandPrimary"
     assistiveText=""
-    bgColor="white"
+    bgColor="white.light"
     controlId="exampleFullName"
     controlLabel="Full name"
     paddingBottom="16px"
@@ -1573,7 +1573,7 @@ exports[`TextField with some other props should return a TextField object contai
           </TextFieldComponent>
           <ControlLabel
             activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 98%)"
+            bgColor="hsl(0, 0%, 100%)"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"
@@ -1609,7 +1609,7 @@ exports[`TextField with validation error should return a TextField object contai
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   width: 100%;
 }
 
@@ -1634,12 +1634,12 @@ exports[`TextField with validation error should return a TextField object contai
 }
 
 .c1:focus {
-  border-color: hsl(4.1,89.6%,58.4%);
-  box-shadow: 0 0 0 1px hsl(4.1,89.6%,58.4%);
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c1:focus + label {
-  color: hsl(4.1,89.6%,58.4%);
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1[required] + label:after {
@@ -1655,7 +1655,7 @@ exports[`TextField with validation error should return a TextField object contai
 }
 
 .c2 {
-  background-color: hsl(0,0%,98%);
+  background-color: hsl(0,0%,100%);
   left: 0.5rem;
   padding: 0 0.5rem;
   position: absolute;
@@ -1693,7 +1693,7 @@ exports[`TextField with validation error should return a TextField object contai
 <TextField
   activeColor="brandPrimary"
   assistiveText=""
-  bgColor="white"
+  bgColor="white.light"
   controlId="exampleFullName"
   controlLabel="Full name"
   validationError="This is a required field."
@@ -1701,7 +1701,7 @@ exports[`TextField with validation error should return a TextField object contai
   <ControlGroupBase
     activeColor="brandPrimary"
     assistiveText=""
-    bgColor="white"
+    bgColor="white.light"
     controlId="exampleFullName"
     controlLabel="Full name"
     paddingBottom="16px"
@@ -1746,7 +1746,7 @@ exports[`TextField with validation error should return a TextField object contai
           </TextFieldComponent>
           <ControlLabel
             activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 98%)"
+            bgColor="hsl(0, 0%, 100%)"
             color="inherit"
             fontFamily="inherit"
             fontWeight="inherit"

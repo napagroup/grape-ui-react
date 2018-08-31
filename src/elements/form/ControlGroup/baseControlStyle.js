@@ -1,14 +1,23 @@
 import { getGlobalStyles } from 'src/global-styles';
+import { resolveColor } from 'src/utils/componentHelpers';
 
 const { border: borderSchema, grid: gridSchema } = getGlobalStyles();
 
 export const defaultControlStylesBase = {
   activeColor: 'brandPrimary',
-  bgColor: 'white',
+  bgColor: 'white.light',
   borderColor: borderSchema.borderColor,
   borderRadius: borderSchema.borderRadius.base,
   padding: gridSchema.gutter,
   plainText: false,
+};
+
+const getActiveColor = props => {
+  const { activeColor } = props;
+  if (!activeColor) {
+    return resolveColor(defaultControlStylesBase.activeColor);
+  }
+  return resolveColor(activeColor);
 };
 
 const getScaleFactor = props => {
@@ -59,9 +68,9 @@ export const controlStylesBase = (props = {}) => {
     outline: 0;
     width: 100%;
     &:focus {
-      border-color: ${activeColor};
-      box-shadow: 0 0 0 1px ${activeColor};
-      + label { color: ${activeColor}; }
+      border-color: ${getActiveColor(activeColor)};
+      box-shadow: 0 0 0 1px ${getActiveColor(activeColor)};;
+      + label { color: ${getActiveColor(activeColor)};; }
     }
     &[required] + label:after { content: "*" }
     &[disabled] {

@@ -22,12 +22,12 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
 }
 
 .c0:focus {
-  border-color: brandPrimary;
-  box-shadow: 0 0 0 1px brandPrimary;
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c0:focus + label {
-  color: brandPrimary;
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c0[required] + label:after {
@@ -90,12 +90,12 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
 }
 
 .c0:focus {
-  border-color: brandPrimary;
-  box-shadow: 0 0 0 1px brandPrimary;
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c0:focus + label {
-  color: brandPrimary;
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c0[required] + label:after {
@@ -158,12 +158,12 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
 }
 
 .c0:focus {
-  border-color: brandPrimary;
-  box-shadow: 0 0 0 1px brandPrimary;
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
 .c0:focus + label {
-  color: brandPrimary;
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c0[required] + label:after {

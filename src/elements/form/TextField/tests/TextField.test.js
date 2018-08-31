@@ -69,7 +69,7 @@ describe('TextField a plainText TextFieldComponent', () => {
 });
 describe('TextField a TextFieldComponent object', () => {
   it('should return a TextFieldComponent object with a red bgColor ', () => {
-    const component = mount(<TextField controlId="exampleFullName2" controlLabel="Full name2" bgColor="red" />);
+    const component = mount(<TextField bgColor="red" controlId="exampleFullName2" controlLabel="Full name2" />);
     expect(toJson(component.find('TextField'))).toMatchSnapshot();
   });
 });

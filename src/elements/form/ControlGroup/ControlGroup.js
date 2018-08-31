@@ -47,7 +47,6 @@ export const ControlGroupBase = props => {
   const {
     activeColor,
     assistiveText,
-    bgColor,
     controlLabel,
     controlId,
     validationError,
