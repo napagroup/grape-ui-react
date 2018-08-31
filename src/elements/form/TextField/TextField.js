@@ -6,6 +6,14 @@ import { TextFieldComponent } from './TextFieldComponent';
 import { space } from 'styled-system';
 import { defaultControlStylesBase } from '../ControlGroup/baseControlStyle';
 
+const getAssistiveText = props => {
+  const { assistiveText, required } = props;
+  if (required && !assistiveText) {
+    return '*Required';
+  }
+  return assistiveText;
+};
+
 export const TextField = props => {
   const {
     activeColor,
@@ -13,6 +21,7 @@ export const TextField = props => {
     bgColor,
     controlId,
     controlLabel,
+    required,
     validationError,
     ...otherProps
   } = props;
@@ -23,11 +32,11 @@ export const TextField = props => {
   };
   const spaceProps = { ...space(preSpaceProps) };
   const otherWithoutSpaceProps = removeSomeProps(otherProps, spaceProps);
-  const childProps = { id: controlId, ...passThrough(TextField, otherWithoutSpaceProps) };
+  const childProps = { id: controlId, required, ...passThrough(TextField, otherWithoutSpaceProps) };
   return (
     <ControlGroupBase
       activeColor={activeColor}
-      assistiveText={assistiveText}
+      assistiveText={getAssistiveText(props)}
       bgColor={bgColor}
       controlId={controlId}
       controlLabel={controlLabel}
@@ -44,6 +53,7 @@ TextField.propTypes = {
   bgColor: PropTypes.string,
   controlId: PropTypes.string.isRequired,
   controlLabel: PropTypes.string.isRequired,
+  required: PropTypes.bool,
   validationError: PropTypes.string,
   ...space.propTypes,
 };
@@ -52,6 +62,7 @@ TextField.defaultProps = {
   activeColor: defaultControlStylesBase.activeColor,
   assistiveText: '',
   bgColor: defaultControlStylesBase.bgColor,
+  required: false,
   validationError: '',
 };
 
