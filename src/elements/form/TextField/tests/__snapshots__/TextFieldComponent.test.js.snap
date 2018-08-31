@@ -62,6 +62,7 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
     <input
       className="c0"
       readOnly={false}
+      tabIndex="0"
       type="text"
     />
   </styled.input>
@@ -130,6 +131,7 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
     <input
       className="c0"
       readOnly={false}
+      tabIndex="0"
       type="text"
     />
   </styled.input>
@@ -198,6 +200,7 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
     <input
       className="c0"
       readOnly={false}
+      tabIndex="0"
       type="text"
     />
   </styled.input>

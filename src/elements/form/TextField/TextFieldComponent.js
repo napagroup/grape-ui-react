@@ -11,6 +11,7 @@ export const TextFieldComponent = props => {
   const controlBase = !validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') });
   const ProtoBase = styled.input.attrs({
     readOnly: plainText,
+    tabIndex: !plainText ? '0' : '-1',
     type: 'text',
   })`
     ${textBase}

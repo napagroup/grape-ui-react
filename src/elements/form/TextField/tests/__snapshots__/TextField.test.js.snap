@@ -2,6 +2,7 @@
 
 exports[`TextField  a large TextFieldComponent object should return a large TextFieldComponent object  1`] = `
 .c0 {
+  bg-color: white.light;
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
@@ -90,6 +91,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
     validationError=""
   >
     <ControlGroup
+      bgColor="white.light"
       paddingBottom="16px"
       paddingTop="4px"
     >
@@ -121,6 +123,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
                 className="c1"
                 id="exampleFullName"
                 readOnly={false}
+                tabIndex="0"
                 type="text"
               />
             </styled.input>
@@ -160,6 +163,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 
 exports[`TextField Component base should return a TextField object 1`] = `
 .c0 {
+  bg-color: white.light;
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
@@ -247,6 +251,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
     validationError=""
   >
     <ControlGroup
+      bgColor="white.light"
       paddingBottom="16px"
       paddingTop="4px"
     >
@@ -278,6 +283,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
                 className="c1"
                 id="exampleFullName"
                 readOnly={false}
+                tabIndex="0"
                 type="text"
               />
             </styled.input>
@@ -317,10 +323,11 @@ exports[`TextField Component base should return a TextField object 1`] = `
 
 exports[`TextField a TextFieldComponent object should return a TextFieldComponent object with a red bgColor  1`] = `
 .c0 {
+  bg-color: red;
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
-  background-color: hsl(0,0%,100%);
+  background-color: hsl(4.1,89.6%,58.4%);
   width: 100%;
 }
 
@@ -404,6 +411,7 @@ exports[`TextField a TextFieldComponent object should return a TextFieldComponen
     validationError=""
   >
     <ControlGroup
+      bgColor="red"
       paddingBottom="16px"
       paddingTop="4px"
     >
@@ -435,6 +443,7 @@ exports[`TextField a TextFieldComponent object should return a TextFieldComponen
                 className="c1"
                 id="exampleFullName2"
                 readOnly={false}
+                tabIndex="0"
                 type="text"
               />
             </styled.input>
@@ -474,6 +483,7 @@ exports[`TextField a TextFieldComponent object should return a TextFieldComponen
 
 exports[`TextField a plainText TextFieldComponent should return a disabled TextFieldComponent 1`] = `
 .c0 {
+  bg-color: white.light;
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
@@ -540,6 +550,7 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
     validationError=""
   >
     <ControlGroup
+      bgColor="white.light"
       paddingBottom="16px"
       paddingTop="4px"
     >
@@ -571,6 +582,7 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
                 className="c1"
                 id="exampleFullName2"
                 readOnly={true}
+                tabIndex="-1"
                 type="text"
               />
             </styled.input>
@@ -610,6 +622,7 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
 
 exports[`TextField a small TextFieldComponent object should return a disabled TextFieldComponent 1`] = `
 .c0 {
+  bg-color: white.light;
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
@@ -698,6 +711,7 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
     validationError=""
   >
     <ControlGroup
+      bgColor="white.light"
       paddingBottom="16px"
       paddingTop="4px"
     >
@@ -732,6 +746,7 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
                 disabled={true}
                 id="exampleFullName2"
                 readOnly={false}
+                tabIndex="0"
                 type="text"
               />
             </styled.input>
@@ -771,6 +786,7 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
 
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object  1`] = `
 .c0 {
+  bg-color: white.light;
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
@@ -859,6 +875,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
     validationError=""
   >
     <ControlGroup
+      bgColor="white.light"
       paddingBottom="16px"
       paddingTop="4px"
     >
@@ -890,6 +907,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
                 className="c1"
                 id="exampleFullName"
                 readOnly={false}
+                tabIndex="0"
                 type="text"
               />
             </styled.input>
@@ -929,6 +947,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object with a red activeColor  1`] = `
 .c0 {
+  bg-color: white.light;
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
@@ -1016,6 +1035,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
     validationError=""
   >
     <ControlGroup
+      bgColor="white.light"
       paddingBottom="16px"
       paddingTop="4px"
     >
@@ -1047,6 +1067,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
                 className="c1"
                 id="exampleFullName2"
                 readOnly={false}
+                tabIndex="0"
                 type="text"
               />
             </styled.input>
@@ -1086,6 +1107,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object with space mb  1`] = `
 .c0 {
+  bg-color: white.light;
   margin: 1;
   padding-bottom: 16px;
   padding-top: 4px;
@@ -1176,6 +1198,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
     validationError=""
   >
     <ControlGroup
+      bgColor="white.light"
       margin="1"
       paddingBottom="16px"
       paddingTop="4px"
@@ -1208,6 +1231,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
                 className="c1"
                 id="exampleFullName2"
                 readOnly={false}
+                tabIndex="0"
                 type="text"
               />
             </styled.input>
@@ -1247,6 +1271,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 exports[`TextField with assistive text should return a TextField object contain Assistive Text 1`] = `
 .c0 {
+  bg-color: white.light;
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
@@ -1350,6 +1375,7 @@ exports[`TextField with assistive text should return a TextField object contain 
     validationError=""
   >
     <ControlGroup
+      bgColor="white.light"
       paddingBottom="16px"
       paddingTop="4px"
     >
@@ -1381,6 +1407,7 @@ exports[`TextField with assistive text should return a TextField object contain 
                 className="c1"
                 id="exampleFullName"
                 readOnly={false}
+                tabIndex="0"
                 type="text"
               />
             </styled.input>
@@ -1442,6 +1469,7 @@ exports[`TextField with assistive text should return a TextField object contain 
 
 exports[`TextField with some other props should return a TextField object contain input with those other props  1`] = `
 .c0 {
+  bg-color: white.light;
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
@@ -1531,6 +1559,7 @@ exports[`TextField with some other props should return a TextField object contai
     validationError=""
   >
     <ControlGroup
+      bgColor="white.light"
       paddingBottom="16px"
       paddingTop="4px"
     >
@@ -1567,6 +1596,7 @@ exports[`TextField with some other props should return a TextField object contai
                 id="exampleFullName"
                 readOnly={false}
                 required={true}
+                tabIndex="0"
                 type="text"
               />
             </styled.input>
@@ -1606,6 +1636,7 @@ exports[`TextField with some other props should return a TextField object contai
 
 exports[`TextField with validation error should return a TextField object contain Assistive Text with error style 1`] = `
 .c0 {
+  bg-color: white.light;
   padding-bottom: 16px;
   padding-top: 4px;
   position: relative;
@@ -1709,6 +1740,7 @@ exports[`TextField with validation error should return a TextField object contai
     validationError="This is a required field."
   >
     <ControlGroup
+      bgColor="white.light"
       paddingBottom="16px"
       paddingTop="4px"
     >
@@ -1740,6 +1772,7 @@ exports[`TextField with validation error should return a TextField object contai
                 className="c1"
                 id="exampleFullName"
                 readOnly={false}
+                tabIndex="0"
                 type="text"
               />
             </styled.input>
