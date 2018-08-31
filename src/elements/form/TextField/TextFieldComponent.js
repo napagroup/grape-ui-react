@@ -20,8 +20,8 @@ export const TextFieldComponent = props => {
 };
 
 TextFieldComponent.propTypes = {
+  activeColor: PropTypes.string,
   borderColor: PropTypes.string,
-  borderColorActive: PropTypes.string,
   borderRadius: PropTypes.string,
   color: PropTypes.string,
   fontFamily: PropTypes.string,
@@ -37,8 +37,8 @@ TextFieldComponent.propTypes = {
 };
 
 TextFieldComponent.defaultProps = {
+  activeColor: defaultControlStylesBase.activeColor,
   borderColor: defaultControlStylesBase.borderColor,
-  borderColorActive: defaultControlStylesBase.borderColorActive,
   borderRadius: defaultControlStylesBase.borderRadius,
   color: defaultTextStylesBase.color,
   fontFamily: defaultTextStylesBase.fontFamily,

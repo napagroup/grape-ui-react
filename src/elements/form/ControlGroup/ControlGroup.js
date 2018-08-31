@@ -4,6 +4,16 @@ import styled from 'styled-components';
 import { ControlLabel } from './ControlLabel';
 import { AssistiveText } from './AssistiveText';
 import { space } from 'styled-system';
+import { defaultControlStylesBase } from './baseControlStyle';
+import { resolveColor } from 'src/utils/componentHelpers';
+
+const getBgColor = props => {
+  const { bgColor } = props;
+  if (!bgColor) {
+    return resolveColor(defaultControlStylesBase.bgColor);
+  }
+  return resolveColor(bgColor);
+};
 
 const ControlGroup = props => {
   const {
@@ -19,7 +29,7 @@ const ControlGroup = props => {
   };
   const stylesControlGroup = `
     position: relative;
-    background-color: white;
+    background-color: ${getBgColor(props)};
     width: 100%;
   `;
   const ProtoControlGroup = styled.div`
@@ -36,9 +46,10 @@ ControlGroup.propTypes = {
 export const ControlGroupBase = props => {
   const {
     activeColor,
+    assistiveText,
+    bgColor,
     controlLabel,
     controlId,
-    assistiveText,
     validationError,
     children,
     ...otherProps
@@ -58,6 +69,7 @@ export const ControlGroupBase = props => {
       {children}
       <ControlLabel
         activeColor={activeColor}
+        bgColor={getBgColor(props)}
         htmlFor={controlId}
         validationError={validationError}
       >{controlLabel}
@@ -70,6 +82,7 @@ export const ControlGroupBase = props => {
 ControlGroupBase.propTypes = {
   activeColor: PropTypes.string,
   assistiveText: PropTypes.string,
+  bgColor: PropTypes.string,
   children: PropTypes.any.isRequired,
   controlId: PropTypes.string.isRequired,
   controlLabel: PropTypes.string.isRequired,
@@ -77,7 +90,8 @@ ControlGroupBase.propTypes = {
 };
 
 ControlGroupBase.defaultProps = {
-  activeColor: 'blue',
+  activeColor: defaultControlStylesBase.activeColor,
   assistiveText: '',
+  bgColor: defaultControlStylesBase.bgColor,
   validationError: '',
 };

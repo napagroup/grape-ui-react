@@ -4,10 +4,12 @@ import { ControlGroupBase } from 'src/elements/form/ControlGroup/ControlGroup';
 import { passThrough, removeSomeProps } from 'src/utils/componentHelpers';
 import { TextFieldComponent } from './TextFieldComponent';
 import { space } from 'styled-system';
+import { defaultControlStylesBase } from '../ControlGroup/baseControlStyle';
 
 export const TextField = props => {
   const {
     activeColor,
+    bgColor,
     controlId,
     assistiveText,
     controlLabel,
@@ -25,6 +27,7 @@ export const TextField = props => {
   return (
     <ControlGroupBase
       activeColor={activeColor}
+      bgColor={bgColor}
       assistiveText={assistiveText}
       controlId={controlId}
       controlLabel={controlLabel}
@@ -38,6 +41,7 @@ export const TextField = props => {
 TextField.propTypes = {
   activeColor: PropTypes.string,
   assistiveText: PropTypes.string,
+  bgColor: PropTypes.string,
   controlId: PropTypes.string.isRequired,
   controlLabel: PropTypes.string.isRequired,
   validationError: PropTypes.string,
@@ -45,8 +49,9 @@ TextField.propTypes = {
 };
 
 TextField.defaultProps = {
-  activeColor: 'blue',
+  activeColor: defaultControlStylesBase.activeColor,
   assistiveText: '',
+  bgColor: defaultControlStylesBase.bgColor,
   validationError: '',
 };
 

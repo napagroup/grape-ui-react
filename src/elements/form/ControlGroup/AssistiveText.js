@@ -7,7 +7,6 @@ import { passThrough } from 'src/utils/componentHelpers';
 import { getGlobalStyles } from 'src/global-styles';
 
 const { grid: gridSchema } = getGlobalStyles();
-
 const padding = gridSchema.gutter;
 
 export const AssistiveText = props => {

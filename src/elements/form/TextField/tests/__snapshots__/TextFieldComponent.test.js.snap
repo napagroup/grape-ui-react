@@ -22,12 +22,12 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
 }
 
 .c0:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+  border-color: brandPrimary;
+  box-shadow: 0 0 0 1px brandPrimary;
 }
 
 .c0:focus + label {
-  color: hsl(323.3,84.6%,28%);
+  color: brandPrimary;
 }
 
 .c0[required] + label:after {
@@ -43,6 +43,7 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
 }
 
 <TextFieldComponent
+  activeColor="brandPrimary"
   borderColor="hsl(0, 0%, 25%)"
   borderRadius="4px"
   color="inherit"
@@ -89,12 +90,12 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
 }
 
 .c0:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+  border-color: brandPrimary;
+  box-shadow: 0 0 0 1px brandPrimary;
 }
 
 .c0:focus + label {
-  color: hsl(323.3,84.6%,28%);
+  color: brandPrimary;
 }
 
 .c0[required] + label:after {
@@ -110,6 +111,7 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
 }
 
 <TextFieldComponent
+  activeColor="brandPrimary"
   borderColor="hsl(0, 0%, 25%)"
   borderRadius="4px"
   color="inherit"
@@ -156,12 +158,12 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
 }
 
 .c0:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+  border-color: brandPrimary;
+  box-shadow: 0 0 0 1px brandPrimary;
 }
 
 .c0:focus + label {
-  color: hsl(323.3,84.6%,28%);
+  color: brandPrimary;
 }
 
 .c0[required] + label:after {
@@ -177,6 +179,7 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
 }
 
 <TextFieldComponent
+  activeColor="brandPrimary"
   borderColor="hsl(0, 0%, 25%)"
   borderRadius="4px"
   color="inherit"

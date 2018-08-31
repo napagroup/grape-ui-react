@@ -3,7 +3,8 @@ import { getGlobalStyles } from 'src/global-styles';
 const { border: borderSchema, grid: gridSchema } = getGlobalStyles();
 
 export const defaultControlStylesBase = {
-  activeColor: borderSchema.borderColorActive,
+  activeColor: 'brandPrimary',
+  bgColor: 'white',
   borderColor: borderSchema.borderColor,
   borderRadius: borderSchema.borderRadius.base,
   padding: gridSchema.gutter,
@@ -48,7 +49,7 @@ export const controlStylesBase = (props = {}) => {
       border: 0;
       display: block;
       outline: 0;
-      padding: 0;
+      padding: ${padding};
     `;
   }
   return `
