@@ -9,11 +9,10 @@ export const TextFieldComponent = props => {
   const { plainText, validationError } = props;
   const textBase = textStylesBase(props);
   const controlBase = !validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') });
-  let styledTag = styled.input.attrs({ type: 'text' });
-  if (plainText) {
-    styledTag = styled.p;
-  }
-  const ProtoBase = styledTag`
+  const ProtoBase = styled.input.attrs({
+    readOnly: plainText,
+    type: 'text',
+  })`
     ${textBase}
     ${controlBase}
   `;

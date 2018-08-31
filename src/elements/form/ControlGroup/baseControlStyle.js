@@ -44,7 +44,12 @@ export const controlStylesBase = (props = {}) => {
     plainText,
   } = overrides;
   if (plainText) {
-    return null;
+    return `
+      border: 0;
+      display: block;
+      outline: 0;
+      padding: 0;
+    `;
   }
   return `
     border: 1px solid ${borderColor};
