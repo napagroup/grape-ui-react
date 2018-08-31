@@ -105,6 +105,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
             kerning="inherit"
             lg={true}
             padding="1rem"
+            plainText={false}
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
@@ -256,6 +257,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
             kerning="inherit"
             lg={false}
             padding="1rem"
+            plainText={false}
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
@@ -293,6 +295,132 @@ exports[`TextField Component base should return a TextField object 1`] = `
                 htmlFor="exampleFullName"
               >
                 Full name
+              </label>
+            </styled.label>
+          </ControlLabel>
+        </div>
+      </styled.div>
+    </ControlGroup>
+  </ControlGroupBase>
+</TextField>
+`;
+
+exports[`TextField a plainText TextFieldComponent should return a disabled TextFieldComponent 1`] = `
+.c0 {
+  padding-bottom: 16px;
+  padding-top: 4px;
+  position: relative;
+  background-color: white;
+  width: 100%;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c2 {
+  position: absolute;
+  padding: 0 0.5rem;
+  background-color: white;
+  top: -0.5rem;
+  left: 0.5rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<TextField
+  activeColor="red"
+  assistiveText=""
+  controlId="exampleFullName2"
+  controlLabel="Full name2"
+  plainText={true}
+  validationError=""
+>
+  <ControlGroupBase
+    activeColor="red"
+    assistiveText=""
+    controlId="exampleFullName2"
+    controlLabel="Full name2"
+    paddingBottom="16px"
+    paddingTop="4px"
+    validationError=""
+  >
+    <ControlGroup
+      paddingBottom="16px"
+      paddingTop="4px"
+    >
+      <styled.div>
+        <div
+          className="c0"
+        >
+          <TextFieldComponent
+            borderColor="hsl(0, 0%, 25%)"
+            borderRadius="4px"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            id="exampleFullName2"
+            kerning="inherit"
+            lg={false}
+            padding="1rem"
+            plainText={true}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+            validationError=""
+          >
+            <styled.p
+              id="exampleFullName2"
+            >
+              <p
+                className="c1"
+                id="exampleFullName2"
+              />
+            </styled.p>
+          </TextFieldComponent>
+          <ControlLabel
+            activeColor="red"
+            color="inherit"
+            fontFamily="inherit"
+            fontWeight="inherit"
+            htmlFor="exampleFullName2"
+            kerning="inherit"
+            lg={false}
+            sm={false}
+            textAlign="inherit"
+            textDecoration="inherit"
+            validationError=""
+          >
+            <styled.label
+              activeColor="red"
+              htmlFor="exampleFullName2"
+            >
+              <label
+                className="c2"
+                htmlFor="exampleFullName2"
+              >
+                Full name2
               </label>
             </styled.label>
           </ControlLabel>
@@ -409,6 +537,7 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
             kerning="inherit"
             lg={false}
             padding="1rem"
+            plainText={false}
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
@@ -563,6 +692,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             kerning="inherit"
             lg={false}
             padding="1rem"
+            plainText={false}
             sm={true}
             textAlign="inherit"
             textDecoration="inherit"
@@ -714,6 +844,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             kerning="inherit"
             lg={false}
             padding="1rem"
+            plainText={false}
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
@@ -869,6 +1000,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             kerning="inherit"
             lg={false}
             padding="1rem"
+            plainText={false}
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
@@ -1036,6 +1168,7 @@ exports[`TextField with assistive text should return a TextField object contain 
             kerning="inherit"
             lg={false}
             padding="1rem"
+            plainText={false}
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
@@ -1212,6 +1345,7 @@ exports[`TextField with some other props should return a TextField object contai
             lg={false}
             link="abc"
             padding="1rem"
+            plainText={false}
             required={true}
             sm={false}
             textAlign="inherit"
@@ -1383,6 +1517,7 @@ exports[`TextField with validation error should return a TextField object contai
             kerning="inherit"
             lg={false}
             padding="1rem"
+            plainText={false}
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"

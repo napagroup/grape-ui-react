@@ -51,6 +51,7 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   kerning="inherit"
   lg={false}
   padding="1rem"
+  plainText={false}
   sm={false}
   textAlign="inherit"
   textDecoration="inherit"
@@ -116,6 +117,7 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   kerning="inherit"
   lg={true}
   padding="1rem"
+  plainText={false}
   sm={false}
   textAlign="inherit"
   textDecoration="inherit"
@@ -181,6 +183,7 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   kerning="inherit"
   lg={false}
   padding="1rem"
+  plainText={false}
   sm={true}
   textAlign="inherit"
   textDecoration="inherit"

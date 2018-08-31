@@ -61,6 +61,12 @@ describe('TextField a small TextFieldComponent object', () => {
     expect(toJson(component.find('TextField'))).toMatchSnapshot();
   });
 });
+describe('TextField a plainText TextFieldComponent', () => {
+  it('should return a disabled TextFieldComponent', () => {
+    const component = mount(<TextField activeColor="red" controlId="exampleFullName2" controlLabel="Full name2" plainText />);
+    expect(toJson(component.find('TextField'))).toMatchSnapshot();
+  });
+});
 
 // describe('TextField a small TextFieldComponent object', () => {
 //   it('should return a small TextFieldComponent object with a red bgColor ', () => {

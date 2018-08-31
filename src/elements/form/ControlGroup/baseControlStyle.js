@@ -7,6 +7,7 @@ export const defaultControlStylesBase = {
   borderColor: borderSchema.borderColor,
   borderRadius: borderSchema.borderRadius.base,
   padding: gridSchema.gutter,
+  plainText: false,
 };
 
 const getScaleFactor = props => {
@@ -40,7 +41,11 @@ export const controlStylesBase = (props = {}) => {
     activeColor,
     borderColor,
     padding,
+    plainText,
   } = overrides;
+  if (plainText) {
+    return null;
+  }
   return `
     border: 1px solid ${borderColor};
     border-radius: ${scaleFactor};
