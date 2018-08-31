@@ -9,9 +9,9 @@ import { defaultControlStylesBase } from '../ControlGroup/baseControlStyle';
 export const TextField = props => {
   const {
     activeColor,
+    assistiveText,
     bgColor,
     controlId,
-    assistiveText,
     controlLabel,
     validationError,
     ...otherProps
