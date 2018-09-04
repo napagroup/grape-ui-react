@@ -19,3 +19,15 @@ describe('SelectFieldComponent base', () => {
     expect(toJson(component.find('SelectFieldComponent'))).toMatchSnapshot();
   });
 });
+
+describe('SelectFieldComponent with some style relate', () => {
+  it('should return a SelectFieldComponent lg object', () => {
+    const component = mount(<SelectFieldComponent defaultValue={colorOptions[1]} id="exampleColor" lg options={colorOptions} />);
+    expect(toJson(component.find('SelectFieldComponent'))).toMatchSnapshot();
+  });
+  it('should return a SelectFieldComponent sm object', () => {
+    const component = mount(<SelectFieldComponent defaultValue={colorOptions[1]} id="exampleColor" options={colorOptions} sm />);
+    expect(toJson(component.find('SelectFieldComponent'))).toMatchSnapshot();
+  });
+});
+

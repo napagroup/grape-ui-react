@@ -14,7 +14,19 @@ const colorOptions = [
 
 describe('SelectField Component base', () => {
   it('should return a SelectField object', () => {
-    const component = mount(<SelectField controlId="exampleColor" controlLabel="Color" defaultValue={colorOptions[1]} id="exampleColor" options={colorOptions} />);
+    const component = mount(<SelectField controlId="exampleColor" controlLabel="Color" defaultValue={colorOptions[1]} id="exampleColor" options={colorOptions} sm />);
+    expect(toJson(component.find('SelectField'))).toMatchSnapshot();
+  });
+});
+
+describe('SelectField Component with assistive text', () => {
+  it('should return a SelectField with assistive text', () => {
+    const component = mount(<SelectField assistiveText="Please tell me your color" controlId="exampleColor" controlLabel="Color" defaultValue={colorOptions[1]} id="exampleColor" options={colorOptions} />);
+    expect(toJson(component.find('SelectField'))).toMatchSnapshot();
+  });
+
+  it('should return a SelectField with error text', () => {
+    const component = mount(<SelectField assistiveText="Please tell me your color" controlId="exampleColor" controlLabel="Color" defaultValue={colorOptions[1]} id="exampleColor" options={colorOptions} validationError="This is a required field." />);
     expect(toJson(component.find('SelectField'))).toMatchSnapshot();
   });
 });
