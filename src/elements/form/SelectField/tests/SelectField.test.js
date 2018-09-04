@@ -14,7 +14,7 @@ const colorOptions = [
 
 describe('SelectField Component base', () => {
   it('should return a SelectField object', () => {
-    const component = mount(<SelectField controlId="exampleColor" controlLabel="Color" defaultValue={colorOptions[1]} id="exampleColor" options={colorOptions}/>);
+    const component = mount(<SelectField controlId="exampleColor" controlLabel="Color" defaultValue={colorOptions[1]} id="exampleColor" options={colorOptions} />);
     expect(toJson(component.find('SelectField'))).toMatchSnapshot();
   });
 });
