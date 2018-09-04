@@ -4093,7 +4093,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
     assistiveText="Please tell me your color"
     bgColor="white.light"
     controlId="exampleColor"
-    controlLabel="Color"
+    controlLabel="Color*"
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -4146,7 +4146,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
             }
             padding="1rem"
             plainText={false}
-            required={true}
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
@@ -4180,7 +4179,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
                   },
                 ]
               }
-              required={true}
             >
               <StateManager
                 className="c1"
@@ -4215,7 +4213,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
                   ]
                 }
                 readOnly={false}
-                required={true}
                 tabIndex="0"
               >
                 <Select
@@ -4286,7 +4283,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
                   pageSize={5}
                   placeholder="Select..."
                   readOnly={false}
-                  required={true}
                   screenReaderStatus={[Function]}
                   styles={Object {}}
                   tabIndex="0"
@@ -4401,7 +4397,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
                         "pageSize": 5,
                         "placeholder": "Select...",
                         "readOnly": false,
-                        "required": true,
                         "screenReaderStatus": [Function],
                         "styles": Object {},
                         "tabIndex": "0",
@@ -4522,7 +4517,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
                             "pageSize": 5,
                             "placeholder": "Select...",
                             "readOnly": false,
-                            "required": true,
                             "screenReaderStatus": [Function],
                             "styles": Object {},
                             "tabIndex": "0",
@@ -4635,7 +4629,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 "pageSize": 5,
                                 "placeholder": "Select...",
                                 "readOnly": false,
-                                "required": true,
                                 "screenReaderStatus": [Function],
                                 "styles": Object {},
                                 "tabIndex": "0",
@@ -4753,7 +4746,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                     "pageSize": 5,
                                     "placeholder": "Select...",
                                     "readOnly": false,
-                                    "required": true,
                                     "screenReaderStatus": [Function],
                                     "styles": Object {},
                                     "tabIndex": "0",
@@ -4974,7 +4966,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 "pageSize": 5,
                                 "placeholder": "Select...",
                                 "readOnly": false,
-                                "required": true,
                                 "screenReaderStatus": [Function],
                                 "styles": Object {},
                                 "tabIndex": "0",
@@ -5086,7 +5077,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                     "pageSize": 5,
                                     "placeholder": "Select...",
                                     "readOnly": false,
-                                    "required": true,
                                     "screenReaderStatus": [Function],
                                     "styles": Object {},
                                     "tabIndex": "0",
@@ -5206,7 +5196,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                     "pageSize": 5,
                                     "placeholder": "Select...",
                                     "readOnly": false,
-                                    "required": true,
                                     "screenReaderStatus": [Function],
                                     "styles": Object {},
                                     "tabIndex": "0",
@@ -5278,7 +5267,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                 className="c2"
                 htmlFor="exampleColor"
               >
-                Color
+                Color*
               </label>
             </styled.label>
           </ControlLabel>

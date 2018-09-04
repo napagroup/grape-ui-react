@@ -13,6 +13,7 @@ export const SelectField = props => {
     controlId,
     assistiveText,
     controlLabel,
+    required,
     validationError,
     ...otherProps
   } = props;
@@ -24,13 +25,14 @@ export const SelectField = props => {
   const spaceProps = { ...space(preSpaceProps) };
   const otherWithoutSpaceProps = removeSomeProps(otherProps, spaceProps);
   const childProps = { id: controlId, ...passThrough(SelectField, otherWithoutSpaceProps) };
+  const newlabel = !required ? controlLabel : `${controlLabel}*`;
   return (
     <ControlGroupBase
       activeColor={activeColor}
       assistiveText={assistiveText}
       bgColor={bgColor}
       controlId={controlId}
-      controlLabel={controlLabel}
+      controlLabel={newlabel}
       validationError={validationError}
       {...spaceProps}
     >
