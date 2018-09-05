@@ -7,7 +7,6 @@ import { space } from 'styled-system';
 import styled from 'styled-components';
 import { defaultControlStylesBase, controlStylesBase } from '../ControlGroup/baseControlStyle';
 import { textStylesBase } from 'src/elements/typography/textStyles';
-import { defaultCipherList } from 'constants';
 
 export const SelectField = props => {
   const {
