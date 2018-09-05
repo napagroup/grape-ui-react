@@ -108,6 +108,12 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
   plainText={false}
   sm={true}
   validationError=""
+  value={
+    Object {
+      "label": "",
+      "value": "",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -1321,6 +1327,12 @@ exports[`SelectField Component with assistive text should return a SelectField w
   }
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "label": "",
+      "value": "",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -2556,6 +2568,12 @@ exports[`SelectField Component with assistive text should return a SelectField w
   }
   plainText={false}
   validationError="This is a required field."
+  value={
+    Object {
+      "label": "",
+      "value": "",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -3792,6 +3810,12 @@ exports[`SelectField Component with assistive text should return a SelectField w
   plainText={false}
   required={true}
   validationError=""
+  value={
+    Object {
+      "label": "",
+      "value": "",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -5027,6 +5051,12 @@ exports[`SelectField Component with lg text should return a SelectField with act
   }
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "label": "",
+      "value": "",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="cyan"
@@ -6262,6 +6292,12 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
   }
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "label": "",
+      "value": "",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -7498,6 +7534,12 @@ exports[`SelectField Component with lg text should return a SelectField with ora
   }
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "label": "",
+      "value": "",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -8734,6 +8776,12 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
   plainText={false}
   sm={true}
   validationError=""
+  value={
+    Object {
+      "label": "",
+      "value": "",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -9970,6 +10018,12 @@ exports[`SelectField Component with lg text should return a SelectField with sty
   }
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "label": "",
+      "value": "",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -11170,6 +11224,12 @@ exports[`SelectField Component with plainText or disabled should return a Select
   id="exampleColor"
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "label": "",
+      "value": "",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -12013,6 +12073,12 @@ exports[`SelectField Component with plainText or disabled should return a Select
   id="exampleColor"
   plainText={true}
   validationError=""
+  value={
+    Object {
+      "label": "",
+      "value": "",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -12051,6 +12117,12 @@ exports[`SelectField Component with plainText or disabled should return a Select
             id="exampleColor"
             plainText={true}
             validationError=""
+            value={
+              Object {
+                "label": "",
+                "value": "",
+              }
+            }
           >
             <div
               className="c1"
@@ -12063,9 +12135,13 @@ exports[`SelectField Component with plainText or disabled should return a Select
               }
               disabled={false}
               id="exampleColor"
-            >
-              Yellow
-            </div>
+              value={
+                Object {
+                  "label": "",
+                  "value": "",
+                }
+              }
+            />
           </styled.div>
           <ControlLabel
             activeColor="brandPrimary"
@@ -12228,6 +12304,12 @@ exports[`SelectField Component with space should return a SelectField with space
   p={4}
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "label": "",
+      "value": "",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"

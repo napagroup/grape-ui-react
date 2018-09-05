@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ControlGroupBase } from 'src/elements/form/ControlGroup/ControlGroup';
-import { passThrough, removeSomeProps, resolveColor } from 'src/utils/componentHelpers';
+import { passThrough, removeSomeProps, resolveColor, defaultOptions } from 'src/utils/componentHelpers';
 import { SelectFieldComponent } from './SelectFieldComponent';
 import { space } from 'styled-system';
 import styled from 'styled-components';
@@ -35,9 +35,10 @@ export const SelectField = props => {
   const disableRelatedProps = {
     isDisabled: disabled,
   };
-  const renderValueOrComponent = displayValue => {
+  const renderValueOrComponent = () => {
     if (plainText) {
       const textBase = textStylesBase(props);
+      const displayValue = value ? value.label : defaultValue.label;
       const displayString = !displayValue ? '' : `${displayValue}`;
       const controlBase = !validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') });
       const ProtoPlainText = styled.div.attrs({})` ${textBase} ${controlBase}`;
@@ -56,7 +57,7 @@ export const SelectField = props => {
       validationError={validationError}
       {...spaceProps}
     >
-      {renderValueOrComponent(value || defaultValue.label)}
+      {renderValueOrComponent()}
     </ControlGroupBase>);
 };
 
@@ -70,6 +71,8 @@ SelectField.propTypes = {
   plainText: PropTypes.bool,
   validationError: PropTypes.string,
   ...space.propTypes,
+  value: PropTypes.object,
+  defaultValue: PropTypes.object,
 };
 
 SelectField.defaultProps = {
@@ -79,5 +82,7 @@ SelectField.defaultProps = {
   disabled: false,
   plainText: false,
   validationError: '',
+  value: defaultOptions,
+  defaultValue: defaultOptions,
 };
 
