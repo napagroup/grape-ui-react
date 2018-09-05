@@ -67,12 +67,12 @@ SelectField.propTypes = {
   bgColor: PropTypes.string,
   controlId: PropTypes.string.isRequired,
   controlLabel: PropTypes.string.isRequired,
+  defaultValue: PropTypes.object,
   disabled: PropTypes.bool,
   plainText: PropTypes.bool,
   validationError: PropTypes.string,
   ...space.propTypes,
-  value: PropTypes.object,
-  defaultValue: PropTypes.object,
+  // value: PropTypes.object,
 };
 
 SelectField.defaultProps = {
@@ -82,7 +82,7 @@ SelectField.defaultProps = {
   disabled: false,
   plainText: false,
   validationError: '',
-  value: defaultOptions,
+  // value: defaultOptions,
   defaultValue: defaultOptions,
 };
 
