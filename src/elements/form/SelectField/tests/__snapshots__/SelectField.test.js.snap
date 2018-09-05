@@ -84,6 +84,7 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
       "value": "yellow",
     }
   }
+  disabled={false}
   id="exampleColor"
   options={
     Array [
@@ -113,6 +114,7 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
     bgColor="white.light"
     controlId="exampleColor"
     controlLabel="Color"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -141,6 +143,7 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleColor"
+            isDisabled={false}
             kerning="inherit"
             lg={false}
             multiple={false}
@@ -179,6 +182,7 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                 }
               }
               id="exampleColor"
+              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -211,6 +215,7 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                   }
                 }
                 id="exampleColor"
+                isDisabled={false}
                 isMulti={false}
                 options={
                   Array [
@@ -1268,6 +1273,7 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleColor"
@@ -1280,10 +1286,12 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
           >
             <styled.label
               activeColor="brandPrimary"
+              disabled={false}
               htmlFor="exampleColor"
             >
               <label
                 className="c2"
+                disabled={false}
                 htmlFor="exampleColor"
               >
                 Color
@@ -1397,6 +1405,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
       "value": "yellow",
     }
   }
+  disabled={false}
   id="exampleColor"
   options={
     Array [
@@ -1425,6 +1434,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
     bgColor="white.light"
     controlId="exampleColor"
     controlLabel="Color"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -1453,6 +1463,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleColor"
+            isDisabled={false}
             kerning="inherit"
             lg={false}
             multiple={false}
@@ -1491,6 +1502,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                 }
               }
               id="exampleColor"
+              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -1523,6 +1535,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                   }
                 }
                 id="exampleColor"
+                isDisabled={false}
                 isMulti={false}
                 options={
                   Array [
@@ -2580,6 +2593,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleColor"
@@ -2592,10 +2606,12 @@ exports[`SelectField Component with assistive text should return a SelectField w
           >
             <styled.label
               activeColor="brandPrimary"
+              disabled={false}
               htmlFor="exampleColor"
             >
               <label
                 className="c2"
+                disabled={false}
                 htmlFor="exampleColor"
               >
                 Color
@@ -2731,6 +2747,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
       "value": "yellow",
     }
   }
+  disabled={false}
   id="exampleColor"
   options={
     Array [
@@ -2759,6 +2776,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
     bgColor="white.light"
     controlId="exampleColor"
     controlLabel="Color"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError="This is a required field."
@@ -2787,6 +2805,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleColor"
+            isDisabled={false}
             kerning="inherit"
             lg={false}
             multiple={false}
@@ -2825,6 +2844,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                 }
               }
               id="exampleColor"
+              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -2857,6 +2877,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                   }
                 }
                 id="exampleColor"
+                isDisabled={false}
                 isMulti={false}
                 options={
                   Array [
@@ -3914,6 +3935,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleColor"
@@ -3926,10 +3948,12 @@ exports[`SelectField Component with assistive text should return a SelectField w
           >
             <styled.label
               activeColor="brandPrimary"
+              disabled={false}
               htmlFor="exampleColor"
             >
               <label
                 className="c2"
+                disabled={false}
                 htmlFor="exampleColor"
               >
                 Color
@@ -4065,6 +4089,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
       "value": "yellow",
     }
   }
+  disabled={false}
   id="exampleColor"
   options={
     Array [
@@ -4094,6 +4119,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
     bgColor="white.light"
     controlId="exampleColor"
     controlLabel="Color*"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -4122,6 +4148,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleColor"
+            isDisabled={false}
             kerning="inherit"
             lg={false}
             multiple={false}
@@ -4160,6 +4187,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                 }
               }
               id="exampleColor"
+              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -4192,6 +4220,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                   }
                 }
                 id="exampleColor"
+                isDisabled={false}
                 isMulti={false}
                 options={
                   Array [
@@ -5249,6 +5278,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleColor"
@@ -5261,10 +5291,12 @@ exports[`SelectField Component with assistive text should return a SelectField w
           >
             <styled.label
               activeColor="brandPrimary"
+              disabled={false}
               htmlFor="exampleColor"
             >
               <label
                 className="c2"
+                disabled={false}
                 htmlFor="exampleColor"
               >
                 Color*
@@ -5400,6 +5432,7 @@ exports[`SelectField Component with lg text should return a SelectField with act
       "value": "yellow",
     }
   }
+  disabled={false}
   id="exampleColor"
   options={
     Array [
@@ -5428,6 +5461,7 @@ exports[`SelectField Component with lg text should return a SelectField with act
     bgColor="white.light"
     controlId="exampleColor"
     controlLabel="Color"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -5456,6 +5490,7 @@ exports[`SelectField Component with lg text should return a SelectField with act
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleColor"
+            isDisabled={false}
             kerning="inherit"
             lg={false}
             multiple={false}
@@ -5494,6 +5529,7 @@ exports[`SelectField Component with lg text should return a SelectField with act
                 }
               }
               id="exampleColor"
+              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -5526,6 +5562,7 @@ exports[`SelectField Component with lg text should return a SelectField with act
                   }
                 }
                 id="exampleColor"
+                isDisabled={false}
                 isMulti={false}
                 options={
                   Array [
@@ -6583,6 +6620,7 @@ exports[`SelectField Component with lg text should return a SelectField with act
             activeColor="cyan"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleColor"
@@ -6595,10 +6633,12 @@ exports[`SelectField Component with lg text should return a SelectField with act
           >
             <styled.label
               activeColor="cyan"
+              disabled={false}
               htmlFor="exampleColor"
             >
               <label
                 className="c2"
+                disabled={false}
                 htmlFor="exampleColor"
               >
                 Color
@@ -6734,6 +6774,7 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
       "value": "yellow",
     }
   }
+  disabled={false}
   id="exampleColor"
   options={
     Array [
@@ -6762,6 +6803,7 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
     bgColor="red"
     controlId="exampleColor"
     controlLabel="Color"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -6790,6 +6832,7 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleColor"
+            isDisabled={false}
             kerning="inherit"
             lg={false}
             multiple={false}
@@ -6828,6 +6871,7 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                 }
               }
               id="exampleColor"
+              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -6860,6 +6904,7 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                   }
                 }
                 id="exampleColor"
+                isDisabled={false}
                 isMulti={false}
                 options={
                   Array [
@@ -7917,6 +7962,7 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
             activeColor="brandPrimary"
             bgColor="hsl(4.1, 89.6%, 58.4%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleColor"
@@ -7929,10 +7975,12 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
           >
             <styled.label
               activeColor="brandPrimary"
+              disabled={false}
               htmlFor="exampleColor"
             >
               <label
                 className="c2"
+                disabled={false}
                 htmlFor="exampleColor"
               >
                 Color
@@ -8069,6 +8117,7 @@ exports[`SelectField Component with lg text should return a SelectField with ora
       "value": "yellow",
     }
   }
+  disabled={false}
   id="exampleColor"
   options={
     Array [
@@ -8097,6 +8146,7 @@ exports[`SelectField Component with lg text should return a SelectField with ora
     bgColor="white.light"
     controlId="exampleColor"
     controlLabel="Color"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -8125,6 +8175,7 @@ exports[`SelectField Component with lg text should return a SelectField with ora
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleColor"
+            isDisabled={false}
             kerning="inherit"
             lg={false}
             multiple={false}
@@ -8163,6 +8214,7 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                 }
               }
               id="exampleColor"
+              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -8195,6 +8247,7 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                   }
                 }
                 id="exampleColor"
+                isDisabled={false}
                 isMulti={false}
                 options={
                   Array [
@@ -9252,6 +9305,7 @@ exports[`SelectField Component with lg text should return a SelectField with ora
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleColor"
@@ -9264,10 +9318,12 @@ exports[`SelectField Component with lg text should return a SelectField with ora
           >
             <styled.label
               activeColor="brandPrimary"
+              disabled={false}
               htmlFor="exampleColor"
             >
               <label
                 className="c2"
+                disabled={false}
                 htmlFor="exampleColor"
               >
                 Color
@@ -9403,6 +9459,7 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
       "value": "yellow",
     }
   }
+  disabled={false}
   id="exampleColor"
   options={
     Array [
@@ -9432,6 +9489,7 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
     bgColor="white.light"
     controlId="exampleColor"
     controlLabel="Color"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -9460,6 +9518,7 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleColor"
+            isDisabled={false}
             kerning="inherit"
             lg={false}
             multiple={false}
@@ -9498,6 +9557,7 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                 }
               }
               id="exampleColor"
+              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -9530,6 +9590,7 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                   }
                 }
                 id="exampleColor"
+                isDisabled={false}
                 isMulti={false}
                 options={
                   Array [
@@ -10587,6 +10648,7 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleColor"
@@ -10599,10 +10661,12 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
           >
             <styled.label
               activeColor="brandPrimary"
+              disabled={false}
               htmlFor="exampleColor"
             >
               <label
                 className="c2"
+                disabled={false}
                 htmlFor="exampleColor"
               >
                 Color
@@ -10738,6 +10802,7 @@ exports[`SelectField Component with lg text should return a SelectField with sty
       "value": "yellow",
     }
   }
+  disabled={false}
   id="exampleColor"
   lg={true}
   options={
@@ -10767,6 +10832,7 @@ exports[`SelectField Component with lg text should return a SelectField with sty
     bgColor="white.light"
     controlId="exampleColor"
     controlLabel="Color"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -10795,6 +10861,7 @@ exports[`SelectField Component with lg text should return a SelectField with sty
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleColor"
+            isDisabled={false}
             kerning="inherit"
             lg={true}
             multiple={false}
@@ -10833,6 +10900,7 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                 }
               }
               id="exampleColor"
+              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -10865,6 +10933,7 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                   }
                 }
                 id="exampleColor"
+                isDisabled={false}
                 isMulti={false}
                 options={
                   Array [
@@ -11922,6 +11991,7 @@ exports[`SelectField Component with lg text should return a SelectField with sty
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleColor"
@@ -11934,10 +12004,12 @@ exports[`SelectField Component with lg text should return a SelectField with sty
           >
             <styled.label
               activeColor="brandPrimary"
+              disabled={false}
               htmlFor="exampleColor"
             >
               <label
                 className="c2"
+                disabled={false}
                 htmlFor="exampleColor"
               >
                 Color
@@ -12067,6 +12139,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
     bgColor="white.light"
     controlId="exampleColor"
     controlLabel="Color"
+    disabled={true}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -12092,10 +12165,10 @@ exports[`SelectField Component with plainText or disabled should return a Select
                 "value": "yellow",
               }
             }
-            disabled={true}
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleColor"
+            isDisabled={true}
             kerning="inherit"
             lg={false}
             multiple={false}
@@ -12114,8 +12187,8 @@ exports[`SelectField Component with plainText or disabled should return a Select
                   "value": "yellow",
                 }
               }
-              disabled={true}
               id="exampleColor"
+              isDisabled={true}
             >
               <StateManager
                 className="c1"
@@ -12128,8 +12201,8 @@ exports[`SelectField Component with plainText or disabled should return a Select
                     "value": "yellow",
                   }
                 }
-                disabled={true}
                 id="exampleColor"
+                isDisabled={true}
                 isMulti={false}
                 readOnly={false}
                 tabIndex="0"
@@ -12152,7 +12225,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
                       "value": "yellow",
                     }
                   }
-                  disabled={true}
                   escapeClearsValue={false}
                   filterOption={[Function]}
                   formatGroupLabel={[Function]}
@@ -12160,7 +12232,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                   getOptionValue={[Function]}
                   id="exampleColor"
                   inputValue=""
-                  isDisabled={false}
+                  isDisabled={true}
                   isLoading={false}
                   isMulti={false}
                   isOptionDisabled={[Function]}
@@ -12210,7 +12282,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                         "onKeyDown": [Function],
                       }
                     }
-                    isDisabled={false}
+                    isDisabled={true}
                     isFocused={false}
                     isMulti={false}
                     isRtl={false}
@@ -12233,7 +12305,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
                           "label": "Yellow",
                           "value": "yellow",
                         },
-                        "disabled": true,
                         "escapeClearsValue": false,
                         "filterOption": [Function],
                         "formatGroupLabel": [Function],
@@ -12241,7 +12312,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                         "getOptionValue": [Function],
                         "id": "exampleColor",
                         "inputValue": "",
-                        "isDisabled": false,
+                        "isDisabled": true,
                         "isLoading": false,
                         "isMulti": false,
                         "isOptionDisabled": [Function],
@@ -12280,7 +12351,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                     setValue={[Function]}
                   >
                     <div
-                      className="css-10nd86i c1"
+                      className="css-1sontr1 c1"
                       id="exampleColor"
                       onKeyDown={[Function]}
                     >
@@ -12297,7 +12368,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                           }
                         }
                         innerRef={[Function]}
-                        isDisabled={false}
+                        isDisabled={true}
                         isFocused={false}
                         isMulti={false}
                         isRtl={false}
@@ -12320,7 +12391,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
                               "label": "Yellow",
                               "value": "yellow",
                             },
-                            "disabled": true,
                             "escapeClearsValue": false,
                             "filterOption": [Function],
                             "formatGroupLabel": [Function],
@@ -12328,7 +12398,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                             "getOptionValue": [Function],
                             "id": "exampleColor",
                             "inputValue": "",
-                            "isDisabled": false,
+                            "isDisabled": true,
                             "isLoading": false,
                             "isMulti": false,
                             "isOptionDisabled": [Function],
@@ -12367,7 +12437,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                         setValue={[Function]}
                       >
                         <div
-                          className="css-1aya2g8"
+                          className="css-162g8z5"
                           onMouseDown={[Function]}
                           onTouchEnd={[Function]}
                         >
@@ -12377,7 +12447,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                             getStyles={[Function]}
                             getValue={[Function]}
                             hasValue={true}
-                            isDisabled={false}
+                            isDisabled={true}
                             isMulti={false}
                             isRtl={false}
                             options={Array []}
@@ -12399,7 +12469,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                   "label": "Yellow",
                                   "value": "yellow",
                                 },
-                                "disabled": true,
                                 "escapeClearsValue": false,
                                 "filterOption": [Function],
                                 "formatGroupLabel": [Function],
@@ -12407,7 +12476,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 "getOptionValue": [Function],
                                 "id": "exampleColor",
                                 "inputValue": "",
-                                "isDisabled": false,
+                                "isDisabled": true,
                                 "isLoading": false,
                                 "isMulti": false,
                                 "isOptionDisabled": [Function],
@@ -12461,7 +12530,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 getStyles={[Function]}
                                 getValue={[Function]}
                                 hasValue={true}
-                                isDisabled={false}
+                                isDisabled={true}
                                 isMulti={false}
                                 isRtl={false}
                                 options={Array []}
@@ -12483,7 +12552,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                       "label": "Yellow",
                                       "value": "yellow",
                                     },
-                                    "disabled": true,
                                     "escapeClearsValue": false,
                                     "filterOption": [Function],
                                     "formatGroupLabel": [Function],
@@ -12491,7 +12559,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "getOptionValue": [Function],
                                     "id": "exampleColor",
                                     "inputValue": "",
-                                    "isDisabled": false,
+                                    "isDisabled": true,
                                     "isLoading": false,
                                     "isMulti": false,
                                     "isOptionDisabled": [Function],
@@ -12530,7 +12598,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 setValue={[Function]}
                               >
                                 <div
-                                  className="css-va7pk8"
+                                  className="css-142w6gm"
                                 >
                                   Yellow
                                 </div>
@@ -12544,7 +12612,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 getStyles={[Function]}
                                 id="react-select-13-input"
                                 innerRef={[Function]}
-                                isDisabled={false}
+                                isDisabled={true}
                                 isHidden={false}
                                 onBlur={[Function]}
                                 onChange={[Function]}
@@ -12563,7 +12631,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     autoComplete="off"
                                     autoCorrect="off"
                                     className=""
-                                    disabled={false}
+                                    disabled={true}
                                     id="react-select-13-input"
                                     injectStyles={true}
                                     inputRef={[Function]}
@@ -12600,7 +12668,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                         autoCapitalize="none"
                                         autoComplete="off"
                                         autoCorrect="off"
-                                        disabled={false}
+                                        disabled={true}
                                         id="react-select-13-input"
                                         onBlur={[Function]}
                                         onChange={[Function]}
@@ -12648,7 +12716,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                             getStyles={[Function]}
                             getValue={[Function]}
                             hasValue={true}
-                            isDisabled={false}
+                            isDisabled={true}
                             isMulti={false}
                             isRtl={false}
                             options={Array []}
@@ -12670,7 +12738,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                   "label": "Yellow",
                                   "value": "yellow",
                                 },
-                                "disabled": true,
                                 "escapeClearsValue": false,
                                 "filterOption": [Function],
                                 "formatGroupLabel": [Function],
@@ -12678,7 +12745,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 "getOptionValue": [Function],
                                 "id": "exampleColor",
                                 "inputValue": "",
-                                "isDisabled": false,
+                                "isDisabled": true,
                                 "isLoading": false,
                                 "isMulti": false,
                                 "isOptionDisabled": [Function],
@@ -12725,7 +12792,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 getStyles={[Function]}
                                 getValue={[Function]}
                                 hasValue={true}
-                                isDisabled={false}
+                                isDisabled={true}
                                 isFocused={false}
                                 isMulti={false}
                                 isRtl={false}
@@ -12748,7 +12815,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                       "label": "Yellow",
                                       "value": "yellow",
                                     },
-                                    "disabled": true,
                                     "escapeClearsValue": false,
                                     "filterOption": [Function],
                                     "formatGroupLabel": [Function],
@@ -12756,7 +12822,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "getOptionValue": [Function],
                                     "id": "exampleColor",
                                     "inputValue": "",
-                                    "isDisabled": false,
+                                    "isDisabled": true,
                                     "isLoading": false,
                                     "isMulti": false,
                                     "isOptionDisabled": [Function],
@@ -12795,7 +12861,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 setValue={[Function]}
                               >
                                 <span
-                                  className="css-d8oujb"
+                                  className="css-ln5n5c"
                                 />
                               </IndicatorSeparator>
                               <DropdownIndicator
@@ -12811,7 +12877,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "onTouchEnd": [Function],
                                   }
                                 }
-                                isDisabled={false}
+                                isDisabled={true}
                                 isFocused={false}
                                 isMulti={false}
                                 isRtl={false}
@@ -12834,7 +12900,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                       "label": "Yellow",
                                       "value": "yellow",
                                     },
-                                    "disabled": true,
                                     "escapeClearsValue": false,
                                     "filterOption": [Function],
                                     "formatGroupLabel": [Function],
@@ -12842,7 +12907,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "getOptionValue": [Function],
                                     "id": "exampleColor",
                                     "inputValue": "",
-                                    "isDisabled": false,
+                                    "isDisabled": true,
                                     "isLoading": false,
                                     "isMulti": false,
                                     "isOptionDisabled": [Function],
@@ -12920,6 +12985,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={true}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleColor"
@@ -12932,10 +12998,12 @@ exports[`SelectField Component with plainText or disabled should return a Select
           >
             <styled.label
               activeColor="brandPrimary"
+              disabled={true}
               htmlFor="exampleColor"
             >
               <label
                 className="c2"
+                disabled={true}
                 htmlFor="exampleColor"
               >
                 Color
@@ -13011,6 +13079,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
       "value": "yellow",
     }
   }
+  disabled={false}
   id="exampleColor"
   plainText={true}
   validationError=""
@@ -13021,6 +13090,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
     bgColor="white.light"
     controlId="exampleColor"
     controlLabel="Color"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -13049,6 +13119,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleColor"
+            isDisabled={false}
             kerning="inherit"
             lg={false}
             multiple={false}
@@ -13068,6 +13139,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                 }
               }
               id="exampleColor"
+              isDisabled={false}
             >
               <StateManager
                 className="c1"
@@ -13081,6 +13153,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                   }
                 }
                 id="exampleColor"
+                isDisabled={false}
                 isMulti={false}
                 readOnly={true}
                 tabIndex="-1"
@@ -13863,6 +13936,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleColor"
@@ -13875,10 +13949,12 @@ exports[`SelectField Component with plainText or disabled should return a Select
           >
             <styled.label
               activeColor="brandPrimary"
+              disabled={false}
               htmlFor="exampleColor"
             >
               <label
                 className="c2"
+                disabled={false}
                 htmlFor="exampleColor"
               >
                 Color
@@ -13994,6 +14070,7 @@ exports[`SelectField Component with space should return a SelectField with space
       "value": "yellow",
     }
   }
+  disabled={false}
   id="exampleColor"
   m={4}
   options={
@@ -14024,6 +14101,7 @@ exports[`SelectField Component with space should return a SelectField with space
     bgColor="white.light"
     controlId="exampleColor"
     controlLabel="Color"
+    disabled={false}
     margin="32px"
     padding="32px"
     paddingBottom="16px"
@@ -14056,6 +14134,7 @@ exports[`SelectField Component with space should return a SelectField with space
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleColor"
+            isDisabled={false}
             kerning="inherit"
             lg={false}
             multiple={false}
@@ -14094,6 +14173,7 @@ exports[`SelectField Component with space should return a SelectField with space
                 }
               }
               id="exampleColor"
+              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -14126,6 +14206,7 @@ exports[`SelectField Component with space should return a SelectField with space
                   }
                 }
                 id="exampleColor"
+                isDisabled={false}
                 isMulti={false}
                 options={
                   Array [
@@ -15183,6 +15264,7 @@ exports[`SelectField Component with space should return a SelectField with space
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleColor"
@@ -15195,10 +15277,12 @@ exports[`SelectField Component with space should return a SelectField with space
           >
             <styled.label
               activeColor="brandPrimary"
+              disabled={false}
               htmlFor="exampleColor"
             >
               <label
                 className="c2"
+                disabled={false}
                 htmlFor="exampleColor"
               >
                 Color

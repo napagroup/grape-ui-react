@@ -11,6 +11,7 @@ export const SelectField = props => {
     activeColor,
     bgColor,
     controlId,
+    disabled,
     assistiveText,
     controlLabel,
     required,
@@ -26,6 +27,9 @@ export const SelectField = props => {
   const otherWithoutSpaceProps = removeSomeProps(otherProps, spaceProps);
   const childProps = { id: controlId, ...passThrough(SelectField, otherWithoutSpaceProps) };
   const newlabel = !required ? controlLabel : `${controlLabel}*`;
+  const disableRelatedProps = {
+    isDisabled: disabled,
+  };
   return (
     <ControlGroupBase
       activeColor={activeColor}
@@ -33,10 +37,11 @@ export const SelectField = props => {
       bgColor={bgColor}
       controlId={controlId}
       controlLabel={newlabel}
+      disabled={disabled}
       validationError={validationError}
       {...spaceProps}
     >
-      <SelectFieldComponent validationError={validationError} {...childProps} />
+      <SelectFieldComponent validationError={validationError} {...childProps} {...disableRelatedProps} />
     </ControlGroupBase>);
 };
 
@@ -46,6 +51,7 @@ SelectField.propTypes = {
   bgColor: PropTypes.string,
   controlId: PropTypes.string.isRequired,
   controlLabel: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
   validationError: PropTypes.string,
   ...space.propTypes,
 };
@@ -54,6 +60,7 @@ SelectField.defaultProps = {
   activeColor: defaultControlStylesBase.activeColor,
   assistiveText: '',
   bgColor: defaultControlStylesBase.bgColor,
+  disabled: false,
   validationError: '',
 };
 
