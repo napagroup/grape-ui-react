@@ -77,13 +77,6 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
   bgColor="white.light"
   controlId="exampleColor"
   controlLabel="Color"
-  defaultValue={
-    Object {
-      "color": "#FFC400",
-      "label": "Yellow",
-      "value": "yellow",
-    }
-  }
   disabled={false}
   id="exampleColor"
   options={
@@ -172,6 +165,13 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
             textAlign="inherit"
             textDecoration="inherit"
             validationError=""
+            value={
+              Object {
+                "color": "#FFC400",
+                "label": "Yellow",
+                "value": "yellow",
+              }
+            }
           >
             <Styled(StateManager)
               id="exampleColor"
@@ -193,6 +193,13 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                     "value": "green",
                   },
                 ]
+              }
+              value={
+                Object {
+                  "color": "#FFC400",
+                  "label": "Yellow",
+                  "value": "yellow",
+                }
               }
             >
               <StateManager
@@ -221,6 +228,13 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                       "value": "green",
                     },
                   ]
+                }
+                value={
+                  Object {
+                    "color": "#FFC400",
+                    "label": "Yellow",
+                    "value": "yellow",
+                  }
                 }
               >
                 <Select
@@ -288,7 +302,13 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                   styles={Object {}}
                   tabIndex="0"
                   tabSelectsValue={true}
-                  value={null}
+                  value={
+                    Object {
+                      "color": "#FFC400",
+                      "label": "Yellow",
+                      "value": "yellow",
+                    }
+                  }
                 >
                   <SelectContainer
                     className="c1"
@@ -296,7 +316,7 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                     cx={[Function]}
                     getStyles={[Function]}
                     getValue={[Function]}
-                    hasValue={false}
+                    hasValue={true}
                     innerProps={
                       Object {
                         "id": "exampleColor",
@@ -391,7 +411,11 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                         "styles": Object {},
                         "tabIndex": "0",
                         "tabSelectsValue": true,
-                        "value": null,
+                        "value": Object {
+                          "color": "#FFC400",
+                          "label": "Yellow",
+                          "value": "yellow",
+                        },
                       }
                     }
                     setValue={[Function]}
@@ -406,7 +430,7 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                         cx={[Function]}
                         getStyles={[Function]}
                         getValue={[Function]}
-                        hasValue={false}
+                        hasValue={true}
                         innerProps={
                           Object {
                             "onMouseDown": [Function],
@@ -502,7 +526,11 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                             "styles": Object {},
                             "tabIndex": "0",
                             "tabSelectsValue": true,
-                            "value": null,
+                            "value": Object {
+                              "color": "#FFC400",
+                              "label": "Yellow",
+                              "value": "yellow",
+                            },
                           }
                         }
                         setValue={[Function]}
@@ -517,7 +545,7 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -605,7 +633,11 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -613,16 +645,22 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                             <div
                               className="css-1rtrksz"
                             >
-                              <Placeholder
+                              <SingleValue
                                 clearValue={[Function]}
                                 cx={[Function]}
+                                data={
+                                  Object {
+                                    "color": "#FFC400",
+                                    "label": "Yellow",
+                                    "value": "yellow",
+                                  }
+                                }
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isMulti={false}
                                 isRtl={false}
-                                key="placeholder"
                                 options={
                                   Array [
                                     Object {
@@ -707,17 +745,21 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
                               >
                                 <div
-                                  className="css-1492t68"
+                                  className="css-va7pk8"
                                 >
-                                  Select...
+                                  Yellow
                                 </div>
-                              </Placeholder>
+                              </SingleValue>
                               <Input
                                 aria-autocomplete="list"
                                 autoCapitalize="none"
@@ -830,7 +872,7 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -918,7 +960,11 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -931,7 +977,7 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isFocused={false}
                                 isMulti={false}
@@ -1020,7 +1066,11 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -1034,7 +1084,7 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 innerProps={
                                   Object {
                                     "aria-hidden": "true",
@@ -1130,7 +1180,11 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -1298,13 +1352,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
   bgColor="white.light"
   controlId="exampleColor"
   controlLabel="Color"
-  defaultValue={
-    Object {
-      "color": "#FFC400",
-      "label": "Yellow",
-      "value": "yellow",
-    }
-  }
   disabled={false}
   id="exampleColor"
   options={
@@ -1392,6 +1439,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
             textAlign="inherit"
             textDecoration="inherit"
             validationError=""
+            value={
+              Object {
+                "color": "#FFC400",
+                "label": "Yellow",
+                "value": "yellow",
+              }
+            }
           >
             <Styled(StateManager)
               id="exampleColor"
@@ -1413,6 +1467,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
                     "value": "green",
                   },
                 ]
+              }
+              value={
+                Object {
+                  "color": "#FFC400",
+                  "label": "Yellow",
+                  "value": "yellow",
+                }
               }
             >
               <StateManager
@@ -1441,6 +1502,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
                       "value": "green",
                     },
                   ]
+                }
+                value={
+                  Object {
+                    "color": "#FFC400",
+                    "label": "Yellow",
+                    "value": "yellow",
+                  }
                 }
               >
                 <Select
@@ -1508,7 +1576,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
                   styles={Object {}}
                   tabIndex="0"
                   tabSelectsValue={true}
-                  value={null}
+                  value={
+                    Object {
+                      "color": "#FFC400",
+                      "label": "Yellow",
+                      "value": "yellow",
+                    }
+                  }
                 >
                   <SelectContainer
                     className="c1"
@@ -1516,7 +1590,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                     cx={[Function]}
                     getStyles={[Function]}
                     getValue={[Function]}
-                    hasValue={false}
+                    hasValue={true}
                     innerProps={
                       Object {
                         "id": "exampleColor",
@@ -1611,7 +1685,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                         "styles": Object {},
                         "tabIndex": "0",
                         "tabSelectsValue": true,
-                        "value": null,
+                        "value": Object {
+                          "color": "#FFC400",
+                          "label": "Yellow",
+                          "value": "yellow",
+                        },
                       }
                     }
                     setValue={[Function]}
@@ -1626,7 +1704,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                         cx={[Function]}
                         getStyles={[Function]}
                         getValue={[Function]}
-                        hasValue={false}
+                        hasValue={true}
                         innerProps={
                           Object {
                             "onMouseDown": [Function],
@@ -1722,7 +1800,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                             "styles": Object {},
                             "tabIndex": "0",
                             "tabSelectsValue": true,
-                            "value": null,
+                            "value": Object {
+                              "color": "#FFC400",
+                              "label": "Yellow",
+                              "value": "yellow",
+                            },
                           }
                         }
                         setValue={[Function]}
@@ -1737,7 +1819,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -1825,7 +1907,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -1833,16 +1919,22 @@ exports[`SelectField Component with assistive text should return a SelectField w
                             <div
                               className="css-1rtrksz"
                             >
-                              <Placeholder
+                              <SingleValue
                                 clearValue={[Function]}
                                 cx={[Function]}
+                                data={
+                                  Object {
+                                    "color": "#FFC400",
+                                    "label": "Yellow",
+                                    "value": "yellow",
+                                  }
+                                }
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isMulti={false}
                                 isRtl={false}
-                                key="placeholder"
                                 options={
                                   Array [
                                     Object {
@@ -1927,17 +2019,21 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
                               >
                                 <div
-                                  className="css-1492t68"
+                                  className="css-va7pk8"
                                 >
-                                  Select...
+                                  Yellow
                                 </div>
-                              </Placeholder>
+                              </SingleValue>
                               <Input
                                 aria-autocomplete="list"
                                 autoCapitalize="none"
@@ -2050,7 +2146,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -2138,7 +2234,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -2151,7 +2251,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isFocused={false}
                                 isMulti={false}
@@ -2240,7 +2340,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -2254,7 +2358,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 innerProps={
                                   Object {
                                     "aria-hidden": "true",
@@ -2350,7 +2454,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -2540,13 +2648,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
   bgColor="white.light"
   controlId="exampleColor"
   controlLabel="Color"
-  defaultValue={
-    Object {
-      "color": "#FFC400",
-      "label": "Yellow",
-      "value": "yellow",
-    }
-  }
   disabled={false}
   id="exampleColor"
   options={
@@ -2634,6 +2735,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
             textAlign="inherit"
             textDecoration="inherit"
             validationError="This is a required field."
+            value={
+              Object {
+                "color": "#FFC400",
+                "label": "Yellow",
+                "value": "yellow",
+              }
+            }
           >
             <Styled(StateManager)
               id="exampleColor"
@@ -2655,6 +2763,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
                     "value": "green",
                   },
                 ]
+              }
+              value={
+                Object {
+                  "color": "#FFC400",
+                  "label": "Yellow",
+                  "value": "yellow",
+                }
               }
             >
               <StateManager
@@ -2683,6 +2798,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
                       "value": "green",
                     },
                   ]
+                }
+                value={
+                  Object {
+                    "color": "#FFC400",
+                    "label": "Yellow",
+                    "value": "yellow",
+                  }
                 }
               >
                 <Select
@@ -2750,7 +2872,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
                   styles={Object {}}
                   tabIndex="0"
                   tabSelectsValue={true}
-                  value={null}
+                  value={
+                    Object {
+                      "color": "#FFC400",
+                      "label": "Yellow",
+                      "value": "yellow",
+                    }
+                  }
                 >
                   <SelectContainer
                     className="c1"
@@ -2758,7 +2886,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                     cx={[Function]}
                     getStyles={[Function]}
                     getValue={[Function]}
-                    hasValue={false}
+                    hasValue={true}
                     innerProps={
                       Object {
                         "id": "exampleColor",
@@ -2853,7 +2981,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                         "styles": Object {},
                         "tabIndex": "0",
                         "tabSelectsValue": true,
-                        "value": null,
+                        "value": Object {
+                          "color": "#FFC400",
+                          "label": "Yellow",
+                          "value": "yellow",
+                        },
                       }
                     }
                     setValue={[Function]}
@@ -2868,7 +3000,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                         cx={[Function]}
                         getStyles={[Function]}
                         getValue={[Function]}
-                        hasValue={false}
+                        hasValue={true}
                         innerProps={
                           Object {
                             "onMouseDown": [Function],
@@ -2964,7 +3096,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                             "styles": Object {},
                             "tabIndex": "0",
                             "tabSelectsValue": true,
-                            "value": null,
+                            "value": Object {
+                              "color": "#FFC400",
+                              "label": "Yellow",
+                              "value": "yellow",
+                            },
                           }
                         }
                         setValue={[Function]}
@@ -2979,7 +3115,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -3067,7 +3203,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -3075,16 +3215,22 @@ exports[`SelectField Component with assistive text should return a SelectField w
                             <div
                               className="css-1rtrksz"
                             >
-                              <Placeholder
+                              <SingleValue
                                 clearValue={[Function]}
                                 cx={[Function]}
+                                data={
+                                  Object {
+                                    "color": "#FFC400",
+                                    "label": "Yellow",
+                                    "value": "yellow",
+                                  }
+                                }
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isMulti={false}
                                 isRtl={false}
-                                key="placeholder"
                                 options={
                                   Array [
                                     Object {
@@ -3169,17 +3315,21 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
                               >
                                 <div
-                                  className="css-1492t68"
+                                  className="css-va7pk8"
                                 >
-                                  Select...
+                                  Yellow
                                 </div>
-                              </Placeholder>
+                              </SingleValue>
                               <Input
                                 aria-autocomplete="list"
                                 autoCapitalize="none"
@@ -3292,7 +3442,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -3380,7 +3530,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -3393,7 +3547,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isFocused={false}
                                 isMulti={false}
@@ -3482,7 +3636,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -3496,7 +3654,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 innerProps={
                                   Object {
                                     "aria-hidden": "true",
@@ -3592,7 +3750,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -3782,13 +3944,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
   bgColor="white.light"
   controlId="exampleColor"
   controlLabel="Color"
-  defaultValue={
-    Object {
-      "color": "#FFC400",
-      "label": "Yellow",
-      "value": "yellow",
-    }
-  }
   disabled={false}
   id="exampleColor"
   options={
@@ -3877,6 +4032,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
             textAlign="inherit"
             textDecoration="inherit"
             validationError=""
+            value={
+              Object {
+                "color": "#FFC400",
+                "label": "Yellow",
+                "value": "yellow",
+              }
+            }
           >
             <Styled(StateManager)
               id="exampleColor"
@@ -3898,6 +4060,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
                     "value": "green",
                   },
                 ]
+              }
+              value={
+                Object {
+                  "color": "#FFC400",
+                  "label": "Yellow",
+                  "value": "yellow",
+                }
               }
             >
               <StateManager
@@ -3926,6 +4095,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
                       "value": "green",
                     },
                   ]
+                }
+                value={
+                  Object {
+                    "color": "#FFC400",
+                    "label": "Yellow",
+                    "value": "yellow",
+                  }
                 }
               >
                 <Select
@@ -3993,7 +4169,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
                   styles={Object {}}
                   tabIndex="0"
                   tabSelectsValue={true}
-                  value={null}
+                  value={
+                    Object {
+                      "color": "#FFC400",
+                      "label": "Yellow",
+                      "value": "yellow",
+                    }
+                  }
                 >
                   <SelectContainer
                     className="c1"
@@ -4001,7 +4183,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                     cx={[Function]}
                     getStyles={[Function]}
                     getValue={[Function]}
-                    hasValue={false}
+                    hasValue={true}
                     innerProps={
                       Object {
                         "id": "exampleColor",
@@ -4096,7 +4278,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                         "styles": Object {},
                         "tabIndex": "0",
                         "tabSelectsValue": true,
-                        "value": null,
+                        "value": Object {
+                          "color": "#FFC400",
+                          "label": "Yellow",
+                          "value": "yellow",
+                        },
                       }
                     }
                     setValue={[Function]}
@@ -4111,7 +4297,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                         cx={[Function]}
                         getStyles={[Function]}
                         getValue={[Function]}
-                        hasValue={false}
+                        hasValue={true}
                         innerProps={
                           Object {
                             "onMouseDown": [Function],
@@ -4207,7 +4393,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                             "styles": Object {},
                             "tabIndex": "0",
                             "tabSelectsValue": true,
-                            "value": null,
+                            "value": Object {
+                              "color": "#FFC400",
+                              "label": "Yellow",
+                              "value": "yellow",
+                            },
                           }
                         }
                         setValue={[Function]}
@@ -4222,7 +4412,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -4310,7 +4500,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -4318,16 +4512,22 @@ exports[`SelectField Component with assistive text should return a SelectField w
                             <div
                               className="css-1rtrksz"
                             >
-                              <Placeholder
+                              <SingleValue
                                 clearValue={[Function]}
                                 cx={[Function]}
+                                data={
+                                  Object {
+                                    "color": "#FFC400",
+                                    "label": "Yellow",
+                                    "value": "yellow",
+                                  }
+                                }
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isMulti={false}
                                 isRtl={false}
-                                key="placeholder"
                                 options={
                                   Array [
                                     Object {
@@ -4412,17 +4612,21 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
                               >
                                 <div
-                                  className="css-1492t68"
+                                  className="css-va7pk8"
                                 >
-                                  Select...
+                                  Yellow
                                 </div>
-                              </Placeholder>
+                              </SingleValue>
                               <Input
                                 aria-autocomplete="list"
                                 autoCapitalize="none"
@@ -4535,7 +4739,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -4623,7 +4827,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -4636,7 +4844,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isFocused={false}
                                 isMulti={false}
@@ -4725,7 +4933,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -4739,7 +4951,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 innerProps={
                                   Object {
                                     "aria-hidden": "true",
@@ -4835,7 +5047,11 @@ exports[`SelectField Component with assistive text should return a SelectField w
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -5025,13 +5241,6 @@ exports[`SelectField Component with lg text should return a SelectField with act
   bgColor="white.light"
   controlId="exampleColor"
   controlLabel="Color"
-  defaultValue={
-    Object {
-      "color": "#FFC400",
-      "label": "Yellow",
-      "value": "yellow",
-    }
-  }
   disabled={false}
   id="exampleColor"
   options={
@@ -5119,6 +5328,13 @@ exports[`SelectField Component with lg text should return a SelectField with act
             textAlign="inherit"
             textDecoration="inherit"
             validationError=""
+            value={
+              Object {
+                "color": "#FFC400",
+                "label": "Yellow",
+                "value": "yellow",
+              }
+            }
           >
             <Styled(StateManager)
               id="exampleColor"
@@ -5140,6 +5356,13 @@ exports[`SelectField Component with lg text should return a SelectField with act
                     "value": "green",
                   },
                 ]
+              }
+              value={
+                Object {
+                  "color": "#FFC400",
+                  "label": "Yellow",
+                  "value": "yellow",
+                }
               }
             >
               <StateManager
@@ -5168,6 +5391,13 @@ exports[`SelectField Component with lg text should return a SelectField with act
                       "value": "green",
                     },
                   ]
+                }
+                value={
+                  Object {
+                    "color": "#FFC400",
+                    "label": "Yellow",
+                    "value": "yellow",
+                  }
                 }
               >
                 <Select
@@ -5235,7 +5465,13 @@ exports[`SelectField Component with lg text should return a SelectField with act
                   styles={Object {}}
                   tabIndex="0"
                   tabSelectsValue={true}
-                  value={null}
+                  value={
+                    Object {
+                      "color": "#FFC400",
+                      "label": "Yellow",
+                      "value": "yellow",
+                    }
+                  }
                 >
                   <SelectContainer
                     className="c1"
@@ -5243,7 +5479,7 @@ exports[`SelectField Component with lg text should return a SelectField with act
                     cx={[Function]}
                     getStyles={[Function]}
                     getValue={[Function]}
-                    hasValue={false}
+                    hasValue={true}
                     innerProps={
                       Object {
                         "id": "exampleColor",
@@ -5338,7 +5574,11 @@ exports[`SelectField Component with lg text should return a SelectField with act
                         "styles": Object {},
                         "tabIndex": "0",
                         "tabSelectsValue": true,
-                        "value": null,
+                        "value": Object {
+                          "color": "#FFC400",
+                          "label": "Yellow",
+                          "value": "yellow",
+                        },
                       }
                     }
                     setValue={[Function]}
@@ -5353,7 +5593,7 @@ exports[`SelectField Component with lg text should return a SelectField with act
                         cx={[Function]}
                         getStyles={[Function]}
                         getValue={[Function]}
-                        hasValue={false}
+                        hasValue={true}
                         innerProps={
                           Object {
                             "onMouseDown": [Function],
@@ -5449,7 +5689,11 @@ exports[`SelectField Component with lg text should return a SelectField with act
                             "styles": Object {},
                             "tabIndex": "0",
                             "tabSelectsValue": true,
-                            "value": null,
+                            "value": Object {
+                              "color": "#FFC400",
+                              "label": "Yellow",
+                              "value": "yellow",
+                            },
                           }
                         }
                         setValue={[Function]}
@@ -5464,7 +5708,7 @@ exports[`SelectField Component with lg text should return a SelectField with act
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -5552,7 +5796,11 @@ exports[`SelectField Component with lg text should return a SelectField with act
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -5560,16 +5808,22 @@ exports[`SelectField Component with lg text should return a SelectField with act
                             <div
                               className="css-1rtrksz"
                             >
-                              <Placeholder
+                              <SingleValue
                                 clearValue={[Function]}
                                 cx={[Function]}
+                                data={
+                                  Object {
+                                    "color": "#FFC400",
+                                    "label": "Yellow",
+                                    "value": "yellow",
+                                  }
+                                }
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isMulti={false}
                                 isRtl={false}
-                                key="placeholder"
                                 options={
                                   Array [
                                     Object {
@@ -5654,17 +5908,21 @@ exports[`SelectField Component with lg text should return a SelectField with act
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
                               >
                                 <div
-                                  className="css-1492t68"
+                                  className="css-va7pk8"
                                 >
-                                  Select...
+                                  Yellow
                                 </div>
-                              </Placeholder>
+                              </SingleValue>
                               <Input
                                 aria-autocomplete="list"
                                 autoCapitalize="none"
@@ -5777,7 +6035,7 @@ exports[`SelectField Component with lg text should return a SelectField with act
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -5865,7 +6123,11 @@ exports[`SelectField Component with lg text should return a SelectField with act
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -5878,7 +6140,7 @@ exports[`SelectField Component with lg text should return a SelectField with act
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isFocused={false}
                                 isMulti={false}
@@ -5967,7 +6229,11 @@ exports[`SelectField Component with lg text should return a SelectField with act
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -5981,7 +6247,7 @@ exports[`SelectField Component with lg text should return a SelectField with act
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 innerProps={
                                   Object {
                                     "aria-hidden": "true",
@@ -6077,7 +6343,11 @@ exports[`SelectField Component with lg text should return a SelectField with act
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -6267,13 +6537,6 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
   bgColor="red"
   controlId="exampleColor"
   controlLabel="Color"
-  defaultValue={
-    Object {
-      "color": "#FFC400",
-      "label": "Yellow",
-      "value": "yellow",
-    }
-  }
   disabled={false}
   id="exampleColor"
   options={
@@ -6361,6 +6624,13 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
             textAlign="inherit"
             textDecoration="inherit"
             validationError=""
+            value={
+              Object {
+                "color": "#FFC400",
+                "label": "Yellow",
+                "value": "yellow",
+              }
+            }
           >
             <Styled(StateManager)
               id="exampleColor"
@@ -6382,6 +6652,13 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                     "value": "green",
                   },
                 ]
+              }
+              value={
+                Object {
+                  "color": "#FFC400",
+                  "label": "Yellow",
+                  "value": "yellow",
+                }
               }
             >
               <StateManager
@@ -6410,6 +6687,13 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                       "value": "green",
                     },
                   ]
+                }
+                value={
+                  Object {
+                    "color": "#FFC400",
+                    "label": "Yellow",
+                    "value": "yellow",
+                  }
                 }
               >
                 <Select
@@ -6477,7 +6761,13 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                   styles={Object {}}
                   tabIndex="0"
                   tabSelectsValue={true}
-                  value={null}
+                  value={
+                    Object {
+                      "color": "#FFC400",
+                      "label": "Yellow",
+                      "value": "yellow",
+                    }
+                  }
                 >
                   <SelectContainer
                     className="c1"
@@ -6485,7 +6775,7 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                     cx={[Function]}
                     getStyles={[Function]}
                     getValue={[Function]}
-                    hasValue={false}
+                    hasValue={true}
                     innerProps={
                       Object {
                         "id": "exampleColor",
@@ -6580,7 +6870,11 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                         "styles": Object {},
                         "tabIndex": "0",
                         "tabSelectsValue": true,
-                        "value": null,
+                        "value": Object {
+                          "color": "#FFC400",
+                          "label": "Yellow",
+                          "value": "yellow",
+                        },
                       }
                     }
                     setValue={[Function]}
@@ -6595,7 +6889,7 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                         cx={[Function]}
                         getStyles={[Function]}
                         getValue={[Function]}
-                        hasValue={false}
+                        hasValue={true}
                         innerProps={
                           Object {
                             "onMouseDown": [Function],
@@ -6691,7 +6985,11 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                             "styles": Object {},
                             "tabIndex": "0",
                             "tabSelectsValue": true,
-                            "value": null,
+                            "value": Object {
+                              "color": "#FFC400",
+                              "label": "Yellow",
+                              "value": "yellow",
+                            },
                           }
                         }
                         setValue={[Function]}
@@ -6706,7 +7004,7 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -6794,7 +7092,11 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -6802,16 +7104,22 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                             <div
                               className="css-1rtrksz"
                             >
-                              <Placeholder
+                              <SingleValue
                                 clearValue={[Function]}
                                 cx={[Function]}
+                                data={
+                                  Object {
+                                    "color": "#FFC400",
+                                    "label": "Yellow",
+                                    "value": "yellow",
+                                  }
+                                }
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isMulti={false}
                                 isRtl={false}
-                                key="placeholder"
                                 options={
                                   Array [
                                     Object {
@@ -6896,17 +7204,21 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
                               >
                                 <div
-                                  className="css-1492t68"
+                                  className="css-va7pk8"
                                 >
-                                  Select...
+                                  Yellow
                                 </div>
-                              </Placeholder>
+                              </SingleValue>
                               <Input
                                 aria-autocomplete="list"
                                 autoCapitalize="none"
@@ -7019,7 +7331,7 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -7107,7 +7419,11 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -7120,7 +7436,7 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isFocused={false}
                                 isMulti={false}
@@ -7209,7 +7525,11 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -7223,7 +7543,7 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 innerProps={
                                   Object {
                                     "aria-hidden": "true",
@@ -7319,7 +7639,11 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -7510,13 +7834,6 @@ exports[`SelectField Component with lg text should return a SelectField with ora
   borderColor="orange"
   controlId="exampleColor"
   controlLabel="Color"
-  defaultValue={
-    Object {
-      "color": "#FFC400",
-      "label": "Yellow",
-      "value": "yellow",
-    }
-  }
   disabled={false}
   id="exampleColor"
   options={
@@ -7604,6 +7921,13 @@ exports[`SelectField Component with lg text should return a SelectField with ora
             textAlign="inherit"
             textDecoration="inherit"
             validationError=""
+            value={
+              Object {
+                "color": "#FFC400",
+                "label": "Yellow",
+                "value": "yellow",
+              }
+            }
           >
             <Styled(StateManager)
               id="exampleColor"
@@ -7625,6 +7949,13 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                     "value": "green",
                   },
                 ]
+              }
+              value={
+                Object {
+                  "color": "#FFC400",
+                  "label": "Yellow",
+                  "value": "yellow",
+                }
               }
             >
               <StateManager
@@ -7653,6 +7984,13 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                       "value": "green",
                     },
                   ]
+                }
+                value={
+                  Object {
+                    "color": "#FFC400",
+                    "label": "Yellow",
+                    "value": "yellow",
+                  }
                 }
               >
                 <Select
@@ -7720,7 +8058,13 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                   styles={Object {}}
                   tabIndex="0"
                   tabSelectsValue={true}
-                  value={null}
+                  value={
+                    Object {
+                      "color": "#FFC400",
+                      "label": "Yellow",
+                      "value": "yellow",
+                    }
+                  }
                 >
                   <SelectContainer
                     className="c1"
@@ -7728,7 +8072,7 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                     cx={[Function]}
                     getStyles={[Function]}
                     getValue={[Function]}
-                    hasValue={false}
+                    hasValue={true}
                     innerProps={
                       Object {
                         "id": "exampleColor",
@@ -7823,7 +8167,11 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                         "styles": Object {},
                         "tabIndex": "0",
                         "tabSelectsValue": true,
-                        "value": null,
+                        "value": Object {
+                          "color": "#FFC400",
+                          "label": "Yellow",
+                          "value": "yellow",
+                        },
                       }
                     }
                     setValue={[Function]}
@@ -7838,7 +8186,7 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                         cx={[Function]}
                         getStyles={[Function]}
                         getValue={[Function]}
-                        hasValue={false}
+                        hasValue={true}
                         innerProps={
                           Object {
                             "onMouseDown": [Function],
@@ -7934,7 +8282,11 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                             "styles": Object {},
                             "tabIndex": "0",
                             "tabSelectsValue": true,
-                            "value": null,
+                            "value": Object {
+                              "color": "#FFC400",
+                              "label": "Yellow",
+                              "value": "yellow",
+                            },
                           }
                         }
                         setValue={[Function]}
@@ -7949,7 +8301,7 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -8037,7 +8389,11 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -8045,16 +8401,22 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                             <div
                               className="css-1rtrksz"
                             >
-                              <Placeholder
+                              <SingleValue
                                 clearValue={[Function]}
                                 cx={[Function]}
+                                data={
+                                  Object {
+                                    "color": "#FFC400",
+                                    "label": "Yellow",
+                                    "value": "yellow",
+                                  }
+                                }
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isMulti={false}
                                 isRtl={false}
-                                key="placeholder"
                                 options={
                                   Array [
                                     Object {
@@ -8139,17 +8501,21 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
                               >
                                 <div
-                                  className="css-1492t68"
+                                  className="css-va7pk8"
                                 >
-                                  Select...
+                                  Yellow
                                 </div>
-                              </Placeholder>
+                              </SingleValue>
                               <Input
                                 aria-autocomplete="list"
                                 autoCapitalize="none"
@@ -8262,7 +8628,7 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -8350,7 +8716,11 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -8363,7 +8733,7 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isFocused={false}
                                 isMulti={false}
@@ -8452,7 +8822,11 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -8466,7 +8840,7 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 innerProps={
                                   Object {
                                     "aria-hidden": "true",
@@ -8562,7 +8936,11 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -8752,13 +9130,6 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
   bgColor="white.light"
   controlId="exampleColor"
   controlLabel="Color"
-  defaultValue={
-    Object {
-      "color": "#FFC400",
-      "label": "Yellow",
-      "value": "yellow",
-    }
-  }
   disabled={false}
   id="exampleColor"
   options={
@@ -8847,6 +9218,13 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
             textAlign="inherit"
             textDecoration="inherit"
             validationError=""
+            value={
+              Object {
+                "color": "#FFC400",
+                "label": "Yellow",
+                "value": "yellow",
+              }
+            }
           >
             <Styled(StateManager)
               id="exampleColor"
@@ -8868,6 +9246,13 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                     "value": "green",
                   },
                 ]
+              }
+              value={
+                Object {
+                  "color": "#FFC400",
+                  "label": "Yellow",
+                  "value": "yellow",
+                }
               }
             >
               <StateManager
@@ -8896,6 +9281,13 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                       "value": "green",
                     },
                   ]
+                }
+                value={
+                  Object {
+                    "color": "#FFC400",
+                    "label": "Yellow",
+                    "value": "yellow",
+                  }
                 }
               >
                 <Select
@@ -8963,7 +9355,13 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                   styles={Object {}}
                   tabIndex="0"
                   tabSelectsValue={true}
-                  value={null}
+                  value={
+                    Object {
+                      "color": "#FFC400",
+                      "label": "Yellow",
+                      "value": "yellow",
+                    }
+                  }
                 >
                   <SelectContainer
                     className="c1"
@@ -8971,7 +9369,7 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                     cx={[Function]}
                     getStyles={[Function]}
                     getValue={[Function]}
-                    hasValue={false}
+                    hasValue={true}
                     innerProps={
                       Object {
                         "id": "exampleColor",
@@ -9066,7 +9464,11 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                         "styles": Object {},
                         "tabIndex": "0",
                         "tabSelectsValue": true,
-                        "value": null,
+                        "value": Object {
+                          "color": "#FFC400",
+                          "label": "Yellow",
+                          "value": "yellow",
+                        },
                       }
                     }
                     setValue={[Function]}
@@ -9081,7 +9483,7 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                         cx={[Function]}
                         getStyles={[Function]}
                         getValue={[Function]}
-                        hasValue={false}
+                        hasValue={true}
                         innerProps={
                           Object {
                             "onMouseDown": [Function],
@@ -9177,7 +9579,11 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                             "styles": Object {},
                             "tabIndex": "0",
                             "tabSelectsValue": true,
-                            "value": null,
+                            "value": Object {
+                              "color": "#FFC400",
+                              "label": "Yellow",
+                              "value": "yellow",
+                            },
                           }
                         }
                         setValue={[Function]}
@@ -9192,7 +9598,7 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -9280,7 +9686,11 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -9288,16 +9698,22 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                             <div
                               className="css-1rtrksz"
                             >
-                              <Placeholder
+                              <SingleValue
                                 clearValue={[Function]}
                                 cx={[Function]}
+                                data={
+                                  Object {
+                                    "color": "#FFC400",
+                                    "label": "Yellow",
+                                    "value": "yellow",
+                                  }
+                                }
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isMulti={false}
                                 isRtl={false}
-                                key="placeholder"
                                 options={
                                   Array [
                                     Object {
@@ -9382,17 +9798,21 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
                               >
                                 <div
-                                  className="css-1492t68"
+                                  className="css-va7pk8"
                                 >
-                                  Select...
+                                  Yellow
                                 </div>
-                              </Placeholder>
+                              </SingleValue>
                               <Input
                                 aria-autocomplete="list"
                                 autoCapitalize="none"
@@ -9505,7 +9925,7 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -9593,7 +10013,11 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -9606,7 +10030,7 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isFocused={false}
                                 isMulti={false}
@@ -9695,7 +10119,11 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -9709,7 +10137,7 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 innerProps={
                                   Object {
                                     "aria-hidden": "true",
@@ -9805,7 +10233,11 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -9995,13 +10427,6 @@ exports[`SelectField Component with lg text should return a SelectField with sty
   bgColor="white.light"
   controlId="exampleColor"
   controlLabel="Color"
-  defaultValue={
-    Object {
-      "color": "#FFC400",
-      "label": "Yellow",
-      "value": "yellow",
-    }
-  }
   disabled={false}
   id="exampleColor"
   lg={true}
@@ -10090,6 +10515,13 @@ exports[`SelectField Component with lg text should return a SelectField with sty
             textAlign="inherit"
             textDecoration="inherit"
             validationError=""
+            value={
+              Object {
+                "color": "#FFC400",
+                "label": "Yellow",
+                "value": "yellow",
+              }
+            }
           >
             <Styled(StateManager)
               id="exampleColor"
@@ -10111,6 +10543,13 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                     "value": "green",
                   },
                 ]
+              }
+              value={
+                Object {
+                  "color": "#FFC400",
+                  "label": "Yellow",
+                  "value": "yellow",
+                }
               }
             >
               <StateManager
@@ -10139,6 +10578,13 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                       "value": "green",
                     },
                   ]
+                }
+                value={
+                  Object {
+                    "color": "#FFC400",
+                    "label": "Yellow",
+                    "value": "yellow",
+                  }
                 }
               >
                 <Select
@@ -10206,7 +10652,13 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                   styles={Object {}}
                   tabIndex="0"
                   tabSelectsValue={true}
-                  value={null}
+                  value={
+                    Object {
+                      "color": "#FFC400",
+                      "label": "Yellow",
+                      "value": "yellow",
+                    }
+                  }
                 >
                   <SelectContainer
                     className="c1"
@@ -10214,7 +10666,7 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                     cx={[Function]}
                     getStyles={[Function]}
                     getValue={[Function]}
-                    hasValue={false}
+                    hasValue={true}
                     innerProps={
                       Object {
                         "id": "exampleColor",
@@ -10309,7 +10761,11 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                         "styles": Object {},
                         "tabIndex": "0",
                         "tabSelectsValue": true,
-                        "value": null,
+                        "value": Object {
+                          "color": "#FFC400",
+                          "label": "Yellow",
+                          "value": "yellow",
+                        },
                       }
                     }
                     setValue={[Function]}
@@ -10324,7 +10780,7 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                         cx={[Function]}
                         getStyles={[Function]}
                         getValue={[Function]}
-                        hasValue={false}
+                        hasValue={true}
                         innerProps={
                           Object {
                             "onMouseDown": [Function],
@@ -10420,7 +10876,11 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                             "styles": Object {},
                             "tabIndex": "0",
                             "tabSelectsValue": true,
-                            "value": null,
+                            "value": Object {
+                              "color": "#FFC400",
+                              "label": "Yellow",
+                              "value": "yellow",
+                            },
                           }
                         }
                         setValue={[Function]}
@@ -10435,7 +10895,7 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -10523,7 +10983,11 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -10531,16 +10995,22 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                             <div
                               className="css-1rtrksz"
                             >
-                              <Placeholder
+                              <SingleValue
                                 clearValue={[Function]}
                                 cx={[Function]}
+                                data={
+                                  Object {
+                                    "color": "#FFC400",
+                                    "label": "Yellow",
+                                    "value": "yellow",
+                                  }
+                                }
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isMulti={false}
                                 isRtl={false}
-                                key="placeholder"
                                 options={
                                   Array [
                                     Object {
@@ -10625,17 +11095,21 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
                               >
                                 <div
-                                  className="css-1492t68"
+                                  className="css-va7pk8"
                                 >
-                                  Select...
+                                  Yellow
                                 </div>
-                              </Placeholder>
+                              </SingleValue>
                               <Input
                                 aria-autocomplete="list"
                                 autoCapitalize="none"
@@ -10748,7 +11222,7 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -10836,7 +11310,11 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -10849,7 +11327,7 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isFocused={false}
                                 isMulti={false}
@@ -10938,7 +11416,11 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -10952,7 +11434,7 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 innerProps={
                                   Object {
                                     "aria-hidden": "true",
@@ -11048,7 +11530,11 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -11222,13 +11708,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
   bgColor="white.light"
   controlId="exampleColor"
   controlLabel="Color"
-  defaultValue={
-    Object {
-      "color": "#FFC400",
-      "label": "Yellow",
-      "value": "yellow",
-    }
-  }
   disabled={true}
   id="exampleColor"
   plainText={false}
@@ -11278,9 +11757,23 @@ exports[`SelectField Component with plainText or disabled should return a Select
             textAlign="inherit"
             textDecoration="inherit"
             validationError=""
+            value={
+              Object {
+                "color": "#FFC400",
+                "label": "Yellow",
+                "value": "yellow",
+              }
+            }
           >
             <Styled(StateManager)
               id="exampleColor"
+              value={
+                Object {
+                  "color": "#FFC400",
+                  "label": "Yellow",
+                  "value": "yellow",
+                }
+              }
             >
               <StateManager
                 className="c1"
@@ -11290,6 +11783,13 @@ exports[`SelectField Component with plainText or disabled should return a Select
                 id="exampleColor"
                 isDisabled={true}
                 isMulti={false}
+                value={
+                  Object {
+                    "color": "#FFC400",
+                    "label": "Yellow",
+                    "value": "yellow",
+                  }
+                }
               >
                 <Select
                   backspaceRemovesValue={true}
@@ -11338,7 +11838,13 @@ exports[`SelectField Component with plainText or disabled should return a Select
                   styles={Object {}}
                   tabIndex="0"
                   tabSelectsValue={true}
-                  value={null}
+                  value={
+                    Object {
+                      "color": "#FFC400",
+                      "label": "Yellow",
+                      "value": "yellow",
+                    }
+                  }
                 >
                   <SelectContainer
                     className="c1"
@@ -11346,7 +11852,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                     cx={[Function]}
                     getStyles={[Function]}
                     getValue={[Function]}
-                    hasValue={false}
+                    hasValue={true}
                     innerProps={
                       Object {
                         "id": "exampleColor",
@@ -11407,7 +11913,11 @@ exports[`SelectField Component with plainText or disabled should return a Select
                         "styles": Object {},
                         "tabIndex": "0",
                         "tabSelectsValue": true,
-                        "value": null,
+                        "value": Object {
+                          "color": "#FFC400",
+                          "label": "Yellow",
+                          "value": "yellow",
+                        },
                       }
                     }
                     setValue={[Function]}
@@ -11422,7 +11932,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                         cx={[Function]}
                         getStyles={[Function]}
                         getValue={[Function]}
-                        hasValue={false}
+                        hasValue={true}
                         innerProps={
                           Object {
                             "onMouseDown": [Function],
@@ -11484,7 +11994,11 @@ exports[`SelectField Component with plainText or disabled should return a Select
                             "styles": Object {},
                             "tabIndex": "0",
                             "tabSelectsValue": true,
-                            "value": null,
+                            "value": Object {
+                              "color": "#FFC400",
+                              "label": "Yellow",
+                              "value": "yellow",
+                            },
                           }
                         }
                         setValue={[Function]}
@@ -11499,7 +12013,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={true}
                             isMulti={false}
                             isRtl={false}
@@ -11553,7 +12067,11 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -11561,16 +12079,22 @@ exports[`SelectField Component with plainText or disabled should return a Select
                             <div
                               className="css-1rtrksz"
                             >
-                              <Placeholder
+                              <SingleValue
                                 clearValue={[Function]}
                                 cx={[Function]}
+                                data={
+                                  Object {
+                                    "color": "#FFC400",
+                                    "label": "Yellow",
+                                    "value": "yellow",
+                                  }
+                                }
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={true}
                                 isMulti={false}
                                 isRtl={false}
-                                key="placeholder"
                                 options={Array []}
                                 selectOption={[Function]}
                                 selectProps={
@@ -11621,17 +12145,21 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
                               >
                                 <div
-                                  className="css-1492t68"
+                                  className="css-142w6gm"
                                 >
-                                  Select...
+                                  Yellow
                                 </div>
-                              </Placeholder>
+                              </SingleValue>
                               <Input
                                 aria-autocomplete="list"
                                 autoCapitalize="none"
@@ -11744,7 +12272,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={true}
                             isMulti={false}
                             isRtl={false}
@@ -11798,7 +12326,11 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -11811,7 +12343,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={true}
                                 isFocused={false}
                                 isMulti={false}
@@ -11866,7 +12398,11 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -11880,7 +12416,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 innerProps={
                                   Object {
                                     "aria-hidden": "true",
@@ -11942,7 +12478,11 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -12072,13 +12612,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
   bgColor="white.light"
   controlId="exampleColor"
   controlLabel="Color"
-  defaultValue={
-    Object {
-      "color": "#FFC400",
-      "label": "Yellow",
-      "value": "yellow",
-    }
-  }
   disabled={false}
   id="exampleColor"
   plainText={true}
@@ -12117,13 +12650,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
             bgColor="white.light"
             controlId="exampleColor"
             controlLabel="Color"
-            defaultValue={
-              Object {
-                "color": "#FFC400",
-                "label": "Yellow",
-                "value": "yellow",
-              }
-            }
             disabled={false}
             id="exampleColor"
             plainText={true}
@@ -12138,13 +12664,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
           >
             <div
               className="c1"
-              defaultValue={
-                Object {
-                  "color": "#FFC400",
-                  "label": "Yellow",
-                  "value": "yellow",
-                }
-              }
               disabled={false}
               id="exampleColor"
               value={
@@ -12287,13 +12806,6 @@ exports[`SelectField Component with space should return a SelectField with space
   bgColor="white.light"
   controlId="exampleColor"
   controlLabel="Color"
-  defaultValue={
-    Object {
-      "color": "#FFC400",
-      "label": "Yellow",
-      "value": "yellow",
-    }
-  }
   disabled={false}
   id="exampleColor"
   m={4}
@@ -12387,6 +12899,13 @@ exports[`SelectField Component with space should return a SelectField with space
             textAlign="inherit"
             textDecoration="inherit"
             validationError=""
+            value={
+              Object {
+                "color": "#FFC400",
+                "label": "Yellow",
+                "value": "yellow",
+              }
+            }
           >
             <Styled(StateManager)
               id="exampleColor"
@@ -12408,6 +12927,13 @@ exports[`SelectField Component with space should return a SelectField with space
                     "value": "green",
                   },
                 ]
+              }
+              value={
+                Object {
+                  "color": "#FFC400",
+                  "label": "Yellow",
+                  "value": "yellow",
+                }
               }
             >
               <StateManager
@@ -12436,6 +12962,13 @@ exports[`SelectField Component with space should return a SelectField with space
                       "value": "green",
                     },
                   ]
+                }
+                value={
+                  Object {
+                    "color": "#FFC400",
+                    "label": "Yellow",
+                    "value": "yellow",
+                  }
                 }
               >
                 <Select
@@ -12503,7 +13036,13 @@ exports[`SelectField Component with space should return a SelectField with space
                   styles={Object {}}
                   tabIndex="0"
                   tabSelectsValue={true}
-                  value={null}
+                  value={
+                    Object {
+                      "color": "#FFC400",
+                      "label": "Yellow",
+                      "value": "yellow",
+                    }
+                  }
                 >
                   <SelectContainer
                     className="c1"
@@ -12511,7 +13050,7 @@ exports[`SelectField Component with space should return a SelectField with space
                     cx={[Function]}
                     getStyles={[Function]}
                     getValue={[Function]}
-                    hasValue={false}
+                    hasValue={true}
                     innerProps={
                       Object {
                         "id": "exampleColor",
@@ -12606,7 +13145,11 @@ exports[`SelectField Component with space should return a SelectField with space
                         "styles": Object {},
                         "tabIndex": "0",
                         "tabSelectsValue": true,
-                        "value": null,
+                        "value": Object {
+                          "color": "#FFC400",
+                          "label": "Yellow",
+                          "value": "yellow",
+                        },
                       }
                     }
                     setValue={[Function]}
@@ -12621,7 +13164,7 @@ exports[`SelectField Component with space should return a SelectField with space
                         cx={[Function]}
                         getStyles={[Function]}
                         getValue={[Function]}
-                        hasValue={false}
+                        hasValue={true}
                         innerProps={
                           Object {
                             "onMouseDown": [Function],
@@ -12717,7 +13260,11 @@ exports[`SelectField Component with space should return a SelectField with space
                             "styles": Object {},
                             "tabIndex": "0",
                             "tabSelectsValue": true,
-                            "value": null,
+                            "value": Object {
+                              "color": "#FFC400",
+                              "label": "Yellow",
+                              "value": "yellow",
+                            },
                           }
                         }
                         setValue={[Function]}
@@ -12732,7 +13279,7 @@ exports[`SelectField Component with space should return a SelectField with space
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -12820,7 +13367,11 @@ exports[`SelectField Component with space should return a SelectField with space
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -12828,16 +13379,22 @@ exports[`SelectField Component with space should return a SelectField with space
                             <div
                               className="css-1rtrksz"
                             >
-                              <Placeholder
+                              <SingleValue
                                 clearValue={[Function]}
                                 cx={[Function]}
+                                data={
+                                  Object {
+                                    "color": "#FFC400",
+                                    "label": "Yellow",
+                                    "value": "yellow",
+                                  }
+                                }
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isMulti={false}
                                 isRtl={false}
-                                key="placeholder"
                                 options={
                                   Array [
                                     Object {
@@ -12922,17 +13479,21 @@ exports[`SelectField Component with space should return a SelectField with space
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
                               >
                                 <div
-                                  className="css-1492t68"
+                                  className="css-va7pk8"
                                 >
-                                  Select...
+                                  Yellow
                                 </div>
-                              </Placeholder>
+                              </SingleValue>
                               <Input
                                 aria-autocomplete="list"
                                 autoCapitalize="none"
@@ -13045,7 +13606,7 @@ exports[`SelectField Component with space should return a SelectField with space
                             cx={[Function]}
                             getStyles={[Function]}
                             getValue={[Function]}
-                            hasValue={false}
+                            hasValue={true}
                             isDisabled={false}
                             isMulti={false}
                             isRtl={false}
@@ -13133,7 +13694,11 @@ exports[`SelectField Component with space should return a SelectField with space
                                 "styles": Object {},
                                 "tabIndex": "0",
                                 "tabSelectsValue": true,
-                                "value": null,
+                                "value": Object {
+                                  "color": "#FFC400",
+                                  "label": "Yellow",
+                                  "value": "yellow",
+                                },
                               }
                             }
                             setValue={[Function]}
@@ -13146,7 +13711,7 @@ exports[`SelectField Component with space should return a SelectField with space
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 isDisabled={false}
                                 isFocused={false}
                                 isMulti={false}
@@ -13235,7 +13800,11 @@ exports[`SelectField Component with space should return a SelectField with space
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
@@ -13249,7 +13818,7 @@ exports[`SelectField Component with space should return a SelectField with space
                                 cx={[Function]}
                                 getStyles={[Function]}
                                 getValue={[Function]}
-                                hasValue={false}
+                                hasValue={true}
                                 innerProps={
                                   Object {
                                     "aria-hidden": "true",
@@ -13345,7 +13914,11 @@ exports[`SelectField Component with space should return a SelectField with space
                                     "styles": Object {},
                                     "tabIndex": "0",
                                     "tabSelectsValue": true,
-                                    "value": null,
+                                    "value": Object {
+                                      "color": "#FFC400",
+                                      "label": "Yellow",
+                                      "value": "yellow",
+                                    },
                                   }
                                 }
                                 setValue={[Function]}
