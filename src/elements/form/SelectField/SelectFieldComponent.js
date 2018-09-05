@@ -7,13 +7,19 @@ import { passThrough, resolveColor } from 'src/utils/componentHelpers';
 import Select from 'react-select';
 
 export const SelectFieldComponent = props => {
-  const { multiple, plainText, validationError } = props;
+  const {
+    isDisabled,
+    multiple,
+    plainText,
+    validationError,
+  } = props;
   const textBase = textStylesBase(props);
   const controlBase = !validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') });
 
   const ProtoBase = styled(Select).attrs({
     readOnly: plainText,
     tabIndex: !plainText ? '0' : '-1',
+    isDisabled: plainText || isDisabled,
     isMulti: multiple,
   })`
     ${textBase}
@@ -31,6 +37,7 @@ SelectFieldComponent.propTypes = {
   fontFamily: PropTypes.string,
   fontWeight: PropTypes.string,
   kerning: PropTypes.string,
+  isDisabled: PropTypes.bool,
   lg: PropTypes.bool,
   multiple: PropTypes.bool,
   padding: PropTypes.string,
@@ -49,6 +56,7 @@ SelectFieldComponent.defaultProps = {
   fontFamily: defaultTextStylesBase.fontFamily,
   fontWeight: defaultTextStylesBase.fontWeight,
   kerning: defaultTextStylesBase.kerning,
+  isDisabled: false,
   lg: defaultTextStylesBase.lg,
   multiple: false,
   padding: defaultControlStylesBase.padding,

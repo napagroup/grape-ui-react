@@ -15,6 +15,7 @@ export const SelectField = props => {
     assistiveText,
     controlLabel,
     required,
+    plainText,
     validationError,
     ...otherProps
   } = props;
@@ -28,7 +29,7 @@ export const SelectField = props => {
   const childProps = { id: controlId, ...passThrough(SelectField, otherWithoutSpaceProps) };
   const newlabel = !required ? controlLabel : `${controlLabel}*`;
   const disableRelatedProps = {
-    isDisabled: disabled,
+    isDisabled: disabled || plainText,
   };
   return (
     <ControlGroupBase
@@ -52,6 +53,7 @@ SelectField.propTypes = {
   controlId: PropTypes.string.isRequired,
   controlLabel: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
+  plainText: PropTypes.bool,
   validationError: PropTypes.string,
   ...space.propTypes,
 };
@@ -61,6 +63,7 @@ SelectField.defaultProps = {
   assistiveText: '',
   bgColor: defaultControlStylesBase.bgColor,
   disabled: false,
+  plainText: false,
   validationError: '',
 };
 

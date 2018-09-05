@@ -105,6 +105,7 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
       },
     ]
   }
+  plainText={false}
   sm={true}
   validationError=""
 >
@@ -182,7 +183,6 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
                 }
               }
               id="exampleColor"
-              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -1426,6 +1426,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
       },
     ]
   }
+  plainText={false}
   validationError=""
 >
   <ControlGroupBase
@@ -1502,7 +1503,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
                 }
               }
               id="exampleColor"
-              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -2768,6 +2768,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
       },
     ]
   }
+  plainText={false}
   validationError="This is a required field."
 >
   <ControlGroupBase
@@ -2844,7 +2845,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
                 }
               }
               id="exampleColor"
-              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -4110,6 +4110,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
       },
     ]
   }
+  plainText={false}
   required={true}
   validationError=""
 >
@@ -4187,7 +4188,6 @@ exports[`SelectField Component with assistive text should return a SelectField w
                 }
               }
               id="exampleColor"
-              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -5453,6 +5453,7 @@ exports[`SelectField Component with lg text should return a SelectField with act
       },
     ]
   }
+  plainText={false}
   validationError=""
 >
   <ControlGroupBase
@@ -5529,7 +5530,6 @@ exports[`SelectField Component with lg text should return a SelectField with act
                 }
               }
               id="exampleColor"
-              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -6795,6 +6795,7 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
       },
     ]
   }
+  plainText={false}
   validationError=""
 >
   <ControlGroupBase
@@ -6871,7 +6872,6 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
                 }
               }
               id="exampleColor"
-              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -8138,6 +8138,7 @@ exports[`SelectField Component with lg text should return a SelectField with ora
       },
     ]
   }
+  plainText={false}
   validationError=""
 >
   <ControlGroupBase
@@ -8214,7 +8215,6 @@ exports[`SelectField Component with lg text should return a SelectField with ora
                 }
               }
               id="exampleColor"
-              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -9480,6 +9480,7 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
       },
     ]
   }
+  plainText={false}
   sm={true}
   validationError=""
 >
@@ -9557,7 +9558,6 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
                 }
               }
               id="exampleColor"
-              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -10824,6 +10824,7 @@ exports[`SelectField Component with lg text should return a SelectField with sty
       },
     ]
   }
+  plainText={false}
   validationError=""
 >
   <ControlGroupBase
@@ -10900,7 +10901,6 @@ exports[`SelectField Component with lg text should return a SelectField with sty
                 }
               }
               id="exampleColor"
-              isDisabled={false}
               options={
                 Array [
                   Object {
@@ -12131,6 +12131,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
   }
   disabled={true}
   id="exampleColor"
+  plainText={false}
   validationError=""
 >
   <ControlGroupBase
@@ -12188,7 +12189,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
                 }
               }
               id="exampleColor"
-              isDisabled={true}
             >
               <StateManager
                 className="c1"
@@ -13040,10 +13040,32 @@ exports[`SelectField Component with plainText or disabled should return a Select
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 0;
-  display: block;
-  outline: 0;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
   padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1[required] + label:after {
+  content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
 }
 
 .c2 {
@@ -13119,12 +13141,12 @@ exports[`SelectField Component with plainText or disabled should return a Select
             fontFamily="inherit"
             fontWeight="inherit"
             id="exampleColor"
-            isDisabled={false}
+            isDisabled={true}
             kerning="inherit"
             lg={false}
             multiple={false}
             padding="1rem"
-            plainText={true}
+            plainText={false}
             sm={false}
             textAlign="inherit"
             textDecoration="inherit"
@@ -13139,7 +13161,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
                 }
               }
               id="exampleColor"
-              isDisabled={false}
             >
               <StateManager
                 className="c1"
@@ -13153,10 +13174,10 @@ exports[`SelectField Component with plainText or disabled should return a Select
                   }
                 }
                 id="exampleColor"
-                isDisabled={false}
+                isDisabled={true}
                 isMulti={false}
-                readOnly={true}
-                tabIndex="-1"
+                readOnly={false}
+                tabIndex="0"
               >
                 <Select
                   backspaceRemovesValue={true}
@@ -13183,7 +13204,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                   getOptionValue={[Function]}
                   id="exampleColor"
                   inputValue=""
-                  isDisabled={false}
+                  isDisabled={true}
                   isLoading={false}
                   isMulti={false}
                   isOptionDisabled={[Function]}
@@ -13207,10 +13228,10 @@ exports[`SelectField Component with plainText or disabled should return a Select
                   options={Array []}
                   pageSize={5}
                   placeholder="Select..."
-                  readOnly={true}
+                  readOnly={false}
                   screenReaderStatus={[Function]}
                   styles={Object {}}
-                  tabIndex="-1"
+                  tabIndex="0"
                   tabSelectsValue={true}
                   value={
                     Object {
@@ -13233,7 +13254,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                         "onKeyDown": [Function],
                       }
                     }
-                    isDisabled={false}
+                    isDisabled={true}
                     isFocused={false}
                     isMulti={false}
                     isRtl={false}
@@ -13263,7 +13284,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                         "getOptionValue": [Function],
                         "id": "exampleColor",
                         "inputValue": "",
-                        "isDisabled": false,
+                        "isDisabled": true,
                         "isLoading": false,
                         "isMulti": false,
                         "isOptionDisabled": [Function],
@@ -13287,10 +13308,10 @@ exports[`SelectField Component with plainText or disabled should return a Select
                         "options": Array [],
                         "pageSize": 5,
                         "placeholder": "Select...",
-                        "readOnly": true,
+                        "readOnly": false,
                         "screenReaderStatus": [Function],
                         "styles": Object {},
-                        "tabIndex": "-1",
+                        "tabIndex": "0",
                         "tabSelectsValue": true,
                         "value": Object {
                           "color": "#FFC400",
@@ -13302,7 +13323,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                     setValue={[Function]}
                   >
                     <div
-                      className="css-10nd86i c1"
+                      className="css-1sontr1 c1"
                       id="exampleColor"
                       onKeyDown={[Function]}
                     >
@@ -13319,7 +13340,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                           }
                         }
                         innerRef={[Function]}
-                        isDisabled={false}
+                        isDisabled={true}
                         isFocused={false}
                         isMulti={false}
                         isRtl={false}
@@ -13349,7 +13370,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                             "getOptionValue": [Function],
                             "id": "exampleColor",
                             "inputValue": "",
-                            "isDisabled": false,
+                            "isDisabled": true,
                             "isLoading": false,
                             "isMulti": false,
                             "isOptionDisabled": [Function],
@@ -13373,10 +13394,10 @@ exports[`SelectField Component with plainText or disabled should return a Select
                             "options": Array [],
                             "pageSize": 5,
                             "placeholder": "Select...",
-                            "readOnly": true,
+                            "readOnly": false,
                             "screenReaderStatus": [Function],
                             "styles": Object {},
-                            "tabIndex": "-1",
+                            "tabIndex": "0",
                             "tabSelectsValue": true,
                             "value": Object {
                               "color": "#FFC400",
@@ -13388,7 +13409,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                         setValue={[Function]}
                       >
                         <div
-                          className="css-1aya2g8"
+                          className="css-162g8z5"
                           onMouseDown={[Function]}
                           onTouchEnd={[Function]}
                         >
@@ -13398,7 +13419,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                             getStyles={[Function]}
                             getValue={[Function]}
                             hasValue={true}
-                            isDisabled={false}
+                            isDisabled={true}
                             isMulti={false}
                             isRtl={false}
                             options={Array []}
@@ -13427,7 +13448,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 "getOptionValue": [Function],
                                 "id": "exampleColor",
                                 "inputValue": "",
-                                "isDisabled": false,
+                                "isDisabled": true,
                                 "isLoading": false,
                                 "isMulti": false,
                                 "isOptionDisabled": [Function],
@@ -13451,10 +13472,10 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 "options": Array [],
                                 "pageSize": 5,
                                 "placeholder": "Select...",
-                                "readOnly": true,
+                                "readOnly": false,
                                 "screenReaderStatus": [Function],
                                 "styles": Object {},
-                                "tabIndex": "-1",
+                                "tabIndex": "0",
                                 "tabSelectsValue": true,
                                 "value": Object {
                                   "color": "#FFC400",
@@ -13481,7 +13502,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 getStyles={[Function]}
                                 getValue={[Function]}
                                 hasValue={true}
-                                isDisabled={false}
+                                isDisabled={true}
                                 isMulti={false}
                                 isRtl={false}
                                 options={Array []}
@@ -13510,7 +13531,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "getOptionValue": [Function],
                                     "id": "exampleColor",
                                     "inputValue": "",
-                                    "isDisabled": false,
+                                    "isDisabled": true,
                                     "isLoading": false,
                                     "isMulti": false,
                                     "isOptionDisabled": [Function],
@@ -13534,10 +13555,10 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "options": Array [],
                                     "pageSize": 5,
                                     "placeholder": "Select...",
-                                    "readOnly": true,
+                                    "readOnly": false,
                                     "screenReaderStatus": [Function],
                                     "styles": Object {},
-                                    "tabIndex": "-1",
+                                    "tabIndex": "0",
                                     "tabSelectsValue": true,
                                     "value": Object {
                                       "color": "#FFC400",
@@ -13549,7 +13570,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 setValue={[Function]}
                               >
                                 <div
-                                  className="css-va7pk8"
+                                  className="css-142w6gm"
                                 >
                                   Yellow
                                 </div>
@@ -13563,13 +13584,13 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 getStyles={[Function]}
                                 id="react-select-12-input"
                                 innerRef={[Function]}
-                                isDisabled={false}
+                                isDisabled={true}
                                 isHidden={false}
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 onFocus={[Function]}
                                 spellCheck="false"
-                                tabIndex="-1"
+                                tabIndex="0"
                                 type="text"
                                 value=""
                               >
@@ -13582,7 +13603,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     autoComplete="off"
                                     autoCorrect="off"
                                     className=""
-                                    disabled={false}
+                                    disabled={true}
                                     id="react-select-12-input"
                                     injectStyles={true}
                                     inputRef={[Function]}
@@ -13602,7 +13623,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     onChange={[Function]}
                                     onFocus={[Function]}
                                     spellCheck="false"
-                                    tabIndex="-1"
+                                    tabIndex="0"
                                     type="text"
                                     value=""
                                   >
@@ -13619,7 +13640,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                         autoCapitalize="none"
                                         autoComplete="off"
                                         autoCorrect="off"
-                                        disabled={false}
+                                        disabled={true}
                                         id="react-select-12-input"
                                         onBlur={[Function]}
                                         onChange={[Function]}
@@ -13638,7 +13659,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                             "width": "2px",
                                           }
                                         }
-                                        tabIndex="-1"
+                                        tabIndex="0"
                                         type="text"
                                         value=""
                                       />
@@ -13667,7 +13688,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                             getStyles={[Function]}
                             getValue={[Function]}
                             hasValue={true}
-                            isDisabled={false}
+                            isDisabled={true}
                             isMulti={false}
                             isRtl={false}
                             options={Array []}
@@ -13696,7 +13717,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 "getOptionValue": [Function],
                                 "id": "exampleColor",
                                 "inputValue": "",
-                                "isDisabled": false,
+                                "isDisabled": true,
                                 "isLoading": false,
                                 "isMulti": false,
                                 "isOptionDisabled": [Function],
@@ -13720,10 +13741,10 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 "options": Array [],
                                 "pageSize": 5,
                                 "placeholder": "Select...",
-                                "readOnly": true,
+                                "readOnly": false,
                                 "screenReaderStatus": [Function],
                                 "styles": Object {},
-                                "tabIndex": "-1",
+                                "tabIndex": "0",
                                 "tabSelectsValue": true,
                                 "value": Object {
                                   "color": "#FFC400",
@@ -13743,7 +13764,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 getStyles={[Function]}
                                 getValue={[Function]}
                                 hasValue={true}
-                                isDisabled={false}
+                                isDisabled={true}
                                 isFocused={false}
                                 isMulti={false}
                                 isRtl={false}
@@ -13773,7 +13794,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "getOptionValue": [Function],
                                     "id": "exampleColor",
                                     "inputValue": "",
-                                    "isDisabled": false,
+                                    "isDisabled": true,
                                     "isLoading": false,
                                     "isMulti": false,
                                     "isOptionDisabled": [Function],
@@ -13797,10 +13818,10 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "options": Array [],
                                     "pageSize": 5,
                                     "placeholder": "Select...",
-                                    "readOnly": true,
+                                    "readOnly": false,
                                     "screenReaderStatus": [Function],
                                     "styles": Object {},
-                                    "tabIndex": "-1",
+                                    "tabIndex": "0",
                                     "tabSelectsValue": true,
                                     "value": Object {
                                       "color": "#FFC400",
@@ -13812,7 +13833,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 setValue={[Function]}
                               >
                                 <span
-                                  className="css-d8oujb"
+                                  className="css-ln5n5c"
                                 />
                               </IndicatorSeparator>
                               <DropdownIndicator
@@ -13828,7 +13849,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "onTouchEnd": [Function],
                                   }
                                 }
-                                isDisabled={false}
+                                isDisabled={true}
                                 isFocused={false}
                                 isMulti={false}
                                 isRtl={false}
@@ -13858,7 +13879,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "getOptionValue": [Function],
                                     "id": "exampleColor",
                                     "inputValue": "",
-                                    "isDisabled": false,
+                                    "isDisabled": true,
                                     "isLoading": false,
                                     "isMulti": false,
                                     "isOptionDisabled": [Function],
@@ -13882,10 +13903,10 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "options": Array [],
                                     "pageSize": 5,
                                     "placeholder": "Select...",
-                                    "readOnly": true,
+                                    "readOnly": false,
                                     "screenReaderStatus": [Function],
                                     "styles": Object {},
-                                    "tabIndex": "-1",
+                                    "tabIndex": "0",
                                     "tabSelectsValue": true,
                                     "value": Object {
                                       "color": "#FFC400",
@@ -14093,6 +14114,7 @@ exports[`SelectField Component with space should return a SelectField with space
     ]
   }
   p={4}
+  plainText={false}
   validationError=""
 >
   <ControlGroupBase
@@ -14173,7 +14195,6 @@ exports[`SelectField Component with space should return a SelectField with space
                 }
               }
               id="exampleColor"
-              isDisabled={false}
               options={
                 Array [
                   Object {
