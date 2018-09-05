@@ -10,18 +10,8 @@ export const SelectFieldComponent = props => {
   const { multiple, plainText, validationError } = props;
   const textBase = textStylesBase(props);
   const controlBase = !validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') });
-  const theme = () => ({
-    borderRadius: 0,
-    colors: {
-      text: props.color,
-      primary25: 'hotpink',
-      primary: 'black',
-    },
-  });
-
 
   const ProtoBase = styled(Select).attrs({
-    theme: {theme},
     readOnly: plainText,
     tabIndex: !plainText ? '0' : '-1',
     isMulti: multiple,
