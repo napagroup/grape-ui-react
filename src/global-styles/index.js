@@ -1,3 +1,4 @@
+import * as border from 'src/assets/json/border.json';
 import * as breakpoints from 'src/assets/json/breakpoints.json';
 import * as colors from 'src/assets/json/colors.json';
 import * as fontFamily from 'src/assets/json/fontFamily.json';
@@ -9,6 +10,7 @@ import * as grid from 'src/assets/json/grid.json';
 export const getGlobalStyles = (overrides = {}) => {
   if (overrides instanceof Object && !Array.isArray(overrides)) {
     const {
+      border: borderOverrides = {},
       breakpoints: breakpointOverrides = {},
       colors: colorsOverrides = {},
       fontFamily: fontFamilyOverrides = {},
@@ -18,6 +20,7 @@ export const getGlobalStyles = (overrides = {}) => {
       grid: gridOverrides = {},
     } = overrides;
     return {
+      border: { ...border, ...borderOverrides },
       breakpoints: { ...breakpoints, ...breakpointOverrides },
       colors: { ...colors, ...colorsOverrides },
       fontFamily: { ...fontFamily, ...fontFamilyOverrides },

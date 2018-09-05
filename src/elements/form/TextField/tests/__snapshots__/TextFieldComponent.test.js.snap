@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextFieldComponent base should return a TextFieldComponent object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+<TextFieldComponent
+  activeColor="brandPrimary"
+  borderColor="hsl(0, 0%, 25%)"
+  borderRadius="4px"
+  color="inherit"
+  fontFamily="inherit"
+  fontWeight="inherit"
+  kerning="inherit"
+  lg={false}
+  padding="1rem"
+  plainText={false}
+  sm={false}
+  textAlign="inherit"
+  textDecoration="inherit"
+  validationError=""
+>
+  <styled.input>
+    <input
+      className="c0"
+      readOnly={false}
+      tabIndex="0"
+      type="text"
+    />
+  </styled.input>
+</TextFieldComponent>
+`;
+
+exports[`TextFieldComponent base should return a large TextFieldComponent object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 8px;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+<TextFieldComponent
+  activeColor="brandPrimary"
+  borderColor="hsl(0, 0%, 25%)"
+  borderRadius="4px"
+  color="inherit"
+  fontFamily="inherit"
+  fontWeight="inherit"
+  kerning="inherit"
+  lg={true}
+  padding="1rem"
+  plainText={false}
+  sm={false}
+  textAlign="inherit"
+  textDecoration="inherit"
+  validationError=""
+>
+  <styled.input>
+    <input
+      className="c0"
+      readOnly={false}
+      tabIndex="0"
+      type="text"
+    />
+  </styled.input>
+</TextFieldComponent>
+`;
+
+exports[`TextFieldComponent base should return a small TextFieldComponent object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 2px;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+<TextFieldComponent
+  activeColor="brandPrimary"
+  borderColor="hsl(0, 0%, 25%)"
+  borderRadius="4px"
+  color="inherit"
+  fontFamily="inherit"
+  fontWeight="inherit"
+  kerning="inherit"
+  lg={false}
+  padding="1rem"
+  plainText={false}
+  sm={true}
+  textAlign="inherit"
+  textDecoration="inherit"
+  validationError=""
+>
+  <styled.input>
+    <input
+      className="c0"
+      readOnly={false}
+      tabIndex="0"
+      type="text"
+    />
+  </styled.input>
+</TextFieldComponent>
+`;

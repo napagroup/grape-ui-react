@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Assistive Text Component base should return an Assistive Text object 1`] = `
+.c0 {
+  padding: 0 1rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<AssistiveText
+  color="inherit"
+  fontFamily="inherit"
+  fontWeight="inherit"
+  id="assitiveTextIdHelp"
+  kerning="inherit"
+  lg={false}
+  sm={false}
+  textAlign="inherit"
+  textDecoration="inherit"
+>
+  <styled.div
+    id="assitiveTextIdHelp"
+  >
+    <div
+      className="c0"
+      id="assitiveTextIdHelp"
+    >
+      Helper text is here
+    </div>
+  </styled.div>
+</AssistiveText>
+`;
+
+exports[`Assistive Text Component base should return an Assistive Text object with danger text color 1`] = `
+.c0 {
+  padding: 0 1rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: hsl(4.1,89.6%,58.4%);
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<AssistiveText
+  color="brandDanger"
+  fontFamily="inherit"
+  fontWeight="inherit"
+  id="assitiveTextIdError"
+  kerning="inherit"
+  lg={false}
+  sm={false}
+  textAlign="inherit"
+  textDecoration="inherit"
+>
+  <styled.div
+    id="assitiveTextIdError"
+  >
+    <div
+      className="c0"
+      id="assitiveTextIdError"
+    >
+      Error text is here
+    </div>
+  </styled.div>
+</AssistiveText>
+`;

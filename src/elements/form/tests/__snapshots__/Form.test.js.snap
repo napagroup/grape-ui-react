@@ -9,14 +9,24 @@ exports[`Form Component base should return a Form object with class inline 1`] =
   width: auto;
 }
 
+.c0 > * {
+  margin: 0 0.5rem;
+}
+
+.c0 > *:first-child {
+  margin-left: 0;
+}
+
+.c0 > *:last-child {
+  margin-right: 0;
+}
+
 <Form
   formInline={true}
 >
-  <styled.form
-    className="form-inline"
-  >
+  <styled.form>
     <form
-      className="form-inline c0"
+      className="c0"
     />
   </styled.form>
 </Form>
@@ -26,9 +36,7 @@ exports[`Form Component base should return a Form object without class inline 1`
 <Form
   formInline={false}
 >
-  <styled.form
-    className=""
-  >
+  <styled.form>
     <form
       className=""
     />
