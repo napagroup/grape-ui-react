@@ -3,7 +3,6 @@ import { isKeyNestedProp, resolveToProperty } from 'src/utils/objectHelpers';
 import except from 'except';
 
 const { colors: colorSchema } = getGlobalStyles();
-const defaultOptions = { value: '', label: '' };
 const defaultValue = 'inherit';
 
 const resolveColor = color => {
@@ -29,4 +28,4 @@ const addPassthroughMethod = component => {
   };
 };
 
-export { resolveColor, passThrough, addPassthroughMethod, removeSomeProps, defaultOptions };
+export { resolveColor, passThrough, addPassthroughMethod, removeSomeProps };
