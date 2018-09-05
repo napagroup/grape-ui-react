@@ -43,7 +43,7 @@ export const SelectField = props => {
       const ProtoPlainText = styled.div.attrs({})` ${textBase} ${controlBase}`;
       return (<ProtoPlainText {...passThrough(ProtoPlainText, props)}>{displayString}</ProtoPlainText>);
     }
-    return (<SelectFieldComponent validationError={validationError} {...childProps} {...disableRelatedProps} value={ value || defaultValue } />);
+    return (<SelectFieldComponent validationError={validationError} {...childProps} {...disableRelatedProps} value={value || defaultValue} />);
   };
   return (
     <ControlGroupBase
