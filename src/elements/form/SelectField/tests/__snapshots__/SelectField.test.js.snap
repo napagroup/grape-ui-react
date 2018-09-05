@@ -108,6 +108,13 @@ exports[`SelectField Component base should return a SelectField object 1`] = `
   plainText={false}
   sm={true}
   validationError=""
+  value={
+    Object {
+      "color": "#FFC400",
+      "label": "Yellow",
+      "value": "yellow",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -1321,6 +1328,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
   }
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "color": "#FFC400",
+      "label": "Yellow",
+      "value": "yellow",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -2556,6 +2570,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
   }
   plainText={false}
   validationError="This is a required field."
+  value={
+    Object {
+      "color": "#FFC400",
+      "label": "Yellow",
+      "value": "yellow",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -3792,6 +3813,13 @@ exports[`SelectField Component with assistive text should return a SelectField w
   plainText={false}
   required={true}
   validationError=""
+  value={
+    Object {
+      "color": "#FFC400",
+      "label": "Yellow",
+      "value": "yellow",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -5027,6 +5055,13 @@ exports[`SelectField Component with lg text should return a SelectField with act
   }
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "color": "#FFC400",
+      "label": "Yellow",
+      "value": "yellow",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="cyan"
@@ -6262,6 +6297,13 @@ exports[`SelectField Component with lg text should return a SelectField with bgC
   }
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "color": "#FFC400",
+      "label": "Yellow",
+      "value": "yellow",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -7498,6 +7540,13 @@ exports[`SelectField Component with lg text should return a SelectField with ora
   }
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "color": "#FFC400",
+      "label": "Yellow",
+      "value": "yellow",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -8734,6 +8783,13 @@ exports[`SelectField Component with lg text should return a SelectField with sm 
   plainText={false}
   sm={true}
   validationError=""
+  value={
+    Object {
+      "color": "#FFC400",
+      "label": "Yellow",
+      "value": "yellow",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -9970,6 +10026,13 @@ exports[`SelectField Component with lg text should return a SelectField with sty
   }
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "color": "#FFC400",
+      "label": "Yellow",
+      "value": "yellow",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -11170,6 +11233,13 @@ exports[`SelectField Component with plainText or disabled should return a Select
   id="exampleColor"
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "color": "#FFC400",
+      "label": "Yellow",
+      "value": "yellow",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
@@ -11294,7 +11364,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                         "backspaceRemovesValue": true,
                         "blurInputOnSelect": true,
                         "captureMenuScroll": false,
-                        "className": "sc-cJSrbW c1",
+                        "className": "sc-kvZOFW c1",
                         "closeMenuOnScroll": false,
                         "closeMenuOnSelect": true,
                         "components": Object {},
@@ -11371,7 +11441,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                             "backspaceRemovesValue": true,
                             "blurInputOnSelect": true,
                             "captureMenuScroll": false,
-                            "className": "sc-cJSrbW c1",
+                            "className": "sc-kvZOFW c1",
                             "closeMenuOnScroll": false,
                             "closeMenuOnSelect": true,
                             "components": Object {},
@@ -11440,7 +11510,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 "backspaceRemovesValue": true,
                                 "blurInputOnSelect": true,
                                 "captureMenuScroll": false,
-                                "className": "sc-cJSrbW c1",
+                                "className": "sc-kvZOFW c1",
                                 "closeMenuOnScroll": false,
                                 "closeMenuOnSelect": true,
                                 "components": Object {},
@@ -11508,7 +11578,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "backspaceRemovesValue": true,
                                     "blurInputOnSelect": true,
                                     "captureMenuScroll": false,
-                                    "className": "sc-cJSrbW c1",
+                                    "className": "sc-kvZOFW c1",
                                     "closeMenuOnScroll": false,
                                     "closeMenuOnSelect": true,
                                     "components": Object {},
@@ -11685,7 +11755,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                 "backspaceRemovesValue": true,
                                 "blurInputOnSelect": true,
                                 "captureMenuScroll": false,
-                                "className": "sc-cJSrbW c1",
+                                "className": "sc-kvZOFW c1",
                                 "closeMenuOnScroll": false,
                                 "closeMenuOnSelect": true,
                                 "components": Object {},
@@ -11753,7 +11823,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "backspaceRemovesValue": true,
                                     "blurInputOnSelect": true,
                                     "captureMenuScroll": false,
-                                    "className": "sc-cJSrbW c1",
+                                    "className": "sc-kvZOFW c1",
                                     "closeMenuOnScroll": false,
                                     "closeMenuOnSelect": true,
                                     "components": Object {},
@@ -11829,7 +11899,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
                                     "backspaceRemovesValue": true,
                                     "blurInputOnSelect": true,
                                     "captureMenuScroll": false,
-                                    "className": "sc-cJSrbW c1",
+                                    "className": "sc-kvZOFW c1",
                                     "closeMenuOnScroll": false,
                                     "closeMenuOnSelect": true,
                                     "components": Object {},
@@ -12015,8 +12085,9 @@ exports[`SelectField Component with plainText or disabled should return a Select
   validationError=""
   value={
     Object {
-      "label": "",
-      "value": "",
+      "color": "#FFC400",
+      "label": "Yellow",
+      "value": "yellow",
     }
   }
 >
@@ -12059,8 +12130,9 @@ exports[`SelectField Component with plainText or disabled should return a Select
             validationError=""
             value={
               Object {
-                "label": "",
-                "value": "",
+                "color": "#FFC400",
+                "label": "Yellow",
+                "value": "yellow",
               }
             }
           >
@@ -12077,11 +12149,14 @@ exports[`SelectField Component with plainText or disabled should return a Select
               id="exampleColor"
               value={
                 Object {
-                  "label": "",
-                  "value": "",
+                  "color": "#FFC400",
+                  "label": "Yellow",
+                  "value": "yellow",
                 }
               }
-            />
+            >
+              Yellow
+            </div>
           </styled.div>
           <ControlLabel
             activeColor="brandPrimary"
@@ -12244,6 +12319,13 @@ exports[`SelectField Component with space should return a SelectField with space
   p={4}
   plainText={false}
   validationError=""
+  value={
+    Object {
+      "color": "#FFC400",
+      "label": "Yellow",
+      "value": "yellow",
+    }
+  }
 >
   <ControlGroupBase
     activeColor="brandPrimary"
