@@ -10,16 +10,21 @@ export const SelectFieldComponent = props => {
   const {
     isDisabled,
     multiple,
-    plainText,
     validationError,
   } = props;
   const textBase = textStylesBase(props);
-  const controlBase = !validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') });
+  const getControlStyle = () => {
+    if (!validationError && !isDisabled) {
+      return controlStylesBase(props);
+    } else if (validationError) {
+      return controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') });
+    }
+    return controlStylesBase({ ...props, borderColor: resolveColor('white.light'), activeColor: resolveColor('white.light') });
+  };
+  const controlBase = getControlStyle();
 
   const ProtoBase = styled(Select).attrs({
-    readOnly: plainText,
-    tabIndex: !plainText ? '0' : '-1',
-    isDisabled: plainText || isDisabled,
+    isDisabled,
     isMulti: multiple,
   })`
     ${textBase}
@@ -41,7 +46,6 @@ SelectFieldComponent.propTypes = {
   lg: PropTypes.bool,
   multiple: PropTypes.bool,
   padding: PropTypes.string,
-  plainText: PropTypes.bool,
   sm: PropTypes.bool,
   textAlign: PropTypes.string,
   textDecoration: PropTypes.string,
@@ -60,7 +64,6 @@ SelectFieldComponent.defaultProps = {
   lg: defaultTextStylesBase.lg,
   multiple: false,
   padding: defaultControlStylesBase.padding,
-  plainText: defaultControlStylesBase.plainText,
   sm: defaultTextStylesBase.sm,
   textAlign: defaultTextStylesBase.textAlign,
   textDecoration: defaultTextStylesBase.textDecoration,

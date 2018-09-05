@@ -81,7 +81,6 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
     ]
   }
   padding="1rem"
-  plainText={false}
   sm={false}
   textAlign="inherit"
   textDecoration="inherit"
@@ -149,8 +148,6 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
           },
         ]
       }
-      readOnly={false}
-      tabIndex="0"
     >
       <Select
         backspaceRemovesValue={true}
@@ -219,7 +216,6 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
         }
         pageSize={5}
         placeholder="Select..."
-        readOnly={false}
         screenReaderStatus={[Function]}
         styles={Object {}}
         tabIndex="0"
@@ -333,7 +329,6 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
               ],
               "pageSize": 5,
               "placeholder": "Select...",
-              "readOnly": false,
               "screenReaderStatus": [Function],
               "styles": Object {},
               "tabIndex": "0",
@@ -453,7 +448,6 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                   ],
                   "pageSize": 5,
                   "placeholder": "Select...",
-                  "readOnly": false,
                   "screenReaderStatus": [Function],
                   "styles": Object {},
                   "tabIndex": "0",
@@ -565,7 +559,6 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                       ],
                       "pageSize": 5,
                       "placeholder": "Select...",
-                      "readOnly": false,
                       "screenReaderStatus": [Function],
                       "styles": Object {},
                       "tabIndex": "0",
@@ -682,7 +675,6 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                           ],
                           "pageSize": 5,
                           "placeholder": "Select...",
-                          "readOnly": false,
                           "screenReaderStatus": [Function],
                           "styles": Object {},
                           "tabIndex": "0",
@@ -902,7 +894,6 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                       ],
                       "pageSize": 5,
                       "placeholder": "Select...",
-                      "readOnly": false,
                       "screenReaderStatus": [Function],
                       "styles": Object {},
                       "tabIndex": "0",
@@ -1013,7 +1004,6 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                           ],
                           "pageSize": 5,
                           "placeholder": "Select...",
-                          "readOnly": false,
                           "screenReaderStatus": [Function],
                           "styles": Object {},
                           "tabIndex": "0",
@@ -1132,7 +1122,6 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                           ],
                           "pageSize": 5,
                           "placeholder": "Select...",
-                          "readOnly": false,
                           "screenReaderStatus": [Function],
                           "styles": Object {},
                           "tabIndex": "0",
@@ -1265,7 +1254,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
     ]
   }
   padding="1rem"
-  plainText={false}
   sm={false}
   textAlign="inherit"
   textDecoration="inherit"
@@ -1333,8 +1321,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
           },
         ]
       }
-      readOnly={false}
-      tabIndex="0"
     >
       <Select
         backspaceRemovesValue={true}
@@ -1403,7 +1389,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
         }
         pageSize={5}
         placeholder="Select..."
-        readOnly={false}
         screenReaderStatus={[Function]}
         styles={Object {}}
         tabIndex="0"
@@ -1517,7 +1502,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
               ],
               "pageSize": 5,
               "placeholder": "Select...",
-              "readOnly": false,
               "screenReaderStatus": [Function],
               "styles": Object {},
               "tabIndex": "0",
@@ -1637,7 +1621,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                   ],
                   "pageSize": 5,
                   "placeholder": "Select...",
-                  "readOnly": false,
                   "screenReaderStatus": [Function],
                   "styles": Object {},
                   "tabIndex": "0",
@@ -1749,7 +1732,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       ],
                       "pageSize": 5,
                       "placeholder": "Select...",
-                      "readOnly": false,
                       "screenReaderStatus": [Function],
                       "styles": Object {},
                       "tabIndex": "0",
@@ -1866,7 +1848,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           ],
                           "pageSize": 5,
                           "placeholder": "Select...",
-                          "readOnly": false,
                           "screenReaderStatus": [Function],
                           "styles": Object {},
                           "tabIndex": "0",
@@ -2086,7 +2067,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       ],
                       "pageSize": 5,
                       "placeholder": "Select...",
-                      "readOnly": false,
                       "screenReaderStatus": [Function],
                       "styles": Object {},
                       "tabIndex": "0",
@@ -2197,7 +2177,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           ],
                           "pageSize": 5,
                           "placeholder": "Select...",
-                          "readOnly": false,
                           "screenReaderStatus": [Function],
                           "styles": Object {},
                           "tabIndex": "0",
@@ -2316,7 +2295,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           ],
                           "pageSize": 5,
                           "placeholder": "Select...",
-                          "readOnly": false,
                           "screenReaderStatus": [Function],
                           "styles": Object {},
                           "tabIndex": "0",
@@ -2449,7 +2427,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
     ]
   }
   padding="1rem"
-  plainText={false}
   sm={true}
   textAlign="inherit"
   textDecoration="inherit"
@@ -2517,8 +2494,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
           },
         ]
       }
-      readOnly={false}
-      tabIndex="0"
     >
       <Select
         backspaceRemovesValue={true}
@@ -2587,7 +2562,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
         }
         pageSize={5}
         placeholder="Select..."
-        readOnly={false}
         screenReaderStatus={[Function]}
         styles={Object {}}
         tabIndex="0"
@@ -2701,7 +2675,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
               ],
               "pageSize": 5,
               "placeholder": "Select...",
-              "readOnly": false,
               "screenReaderStatus": [Function],
               "styles": Object {},
               "tabIndex": "0",
@@ -2821,7 +2794,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                   ],
                   "pageSize": 5,
                   "placeholder": "Select...",
-                  "readOnly": false,
                   "screenReaderStatus": [Function],
                   "styles": Object {},
                   "tabIndex": "0",
@@ -2933,7 +2905,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       ],
                       "pageSize": 5,
                       "placeholder": "Select...",
-                      "readOnly": false,
                       "screenReaderStatus": [Function],
                       "styles": Object {},
                       "tabIndex": "0",
@@ -3050,7 +3021,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           ],
                           "pageSize": 5,
                           "placeholder": "Select...",
-                          "readOnly": false,
                           "screenReaderStatus": [Function],
                           "styles": Object {},
                           "tabIndex": "0",
@@ -3270,7 +3240,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       ],
                       "pageSize": 5,
                       "placeholder": "Select...",
-                      "readOnly": false,
                       "screenReaderStatus": [Function],
                       "styles": Object {},
                       "tabIndex": "0",
@@ -3381,7 +3350,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           ],
                           "pageSize": 5,
                           "placeholder": "Select...",
-                          "readOnly": false,
                           "screenReaderStatus": [Function],
                           "styles": Object {},
                           "tabIndex": "0",
@@ -3500,7 +3468,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           ],
                           "pageSize": 5,
                           "placeholder": "Select...",
-                          "readOnly": false,
                           "screenReaderStatus": [Function],
                           "styles": Object {},
                           "tabIndex": "0",

@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ControlGroupBase } from 'src/elements/form/ControlGroup/ControlGroup';
-import { passThrough, removeSomeProps } from 'src/utils/componentHelpers';
+import { passThrough, removeSomeProps, resolveColor } from 'src/utils/componentHelpers';
 import { SelectFieldComponent } from './SelectFieldComponent';
 import { space } from 'styled-system';
-import { defaultControlStylesBase } from '../ControlGroup/baseControlStyle';
+import styled from 'styled-components';
+import { defaultControlStylesBase, controlStylesBase } from '../ControlGroup/baseControlStyle';
+import { textStylesBase } from 'src/elements/typography/textStyles';
+import { defaultCipherList } from 'constants';
 
 export const SelectField = props => {
   const {
@@ -12,10 +15,12 @@ export const SelectField = props => {
     bgColor,
     controlId,
     disabled,
+    defaultValue,
     assistiveText,
+    plainText,
+    value,
     controlLabel,
     required,
-    plainText,
     validationError,
     ...otherProps
   } = props;
@@ -29,7 +34,17 @@ export const SelectField = props => {
   const childProps = { id: controlId, ...passThrough(SelectField, otherWithoutSpaceProps) };
   const newlabel = !required ? controlLabel : `${controlLabel}*`;
   const disableRelatedProps = {
-    isDisabled: disabled || plainText,
+    isDisabled: disabled,
+  };
+  const renderValueOrComponent = displayValue => {
+    if (plainText) {
+      const textBase = textStylesBase(props);
+      const displayString = !displayValue ? '' : `${displayValue}`;
+      const controlBase = !validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') });
+      const ProtoPlainText = styled.div.attrs({})` ${textBase} ${controlBase}`;
+      return (<ProtoPlainText {...passThrough(ProtoPlainText, props)}>{displayString}</ProtoPlainText>);
+    }
+    return (<SelectFieldComponent validationError={validationError} {...childProps} {...disableRelatedProps} />);
   };
   return (
     <ControlGroupBase
@@ -42,7 +57,7 @@ export const SelectField = props => {
       validationError={validationError}
       {...spaceProps}
     >
-      <SelectFieldComponent validationError={validationError} {...childProps} {...disableRelatedProps} />
+      {renderValueOrComponent(value || defaultValue.label)}
     </ControlGroupBase>);
 };
 
