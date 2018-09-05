@@ -58,13 +58,13 @@ describe('SelectField Component with lg text', () => {
   });
 
   it('should return a SelectField with activeColor', () => {
-    const component = mount(<SelectField activeColor="blue" assistiveText="Please tell me your color" controlId="exampleColor" controlLabel="Color" defaultValue={colorOptions[1]} id="exampleColor" options={colorOptions} />);
+    const component = mount(<SelectField activeColor="cyan" assistiveText="Please tell me your color" controlId="exampleColor" controlLabel="Color" defaultValue={colorOptions[1]} id="exampleColor" options={colorOptions} />);
     expect(toJson(component.find('SelectField'))).toMatchSnapshot();
   });
 });
 
 describe('SelectField Component with space', () => {
-  it('should return a SelectField with space borderColor', () => {
+  it('should return a SelectField with space', () => {
     const component = mount(<SelectField assistiveText="Please tell me your color" controlId="exampleColor" controlLabel="Color" defaultValue={colorOptions[1]} id="exampleColor" m={4} options={colorOptions} p={4} />);
     expect(toJson(component.find('SelectField'))).toMatchSnapshot();
   });

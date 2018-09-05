@@ -149,6 +149,11 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
       }
       readOnly={false}
       tabIndex="0"
+      theme={
+        Object {
+          "theme": [Function],
+        }
+      }
     >
       <Select
         backspaceRemovesValue={true}
@@ -222,6 +227,11 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
         styles={Object {}}
         tabIndex="0"
         tabSelectsValue={true}
+        theme={
+          Object {
+            "theme": [Function],
+          }
+        }
         value={
           Object {
             "color": "#FFC400",
@@ -336,6 +346,9 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
               "styles": Object {},
               "tabIndex": "0",
               "tabSelectsValue": true,
+              "theme": Object {
+                "theme": [Function],
+              },
               "value": Object {
                 "color": "#FFC400",
                 "label": "Yellow",
@@ -456,6 +469,9 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                   "styles": Object {},
                   "tabIndex": "0",
                   "tabSelectsValue": true,
+                  "theme": Object {
+                    "theme": [Function],
+                  },
                   "value": Object {
                     "color": "#FFC400",
                     "label": "Yellow",
@@ -568,6 +584,9 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                       "styles": Object {},
                       "tabIndex": "0",
                       "tabSelectsValue": true,
+                      "theme": Object {
+                        "theme": [Function],
+                      },
                       "value": Object {
                         "color": "#FFC400",
                         "label": "Yellow",
@@ -685,6 +704,9 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                           "styles": Object {},
                           "tabIndex": "0",
                           "tabSelectsValue": true,
+                          "theme": Object {
+                            "theme": [Function],
+                          },
                           "value": Object {
                             "color": "#FFC400",
                             "label": "Yellow",
@@ -905,6 +927,9 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                       "styles": Object {},
                       "tabIndex": "0",
                       "tabSelectsValue": true,
+                      "theme": Object {
+                        "theme": [Function],
+                      },
                       "value": Object {
                         "color": "#FFC400",
                         "label": "Yellow",
@@ -1016,6 +1041,9 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                           "styles": Object {},
                           "tabIndex": "0",
                           "tabSelectsValue": true,
+                          "theme": Object {
+                            "theme": [Function],
+                          },
                           "value": Object {
                             "color": "#FFC400",
                             "label": "Yellow",
@@ -1135,6 +1163,9 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                           "styles": Object {},
                           "tabIndex": "0",
                           "tabSelectsValue": true,
+                          "theme": Object {
+                            "theme": [Function],
+                          },
                           "value": Object {
                             "color": "#FFC400",
                             "label": "Yellow",
@@ -1331,6 +1362,11 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
       }
       readOnly={false}
       tabIndex="0"
+      theme={
+        Object {
+          "theme": [Function],
+        }
+      }
     >
       <Select
         backspaceRemovesValue={true}
@@ -1404,6 +1440,11 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
         styles={Object {}}
         tabIndex="0"
         tabSelectsValue={true}
+        theme={
+          Object {
+            "theme": [Function],
+          }
+        }
         value={
           Object {
             "color": "#FFC400",
@@ -1518,6 +1559,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
               "styles": Object {},
               "tabIndex": "0",
               "tabSelectsValue": true,
+              "theme": Object {
+                "theme": [Function],
+              },
               "value": Object {
                 "color": "#FFC400",
                 "label": "Yellow",
@@ -1638,6 +1682,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                   "styles": Object {},
                   "tabIndex": "0",
                   "tabSelectsValue": true,
+                  "theme": Object {
+                    "theme": [Function],
+                  },
                   "value": Object {
                     "color": "#FFC400",
                     "label": "Yellow",
@@ -1750,6 +1797,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       "styles": Object {},
                       "tabIndex": "0",
                       "tabSelectsValue": true,
+                      "theme": Object {
+                        "theme": [Function],
+                      },
                       "value": Object {
                         "color": "#FFC400",
                         "label": "Yellow",
@@ -1867,6 +1917,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "styles": Object {},
                           "tabIndex": "0",
                           "tabSelectsValue": true,
+                          "theme": Object {
+                            "theme": [Function],
+                          },
                           "value": Object {
                             "color": "#FFC400",
                             "label": "Yellow",
@@ -2087,6 +2140,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       "styles": Object {},
                       "tabIndex": "0",
                       "tabSelectsValue": true,
+                      "theme": Object {
+                        "theme": [Function],
+                      },
                       "value": Object {
                         "color": "#FFC400",
                         "label": "Yellow",
@@ -2198,6 +2254,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "styles": Object {},
                           "tabIndex": "0",
                           "tabSelectsValue": true,
+                          "theme": Object {
+                            "theme": [Function],
+                          },
                           "value": Object {
                             "color": "#FFC400",
                             "label": "Yellow",
@@ -2317,6 +2376,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "styles": Object {},
                           "tabIndex": "0",
                           "tabSelectsValue": true,
+                          "theme": Object {
+                            "theme": [Function],
+                          },
                           "value": Object {
                             "color": "#FFC400",
                             "label": "Yellow",
@@ -2513,6 +2575,11 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
       }
       readOnly={false}
       tabIndex="0"
+      theme={
+        Object {
+          "theme": [Function],
+        }
+      }
     >
       <Select
         backspaceRemovesValue={true}
@@ -2586,6 +2653,11 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
         styles={Object {}}
         tabIndex="0"
         tabSelectsValue={true}
+        theme={
+          Object {
+            "theme": [Function],
+          }
+        }
         value={
           Object {
             "color": "#FFC400",
@@ -2700,6 +2772,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
               "styles": Object {},
               "tabIndex": "0",
               "tabSelectsValue": true,
+              "theme": Object {
+                "theme": [Function],
+              },
               "value": Object {
                 "color": "#FFC400",
                 "label": "Yellow",
@@ -2820,6 +2895,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                   "styles": Object {},
                   "tabIndex": "0",
                   "tabSelectsValue": true,
+                  "theme": Object {
+                    "theme": [Function],
+                  },
                   "value": Object {
                     "color": "#FFC400",
                     "label": "Yellow",
@@ -2932,6 +3010,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       "styles": Object {},
                       "tabIndex": "0",
                       "tabSelectsValue": true,
+                      "theme": Object {
+                        "theme": [Function],
+                      },
                       "value": Object {
                         "color": "#FFC400",
                         "label": "Yellow",
@@ -3049,6 +3130,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "styles": Object {},
                           "tabIndex": "0",
                           "tabSelectsValue": true,
+                          "theme": Object {
+                            "theme": [Function],
+                          },
                           "value": Object {
                             "color": "#FFC400",
                             "label": "Yellow",
@@ -3269,6 +3353,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       "styles": Object {},
                       "tabIndex": "0",
                       "tabSelectsValue": true,
+                      "theme": Object {
+                        "theme": [Function],
+                      },
                       "value": Object {
                         "color": "#FFC400",
                         "label": "Yellow",
@@ -3380,6 +3467,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "styles": Object {},
                           "tabIndex": "0",
                           "tabSelectsValue": true,
+                          "theme": Object {
+                            "theme": [Function],
+                          },
                           "value": Object {
                             "color": "#FFC400",
                             "label": "Yellow",
@@ -3499,6 +3589,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "styles": Object {},
                           "tabIndex": "0",
                           "tabSelectsValue": true,
+                          "theme": Object {
+                            "theme": [Function],
+                          },
                           "value": Object {
                             "color": "#FFC400",
                             "label": "Yellow",
