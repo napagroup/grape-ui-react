@@ -35,10 +35,22 @@ export const SelectField = props => {
   const disableRelatedProps = {
     isDisabled: disabled,
   };
-  const renderValueOrComponent = displayValue => {
+
+  var getDisplayValue = function getDisplayValue() {
+    if (!!value && !!value.label) {
+      return value.label;
+    }
+    if (!!defaultValue && !!defaultValue.label) {
+      return defaultValue.label;
+    }
+    return '';
+  };
+
+
+  const renderValueOrComponent = () => {
     if (plainText) {
       const textBase = textStylesBase(props);
-      const displayString = !displayValue ? '' : `${displayValue}`;
+      const displayString = getDisplayValue();
       const controlBase = !validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') });
       const ProtoPlainText = styled.div.attrs({})` ${textBase} ${controlBase}`;
       return (<ProtoPlainText {...passThrough(ProtoPlainText, props)}>{displayString}</ProtoPlainText>);
@@ -56,7 +68,7 @@ export const SelectField = props => {
       validationError={validationError}
       {...spaceProps}
     >
-      {renderValueOrComponent(value.label || defaultValue.label)}
+      {renderValueOrComponent()}
     </ControlGroupBase>);
 };
 
