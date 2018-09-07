@@ -51,7 +51,10 @@ export const ControlGroupBase = props => {
     controlId,
     validationError,
     children,
+<<<<<<< HEAD
     disabled,
+=======
+>>>>>>> features/form
     ...otherProps
   } = props;
 
@@ -70,7 +73,10 @@ export const ControlGroupBase = props => {
       <ControlLabel
         activeColor={activeColor}
         bgColor={getBgColor(props)}
+<<<<<<< HEAD
         disabled={disabled}
+=======
+>>>>>>> features/form
         htmlFor={controlId}
         validationError={validationError}
       >{controlLabel}
@@ -87,7 +93,10 @@ ControlGroupBase.propTypes = {
   children: PropTypes.any.isRequired,
   controlId: PropTypes.string.isRequired,
   controlLabel: PropTypes.string.isRequired,
+<<<<<<< HEAD
   disabled: PropTypes.bool,
+=======
+>>>>>>> features/form
   validationError: PropTypes.string,
 };
 
@@ -95,6 +104,9 @@ ControlGroupBase.defaultProps = {
   activeColor: defaultControlStylesBase.activeColor,
   assistiveText: '',
   bgColor: defaultControlStylesBase.bgColor,
+<<<<<<< HEAD
   disabled: false,
+=======
+>>>>>>> features/form
   validationError: '',
 };

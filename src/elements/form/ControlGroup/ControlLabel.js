@@ -33,7 +33,10 @@ export const ControlLabel = props => {
 ControlLabel.propTypes = {
   bgColor: PropTypes.string,
   color: PropTypes.string,
+<<<<<<< HEAD
   disabled: PropTypes.bool,
+=======
+>>>>>>> features/form
   fontFamily: PropTypes.string,
   fontWeight: PropTypes.string,
   kerning: PropTypes.string,
@@ -47,7 +50,10 @@ ControlLabel.propTypes = {
 ControlLabel.defaultProps = {
   bgColor: defaultControlStylesBase.bgColor,
   color: defaultTextStylesBase.color,
+<<<<<<< HEAD
   disabled: false,
+=======
+>>>>>>> features/form
   fontFamily: defaultTextStylesBase.fontFamily,
   fontWeight: defaultTextStylesBase.fontWeight,
   kerning: defaultTextStylesBase.kerning,
