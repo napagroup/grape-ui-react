@@ -36,12 +36,9 @@ export const SelectField = props => {
     isDisabled: disabled,
   };
 
-  var getDisplayValue = function getDisplayValue() {
+  const getDisplayValue = function getDisplayValue() {
     if (!!value && !!value.label) {
       return value.label;
-    }
-    if (!!defaultValue && !!defaultValue.label) {
-      return defaultValue.label;
     }
     return '';
   };

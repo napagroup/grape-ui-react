@@ -86,6 +86,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
     bgColor="white.light"
     controlId="exampleFullName"
     controlLabel="Full name"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -132,6 +133,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleFullName"
@@ -246,6 +248,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
     bgColor="white.light"
     controlId="exampleFullName"
     controlLabel="Full name"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -292,6 +295,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleFullName"
@@ -406,6 +410,7 @@ exports[`TextField a TextFieldComponent object should return a TextFieldComponen
     bgColor="red"
     controlId="exampleFullName2"
     controlLabel="Full name2"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -452,6 +457,7 @@ exports[`TextField a TextFieldComponent object should return a TextFieldComponen
             activeColor="brandPrimary"
             bgColor="hsl(4.1, 89.6%, 58.4%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleFullName2"
@@ -545,6 +551,7 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
     bgColor="white.light"
     controlId="exampleFullName2"
     controlLabel="Full name2"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -591,6 +598,7 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
             activeColor="red"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleFullName2"
@@ -706,6 +714,7 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
     bgColor="white.light"
     controlId="exampleFullName2"
     controlLabel="Full name2"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -755,6 +764,7 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
             activeColor="red"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleFullName2"
@@ -870,6 +880,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
     bgColor="white.light"
     controlId="exampleFullName"
     controlLabel="Full name"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -916,6 +927,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleFullName"
@@ -1030,6 +1042,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
     bgColor="white.light"
     controlId="exampleFullName2"
     controlLabel="Full name2"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -1076,6 +1089,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             activeColor="red"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleFullName2"
@@ -1192,6 +1206,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
     bgColor="white.light"
     controlId="exampleFullName2"
     controlLabel="Full name2"
+    disabled={false}
     margin="1"
     paddingBottom="16px"
     paddingTop="4px"
@@ -1240,6 +1255,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleFullName2"
@@ -1370,6 +1386,7 @@ exports[`TextField with assistive text should return a TextField object contain 
     bgColor="white.light"
     controlId="exampleFullName"
     controlLabel="Full name"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -1416,6 +1433,7 @@ exports[`TextField with assistive text should return a TextField object contain 
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleFullName"
@@ -1554,6 +1572,7 @@ exports[`TextField with some other props should return a TextField object contai
     bgColor="white.light"
     controlId="exampleFullName"
     controlLabel="Full name"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError=""
@@ -1605,6 +1624,7 @@ exports[`TextField with some other props should return a TextField object contai
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleFullName"
@@ -1735,6 +1755,7 @@ exports[`TextField with validation error should return a TextField object contai
     bgColor="white.light"
     controlId="exampleFullName"
     controlLabel="Full name"
+    disabled={false}
     paddingBottom="16px"
     paddingTop="4px"
     validationError="This is a required field."
@@ -1781,6 +1802,7 @@ exports[`TextField with validation error should return a TextField object contai
             activeColor="brandPrimary"
             bgColor="hsl(0, 0%, 100%)"
             color="inherit"
+            disabled={false}
             fontFamily="inherit"
             fontWeight="inherit"
             htmlFor="exampleFullName"

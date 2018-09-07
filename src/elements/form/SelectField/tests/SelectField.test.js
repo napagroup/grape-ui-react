@@ -83,11 +83,11 @@ describe('SelectField Component with plainText or disabled', () => {
 
 describe('SelectField Component with react-select predefined props', () => {
   it('should return a SelectField with isSearchable and placeholder ', () => {
-    const component = mount(<SelectField assistiveText="Please tell me your color" controlId="exampleColor" controlLabel="Color" id="exampleColor" m={4} options={colorOptions} p={4} isSearchable placeholder="Please search your color" />);
+    const component = mount(<SelectField assistiveText="Please tell me your color" controlId="exampleColor" controlLabel="Color" id="exampleColor" isSearchable m={4} options={colorOptions} p={4} placeholder="Please search your color" />);
     expect(toJson(component.find('SelectField'))).toMatchSnapshot();
   });
   it('should return a SelectField with isClearable and placeholder ', () => {
-    const component = mount(<SelectField assistiveText="Please tell me your color, hit x to clear" controlId="exampleColor" controlLabel="Color" id="exampleColor" m={4} options={colorOptions} p={4} isSearchable placeholder="Please search your color" />);
+    const component = mount(<SelectField assistiveText="Please tell me your color, hit x to clear" controlId="exampleColor" controlLabel="Color" id="exampleColor" isSearchable m={4} options={colorOptions} p={4} placeholder="Please search your color" />);
     expect(toJson(component.find('SelectField'))).toMatchSnapshot();
   });
 });
