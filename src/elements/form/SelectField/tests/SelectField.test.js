@@ -3,7 +3,6 @@ import { SelectField } from '../';
 import 'jest-styled-components';
 import Adapter from 'enzyme-adapter-react-16';
 import { configure, mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
 import renderer from 'react-test-renderer';
 
 configure({ adapter: new Adapter() });
@@ -82,7 +81,6 @@ describe('SelectField Component with plainText or disabled', () => {
   it('should return a SelectField with disabled', () => {
     const component = mount(<SelectField controlId="exampleColor" controlLabel="Color" disabled id="exampleColor" value={colorOptions[1]} />);
     expect((component.find('input').props('disabled'))).toMatchSnapshot();
-
   });
 });
 
