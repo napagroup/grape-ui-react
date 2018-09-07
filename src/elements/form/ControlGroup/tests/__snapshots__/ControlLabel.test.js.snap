@@ -24,10 +24,7 @@ exports[`ControlLabel Component base should return a ControlLabel object 1`] = `
 <ControlLabel
   bgColor="white.light"
   color="inherit"
-<<<<<<< HEAD
   disabled={false}
-=======
->>>>>>> features/form
   fontFamily="inherit"
   fontWeight="inherit"
   for="forWhatId"
