@@ -10,7 +10,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
 
 exports[`SelectField Component with assistive text should return a SelectField with error text 1`] = `"<div class=\\"sc-chPdSV dwBNWU\\" id=\\"exampleColorError\\">This is a required field.</div>"`;
 
-exports[`SelectField Component with plainText or disabled should return a SelectField with disabled 1`] = `
+exports[`SelectField Component with plainText or disabled should return a SelectField with disabled input contains a props "disabled": true 1`] = `
 Object {
   "aria-autocomplete": "list",
   "aria-label": undefined,
@@ -42,7 +42,7 @@ Object {
 }
 `;
 
-exports[`SelectField Component with plainText or disabled should return a SelectField with plainText 1`] = `
+exports[`SelectField Component with plainText or disabled should return a SelectField with plainText with <div> Yellow </div> rendered 1`] = `
 .c1 {
   font-family: inherit;
   font-size: inherit;
@@ -117,7 +117,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
 </div>
 `;
 
-exports[`SelectField Component with react-select predefined props should return a SelectField with isClearable and placeholder  1`] = `
+exports[`SelectField Component with react-select predefined props should return a SelectField with isClearable and placeholder contains a element svg that draw a x 1`] = `
 Object {
   "aria-hidden": "true",
   "children": <path
@@ -131,7 +131,7 @@ Object {
 }
 `;
 
-exports[`SelectField Component with space should return a SelectField with space 1`] = `
+exports[`SelectField Component with space should return a SelectField with space with  margin: 32px;  padding: 32px; on c0 1`] = `
 .c0 {
   bg-color: white.light;
   margin: 32px;
@@ -344,7 +344,7 @@ exports[`SelectField Component with space should return a SelectField with space
 </div>
 `;
 
-exports[`SelectField Component with style should return a SelectField with bgColor 1`] = `
+exports[`SelectField Component with style should return a SelectField with background-color: hsl(4.1,89.6%,58.4%) in c0 and c2  1`] = `
 .c0 {
   bg-color: red;
   padding-bottom: 16px;
@@ -555,7 +555,7 @@ exports[`SelectField Component with style should return a SelectField with bgCol
 </div>
 `;
 
-exports[`SelectField Component with style should return a SelectField with orange borderColor 1`] = `
+exports[`SelectField Component with style should return a SelectField with orange borderColor with border: 1px solid orange in c1; 1`] = `
 .c0 {
   bg-color: white.light;
   padding-bottom: 16px;
@@ -766,50 +766,7 @@ exports[`SelectField Component with style should return a SelectField with orang
 </div>
 `;
 
-exports[`SelectField Component with style should return a SelectField with sm text 1`] = `
-Object {
-  "activeColor": "brandPrimary",
-  "borderColor": "hsl(0, 0%, 25%)",
-  "borderRadius": "4px",
-  "color": "inherit",
-  "fontFamily": "inherit",
-  "fontWeight": "inherit",
-  "id": "exampleColor",
-  "isDisabled": false,
-  "kerning": "inherit",
-  "lg": false,
-  "multiple": false,
-  "options": Array [
-    Object {
-      "color": "#FF5630",
-      "label": "Red",
-      "value": "red",
-    },
-    Object {
-      "color": "#FFC400",
-      "label": "Yellow",
-      "value": "yellow",
-    },
-    Object {
-      "color": "#36B37E",
-      "label": "Green",
-      "value": "green",
-    },
-  ],
-  "padding": "1rem",
-  "sm": true,
-  "textAlign": "inherit",
-  "textDecoration": "inherit",
-  "validationError": "",
-  "value": Object {
-    "color": "#FFC400",
-    "label": "Yellow",
-    "value": "yellow",
-  },
-}
-`;
-
-exports[`SelectField Component with style should return a SelectField with style lg prop = true 1`] = `
+exports[`SelectField Component with style should return a SelectFieldComponent with props where lg={true} 1`] = `
 Object {
   "activeColor": "brandPrimary",
   "borderColor": "hsl(0, 0%, 25%)",
@@ -841,6 +798,49 @@ Object {
   ],
   "padding": "1rem",
   "sm": false,
+  "textAlign": "inherit",
+  "textDecoration": "inherit",
+  "validationError": "",
+  "value": Object {
+    "color": "#FFC400",
+    "label": "Yellow",
+    "value": "yellow",
+  },
+}
+`;
+
+exports[`SelectField Component with style should return a SelectFieldComponent with props where sm={true} 1`] = `
+Object {
+  "activeColor": "brandPrimary",
+  "borderColor": "hsl(0, 0%, 25%)",
+  "borderRadius": "4px",
+  "color": "inherit",
+  "fontFamily": "inherit",
+  "fontWeight": "inherit",
+  "id": "exampleColor",
+  "isDisabled": false,
+  "kerning": "inherit",
+  "lg": false,
+  "multiple": false,
+  "options": Array [
+    Object {
+      "color": "#FF5630",
+      "label": "Red",
+      "value": "red",
+    },
+    Object {
+      "color": "#FFC400",
+      "label": "Yellow",
+      "value": "yellow",
+    },
+    Object {
+      "color": "#36B37E",
+      "label": "Green",
+      "value": "green",
+    },
+  ],
+  "padding": "1rem",
+  "sm": true,
   "textAlign": "inherit",
   "textDecoration": "inherit",
   "validationError": "",
