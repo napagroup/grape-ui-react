@@ -1,0 +1,746 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComponent that contains CheckboxComponent object 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  width: 100%;
+}
+
+.c1 {
+  background-color: hsl(0,0%,100%);
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: -0.5rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c3 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c4 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<CheckboxField
+  activeColor="brandPrimary"
+  assistiveText=""
+  bgColor="white.light"
+  controlId="exampleColor"
+  controlLabel="Color"
+  disabled={false}
+  name="Color"
+  options={
+    Array [
+      Object {
+        "label": "Red",
+        "value": "red",
+      },
+      Object {
+        "label": "Yellow",
+        "value": "yellow",
+      },
+      Object {
+        "label": "Green",
+        "value": "green",
+      },
+    ]
+  }
+  plainText={false}
+  validationError=""
+  value={
+    Array [
+      "red",
+    ]
+  }
+>
+  <ControlGroup>
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <ControlLabel
+          activeColor="brandPrimary"
+          bgColor="hsl(0, 0%, 100%)"
+          color="inherit"
+          disabled={false}
+          fontFamily="inherit"
+          fontWeight="inherit"
+          htmlFor="exampleColor"
+          kerning="inherit"
+          lg={false}
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
+          validationError=""
+        >
+          <styled.label
+            activeColor="brandPrimary"
+            htmlFor="exampleColor"
+          >
+            <label
+              className="c1"
+              htmlFor="exampleColor"
+            >
+              Color
+            </label>
+          </styled.label>
+        </ControlLabel>
+        <CheckboxFieldComponent
+          disabled={false}
+          id="exampleColor"
+          name="Color"
+          options={
+            Array [
+              Object {
+                "label": "Red",
+                "value": "red",
+              },
+              Object {
+                "label": "Yellow",
+                "value": "yellow",
+              },
+              Object {
+                "label": "Green",
+                "value": "green",
+              },
+            ]
+          }
+          value={
+            Array [
+              "red",
+            ]
+          }
+        >
+          <CheckboxGroup
+            Component="div"
+            checkboxDepth={2}
+            name="Color"
+            value={
+              Array [
+                "red",
+              ]
+            }
+          >
+            <div>
+               
+              <styled.label
+                id="exampleColor"
+                key=".1:$Red-label"
+              >
+                <label
+                  className="c2"
+                  id="exampleColor"
+                >
+                  <Checkbox
+                    checkboxGroup={
+                      Object {
+                        "checkedValues": Array [
+                          "red",
+                        ],
+                        "name": "Color",
+                        "onChange": [Function],
+                      }
+                    }
+                    disabled={false}
+                    id="exampleColor"
+                    key=".$Red/.$.$Red"
+                    value="red"
+                  >
+                    <input
+                      checked={true}
+                      disabled={false}
+                      id="exampleColor"
+                      name="Color"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value="red"
+                    />
+                  </Checkbox>
+                  Red
+                </label>
+              </styled.label>
+              <styled.label
+                id="exampleColor"
+                key=".1:$Yellow-label"
+              >
+                <label
+                  className="c3"
+                  id="exampleColor"
+                >
+                  <Checkbox
+                    checkboxGroup={
+                      Object {
+                        "checkedValues": Array [
+                          "red",
+                        ],
+                        "name": "Color",
+                        "onChange": [Function],
+                      }
+                    }
+                    disabled={false}
+                    id="exampleColor"
+                    key=".$Yellow/.$.$Yellow"
+                    value="yellow"
+                  >
+                    <input
+                      checked={false}
+                      disabled={false}
+                      id="exampleColor"
+                      name="Color"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value="yellow"
+                    />
+                  </Checkbox>
+                  Yellow
+                </label>
+              </styled.label>
+              <styled.label
+                id="exampleColor"
+                key=".1:$Green-label"
+              >
+                <label
+                  className="c4"
+                  id="exampleColor"
+                >
+                  <Checkbox
+                    checkboxGroup={
+                      Object {
+                        "checkedValues": Array [
+                          "red",
+                        ],
+                        "name": "Color",
+                        "onChange": [Function],
+                      }
+                    }
+                    disabled={false}
+                    id="exampleColor"
+                    key=".$Green/.$.$Green"
+                    value="green"
+                  >
+                    <input
+                      checked={false}
+                      disabled={false}
+                      id="exampleColor"
+                      name="Color"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value="green"
+                    />
+                  </Checkbox>
+                  Green
+                </label>
+              </styled.label>
+               
+            </div>
+          </CheckboxGroup>
+        </CheckboxFieldComponent>
+      </div>
+    </styled.div>
+  </ControlGroup>
+</CheckboxField>
+`;
+
+exports[`CheckboxFieldComponent Component with disabled should return a CheckboxFieldComponent that contains CheckboxComponent object with disabled 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  width: 100%;
+}
+
+.c1 {
+  background-color: hsl(0,0%,100%);
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: -0.5rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c3 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c4 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<CheckboxField
+  activeColor="brandPrimary"
+  assistiveText=""
+  bgColor="white.light"
+  controlId="exampleColor"
+  controlLabel="Color"
+  disabled={true}
+  name="Color"
+  options={
+    Array [
+      Object {
+        "label": "Red",
+        "value": "red",
+      },
+      Object {
+        "label": "Yellow",
+        "value": "yellow",
+      },
+      Object {
+        "label": "Green",
+        "value": "green",
+      },
+    ]
+  }
+  plainText={false}
+  validationError=""
+  value={
+    Array [
+      "red",
+    ]
+  }
+>
+  <ControlGroup>
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <ControlLabel
+          activeColor="brandPrimary"
+          bgColor="hsl(0, 0%, 100%)"
+          color="inherit"
+          disabled={true}
+          fontFamily="inherit"
+          fontWeight="inherit"
+          htmlFor="exampleColor"
+          kerning="inherit"
+          lg={false}
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
+          validationError=""
+        >
+          <styled.label
+            activeColor="brandPrimary"
+            htmlFor="exampleColor"
+          >
+            <label
+              className="c1"
+              htmlFor="exampleColor"
+            >
+              Color
+            </label>
+          </styled.label>
+        </ControlLabel>
+        <CheckboxFieldComponent
+          disabled={true}
+          id="exampleColor"
+          name="Color"
+          options={
+            Array [
+              Object {
+                "label": "Red",
+                "value": "red",
+              },
+              Object {
+                "label": "Yellow",
+                "value": "yellow",
+              },
+              Object {
+                "label": "Green",
+                "value": "green",
+              },
+            ]
+          }
+          value={
+            Array [
+              "red",
+            ]
+          }
+        >
+          <CheckboxGroup
+            Component="div"
+            checkboxDepth={2}
+            name="Color"
+            value={
+              Array [
+                "red",
+              ]
+            }
+          >
+            <div>
+               
+              <styled.label
+                id="exampleColor"
+                key=".1:$Red-label"
+              >
+                <label
+                  className="c2"
+                  id="exampleColor"
+                >
+                  <Checkbox
+                    checkboxGroup={
+                      Object {
+                        "checkedValues": Array [
+                          "red",
+                        ],
+                        "name": "Color",
+                        "onChange": [Function],
+                      }
+                    }
+                    disabled={true}
+                    id="exampleColor"
+                    key=".$Red/.$.$Red"
+                    value="red"
+                  >
+                    <input
+                      checked={true}
+                      disabled={true}
+                      id="exampleColor"
+                      name="Color"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value="red"
+                    />
+                  </Checkbox>
+                  Red
+                </label>
+              </styled.label>
+              <styled.label
+                id="exampleColor"
+                key=".1:$Yellow-label"
+              >
+                <label
+                  className="c3"
+                  id="exampleColor"
+                >
+                  <Checkbox
+                    checkboxGroup={
+                      Object {
+                        "checkedValues": Array [
+                          "red",
+                        ],
+                        "name": "Color",
+                        "onChange": [Function],
+                      }
+                    }
+                    disabled={true}
+                    id="exampleColor"
+                    key=".$Yellow/.$.$Yellow"
+                    value="yellow"
+                  >
+                    <input
+                      checked={false}
+                      disabled={true}
+                      id="exampleColor"
+                      name="Color"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value="yellow"
+                    />
+                  </Checkbox>
+                  Yellow
+                </label>
+              </styled.label>
+              <styled.label
+                id="exampleColor"
+                key=".1:$Green-label"
+              >
+                <label
+                  className="c4"
+                  id="exampleColor"
+                >
+                  <Checkbox
+                    checkboxGroup={
+                      Object {
+                        "checkedValues": Array [
+                          "red",
+                        ],
+                        "name": "Color",
+                        "onChange": [Function],
+                      }
+                    }
+                    disabled={true}
+                    id="exampleColor"
+                    key=".$Green/.$.$Green"
+                    value="green"
+                  >
+                    <input
+                      checked={false}
+                      disabled={true}
+                      id="exampleColor"
+                      name="Color"
+                      onChange={[Function]}
+                      type="checkbox"
+                      value="green"
+                    />
+                  </Checkbox>
+                  Green
+                </label>
+              </styled.label>
+               
+            </div>
+          </CheckboxGroup>
+        </CheckboxFieldComponent>
+      </div>
+    </styled.div>
+  </ControlGroup>
+</CheckboxField>
+`;
+
+exports[`CheckboxFieldComponent Component with plaintext should return a CheckboxFieldComponent that contains CheckboxComponent object with plainText 1`] = `
+.c2 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 0;
+  display: block;
+  outline: 0;
+  padding: 1rem;
+}
+
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  width: 100%;
+}
+
+.c1 {
+  background-color: hsl(0,0%,100%);
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: -0.5rem;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<CheckboxField
+  activeColor="brandPrimary"
+  assistiveText=""
+  bgColor="white.light"
+  controlId="exampleColor"
+  controlLabel="Color"
+  disabled={false}
+  name="Color"
+  options={
+    Array [
+      Object {
+        "label": "Red",
+        "value": "red",
+      },
+      Object {
+        "label": "Yellow",
+        "value": "yellow",
+      },
+      Object {
+        "label": "Green",
+        "value": "green",
+      },
+    ]
+  }
+  plainText={true}
+  validationError=""
+  value={
+    Array [
+      "red",
+    ]
+  }
+>
+  <ControlGroup>
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <ControlLabel
+          activeColor="brandPrimary"
+          bgColor="hsl(0, 0%, 100%)"
+          color="inherit"
+          disabled={false}
+          fontFamily="inherit"
+          fontWeight="inherit"
+          htmlFor="exampleColor"
+          kerning="inherit"
+          lg={false}
+          sm={false}
+          textAlign="inherit"
+          textDecoration="inherit"
+          validationError=""
+        >
+          <styled.label
+            activeColor="brandPrimary"
+            htmlFor="exampleColor"
+          >
+            <label
+              className="c1"
+              htmlFor="exampleColor"
+            >
+              Color
+            </label>
+          </styled.label>
+        </ControlLabel>
+        <styled.div
+          activeColor="brandPrimary"
+          assistiveText=""
+          bgColor="white.light"
+          controlId="exampleColor"
+          controlLabel="Color"
+          disabled={false}
+          name="Color"
+          options={
+            Array [
+              Object {
+                "label": "Red",
+                "value": "red",
+              },
+              Object {
+                "label": "Yellow",
+                "value": "yellow",
+              },
+              Object {
+                "label": "Green",
+                "value": "green",
+              },
+            ]
+          }
+          plainText={true}
+          validationError=""
+          value={
+            Array [
+              "red",
+            ]
+          }
+        >
+          <div
+            className="c2"
+            disabled={false}
+            name="Color"
+            value={
+              Array [
+                "red",
+              ]
+            }
+          >
+            red
+          </div>
+        </styled.div>
+      </div>
+    </styled.div>
+  </ControlGroup>
+</CheckboxField>
+`;

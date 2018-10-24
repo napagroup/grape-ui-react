@@ -15,7 +15,7 @@ const getBgColor = props => {
   return resolveColor(bgColor);
 };
 
-const ControlGroup = props => {
+export const ControlGroup = props => {
   const {
     controlLabel,
     controlId,

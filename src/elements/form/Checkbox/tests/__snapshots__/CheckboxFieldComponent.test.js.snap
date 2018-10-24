@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComponent that contains CheckboxComponent object 1`] = `
+.c0 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c1 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c2 {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  color: inherit;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<CheckboxFieldComponent
+  id="exampleColor"
+  name="Color"
+  options={
+    Array [
+      Object {
+        "label": "Red",
+        "value": "red",
+      },
+      Object {
+        "label": "Yellow",
+        "value": "yellow",
+      },
+      Object {
+        "label": "Green",
+        "value": "green",
+      },
+    ]
+  }
+  value={
+    Array [
+      "red",
+    ]
+  }
+>
+  <CheckboxGroup
+    Component="div"
+    checkboxDepth={2}
+    name="Color"
+    value={
+      Array [
+        "red",
+      ]
+    }
+  >
+    <div>
+       
+      <styled.label
+        id="exampleColor"
+        key=".1:$Red-label"
+      >
+        <label
+          className="c0"
+          id="exampleColor"
+        >
+          <Checkbox
+            checkboxGroup={
+              Object {
+                "checkedValues": Array [
+                  "red",
+                ],
+                "name": "Color",
+                "onChange": [Function],
+              }
+            }
+            id="exampleColor"
+            key=".$Red/.$.$Red"
+            value="red"
+          >
+            <input
+              checked={true}
+              id="exampleColor"
+              name="Color"
+              onChange={[Function]}
+              type="checkbox"
+              value="red"
+            />
+          </Checkbox>
+          Red
+        </label>
+      </styled.label>
+      <styled.label
+        id="exampleColor"
+        key=".1:$Yellow-label"
+      >
+        <label
+          className="c1"
+          id="exampleColor"
+        >
+          <Checkbox
+            checkboxGroup={
+              Object {
+                "checkedValues": Array [
+                  "red",
+                ],
+                "name": "Color",
+                "onChange": [Function],
+              }
+            }
+            id="exampleColor"
+            key=".$Yellow/.$.$Yellow"
+            value="yellow"
+          >
+            <input
+              checked={false}
+              id="exampleColor"
+              name="Color"
+              onChange={[Function]}
+              type="checkbox"
+              value="yellow"
+            />
+          </Checkbox>
+          Yellow
+        </label>
+      </styled.label>
+      <styled.label
+        id="exampleColor"
+        key=".1:$Green-label"
+      >
+        <label
+          className="c2"
+          id="exampleColor"
+        >
+          <Checkbox
+            checkboxGroup={
+              Object {
+                "checkedValues": Array [
+                  "red",
+                ],
+                "name": "Color",
+                "onChange": [Function],
+              }
+            }
+            id="exampleColor"
+            key=".$Green/.$.$Green"
+            value="green"
+          >
+            <input
+              checked={false}
+              id="exampleColor"
+              name="Color"
+              onChange={[Function]}
+              type="checkbox"
+              value="green"
+            />
+          </Checkbox>
+          Green
+        </label>
+      </styled.label>
+       
+    </div>
+  </CheckboxGroup>
+</CheckboxFieldComponent>
+`;
