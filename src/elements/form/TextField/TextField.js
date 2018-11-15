@@ -43,7 +43,7 @@ TextField.propTypes = {
   assistiveText: PropTypes.string,
   bgColor: PropTypes.string,
   controlId: PropTypes.string.isRequired,
-  controlLabel: PropTypes.string.isRequired,
+  controlLabel: PropTypes.string,
   validationError: PropTypes.string,
   ...space.propTypes,
 };
@@ -52,6 +52,7 @@ TextField.defaultProps = {
   activeColor: defaultControlStylesBase.activeColor,
   assistiveText: '',
   bgColor: defaultControlStylesBase.bgColor,
+  controlLabel: defaultControlStylesBase.controlLabel,
   validationError: '',
 };
 

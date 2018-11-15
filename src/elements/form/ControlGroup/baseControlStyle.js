@@ -8,16 +8,11 @@ export const defaultControlStylesBase = {
   bgColor: 'white.light',
   borderColor: borderSchema.borderColor,
   borderRadius: borderSchema.borderRadius.base,
+  controlLabel: '',
+  isFocused: false,
   padding: gridSchema.gutter,
+  placeholderColor: 'gray.light',
   plainText: false,
-};
-
-const getActiveColor = props => {
-  const { activeColor } = props;
-  if (!activeColor) {
-    return resolveColor(defaultControlStylesBase.activeColor);
-  }
-  return resolveColor(activeColor);
 };
 
 const getScaleFactor = props => {
@@ -34,6 +29,16 @@ const getScaleFactor = props => {
   return scaleFactor;
 };
 
+export const focusStylesBase = props => {
+  const { activeColor } = props;
+  const focusColor = !activeColor ? resolveColor(defaultControlStylesBase.activeColor) : resolveColor(activeColor);
+  return `
+    border-color: ${focusColor};
+    box-shadow: 0 0 0 1px ${focusColor};
+    + label { color: ${focusColor}; }
+  `;
+};
+
 export const controlStylesBase = (props = {}) => {
   let overrides = null;
   if (!props || Array.isArray(props)) {
@@ -45,14 +50,15 @@ export const controlStylesBase = (props = {}) => {
       padding: gridSchema[props.gutter] || defaultControlStylesBase.padding,
     };
   }
-
   const scaleFactor = getScaleFactor(props);
   const {
     activeColor,
     borderColor,
     padding,
+    placeholderColor,
     plainText,
   } = overrides;
+  const focusStyle = focusStylesBase(activeColor);
   if (plainText) {
     return `
       border: 0;
@@ -67,15 +73,16 @@ export const controlStylesBase = (props = {}) => {
     padding: ${padding};
     outline: 0;
     width: 100%;
-    &:focus {
-      border-color: ${getActiveColor(activeColor)};
-      box-shadow: 0 0 0 1px ${getActiveColor(activeColor)};;
-      + label { color: ${getActiveColor(activeColor)};; }
+    &:focus{
+      ${focusStyle}
     }
     &[required] + label:after { content: "*" }
     &[disabled] {
       opacity: 0.3;
       ~ * { color: rgba(0,0,0,0.3); }
+    }
+    &::placeholder {
+      color: ${resolveColor(placeholderColor)}
     }
   `;
 };

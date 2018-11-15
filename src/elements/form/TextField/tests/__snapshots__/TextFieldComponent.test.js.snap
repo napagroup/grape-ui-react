@@ -42,6 +42,22 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   color: rgba(0,0,0,0.3);
 }
 
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
 <TextFieldComponent
   activeColor="brandPrimary"
   borderColor="hsl(0, 0%, 25%)"
@@ -49,9 +65,11 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   color="inherit"
   fontFamily="inherit"
   fontWeight="inherit"
+  isFocused={false}
   kerning="inherit"
   lg={false}
   padding="1rem"
+  placeholderColor="gray.light"
   plainText={false}
   sm={false}
   textAlign="inherit"
@@ -111,6 +129,22 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   color: rgba(0,0,0,0.3);
 }
 
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
 <TextFieldComponent
   activeColor="brandPrimary"
   borderColor="hsl(0, 0%, 25%)"
@@ -118,9 +152,11 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   color="inherit"
   fontFamily="inherit"
   fontWeight="inherit"
+  isFocused={false}
   kerning="inherit"
   lg={true}
   padding="1rem"
+  placeholderColor="gray.light"
   plainText={false}
   sm={false}
   textAlign="inherit"
@@ -180,6 +216,22 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   color: rgba(0,0,0,0.3);
 }
 
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
 <TextFieldComponent
   activeColor="brandPrimary"
   borderColor="hsl(0, 0%, 25%)"
@@ -187,9 +239,11 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   color="inherit"
   fontFamily="inherit"
   fontWeight="inherit"
+  isFocused={false}
   kerning="inherit"
   lg={false}
   padding="1rem"
+  placeholderColor="gray.light"
   plainText={false}
   sm={true}
   textAlign="inherit"

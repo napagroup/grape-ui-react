@@ -47,11 +47,11 @@ export const ControlGroupBase = props => {
   const {
     activeColor,
     assistiveText,
+    children,
     controlLabel,
     controlId,
-    validationError,
-    children,
     disabled,
+    validationError,
     ...otherProps
   } = props;
 
@@ -64,17 +64,27 @@ export const ControlGroupBase = props => {
     return <AssistiveText color="brandDanger" id={`${id}Error`}>{error}</AssistiveText>;
   };
 
-  return (
-    <ControlGroup {...otherProps}>
-      {children}
+  const displayControlLabel = text => {
+    if (!text) {
+      return null;
+    }
+    return (
       <ControlLabel
         activeColor={activeColor}
         bgColor={getBgColor(props)}
         disabled={disabled}
         htmlFor={controlId}
         validationError={validationError}
-      >{controlLabel}
+      >
+        {text}
       </ControlLabel>
+    );
+  };
+
+  return (
+    <ControlGroup {...otherProps}>
+      {children}
+      {displayControlLabel(controlLabel)}
       {displayAssistive(assistiveText, validationError, controlId)}
     </ControlGroup>
   );

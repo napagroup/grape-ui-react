@@ -2,7 +2,7 @@
 
 exports[`SelectField Component base should return a SelectField that contains ControlLabel object 1`] = `"<label class=\\"sc-gzVnrw dIDPmQ\\" for=\\"exampleColor\\">Color</label>"`;
 
-exports[`SelectField Component base should return a SelectField that contains SelectFieldComponent object 1`] = `"<div class=\\"css-10nd86i sc-bwzfXH gYbWzK\\" id=\\"exampleColor\\"><div class=\\"css-vj8t7z\\"><div class=\\"css-1hwfws3\\"><div class=\\"css-xp4uvy\\">Yellow</div><div class=\\"css-1g6gooi\\"><div class=\\"\\" style=\\"display: inline-block;\\"><input autocapitalize=\\"none\\" autocomplete=\\"off\\" autocorrect=\\"off\\" id=\\"react-select-2-input\\" spellcheck=\\"false\\" tabindex=\\"0\\" theme=\\"[object Object]\\" type=\\"text\\" aria-autocomplete=\\"list\\" style=\\"box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;\\" value=\\"\\"><div style=\\"position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;\\"></div></div></div></div><div class=\\"css-1wy0on6\\"><span class=\\"css-d8oujb\\"></span><div aria-hidden=\\"true\\" class=\\"css-1ep9fjw\\"><svg height=\\"20\\" width=\\"20\\" viewBox=\\"0 0 20 20\\" aria-hidden=\\"true\\" focusable=\\"false\\" class=\\"css-19bqh2r\\"><path d=\\"M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z\\"></path></svg></div></div></div></div>"`;
+exports[`SelectField Component base should return a SelectField that contains SelectFieldComponent object 1`] = `"<div class=\\"css-10nd86i sc-bwzfXH grape-ui-select-container cxUDRg\\" id=\\"exampleColor\\"><div class=\\"css-0 grape-ui-select__control\\"><div class=\\"css-1hwfws3 grape-ui-select__value-container grape-ui-select__value-container--has-value\\"><div class=\\"css-0 grape-ui-select__single-value\\">Yellow</div><div class=\\"css-0\\"><div class=\\"grape-ui-select__input\\" style=\\"display: inline-block;\\"><input autocapitalize=\\"none\\" autocomplete=\\"off\\" autocorrect=\\"off\\" id=\\"react-select-2-input\\" spellcheck=\\"false\\" tabindex=\\"0\\" type=\\"text\\" aria-autocomplete=\\"list\\" style=\\"box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;\\" value=\\"\\"><div style=\\"position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;\\"></div></div></div></div><div class=\\"css-1wy0on6 grape-ui-select__indicators\\"><span class=\\"css-d8oujb grape-ui-select__indicator-separator\\"></span><div aria-hidden=\\"true\\" class=\\"css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator\\"><svg height=\\"20\\" width=\\"20\\" viewBox=\\"0 0 20 20\\" aria-hidden=\\"true\\" focusable=\\"false\\" class=\\"css-19bqh2r\\"><path d=\\"M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z\\"></path></svg></div></div></div></div>"`;
 
 exports[`SelectField Component with ControlLabel with * should return a SelectField  with ControlLabel with * 1`] = `"<label class=\\"sc-dxgOiQ gVAwxi\\" for=\\"exampleColor\\">Color*</label>"`;
 
@@ -37,33 +37,6 @@ Object {
     "width": "2px",
   },
   "tabIndex": "0",
-  "theme": Object {
-    "borderRadius": 4,
-    "colors": Object {
-      "danger": "#DE350B",
-      "dangerLight": "#FFBDAD",
-      "neutral0": "hsl(0, 0%, 100%)",
-      "neutral10": "hsl(0, 0%, 90%)",
-      "neutral20": "hsl(0, 0%, 80%)",
-      "neutral30": "hsl(0, 0%, 70%)",
-      "neutral40": "hsl(0, 0%, 60%)",
-      "neutral5": "hsl(0, 0%, 95%)",
-      "neutral50": "hsl(0, 0%, 50%)",
-      "neutral60": "hsl(0, 0%, 40%)",
-      "neutral70": "hsl(0, 0%, 30%)",
-      "neutral80": "hsl(0, 0%, 20%)",
-      "neutral90": "hsl(0, 0%, 10%)",
-      "primary": "#2684FF",
-      "primary25": "#DEEBFF",
-      "primary50": "#B2D4FF",
-      "primary75": "#4C9AFF",
-    },
-    "spacing": Object {
-      "baseUnit": 4,
-      "controlHeight": 38,
-      "menuGutter": 8,
-    },
-  },
   "type": "text",
   "value": "",
 }
@@ -211,6 +184,92 @@ exports[`SelectField Component with space should return a SelectField with space
   color: rgba(0,0,0,0.3);
 }
 
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1 .grape-ui-select__control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 .grape-ui-select__indicator {
+  padding: 0;
+}
+
+.c1 .grape-ui-select__indicator-separator {
+  display: none;
+}
+
+.c1 .grape-ui-select__value-container {
+  padding: 0;
+}
+
+.c1 .grape-ui-select__menu {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding: 0.5rem 0;
+  z-index: 1030;
+  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2);
+}
+
+.c1 .grape-ui-select__option {
+  padding: 0.5rem 1rem;
+}
+
+.c1 .grape-ui-select__option--is-focused {
+  background: hsl(207,90%,54%);
+  color: hsl(0,0%,98%);
+}
+
+.c1 .grape-ui-select__option--is-selected {
+  background: hsl(186.8,100%,41.6%);
+  color: hsl(0,0%,98%);
+}
+
+.c1 .grape-ui-select__placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1 .grape-ui-select__multi-value {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  background-color: hsl(0,0%,90%);
+  font-size: 80%;
+}
+
+.c1 .grape-ui-select__multi-value__label {
+  padding: 0 0.25rem;
+}
+
+.c1 .grape-ui-select__multi-value__remove {
+  cursor: pointer;
+}
+
+.c1 .grape-ui-select__multi-value__remove:hover path {
+  fill: hsl(207,90%,54%);
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   left: 0.5rem;
@@ -251,28 +310,28 @@ exports[`SelectField Component with space should return a SelectField with space
   className="c0"
 >
   <div
-    className="css-10nd86i c1"
+    className="css-10nd86i grape-ui-select-container c1"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-vj8t7z"
+      className="css-0 grape-ui-select__control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-1hwfws3"
+        className="css-1hwfws3 grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
-          className="css-xp4uvy"
+          className="css-0 grape-ui-select__single-value"
         >
           Yellow
         </div>
         <div
-          className="css-1g6gooi"
+          className="css-0"
         >
           <div
-            className=""
+            className="grape-ui-select__input"
             style={
               Object {
                 "display": "inline-block",
@@ -307,35 +366,6 @@ exports[`SelectField Component with space should return a SelectField with space
                 }
               }
               tabIndex="0"
-              theme={
-                Object {
-                  "borderRadius": 4,
-                  "colors": Object {
-                    "danger": "#DE350B",
-                    "dangerLight": "#FFBDAD",
-                    "neutral0": "hsl(0, 0%, 100%)",
-                    "neutral10": "hsl(0, 0%, 90%)",
-                    "neutral20": "hsl(0, 0%, 80%)",
-                    "neutral30": "hsl(0, 0%, 70%)",
-                    "neutral40": "hsl(0, 0%, 60%)",
-                    "neutral5": "hsl(0, 0%, 95%)",
-                    "neutral50": "hsl(0, 0%, 50%)",
-                    "neutral60": "hsl(0, 0%, 40%)",
-                    "neutral70": "hsl(0, 0%, 30%)",
-                    "neutral80": "hsl(0, 0%, 20%)",
-                    "neutral90": "hsl(0, 0%, 10%)",
-                    "primary": "#2684FF",
-                    "primary25": "#DEEBFF",
-                    "primary50": "#B2D4FF",
-                    "primary75": "#4C9AFF",
-                  },
-                  "spacing": Object {
-                    "baseUnit": 4,
-                    "controlHeight": 38,
-                    "menuGutter": 8,
-                  },
-                }
-              }
               type="text"
               value=""
             />
@@ -358,14 +388,14 @@ exports[`SelectField Component with space should return a SelectField with space
         </div>
       </div>
       <div
-        className="css-1wy0on6"
+        className="css-1wy0on6 grape-ui-select__indicators"
       >
         <span
-          className="css-d8oujb"
+          className="css-d8oujb grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-1ep9fjw"
+          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -451,6 +481,92 @@ exports[`SelectField Component with style should return a SelectField with backg
   color: rgba(0,0,0,0.3);
 }
 
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1 .grape-ui-select__control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 .grape-ui-select__indicator {
+  padding: 0;
+}
+
+.c1 .grape-ui-select__indicator-separator {
+  display: none;
+}
+
+.c1 .grape-ui-select__value-container {
+  padding: 0;
+}
+
+.c1 .grape-ui-select__menu {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding: 0.5rem 0;
+  z-index: 1030;
+  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2);
+}
+
+.c1 .grape-ui-select__option {
+  padding: 0.5rem 1rem;
+}
+
+.c1 .grape-ui-select__option--is-focused {
+  background: hsl(207,90%,54%);
+  color: hsl(0,0%,98%);
+}
+
+.c1 .grape-ui-select__option--is-selected {
+  background: hsl(186.8,100%,41.6%);
+  color: hsl(0,0%,98%);
+}
+
+.c1 .grape-ui-select__placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1 .grape-ui-select__multi-value {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  background-color: hsl(0,0%,90%);
+  font-size: 80%;
+}
+
+.c1 .grape-ui-select__multi-value__label {
+  padding: 0 0.25rem;
+}
+
+.c1 .grape-ui-select__multi-value__remove {
+  cursor: pointer;
+}
+
+.c1 .grape-ui-select__multi-value__remove:hover path {
+  fill: hsl(207,90%,54%);
+}
+
 .c2 {
   background-color: hsl(4.1,89.6%,58.4%);
   left: 0.5rem;
@@ -491,28 +607,28 @@ exports[`SelectField Component with style should return a SelectField with backg
   className="c0"
 >
   <div
-    className="css-10nd86i c1"
+    className="css-10nd86i grape-ui-select-container c1"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-vj8t7z"
+      className="css-0 grape-ui-select__control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-1hwfws3"
+        className="css-1hwfws3 grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
-          className="css-xp4uvy"
+          className="css-0 grape-ui-select__single-value"
         >
           Yellow
         </div>
         <div
-          className="css-1g6gooi"
+          className="css-0"
         >
           <div
-            className=""
+            className="grape-ui-select__input"
             style={
               Object {
                 "display": "inline-block",
@@ -547,35 +663,6 @@ exports[`SelectField Component with style should return a SelectField with backg
                 }
               }
               tabIndex="0"
-              theme={
-                Object {
-                  "borderRadius": 4,
-                  "colors": Object {
-                    "danger": "#DE350B",
-                    "dangerLight": "#FFBDAD",
-                    "neutral0": "hsl(0, 0%, 100%)",
-                    "neutral10": "hsl(0, 0%, 90%)",
-                    "neutral20": "hsl(0, 0%, 80%)",
-                    "neutral30": "hsl(0, 0%, 70%)",
-                    "neutral40": "hsl(0, 0%, 60%)",
-                    "neutral5": "hsl(0, 0%, 95%)",
-                    "neutral50": "hsl(0, 0%, 50%)",
-                    "neutral60": "hsl(0, 0%, 40%)",
-                    "neutral70": "hsl(0, 0%, 30%)",
-                    "neutral80": "hsl(0, 0%, 20%)",
-                    "neutral90": "hsl(0, 0%, 10%)",
-                    "primary": "#2684FF",
-                    "primary25": "#DEEBFF",
-                    "primary50": "#B2D4FF",
-                    "primary75": "#4C9AFF",
-                  },
-                  "spacing": Object {
-                    "baseUnit": 4,
-                    "controlHeight": 38,
-                    "menuGutter": 8,
-                  },
-                }
-              }
               type="text"
               value=""
             />
@@ -598,14 +685,14 @@ exports[`SelectField Component with style should return a SelectField with backg
         </div>
       </div>
       <div
-        className="css-1wy0on6"
+        className="css-1wy0on6 grape-ui-select__indicators"
       >
         <span
-          className="css-d8oujb"
+          className="css-d8oujb grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-1ep9fjw"
+          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -691,6 +778,92 @@ exports[`SelectField Component with style should return a SelectField with orang
   color: rgba(0,0,0,0.3);
 }
 
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1 .grape-ui-select__control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 .grape-ui-select__indicator {
+  padding: 0;
+}
+
+.c1 .grape-ui-select__indicator-separator {
+  display: none;
+}
+
+.c1 .grape-ui-select__value-container {
+  padding: 0;
+}
+
+.c1 .grape-ui-select__menu {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding: 0.5rem 0;
+  z-index: 1030;
+  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2);
+}
+
+.c1 .grape-ui-select__option {
+  padding: 0.5rem 1rem;
+}
+
+.c1 .grape-ui-select__option--is-focused {
+  background: hsl(207,90%,54%);
+  color: hsl(0,0%,98%);
+}
+
+.c1 .grape-ui-select__option--is-selected {
+  background: hsl(186.8,100%,41.6%);
+  color: hsl(0,0%,98%);
+}
+
+.c1 .grape-ui-select__placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1 .grape-ui-select__multi-value {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  background-color: hsl(0,0%,90%);
+  font-size: 80%;
+}
+
+.c1 .grape-ui-select__multi-value__label {
+  padding: 0 0.25rem;
+}
+
+.c1 .grape-ui-select__multi-value__remove {
+  cursor: pointer;
+}
+
+.c1 .grape-ui-select__multi-value__remove:hover path {
+  fill: hsl(207,90%,54%);
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   left: 0.5rem;
@@ -731,28 +904,28 @@ exports[`SelectField Component with style should return a SelectField with orang
   className="c0"
 >
   <div
-    className="css-10nd86i c1"
+    className="css-10nd86i grape-ui-select-container c1"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-vj8t7z"
+      className="css-0 grape-ui-select__control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-1hwfws3"
+        className="css-1hwfws3 grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
-          className="css-xp4uvy"
+          className="css-0 grape-ui-select__single-value"
         >
           Yellow
         </div>
         <div
-          className="css-1g6gooi"
+          className="css-0"
         >
           <div
-            className=""
+            className="grape-ui-select__input"
             style={
               Object {
                 "display": "inline-block",
@@ -787,35 +960,6 @@ exports[`SelectField Component with style should return a SelectField with orang
                 }
               }
               tabIndex="0"
-              theme={
-                Object {
-                  "borderRadius": 4,
-                  "colors": Object {
-                    "danger": "#DE350B",
-                    "dangerLight": "#FFBDAD",
-                    "neutral0": "hsl(0, 0%, 100%)",
-                    "neutral10": "hsl(0, 0%, 90%)",
-                    "neutral20": "hsl(0, 0%, 80%)",
-                    "neutral30": "hsl(0, 0%, 70%)",
-                    "neutral40": "hsl(0, 0%, 60%)",
-                    "neutral5": "hsl(0, 0%, 95%)",
-                    "neutral50": "hsl(0, 0%, 50%)",
-                    "neutral60": "hsl(0, 0%, 40%)",
-                    "neutral70": "hsl(0, 0%, 30%)",
-                    "neutral80": "hsl(0, 0%, 20%)",
-                    "neutral90": "hsl(0, 0%, 10%)",
-                    "primary": "#2684FF",
-                    "primary25": "#DEEBFF",
-                    "primary50": "#B2D4FF",
-                    "primary75": "#4C9AFF",
-                  },
-                  "spacing": Object {
-                    "baseUnit": 4,
-                    "controlHeight": 38,
-                    "menuGutter": 8,
-                  },
-                }
-              }
               type="text"
               value=""
             />
@@ -838,14 +982,14 @@ exports[`SelectField Component with style should return a SelectField with orang
         </div>
       </div>
       <div
-        className="css-1wy0on6"
+        className="css-1wy0on6 grape-ui-select__indicators"
       >
         <span
-          className="css-d8oujb"
+          className="css-d8oujb grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-1ep9fjw"
+          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -885,13 +1029,19 @@ Object {
   "activeColor": "brandPrimary",
   "borderColor": "hsl(0, 0%, 25%)",
   "borderRadius": "4px",
+  "chipBg": "white.dark",
   "color": "inherit",
   "fontFamily": "inherit",
   "fontWeight": "inherit",
   "id": "exampleColor",
   "isDisabled": false,
+  "isFocused": false,
   "kerning": "inherit",
   "lg": true,
+  "menuFocusBg": "brandLinkHover",
+  "menuFocusColor": "white",
+  "menuSelectedBg": "brandLink",
+  "menuSelectedColor": "white",
   "multiple": false,
   "options": Array [
     Object {
@@ -911,6 +1061,7 @@ Object {
     },
   ],
   "padding": "1rem",
+  "placeholderColor": "gray.light",
   "sm": false,
   "textAlign": "inherit",
   "textDecoration": "inherit",
@@ -928,13 +1079,19 @@ Object {
   "activeColor": "brandPrimary",
   "borderColor": "hsl(0, 0%, 25%)",
   "borderRadius": "4px",
+  "chipBg": "white.dark",
   "color": "inherit",
   "fontFamily": "inherit",
   "fontWeight": "inherit",
   "id": "exampleColor",
   "isDisabled": false,
+  "isFocused": false,
   "kerning": "inherit",
   "lg": false,
+  "menuFocusBg": "brandLinkHover",
+  "menuFocusColor": "white",
+  "menuSelectedBg": "brandLink",
+  "menuSelectedColor": "white",
   "multiple": false,
   "options": Array [
     Object {
@@ -954,6 +1111,7 @@ Object {
     },
   ],
   "padding": "1rem",
+  "placeholderColor": "gray.light",
   "sm": true,
   "textAlign": "inherit",
   "textDecoration": "inherit",

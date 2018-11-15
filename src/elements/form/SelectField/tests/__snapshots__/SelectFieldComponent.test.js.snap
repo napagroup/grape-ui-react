@@ -42,10 +42,97 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
   color: rgba(0,0,0,0.3);
 }
 
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0 .grape-ui-select__control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .grape-ui-select__indicator {
+  padding: 0;
+}
+
+.c0 .grape-ui-select__indicator-separator {
+  display: none;
+}
+
+.c0 .grape-ui-select__value-container {
+  padding: 0;
+}
+
+.c0 .grape-ui-select__menu {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding: 0.5rem 0;
+  z-index: 1030;
+  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2);
+}
+
+.c0 .grape-ui-select__option {
+  padding: 0.5rem 1rem;
+}
+
+.c0 .grape-ui-select__option--is-focused {
+  background: hsl(207,90%,54%);
+  color: hsl(0,0%,98%);
+}
+
+.c0 .grape-ui-select__option--is-selected {
+  background: hsl(186.8,100%,41.6%);
+  color: hsl(0,0%,98%);
+}
+
+.c0 .grape-ui-select__placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0 .grape-ui-select__multi-value {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  background-color: hsl(0,0%,90%);
+  font-size: 80%;
+}
+
+.c0 .grape-ui-select__multi-value__label {
+  padding: 0 0.25rem;
+}
+
+.c0 .grape-ui-select__multi-value__remove {
+  cursor: pointer;
+}
+
+.c0 .grape-ui-select__multi-value__remove:hover path {
+  fill: hsl(207,90%,54%);
+}
+
 <SelectFieldComponent
   activeColor="brandPrimary"
   borderColor="hsl(0, 0%, 25%)"
   borderRadius="4px"
+  chipBg="white.dark"
   color="inherit"
   defaultValue={
     Object {
@@ -58,8 +145,13 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
   fontWeight="inherit"
   id="exampleColor"
   isDisabled={false}
+  isFocused={false}
   kerning="inherit"
   lg={false}
+  menuFocusBg="brandLinkHover"
+  menuFocusColor="white"
+  menuSelectedBg="brandLink"
+  menuSelectedColor="white"
   multiple={false}
   options={
     Array [
@@ -81,6 +173,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
     ]
   }
   padding="1rem"
+  placeholderColor="gray.light"
   sm={false}
   textAlign="inherit"
   textDecoration="inherit"
@@ -116,7 +209,8 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
     }
   >
     <StateManager
-      className="c0"
+      className="grape-ui-select-container c0"
+      classNamePrefix="grape-ui-select"
       defaultInputValue=""
       defaultMenuIsOpen={false}
       defaultValue={
@@ -148,12 +242,25 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
           },
         ]
       }
+      styles={
+        Object {
+          "control": [Function],
+          "input": [Function],
+          "multiValue": [Function],
+          "multiValueLabel": [Function],
+          "multiValueRemove": [Function],
+          "option": [Function],
+          "placeholder": [Function],
+          "singleValue": [Function],
+        }
+      }
     >
       <Select
         backspaceRemovesValue={true}
         blurInputOnSelect={true}
         captureMenuScroll={false}
-        className="c0"
+        className="grape-ui-select-container c0"
+        classNamePrefix="grape-ui-select"
         closeMenuOnScroll={false}
         closeMenuOnSelect={true}
         components={Object {}}
@@ -217,7 +324,18 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
         pageSize={5}
         placeholder="Select..."
         screenReaderStatus={[Function]}
-        styles={Object {}}
+        styles={
+          Object {
+            "control": [Function],
+            "input": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+            "multiValueRemove": [Function],
+            "option": [Function],
+            "placeholder": [Function],
+            "singleValue": [Function],
+          }
+        }
         tabIndex="0"
         tabSelectsValue={true}
         value={
@@ -229,7 +347,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
         }
       >
         <SelectContainer
-          className="c0"
+          className="grape-ui-select-container c0"
           clearValue={[Function]}
           cx={[Function]}
           getStyles={[Function]}
@@ -270,7 +388,8 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
               "backspaceRemovesValue": true,
               "blurInputOnSelect": true,
               "captureMenuScroll": false,
-              "className": "sc-bdVaJa c0",
+              "className": "sc-bdVaJa grape-ui-select-container c0",
+              "classNamePrefix": "grape-ui-select",
               "closeMenuOnScroll": false,
               "closeMenuOnSelect": true,
               "components": Object {},
@@ -330,7 +449,16 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
               "pageSize": 5,
               "placeholder": "Select...",
               "screenReaderStatus": [Function],
-              "styles": Object {},
+              "styles": Object {
+                "control": [Function],
+                "input": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
+                "multiValueRemove": [Function],
+                "option": [Function],
+                "placeholder": [Function],
+                "singleValue": [Function],
+              },
               "tabIndex": "0",
               "tabSelectsValue": true,
               "value": Object {
@@ -372,7 +500,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
           }
         >
           <div
-            className="css-10nd86i c0"
+            className="css-10nd86i grape-ui-select-container c0"
             id="exampleColor"
             onKeyDown={[Function]}
           >
@@ -418,7 +546,8 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                   "backspaceRemovesValue": true,
                   "blurInputOnSelect": true,
                   "captureMenuScroll": false,
-                  "className": "sc-bdVaJa c0",
+                  "className": "sc-bdVaJa grape-ui-select-container c0",
+                  "classNamePrefix": "grape-ui-select",
                   "closeMenuOnScroll": false,
                   "closeMenuOnSelect": true,
                   "components": Object {},
@@ -478,7 +607,16 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                   "pageSize": 5,
                   "placeholder": "Select...",
                   "screenReaderStatus": [Function],
-                  "styles": Object {},
+                  "styles": Object {
+                    "control": [Function],
+                    "input": [Function],
+                    "multiValue": [Function],
+                    "multiValueLabel": [Function],
+                    "multiValueRemove": [Function],
+                    "option": [Function],
+                    "placeholder": [Function],
+                    "singleValue": [Function],
+                  },
                   "tabIndex": "0",
                   "tabSelectsValue": true,
                   "value": Object {
@@ -520,7 +658,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
               }
             >
               <div
-                className="css-vj8t7z"
+                className="css-0 grape-ui-select__control"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
               >
@@ -558,7 +696,8 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                       "backspaceRemovesValue": true,
                       "blurInputOnSelect": true,
                       "captureMenuScroll": false,
-                      "className": "sc-bdVaJa c0",
+                      "className": "sc-bdVaJa grape-ui-select-container c0",
+                      "classNamePrefix": "grape-ui-select",
                       "closeMenuOnScroll": false,
                       "closeMenuOnSelect": true,
                       "components": Object {},
@@ -618,7 +757,16 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                       "pageSize": 5,
                       "placeholder": "Select...",
                       "screenReaderStatus": [Function],
-                      "styles": Object {},
+                      "styles": Object {
+                        "control": [Function],
+                        "input": [Function],
+                        "multiValue": [Function],
+                        "multiValueLabel": [Function],
+                        "multiValueRemove": [Function],
+                        "option": [Function],
+                        "placeholder": [Function],
+                        "singleValue": [Function],
+                      },
                       "tabIndex": "0",
                       "tabSelectsValue": true,
                       "value": Object {
@@ -660,7 +808,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                   }
                 >
                   <div
-                    className="css-1hwfws3"
+                    className="css-1hwfws3 grape-ui-select__value-container grape-ui-select__value-container--has-value"
                   >
                     <SingleValue
                       clearValue={[Function]}
@@ -703,7 +851,8 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                           "backspaceRemovesValue": true,
                           "blurInputOnSelect": true,
                           "captureMenuScroll": false,
-                          "className": "sc-bdVaJa c0",
+                          "className": "sc-bdVaJa grape-ui-select-container c0",
+                          "classNamePrefix": "grape-ui-select",
                           "closeMenuOnScroll": false,
                           "closeMenuOnSelect": true,
                           "components": Object {},
@@ -763,7 +912,16 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                           "pageSize": 5,
                           "placeholder": "Select...",
                           "screenReaderStatus": [Function],
-                          "styles": Object {},
+                          "styles": Object {
+                            "control": [Function],
+                            "input": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
+                            "option": [Function],
+                            "placeholder": [Function],
+                            "singleValue": [Function],
+                          },
                           "tabIndex": "0",
                           "tabSelectsValue": true,
                           "value": Object {
@@ -805,7 +963,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                       }
                     >
                       <div
-                        className="css-xp4uvy"
+                        className="css-0 grape-ui-select__single-value"
                       >
                         Yellow
                       </div>
@@ -859,14 +1017,14 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                       value=""
                     >
                       <div
-                        className="css-1g6gooi"
+                        className="css-0"
                       >
                         <AutosizeInput
                           aria-autocomplete="list"
                           autoCapitalize="none"
                           autoComplete="off"
                           autoCorrect="off"
-                          className=""
+                          className="grape-ui-select__input"
                           disabled={false}
                           id="react-select-2-input"
                           injectStyles={true}
@@ -888,40 +1046,11 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                           onFocus={[Function]}
                           spellCheck="false"
                           tabIndex="0"
-                          theme={
-                            Object {
-                              "borderRadius": 4,
-                              "colors": Object {
-                                "danger": "#DE350B",
-                                "dangerLight": "#FFBDAD",
-                                "neutral0": "hsl(0, 0%, 100%)",
-                                "neutral10": "hsl(0, 0%, 90%)",
-                                "neutral20": "hsl(0, 0%, 80%)",
-                                "neutral30": "hsl(0, 0%, 70%)",
-                                "neutral40": "hsl(0, 0%, 60%)",
-                                "neutral5": "hsl(0, 0%, 95%)",
-                                "neutral50": "hsl(0, 0%, 50%)",
-                                "neutral60": "hsl(0, 0%, 40%)",
-                                "neutral70": "hsl(0, 0%, 30%)",
-                                "neutral80": "hsl(0, 0%, 20%)",
-                                "neutral90": "hsl(0, 0%, 10%)",
-                                "primary": "#2684FF",
-                                "primary25": "#DEEBFF",
-                                "primary50": "#B2D4FF",
-                                "primary75": "#4C9AFF",
-                              },
-                              "spacing": Object {
-                                "baseUnit": 4,
-                                "controlHeight": 38,
-                                "menuGutter": 8,
-                              },
-                            }
-                          }
                           type="text"
                           value=""
                         >
                           <div
-                            className=""
+                            className="grape-ui-select__input"
                             style={
                               Object {
                                 "display": "inline-block",
@@ -953,35 +1082,6 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                                 }
                               }
                               tabIndex="0"
-                              theme={
-                                Object {
-                                  "borderRadius": 4,
-                                  "colors": Object {
-                                    "danger": "#DE350B",
-                                    "dangerLight": "#FFBDAD",
-                                    "neutral0": "hsl(0, 0%, 100%)",
-                                    "neutral10": "hsl(0, 0%, 90%)",
-                                    "neutral20": "hsl(0, 0%, 80%)",
-                                    "neutral30": "hsl(0, 0%, 70%)",
-                                    "neutral40": "hsl(0, 0%, 60%)",
-                                    "neutral5": "hsl(0, 0%, 95%)",
-                                    "neutral50": "hsl(0, 0%, 50%)",
-                                    "neutral60": "hsl(0, 0%, 40%)",
-                                    "neutral70": "hsl(0, 0%, 30%)",
-                                    "neutral80": "hsl(0, 0%, 20%)",
-                                    "neutral90": "hsl(0, 0%, 10%)",
-                                    "primary": "#2684FF",
-                                    "primary25": "#DEEBFF",
-                                    "primary50": "#B2D4FF",
-                                    "primary75": "#4C9AFF",
-                                  },
-                                  "spacing": Object {
-                                    "baseUnit": 4,
-                                    "controlHeight": 38,
-                                    "menuGutter": 8,
-                                  },
-                                }
-                              }
                               type="text"
                               value=""
                             />
@@ -1038,7 +1138,8 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                       "backspaceRemovesValue": true,
                       "blurInputOnSelect": true,
                       "captureMenuScroll": false,
-                      "className": "sc-bdVaJa c0",
+                      "className": "sc-bdVaJa grape-ui-select-container c0",
+                      "classNamePrefix": "grape-ui-select",
                       "closeMenuOnScroll": false,
                       "closeMenuOnSelect": true,
                       "components": Object {},
@@ -1098,7 +1199,16 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                       "pageSize": 5,
                       "placeholder": "Select...",
                       "screenReaderStatus": [Function],
-                      "styles": Object {},
+                      "styles": Object {
+                        "control": [Function],
+                        "input": [Function],
+                        "multiValue": [Function],
+                        "multiValueLabel": [Function],
+                        "multiValueRemove": [Function],
+                        "option": [Function],
+                        "placeholder": [Function],
+                        "singleValue": [Function],
+                      },
                       "tabIndex": "0",
                       "tabSelectsValue": true,
                       "value": Object {
@@ -1140,7 +1250,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                   }
                 >
                   <div
-                    className="css-1wy0on6"
+                    className="css-1wy0on6 grape-ui-select__indicators"
                   >
                     <IndicatorSeparator
                       clearValue={[Function]}
@@ -1177,7 +1287,8 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                           "backspaceRemovesValue": true,
                           "blurInputOnSelect": true,
                           "captureMenuScroll": false,
-                          "className": "sc-bdVaJa c0",
+                          "className": "sc-bdVaJa grape-ui-select-container c0",
+                          "classNamePrefix": "grape-ui-select",
                           "closeMenuOnScroll": false,
                           "closeMenuOnSelect": true,
                           "components": Object {},
@@ -1237,7 +1348,16 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                           "pageSize": 5,
                           "placeholder": "Select...",
                           "screenReaderStatus": [Function],
-                          "styles": Object {},
+                          "styles": Object {
+                            "control": [Function],
+                            "input": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
+                            "option": [Function],
+                            "placeholder": [Function],
+                            "singleValue": [Function],
+                          },
                           "tabIndex": "0",
                           "tabSelectsValue": true,
                           "value": Object {
@@ -1279,7 +1399,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                       }
                     >
                       <span
-                        className="css-d8oujb"
+                        className="css-d8oujb grape-ui-select__indicator-separator"
                       />
                     </IndicatorSeparator>
                     <DropdownIndicator
@@ -1324,7 +1444,8 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                           "backspaceRemovesValue": true,
                           "blurInputOnSelect": true,
                           "captureMenuScroll": false,
-                          "className": "sc-bdVaJa c0",
+                          "className": "sc-bdVaJa grape-ui-select-container c0",
+                          "classNamePrefix": "grape-ui-select",
                           "closeMenuOnScroll": false,
                           "closeMenuOnSelect": true,
                           "components": Object {},
@@ -1384,7 +1505,16 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                           "pageSize": 5,
                           "placeholder": "Select...",
                           "screenReaderStatus": [Function],
-                          "styles": Object {},
+                          "styles": Object {
+                            "control": [Function],
+                            "input": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
+                            "option": [Function],
+                            "placeholder": [Function],
+                            "singleValue": [Function],
+                          },
                           "tabIndex": "0",
                           "tabSelectsValue": true,
                           "value": Object {
@@ -1427,7 +1557,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
                     >
                       <div
                         aria-hidden="true"
-                        className="css-1ep9fjw"
+                        className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
                         onMouseDown={[Function]}
                         onTouchEnd={[Function]}
                       >
@@ -1505,10 +1635,97 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   color: rgba(0,0,0,0.3);
 }
 
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0 .grape-ui-select__control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .grape-ui-select__indicator {
+  padding: 0;
+}
+
+.c0 .grape-ui-select__indicator-separator {
+  display: none;
+}
+
+.c0 .grape-ui-select__value-container {
+  padding: 0;
+}
+
+.c0 .grape-ui-select__menu {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding: 0.5rem 0;
+  z-index: 1030;
+  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2);
+}
+
+.c0 .grape-ui-select__option {
+  padding: 0.5rem 1rem;
+}
+
+.c0 .grape-ui-select__option--is-focused {
+  background: hsl(207,90%,54%);
+  color: hsl(0,0%,98%);
+}
+
+.c0 .grape-ui-select__option--is-selected {
+  background: hsl(186.8,100%,41.6%);
+  color: hsl(0,0%,98%);
+}
+
+.c0 .grape-ui-select__placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0 .grape-ui-select__multi-value {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  background-color: hsl(0,0%,90%);
+  font-size: 80%;
+}
+
+.c0 .grape-ui-select__multi-value__label {
+  padding: 0 0.25rem;
+}
+
+.c0 .grape-ui-select__multi-value__remove {
+  cursor: pointer;
+}
+
+.c0 .grape-ui-select__multi-value__remove:hover path {
+  fill: hsl(207,90%,54%);
+}
+
 <SelectFieldComponent
   activeColor="brandPrimary"
   borderColor="hsl(0, 0%, 25%)"
   borderRadius="4px"
+  chipBg="white.dark"
   color="inherit"
   defaultValue={
     Object {
@@ -1521,8 +1738,13 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   fontWeight="inherit"
   id="exampleColor"
   isDisabled={false}
+  isFocused={false}
   kerning="inherit"
   lg={true}
+  menuFocusBg="brandLinkHover"
+  menuFocusColor="white"
+  menuSelectedBg="brandLink"
+  menuSelectedColor="white"
   multiple={false}
   options={
     Array [
@@ -1544,6 +1766,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
     ]
   }
   padding="1rem"
+  placeholderColor="gray.light"
   sm={false}
   textAlign="inherit"
   textDecoration="inherit"
@@ -1579,7 +1802,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
     }
   >
     <StateManager
-      className="c0"
+      className="grape-ui-select-container c0"
+      classNamePrefix="grape-ui-select"
       defaultInputValue=""
       defaultMenuIsOpen={false}
       defaultValue={
@@ -1611,12 +1835,25 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
           },
         ]
       }
+      styles={
+        Object {
+          "control": [Function],
+          "input": [Function],
+          "multiValue": [Function],
+          "multiValueLabel": [Function],
+          "multiValueRemove": [Function],
+          "option": [Function],
+          "placeholder": [Function],
+          "singleValue": [Function],
+        }
+      }
     >
       <Select
         backspaceRemovesValue={true}
         blurInputOnSelect={true}
         captureMenuScroll={false}
-        className="c0"
+        className="grape-ui-select-container c0"
+        classNamePrefix="grape-ui-select"
         closeMenuOnScroll={false}
         closeMenuOnSelect={true}
         components={Object {}}
@@ -1680,7 +1917,18 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
         pageSize={5}
         placeholder="Select..."
         screenReaderStatus={[Function]}
-        styles={Object {}}
+        styles={
+          Object {
+            "control": [Function],
+            "input": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+            "multiValueRemove": [Function],
+            "option": [Function],
+            "placeholder": [Function],
+            "singleValue": [Function],
+          }
+        }
         tabIndex="0"
         tabSelectsValue={true}
         value={
@@ -1692,7 +1940,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
         }
       >
         <SelectContainer
-          className="c0"
+          className="grape-ui-select-container c0"
           clearValue={[Function]}
           cx={[Function]}
           getStyles={[Function]}
@@ -1733,7 +1981,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
               "backspaceRemovesValue": true,
               "blurInputOnSelect": true,
               "captureMenuScroll": false,
-              "className": "sc-bwzfXH c0",
+              "className": "sc-bwzfXH grape-ui-select-container c0",
+              "classNamePrefix": "grape-ui-select",
               "closeMenuOnScroll": false,
               "closeMenuOnSelect": true,
               "components": Object {},
@@ -1793,7 +2042,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
               "pageSize": 5,
               "placeholder": "Select...",
               "screenReaderStatus": [Function],
-              "styles": Object {},
+              "styles": Object {
+                "control": [Function],
+                "input": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
+                "multiValueRemove": [Function],
+                "option": [Function],
+                "placeholder": [Function],
+                "singleValue": [Function],
+              },
               "tabIndex": "0",
               "tabSelectsValue": true,
               "value": Object {
@@ -1835,7 +2093,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
           }
         >
           <div
-            className="css-10nd86i c0"
+            className="css-10nd86i grape-ui-select-container c0"
             id="exampleColor"
             onKeyDown={[Function]}
           >
@@ -1881,7 +2139,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                   "backspaceRemovesValue": true,
                   "blurInputOnSelect": true,
                   "captureMenuScroll": false,
-                  "className": "sc-bwzfXH c0",
+                  "className": "sc-bwzfXH grape-ui-select-container c0",
+                  "classNamePrefix": "grape-ui-select",
                   "closeMenuOnScroll": false,
                   "closeMenuOnSelect": true,
                   "components": Object {},
@@ -1941,7 +2200,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                   "pageSize": 5,
                   "placeholder": "Select...",
                   "screenReaderStatus": [Function],
-                  "styles": Object {},
+                  "styles": Object {
+                    "control": [Function],
+                    "input": [Function],
+                    "multiValue": [Function],
+                    "multiValueLabel": [Function],
+                    "multiValueRemove": [Function],
+                    "option": [Function],
+                    "placeholder": [Function],
+                    "singleValue": [Function],
+                  },
                   "tabIndex": "0",
                   "tabSelectsValue": true,
                   "value": Object {
@@ -1983,7 +2251,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
               }
             >
               <div
-                className="css-vj8t7z"
+                className="css-0 grape-ui-select__control"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
               >
@@ -2021,7 +2289,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       "backspaceRemovesValue": true,
                       "blurInputOnSelect": true,
                       "captureMenuScroll": false,
-                      "className": "sc-bwzfXH c0",
+                      "className": "sc-bwzfXH grape-ui-select-container c0",
+                      "classNamePrefix": "grape-ui-select",
                       "closeMenuOnScroll": false,
                       "closeMenuOnSelect": true,
                       "components": Object {},
@@ -2081,7 +2350,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       "pageSize": 5,
                       "placeholder": "Select...",
                       "screenReaderStatus": [Function],
-                      "styles": Object {},
+                      "styles": Object {
+                        "control": [Function],
+                        "input": [Function],
+                        "multiValue": [Function],
+                        "multiValueLabel": [Function],
+                        "multiValueRemove": [Function],
+                        "option": [Function],
+                        "placeholder": [Function],
+                        "singleValue": [Function],
+                      },
                       "tabIndex": "0",
                       "tabSelectsValue": true,
                       "value": Object {
@@ -2123,7 +2401,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                   }
                 >
                   <div
-                    className="css-1hwfws3"
+                    className="css-1hwfws3 grape-ui-select__value-container grape-ui-select__value-container--has-value"
                   >
                     <SingleValue
                       clearValue={[Function]}
@@ -2166,7 +2444,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "backspaceRemovesValue": true,
                           "blurInputOnSelect": true,
                           "captureMenuScroll": false,
-                          "className": "sc-bwzfXH c0",
+                          "className": "sc-bwzfXH grape-ui-select-container c0",
+                          "classNamePrefix": "grape-ui-select",
                           "closeMenuOnScroll": false,
                           "closeMenuOnSelect": true,
                           "components": Object {},
@@ -2226,7 +2505,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "pageSize": 5,
                           "placeholder": "Select...",
                           "screenReaderStatus": [Function],
-                          "styles": Object {},
+                          "styles": Object {
+                            "control": [Function],
+                            "input": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
+                            "option": [Function],
+                            "placeholder": [Function],
+                            "singleValue": [Function],
+                          },
                           "tabIndex": "0",
                           "tabSelectsValue": true,
                           "value": Object {
@@ -2268,7 +2556,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       }
                     >
                       <div
-                        className="css-xp4uvy"
+                        className="css-0 grape-ui-select__single-value"
                       >
                         Yellow
                       </div>
@@ -2322,14 +2610,14 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       value=""
                     >
                       <div
-                        className="css-1g6gooi"
+                        className="css-0"
                       >
                         <AutosizeInput
                           aria-autocomplete="list"
                           autoCapitalize="none"
                           autoComplete="off"
                           autoCorrect="off"
-                          className=""
+                          className="grape-ui-select__input"
                           disabled={false}
                           id="react-select-3-input"
                           injectStyles={true}
@@ -2351,40 +2639,11 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           onFocus={[Function]}
                           spellCheck="false"
                           tabIndex="0"
-                          theme={
-                            Object {
-                              "borderRadius": 4,
-                              "colors": Object {
-                                "danger": "#DE350B",
-                                "dangerLight": "#FFBDAD",
-                                "neutral0": "hsl(0, 0%, 100%)",
-                                "neutral10": "hsl(0, 0%, 90%)",
-                                "neutral20": "hsl(0, 0%, 80%)",
-                                "neutral30": "hsl(0, 0%, 70%)",
-                                "neutral40": "hsl(0, 0%, 60%)",
-                                "neutral5": "hsl(0, 0%, 95%)",
-                                "neutral50": "hsl(0, 0%, 50%)",
-                                "neutral60": "hsl(0, 0%, 40%)",
-                                "neutral70": "hsl(0, 0%, 30%)",
-                                "neutral80": "hsl(0, 0%, 20%)",
-                                "neutral90": "hsl(0, 0%, 10%)",
-                                "primary": "#2684FF",
-                                "primary25": "#DEEBFF",
-                                "primary50": "#B2D4FF",
-                                "primary75": "#4C9AFF",
-                              },
-                              "spacing": Object {
-                                "baseUnit": 4,
-                                "controlHeight": 38,
-                                "menuGutter": 8,
-                              },
-                            }
-                          }
                           type="text"
                           value=""
                         >
                           <div
-                            className=""
+                            className="grape-ui-select__input"
                             style={
                               Object {
                                 "display": "inline-block",
@@ -2416,35 +2675,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                                 }
                               }
                               tabIndex="0"
-                              theme={
-                                Object {
-                                  "borderRadius": 4,
-                                  "colors": Object {
-                                    "danger": "#DE350B",
-                                    "dangerLight": "#FFBDAD",
-                                    "neutral0": "hsl(0, 0%, 100%)",
-                                    "neutral10": "hsl(0, 0%, 90%)",
-                                    "neutral20": "hsl(0, 0%, 80%)",
-                                    "neutral30": "hsl(0, 0%, 70%)",
-                                    "neutral40": "hsl(0, 0%, 60%)",
-                                    "neutral5": "hsl(0, 0%, 95%)",
-                                    "neutral50": "hsl(0, 0%, 50%)",
-                                    "neutral60": "hsl(0, 0%, 40%)",
-                                    "neutral70": "hsl(0, 0%, 30%)",
-                                    "neutral80": "hsl(0, 0%, 20%)",
-                                    "neutral90": "hsl(0, 0%, 10%)",
-                                    "primary": "#2684FF",
-                                    "primary25": "#DEEBFF",
-                                    "primary50": "#B2D4FF",
-                                    "primary75": "#4C9AFF",
-                                  },
-                                  "spacing": Object {
-                                    "baseUnit": 4,
-                                    "controlHeight": 38,
-                                    "menuGutter": 8,
-                                  },
-                                }
-                              }
                               type="text"
                               value=""
                             />
@@ -2501,7 +2731,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       "backspaceRemovesValue": true,
                       "blurInputOnSelect": true,
                       "captureMenuScroll": false,
-                      "className": "sc-bwzfXH c0",
+                      "className": "sc-bwzfXH grape-ui-select-container c0",
+                      "classNamePrefix": "grape-ui-select",
                       "closeMenuOnScroll": false,
                       "closeMenuOnSelect": true,
                       "components": Object {},
@@ -2561,7 +2792,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       "pageSize": 5,
                       "placeholder": "Select...",
                       "screenReaderStatus": [Function],
-                      "styles": Object {},
+                      "styles": Object {
+                        "control": [Function],
+                        "input": [Function],
+                        "multiValue": [Function],
+                        "multiValueLabel": [Function],
+                        "multiValueRemove": [Function],
+                        "option": [Function],
+                        "placeholder": [Function],
+                        "singleValue": [Function],
+                      },
                       "tabIndex": "0",
                       "tabSelectsValue": true,
                       "value": Object {
@@ -2603,7 +2843,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                   }
                 >
                   <div
-                    className="css-1wy0on6"
+                    className="css-1wy0on6 grape-ui-select__indicators"
                   >
                     <IndicatorSeparator
                       clearValue={[Function]}
@@ -2640,7 +2880,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "backspaceRemovesValue": true,
                           "blurInputOnSelect": true,
                           "captureMenuScroll": false,
-                          "className": "sc-bwzfXH c0",
+                          "className": "sc-bwzfXH grape-ui-select-container c0",
+                          "classNamePrefix": "grape-ui-select",
                           "closeMenuOnScroll": false,
                           "closeMenuOnSelect": true,
                           "components": Object {},
@@ -2700,7 +2941,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "pageSize": 5,
                           "placeholder": "Select...",
                           "screenReaderStatus": [Function],
-                          "styles": Object {},
+                          "styles": Object {
+                            "control": [Function],
+                            "input": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
+                            "option": [Function],
+                            "placeholder": [Function],
+                            "singleValue": [Function],
+                          },
                           "tabIndex": "0",
                           "tabSelectsValue": true,
                           "value": Object {
@@ -2742,7 +2992,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       }
                     >
                       <span
-                        className="css-d8oujb"
+                        className="css-d8oujb grape-ui-select__indicator-separator"
                       />
                     </IndicatorSeparator>
                     <DropdownIndicator
@@ -2787,7 +3037,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "backspaceRemovesValue": true,
                           "blurInputOnSelect": true,
                           "captureMenuScroll": false,
-                          "className": "sc-bwzfXH c0",
+                          "className": "sc-bwzfXH grape-ui-select-container c0",
+                          "classNamePrefix": "grape-ui-select",
                           "closeMenuOnScroll": false,
                           "closeMenuOnSelect": true,
                           "components": Object {},
@@ -2847,7 +3098,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "pageSize": 5,
                           "placeholder": "Select...",
                           "screenReaderStatus": [Function],
-                          "styles": Object {},
+                          "styles": Object {
+                            "control": [Function],
+                            "input": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
+                            "option": [Function],
+                            "placeholder": [Function],
+                            "singleValue": [Function],
+                          },
                           "tabIndex": "0",
                           "tabSelectsValue": true,
                           "value": Object {
@@ -2890,7 +3150,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                     >
                       <div
                         aria-hidden="true"
-                        className="css-1ep9fjw"
+                        className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
                         onMouseDown={[Function]}
                         onTouchEnd={[Function]}
                       >
@@ -2968,10 +3228,97 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   color: rgba(0,0,0,0.3);
 }
 
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0 .grape-ui-select__control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .grape-ui-select__indicator {
+  padding: 0;
+}
+
+.c0 .grape-ui-select__indicator-separator {
+  display: none;
+}
+
+.c0 .grape-ui-select__value-container {
+  padding: 0;
+}
+
+.c0 .grape-ui-select__menu {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding: 0.5rem 0;
+  z-index: 1030;
+  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2);
+}
+
+.c0 .grape-ui-select__option {
+  padding: 0.5rem 1rem;
+}
+
+.c0 .grape-ui-select__option--is-focused {
+  background: hsl(207,90%,54%);
+  color: hsl(0,0%,98%);
+}
+
+.c0 .grape-ui-select__option--is-selected {
+  background: hsl(186.8,100%,41.6%);
+  color: hsl(0,0%,98%);
+}
+
+.c0 .grape-ui-select__placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0 .grape-ui-select__multi-value {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  background-color: hsl(0,0%,90%);
+  font-size: 80%;
+}
+
+.c0 .grape-ui-select__multi-value__label {
+  padding: 0 0.25rem;
+}
+
+.c0 .grape-ui-select__multi-value__remove {
+  cursor: pointer;
+}
+
+.c0 .grape-ui-select__multi-value__remove:hover path {
+  fill: hsl(207,90%,54%);
+}
+
 <SelectFieldComponent
   activeColor="brandPrimary"
   borderColor="hsl(0, 0%, 25%)"
   borderRadius="4px"
+  chipBg="white.dark"
   color="inherit"
   defaultValue={
     Object {
@@ -2984,8 +3331,13 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   fontWeight="inherit"
   id="exampleColor"
   isDisabled={false}
+  isFocused={false}
   kerning="inherit"
   lg={false}
+  menuFocusBg="brandLinkHover"
+  menuFocusColor="white"
+  menuSelectedBg="brandLink"
+  menuSelectedColor="white"
   multiple={false}
   options={
     Array [
@@ -3007,6 +3359,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
     ]
   }
   padding="1rem"
+  placeholderColor="gray.light"
   sm={true}
   textAlign="inherit"
   textDecoration="inherit"
@@ -3042,7 +3395,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
     }
   >
     <StateManager
-      className="c0"
+      className="grape-ui-select-container c0"
+      classNamePrefix="grape-ui-select"
       defaultInputValue=""
       defaultMenuIsOpen={false}
       defaultValue={
@@ -3074,12 +3428,25 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
           },
         ]
       }
+      styles={
+        Object {
+          "control": [Function],
+          "input": [Function],
+          "multiValue": [Function],
+          "multiValueLabel": [Function],
+          "multiValueRemove": [Function],
+          "option": [Function],
+          "placeholder": [Function],
+          "singleValue": [Function],
+        }
+      }
     >
       <Select
         backspaceRemovesValue={true}
         blurInputOnSelect={true}
         captureMenuScroll={false}
-        className="c0"
+        className="grape-ui-select-container c0"
+        classNamePrefix="grape-ui-select"
         closeMenuOnScroll={false}
         closeMenuOnSelect={true}
         components={Object {}}
@@ -3143,7 +3510,18 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
         pageSize={5}
         placeholder="Select..."
         screenReaderStatus={[Function]}
-        styles={Object {}}
+        styles={
+          Object {
+            "control": [Function],
+            "input": [Function],
+            "multiValue": [Function],
+            "multiValueLabel": [Function],
+            "multiValueRemove": [Function],
+            "option": [Function],
+            "placeholder": [Function],
+            "singleValue": [Function],
+          }
+        }
         tabIndex="0"
         tabSelectsValue={true}
         value={
@@ -3155,7 +3533,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
         }
       >
         <SelectContainer
-          className="c0"
+          className="grape-ui-select-container c0"
           clearValue={[Function]}
           cx={[Function]}
           getStyles={[Function]}
@@ -3196,7 +3574,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
               "backspaceRemovesValue": true,
               "blurInputOnSelect": true,
               "captureMenuScroll": false,
-              "className": "sc-htpNat c0",
+              "className": "sc-htpNat grape-ui-select-container c0",
+              "classNamePrefix": "grape-ui-select",
               "closeMenuOnScroll": false,
               "closeMenuOnSelect": true,
               "components": Object {},
@@ -3256,7 +3635,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
               "pageSize": 5,
               "placeholder": "Select...",
               "screenReaderStatus": [Function],
-              "styles": Object {},
+              "styles": Object {
+                "control": [Function],
+                "input": [Function],
+                "multiValue": [Function],
+                "multiValueLabel": [Function],
+                "multiValueRemove": [Function],
+                "option": [Function],
+                "placeholder": [Function],
+                "singleValue": [Function],
+              },
               "tabIndex": "0",
               "tabSelectsValue": true,
               "value": Object {
@@ -3298,7 +3686,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
           }
         >
           <div
-            className="css-10nd86i c0"
+            className="css-10nd86i grape-ui-select-container c0"
             id="exampleColor"
             onKeyDown={[Function]}
           >
@@ -3344,7 +3732,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                   "backspaceRemovesValue": true,
                   "blurInputOnSelect": true,
                   "captureMenuScroll": false,
-                  "className": "sc-htpNat c0",
+                  "className": "sc-htpNat grape-ui-select-container c0",
+                  "classNamePrefix": "grape-ui-select",
                   "closeMenuOnScroll": false,
                   "closeMenuOnSelect": true,
                   "components": Object {},
@@ -3404,7 +3793,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                   "pageSize": 5,
                   "placeholder": "Select...",
                   "screenReaderStatus": [Function],
-                  "styles": Object {},
+                  "styles": Object {
+                    "control": [Function],
+                    "input": [Function],
+                    "multiValue": [Function],
+                    "multiValueLabel": [Function],
+                    "multiValueRemove": [Function],
+                    "option": [Function],
+                    "placeholder": [Function],
+                    "singleValue": [Function],
+                  },
                   "tabIndex": "0",
                   "tabSelectsValue": true,
                   "value": Object {
@@ -3446,7 +3844,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
               }
             >
               <div
-                className="css-vj8t7z"
+                className="css-0 grape-ui-select__control"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
               >
@@ -3484,7 +3882,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       "backspaceRemovesValue": true,
                       "blurInputOnSelect": true,
                       "captureMenuScroll": false,
-                      "className": "sc-htpNat c0",
+                      "className": "sc-htpNat grape-ui-select-container c0",
+                      "classNamePrefix": "grape-ui-select",
                       "closeMenuOnScroll": false,
                       "closeMenuOnSelect": true,
                       "components": Object {},
@@ -3544,7 +3943,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       "pageSize": 5,
                       "placeholder": "Select...",
                       "screenReaderStatus": [Function],
-                      "styles": Object {},
+                      "styles": Object {
+                        "control": [Function],
+                        "input": [Function],
+                        "multiValue": [Function],
+                        "multiValueLabel": [Function],
+                        "multiValueRemove": [Function],
+                        "option": [Function],
+                        "placeholder": [Function],
+                        "singleValue": [Function],
+                      },
                       "tabIndex": "0",
                       "tabSelectsValue": true,
                       "value": Object {
@@ -3586,7 +3994,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                   }
                 >
                   <div
-                    className="css-1hwfws3"
+                    className="css-1hwfws3 grape-ui-select__value-container grape-ui-select__value-container--has-value"
                   >
                     <SingleValue
                       clearValue={[Function]}
@@ -3629,7 +4037,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "backspaceRemovesValue": true,
                           "blurInputOnSelect": true,
                           "captureMenuScroll": false,
-                          "className": "sc-htpNat c0",
+                          "className": "sc-htpNat grape-ui-select-container c0",
+                          "classNamePrefix": "grape-ui-select",
                           "closeMenuOnScroll": false,
                           "closeMenuOnSelect": true,
                           "components": Object {},
@@ -3689,7 +4098,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "pageSize": 5,
                           "placeholder": "Select...",
                           "screenReaderStatus": [Function],
-                          "styles": Object {},
+                          "styles": Object {
+                            "control": [Function],
+                            "input": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
+                            "option": [Function],
+                            "placeholder": [Function],
+                            "singleValue": [Function],
+                          },
                           "tabIndex": "0",
                           "tabSelectsValue": true,
                           "value": Object {
@@ -3731,7 +4149,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       }
                     >
                       <div
-                        className="css-xp4uvy"
+                        className="css-0 grape-ui-select__single-value"
                       >
                         Yellow
                       </div>
@@ -3785,14 +4203,14 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       value=""
                     >
                       <div
-                        className="css-1g6gooi"
+                        className="css-0"
                       >
                         <AutosizeInput
                           aria-autocomplete="list"
                           autoCapitalize="none"
                           autoComplete="off"
                           autoCorrect="off"
-                          className=""
+                          className="grape-ui-select__input"
                           disabled={false}
                           id="react-select-4-input"
                           injectStyles={true}
@@ -3814,40 +4232,11 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           onFocus={[Function]}
                           spellCheck="false"
                           tabIndex="0"
-                          theme={
-                            Object {
-                              "borderRadius": 4,
-                              "colors": Object {
-                                "danger": "#DE350B",
-                                "dangerLight": "#FFBDAD",
-                                "neutral0": "hsl(0, 0%, 100%)",
-                                "neutral10": "hsl(0, 0%, 90%)",
-                                "neutral20": "hsl(0, 0%, 80%)",
-                                "neutral30": "hsl(0, 0%, 70%)",
-                                "neutral40": "hsl(0, 0%, 60%)",
-                                "neutral5": "hsl(0, 0%, 95%)",
-                                "neutral50": "hsl(0, 0%, 50%)",
-                                "neutral60": "hsl(0, 0%, 40%)",
-                                "neutral70": "hsl(0, 0%, 30%)",
-                                "neutral80": "hsl(0, 0%, 20%)",
-                                "neutral90": "hsl(0, 0%, 10%)",
-                                "primary": "#2684FF",
-                                "primary25": "#DEEBFF",
-                                "primary50": "#B2D4FF",
-                                "primary75": "#4C9AFF",
-                              },
-                              "spacing": Object {
-                                "baseUnit": 4,
-                                "controlHeight": 38,
-                                "menuGutter": 8,
-                              },
-                            }
-                          }
                           type="text"
                           value=""
                         >
                           <div
-                            className=""
+                            className="grape-ui-select__input"
                             style={
                               Object {
                                 "display": "inline-block",
@@ -3879,35 +4268,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                                 }
                               }
                               tabIndex="0"
-                              theme={
-                                Object {
-                                  "borderRadius": 4,
-                                  "colors": Object {
-                                    "danger": "#DE350B",
-                                    "dangerLight": "#FFBDAD",
-                                    "neutral0": "hsl(0, 0%, 100%)",
-                                    "neutral10": "hsl(0, 0%, 90%)",
-                                    "neutral20": "hsl(0, 0%, 80%)",
-                                    "neutral30": "hsl(0, 0%, 70%)",
-                                    "neutral40": "hsl(0, 0%, 60%)",
-                                    "neutral5": "hsl(0, 0%, 95%)",
-                                    "neutral50": "hsl(0, 0%, 50%)",
-                                    "neutral60": "hsl(0, 0%, 40%)",
-                                    "neutral70": "hsl(0, 0%, 30%)",
-                                    "neutral80": "hsl(0, 0%, 20%)",
-                                    "neutral90": "hsl(0, 0%, 10%)",
-                                    "primary": "#2684FF",
-                                    "primary25": "#DEEBFF",
-                                    "primary50": "#B2D4FF",
-                                    "primary75": "#4C9AFF",
-                                  },
-                                  "spacing": Object {
-                                    "baseUnit": 4,
-                                    "controlHeight": 38,
-                                    "menuGutter": 8,
-                                  },
-                                }
-                              }
                               type="text"
                               value=""
                             />
@@ -3964,7 +4324,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       "backspaceRemovesValue": true,
                       "blurInputOnSelect": true,
                       "captureMenuScroll": false,
-                      "className": "sc-htpNat c0",
+                      "className": "sc-htpNat grape-ui-select-container c0",
+                      "classNamePrefix": "grape-ui-select",
                       "closeMenuOnScroll": false,
                       "closeMenuOnSelect": true,
                       "components": Object {},
@@ -4024,7 +4385,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       "pageSize": 5,
                       "placeholder": "Select...",
                       "screenReaderStatus": [Function],
-                      "styles": Object {},
+                      "styles": Object {
+                        "control": [Function],
+                        "input": [Function],
+                        "multiValue": [Function],
+                        "multiValueLabel": [Function],
+                        "multiValueRemove": [Function],
+                        "option": [Function],
+                        "placeholder": [Function],
+                        "singleValue": [Function],
+                      },
                       "tabIndex": "0",
                       "tabSelectsValue": true,
                       "value": Object {
@@ -4066,7 +4436,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                   }
                 >
                   <div
-                    className="css-1wy0on6"
+                    className="css-1wy0on6 grape-ui-select__indicators"
                   >
                     <IndicatorSeparator
                       clearValue={[Function]}
@@ -4103,7 +4473,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "backspaceRemovesValue": true,
                           "blurInputOnSelect": true,
                           "captureMenuScroll": false,
-                          "className": "sc-htpNat c0",
+                          "className": "sc-htpNat grape-ui-select-container c0",
+                          "classNamePrefix": "grape-ui-select",
                           "closeMenuOnScroll": false,
                           "closeMenuOnSelect": true,
                           "components": Object {},
@@ -4163,7 +4534,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "pageSize": 5,
                           "placeholder": "Select...",
                           "screenReaderStatus": [Function],
-                          "styles": Object {},
+                          "styles": Object {
+                            "control": [Function],
+                            "input": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
+                            "option": [Function],
+                            "placeholder": [Function],
+                            "singleValue": [Function],
+                          },
                           "tabIndex": "0",
                           "tabSelectsValue": true,
                           "value": Object {
@@ -4205,7 +4585,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                       }
                     >
                       <span
-                        className="css-d8oujb"
+                        className="css-d8oujb grape-ui-select__indicator-separator"
                       />
                     </IndicatorSeparator>
                     <DropdownIndicator
@@ -4250,7 +4630,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "backspaceRemovesValue": true,
                           "blurInputOnSelect": true,
                           "captureMenuScroll": false,
-                          "className": "sc-htpNat c0",
+                          "className": "sc-htpNat grape-ui-select-container c0",
+                          "classNamePrefix": "grape-ui-select",
                           "closeMenuOnScroll": false,
                           "closeMenuOnSelect": true,
                           "components": Object {},
@@ -4310,7 +4691,16 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                           "pageSize": 5,
                           "placeholder": "Select...",
                           "screenReaderStatus": [Function],
-                          "styles": Object {},
+                          "styles": Object {
+                            "control": [Function],
+                            "input": [Function],
+                            "multiValue": [Function],
+                            "multiValueLabel": [Function],
+                            "multiValueRemove": [Function],
+                            "option": [Function],
+                            "placeholder": [Function],
+                            "singleValue": [Function],
+                          },
                           "tabIndex": "0",
                           "tabSelectsValue": true,
                           "value": Object {
@@ -4353,7 +4743,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
                     >
                       <div
                         aria-hidden="true"
-                        className="css-1ep9fjw"
+                        className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
                         onMouseDown={[Function]}
                         onTouchEnd={[Function]}
                       >

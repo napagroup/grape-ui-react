@@ -2,7 +2,7 @@ import { getGlobalStyles } from 'src/global-styles';
 import { isKeyNestedProp, resolveToProperty } from 'src/utils/objectHelpers';
 import except from 'except';
 
-const { colors: colorSchema } = getGlobalStyles();
+const { colors: colorSchema, shadow: shadowSchema, zIndex: zIndexSchema } = getGlobalStyles();
 const defaultValue = 'inherit';
 
 const resolveColor = color => {
@@ -27,4 +27,29 @@ const addPassthroughMethod = component => {
   };
 };
 
-export { resolveColor, passThrough, addPassthroughMethod, removeSomeProps };
+const resolveBoxShadow = depth => {
+  if (!depth || typeof depth !== 'string') {
+    return defaultValue;
+  }
+  const resolvedBoxShadow = resolveToProperty(depth, shadowSchema);
+  return resolvedBoxShadow || defaultValue;
+};
+
+const resolveZIndex = depth => {
+  if (!depth || typeof depth !== 'string') {
+    return defaultValue;
+  }
+  const resolvedZIndex = resolveToProperty(depth, zIndexSchema);
+  return resolvedZIndex || defaultValue;
+};
+
+const resolveElevation = depth => {
+  if (!depth || typeof depth !== 'string') {
+    return defaultValue;
+  }
+  const resolvedBoxShadow = resolveBoxShadow(depth);
+  const resolvedZIndex = resolveZIndex(depth);
+  return `z-index: ${resolvedZIndex}; box-shadow: ${resolvedBoxShadow}` || defaultValue;
+};
+
+export { resolveBoxShadow, resolveColor, resolveElevation, resolveZIndex, passThrough, addPassthroughMethod, removeSomeProps };
