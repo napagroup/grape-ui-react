@@ -11,14 +11,14 @@ exports[`Assistive Text Component base should return an Assistive Text object 1`
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
+  color: hsl(0,0%,50%);
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
 }
 
 <AssistiveText
-  color="inherit"
+  color="gray"
   fontFamily="inherit"
   fontWeight="inherit"
   id="assitiveTextIdHelp"

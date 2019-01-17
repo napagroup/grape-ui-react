@@ -14,7 +14,10 @@ export const AssistiveText = props => {
     ...props,
     sm: true,
   };
-  const ProtoAssistiveText = withBaseStyles(styled.div`padding: 0 ${padding};`, overrides);
+  const baseStyles = `
+    padding: 0 ${padding};
+  `;
+  const ProtoAssistiveText = withBaseStyles(styled.div`${baseStyles}`, overrides);
   return <ProtoAssistiveText {...passThrough(AssistiveText, props)} />;
 };
 
@@ -30,7 +33,7 @@ AssistiveText.propTypes = {
 };
 
 AssistiveText.defaultProps = {
-  color: defaultTextStylesBase.color,
+  color: 'gray',
   fontFamily: defaultTextStylesBase.fontFamily,
   fontWeight: defaultTextStylesBase.fontWeight,
   kerning: defaultTextStylesBase.kerning,
