@@ -86,4 +86,5 @@ StyledReactRouterLink.defaultProps = {
   textDecoration: 'none',
 };
 
+Link.Router = StyledReactRouterLink;
 export { Link, StyledReactRouterLink };
