@@ -1,14 +1,22 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { defaultTextStylesBase, textStylesBase } from './textStyles';
 import { getGlobalStyles } from 'src/global-styles';
 import { getScaledSize } from './utils';
-import { passThrough } from '../../utils/componentHelpers';
+import {
+  getFontFamily,
+  getFontSize,
+  getFontWeight,
+  getLetterSpacing,
+  getLineHeight,
+  getFontStyle,
+  getColor,
+  getTextAlign,
+  getTextDecoration,
+} from './textStyles';
 
 const { grid: gridSchema } = getGlobalStyles();
 
-const getInLineStyles = inline => {
+const getInLineStyles = props => {
   const inlineStyles = `
     > li {
       display: inline-block;
@@ -17,25 +25,36 @@ const getInLineStyles = inline => {
       }
     }
   `;
-  return `${inline ? inlineStyles : ''}`;
+  return `${props.inline ? inlineStyles : ''}`;
 };
 
-const ListFactory = props => {
-  const {
-    inline, unstyled, tag: listTag,
-  } = props;
-  const tag = listTag || 'ul';
-  const ProtoList = styled[tag]`
-    ${textStylesBase(props)}
+const getPaddingLeft = props => `padding-left:  ${(props.unstyled || props.inline) ? '0' : '2.5rem'};`;
+const getListStyle = props => `${props.unstyled ? '> li { list-style: none; }' : ''}`;
+
+const ListFactory = factoryProps => {
+  const { tag } = factoryProps;
+  return styled[tag]`
+    ${getFontFamily}
+    ${getFontSize}
+    ${getFontWeight}
+    ${getLetterSpacing}
+    ${getLineHeight}
+    ${getFontStyle}
+    ${getColor}
+    ${getTextAlign}
+    ${getTextDecoration}
     margin: 0 0 ${gridSchema.gutter};
-    padding-left:  ${(unstyled || inline) ? '0' : '2.5rem'};
-    ${unstyled ? '> li { list-style: none; }' : ''}
-    ${getInLineStyles(inline)}
-  `;
-  return <ProtoList {...passThrough(ListFactory, props)} />;
+    ${getPaddingLeft}
+    ${getListStyle}
+    ${getInLineStyles}
+    `;
 };
 
-ListFactory.propTypes = {
+const List = ListFactory({ tag: 'ul' });
+
+List.ul = List;
+List.ol = ListFactory({ tag: 'ol' });
+List.propTypes = {
   color: PropTypes.string,
   display: PropTypes.bool,
   fontFamily: PropTypes.string,
@@ -44,30 +63,8 @@ ListFactory.propTypes = {
   kerning: PropTypes.string,
   lg: PropTypes.bool,
   sm: PropTypes.bool,
-  tag: PropTypes.string,
   textAlign: PropTypes.string,
   textDecoration: PropTypes.string,
   unstyled: PropTypes.bool,
 };
-
-ListFactory.defaultProps = {
-  color: defaultTextStylesBase.color,
-  display: false,
-  fontFamily: defaultTextStylesBase.fontFamily,
-  fontWeight: defaultTextStylesBase.fontWeight,
-  inline: false,
-  kerning: defaultTextStylesBase.kerning,
-  lg: defaultTextStylesBase.lg,
-  sm: defaultTextStylesBase.sm,
-  tag: 'ul',
-  textAlign: defaultTextStylesBase.textAlign,
-  textDecoration: defaultTextStylesBase.textDecoration,
-  unstyled: false,
-};
-
-const List = props => ListFactory(props);
-
-List.ul = List;
-List.ol = props => ListFactory({ ...props, tag: 'ol' });
-
 export { List };

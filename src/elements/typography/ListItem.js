@@ -1,22 +1,32 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { defaultTextStylesBase, textStylesBase } from './textStyles';
 import { getGlobalStyles } from 'src/global-styles';
 import { getScaledSize } from './utils';
-import { passThrough } from '../../utils/componentHelpers';
+import {
+  getFontFamily,
+  getFontSize,
+  getFontWeight,
+  getLetterSpacing,
+  getLineHeight,
+  getFontStyle,
+  getColor,
+  getTextAlign,
+  getTextDecoration,
+} from './textStyles';
 
-const { grid: gridSchema } = getGlobalStyles();
-
-export const ListItem = props => {
-  const actualBase = textStylesBase(props);
-  const { gutter } = gridSchema;
-  const ProtoListItem = styled.li`
-    ${actualBase}
-    margin-bottom: ${getScaledSize(gutter, 0.25)};
+const { grid: { gutter } } = getGlobalStyles();
+export const ListItem = styled.li`
+  ${getFontFamily}
+  ${getFontSize}
+  ${getFontWeight}
+  ${getLetterSpacing}
+  ${getLineHeight}
+  ${getFontStyle}
+  ${getColor}
+  ${getTextAlign}
+  ${getTextDecoration}
+  margin-bottom: ${getScaledSize(gutter, 0.25)};
   `;
-  return <ProtoListItem {...passThrough(ListItem, props)} />;
-};
 
 ListItem.propTypes = {
   color: PropTypes.string,
@@ -27,15 +37,4 @@ ListItem.propTypes = {
   sm: PropTypes.bool,
   textAlign: PropTypes.string,
   textDecoration: PropTypes.string,
-};
-
-ListItem.defaultProps = {
-  color: defaultTextStylesBase.color,
-  fontFamily: defaultTextStylesBase.fontFamily,
-  fontWeight: defaultTextStylesBase.fontWeight,
-  kerning: defaultTextStylesBase.kerning,
-  lg: defaultTextStylesBase.lg,
-  sm: defaultTextStylesBase.sm,
-  textAlign: defaultTextStylesBase.textAlign,
-  textDecoration: defaultTextStylesBase.textDecoration,
 };

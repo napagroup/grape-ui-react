@@ -1,18 +1,28 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { defaultTextStylesBase } from './textStyles';
-import { withBaseStyles } from 'src/decorators';
-import { passThrough } from 'src/utils/componentHelpers';
+import {
+  getFontFamily,
+  getFontSize,
+  getFontWeight,
+  getLetterSpacing,
+  getLineHeight,
+  getFontStyle,
+  getColor,
+  getTextAlign,
+  getTextDecoration,
+} from './textStyles';
 
-export const Text = props => {
-  const overrides = {
-    ...props,
-    fontSizeBase: '100%',
-  };
-  const ProtoText = withBaseStyles(styled.span``, overrides);
-  return <ProtoText {...passThrough(Text, props)} />;
-};
+export const Text = styled.span`
+  ${getFontFamily}
+  ${getFontSize}
+  ${getFontWeight}
+  ${getLetterSpacing}
+  ${getLineHeight}
+  ${getFontStyle}
+  ${getColor}
+  ${getTextAlign}
+  ${getTextDecoration}
+  `;
 
 Text.propTypes = {
   color: PropTypes.string,
@@ -23,15 +33,4 @@ Text.propTypes = {
   sm: PropTypes.bool,
   textAlign: PropTypes.string,
   textDecoration: PropTypes.string,
-};
-
-Text.defaultProps = {
-  color: defaultTextStylesBase.color,
-  fontFamily: defaultTextStylesBase.fontFamily,
-  fontWeight: defaultTextStylesBase.fontWeight,
-  kerning: defaultTextStylesBase.kerning,
-  lg: defaultTextStylesBase.lg,
-  sm: defaultTextStylesBase.sm,
-  textAlign: defaultTextStylesBase.textAlign,
-  textDecoration: defaultTextStylesBase.textDecoration,
 };

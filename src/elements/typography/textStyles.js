@@ -31,13 +31,32 @@ const getScaleFactor = props => {
   return scaleFactor;
 };
 
-const getColor = props => {
+const getColorFromProps = props => {
   const { color } = props;
   if (!color) {
     return defaultTextStylesBase.color;
   }
   return resolveColor(color);
 };
+
+export const getFontFamily = props => {
+  if (props && props.fontFamily) {
+    return `font-family: ${fontFamilySchema[props.fontFamily] || defaultTextStylesBase.fontFamily};`;
+  }
+  return `font-family: ${defaultTextStylesBase.fontFamily};`;
+};
+export const getFontSize = props => {
+  const scaleFactor = getScaleFactor(props);
+  const fontSizeBase = props.fontSizeBase || defaultTextStylesBase.fontSizeBase;
+  return `font-size: ${scaleFactor ? getScaledFontSize(fontSizeBase, scaleFactor) : fontSizeBase};`;
+};
+export const getFontWeight = props => `font-weight: ${props.fontWeight || defaultTextStylesBase.fontWeight};`;
+export const getLetterSpacing = props => `letter-spacing: ${props.kerning || defaultTextStylesBase.kerning};`;
+export const getLineHeight = () => 'line-height: 1.5;';
+export const getFontStyle = props => `${props.italic ? 'font-style: italic;' : ''}`;
+export const getColor = props => `color: ${getColorFromProps(props)};`;
+export const getTextAlign = props => `text-align: ${props.textAlign || defaultTextStylesBase.textAlign};`;
+export const getTextDecoration = props => `text-decoration: ${props.textDecoration || defaultTextStylesBase.textDecoration};`;
 
 export const textStylesBase = (props = {}) => {
   let overrides = null;
@@ -47,15 +66,11 @@ export const textStylesBase = (props = {}) => {
     overrides = {
       ...defaultTextStylesBase,
       ...props,
-      color: getColor(props),
-      fontFamily: fontFamilySchema[props.fontFamily] || defaultTextStylesBase.fontFamily,
     };
   }
 
   const scaleFactor = getScaleFactor(props);
   const {
-    color,
-    fontFamily,
     fontSizeBase,
     fontWeight,
     italic,
@@ -64,15 +79,14 @@ export const textStylesBase = (props = {}) => {
     textDecoration,
   } = overrides;
   return `
-    font-family: ${fontFamily};
+    ${getFontFamily(props)}
     font-size: ${scaleFactor ? getScaledFontSize(fontSizeBase, scaleFactor) : fontSizeBase};
     font-weight: ${fontWeight};
     letter-spacing: ${kerning};
     line-height: 1.5;
     ${italic ? 'font-style: italic;' : ''}
-    color: ${color};
+    ${getColor(props)}
     text-align: ${textAlign};
     text-decoration: ${textDecoration};
   `;
 };
-

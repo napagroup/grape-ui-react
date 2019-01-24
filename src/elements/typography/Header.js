@@ -1,37 +1,79 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { textStylesBase, defaultTextStylesBase } from './textStyles';
 import { getGlobalStyles } from 'src/global-styles';
-import { passThrough } from 'src/utils/componentHelpers';
-
+import {
+  defaultTextStylesBase,
+  getFontFamily,
+  getFontSize,
+  getFontWeight,
+  getLetterSpacing,
+  getLineHeight,
+  getFontStyle,
+  getColor,
+  getTextAlign,
+  getTextDecoration,
+} from './textStyles';
 
 const { fontSize: fontSizeSchema, grid: gridSchema } = getGlobalStyles();
 
-const HeaderFactory = props => {
-  const {
-    display, fontWeight, tag: propsTag,
-  } = props;
-
-  const tag = propsTag || 'h1';
-  const overrides = {
-    ...props,
-    fontSizeBase: display ? fontSizeSchema.display[tag] : fontSizeSchema[tag],
-    fontWeight: fontWeight || (display ? '300' : defaultTextStylesBase.fontWeight),
+const getHeaderFontSizeFromTag = factoryProps => {
+  const { tag: factoryPropsTag } = factoryProps;
+  const tag = factoryPropsTag || 'h1';
+  const getHeaderFontSizeMemoized = props => {
+    const { display } = props;
+    const overrides = {
+      ...props,
+      fontSizeBase: display ? fontSizeSchema.display[tag] : fontSizeSchema[tag],
+    };
+    return getFontSize(overrides);
   };
-  const baseStyles = textStylesBase(overrides);
-  const Primitive = styled[tag]`
-    ${baseStyles}
-    margin: 0 0 ${gridSchema.gutter};
-  `;
-  return <Primitive {...passThrough(HeaderFactory, props)} />;
+  return getHeaderFontSizeMemoized;
 };
 
-HeaderFactory.propTypes = {
+
+const getHeaderFontWeight = props => {
+  const {
+    display, fontWeight,
+  } = props;
+  const headerFontWeight = fontWeight !== defaultTextStylesBase.fontWeight ? fontWeight : undefined;
+  const overrides = {
+    ...props,
+    fontWeight: headerFontWeight || (display ? '300' : headerFontWeight),
+  };
+  return getFontWeight(overrides);
+};
+const headerFactory = factoryProps => {
+  const { tag } = factoryProps;
+  const getHeaderFontSize = getHeaderFontSizeFromTag(factoryProps);
+  return styled[tag]`
+    ${getFontFamily}
+    ${getHeaderFontSize}
+    ${getHeaderFontWeight}
+    ${getLetterSpacing}
+    ${getLineHeight}
+    ${getFontStyle}
+    ${getColor}
+    ${getTextAlign}
+    ${getTextDecoration}
+    margin: 0 0 ${gridSchema.gutter};
+  `;
+};
+
+const Header = headerFactory({ tag: 'h1' });
+
+Header.h1 = Header;
+Header.h2 = headerFactory({ tag: 'h2' });
+Header.h3 = headerFactory({ tag: 'h3' });
+Header.h4 = headerFactory({ tag: 'h4' });
+Header.h5 = headerFactory({ tag: 'h5' });
+Header.h6 = headerFactory({ tag: 'h6' });
+
+Header.propTypes = {
   color: PropTypes.string,
   display: PropTypes.bool,
   fontFamily: PropTypes.string,
   fontWeight: PropTypes.string,
+  italic: PropTypes.bool,
   kerning: PropTypes.string,
   lg: PropTypes.bool,
   sm: PropTypes.bool,
@@ -40,25 +82,4 @@ HeaderFactory.propTypes = {
   textDecoration: PropTypes.string,
 };
 
-HeaderFactory.defaultProps = {
-  color: defaultTextStylesBase.color,
-  display: false,
-  fontFamily: defaultTextStylesBase.fontFamily,
-  fontWeight: defaultTextStylesBase.fontWeight,
-  kerning: defaultTextStylesBase.kerning,
-  lg: defaultTextStylesBase.lg,
-  sm: defaultTextStylesBase.sm,
-  tag: 'h1',
-  textAlign: defaultTextStylesBase.textAlign,
-  textDecoration: defaultTextStylesBase.textDecoration,
-};
-
-const Header = props => HeaderFactory(props);
-
-Header.h1 = Header;
-Header.h2 = props => HeaderFactory({ ...props, tag: 'h2' });
-Header.h3 = props => HeaderFactory({ ...props, tag: 'h3' });
-Header.h4 = props => HeaderFactory({ ...props, tag: 'h4' });
-Header.h5 = props => HeaderFactory({ ...props, tag: 'h5' });
-Header.h6 = props => HeaderFactory({ ...props, tag: 'h6' });
 export { Header };

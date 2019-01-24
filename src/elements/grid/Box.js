@@ -1,51 +1,43 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { defaultTextStylesBase } from 'src/elements/typography/textStyles';
-import { passThrough } from 'src/utils/componentHelpers';
 import {
-  width,
-  display,
-  maxWidth,
-  minWidth,
-  height,
-  maxHeight,
-  minHeight,
-  position,
-  size,
-  ratio,
-  zIndex,
-  top,
-  right,
   bottom,
+  display,
+  height,
   left,
+  maxHeight,
+  maxWidth,
+  minHeight,
+  minWidth,
+  position,
+  ratio,
+  right,
+  size,
+  space,
+  top,
+  width,
+  zIndex,
 } from 'styled-system';
-import { withStyledSystem, withBaseStyles } from 'src/decorators';
 
-export const Box = (props, context) => {
-  const { theme } = context;
-  const overrides = {
-    ...props,
-    fontSizeBase: '100%',
-    theme,
-  };
-  const BaseBox = withBaseStyles(styled.div``, overrides);
-  const ProtoBox = withStyledSystem(BaseBox, overrides);
-  return <ProtoBox {...passThrough(Box, props)} />;
-};
-Box.contextTypes = {
-  theme: PropTypes.any,
-};
+export const Box = styled.div`
+  ${space}
+  ${display}
+  ${width}
+  ${height}
+  ${maxHeight}
+  ${minHeight}
+  ${maxWidth}
+  ${minWidth}
+  ${position}
+  ${size}
+  ${ratio}
+  ${zIndex}
+  ${top}
+  ${right}
+  ${bottom}
+  ${left}
+`;
 
 Box.propTypes = {
-  color: PropTypes.string,
-  fontFamily: PropTypes.string,
-  fontWeight: PropTypes.string,
-  kerning: PropTypes.string,
-  lg: PropTypes.bool,
-  sm: PropTypes.bool,
-  textAlign: PropTypes.string,
-  textDecoration: PropTypes.string,
   ...display.propTypes,
   ...height.propTypes,
   ...maxHeight.propTypes,
@@ -61,15 +53,4 @@ Box.propTypes = {
   ...right.propTypes,
   ...bottom.propTypes,
   ...left.propTypes,
-};
-
-Box.defaultProps = {
-  color: defaultTextStylesBase.color,
-  fontFamily: defaultTextStylesBase.fontFamily,
-  fontWeight: defaultTextStylesBase.fontWeight,
-  kerning: defaultTextStylesBase.kerning,
-  lg: defaultTextStylesBase.lg,
-  sm: defaultTextStylesBase.sm,
-  textAlign: defaultTextStylesBase.textAlign,
-  textDecoration: defaultTextStylesBase.textDecoration,
 };

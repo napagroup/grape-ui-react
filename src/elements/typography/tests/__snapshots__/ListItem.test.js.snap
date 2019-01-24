@@ -43,6 +43,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 
 <li
   className="c0"
+  color="green"
 >
   Lorem Ipsum
 </li>
@@ -67,6 +68,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 
 <li
   className="c0"
+  color="green.base"
 >
   Lorem Ipsum
 </li>
@@ -91,6 +93,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 
 <li
   className="c0"
+  color="green.dark"
 >
   Lorem Ipsum
 </li>
@@ -115,6 +118,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 
 <li
   className="c0"
+  color="green.light"
 >
   Lorem Ipsum
 </li>
@@ -139,6 +143,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 
 <li
   className="c0"
+  fontFamily="monospace"
 >
   Lorem Ipsum
 </li>
@@ -163,6 +168,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 
 <li
   className="c0"
+  fontWeight="bold"
 >
   Lorem Ipsum
 </li>
@@ -187,6 +193,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 
 <li
   className="c0"
+  kerning="2px"
 >
   Lorem Ipsum
 </li>
@@ -235,6 +242,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 
 <li
   className="c0"
+  textDecoration="underline"
 >
   Lorem Ipsum
 </li>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from '../Link';
+import { Link, StyledReactRouterLink } from '../Link';
 import renderer from 'react-test-renderer';
 import { MemoryRouter as Router } from 'react-router-dom';
 import 'jest-styled-components';
@@ -16,7 +16,7 @@ describe('Link Component base', () => {
     expect(tree).toMatchSnapshot();
   });
   it('should return a react router tag, given a \'to\' attribute', () => {
-    const component = renderer.create(<Router><Link to="./home">Lorem Ipsum</Link></Router>);
+    const component = renderer.create(<Router><StyledReactRouterLink to="./home">Lorem Ipsum</StyledReactRouterLink></Router>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

@@ -23,8 +23,11 @@ exports[`Link Component base should return a react router tag, given a 'to' attr
 
 <a
   className="c0"
-  href="./home"
+  color="brandLink"
+  hoverColor="brandLinkHover"
+  href="/home"
   onClick={[Function]}
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>
@@ -53,6 +56,8 @@ exports[`Link Component base should return an anchor tag 1`] = `
 
 <a
   className="c0"
+  color="brandLink"
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>
@@ -81,7 +86,9 @@ exports[`Link Component base should return an anchor tag with an href, given the
 
 <a
   className="c0"
+  color="brandLink"
   href="./home"
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>
@@ -110,6 +117,8 @@ exports[`Link Component specified styles should return a Link object with a base
 
 <a
   className="c0"
+  color="green"
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>
@@ -138,6 +147,8 @@ exports[`Link Component specified styles should return a Link object with a base
 
 <a
   className="c0"
+  color="green.base"
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>
@@ -166,6 +177,8 @@ exports[`Link Component specified styles should return a Link object with a dark
 
 <a
   className="c0"
+  color="green.dark"
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>
@@ -194,6 +207,8 @@ exports[`Link Component specified styles should return a Link object with a ligh
 
 <a
   className="c0"
+  color="green.light"
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>
@@ -222,6 +237,9 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 <a
   className="c0"
+  color="brandLink"
+  fontFamily="monospace"
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>
@@ -250,6 +268,9 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 <a
   className="c0"
+  color="brandLink"
+  fontWeight="bold"
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>
@@ -278,6 +299,9 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 <a
   className="c0"
+  color="brandLink"
+  kerning="2px"
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>
@@ -306,6 +330,8 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 <a
   className="c0"
+  color="brandLink"
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>
@@ -334,6 +360,8 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 <a
   className="c0"
+  color="brandLink"
+  textDecoration="underline"
 >
   Lorem Ipsum
 </a>
@@ -362,6 +390,8 @@ exports[`Link Component specified styles should return a Link object with font-s
 
 <a
   className="c0"
+  color="brandLink"
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>
@@ -390,6 +420,8 @@ exports[`Link Component specified styles should return a Link object with font-s
 
 <a
   className="c0"
+  color="brandLink"
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>
@@ -419,6 +451,8 @@ exports[`Link Component specified styles should return a Link object with font-s
 
 <a
   className="c0"
+  color="brandLink"
+  textDecoration="none"
 >
   Lorem Ipsum
 </a>

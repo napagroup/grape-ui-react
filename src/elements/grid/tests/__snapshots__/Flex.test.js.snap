@@ -1,63 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Flex Component base should return a Flex object with 2 responsive Box elements as the children 1`] = `
-.c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  text-align: flex-start;
-}
-
+exports[`Flex base should return a Flex object with 2 responsive Box elements as the children 1`] = `
 .c1 {
-  font-family: inherit;
-  font-size: 100%;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   width: 100%;
 }
 
 .c2 {
-  font-family: inherit;
-  font-size: 100%;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   width: 100%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width:40em) {
@@ -89,66 +52,27 @@ exports[`Flex Component base should return a Flex object with 2 responsive Box e
 </div>
 `;
 
-exports[`Flex Component base should return a Flex object with a box element as the child 1`] = `
+exports[`Flex base should return a Flex object with a box element as the child 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.c1 {
-  font-family: inherit;
-  font-size: 100%;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
 <div
   className="c0"
 >
   <div
-    className="c1"
+    className=""
   >
     Lorem Ipsum
   </div>
 </div>
 `;
 
-exports[`Flex Component base should return a Flex object with base styling 1`] = `
+exports[`Flex base should return a Flex object with base styling 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -162,20 +86,8 @@ exports[`Flex Component base should return a Flex object with base styling 1`] =
 </div>
 `;
 
-exports[`Flex Component using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for margin 1`] = `
+exports[`Flex using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for margin 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -208,20 +120,8 @@ exports[`Flex Component using custom theme breakpoints for Core Styling should r
 </div>
 `;
 
-exports[`Flex Component using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for margin top 1`] = `
+exports[`Flex using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for margin top 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -254,20 +154,8 @@ exports[`Flex Component using custom theme breakpoints for Core Styling should r
 </div>
 `;
 
-exports[`Flex Component using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for padding 1`] = `
+exports[`Flex using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for padding 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -300,20 +188,8 @@ exports[`Flex Component using custom theme breakpoints for Core Styling should r
 </div>
 `;
 
-exports[`Flex Component using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for padding top 1`] = `
+exports[`Flex using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for padding top 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -346,20 +222,8 @@ exports[`Flex Component using custom theme breakpoints for Core Styling should r
 </div>
 `;
 
-exports[`Flex Component using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for width 1`] = `
+exports[`Flex using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for width 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -387,25 +251,21 @@ exports[`Flex Component using custom theme breakpoints for Core Styling should r
 
 <div
   className="c0"
+  width={
+    Array [
+      1,
+      0.5,
+      0.25,
+      0.125,
+    ]
+  }
 >
   Lorem Ipsum
 </div>
 `;
 
-exports[`Flex Component using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for height 1`] = `
+exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for height 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -433,25 +293,21 @@ exports[`Flex Component using custom theme breakpoints for Layout should return 
 
 <div
   className="c0"
+  height={
+    Array [
+      0,
+      1,
+      2,
+      3,
+    ]
+  }
 >
   Lorem Ipsum
 </div>
 `;
 
-exports[`Flex Component using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for maxHeight 1`] = `
+exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for maxHeight 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -484,20 +340,8 @@ exports[`Flex Component using custom theme breakpoints for Layout should return 
 </div>
 `;
 
-exports[`Flex Component using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for maxWidth 1`] = `
+exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for maxWidth 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -530,20 +374,8 @@ exports[`Flex Component using custom theme breakpoints for Layout should return 
 </div>
 `;
 
-exports[`Flex Component using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for minHeight 1`] = `
+exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for minHeight 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -576,20 +408,8 @@ exports[`Flex Component using custom theme breakpoints for Layout should return 
 </div>
 `;
 
-exports[`Flex Component using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for minWidth 1`] = `
+exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for minWidth 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -616,20 +436,8 @@ exports[`Flex Component using custom theme breakpoints for Layout should return 
 </div>
 `;
 
-exports[`Flex Component using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for size 1`] = `
+exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for size 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -661,25 +469,21 @@ exports[`Flex Component using custom theme breakpoints for Layout should return 
 
 <div
   className="c0"
+  size={
+    Array [
+      1,
+      0.5,
+      0.25,
+      0.125,
+    ]
+  }
 >
   Lorem Ipsum
 </div>
 `;
 
-exports[`Flex Component with specified alignment properties should return a Flex object with auto flex basis applied 1`] = `
+exports[`Flex with specified alignment properties should return a Flex object with auto flex basis applied 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -696,20 +500,8 @@ exports[`Flex Component with specified alignment properties should return a Flex
 </div>
 `;
 
-exports[`Flex Component with specified alignment properties should return a Flex object with column flex direction 1`] = `
+exports[`Flex with specified alignment properties should return a Flex object with column flex direction 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -726,27 +518,15 @@ exports[`Flex Component with specified alignment properties should return a Flex
 </div>
 `;
 
-exports[`Flex Component with specified alignment properties should return a Flex object with content aligned to the the center 1`] = `
+exports[`Flex with specified alignment properties should return a Flex object with content aligned to the the center 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
 
 <div
@@ -756,20 +536,8 @@ exports[`Flex Component with specified alignment properties should return a Flex
 </div>
 `;
 
-exports[`Flex Component with specified alignment properties should return a Flex object with content justified to the the center 1`] = `
+exports[`Flex with specified alignment properties should return a Flex object with content justified to the the center 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -787,20 +555,8 @@ exports[`Flex Component with specified alignment properties should return a Flex
 </div>
 `;
 
-exports[`Flex Component with specified alignment properties should return a Flex object with flex-wrap styling applied 1`] = `
+exports[`Flex with specified alignment properties should return a Flex object with flex-wrap styling applied 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -817,28 +573,16 @@ exports[`Flex Component with specified alignment properties should return a Flex
 </div>
 `;
 
-exports[`Flex Component with specified alignment properties should return a Flex object with items aligned to the the center 1`] = `
+exports[`Flex with specified alignment properties should return a Flex object with items aligned to the the center 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 <div
@@ -848,20 +592,8 @@ exports[`Flex Component with specified alignment properties should return a Flex
 </div>
 `;
 
-exports[`Flex Component with specified layout properties should return a Flex object with height 1`] = `
+exports[`Flex with specified layout properties should return a Flex object with height 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -871,25 +603,14 @@ exports[`Flex Component with specified layout properties should return a Flex ob
 
 <div
   className="c0"
+  height={64}
 >
   Lorem Ipsum
 </div>
 `;
 
-exports[`Flex Component with specified layout properties should return a Flex object with height based on defined breakpoints 1`] = `
+exports[`Flex with specified layout properties should return a Flex object with height based on defined breakpoints 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -905,25 +626,19 @@ exports[`Flex Component with specified layout properties should return a Flex ob
 
 <div
   className="c0"
+  height={
+    Array [
+      48,
+      64,
+    ]
+  }
 >
   Lorem Ipsum
 </div>
 `;
 
-exports[`Flex Component with specified layout properties should return a Flex object with maxHeight 1`] = `
+exports[`Flex with specified layout properties should return a Flex object with maxHeight 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -938,20 +653,8 @@ exports[`Flex Component with specified layout properties should return a Flex ob
 </div>
 `;
 
-exports[`Flex Component with specified layout properties should return a Flex object with maxHeight based on defined breakpoints 1`] = `
+exports[`Flex with specified layout properties should return a Flex object with maxHeight based on defined breakpoints 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -972,20 +675,8 @@ exports[`Flex Component with specified layout properties should return a Flex ob
 </div>
 `;
 
-exports[`Flex Component with specified layout properties should return a Flex object with maxWidth 1`] = `
+exports[`Flex with specified layout properties should return a Flex object with maxWidth 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1000,20 +691,8 @@ exports[`Flex Component with specified layout properties should return a Flex ob
 </div>
 `;
 
-exports[`Flex Component with specified layout properties should return a Flex object with maxWidth based on defined breakpoints 1`] = `
+exports[`Flex with specified layout properties should return a Flex object with maxWidth based on defined breakpoints 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1034,20 +713,8 @@ exports[`Flex Component with specified layout properties should return a Flex ob
 </div>
 `;
 
-exports[`Flex Component with specified layout properties should return a Flex object with minWidth 1`] = `
+exports[`Flex with specified layout properties should return a Flex object with minWidth 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1062,20 +729,8 @@ exports[`Flex Component with specified layout properties should return a Flex ob
 </div>
 `;
 
-exports[`Flex Component with specified layout properties should return a Flex object with minWidth based on defined breakpoints 1`] = `
+exports[`Flex with specified layout properties should return a Flex object with minWidth based on defined breakpoints 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1096,20 +751,8 @@ exports[`Flex Component with specified layout properties should return a Flex ob
 </div>
 `;
 
-exports[`Flex Component with specified layout properties should return a Flex object with ratio (height * padding-bottom) 1`] = `
+exports[`Flex with specified layout properties should return a Flex object with ratio (height * padding-bottom) 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1125,20 +768,8 @@ exports[`Flex Component with specified layout properties should return a Flex ob
 </div>
 `;
 
-exports[`Flex Component with specified layout properties should return a Flex object with size (width and height) 1`] = `
+exports[`Flex with specified layout properties should return a Flex object with size (width and height) 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1149,25 +780,14 @@ exports[`Flex Component with specified layout properties should return a Flex ob
 
 <div
   className="c0"
+  size={32}
 >
   Lorem Ipsum
 </div>
 `;
 
-exports[`Flex Component with specified layout properties should return a Flex object with size (width and height) based on defined breakpoints 1`] = `
+exports[`Flex with specified layout properties should return a Flex object with size (width and height) based on defined breakpoints 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1185,25 +805,19 @@ exports[`Flex Component with specified layout properties should return a Flex ob
 
 <div
   className="c0"
+  size={
+    Array [
+      32,
+      48,
+    ]
+  }
 >
   Lorem Ipsum
 </div>
 `;
 
-exports[`Flex Component with specified margins should return a Flex object with margin applying space all around 1`] = `
+exports[`Flex with specified margins should return a Flex object with margin applying space all around 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1218,20 +832,8 @@ exports[`Flex Component with specified margins should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified margins should return a Flex object with margin applying space on bottom 1`] = `
+exports[`Flex with specified margins should return a Flex object with margin applying space on bottom 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1246,20 +848,8 @@ exports[`Flex Component with specified margins should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified margins should return a Flex object with margin applying space on left 1`] = `
+exports[`Flex with specified margins should return a Flex object with margin applying space on left 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1274,20 +864,8 @@ exports[`Flex Component with specified margins should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified margins should return a Flex object with margin applying space on right 1`] = `
+exports[`Flex with specified margins should return a Flex object with margin applying space on right 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1302,20 +880,8 @@ exports[`Flex Component with specified margins should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified margins should return a Flex object with margin applying space on the left and right 1`] = `
+exports[`Flex with specified margins should return a Flex object with margin applying space on the left and right 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1331,20 +897,8 @@ exports[`Flex Component with specified margins should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified margins should return a Flex object with margin applying space on the top and bottom 1`] = `
+exports[`Flex with specified margins should return a Flex object with margin applying space on the top and bottom 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1360,20 +914,8 @@ exports[`Flex Component with specified margins should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified margins should return a Flex object with margin applying space on top 1`] = `
+exports[`Flex with specified margins should return a Flex object with margin applying space on top 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1388,20 +930,8 @@ exports[`Flex Component with specified margins should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified padding should return a Flex object with padding applying space all around 1`] = `
+exports[`Flex with specified padding should return a Flex object with padding applying space all around 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1416,20 +946,8 @@ exports[`Flex Component with specified padding should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified padding should return a Flex object with padding applying space on bottom 1`] = `
+exports[`Flex with specified padding should return a Flex object with padding applying space on bottom 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1444,20 +962,8 @@ exports[`Flex Component with specified padding should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified padding should return a Flex object with padding applying space on left 1`] = `
+exports[`Flex with specified padding should return a Flex object with padding applying space on left 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1472,20 +978,8 @@ exports[`Flex Component with specified padding should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified padding should return a Flex object with padding applying space on right 1`] = `
+exports[`Flex with specified padding should return a Flex object with padding applying space on right 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1500,20 +994,8 @@ exports[`Flex Component with specified padding should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified padding should return a Flex object with padding applying space on the left and right 1`] = `
+exports[`Flex with specified padding should return a Flex object with padding applying space on the left and right 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1529,20 +1011,8 @@ exports[`Flex Component with specified padding should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified padding should return a Flex object with padding applying space on the top and bottom 1`] = `
+exports[`Flex with specified padding should return a Flex object with padding applying space on the top and bottom 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1558,20 +1028,8 @@ exports[`Flex Component with specified padding should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified padding should return a Flex object with padding applying space on top 1`] = `
+exports[`Flex with specified padding should return a Flex object with padding applying space on top 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1586,20 +1044,8 @@ exports[`Flex Component with specified padding should return a Flex object with 
 </div>
 `;
 
-exports[`Flex Component with specified widths should return a Flex object with a percentage width 1`] = `
+exports[`Flex with specified widths should return a Flex object with a percentage width 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1609,25 +1055,14 @@ exports[`Flex Component with specified widths should return a Flex object with a
 
 <div
   className="c0"
+  width={0.5}
 >
   Lorem Ipsum
 </div>
 `;
 
-exports[`Flex Component with specified widths should return a Flex object with a specified width 1`] = `
+exports[`Flex with specified widths should return a Flex object with a specified width 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1637,25 +1072,14 @@ exports[`Flex Component with specified widths should return a Flex object with a
 
 <div
   className="c0"
+  width={2}
 >
   Lorem Ipsum
 </div>
 `;
 
-exports[`Flex Component with specified widths should return a Flex object with an exact pixel width 1`] = `
+exports[`Flex with specified widths should return a Flex object with an exact pixel width 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1665,25 +1089,14 @@ exports[`Flex Component with specified widths should return a Flex object with a
 
 <div
   className="c0"
+  width={256}
 >
   Lorem Ipsum
 </div>
 `;
 
-exports[`Flex Component with specified widths should return a Flex object with the exact width enter with the stated unit 1`] = `
+exports[`Flex with specified widths should return a Flex object with the exact width enter with the stated unit 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1693,25 +1106,14 @@ exports[`Flex Component with specified widths should return a Flex object with t
 
 <div
   className="c0"
+  width="2em"
 >
   Lorem Ipsum
 </div>
 `;
 
-exports[`Flex Component with specified widths should return a Flex object with width applied to different breakpoints 1`] = `
+exports[`Flex with specified widths should return a Flex object with width applied to different breakpoints 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1727,6 +1129,12 @@ exports[`Flex Component with specified widths should return a Flex object with w
 
 <div
   className="c0"
+  width={
+    Array [
+      1,
+      0.5,
+    ]
+  }
 >
   Lorem Ipsum
 </div>

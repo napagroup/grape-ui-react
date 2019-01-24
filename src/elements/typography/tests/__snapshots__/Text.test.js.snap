@@ -3,7 +3,7 @@
 exports[`Text Component base should return a Text object with base styling 1`] = `
 .c0 {
   font-family: inherit;
-  font-size: 100%;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -26,7 +26,7 @@ exports[`Text Component base should return a Text object with base styling 1`] =
 exports[`Text Component specified styles should return a Text object with a specified color 1`] = `
 .c0 {
   font-family: inherit;
-  font-size: 100%;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -41,6 +41,7 @@ exports[`Text Component specified styles should return a Text object with a spec
 
 <span
   className="c0"
+  color="green.light"
 >
   Lorem Ipsum
 </span>
@@ -49,7 +50,7 @@ exports[`Text Component specified styles should return a Text object with a spec
 exports[`Text Component specified styles should return a Text object with a specified text-align 1`] = `
 .c0 {
   font-family: inherit;
-  font-size: 100%;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -72,7 +73,7 @@ exports[`Text Component specified styles should return a Text object with a spec
 exports[`Text Component specified styles should return a Text object with a specified text-decoration 1`] = `
 .c0 {
   font-family: inherit;
-  font-size: 100%;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -87,6 +88,7 @@ exports[`Text Component specified styles should return a Text object with a spec
 
 <span
   className="c0"
+  textDecoration="underline"
 >
   Lorem Ipsum
 </span>
@@ -95,7 +97,7 @@ exports[`Text Component specified styles should return a Text object with a spec
 exports[`Text Component specified styles should return a Text object with font-size: lg 1`] = `
 .c0 {
   font-family: inherit;
-  font-size: 120%;
+  font-size: 1.2rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -118,7 +120,7 @@ exports[`Text Component specified styles should return a Text object with font-s
 exports[`Text Component specified styles should return a Text object with font-size: sm 1`] = `
 .c0 {
   font-family: inherit;
-  font-size: 80%;
+  font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -141,7 +143,7 @@ exports[`Text Component specified styles should return a Text object with font-s
 exports[`Text Component specified styles should return a Text object with font-style: italic 1`] = `
 .c0 {
   font-family: inherit;
-  font-size: 100%;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -165,7 +167,7 @@ exports[`Text Component specified styles should return a Text object with font-s
 exports[`Text Component specified styles should return a Text object with specified font-family 1`] = `
 .c0 {
   font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
-  font-size: 100%;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -180,6 +182,7 @@ exports[`Text Component specified styles should return a Text object with specif
 
 <span
   className="c0"
+  fontFamily="monospace"
 >
   Lorem Ipsum
 </span>
@@ -188,7 +191,7 @@ exports[`Text Component specified styles should return a Text object with specif
 exports[`Text Component specified styles should return a Text object with specified font-weight 1`] = `
 .c0 {
   font-family: inherit;
-  font-size: 100%;
+  font-size: inherit;
   font-weight: bolder;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -203,6 +206,7 @@ exports[`Text Component specified styles should return a Text object with specif
 
 <span
   className="c0"
+  fontWeight="bolder"
 >
   Lorem Ipsum
 </span>
@@ -211,7 +215,7 @@ exports[`Text Component specified styles should return a Text object with specif
 exports[`Text Component specified styles should return a Text object with specified kerning 1`] = `
 .c0 {
   font-family: inherit;
-  font-size: 100%;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: 1px;
   -moz-letter-spacing: 1px;
@@ -226,6 +230,7 @@ exports[`Text Component specified styles should return a Text object with specif
 
 <span
   className="c0"
+  kerning="1px"
 >
   Lorem Ipsum
 </span>

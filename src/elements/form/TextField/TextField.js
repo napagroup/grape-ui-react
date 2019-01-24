@@ -17,7 +17,6 @@ const getAssistiveText = props => {
 export const TextField = props => {
   const {
     activeColor,
-    assistiveText,
     bgColor,
     controlId,
     controlLabel,
