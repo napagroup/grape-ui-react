@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { getGlobalStyles } from 'src/global-styles';
@@ -12,7 +13,9 @@ import {
   getColor,
   getTextAlign,
   getTextDecoration,
+  typography,
 } from './textStyles';
+import { passThrough } from 'src/utils/componentHelpers';
 
 const { fontSize: fontSizeSchema, grid: gridSchema } = getGlobalStyles();
 
@@ -30,7 +33,6 @@ const getHeaderFontSizeFromTag = factoryProps => {
   return getHeaderFontSizeMemoized;
 };
 
-
 const getHeaderFontWeight = props => {
   const {
     display, fontWeight,
@@ -44,8 +46,16 @@ const getHeaderFontWeight = props => {
 };
 const headerFactory = factoryProps => {
   const { tag } = factoryProps;
+  const HeaderComponent = ({
+    children, ...props
+  }) => React.createElement(tag, passThrough(HeaderComponent, props), children);
+  HeaderComponent.propTypes = {
+    children: PropTypes.any.isRequired,
+    ...typography.propTypes,
+  };
+
   const getHeaderFontSize = getHeaderFontSizeFromTag(factoryProps);
-  return styled[tag]`
+  return styled(HeaderComponent)`
     ${getFontFamily}
     ${getHeaderFontSize}
     ${getHeaderFontWeight}
@@ -69,17 +79,7 @@ Header.h5 = headerFactory({ tag: 'h5' });
 Header.h6 = headerFactory({ tag: 'h6' });
 
 Header.propTypes = {
-  color: PropTypes.string,
-  display: PropTypes.bool,
-  fontFamily: PropTypes.string,
-  fontWeight: PropTypes.string,
-  italic: PropTypes.bool,
-  kerning: PropTypes.string,
-  lg: PropTypes.bool,
-  sm: PropTypes.bool,
-  tag: PropTypes.string,
-  textAlign: PropTypes.string,
-  textDecoration: PropTypes.string,
+  ...typography.propTypes,
 };
 
 export { Header };

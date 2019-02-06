@@ -34,32 +34,18 @@ const getInLineStyles = props => {
 const getPaddingLeft = props => `padding-left:  ${(props.unstyled || props.inline) ? '0' : '2.5rem'};`;
 const getListStyle = props => `${props.unstyled ? '> li { list-style: none; }' : ''}`;
 
-
 const ListFactory = factoryProps => {
   const { tag } = factoryProps;
   const ListComponent = ({
-    children, className, ...props
-  }) => {
-    if (tag === 'ol') {
-      return (
-        <ol {...passThrough(ListComponent, props)} className={className}>
-          {children}
-        </ol>);
-    }
-    return (
-      <ul {...passThrough(ListComponent, props)} className={className}>
-        {children}
-      </ul>);
-  };
+    children, ...props
+  }) => React.createElement(tag, passThrough(ListComponent, props), children);
   ListComponent.propTypes = {
     children: PropTypes.any.isRequired,
-    className: PropTypes.string,
     inline: PropTypes.bool,
     ...typography.propTypes,
     unstyled: PropTypes.bool,
   };
   ListComponent.defaultProps = {
-    className: '',
     inline: false,
     unstyled: false,
   };

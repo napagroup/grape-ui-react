@@ -21,14 +21,13 @@ import {
 } from 'styled-system';
 import { passThrough } from 'src/utils/componentHelpers';
 
-const BoxComponent = ({ children, className, ...props }) => (
-  <div {...passThrough(BoxComponent, props)} className={className}>
+const BoxComponent = ({ children, ...props }) => (
+  <div {...passThrough(BoxComponent, props)}>
     {children}
   </div>
 );
 BoxComponent.propTypes = {
   children: PropTypes.any.isRequired,
-  className: PropTypes.string,
   ...space.propTypes,
   ...display.propTypes,
   ...height.propTypes,
@@ -47,9 +46,6 @@ BoxComponent.propTypes = {
   ...left.propTypes,
 };
 
-BoxComponent.defaultProps = {
-  className: '',
-};
 export const Box = styled(BoxComponent)`
   ${space}
   ${display}

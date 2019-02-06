@@ -15,19 +15,17 @@ import {
 } from './textStyles';
 import { passThrough } from 'src/utils/componentHelpers';
 
-const TextComponent = ({ children, className, ...props }) => (
-  <span {...passThrough(TextComponent, props)} className={className}>
+const TextComponent = ({ children, ...props }) => (
+  <span {...passThrough(TextComponent, props)}>
     {children}
   </span>
 );
 TextComponent.propTypes = {
   children: PropTypes.any.isRequired,
-  className: PropTypes.string,
   ...typography.propTypes,
 };
 
 TextComponent.defaultProps = {
-  className: '',
 };
 export const Text = styled(TextComponent)`
   ${getFontFamily}

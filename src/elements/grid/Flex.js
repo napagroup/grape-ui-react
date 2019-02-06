@@ -27,8 +27,8 @@ import {
 } from 'styled-system';
 import { passThrough } from 'src/utils/componentHelpers';
 
-const FlexComponent = ({ children, className, ...props }) => (
-  <div {...passThrough(FlexComponent, props)} className={className}>
+const FlexComponent = ({ children, ...props }) => (
+  <div {...passThrough(FlexComponent, props)}>
     {children}
   </div>
 );

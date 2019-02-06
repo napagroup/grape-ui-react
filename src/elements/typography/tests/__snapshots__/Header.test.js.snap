@@ -187,7 +187,6 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 <h1
   className="c0"
-  color="green"
 >
   Lorem Ipsum
 </h1>
@@ -212,7 +211,6 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 <h1
   className="c0"
-  color="green.base"
 >
   Lorem Ipsum
 </h1>
@@ -237,7 +235,6 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 <h1
   className="c0"
-  color="green.dark"
 >
   Lorem Ipsum
 </h1>
@@ -262,7 +259,6 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 <h1
   className="c0"
-  color="green.light"
 >
   Lorem Ipsum
 </h1>
@@ -287,7 +283,6 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 <h1
   className="c0"
-  fontFamily="monospace"
 >
   Lorem Ipsum
 </h1>
@@ -312,7 +307,6 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 <h1
   className="c0"
-  fontWeight="bold"
 >
   Lorem Ipsum
 </h1>
@@ -338,7 +332,6 @@ exports[`Header.h1 Component specified styles should return a Header object with
 <h1
   className="c0"
   display={true}
-  fontWeight="bold"
 >
   Lorem Ipsum
 </h1>
@@ -363,7 +356,6 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 <h1
   className="c0"
-  kerning="2px"
 >
   Lorem Ipsum
 </h1>
@@ -412,7 +404,6 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 <h1
   className="c0"
-  textDecoration="underline"
 >
   Lorem Ipsum
 </h1>
