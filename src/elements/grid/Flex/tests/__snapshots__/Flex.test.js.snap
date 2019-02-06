@@ -1,0 +1,1092 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flex base should return a Flex object with 2 responsive Box elements as the children 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 {
+  width: 100%;
+}
+
+.c2 {
+  width: 100%;
+}
+
+@media screen and (min-width:40em) {
+  .c1 {
+    width: 33.33333333333333%;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c2 {
+    width: 66.66666666666666%;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    Lorem
+  </div>
+  <div
+    className="c2"
+  >
+    Ipsum
+  </div>
+</div>
+`;
+
+exports[`Flex base should return a Flex object with a box element as the child 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className=""
+  >
+    Lorem Ipsum
+  </div>
+</div>
+`;
+
+exports[`Flex base should return a Flex object with base styling 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for margin 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    margin: 7px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    margin: 8px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    margin: 18px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for margin top 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    margin-top: 7px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    margin-top: 18px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for padding 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    padding: 7px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    padding: 18px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for padding top 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    padding-top: 7px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    padding-top: 8px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    padding-top: 18px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for width 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    width: 12.5%;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for height 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.1px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    height: 0.8px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    height: 0.6px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    height: 0.33px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for maxHeight 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 1.1px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    max-height: 0.8px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    max-height: 0.6px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    max-height: 0.33px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for maxWidth 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1.1px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    max-width: 0.8px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    max-width: 0.6px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    max-width: 0.33px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for minHeight 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 1px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    min-height: 0.5px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    min-height: 0.25px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    min-height: 0.125px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for minWidth 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 1px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    min-width: 0.5px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    min-width: 0.25px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for size 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 1px;
+}
+
+@media screen and (min-width:35em) {
+  .c0 {
+    height: 0.5px;
+    width: 0.5px;
+  }
+}
+
+@media screen and (min-width:47em) {
+  .c0 {
+    height: 0.25px;
+    width: 0.25px;
+  }
+}
+
+@media screen and (min-width:67em) {
+  .c0 {
+    height: 0.125px;
+    width: 0.125px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified alignment properties should return a Flex object with auto flex basis applied 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: wrap;
+  -ms-flex-preferred-size: wrap;
+  flex-basis: wrap;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified alignment properties should return a Flex object with column flex direction 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified alignment properties should return a Flex object with content aligned to the the center 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified alignment properties should return a Flex object with content justified to the the center 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified alignment properties should return a Flex object with flex-wrap styling applied 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified alignment properties should return a Flex object with items aligned to the the center 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified layout properties should return a Flex object with height 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 64px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified layout properties should return a Flex object with height based on defined breakpoints 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    height: 64px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified layout properties should return a Flex object with maxHeight 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 1024px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified layout properties should return a Flex object with maxHeight based on defined breakpoints 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 768px;
+}
+
+@media screen and (min-width:64em) {
+  .c0 {
+    max-height: 1024px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified layout properties should return a Flex object with maxWidth 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1024px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified layout properties should return a Flex object with maxWidth based on defined breakpoints 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 768px;
+}
+
+@media screen and (min-width:64em) {
+  .c0 {
+    max-width: 1024px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified layout properties should return a Flex object with minWidth 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 128px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified layout properties should return a Flex object with minWidth based on defined breakpoints 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 96px;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    min-width: 128px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified layout properties should return a Flex object with ratio (height * padding-bottom) 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+  padding-bottom: 75%;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified layout properties should return a Flex object with size (width and height) 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  width: 32px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified layout properties should return a Flex object with size (width and height) based on defined breakpoints 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  width: 32px;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    height: 48px;
+    width: 48px;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified margins should return a Flex object with margin applying space all around 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified margins should return a Flex object with margin applying space on bottom 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified margins should return a Flex object with margin applying space on left 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified margins should return a Flex object with margin applying space on right 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified margins should return a Flex object with margin applying space on the left and right 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified margins should return a Flex object with margin applying space on the top and bottom 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified margins should return a Flex object with margin applying space on top 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified padding should return a Flex object with padding applying space all around 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified padding should return a Flex object with padding applying space on bottom 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified padding should return a Flex object with padding applying space on left 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified padding should return a Flex object with padding applying space on right 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified padding should return a Flex object with padding applying space on the left and right 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified padding should return a Flex object with padding applying space on the top and bottom 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified padding should return a Flex object with padding applying space on top 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified widths should return a Flex object with a percentage width 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified widths should return a Flex object with a specified width 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified widths should return a Flex object with an exact pixel width 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 256px;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified widths should return a Flex object with the exact width enter with the stated unit 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 2em;
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
+
+exports[`Flex with specified widths should return a Flex object with width applied to different breakpoints 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    width: 50%;
+  }
+}
+
+<div
+  className="c0"
+>
+  Lorem Ipsum
+</div>
+`;
