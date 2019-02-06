@@ -69,21 +69,3 @@ export const Box = styled(BoxComponent)`
   ${left}
 `;
 
-Box.propTypes = {
-  ...space.propTypes,
-  ...display.propTypes,
-  ...height.propTypes,
-  ...maxHeight.propTypes,
-  ...minHeight.propTypes,
-  ...width.propTypes,
-  ...maxWidth.propTypes,
-  ...minWidth.propTypes,
-  ...position.propTypes,
-  ...size.propTypes,
-  ...ratio.propTypes,
-  ...zIndex.propTypes,
-  ...top.propTypes,
-  ...right.propTypes,
-  ...bottom.propTypes,
-  ...left.propTypes,
-};

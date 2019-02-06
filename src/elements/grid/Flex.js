@@ -1,5 +1,5 @@
+import React from 'react';
 import styled from 'styled-components';
-
 import {
   alignContent,
   alignItems,
@@ -25,8 +25,34 @@ import {
   width,
   zIndex,
 } from 'styled-system';
+import { passThrough } from 'src/utils/componentHelpers';
 
-export const Flex = styled.div`
+const FlexComponent = ({ children, className, ...props }) => (
+  <div {...passThrough(FlexComponent, props)} className={className}>
+    {children}
+  </div>
+);
+
+FlexComponent.propTypes = {
+  ...alignContent.propTypes,
+  ...alignItems.propTypes,
+  ...alignSelf.propTypes,
+  ...justifyContent.propTypes,
+  ...flexBasis.propTypes,
+  ...flexDirection.propTypes,
+  ...flexWrap.propTypes,
+  ...ratio.propTypes,
+  ...space.propTypes,
+  ...height.propTypes,
+  ...maxHeight.propTypes,
+  ...maxWidth.propTypes,
+  ...minHeight.propTypes,
+  ...minWidth.propTypes,
+  ...size.propTypes,
+  ...width.propTypes,
+};
+
+export const Flex = styled(FlexComponent)`
   display: flex;
   ${space}
   ${display}
@@ -52,12 +78,3 @@ export const Flex = styled.div`
   ${flexDirection}
   ${flexWrap}
 `;
-Flex.propTypes = {
-  ...height.propTypes,
-  ...maxHeight.propTypes,
-  ...maxWidth.propTypes,
-  ...minHeight.propTypes,
-  ...minWidth.propTypes,
-  ...size.propTypes,
-  ...width.propTypes,
-};

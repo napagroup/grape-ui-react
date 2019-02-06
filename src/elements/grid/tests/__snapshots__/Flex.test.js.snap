@@ -37,7 +37,6 @@ exports[`Flex base should return a Flex object with 2 responsive Box elements as
 
 <div
   className="c0"
-  wrap="wrap"
 >
   <div
     className="c1"
@@ -251,14 +250,6 @@ exports[`Flex using custom theme breakpoints for Core Styling should return a Fl
 
 <div
   className="c0"
-  width={
-    Array [
-      1,
-      0.5,
-      0.25,
-      0.125,
-    ]
-  }
 >
   Lorem Ipsum
 </div>
@@ -293,14 +284,6 @@ exports[`Flex using custom theme breakpoints for Layout should return a Flex obj
 
 <div
   className="c0"
-  height={
-    Array [
-      0,
-      1,
-      2,
-      3,
-    ]
-  }
 >
   Lorem Ipsum
 </div>
@@ -469,14 +452,6 @@ exports[`Flex using custom theme breakpoints for Layout should return a Flex obj
 
 <div
   className="c0"
-  size={
-    Array [
-      1,
-      0.5,
-      0.25,
-      0.125,
-    ]
-  }
 >
   Lorem Ipsum
 </div>
@@ -603,7 +578,6 @@ exports[`Flex with specified layout properties should return a Flex object with 
 
 <div
   className="c0"
-  height={64}
 >
   Lorem Ipsum
 </div>
@@ -626,12 +600,6 @@ exports[`Flex with specified layout properties should return a Flex object with 
 
 <div
   className="c0"
-  height={
-    Array [
-      48,
-      64,
-    ]
-  }
 >
   Lorem Ipsum
 </div>
@@ -780,7 +748,6 @@ exports[`Flex with specified layout properties should return a Flex object with 
 
 <div
   className="c0"
-  size={32}
 >
   Lorem Ipsum
 </div>
@@ -805,12 +772,6 @@ exports[`Flex with specified layout properties should return a Flex object with 
 
 <div
   className="c0"
-  size={
-    Array [
-      32,
-      48,
-    ]
-  }
 >
   Lorem Ipsum
 </div>
@@ -1055,7 +1016,6 @@ exports[`Flex with specified widths should return a Flex object with a percentag
 
 <div
   className="c0"
-  width={0.5}
 >
   Lorem Ipsum
 </div>
@@ -1072,7 +1032,6 @@ exports[`Flex with specified widths should return a Flex object with a specified
 
 <div
   className="c0"
-  width={2}
 >
   Lorem Ipsum
 </div>
@@ -1089,7 +1048,6 @@ exports[`Flex with specified widths should return a Flex object with an exact pi
 
 <div
   className="c0"
-  width={256}
 >
   Lorem Ipsum
 </div>
@@ -1106,7 +1064,6 @@ exports[`Flex with specified widths should return a Flex object with the exact w
 
 <div
   className="c0"
-  width="2em"
 >
   Lorem Ipsum
 </div>
@@ -1129,12 +1086,6 @@ exports[`Flex with specified widths should return a Flex object with width appli
 
 <div
   className="c0"
-  width={
-    Array [
-      1,
-      0.5,
-    ]
-  }
 >
   Lorem Ipsum
 </div>

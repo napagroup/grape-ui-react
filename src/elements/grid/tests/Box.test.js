@@ -10,6 +10,11 @@ describe('Box Component base', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Box object with acceptable attributes', () => {
+    const component = renderer.create(<Box id="my-box-id">Lorem Ipsum</Box>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
 describe('Box Component with specified margins', () => {
   it('should return a Box object with margin', () => {

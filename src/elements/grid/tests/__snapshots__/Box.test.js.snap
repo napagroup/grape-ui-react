@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Box Component base should return a Box object with acceptable attributes 1`] = `
+<div
+  className=""
+  id="my-box-id"
+>
+  Lorem Ipsum
+</div>
+`;
+
 exports[`Box Component base should return a Box object with base styling 1`] = `
 <div
   className=""
