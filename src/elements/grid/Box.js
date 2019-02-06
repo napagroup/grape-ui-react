@@ -1,3 +1,5 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
   bottom,
@@ -17,8 +19,38 @@ import {
   width,
   zIndex,
 } from 'styled-system';
+import { passThrough } from 'src/utils/componentHelpers';
 
-export const Box = styled.div`
+const BoxComponent = ({ children, className, ...props }) => (
+  <div {...passThrough(BoxComponent, props)} className={className}>
+    {children}
+  </div>
+);
+BoxComponent.propTypes = {
+  children: PropTypes.any.isRequired,
+  className: PropTypes.string,
+  ...space.propTypes,
+  ...display.propTypes,
+  ...height.propTypes,
+  ...maxHeight.propTypes,
+  ...minHeight.propTypes,
+  ...width.propTypes,
+  ...maxWidth.propTypes,
+  ...minWidth.propTypes,
+  ...position.propTypes,
+  ...size.propTypes,
+  ...ratio.propTypes,
+  ...zIndex.propTypes,
+  ...top.propTypes,
+  ...right.propTypes,
+  ...bottom.propTypes,
+  ...left.propTypes,
+};
+
+BoxComponent.defaultProps = {
+  className: '',
+};
+export const Box = styled(BoxComponent)`
   ${space}
   ${display}
   ${width}
@@ -38,6 +70,7 @@ export const Box = styled.div`
 `;
 
 Box.propTypes = {
+  ...space.propTypes,
   ...display.propTypes,
   ...height.propTypes,
   ...maxHeight.propTypes,

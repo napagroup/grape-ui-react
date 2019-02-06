@@ -11,16 +11,19 @@ import {
   getColor,
   getTextAlign,
   getTextDecoration,
+  typography,
 } from './textStyles';
+import { passThrough } from 'src/utils/componentHelpers';
 
 const TextComponent = ({ children, className, ...props }) => (
-  <span className={className}>
+  <span {...passThrough(TextComponent, props)} className={className}>
     {children}
   </span>
 );
 TextComponent.propTypes = {
   children: PropTypes.any.isRequired,
   className: PropTypes.string,
+  ...typography.propTypes,
 };
 
 TextComponent.defaultProps = {
@@ -39,12 +42,5 @@ export const Text = styled(TextComponent)`
   `;
 
 Text.propTypes = {
-  color: PropTypes.string,
-  fontFamily: PropTypes.string,
-  fontWeight: PropTypes.string,
-  kerning: PropTypes.string,
-  lg: PropTypes.bool,
-  sm: PropTypes.bool,
-  textAlign: PropTypes.string,
-  textDecoration: PropTypes.string,
+  ...typography.propTypes,
 };

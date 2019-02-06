@@ -1,6 +1,7 @@
 import { resolveColor } from 'src/utils/componentHelpers';
 import { getGlobalStyles } from 'src/global-styles';
 import { getScaledFontSize } from './utils';
+import PropTypes from 'prop-types';
 
 const { fontFamily: fontFamilySchema, fontSize: fontSizeSchema } = getGlobalStyles();
 
@@ -89,4 +90,17 @@ export const textStylesBase = (props = {}) => {
     text-align: ${textAlign};
     text-decoration: ${textDecoration};
   `;
+};
+export const typography = {
+  propTypes: {
+    color: PropTypes.string,
+    fontFamily: PropTypes.string,
+    fontWeight: PropTypes.string,
+    italic: PropTypes.bool,
+    kerning: PropTypes.string,
+    lg: PropTypes.bool,
+    sm: PropTypes.bool,
+    textAlign: PropTypes.string,
+    textDecoration: PropTypes.string,
+  },
 };

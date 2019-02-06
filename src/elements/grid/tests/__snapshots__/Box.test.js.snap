@@ -130,18 +130,6 @@ exports[`Box Component using custom theme breakpoints for Core Styling should re
 
 exports[`Box Component using custom theme breakpoints for Core Styling should return a Box object with overridden breakpoints for width 1`] = `
 .c0 {
-  font-family: inherit;
-  font-size: 100%;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
   width: 100%;
 }
 
@@ -183,12 +171,6 @@ exports[`Box Component using custom theme breakpoints for Layout should return a
 
 <div
   className="c0"
-  display={
-    Array [
-      "block",
-      "inline-block",
-    ]
-  }
 >
   Lorem Ipsum
 </div>
@@ -219,14 +201,6 @@ exports[`Box Component using custom theme breakpoints for Layout should return a
 
 <div
   className="c0"
-  height={
-    Array [
-      0,
-      1,
-      2,
-      3,
-    ]
-  }
 >
   Lorem Ipsum
 </div>
@@ -375,14 +349,6 @@ exports[`Box Component using custom theme breakpoints for Layout should return a
 
 <div
   className="c0"
-  size={
-    Array [
-      1,
-      0.5,
-      0.25,
-      0.125,
-    ]
-  }
 >
   Lorem Ipsum
 </div>
@@ -485,7 +451,6 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 <div
   className="c0"
-  display="inline-block"
 >
   Lorem Ipsum
 </div>
@@ -504,12 +469,6 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 <div
   className="c0"
-  display={
-    Array [
-      "block",
-      "inline-block",
-    ]
-  }
 >
   Lorem Ipsum
 </div>
@@ -522,7 +481,6 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 <div
   className="c0"
-  height={64}
 >
   Lorem Ipsum
 </div>
@@ -541,12 +499,6 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 <div
   className="c0"
-  height={
-    Array [
-      48,
-      64,
-    ]
-  }
 >
   Lorem Ipsum
 </div>
@@ -693,7 +645,6 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 <div
   className="c0"
-  size={32}
 >
   Lorem Ipsum
 </div>
@@ -714,12 +665,6 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 <div
   className="c0"
-  size={
-    Array [
-      32,
-      48,
-    ]
-  }
 >
   Lorem Ipsum
 </div>
@@ -904,7 +849,6 @@ exports[`Box Component with specified widths should return a Box object with a p
 
 <div
   className="c0"
-  width={0.5}
 >
   Lorem Ipsum
 </div>
@@ -917,7 +861,6 @@ exports[`Box Component with specified widths should return a Box object with an 
 
 <div
   className="c0"
-  width={256}
 >
   Lorem Ipsum
 </div>
@@ -930,7 +873,6 @@ exports[`Box Component with specified widths should return a Box object with an 
 
 <div
   className="c0"
-  width="2em"
 >
   Lorem Ipsum
 </div>
@@ -949,12 +891,6 @@ exports[`Box Component with specified widths should return a Box object with wid
 
 <div
   className="c0"
-  width={
-    Array [
-      1,
-      0.5,
-    ]
-  }
 >
   Lorem Ipsum
 </div>

@@ -259,7 +259,7 @@ describe('Box Component using custom theme breakpoints', () => {
       const tree = component.toJSON();
       expect(tree).toMatchSnapshot();
     });
-    xit('should return a Box object with overridden breakpoints for width', () => {
+    it('should return a Box object with overridden breakpoints for width', () => {
       const component = renderer.create(<ThemeProvider theme={theme}>
         <Box width={[1, 1 / 2, 1 / 4, 1 / 8]}>Lorem Ipsum</Box>
       </ThemeProvider>); // eslint-disable-line react/jsx-closing-tag-location
