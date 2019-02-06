@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
@@ -12,7 +13,20 @@ import {
   getTextDecoration,
 } from './textStyles';
 
-export const Text = styled.span`
+const TextComponent = ({ children, className, ...props }) => (
+  <span className={className}>
+    {children}
+  </span>
+);
+TextComponent.propTypes = {
+  children: PropTypes.any.isRequired,
+  className: PropTypes.string,
+};
+
+TextComponent.defaultProps = {
+  className: '',
+};
+export const Text = styled(TextComponent)`
   ${getFontFamily}
   ${getFontSize}
   ${getFontWeight}

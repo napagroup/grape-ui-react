@@ -41,7 +41,6 @@ exports[`Text Component specified styles should return a Text object with a spec
 
 <span
   className="c0"
-  color="green.light"
 >
   Lorem Ipsum
 </span>
@@ -88,7 +87,6 @@ exports[`Text Component specified styles should return a Text object with a spec
 
 <span
   className="c0"
-  textDecoration="underline"
 >
   Lorem Ipsum
 </span>
@@ -182,7 +180,6 @@ exports[`Text Component specified styles should return a Text object with specif
 
 <span
   className="c0"
-  fontFamily="monospace"
 >
   Lorem Ipsum
 </span>
@@ -206,7 +203,6 @@ exports[`Text Component specified styles should return a Text object with specif
 
 <span
   className="c0"
-  fontWeight="bolder"
 >
   Lorem Ipsum
 </span>
@@ -230,7 +226,6 @@ exports[`Text Component specified styles should return a Text object with specif
 
 <span
   className="c0"
-  kerning="1px"
 >
   Lorem Ipsum
 </span>
