@@ -121,7 +121,6 @@ exports[`List Specific Styling should return a List object with a base color (im
 
 <ul
   className="c0"
-  color="green"
 >
   Lorem Ipsum
 </ul>
@@ -147,7 +146,6 @@ exports[`List Specific Styling should return a List object with a base color 1`]
 
 <ul
   className="c0"
-  color="green.base"
 >
   Lorem Ipsum
 </ul>
@@ -173,7 +171,6 @@ exports[`List Specific Styling should return a List object with a dark color 1`]
 
 <ul
   className="c0"
-  color="green.dark"
 >
   Lorem Ipsum
 </ul>
@@ -199,7 +196,6 @@ exports[`List Specific Styling should return a List object with a light color 1`
 
 <ul
   className="c0"
-  color="green.light"
 >
   Lorem Ipsum
 </ul>
@@ -225,7 +221,6 @@ exports[`List Specific Styling should return a List object with a specified font
 
 <ul
   className="c0"
-  fontFamily="monospace"
 >
   Lorem Ipsum
 </ul>
@@ -251,7 +246,6 @@ exports[`List Specific Styling should return a List object with a specified font
 
 <ul
   className="c0"
-  fontWeight="bold"
 >
   Lorem Ipsum
 </ul>
@@ -277,7 +271,6 @@ exports[`List Specific Styling should return a List object with a specified kern
 
 <ul
   className="c0"
-  kerning="2px"
 >
   Lorem Ipsum
 </ul>
@@ -328,7 +321,6 @@ exports[`List Specific Styling should return a List object with a specified text
 
 <ul
   className="c0"
-  textDecoration="underline"
 >
   Lorem Ipsum
 </ul>
@@ -646,7 +638,6 @@ exports[`Numbered List Specific Styling should return a List.ol object with a ba
 
 <ol
   className="c0"
-  color="green"
 >
   Lorem Ipsum
 </ol>
@@ -672,7 +663,6 @@ exports[`Numbered List Specific Styling should return a List.ol object with a ba
 
 <ol
   className="c0"
-  color="green.base"
 >
   Lorem Ipsum
 </ol>
@@ -698,7 +688,6 @@ exports[`Numbered List Specific Styling should return a List.ol object with a da
 
 <ol
   className="c0"
-  color="green.dark"
 >
   Lorem Ipsum
 </ol>
@@ -724,7 +713,6 @@ exports[`Numbered List Specific Styling should return a List.ol object with a li
 
 <ol
   className="c0"
-  color="green.light"
 >
   Lorem Ipsum
 </ol>
@@ -750,7 +738,6 @@ exports[`Numbered List Specific Styling should return a List.ol object with a sp
 
 <ol
   className="c0"
-  fontFamily="monospace"
 >
   Lorem Ipsum
 </ol>
@@ -776,7 +763,6 @@ exports[`Numbered List Specific Styling should return a List.ol object with a sp
 
 <ol
   className="c0"
-  fontWeight="bold"
 >
   Lorem Ipsum
 </ol>
@@ -802,7 +788,6 @@ exports[`Numbered List Specific Styling should return a List.ol object with a sp
 
 <ol
   className="c0"
-  kerning="2px"
 >
   Lorem Ipsum
 </ol>
@@ -853,7 +838,6 @@ exports[`Numbered List Specific Styling should return a List.ol object with a sp
 
 <ol
   className="c0"
-  textDecoration="underline"
 >
   Lorem Ipsum
 </ol>
