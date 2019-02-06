@@ -41,6 +41,3 @@ export const Text = styled(TextComponent)`
   ${getTextDecoration}
   `;
 
-Text.propTypes = {
-  ...typography.propTypes,
-};
