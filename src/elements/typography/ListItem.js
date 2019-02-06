@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { getGlobalStyles } from 'src/global-styles';
@@ -12,10 +13,23 @@ import {
   getColor,
   getTextAlign,
   getTextDecoration,
+  typography,
 } from './textStyles';
+import { passThrough } from 'src/utils/componentHelpers';
 
 const { grid: { gutter } } = getGlobalStyles();
-export const ListItem = styled.li`
+
+const ListItemComponent = ({ children, ...props }) => (
+  <li {...passThrough(ListItemComponent, props)}>
+    {children}
+  </li>
+);
+ListItemComponent.propTypes = {
+  children: PropTypes.any.isRequired,
+  ...typography.propTypes,
+};
+
+export const ListItem = styled(ListItemComponent)`
   ${getFontFamily}
   ${getFontSize}
   ${getFontWeight}
@@ -29,12 +43,5 @@ export const ListItem = styled.li`
   `;
 
 ListItem.propTypes = {
-  color: PropTypes.string,
-  fontFamily: PropTypes.string,
-  fontWeight: PropTypes.string,
-  kerning: PropTypes.string,
-  lg: PropTypes.bool,
-  sm: PropTypes.bool,
-  textAlign: PropTypes.string,
-  textDecoration: PropTypes.string,
+  ...typography.propTypes,
 };

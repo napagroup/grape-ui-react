@@ -34,7 +34,7 @@ const getInLineStyles = props => {
 const getPaddingLeft = props => `padding-left:  ${(props.unstyled || props.inline) ? '0' : '2.5rem'};`;
 const getListStyle = props => `${props.unstyled ? '> li { list-style: none; }' : ''}`;
 
-const ListFactory = factoryProps => {
+const listFactory = factoryProps => {
   const { tag } = factoryProps;
   const ListComponent = ({
     children, ...props
@@ -67,9 +67,9 @@ const ListFactory = factoryProps => {
     `;
 };
 
-const List = ListFactory({ tag: 'ul' });
+const List = listFactory({ tag: 'ul' });
 List.ul = List;
-List.ol = ListFactory({ tag: 'ol' });
+List.ol = listFactory({ tag: 'ol' });
 List.propTypes = {
   inline: PropTypes.bool,
   ...typography.propTypes,

@@ -22,7 +22,7 @@ const getHoverColor = props => `&:active {
  }`;
 
 const LinkComponent = ({
-  children, className, to, ...props
+  children, to, ...props
 }) => {
   if (to) {
     const linkProps = {
@@ -30,13 +30,13 @@ const LinkComponent = ({
       to,
     };
     return (
-      <ReactRouterLink {...linkProps} className={className}>
+      <ReactRouterLink {...linkProps}>
         {children}
       </ReactRouterLink>
     );
   }
   return (
-    <a {...passThrough(LinkComponent, props)} className={className}>
+    <a {...passThrough(LinkComponent, props)}>
       {children}
     </a>
   );
@@ -44,14 +44,12 @@ const LinkComponent = ({
 
 LinkComponent.propTypes = {
   children: PropTypes.any.isRequired,
-  className: PropTypes.string,
   hoverColor: PropTypes.string,
   ...typography.propTypes,
   to: PropTypes.string,
 };
 
 LinkComponent.defaultProps = {
-  className: '',
   hoverColor: '',
   to: '',
 };

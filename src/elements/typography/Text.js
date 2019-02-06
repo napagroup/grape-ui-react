@@ -25,8 +25,6 @@ TextComponent.propTypes = {
   ...typography.propTypes,
 };
 
-TextComponent.defaultProps = {
-};
 export const Text = styled(TextComponent)`
   ${getFontFamily}
   ${getFontSize}

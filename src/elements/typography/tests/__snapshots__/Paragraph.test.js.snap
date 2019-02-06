@@ -43,7 +43,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 <p
   className="c0"
-  fontWeight="bold"
 >
   Lorem Ipsum
 </p>
@@ -68,7 +67,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 <p
   className="c0"
-  color="green"
 >
   Lorem Ipsum
 </p>
@@ -117,7 +115,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 <p
   className="c0"
-  fontFamily="serif"
 >
   Lorem Ipsum
 </p>
@@ -215,7 +212,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 <p
   className="c0"
-  kerning="1px"
 >
   Lorem Ipsum
 </p>
@@ -264,7 +260,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 <p
   className="c0"
-  textDecoration="underline"
 >
   Lorem Ipsum
 </p>

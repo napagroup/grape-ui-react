@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { getGlobalStyles } from 'src/global-styles';
@@ -11,7 +12,9 @@ import {
   getColor,
   getTextAlign,
   getTextDecoration,
+  typography,
 } from './textStyles';
+import { passThrough } from 'src/utils/componentHelpers';
 
 const { grid: gridSchema } = getGlobalStyles();
 
@@ -23,7 +26,22 @@ const getParagraphFontWeight = props => {
   const { lead } = props;
   return lead ? getFontWeight({ ...props, fontWeight: '300' }) : getFontWeight(props);
 };
-const Paragraph = styled.p`
+
+const ParagraphComponent = ({ children, ...props }) => (
+  <p {...passThrough(ParagraphComponent, props)}>
+    {children}
+  </p>
+);
+ParagraphComponent.propTypes = {
+  children: PropTypes.any.isRequired,
+  lead: PropTypes.bool,
+  ...typography.propTypes,
+};
+
+ParagraphComponent.defaultProps = {
+  lead: false,
+};
+const Paragraph = styled(ParagraphComponent)`
   ${getFontFamily}
   ${getParagraphFontSize}
   ${getParagraphFontWeight}
@@ -37,15 +55,8 @@ const Paragraph = styled.p`
   `;
 
 Paragraph.propTypes = {
-  color: PropTypes.string,
-  fontFamily: PropTypes.string,
-  fontWeight: PropTypes.string,
-  kerning: PropTypes.string,
+  ...typography.propTypes,
   lead: PropTypes.bool,
-  lg: PropTypes.bool,
-  sm: PropTypes.bool,
-  textAlign: PropTypes.string,
-  textDecoration: PropTypes.string,
 };
 
 export { Paragraph };
