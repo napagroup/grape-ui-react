@@ -40,7 +40,7 @@ const getHeaderFontWeight = props => {
   const headerFontWeight = fontWeight !== defaultTextStylesBase.fontWeight ? fontWeight : undefined;
   const overrides = {
     ...props,
-    fontWeight: headerFontWeight || (display ? '300' : headerFontWeight),
+    fontWeight: headerFontWeight || (display ? '500' : headerFontWeight),
   };
   return getFontWeight(overrides);
 };
