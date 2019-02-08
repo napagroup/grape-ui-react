@@ -1,5 +1,4 @@
 import { Button } from './elements/Button';
-import { grapeHtmlStylesInjector } from './elements/GrapeHtmlStylesInjector';
 import { Box, Flex } from './elements/grid';
 import { Image } from './elements/image';
 import { Form } from './elements/form';
@@ -17,7 +16,6 @@ module.exports = {
   Flex,
   Form,
   getGlobalStyles,
-  grapeHtmlStylesInjector,
   Header,
   Image,
   Link,
