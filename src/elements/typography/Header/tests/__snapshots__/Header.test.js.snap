@@ -331,7 +331,6 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 <h1
   className="c0"
-  display={true}
 >
   Lorem Ipsum
 </h1>
@@ -428,7 +427,6 @@ exports[`Header.h1 Component specified styles should return a Header object with
 
 <h1
   className="c0"
-  display={true}
 >
   Lorem Ipsum
 </h1>

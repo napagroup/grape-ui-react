@@ -52,6 +52,11 @@ const headerFactory = factoryProps => {
   HeaderComponent.propTypes = {
     children: PropTypes.any.isRequired,
     ...typography.propTypes,
+    display: PropTypes.bool,
+  };
+
+  HeaderComponent.defaultProps = {
+    display: false,
   };
 
   const getHeaderFontSize = getHeaderFontSizeFromTag(factoryProps);
