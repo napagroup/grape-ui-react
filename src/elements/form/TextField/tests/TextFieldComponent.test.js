@@ -1,24 +1,24 @@
 import React from 'react';
-import { TextFieldComponent } from '../TextFieldComponent';
+import { TextFieldComponent } from '../';
 import 'jest-styled-components';
-// import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import { configure, mount } from 'enzyme';
-import toJson from 'enzyme-to-json';
+import renderer from 'react-test-renderer';
 
-configure({ adapter: new Adapter() });
+const assertReactElement = element => {
+  const component = renderer.create(element);
+  return component.toJSON();
+};
 
 describe('TextFieldComponent base', () => {
   it('should return a TextFieldComponent object', () => {
-    const component = mount(<TextFieldComponent />);
-    expect(toJson(component.find('TextFieldComponent'))).toMatchSnapshot();
+    const element = <TextFieldComponent />;
+    expect(assertReactElement(element)).toMatchSnapshot();
   });
   it('should return a small TextFieldComponent object', () => {
-    const component = mount(<TextFieldComponent sm />);
-    expect(toJson(component.find('TextFieldComponent'))).toMatchSnapshot();
+    const element = <TextFieldComponent sm />;
+    expect(assertReactElement(element)).toMatchSnapshot();
   });
   it('should return a large TextFieldComponent object', () => {
-    const component = mount(<TextFieldComponent lg />);
-    expect(toJson(component.find('TextFieldComponent'))).toMatchSnapshot();
+    const element = <TextFieldComponent lg />;
+    expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

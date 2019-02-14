@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ControlLabel } from 'src/elements/form/ControlGroup/ControlLabel';
-import { ControlGroup } from 'src/elements/form/ControlGroup/ControlGroup';
+import { ControlLabel } from 'src/elements/form/ControlLabel';
+import { ControlGroup } from 'src/elements/form/ControlGroup';
 import { passThrough, removeSomeProps, resolveColor } from 'src/utils/componentHelpers';
 import { CheckboxFieldComponent } from './CheckboxFieldComponent';
 import { space } from 'styled-system';
@@ -25,7 +25,7 @@ export const CheckboxField = props => {
     defaultValue,
     plainText,
     value,
-    controlLabel,
+    labelText,
     required,
     validationError,
     ...otherProps
@@ -38,7 +38,7 @@ export const CheckboxField = props => {
   const spaceProps = { ...space(preSpaceProps) };
   const otherWithoutSpaceProps = removeSomeProps(otherProps, spaceProps);
   const childProps = { id: controlId, ...passThrough(CheckboxField, otherWithoutSpaceProps) };
-  const newlabel = !required ? controlLabel : `${controlLabel}*`;
+  const newlabel = !required ? labelText : `${labelText}*`;
 
   const getDisplayValue = function getDisplayValue() {
     if (value) {
@@ -77,7 +77,7 @@ CheckboxField.propTypes = {
   assistiveText: PropTypes.string,
   bgColor: PropTypes.string,
   controlId: PropTypes.string.isRequired,
-  controlLabel: PropTypes.string.isRequired,
+  labelText: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   plainText: PropTypes.bool,
   validationError: PropTypes.string,

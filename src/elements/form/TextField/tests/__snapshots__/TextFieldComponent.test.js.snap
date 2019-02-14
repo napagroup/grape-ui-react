@@ -58,33 +58,12 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   color: hsl(0,0%,75%);
 }
 
-<TextFieldComponent
-  activeColor="brandPrimary"
-  borderColor="hsl(0, 0%, 25%)"
-  borderRadius="4px"
-  color="inherit"
-  fontFamily="inherit"
-  fontWeight="inherit"
-  isFocused={false}
-  kerning="inherit"
-  lg={false}
-  padding="1rem"
-  placeholderColor="gray.light"
-  plainText={false}
-  sm={false}
-  textAlign="inherit"
-  textDecoration="inherit"
-  validationError=""
->
-  <styled.input>
-    <input
-      className="c0"
-      readOnly={false}
-      tabIndex="0"
-      type="text"
-    />
-  </styled.input>
-</TextFieldComponent>
+<input
+  className="c0"
+  readOnly={false}
+  tabIndex="0"
+  type="text"
+/>
 `;
 
 exports[`TextFieldComponent base should return a large TextFieldComponent object 1`] = `
@@ -145,33 +124,12 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   color: hsl(0,0%,75%);
 }
 
-<TextFieldComponent
-  activeColor="brandPrimary"
-  borderColor="hsl(0, 0%, 25%)"
-  borderRadius="4px"
-  color="inherit"
-  fontFamily="inherit"
-  fontWeight="inherit"
-  isFocused={false}
-  kerning="inherit"
-  lg={true}
-  padding="1rem"
-  placeholderColor="gray.light"
-  plainText={false}
-  sm={false}
-  textAlign="inherit"
-  textDecoration="inherit"
-  validationError=""
->
-  <styled.input>
-    <input
-      className="c0"
-      readOnly={false}
-      tabIndex="0"
-      type="text"
-    />
-  </styled.input>
-</TextFieldComponent>
+<input
+  className="c0"
+  readOnly={false}
+  tabIndex="0"
+  type="text"
+/>
 `;
 
 exports[`TextFieldComponent base should return a small TextFieldComponent object 1`] = `
@@ -232,31 +190,10 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   color: hsl(0,0%,75%);
 }
 
-<TextFieldComponent
-  activeColor="brandPrimary"
-  borderColor="hsl(0, 0%, 25%)"
-  borderRadius="4px"
-  color="inherit"
-  fontFamily="inherit"
-  fontWeight="inherit"
-  isFocused={false}
-  kerning="inherit"
-  lg={false}
-  padding="1rem"
-  placeholderColor="gray.light"
-  plainText={false}
-  sm={true}
-  textAlign="inherit"
-  textDecoration="inherit"
-  validationError=""
->
-  <styled.input>
-    <input
-      className="c0"
-      readOnly={false}
-      tabIndex="0"
-      type="text"
-    />
-  </styled.input>
-</TextFieldComponent>
+<input
+  className="c0"
+  readOnly={false}
+  tabIndex="0"
+  type="text"
+/>
 `;

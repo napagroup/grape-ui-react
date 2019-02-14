@@ -2,7 +2,7 @@
 
 exports[`Assistive Text Component base should return an Assistive Text object 1`] = `
 .c0 {
-  padding: 0 1rem;
+  color: hsl(0,0%,50%);
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -11,39 +11,23 @@ exports[`Assistive Text Component base should return an Assistive Text object 1`
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: hsl(0,0%,50%);
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  padding: 0 1rem;
 }
 
-<AssistiveText
-  color="gray"
-  fontFamily="inherit"
-  fontWeight="inherit"
+<div
+  className="c0"
   id="assitiveTextIdHelp"
-  kerning="inherit"
-  lg={false}
-  sm={false}
-  textAlign="inherit"
-  textDecoration="inherit"
 >
-  <styled.div
-    id="assitiveTextIdHelp"
-  >
-    <div
-      className="c0"
-      id="assitiveTextIdHelp"
-    >
-      Helper text is here
-    </div>
-  </styled.div>
-</AssistiveText>
+  Helper text is here
+</div>
 `;
 
 exports[`Assistive Text Component base should return an Assistive Text object with danger text color 1`] = `
 .c0 {
-  padding: 0 1rem;
+  color: hsl(4.1,89.6%,58.4%);
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -52,32 +36,16 @@ exports[`Assistive Text Component base should return an Assistive Text object wi
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: hsl(4.1,89.6%,58.4%);
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  padding: 0 1rem;
 }
 
-<AssistiveText
-  color="brandDanger"
-  fontFamily="inherit"
-  fontWeight="inherit"
+<div
+  className="c0"
   id="assitiveTextIdError"
-  kerning="inherit"
-  lg={false}
-  sm={false}
-  textAlign="inherit"
-  textDecoration="inherit"
 >
-  <styled.div
-    id="assitiveTextIdError"
-  >
-    <div
-      className="c0"
-      id="assitiveTextIdError"
-    >
-      Error text is here
-    </div>
-  </styled.div>
-</AssistiveText>
+  Error text is here
+</div>
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ControlGroupBase } from 'src/elements/form/ControlGroup/ControlGroup';
+import { ControlGroup } from 'src/elements/form/ControlGroup';
 import { passThrough, removeSomeProps, resolveColor } from 'src/utils/componentHelpers';
 import { SelectFieldComponent } from './SelectFieldComponent';
 import { space } from 'styled-system';
@@ -18,7 +18,7 @@ export const SelectField = props => {
     assistiveText,
     plainText,
     value,
-    controlLabel,
+    labelText,
     required,
     validationError,
     ...otherProps
@@ -31,7 +31,7 @@ export const SelectField = props => {
   const spaceProps = { ...space(preSpaceProps) };
   const otherWithoutSpaceProps = removeSomeProps(otherProps, spaceProps);
   const childProps = { id: controlId, ...passThrough(SelectField, otherWithoutSpaceProps) };
-  const newlabel = !required ? controlLabel : `${controlLabel}*`;
+  const newlabel = !required ? labelText : `${labelText}*`;
   const disableRelatedProps = {
     isDisabled: disabled,
   };
@@ -55,18 +55,18 @@ export const SelectField = props => {
     return (<SelectFieldComponent validationError={validationError} {...childProps} {...disableRelatedProps} value={value || defaultValue} />);
   };
   return (
-    <ControlGroupBase
+    <ControlGroup
       activeColor={activeColor}
       assistiveText={assistiveText}
       bgColor={bgColor}
       controlId={controlId}
-      controlLabel={newlabel}
+      labelText={newlabel}
       disabled={disabled}
       validationError={validationError}
       {...spaceProps}
     >
       {renderValueOrComponent()}
-    </ControlGroupBase>);
+    </ControlGroup>);
 };
 
 SelectField.propTypes = {
@@ -74,7 +74,7 @@ SelectField.propTypes = {
   assistiveText: PropTypes.string,
   bgColor: PropTypes.string,
   controlId: PropTypes.string.isRequired,
-  controlLabel: PropTypes.string.isRequired,
+  labelText: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   plainText: PropTypes.bool,
   validationError: PropTypes.string,

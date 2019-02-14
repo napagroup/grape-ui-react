@@ -1,12 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextField  a large TextFieldComponent object should return a large TextFieldComponent object  1`] = `
+.c2 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: -0.5rem;
+}
+
 .c0 {
-  bg-color: white.light;
-  padding-bottom: 16px;
-  padding-top: 4px;
   position: relative;
   background-color: hsl(0,0%,100%);
+  padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -67,131 +86,52 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
   color: hsl(0,0%,75%);
 }
 
-.c2 {
-  background-color: hsl(0,0%,100%);
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  position: absolute;
-  top: -0.5rem;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-<TextField
-  activeColor="brandPrimary"
-  assistiveText=""
-  bgColor="white.light"
-  controlId="exampleFullName"
-  controlLabel="Full name"
-  lg={true}
-  required={false}
-  validationError=""
+<div
+  className="c0"
 >
-  <ControlGroupBase
-    activeColor="brandPrimary"
-    assistiveText=""
-    bgColor="white.light"
-    controlId="exampleFullName"
-    controlLabel="Full name"
-    disabled={false}
-    paddingBottom="16px"
-    paddingTop="4px"
-    validationError=""
+  <input
+    className="c1"
+    id="exampleFullName"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullName"
   >
-    <ControlGroup
-      bgColor="white.light"
-      paddingBottom="16px"
-      paddingTop="4px"
-    >
-      <styled.div>
-        <div
-          className="c0"
-        >
-          <TextFieldComponent
-            activeColor="brandPrimary"
-            borderColor="hsl(0, 0%, 25%)"
-            borderRadius="4px"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullName"
-            isFocused={false}
-            kerning="inherit"
-            lg={true}
-            padding="1rem"
-            placeholderColor="gray.light"
-            plainText={false}
-            required={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.input
-              id="exampleFullName"
-              required={false}
-            >
-              <input
-                className="c1"
-                id="exampleFullName"
-                readOnly={false}
-                required={false}
-                tabIndex="0"
-                type="text"
-              />
-            </styled.input>
-          </TextFieldComponent>
-          <ControlLabel
-            activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 100%)"
-            color="inherit"
-            disabled={false}
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.label
-              activeColor="brandPrimary"
-              htmlFor="exampleFullName"
-            >
-              <label
-                className="c2"
-                htmlFor="exampleFullName"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
-        </div>
-      </styled.div>
-    </ControlGroup>
-  </ControlGroupBase>
-</TextField>
+    Full name
+  </label>
+</div>
 `;
 
 exports[`TextField Component base should return a TextField object 1`] = `
+.c2 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: -0.5rem;
+}
+
 .c0 {
-  bg-color: white.light;
-  padding-bottom: 16px;
-  padding-top: 4px;
   position: relative;
   background-color: hsl(0,0%,100%);
+  padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -252,130 +192,52 @@ exports[`TextField Component base should return a TextField object 1`] = `
   color: hsl(0,0%,75%);
 }
 
-.c2 {
-  background-color: hsl(0,0%,100%);
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  position: absolute;
-  top: -0.5rem;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-<TextField
-  activeColor="brandPrimary"
-  assistiveText=""
-  bgColor="white.light"
-  controlId="exampleFullName"
-  controlLabel="Full name"
-  required={false}
-  validationError=""
+<div
+  className="c0"
 >
-  <ControlGroupBase
-    activeColor="brandPrimary"
-    assistiveText=""
-    bgColor="white.light"
-    controlId="exampleFullName"
-    controlLabel="Full name"
-    disabled={false}
-    paddingBottom="16px"
-    paddingTop="4px"
-    validationError=""
+  <input
+    className="c1"
+    id="exampleFullName"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullName"
   >
-    <ControlGroup
-      bgColor="white.light"
-      paddingBottom="16px"
-      paddingTop="4px"
-    >
-      <styled.div>
-        <div
-          className="c0"
-        >
-          <TextFieldComponent
-            activeColor="brandPrimary"
-            borderColor="hsl(0, 0%, 25%)"
-            borderRadius="4px"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullName"
-            isFocused={false}
-            kerning="inherit"
-            lg={false}
-            padding="1rem"
-            placeholderColor="gray.light"
-            plainText={false}
-            required={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.input
-              id="exampleFullName"
-              required={false}
-            >
-              <input
-                className="c1"
-                id="exampleFullName"
-                readOnly={false}
-                required={false}
-                tabIndex="0"
-                type="text"
-              />
-            </styled.input>
-          </TextFieldComponent>
-          <ControlLabel
-            activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 100%)"
-            color="inherit"
-            disabled={false}
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.label
-              activeColor="brandPrimary"
-              htmlFor="exampleFullName"
-            >
-              <label
-                className="c2"
-                htmlFor="exampleFullName"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
-        </div>
-      </styled.div>
-    </ControlGroup>
-  </ControlGroupBase>
-</TextField>
+    Full name
+  </label>
+</div>
 `;
 
 exports[`TextField a TextFieldComponent object should return a TextFieldComponent object with a red bgColor  1`] = `
+.c2 {
+  background-color: hsl(4.1,89.6%,58.4%);
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: -0.5rem;
+}
+
 .c0 {
-  bg-color: red;
-  padding-bottom: 16px;
-  padding-top: 4px;
   position: relative;
   background-color: hsl(4.1,89.6%,58.4%);
+  padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -436,12 +298,30 @@ exports[`TextField a TextFieldComponent object should return a TextFieldComponen
   color: hsl(0,0%,75%);
 }
 
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    id="exampleFullName2"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullName2"
+  >
+    Full name2
+  </label>
+</div>
+`;
+
+exports[`TextField a plainText TextFieldComponent should return a disabled TextFieldComponent 1`] = `
 .c2 {
-  background-color: hsl(4.1,89.6%,58.4%);
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  position: absolute;
-  top: -0.5rem;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -450,116 +330,20 @@ exports[`TextField a TextFieldComponent object should return a TextFieldComponen
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: -0.5rem;
 }
 
-<TextField
-  activeColor="brandPrimary"
-  assistiveText=""
-  bgColor="red"
-  controlId="exampleFullName2"
-  controlLabel="Full name2"
-  required={false}
-  validationError=""
->
-  <ControlGroupBase
-    activeColor="brandPrimary"
-    assistiveText=""
-    bgColor="red"
-    controlId="exampleFullName2"
-    controlLabel="Full name2"
-    disabled={false}
-    paddingBottom="16px"
-    paddingTop="4px"
-    validationError=""
-  >
-    <ControlGroup
-      bgColor="red"
-      paddingBottom="16px"
-      paddingTop="4px"
-    >
-      <styled.div>
-        <div
-          className="c0"
-        >
-          <TextFieldComponent
-            activeColor="brandPrimary"
-            borderColor="hsl(0, 0%, 25%)"
-            borderRadius="4px"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullName2"
-            isFocused={false}
-            kerning="inherit"
-            lg={false}
-            padding="1rem"
-            placeholderColor="gray.light"
-            plainText={false}
-            required={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.input
-              id="exampleFullName2"
-              required={false}
-            >
-              <input
-                className="c1"
-                id="exampleFullName2"
-                readOnly={false}
-                required={false}
-                tabIndex="0"
-                type="text"
-              />
-            </styled.input>
-          </TextFieldComponent>
-          <ControlLabel
-            activeColor="brandPrimary"
-            bgColor="hsl(4.1, 89.6%, 58.4%)"
-            color="inherit"
-            disabled={false}
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName2"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.label
-              activeColor="brandPrimary"
-              htmlFor="exampleFullName2"
-            >
-              <label
-                className="c2"
-                htmlFor="exampleFullName2"
-              >
-                Full name2
-              </label>
-            </styled.label>
-          </ControlLabel>
-        </div>
-      </styled.div>
-    </ControlGroup>
-  </ControlGroupBase>
-</TextField>
-`;
-
-exports[`TextField a plainText TextFieldComponent should return a disabled TextFieldComponent 1`] = `
 .c0 {
-  bg-color: white.light;
-  padding-bottom: 16px;
-  padding-top: 4px;
   position: relative;
   background-color: hsl(0,0%,100%);
+  padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -582,12 +366,30 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
   padding: 1rem;
 }
 
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    id="exampleFullName2"
+    readOnly={true}
+    required={false}
+    tabIndex="-1"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullName2"
+  >
+    Full name2
+  </label>
+</div>
+`;
+
+exports[`TextField a small TextFieldComponent object should return a disabled TextFieldComponent 1`] = `
 .c2 {
   background-color: hsl(0,0%,100%);
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  position: absolute;
-  top: -0.5rem;
+  color: inherit;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -596,117 +398,20 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: -0.5rem;
 }
 
-<TextField
-  activeColor="red"
-  assistiveText=""
-  bgColor="white.light"
-  controlId="exampleFullName2"
-  controlLabel="Full name2"
-  plainText={true}
-  required={false}
-  validationError=""
->
-  <ControlGroupBase
-    activeColor="red"
-    assistiveText=""
-    bgColor="white.light"
-    controlId="exampleFullName2"
-    controlLabel="Full name2"
-    disabled={false}
-    paddingBottom="16px"
-    paddingTop="4px"
-    validationError=""
-  >
-    <ControlGroup
-      bgColor="white.light"
-      paddingBottom="16px"
-      paddingTop="4px"
-    >
-      <styled.div>
-        <div
-          className="c0"
-        >
-          <TextFieldComponent
-            activeColor="brandPrimary"
-            borderColor="hsl(0, 0%, 25%)"
-            borderRadius="4px"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullName2"
-            isFocused={false}
-            kerning="inherit"
-            lg={false}
-            padding="1rem"
-            placeholderColor="gray.light"
-            plainText={true}
-            required={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.input
-              id="exampleFullName2"
-              required={false}
-            >
-              <input
-                className="c1"
-                id="exampleFullName2"
-                readOnly={true}
-                required={false}
-                tabIndex="-1"
-                type="text"
-              />
-            </styled.input>
-          </TextFieldComponent>
-          <ControlLabel
-            activeColor="red"
-            bgColor="hsl(0, 0%, 100%)"
-            color="inherit"
-            disabled={false}
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName2"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.label
-              activeColor="red"
-              htmlFor="exampleFullName2"
-            >
-              <label
-                className="c2"
-                htmlFor="exampleFullName2"
-              >
-                Full name2
-              </label>
-            </styled.label>
-          </ControlLabel>
-        </div>
-      </styled.div>
-    </ControlGroup>
-  </ControlGroupBase>
-</TextField>
-`;
-
-exports[`TextField a small TextFieldComponent object should return a disabled TextFieldComponent 1`] = `
 .c0 {
-  bg-color: white.light;
-  padding-bottom: 16px;
-  padding-top: 4px;
   position: relative;
   background-color: hsl(0,0%,100%);
+  padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -767,12 +472,31 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
   color: hsl(0,0%,75%);
 }
 
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    disabled={true}
+    id="exampleFullName2"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullName2"
+  >
+    Full name2
+  </label>
+</div>
+`;
+
+exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object  1`] = `
 .c2 {
   background-color: hsl(0,0%,100%);
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  position: absolute;
-  top: -0.5rem;
+  color: inherit;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -781,120 +505,20 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: -0.5rem;
 }
 
-<TextField
-  activeColor="red"
-  assistiveText=""
-  bgColor="white.light"
-  controlId="exampleFullName2"
-  controlLabel="Full name2"
-  disabled={true}
-  required={false}
-  validationError=""
->
-  <ControlGroupBase
-    activeColor="red"
-    assistiveText=""
-    bgColor="white.light"
-    controlId="exampleFullName2"
-    controlLabel="Full name2"
-    disabled={false}
-    paddingBottom="16px"
-    paddingTop="4px"
-    validationError=""
-  >
-    <ControlGroup
-      bgColor="white.light"
-      paddingBottom="16px"
-      paddingTop="4px"
-    >
-      <styled.div>
-        <div
-          className="c0"
-        >
-          <TextFieldComponent
-            activeColor="brandPrimary"
-            borderColor="hsl(0, 0%, 25%)"
-            borderRadius="4px"
-            color="inherit"
-            disabled={true}
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullName2"
-            isFocused={false}
-            kerning="inherit"
-            lg={false}
-            padding="1rem"
-            placeholderColor="gray.light"
-            plainText={false}
-            required={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.input
-              disabled={true}
-              id="exampleFullName2"
-              required={false}
-            >
-              <input
-                className="c1"
-                disabled={true}
-                id="exampleFullName2"
-                readOnly={false}
-                required={false}
-                tabIndex="0"
-                type="text"
-              />
-            </styled.input>
-          </TextFieldComponent>
-          <ControlLabel
-            activeColor="red"
-            bgColor="hsl(0, 0%, 100%)"
-            color="inherit"
-            disabled={false}
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName2"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.label
-              activeColor="red"
-              htmlFor="exampleFullName2"
-            >
-              <label
-                className="c2"
-                htmlFor="exampleFullName2"
-              >
-                Full name2
-              </label>
-            </styled.label>
-          </ControlLabel>
-        </div>
-      </styled.div>
-    </ControlGroup>
-  </ControlGroupBase>
-</TextField>
-`;
-
-exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object  1`] = `
 .c0 {
-  bg-color: white.light;
-  padding-bottom: 16px;
-  padding-top: 4px;
   position: relative;
   background-color: hsl(0,0%,100%);
+  padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -955,131 +579,52 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   color: hsl(0,0%,75%);
 }
 
-.c2 {
-  background-color: hsl(0,0%,100%);
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  position: absolute;
-  top: -0.5rem;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-<TextField
-  activeColor="brandPrimary"
-  assistiveText=""
-  bgColor="white.light"
-  controlId="exampleFullName"
-  controlLabel="Full name"
-  required={false}
-  sm={true}
-  validationError=""
+<div
+  className="c0"
 >
-  <ControlGroupBase
-    activeColor="brandPrimary"
-    assistiveText=""
-    bgColor="white.light"
-    controlId="exampleFullName"
-    controlLabel="Full name"
-    disabled={false}
-    paddingBottom="16px"
-    paddingTop="4px"
-    validationError=""
+  <input
+    className="c1"
+    id="exampleFullName"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullName"
   >
-    <ControlGroup
-      bgColor="white.light"
-      paddingBottom="16px"
-      paddingTop="4px"
-    >
-      <styled.div>
-        <div
-          className="c0"
-        >
-          <TextFieldComponent
-            activeColor="brandPrimary"
-            borderColor="hsl(0, 0%, 25%)"
-            borderRadius="4px"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullName"
-            isFocused={false}
-            kerning="inherit"
-            lg={false}
-            padding="1rem"
-            placeholderColor="gray.light"
-            plainText={false}
-            required={false}
-            sm={true}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.input
-              id="exampleFullName"
-              required={false}
-            >
-              <input
-                className="c1"
-                id="exampleFullName"
-                readOnly={false}
-                required={false}
-                tabIndex="0"
-                type="text"
-              />
-            </styled.input>
-          </TextFieldComponent>
-          <ControlLabel
-            activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 100%)"
-            color="inherit"
-            disabled={false}
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.label
-              activeColor="brandPrimary"
-              htmlFor="exampleFullName"
-            >
-              <label
-                className="c2"
-                htmlFor="exampleFullName"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
-        </div>
-      </styled.div>
-    </ControlGroup>
-  </ControlGroupBase>
-</TextField>
+    Full name
+  </label>
+</div>
 `;
 
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object with a red activeColor  1`] = `
+.c2 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: -0.5rem;
+}
+
 .c0 {
-  bg-color: white.light;
-  padding-bottom: 16px;
-  padding-top: 4px;
   position: relative;
   background-color: hsl(0,0%,100%);
+  padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -1140,131 +685,52 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   color: hsl(0,0%,75%);
 }
 
-.c2 {
-  background-color: hsl(0,0%,100%);
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  position: absolute;
-  top: -0.5rem;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-<TextField
-  activeColor="red"
-  assistiveText=""
-  bgColor="white.light"
-  controlId="exampleFullName2"
-  controlLabel="Full name2"
-  required={false}
-  validationError=""
+<div
+  className="c0"
 >
-  <ControlGroupBase
-    activeColor="red"
-    assistiveText=""
-    bgColor="white.light"
-    controlId="exampleFullName2"
-    controlLabel="Full name2"
-    disabled={false}
-    paddingBottom="16px"
-    paddingTop="4px"
-    validationError=""
+  <input
+    className="c1"
+    id="exampleFullName2"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullName2"
   >
-    <ControlGroup
-      bgColor="white.light"
-      paddingBottom="16px"
-      paddingTop="4px"
-    >
-      <styled.div>
-        <div
-          className="c0"
-        >
-          <TextFieldComponent
-            activeColor="brandPrimary"
-            borderColor="hsl(0, 0%, 25%)"
-            borderRadius="4px"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullName2"
-            isFocused={false}
-            kerning="inherit"
-            lg={false}
-            padding="1rem"
-            placeholderColor="gray.light"
-            plainText={false}
-            required={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.input
-              id="exampleFullName2"
-              required={false}
-            >
-              <input
-                className="c1"
-                id="exampleFullName2"
-                readOnly={false}
-                required={false}
-                tabIndex="0"
-                type="text"
-              />
-            </styled.input>
-          </TextFieldComponent>
-          <ControlLabel
-            activeColor="red"
-            bgColor="hsl(0, 0%, 100%)"
-            color="inherit"
-            disabled={false}
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName2"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.label
-              activeColor="red"
-              htmlFor="exampleFullName2"
-            >
-              <label
-                className="c2"
-                htmlFor="exampleFullName2"
-              >
-                Full name2
-              </label>
-            </styled.label>
-          </ControlLabel>
-        </div>
-      </styled.div>
-    </ControlGroup>
-  </ControlGroupBase>
-</TextField>
+    Full name2
+  </label>
+</div>
 `;
 
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object with space mb  1`] = `
+.c2 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: -0.5rem;
+}
+
 .c0 {
-  bg-color: white.light;
-  margin: 1;
-  padding-bottom: 16px;
-  padding-top: 4px;
   position: relative;
   background-color: hsl(0,0%,100%);
+  padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -1325,133 +791,68 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   color: hsl(0,0%,75%);
 }
 
-.c2 {
-  background-color: hsl(0,0%,100%);
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  position: absolute;
-  top: -0.5rem;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-<TextField
-  activeColor="brandPrimary"
-  assistiveText=""
-  bgColor="white.light"
-  controlId="exampleFullName2"
-  controlLabel="Full name2"
-  m="1"
-  required={false}
-  validationError=""
+<div
+  className="c0"
 >
-  <ControlGroupBase
-    activeColor="brandPrimary"
-    assistiveText=""
-    bgColor="white.light"
-    controlId="exampleFullName2"
-    controlLabel="Full name2"
-    disabled={false}
-    margin="1"
-    paddingBottom="16px"
-    paddingTop="4px"
-    validationError=""
+  <input
+    className="c1"
+    id="exampleFullName2"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullName2"
   >
-    <ControlGroup
-      bgColor="white.light"
-      margin="1"
-      paddingBottom="16px"
-      paddingTop="4px"
-    >
-      <styled.div>
-        <div
-          className="c0"
-        >
-          <TextFieldComponent
-            activeColor="brandPrimary"
-            borderColor="hsl(0, 0%, 25%)"
-            borderRadius="4px"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullName2"
-            isFocused={false}
-            kerning="inherit"
-            lg={false}
-            padding="1rem"
-            placeholderColor="gray.light"
-            plainText={false}
-            required={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.input
-              id="exampleFullName2"
-              required={false}
-            >
-              <input
-                className="c1"
-                id="exampleFullName2"
-                readOnly={false}
-                required={false}
-                tabIndex="0"
-                type="text"
-              />
-            </styled.input>
-          </TextFieldComponent>
-          <ControlLabel
-            activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 100%)"
-            color="inherit"
-            disabled={false}
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName2"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.label
-              activeColor="brandPrimary"
-              htmlFor="exampleFullName2"
-            >
-              <label
-                className="c2"
-                htmlFor="exampleFullName2"
-              >
-                Full name2
-              </label>
-            </styled.label>
-          </ControlLabel>
-        </div>
-      </styled.div>
-    </ControlGroup>
-  </ControlGroupBase>
-</TextField>
+    Full name2
+  </label>
+</div>
 `;
 
 exports[`TextField with assistive text should return a TextField object contain Assistive Text 1`] = `
+.c2 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: -0.5rem;
+}
+
+.c3 {
+  color: hsl(0,0%,50%);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
 .c0 {
-  bg-color: white.light;
-  padding-bottom: 16px;
-  padding-top: 4px;
   position: relative;
   background-color: hsl(0,0%,100%);
+  padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -1512,168 +913,74 @@ exports[`TextField with assistive text should return a TextField object contain 
   color: hsl(0,0%,75%);
 }
 
-.c2 {
-  background-color: hsl(0,0%,100%);
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  position: absolute;
-  top: -0.5rem;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c3 {
-  padding: 0 1rem;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: hsl(0,0%,50%);
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-<TextField
-  activeColor="brandPrimary"
-  assistiveText="Please tell me your name"
-  bgColor="white.light"
-  controlId="exampleFullName"
-  controlLabel="Full name"
-  required={false}
-  validationError=""
+<div
+  className="c0"
 >
-  <ControlGroupBase
-    activeColor="brandPrimary"
-    assistiveText="Please tell me your name"
-    bgColor="white.light"
-    controlId="exampleFullName"
-    controlLabel="Full name"
-    disabled={false}
-    paddingBottom="16px"
-    paddingTop="4px"
-    validationError=""
+  <input
+    className="c1"
+    id="exampleFullName"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullName"
   >
-    <ControlGroup
-      bgColor="white.light"
-      paddingBottom="16px"
-      paddingTop="4px"
-    >
-      <styled.div>
-        <div
-          className="c0"
-        >
-          <TextFieldComponent
-            activeColor="brandPrimary"
-            borderColor="hsl(0, 0%, 25%)"
-            borderRadius="4px"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullName"
-            isFocused={false}
-            kerning="inherit"
-            lg={false}
-            padding="1rem"
-            placeholderColor="gray.light"
-            plainText={false}
-            required={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.input
-              id="exampleFullName"
-              required={false}
-            >
-              <input
-                className="c1"
-                id="exampleFullName"
-                readOnly={false}
-                required={false}
-                tabIndex="0"
-                type="text"
-              />
-            </styled.input>
-          </TextFieldComponent>
-          <ControlLabel
-            activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 100%)"
-            color="inherit"
-            disabled={false}
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.label
-              activeColor="brandPrimary"
-              htmlFor="exampleFullName"
-            >
-              <label
-                className="c2"
-                htmlFor="exampleFullName"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
-          <AssistiveText
-            color="gray"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullNameHelp"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-          >
-            <styled.div
-              id="exampleFullNameHelp"
-            >
-              <div
-                className="c3"
-                id="exampleFullNameHelp"
-              >
-                Please tell me your name
-              </div>
-            </styled.div>
-          </AssistiveText>
-        </div>
-      </styled.div>
-    </ControlGroup>
-  </ControlGroupBase>
-</TextField>
+    Full name
+  </label>
+  <div
+    className="c3"
+    id="exampleFullNameHelp"
+  >
+    Please tell me your name
+  </div>
+</div>
 `;
 
 exports[`TextField with some other props should return a TextField object contain input with those other props  1`] = `
+.c2 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: -0.5rem;
+}
+
+.c3 {
+  color: hsl(0,0%,50%);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
 .c0 {
-  bg-color: white.light;
-  padding-bottom: 16px;
-  padding-top: 4px;
   position: relative;
   background-color: hsl(0,0%,100%);
+  padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -1734,28 +1041,56 @@ exports[`TextField with some other props should return a TextField object contai
   color: hsl(0,0%,75%);
 }
 
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    id="exampleFullName"
+    link="abc"
+    readOnly={false}
+    required={true}
+    tabIndex="0"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullName"
+  >
+    Full name
+  </label>
+  <div
+    className="c3"
+    id="exampleFullNameHelp"
+  >
+    *Required
+  </div>
+</div>
+`;
+
+exports[`TextField with validation error should return a TextField object contain Assistive Text with error style 1`] = `
 .c2 {
   background-color: hsl(0,0%,100%);
+  color: hsl(4.1,89.6%,58.4%);
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
   position: absolute;
   top: -0.5rem;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: inherit;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
 }
 
 .c3 {
-  padding: 0 1rem;
+  color: hsl(4.1,89.6%,58.4%);
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1764,141 +1099,17 @@ exports[`TextField with some other props should return a TextField object contai
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: hsl(0,0%,50%);
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  padding: 0 1rem;
 }
 
-<TextField
-  activeColor="brandPrimary"
-  assistiveText=""
-  bgColor="white.light"
-  controlId="exampleFullName"
-  controlLabel="Full name"
-  link="abc"
-  required={true}
-  validationError=""
->
-  <ControlGroupBase
-    activeColor="brandPrimary"
-    assistiveText="*Required"
-    bgColor="white.light"
-    controlId="exampleFullName"
-    controlLabel="Full name"
-    disabled={false}
-    paddingBottom="16px"
-    paddingTop="4px"
-    validationError=""
-  >
-    <ControlGroup
-      bgColor="white.light"
-      paddingBottom="16px"
-      paddingTop="4px"
-    >
-      <styled.div>
-        <div
-          className="c0"
-        >
-          <TextFieldComponent
-            activeColor="brandPrimary"
-            borderColor="hsl(0, 0%, 25%)"
-            borderRadius="4px"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullName"
-            isFocused={false}
-            kerning="inherit"
-            lg={false}
-            link="abc"
-            padding="1rem"
-            placeholderColor="gray.light"
-            plainText={false}
-            required={true}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.input
-              id="exampleFullName"
-              link="abc"
-              required={true}
-            >
-              <input
-                className="c1"
-                id="exampleFullName"
-                readOnly={false}
-                required={true}
-                tabIndex="0"
-                type="text"
-              />
-            </styled.input>
-          </TextFieldComponent>
-          <ControlLabel
-            activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 100%)"
-            color="inherit"
-            disabled={false}
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError=""
-          >
-            <styled.label
-              activeColor="brandPrimary"
-              htmlFor="exampleFullName"
-            >
-              <label
-                className="c2"
-                htmlFor="exampleFullName"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
-          <AssistiveText
-            color="gray"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullNameHelp"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-          >
-            <styled.div
-              id="exampleFullNameHelp"
-            >
-              <div
-                className="c3"
-                id="exampleFullNameHelp"
-              >
-                *Required
-              </div>
-            </styled.div>
-          </AssistiveText>
-        </div>
-      </styled.div>
-    </ControlGroup>
-  </ControlGroupBase>
-</TextField>
-`;
-
-exports[`TextField with validation error should return a TextField object contain Assistive Text with error style 1`] = `
 .c0 {
-  bg-color: white.light;
-  padding-bottom: 16px;
-  padding-top: 4px;
   position: relative;
   background-color: hsl(0,0%,100%);
+  padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -1959,157 +1170,28 @@ exports[`TextField with validation error should return a TextField object contai
   color: hsl(0,0%,75%);
 }
 
-.c2 {
-  background-color: hsl(0,0%,100%);
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  position: absolute;
-  top: -0.5rem;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: hsl(4.1,89.6%,58.4%);
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c3 {
-  padding: 0 1rem;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  color: hsl(4.1,89.6%,58.4%);
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-<TextField
-  activeColor="brandPrimary"
-  assistiveText=""
-  bgColor="white.light"
-  controlId="exampleFullName"
-  controlLabel="Full name"
-  required={false}
-  validationError="This is a required field."
+<div
+  className="c0"
 >
-  <ControlGroupBase
-    activeColor="brandPrimary"
-    assistiveText=""
-    bgColor="white.light"
-    controlId="exampleFullName"
-    controlLabel="Full name"
-    disabled={false}
-    paddingBottom="16px"
-    paddingTop="4px"
-    validationError="This is a required field."
+  <input
+    className="c1"
+    id="exampleFullName"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullName"
   >
-    <ControlGroup
-      bgColor="white.light"
-      paddingBottom="16px"
-      paddingTop="4px"
-    >
-      <styled.div>
-        <div
-          className="c0"
-        >
-          <TextFieldComponent
-            activeColor="brandPrimary"
-            borderColor="hsl(0, 0%, 25%)"
-            borderRadius="4px"
-            color="inherit"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullName"
-            isFocused={false}
-            kerning="inherit"
-            lg={false}
-            padding="1rem"
-            placeholderColor="gray.light"
-            plainText={false}
-            required={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError="This is a required field."
-          >
-            <styled.input
-              id="exampleFullName"
-              required={false}
-            >
-              <input
-                className="c1"
-                id="exampleFullName"
-                readOnly={false}
-                required={false}
-                tabIndex="0"
-                type="text"
-              />
-            </styled.input>
-          </TextFieldComponent>
-          <ControlLabel
-            activeColor="brandPrimary"
-            bgColor="hsl(0, 0%, 100%)"
-            color="inherit"
-            disabled={false}
-            fontFamily="inherit"
-            fontWeight="inherit"
-            htmlFor="exampleFullName"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-            validationError="This is a required field."
-          >
-            <styled.label
-              activeColor="brandPrimary"
-              htmlFor="exampleFullName"
-            >
-              <label
-                className="c2"
-                htmlFor="exampleFullName"
-              >
-                Full name
-              </label>
-            </styled.label>
-          </ControlLabel>
-          <AssistiveText
-            color="brandDanger"
-            fontFamily="inherit"
-            fontWeight="inherit"
-            id="exampleFullNameError"
-            kerning="inherit"
-            lg={false}
-            sm={false}
-            textAlign="inherit"
-            textDecoration="inherit"
-          >
-            <styled.div
-              id="exampleFullNameError"
-            >
-              <div
-                className="c3"
-                id="exampleFullNameError"
-              >
-                This is a required field.
-              </div>
-            </styled.div>
-          </AssistiveText>
-        </div>
-      </styled.div>
-    </ControlGroup>
-  </ControlGroupBase>
-</TextField>
+    Full name
+  </label>
+  <div
+    className="c3"
+    id="exampleFullNameError"
+  >
+    This is a required field.
+  </div>
+</div>
 `;

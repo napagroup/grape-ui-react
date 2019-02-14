@@ -1,14 +1,25 @@
+import PropTypes from 'prop-types';
 import { getGlobalStyles } from 'src/global-styles';
 import { resolveColor } from 'src/utils/componentHelpers';
 
 const { border: borderSchema, grid: gridSchema } = getGlobalStyles();
-
+export const control = {
+  propTypes: {
+    activeColor: PropTypes.string,
+    bgColor: PropTypes.string,
+    borderColor: PropTypes.string,
+    borderRadius: PropTypes.string,
+    isFocused: PropTypes.bool,
+    padding: PropTypes.string,
+    placeholderColor: PropTypes.string,
+    plainText: PropTypes.bool,
+  },
+};
 export const defaultControlStylesBase = {
   activeColor: 'brandPrimary',
   bgColor: 'white.light',
   borderColor: borderSchema.borderColor,
   borderRadius: borderSchema.borderRadius.base,
-  controlLabel: '',
   isFocused: false,
   padding: gridSchema.gutter,
   placeholderColor: 'gray.light',

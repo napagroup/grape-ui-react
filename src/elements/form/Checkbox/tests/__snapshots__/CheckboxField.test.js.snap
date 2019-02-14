@@ -77,7 +77,7 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
   assistiveText=""
   bgColor="white.light"
   controlId="exampleColor"
-  controlLabel="Color"
+  labelText="Color"
   disabled={false}
   name="Color"
   options={
@@ -369,7 +369,7 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
   assistiveText=""
   bgColor="white.light"
   controlId="exampleColor"
-  controlLabel="Color"
+  labelText="Color"
   disabled={true}
   name="Color"
   options={
@@ -635,7 +635,7 @@ exports[`CheckboxFieldComponent Component with plaintext should return a Checkbo
   assistiveText=""
   bgColor="white.light"
   controlId="exampleColor"
-  controlLabel="Color"
+  labelText="Color"
   disabled={false}
   name="Color"
   options={
@@ -699,7 +699,7 @@ exports[`CheckboxFieldComponent Component with plaintext should return a Checkbo
           assistiveText=""
           bgColor="white.light"
           controlId="exampleColor"
-          controlLabel="Color"
+          labelText="Color"
           disabled={false}
           name="Color"
           options={
