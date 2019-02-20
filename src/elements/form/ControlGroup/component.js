@@ -14,9 +14,10 @@ const renderControlGroupLabel = propsFromControlGroup => {
     bgColor: bgColorFromProps,
     disabled,
     controlId,
+    hideLabel,
     validationError,
   } = propsFromControlGroup;
-  if (!text) {
+  if (!text || hideLabel) {
     return null;
   }
   const labelProps = {
@@ -52,6 +53,7 @@ export const ControlGroupComponent = ({ children, ...props }) => {
     disabled,
     controlId,
     validationError,
+    hideLabel,
   } = props;
   const labelProps = {
     text: labelText,
@@ -59,6 +61,7 @@ export const ControlGroupComponent = ({ children, ...props }) => {
     bgColor: bgColorFromProps,
     disabled,
     controlId,
+    hideLabel,
     validationError,
   };
   const assistiveProps = {
@@ -81,7 +84,8 @@ ControlGroupComponent.propTypes = {
   children: PropTypes.any.isRequired,
   controlId: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
-  labelText: PropTypes.string.isRequired,
+  hideLabel: PropTypes.bool,
+  labelText: PropTypes.string,
   ...space.propTypes,
   validationError: PropTypes.string,
   ...typography.propTypes,
@@ -93,5 +97,7 @@ ControlGroupComponent.defaultProps = {
   assistiveText: '',
   bgColor: defaultControlStylesBase.bgColor,
   disabled: false,
+  hideLabel: false,
+  labelText: '',
   validationError: '',
 };

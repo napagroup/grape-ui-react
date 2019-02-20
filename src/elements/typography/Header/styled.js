@@ -26,7 +26,7 @@ const getHeaderFontSizeFromTag = factoryProps => {
     const { display } = props;
     const overrides = {
       ...props,
-      fontSizeBase: display ? fontSizeSchema.display[tag] : fontSizeSchema[tag],
+      fontSize: display ? fontSizeSchema.display[tag] : fontSizeSchema[tag],
     };
     return getFontSize(overrides);
   };

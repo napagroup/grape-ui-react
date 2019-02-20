@@ -8,7 +8,7 @@ const { fontFamily: fontFamilySchema, fontSize: fontSizeSchema } = getGlobalStyl
 export const defaultTextStylesBase = {
   color: 'inherit',
   fontFamily: 'inherit',
-  fontSizeBase: 'inherit',
+  fontSize: 'inherit',
   fontWeight: 'inherit',
   italic: false,
   kerning: 'inherit',
@@ -48,8 +48,8 @@ export const getFontFamily = props => {
 };
 export const getFontSize = props => {
   const scaleFactor = getScaleFactor(props);
-  const fontSizeBase = props.fontSizeBase || defaultTextStylesBase.fontSizeBase;
-  return `font-size: ${scaleFactor ? getScaledFontSize(fontSizeBase, scaleFactor) : fontSizeBase};`;
+  const fontSize = props.fontSize || defaultTextStylesBase.fontSize;
+  return `font-size: ${scaleFactor ? getScaledFontSize(fontSize, scaleFactor) : fontSize};`;
 };
 export const getFontWeight = props => `font-weight: ${props.fontWeight || defaultTextStylesBase.fontWeight};`;
 export const getLetterSpacing = props => `letter-spacing: ${props.kerning || defaultTextStylesBase.kerning};`;
@@ -72,7 +72,7 @@ export const textStylesBase = (props = {}) => {
 
   const scaleFactor = getScaleFactor(props);
   const {
-    fontSizeBase,
+    fontSize,
     fontWeight,
     italic,
     kerning,
@@ -81,7 +81,7 @@ export const textStylesBase = (props = {}) => {
   } = overrides;
   return `
     ${getFontFamily(props)}
-    font-size: ${scaleFactor ? getScaledFontSize(fontSizeBase, scaleFactor) : fontSizeBase};
+    font-size: ${scaleFactor ? getScaledFontSize(fontSize, scaleFactor) : fontSize};
     font-weight: ${fontWeight};
     letter-spacing: ${kerning};
     line-height: 1.5;

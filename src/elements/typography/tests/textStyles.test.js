@@ -7,11 +7,11 @@ const { fontFamily: fontFamilySchema } = getGlobalStyles();
 const defaultParams = { ...defaultTextStylesBase };
 
 const renderTest = ({
-  fontFamily, fontSizeBase, kerning, italic, color, fontWeight, textAlign, scaleFactor, textDecoration,
+  fontFamily, fontSize, kerning, italic, color, fontWeight, textAlign, scaleFactor, textDecoration,
 }) =>
   `
     font-family: ${fontFamily};
-    font-size: ${scaleFactor ? getScaledFontSize(fontSizeBase, scaleFactor) : fontSizeBase};
+    font-size: ${scaleFactor ? getScaledFontSize(fontSize, scaleFactor) : fontSize};
     font-weight: ${fontWeight};
     letter-spacing: ${kerning};
     line-height: 1.5;

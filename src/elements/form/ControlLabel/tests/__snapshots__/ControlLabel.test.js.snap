@@ -2,7 +2,7 @@
 
 exports[`ControlLabel Component base should return a ControlLabel object 1`] = `
 .c0 {
-  background-color: white.light;
+  background-color: hsl(0,0%,100%);
   color: inherit;
   font-family: inherit;
   font-size: 0.8rem;

@@ -19,7 +19,7 @@ import {
   typography,
 } from 'src/elements/typography/textStyles';
 
-const controlBaseStyles = props => (!props.validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') }));
+const controlStylesBaseForTextField = props => (!props.validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') }));
 
 export const TextFieldComponent = styled(TextInputComponent)`
   ${getFontFamily}
@@ -31,7 +31,7 @@ export const TextFieldComponent = styled(TextInputComponent)`
   ${getColor}
   ${getTextAlign}
   ${getTextDecoration}
-  ${controlBaseStyles}
+  ${controlStylesBaseForTextField}
   `;
 
 TextFieldComponent.propTypes = {
