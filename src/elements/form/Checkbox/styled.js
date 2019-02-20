@@ -42,12 +42,13 @@ export const CheckboxField = props => {
   };
 
   return (
-    <ControlGroup {...controlGroupProps} pb={3} pt={1}>
+    <ControlGroup {...controlGroupProps} mb={1}>
       <ControlLabel
         activeColor={activeColor}
         bgColor={bgColor}
         disabled={disabled}
         htmlFor={controlId}
+        isRelative
         validationError={validationError}
       >{labelCaption}{renderValueOrComponent(CheckboxField, { ...props, plainText })}
       </ControlLabel>

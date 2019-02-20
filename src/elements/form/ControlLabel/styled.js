@@ -27,6 +27,8 @@ const colorForLabel = props => `${getColor({
   color: !props.validationError ? props.color : 'brandDanger',
 })};`;
 const fontSizeForLabel = props => `${getFontSize({ ...props, sm: true })};`;
+const positionStyle = props => `position: ${props.isRelative ? 'relative' : 'absolute'};`;
+const topStyle = props => (props.isRelative ? '' : `top ${padding};`);
 export const ControlLabel = styled(ControlLabelComponent)`
   ${bgColor}
   ${colorForLabel}
@@ -40,13 +42,14 @@ export const ControlLabel = styled(ControlLabelComponent)`
   ${getTextDecoration}
   left: ${padding};
   padding: 0 ${padding};
-  position: absolute;
-  top: -${padding};
+  ${topStyle};
+  ${positionStyle}
 `;
 
 ControlLabel.propTypes = {
   bgColor: PropTypes.string,
   disabled: PropTypes.bool,
+  isRelative: PropTypes.bool,
   ...typography.propTypes,
   validationError: PropTypes.string,
 };
@@ -54,5 +57,6 @@ ControlLabel.propTypes = {
 ControlLabel.defaultProps = {
   bgColor: defaultControlStylesBase.bgColor,
   disabled: false,
+  isRelative: false,
   validationError: '',
 };

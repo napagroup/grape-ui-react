@@ -15,7 +15,11 @@ import {
 import { passThrough, removeSomeProps } from 'src/utils/componentHelpers';
 import { CheckboxGroup, Checkbox } from 'react-checkbox-group';
 import { PlainText } from 'src/elements/form/PlainText';
+import { getScaledSize } from 'src/elements/typography/utils';
+import { getGlobalStyles } from 'src/global-styles';
 
+const { grid: { gutter } } = getGlobalStyles();
+const opacity = props => `${props.disabled} ? 'opacity: 0.6;' : ''`;
 const CheckboxLabel = styled.label`
 ${getFontFamily}
 ${getFontSize}
@@ -26,14 +30,26 @@ ${getFontStyle}
 ${getColor}
 ${getTextAlign}
 ${getTextDecoration}
+display: flex;
+margin-right: ${getScaledSize(gutter, 1)};
+align-items: baseline;
+${opacity}
 `;
+
 
 const SingleCheckBox = props => {
   const { disabled, option } = props;
   const propsForChildren = removeSomeProps(passThrough(Checkbox, props), ['controlId', 'plainText', 'name', 'onChange', 'option']);
   return (
     <CheckboxLabel key={`${option.label}-label`} {...propsForChildren} >
-      <Checkbox key={option.label} disabled={disabled} id={option.value} {...propsForChildren} value={option.value} />{option.label}
+      <Checkbox
+        key={option.label}
+        disabled={disabled}
+        id={option.value}
+        {...propsForChildren}
+        style={{ marginRight: getScaledSize(gutter, 0.5) }}
+        value={option.value}
+      />{option.label}
     </CheckboxLabel>
   );
 };
@@ -63,7 +79,18 @@ export const CheckboxFieldComponent = props => {
   }
   const checkboxProps = removeSomeProps(props, ['controlId', 'plainText', 'name', 'onChange', 'options']);
   const optionsList = options.map(option => (SingleCheckBox({ ...checkboxProps, option })));
-  return (<CheckboxGroup checkboxDepth={2} id={controlId} name={name} onChange={onChange} value={value}> { optionsList } </CheckboxGroup>);
+  return (
+    <CheckboxGroup
+      checkboxDepth={2}
+      id={controlId}
+      name={name}
+      onChange={onChange}
+      style={{ display: 'flex' }}
+      value={value}
+    >
+      { optionsList }
+    </CheckboxGroup>
+  );
 };
 
 CheckboxFieldComponent.propTypes = {
