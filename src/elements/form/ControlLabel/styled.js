@@ -28,7 +28,7 @@ const colorForLabel = props => `${getColor({
 })};`;
 const fontSizeForLabel = props => `${getFontSize({ ...props, sm: true })};`;
 const positionStyle = props => `position: ${props.isRelative ? 'relative' : 'absolute'};`;
-const topStyle = props => (props.isRelative ? '' : `top ${padding};`);
+const topStyle = props => (props.isRelative ? '' : `top: -${padding};`);
 export const ControlLabel = styled(ControlLabelComponent)`
   ${bgColor}
   ${colorForLabel}

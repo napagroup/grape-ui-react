@@ -42,7 +42,7 @@ export const CheckboxField = props => {
   };
 
   return (
-    <ControlGroup {...controlGroupProps} mb={1}>
+    <ControlGroup {...controlGroupProps}>
       <ControlLabel
         activeColor={activeColor}
         bgColor={bgColor}
