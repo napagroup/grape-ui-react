@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { passThrough } from 'src/utils/componentHelpers';
+import { passThrough, removeSomeProps } from 'src/utils/componentHelpers';
 import { defaultControlStylesBase } from 'src/elements/form/ControlGroup/baseControlStyle';
 import { typography } from 'src/elements/typography/textStyles';
 
 export const ControlLabelComponent = ({ children, ...props }) => (
   // eslint-disable-next-line jsx-a11y/label-has-for
-  <label {...passThrough(ControlLabelComponent, props)}>
+  <label {...passThrough(ControlLabelComponent, removeSomeProps(props, ['isRelative']))}>
     {children}
   </label>);
 ControlLabelComponent.propTypes = {

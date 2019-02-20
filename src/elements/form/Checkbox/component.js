@@ -19,7 +19,8 @@ import { getScaledSize } from 'src/elements/typography/utils';
 import { getGlobalStyles } from 'src/global-styles';
 
 const { grid: { gutter } } = getGlobalStyles();
-const opacity = props => `${props.disabled} ? 'opacity: 0.6;' : ''`;
+const opacity = props => `${props.disabled ? 'opacity: 0.6;' : ''}`;
+const marginRight = () => `margin-right: ${getScaledSize(gutter, 1)}`;
 const CheckboxLabel = styled.label`
 ${getFontFamily}
 ${getFontSize}
@@ -31,15 +32,15 @@ ${getColor}
 ${getTextAlign}
 ${getTextDecoration}
 display: flex;
-margin-right: ${getScaledSize(gutter, 1)};
+${marginRight}
 align-items: baseline;
 ${opacity}
 `;
 
-
 const SingleCheckBox = props => {
   const { disabled, option } = props;
   const propsForChildren = removeSomeProps(passThrough(Checkbox, props), ['controlId', 'plainText', 'name', 'onChange', 'option']);
+  const stylePropsForCheckBox = { marginRight: getScaledSize(gutter, 0.5) };
   return (
     <CheckboxLabel key={`${option.label}-label`} {...propsForChildren} >
       <Checkbox
@@ -47,7 +48,7 @@ const SingleCheckBox = props => {
         disabled={disabled}
         id={option.value}
         {...propsForChildren}
-        style={{ marginRight: getScaledSize(gutter, 0.5) }}
+        style={stylePropsForCheckBox}
         value={option.value}
       />{option.label}
     </CheckboxLabel>

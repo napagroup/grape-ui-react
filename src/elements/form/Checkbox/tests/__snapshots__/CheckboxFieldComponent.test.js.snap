@@ -14,12 +14,25 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 <div
   id=""
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
 >
-   
   <label
     className="c0"
     id="exampleColor"
@@ -35,6 +48,11 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
       id="exampleColor"
       name="Color"
       onChange={[Function]}
+      style={
+        Object {
+          "marginRight": "0.5rem",
+        }
+      }
       type="checkbox"
       value="red"
     />
@@ -55,6 +73,11 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
       id="exampleColor"
       name="Color"
       onChange={[Function]}
+      style={
+        Object {
+          "marginRight": "0.5rem",
+        }
+      }
       type="checkbox"
       value="yellow"
     />
@@ -75,11 +98,15 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
       id="exampleColor"
       name="Color"
       onChange={[Function]}
+      style={
+        Object {
+          "marginRight": "0.5rem",
+        }
+      }
       type="checkbox"
       value="green"
     />
     Green
   </label>
-   
 </div>
 `;
