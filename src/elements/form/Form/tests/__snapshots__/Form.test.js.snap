@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Component base should return a Form object 1`] = `
+<form
+  className=""
+/>
+`;
+
+exports[`Form Component base should return a Form object with flex direction column 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+<form
+  className="c0"
+  flexDirection="column"
+/>
+`;
