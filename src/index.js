@@ -23,7 +23,7 @@ module.exports = {
   ListItem,
   Paragraph,
   SelectField,
+  styledComponents,
   Text,
   TextField,
-  styledComponents,
 };

@@ -7,6 +7,8 @@ import * as shadow from 'src/assets/json/shadow.json';
 import * as zIndex from 'src/assets/json/zIndex.json';
 import * as grid from 'src/assets/json/grid.json';
 
+export * from './utils';
+
 export const getGlobalStyles = (overrides = {}) => {
   if (overrides instanceof Object && !Array.isArray(overrides)) {
     const {

@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 module.exports = {
   entry: path.join(process.cwd(), 'src/index.js'),
   output: {
@@ -23,4 +23,4 @@ module.exports = {
         src: path.join(process.cwd(), 'src')
     }
   }
-}
+};

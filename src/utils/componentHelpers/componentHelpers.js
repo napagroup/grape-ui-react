@@ -1,16 +1,18 @@
 import { getGlobalStyles } from 'src/global-styles';
 import { isKeyNestedProp, resolveToProperty } from 'src/utils/objectHelpers';
 import except from 'except';
+import { COLOR_DEFAULT_VALUE, CSS_INHERIT_VALUE } from '../styledHelpers';
 
 const { colors: colorSchema, shadow: shadowSchema, zIndex: zIndexSchema } = getGlobalStyles();
-const defaultValue = 'inherit';
 
 const resolveColor = color => {
   if (!color || typeof color !== 'string') {
-    return defaultValue;
+    return COLOR_DEFAULT_VALUE;
   }
-  const resolvedValue = isKeyNestedProp(color) ? resolveToProperty(color, colorSchema) : resolveToProperty(`${color}.base`, colorSchema);
-  return resolvedValue || defaultValue;
+  const resolvedValue = isKeyNestedProp(color)
+    ? resolveToProperty(color, colorSchema)
+    : resolveToProperty(`${color}.base`, colorSchema);
+  return resolvedValue || COLOR_DEFAULT_VALUE;
 };
 
 const removeSomeProps = (originalProps, toBeRemovedProps) => except(originalProps, toBeRemovedProps);
@@ -29,27 +31,35 @@ const addPassthroughMethod = component => {
 
 const resolveBoxShadow = depth => {
   if (!depth || typeof depth !== 'string') {
-    return defaultValue;
+    return CSS_INHERIT_VALUE;
   }
   const resolvedBoxShadow = resolveToProperty(depth, shadowSchema);
-  return resolvedBoxShadow || defaultValue;
+  return resolvedBoxShadow || CSS_INHERIT_VALUE;
 };
 
 const resolveZIndex = depth => {
   if (!depth || typeof depth !== 'string') {
-    return defaultValue;
+    return CSS_INHERIT_VALUE;
   }
   const resolvedZIndex = resolveToProperty(depth, zIndexSchema);
-  return resolvedZIndex || defaultValue;
+  return resolvedZIndex || CSS_INHERIT_VALUE;
 };
 
 const resolveElevation = depth => {
   if (!depth || typeof depth !== 'string') {
-    return defaultValue;
+    return CSS_INHERIT_VALUE;
   }
   const resolvedBoxShadow = resolveBoxShadow(depth);
   const resolvedZIndex = resolveZIndex(depth);
-  return `z-index: ${resolvedZIndex}; box-shadow: ${resolvedBoxShadow}` || defaultValue;
+  return `z-index: ${resolvedZIndex}; box-shadow: ${resolvedBoxShadow}` || CSS_INHERIT_VALUE;
 };
 
-export { resolveBoxShadow, resolveColor, resolveElevation, resolveZIndex, passThrough, addPassthroughMethod, removeSomeProps };
+export {
+  resolveBoxShadow,
+  resolveColor,
+  resolveElevation,
+  resolveZIndex,
+  passThrough,
+  addPassthroughMethod,
+  removeSomeProps,
+};

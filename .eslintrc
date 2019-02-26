@@ -161,6 +161,8 @@
       "require-yield": "warn",
       "rest-spread-spacing": ["warn", "never"],
       "semi": "warn",
+      "sort-keys": "error",
+      "sort-vars": "error",
       "unicode-bom": ["warn", "never"],
       "use-isnan": "warn",
       "valid-typeof": "warn",

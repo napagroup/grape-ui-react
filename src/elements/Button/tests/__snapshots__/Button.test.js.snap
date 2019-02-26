@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component base with style should return a Button with a zIndex when using a number 1`] = `
+.c0 {
+  background-color: inherit;
+  border: 1px solid hsl(323.3,84.6%,28%);
+  color: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+  position: relative;
+  z-index: 500;
+}
+
+<button
+  className="c0"
+>
+  Do this
+</button>
+`;
+
+exports[`Button Component base with style should return a Button with a zIndex when using a string 1`] = `
+.c0 {
+  background-color: inherit;
+  border: 1px solid hsl(323.3,84.6%,28%);
+  color: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+  position: relative;
+  z-index: 500;
+}
+
+<button
+  className="c0"
+>
+  Do this
+</button>
+`;
+
+exports[`Button Component base with style should return a Button with bgColor and color 1`] = `
+.c0 {
+  background-color: hsl(122.4,39.4%,49.2%);
+  border: 1px solid hsl(323.3,84.6%,28%);
+  color: hsl(4.1,89.6%,58.4%);
+  font-size: inherit;
+  line-height: 1.5;
+  position: relative;
+}
+
+<button
+  className="c0"
+  id="exampleColor"
+>
+  Do this
+</button>
+`;
+
+exports[`Button Component base with style should return a Button with lg 1`] = `
+.c0 {
+  background-color: inherit;
+  border: 1px solid hsl(323.3,84.6%,28%);
+  color: inherit;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  position: relative;
+}
+
+<button
+  className="c0"
+  id="exampleColor"
+>
+  Do this
+</button>
+`;
+
+exports[`Button Component base with style should return a Button with sm 1`] = `
+.c0 {
+  background-color: inherit;
+  border: 1px solid hsl(323.3,84.6%,28%);
+  color: inherit;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  position: relative;
+}
+
+<button
+  className="c0"
+  id="exampleColor"
+>
+  Do this
+</button>
+`;
+
+exports[`Button base should return a Button 1`] = `
+.c0 {
+  background-color: inherit;
+  border: 1px solid hsl(323.3,84.6%,28%);
+  color: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+  position: relative;
+}
+
+<button
+  className="c0"
+>
+  Do this
+</button>
+`;
+
+exports[`Button base should return a Button with disabled 1`] = `
+.c0 {
+  background-color: inherit;
+  border: 1px solid hsl(323.3,84.6%,28%);
+  color: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+  position: relative;
+}
+
+<button
+  className="c0"
+  disabled={true}
+  id="exampleColor"
+>
+  Do this
+</button>
+`;
