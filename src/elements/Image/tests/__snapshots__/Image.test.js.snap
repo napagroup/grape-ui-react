@@ -2,8 +2,8 @@
 
 exports[`Image Component base should return a Image object with maxWidth applied 1`] = `
 .c0 {
-  max-width: 200px;
   width: 100%;
+  max-width: 200px;
 }
 
 <Img
@@ -19,8 +19,8 @@ exports[`Image Component base should return a Image object with maxWidth applied
 
 exports[`Image Component base should return a Image object with width applied 1`] = `
 .c0 {
-  max-width: 100%;
   width: 100%;
+  max-width: 100%;
 }
 
 @media screen and (min-width:40em) {
@@ -54,8 +54,8 @@ exports[`Image Component base should return a Image object with width applied 1`
 
 exports[`Image Component base should return a Image object without alt base styling 1`] = `
 .c0 {
-  max-width: 100%;
   width: 100%;
+  max-width: 100%;
 }
 
 <Img
@@ -71,8 +71,8 @@ exports[`Image Component base should return a Image object without alt base styl
 
 exports[`Image Component base should return a shallow Image object with base styling 1`] = `
 .c0 {
-  max-width: 100%;
   width: 100%;
+  max-width: 100%;
 }
 
 <Img

@@ -9,7 +9,7 @@ const formComponentPropsToRemove = {
   formInline: false,
 };
 export const FormComponent = ({ children, ...props }) => (
-  <form { ...removeSomeProps(props, Object.keys(formComponentPropsToRemove))}>
+  <form {...removeSomeProps(props, Object.keys(formComponentPropsToRemove))}>
     {children}
   </form>
 );

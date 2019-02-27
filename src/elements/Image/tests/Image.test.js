@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from '../index';
+import { Image } from '../';
 import 'jest-styled-components';
 import { configure, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
