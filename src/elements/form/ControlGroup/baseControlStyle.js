@@ -50,6 +50,53 @@ export const focusStylesBase = props => {
   `;
 };
 
+const getFinalStyle = ({
+  borderColor,
+  focusStyle,
+  formStyle,
+  padding,
+  placeholderColor,
+  scaleFactor,
+}) => {
+  // TODO: Ryan please apply the filled style here
+  if (formStyle === 'filled') {
+    return `
+      border: 2px solid ${borderColor};
+      border-radius: ${scaleFactor};
+      padding: ${padding};
+      outline: 1;
+      width: 100%;
+      &:focus{
+        ${focusStyle}
+      }
+      &[required] + label:after { content: "*" }
+      &[disabled] {
+        opacity: 0.3;
+        ~ * { color: rgba(0,0,0,0.3); }
+      }
+      &::placeholder {
+        color: ${resolveColor(placeholderColor)}
+    }`;
+  }
+  return `
+    border: 1px solid ${borderColor};
+    border-radius: ${scaleFactor};
+    padding: ${padding};
+    outline: 0;
+    width: 100%;
+    &:focus{
+      ${focusStyle}
+    }
+    &[required] + label:after { content: "*" }
+    &[disabled] {
+      opacity: 0.3;
+      ~ * { color: rgba(0,0,0,0.3); }
+    }
+    &::placeholder {
+      color: ${resolveColor(placeholderColor)}
+    }`;
+};
+
 export const controlStylesBase = (props = {}) => {
   let overrides = null;
   if (!props || Array.isArray(props)) {
@@ -68,8 +115,10 @@ export const controlStylesBase = (props = {}) => {
     padding,
     placeholderColor,
     plainText,
+    formStyle,
   } = overrides;
   const focusStyle = focusStylesBase(activeColor);
+
   if (plainText) {
     return `
       border: 0;
@@ -78,22 +127,12 @@ export const controlStylesBase = (props = {}) => {
       padding: ${padding};
     `;
   }
-  return `
-    border: 1px solid ${borderColor};
-    border-radius: ${scaleFactor};
-    padding: ${padding};
-    outline: 0;
-    width: 100%;
-    &:focus{
-      ${focusStyle}
-    }
-    &[required] + label:after { content: "*" }
-    &[disabled] {
-      opacity: 0.3;
-      ~ * { color: rgba(0,0,0,0.3); }
-    }
-    &::placeholder {
-      color: ${resolveColor(placeholderColor)}
-    }
-  `;
+  return getFinalStyle({
+    borderColor,
+    focusStyle,
+    formStyle,
+    padding,
+    placeholderColor,
+    scaleFactor,
+  });
 };

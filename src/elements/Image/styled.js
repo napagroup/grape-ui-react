@@ -38,6 +38,6 @@ Image.propTypes = {
 
 Image.defaultProps = {
   alt: '',
-  w: '100%',
   maxWidth: '100%',
+  w: '100%',
 };

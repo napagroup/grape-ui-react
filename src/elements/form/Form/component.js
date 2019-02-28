@@ -8,15 +8,36 @@ const formComponentPropsToRemove = {
   ...display.propTypes,
   formInline: false,
 };
-export const FormComponent = ({ children, ...props }) => (
-  <form {...removeSomeProps(props, Object.keys(formComponentPropsToRemove))}>
-    {children}
-  </form>
-);
+export const applyFormStyleToChild = (child, formStylefromParent) => {
+  const { formStyle } = child.props;
+  let output;
+  // Only TextField will try to apply form style
+  if (formStyle || child.type.name !== 'TextField') {
+    output = child;
+  } else {
+    output = React.cloneElement(child, { formStyle: formStylefromParent });
+  }
+  return output;
+};
+
+export const FormComponent = ({ children, formStyle, ...props }) => {
+  let output = null;
+  if (!formStyle) {
+    output = (<form {...removeSomeProps(props, Object.keys(formComponentPropsToRemove))}> {children} </form>
+    );
+  } else {
+    const childrenWithProps = React.Children.map(children, child => applyFormStyleToChild(child, formStyle));
+    output = (<form {...removeSomeProps(props, Object.keys(formComponentPropsToRemove))}> {childrenWithProps} </form>);
+  }
+  return output;
+};
 FormComponent.propTypes = {
   children: PropTypes.any,
+  formStyle: PropTypes.string,
 };
 
 FormComponent.defaultProps = {
   children: null,
+  formStyle: '',
 };
+

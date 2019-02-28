@@ -4,7 +4,7 @@ import { typography } from 'src/elements/typography/textStyles';
 import { control, defaultControlStylesBase } from '../ControlGroup/baseControlStyle';
 import { passThrough } from 'src/utils/componentHelpers';
 
-export const TextInputComponent = ({ plainText, ...props }) => (
+export const TextInputComponent = ({ plainText, formStyle, ...props }) => ( // Make sure formStyle no going into input tag
   <input readOnly={plainText} tabIndex={plainText ? '-1' : '0'} type="text" {...passThrough(TextInputComponent, props)} />
 );
 TextInputComponent.propTypes = {

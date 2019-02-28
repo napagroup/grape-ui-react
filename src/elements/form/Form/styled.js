@@ -25,6 +25,7 @@ import {
   zIndex,
 } from 'styled-system';
 import { FormComponent } from './component';
+import PropTypes from 'prop-types';
 
 export const Form = styled(FormComponent)`
   ${alignContent}
@@ -53,7 +54,11 @@ export const Form = styled(FormComponent)`
 `;
 
 Form.propTypes = {
+  formStyle: PropTypes.string,
   ...width.propTypes,
   ...display.propTypes,
 };
 
+Form.defaultProps = {
+  formStyle: '',
+};
