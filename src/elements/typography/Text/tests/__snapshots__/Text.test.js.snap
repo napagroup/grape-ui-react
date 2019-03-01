@@ -2,6 +2,8 @@
 
 exports[`Text Component base should return a Text object with base styling 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -10,7 +12,6 @@ exports[`Text Component base should return a Text object with base styling 1`] =
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -25,6 +26,8 @@ exports[`Text Component base should return a Text object with base styling 1`] =
 
 exports[`Text Component specified styles should return a Text object with a specified color 1`] = `
 .c0 {
+  color: hsl(122.4,39.4%,69.2%);
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -33,7 +36,6 @@ exports[`Text Component specified styles should return a Text object with a spec
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: hsl(122.4,39.4%,69.2%);
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -48,6 +50,8 @@ exports[`Text Component specified styles should return a Text object with a spec
 
 exports[`Text Component specified styles should return a Text object with a specified text-align 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -56,7 +60,6 @@ exports[`Text Component specified styles should return a Text object with a spec
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: right;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -71,6 +74,8 @@ exports[`Text Component specified styles should return a Text object with a spec
 
 exports[`Text Component specified styles should return a Text object with a specified text-decoration 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -79,7 +84,6 @@ exports[`Text Component specified styles should return a Text object with a spec
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -94,6 +98,8 @@ exports[`Text Component specified styles should return a Text object with a spec
 
 exports[`Text Component specified styles should return a Text object with font-size: lg 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: 1.2rem;
   font-weight: inherit;
@@ -102,7 +108,6 @@ exports[`Text Component specified styles should return a Text object with font-s
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -117,6 +122,8 @@ exports[`Text Component specified styles should return a Text object with font-s
 
 exports[`Text Component specified styles should return a Text object with font-size: sm 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -125,7 +132,6 @@ exports[`Text Component specified styles should return a Text object with font-s
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -140,6 +146,8 @@ exports[`Text Component specified styles should return a Text object with font-s
 
 exports[`Text Component specified styles should return a Text object with font-style: italic 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -149,7 +157,6 @@ exports[`Text Component specified styles should return a Text object with font-s
   letter-spacing: inherit;
   line-height: 1.5;
   font-style: italic;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -164,6 +171,8 @@ exports[`Text Component specified styles should return a Text object with font-s
 
 exports[`Text Component specified styles should return a Text object with specified font-family 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
   font-size: inherit;
   font-weight: inherit;
@@ -172,7 +181,6 @@ exports[`Text Component specified styles should return a Text object with specif
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -187,6 +195,8 @@ exports[`Text Component specified styles should return a Text object with specif
 
 exports[`Text Component specified styles should return a Text object with specified font-weight 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: bolder;
@@ -195,7 +205,6 @@ exports[`Text Component specified styles should return a Text object with specif
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -210,6 +219,8 @@ exports[`Text Component specified styles should return a Text object with specif
 
 exports[`Text Component specified styles should return a Text object with specified kerning 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -218,7 +229,6 @@ exports[`Text Component specified styles should return a Text object with specif
   -ms-letter-spacing: 1px;
   letter-spacing: 1px;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;

@@ -27,9 +27,9 @@ export const getGlobalStyles = (overrides = {}) => {
       colors: { ...colors, ...colorsOverrides },
       fontFamily: { ...fontFamily, ...fontFamilyOverrides },
       fontSize: { ...fontSize, ...fontSizeOverrides },
+      grid: { ...grid, ...gridOverrides },
       shadow: { ...shadow, ...shadowOverrides },
       zIndex: { ...zIndex, ...zIndexOverrides },
-      grid: { ...grid, ...gridOverrides },
     };
   }
   return getGlobalStyles();

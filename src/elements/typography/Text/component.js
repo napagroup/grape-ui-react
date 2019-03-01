@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { typography } from '../textStyles';
-import { passThrough } from 'src/utils/componentHelpers';
+import { typography } from 'src/utils/styledHelpers';
+import { removeSomeProps } from 'src/utils/componentHelpers';
 
+const propsToTrim = {
+  ...typography.propTypes,
+};
 export const TextComponent = ({ children, ...props }) => (
-  <span {...passThrough(TextComponent, props)}>
+  <span {...removeSomeProps(props, Object.keys(propsToTrim))}>
     {children}
   </span>
 );
 TextComponent.propTypes = {
   children: PropTypes.any.isRequired,
-  ...typography.propTypes,
 };

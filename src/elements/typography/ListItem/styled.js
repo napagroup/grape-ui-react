@@ -1,35 +1,42 @@
 import styled from 'styled-components';
 import { getGlobalStyles } from 'src/global-styles';
-import { getScaledSize } from '../utils';
+import { fontWeight } from 'styled-system';
 import {
-  getFontFamily,
-  getFontSize,
-  getFontWeight,
-  getLetterSpacing,
-  getLineHeight,
-  getFontStyle,
-  getColor,
-  getTextAlign,
-  getTextDecoration,
+  colorCore,
+  defaultStylesBase,
+  fontFamilyCore,
+  fontSizeCore,
+  fontStyleCore,
+  letterSpacingCore,
+  lineHeightCore,
+  scaleFont,
+  textAlignCore,
+  textDecorationCore,
   typography,
-} from '../textStyles';
+} from 'src/utils/styledHelpers';
 import { ListItemComponent } from './component';
 
 const { grid: { gutter } } = getGlobalStyles();
 
+const marginBottom = props => `margin-bottom: ${scaleFont(gutter, 0.25)}`;
+
 export const ListItem = styled(ListItemComponent)`
-  ${getFontFamily}
-  ${getFontSize}
-  ${getFontWeight}
-  ${getLetterSpacing}
-  ${getLineHeight}
-  ${getFontStyle}
-  ${getColor}
-  ${getTextAlign}
-  ${getTextDecoration}
-  margin-bottom: ${getScaledSize(gutter, 0.25)};
-  `;
+  ${colorCore}
+  ${fontFamilyCore}
+  ${fontSizeCore}
+  ${fontWeight}
+  ${letterSpacingCore}
+  ${lineHeightCore}
+  ${fontStyleCore}
+  ${textAlignCore}
+  ${textDecorationCore}
+  ${marginBottom}
+`;
 
 ListItem.propTypes = {
   ...typography.propTypes,
+};
+
+ListItem.defaultProps = {
+  ...defaultStylesBase,
 };

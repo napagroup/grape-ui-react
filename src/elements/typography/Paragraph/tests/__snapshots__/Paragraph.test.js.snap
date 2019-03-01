@@ -2,6 +2,8 @@
 
 exports[`Paragraph Component base should return a Paragraph object with base styling 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -10,7 +12,6 @@ exports[`Paragraph Component base should return a Paragraph object with base sty
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -26,6 +27,8 @@ exports[`Paragraph Component base should return a Paragraph object with base sty
 
 exports[`Paragraph Component specified styles should return a Paragraph object with a bold font-weight 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: bold;
@@ -34,7 +37,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -50,6 +52,8 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with a green color 1`] = `
 .c0 {
+  color: hsl(122.4,39.4%,49.2%);
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -58,7 +62,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: hsl(122.4,39.4%,49.2%);
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -74,6 +77,8 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with a lead paragraph stlying 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: 1.2rem;
   font-weight: 300;
@@ -82,7 +87,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -98,6 +102,8 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with a serif font-family 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: "Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"Apple Garamond","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;
   font-size: inherit;
   font-weight: inherit;
@@ -106,7 +112,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -122,6 +127,8 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with font-size: lg 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: 1.2rem;
   font-weight: inherit;
@@ -130,7 +137,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -146,6 +152,8 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with font-size: sm 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -154,7 +162,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -170,6 +177,8 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with font-style: italic 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -179,7 +188,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   letter-spacing: inherit;
   line-height: 1.5;
   font-style: italic;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -195,6 +203,8 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with specified kerning 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -203,7 +213,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   -ms-letter-spacing: 1px;
   letter-spacing: 1px;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -219,6 +228,8 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with text-align: right 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -227,7 +238,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: right;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -243,6 +253,8 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with text-decoration: underline 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -251,7 +263,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: underline;
   text-decoration: underline;

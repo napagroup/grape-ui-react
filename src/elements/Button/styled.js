@@ -7,10 +7,13 @@ import {
   border,
   borderWidth,
   bottom,
+  buttonStyle,
+  color,
   display,
   flexBasis,
   flexDirection,
   flexWrap,
+  fontSize,
   height,
   justifyContent,
   left,
@@ -31,34 +34,28 @@ import {
   zIndex,
 } from 'styled-system';
 import {
-  getFontSize,
-  getColor,
-} from 'src/elements/typography/textStyles';
-import {
-  backgroundColorForButton,
-  bgColor,
   borderForButton,
-  colorForButton,
   lineHeightForButton,
   positionForButton,
 } from './utils';
 import { ButtonComponent } from './component';
+import { colorCore } from 'src/utils/styledHelpers';
 
 // TODO: For Ryan, please put the correct style into for contained, outline and raised here.
 export const Button = styled(ButtonComponent)`
   ${alignContent}
   ${alignItems}
   ${alignSelf}
-  ${bgColor}
+  ${colorCore}
   ${borderForButton}
   ${borderWidth}
   ${bottom}
+  ${buttonStyle}
   ${display}
   ${flexBasis}
   ${flexDirection}
   ${flexWrap}
-  ${getColor}
-  ${getFontSize}
+  ${fontSize}
   ${height}
   ${justifyContent}
   ${left}
@@ -83,15 +80,16 @@ Button.propTypes = {
   ...alignContent.propTypes,
   ...alignItems.propTypes,
   ...alignSelf.propTypes,
-  bgColor: PropTypes.string,
   ...border.propTypes,
   ...borderWidth.propTypes,
   ...bottom.propTypes,
+  ...color.propTypes,
   contained: PropTypes.bool,
   ...display.propTypes,
   ...flexBasis.propTypes,
   ...flexDirection.propTypes,
   ...flexWrap.propTypes,
+  ...fontSize.propTypes,
   ...height.propTypes,
   ...justifyContent.propTypes,
   ...left.propTypes,
@@ -115,7 +113,6 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  bgColor: 'inherit',
   contained: false,
   outline: false,
   raised: false,

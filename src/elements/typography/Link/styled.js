@@ -1,37 +1,37 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { resolveColor } from 'src/utils/componentHelpers';
 import { LinkComponent } from './component';
-
+import { fontWeight } from 'styled-system';
 import {
-  getFontFamily,
-  getFontSize,
-  getFontWeight,
-  getLetterSpacing,
-  getLineHeight,
-  getFontStyle,
-  getColor,
-  getTextAlign,
-  getTextDecoration,
+  colorCore,
+  defaultStylesBase,
+  fontFamilyCore,
+  fontSizeCore,
+  fontStyleCore,
+  letterSpacingCore,
+  lineHeightCore,
+  resolveColor,
+  textAlignCore,
+  textDecorationCore,
   typography,
-} from '../textStyles';
+} from 'src/utils/styledHelpers';
 
-const getHoverColor = props => `&:active {
+const hoverColor = props => `&:active {
   color: ${resolveColor(props.hoverColor)};
  }`;
 
 const Link = styled(LinkComponent)`
-  ${getFontFamily}
-  ${getFontSize}
-  ${getFontWeight}
-  ${getLetterSpacing}
-  ${getLineHeight}
-  ${getFontStyle}
-  ${getColor}
-  ${getTextAlign}
-  ${getTextDecoration}
+  ${colorCore}
+  ${fontFamilyCore}
+  ${fontSizeCore}
+  ${fontWeight}
+  ${letterSpacingCore}
+  ${lineHeightCore}
+  ${fontStyleCore}
+  ${textAlignCore}
+  ${textDecorationCore}
   &:hover,
-  ${getHoverColor}
+  ${hoverColor}
   `;
 
 Link.propTypes = {
@@ -41,6 +41,7 @@ Link.propTypes = {
 };
 
 Link.defaultProps = {
+  ...defaultStylesBase,
   color: 'brandLink',
   hoverColor: 'brandLinkHover',
   textDecoration: 'none',

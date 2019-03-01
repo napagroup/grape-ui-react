@@ -3,7 +3,6 @@ import { getGlobalStyles } from 'src/global-styles';
 import { resolveColor } from 'src/utils/componentHelpers';
 import { POSITION_DEFAULT_VALUE } from 'src/utils/styledHelpers';
 import { DEFAULT_BUTTON_LINE_HEIGHT } from './constants';
-
 const { colors: colorSchema } = getGlobalStyles();
 const { brandPrimary } = colorSchema;
 
@@ -23,20 +22,22 @@ export const getAdvanceButtonStyle = (props = {}) => {
   return '';
 };
 
-export const bgColor = props => `background-color: ${resolveColor(props.bgColor)};`;
 export const backgroundColorForButton = style({
   // The corresponding CSS property (defaults to prop argument)
   cssProperty: 'backgroundColor',
   // key for theme values
-  key: 'backgroundColors',
+  key: 'bg',
   // React prop name
-  prop: 'bgColor',
+  prop: 'bg',
   // add a fallback scale object or array, if theme is not present
-  scale: ['', '', '', '', ''],
+  scale: [ 0, 4, 8, 16, 32 ],
   // accessor function for transforming the value
-  transformValue: props => props.color ? resolveColor(props.color) : 'transparent',
+  transformValue: color => {
+    console.log({ color });
+    return color ? resolveColor(color) : 'transparent';
+    return 'transparent';
+  },
 });
-
 
 const borderStyle = style({
   // The corresponding CSS property (defaults to prop argument)

@@ -2,68 +2,67 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { getGlobalStyles } from 'src/global-styles';
-import { getScaledSize } from '../utils';
+import { fontWeight } from 'styled-system';
 import {
-  getFontFamily,
-  getFontSize,
-  getFontWeight,
-  getLetterSpacing,
-  getLineHeight,
-  getFontStyle,
-  getColor,
-  getTextAlign,
-  getTextDecoration,
+  colorCore,
+  defaultStylesBase,
+  fontFamilyCore,
+  fontSizeCore,
+  fontStyleCore,
+  letterSpacingCore,
+  lineHeightCore,
+  scaleFont,
+  textAlignCore,
+  textDecorationCore,
   typography,
-} from '../textStyles';
-import { passThrough } from 'src/utils/componentHelpers';
+} from 'src/utils/styledHelpers';
+import { removeSomeProps } from 'src/utils/componentHelpers';
 
 const { grid: gridSchema } = getGlobalStyles();
 
-const getInLineStyles = props => {
-  const inlineStyles = `
+const inlineStyle = props => {
+  const style = `
     > li {
       display: inline-block;
       &:not(:last-child) {
-        margin-right: ${getScaledSize(gridSchema.gutter, 0.5)};
+        margin-right: ${scaleFont(gridSchema.gutter, 0.5)};
       }
     }
   `;
-  return `${props.inline ? inlineStyles : ''}`;
+  return `${props.inline ? style : ''}`;
 };
 
-const getPaddingLeft = props => `padding-left:  ${(props.unstyled || props.inline) ? '0' : '2.5rem'};`;
-const getListStyle = props => `${props.unstyled ? '> li { list-style: none; }' : ''}`;
-
+const paddingLeft = props => `padding-left:  ${(props.unstyled || props.inline) ? '0' : '2.5rem'};`;
+const listStyle = props => `${props.unstyled ? '> li { list-style: none; }' : ''}`;
+const margin = props => `margin: 0 0 ${gridSchema.gutter};`;
+const listComponentPropsToTrim = {
+  inline: PropTypes.bool,
+  ...typography.propTypes,
+  unstyled: PropTypes.bool,
+};
 const listFactory = factoryProps => {
   const { tag } = factoryProps;
   const ListComponent = ({
     children, ...props
-  }) => React.createElement(tag, passThrough(ListComponent, props), children);
+  }) => React.createElement(tag, removeSomeProps(props, Object.keys(listComponentPropsToTrim)), children);
   ListComponent.propTypes = {
     children: PropTypes.any.isRequired,
-    inline: PropTypes.bool,
-    ...typography.propTypes,
-    unstyled: PropTypes.bool,
-  };
-  ListComponent.defaultProps = {
-    inline: false,
-    unstyled: false,
   };
 
   return styled(ListComponent)`
-    ${getFontFamily}
-    ${getFontSize}
-    ${getFontWeight}
-    ${getLetterSpacing}
-    ${getLineHeight}
-    ${getFontStyle}
-    ${getColor}
-    ${getTextAlign}
-    ${getTextDecoration}
-    margin: 0 0 ${gridSchema.gutter};
-    ${getPaddingLeft}
-    ${getListStyle}
-    ${getInLineStyles}
+    ${colorCore}
+    ${fontFamilyCore}
+    ${fontSizeCore}
+    ${fontWeight}
+    ${letterSpacingCore}
+    ${lineHeightCore}
+    ${fontStyleCore}
+    ${textAlignCore}
+    ${textDecorationCore}
+    ${margin}
+    ${paddingLeft}
+    ${listStyle}
+    ${inlineStyle}
     `;
 };
 
@@ -74,5 +73,8 @@ List.propTypes = {
   inline: PropTypes.bool,
   ...typography.propTypes,
   unstyled: PropTypes.bool,
+};
+List.defaultProps = {
+  ...defaultStylesBase,
 };
 export { List };

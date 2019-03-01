@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { getGlobalStyles } from 'src/global-styles';
+import { fontWeight } from 'styled-system';
 import {
-  defaultTextStylesBase,
-  getFontFamily,
-  getFontSize,
-  getFontWeight,
-  getLetterSpacing,
-  getLineHeight,
-  getFontStyle,
-  getColor,
-  getTextAlign,
-  getTextDecoration,
+  colorCore,
+  defaultStylesBase,
+  fontFamilyCore,
+  fontSizeCore,
+  fontStyleCore,
+  letterSpacingCore,
+  lineHeightCore,
+  textAlignCore,
+  textDecorationCore,
   typography,
-} from '../textStyles';
-import { passThrough } from 'src/utils/componentHelpers';
+} from 'src/utils/styledHelpers';
+import { getGlobalStyles } from 'src/global-styles';
+import { removeSomeProps } from 'src/utils/componentHelpers';
 
 const { fontSize: fontSizeSchema, grid: gridSchema } = getGlobalStyles();
 
@@ -28,48 +28,47 @@ const getHeaderFontSizeFromTag = factoryProps => {
       ...props,
       fontSize: display ? fontSizeSchema.display[tag] : fontSizeSchema[tag],
     };
-    return getFontSize(overrides);
+    return fontSizeCore(overrides);
   };
   return getHeaderFontSizeMemoized;
 };
 
 const getHeaderFontWeight = props => {
   const {
-    display, fontWeight,
+    display, fontWeight: fontWeightFromProps,
   } = props;
-  const headerFontWeight = fontWeight !== defaultTextStylesBase.fontWeight ? fontWeight : undefined;
   const overrides = {
     ...props,
-    fontWeight: headerFontWeight || (display ? '300' : headerFontWeight),
+    fontWeight: display ? '300' : fontWeightFromProps || defaultStylesBase.fontWeight,
   };
-  return getFontWeight(overrides);
+  return fontWeight(overrides);
 };
+const propsToTrim = {
+  children: PropTypes.any.isRequired,
+  ...typography.propTypes,
+  display: PropTypes.bool,
+};
+
 const headerFactory = factoryProps => {
   const { tag } = factoryProps;
   const HeaderComponent = ({
     children, ...props
-  }) => React.createElement(tag, passThrough(HeaderComponent, props), children);
+  }) => React.createElement(tag, removeSomeProps(props, Object.keys(propsToTrim)), children);
+  // This is stated here strictly as a interface reference. Unfortunately as this component is dynamically created there is no propType required or defaultProps enforced.
   HeaderComponent.propTypes = {
     children: PropTypes.any.isRequired,
-    ...typography.propTypes,
-    display: PropTypes.bool,
   };
-
-  HeaderComponent.defaultProps = {
-    display: false,
-  };
-
   const getHeaderFontSize = getHeaderFontSizeFromTag(factoryProps);
   return styled(HeaderComponent)`
-    ${getFontFamily}
+    ${colorCore}
+    ${fontFamilyCore}
+    ${fontStyleCore}
     ${getHeaderFontSize}
     ${getHeaderFontWeight}
-    ${getLetterSpacing}
-    ${getLineHeight}
-    ${getFontStyle}
-    ${getColor}
-    ${getTextAlign}
-    ${getTextDecoration}
+    ${letterSpacingCore}
+    ${lineHeightCore}
+    ${textAlignCore}
+    ${textDecorationCore}
     margin: 0 0 ${gridSchema.gutter};
   `;
 };
@@ -84,7 +83,12 @@ Header.h5 = headerFactory({ tag: 'h5' });
 Header.h6 = headerFactory({ tag: 'h6' });
 
 Header.propTypes = {
+  display: PropTypes.bool,
   ...typography.propTypes,
 };
 
+Header.defaultProps = {
+  display: false,
+  fontWeight: defaultStylesBase.fontWeight,
+};
 export { Header };

@@ -1,18 +1,18 @@
 import { getGlobalStyles } from 'src/global-styles';
 import { isKeyNestedProp, resolveToProperty } from 'src/utils/objectHelpers';
 import except from 'except';
-import { COLOR_DEFAULT_VALUE, CSS_INHERIT_VALUE } from '../styledHelpers';
+import { defaultStylesBase, CSS_INHERIT_VALUE } from '../styledHelpers';
 
 const { colors: colorSchema, shadow: shadowSchema, zIndex: zIndexSchema } = getGlobalStyles();
 
 const resolveColor = color => {
   if (!color || typeof color !== 'string') {
-    return COLOR_DEFAULT_VALUE;
+    return defaultStylesBase.color;
   }
   const resolvedValue = isKeyNestedProp(color)
     ? resolveToProperty(color, colorSchema)
     : resolveToProperty(`${color}.base`, colorSchema);
-  return resolvedValue || COLOR_DEFAULT_VALUE;
+  return resolvedValue || defaultStylesBase.color;
 };
 
 const removeSomeProps = (originalProps, toBeRemovedProps) => except(originalProps, toBeRemovedProps);

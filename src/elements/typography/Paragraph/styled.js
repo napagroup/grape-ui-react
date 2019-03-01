@@ -1,42 +1,42 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { fontWeight } from 'styled-system';
 import { getGlobalStyles } from 'src/global-styles';
 import {
-  getFontFamily,
-  getFontSize,
-  getFontWeight,
-  getLetterSpacing,
-  getLineHeight,
-  getFontStyle,
-  getColor,
-  getTextAlign,
-  getTextDecoration,
+  colorCore,
+  defaultStylesBase,
+  fontFamilyCore,
+  fontSizeCore,
+  fontStyleCore,
+  letterSpacingCore,
+  lineHeightCore,
+  textAlignCore,
+  textDecorationCore,
   typography,
-} from '../textStyles';
+} from 'src/utils/styledHelpers';
 import { ParagraphComponent } from './component';
 
 const { grid: gridSchema } = getGlobalStyles();
 
-const getParagraphFontSize = props => {
+const fontSizeParagraph = props => {
   const { lead } = props;
-  return lead ? getFontSize({ ...props, lg: true }) : getFontSize(props);
+  return lead ? fontSizeCore({ ...props, lg: true }) : fontSizeCore(props);
 };
-const getParagraphFontWeight = props => {
+const fontWeightParagraph = props => {
   const { lead } = props;
-  return lead ? getFontWeight({ ...props, fontWeight: '300' }) : getFontWeight(props);
+  return lead ? fontWeight({ ...props, fontWeight: '300' }) : fontWeight(props);
 };
 
 const Paragraph = styled(ParagraphComponent)`
-  ${getFontFamily}
-  ${getParagraphFontSize}
-  ${getParagraphFontWeight}
-  ${getLetterSpacing}
-  ${getLineHeight}
-  ${getFontStyle}
-  ${getColor}
-  ${getTextAlign}
-  ${getTextDecoration}
+  ${colorCore}
+  ${fontFamilyCore}
+  ${fontSizeParagraph}
+  ${fontWeightParagraph}
+  ${letterSpacingCore}
+  ${lineHeightCore}
+  ${fontStyleCore}
+  ${textAlignCore}
+  ${textDecorationCore}
   margin: 0 0 ${gridSchema.gutter};
   `;
 
@@ -46,6 +46,7 @@ Paragraph.propTypes = {
 };
 
 Paragraph.defaultProps = {
+  ...defaultStylesBase,
   lead: false,
 };
 export { Paragraph };

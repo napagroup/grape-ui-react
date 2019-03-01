@@ -2,10 +2,9 @@
 
 exports[`Button Component base with style should return a Button with a zIndex when using a number 1`] = `
 .c0 {
-  background-color: inherit;
-  border: 1px solid hsl(323.3,84.6%,28%);
   color: inherit;
-  font-size: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(323.3,84.6%,28%);
   line-height: 1.5;
   position: relative;
   z-index: 500;
@@ -20,10 +19,9 @@ exports[`Button Component base with style should return a Button with a zIndex w
 
 exports[`Button Component base with style should return a Button with a zIndex when using a string 1`] = `
 .c0 {
-  background-color: inherit;
-  border: 1px solid hsl(323.3,84.6%,28%);
   color: inherit;
-  font-size: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(323.3,84.6%,28%);
   line-height: 1.5;
   position: relative;
   z-index: 500;
@@ -38,10 +36,9 @@ exports[`Button Component base with style should return a Button with a zIndex w
 
 exports[`Button Component base with style should return a Button with bgColor and color 1`] = `
 .c0 {
+  color: hsl(4.1,89.6%,58.4%);
   background-color: hsl(122.4,39.4%,49.2%);
   border: 1px solid hsl(323.3,84.6%,28%);
-  color: hsl(4.1,89.6%,58.4%);
-  font-size: inherit;
   line-height: 1.5;
   position: relative;
 }
@@ -56,10 +53,9 @@ exports[`Button Component base with style should return a Button with bgColor an
 
 exports[`Button Component base with style should return a Button with lg 1`] = `
 .c0 {
-  background-color: inherit;
-  border: 1px solid hsl(323.3,84.6%,28%);
   color: inherit;
-  font-size: 1.2rem;
+  background-color: transparent;
+  border: 1px solid hsl(323.3,84.6%,28%);
   line-height: 1.5;
   position: relative;
 }
@@ -74,10 +70,9 @@ exports[`Button Component base with style should return a Button with lg 1`] = `
 
 exports[`Button Component base with style should return a Button with sm 1`] = `
 .c0 {
-  background-color: inherit;
-  border: 1px solid hsl(323.3,84.6%,28%);
   color: inherit;
-  font-size: 0.8rem;
+  background-color: transparent;
+  border: 1px solid hsl(323.3,84.6%,28%);
   line-height: 1.5;
   position: relative;
 }
@@ -92,10 +87,9 @@ exports[`Button Component base with style should return a Button with sm 1`] = `
 
 exports[`Button base should return a Button 1`] = `
 .c0 {
-  background-color: inherit;
-  border: 1px solid hsl(323.3,84.6%,28%);
   color: inherit;
-  font-size: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(323.3,84.6%,28%);
   line-height: 1.5;
   position: relative;
 }
@@ -109,10 +103,9 @@ exports[`Button base should return a Button 1`] = `
 
 exports[`Button base should return a Button with disabled 1`] = `
 .c0 {
-  background-color: inherit;
-  border: 1px solid hsl(323.3,84.6%,28%);
   color: inherit;
-  font-size: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(323.3,84.6%,28%);
   line-height: 1.5;
   position: relative;
 }
@@ -121,6 +114,58 @@ exports[`Button base should return a Button with disabled 1`] = `
   className="c0"
   disabled={true}
   id="exampleColor"
+>
+  Do this
+</button>
+`;
+
+exports[`Button using theme colors Button using styled system fontSize should return a Button with specified font size 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(323.3,84.6%,28%);
+  font-size: 20px;
+  line-height: 1.5;
+  position: relative;
+}
+
+<button
+  className="c0"
+  fontSize={3}
+  variant="primary"
+>
+  Do this
+</button>
+`;
+
+exports[`Button using theme colors Button using variant style theme colors should return a Button 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(323.3,84.6%,28%);
+  line-height: 1.5;
+  position: relative;
+}
+
+<button
+  className="c0"
+  variant="primary"
+>
+  Do this
+</button>
+`;
+
+exports[`Button using theme colors should return a Button 1`] = `
+.c0 {
+  color: hsl(65,65%,25%);
+  background-color: hsl(65,65%,50%);
+  border: 1px solid hsl(323.3,84.6%,28%);
+  line-height: 1.5;
+  position: relative;
+}
+
+<button
+  className="c0"
 >
   Do this
 </button>

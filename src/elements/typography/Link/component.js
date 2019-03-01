@@ -1,17 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { passThrough } from 'src/utils/componentHelpers';
+import { removeSomeProps } from 'src/utils/componentHelpers';
 import { Link as ReactRouterLink } from 'react-router-dom';
+import { typography } from 'src/utils/styledHelpers';
 
-import { typography } from '../textStyles';
-
+const propsToTrim = {
+  hoverColor: '',
+  ...typography.propTypes,
+};
 export const LinkComponent = ({
   children, to, ...props
 }) => {
+  const trimmedProps = removeSomeProps(props, Object.keys(propsToTrim));
   if (to) {
     const linkProps = {
-      ...passThrough(LinkComponent, props),
       to,
+      ...trimmedProps,
     };
     return (
       <ReactRouterLink {...linkProps}>
@@ -20,7 +24,7 @@ export const LinkComponent = ({
     );
   }
   return (
-    <a {...passThrough(LinkComponent, props)}>
+    <a {...trimmedProps}>
       {children}
     </a>
   );
@@ -28,12 +32,9 @@ export const LinkComponent = ({
 
 LinkComponent.propTypes = {
   children: PropTypes.any.isRequired,
-  hoverColor: PropTypes.string,
-  ...typography.propTypes,
   to: PropTypes.string,
 };
 
 LinkComponent.defaultProps = {
-  hoverColor: '',
   to: '',
 };

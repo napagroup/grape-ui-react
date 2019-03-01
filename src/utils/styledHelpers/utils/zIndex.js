@@ -1,10 +1,12 @@
 import { style } from 'styled-system';
-import { getGlobalStyles } from '../../global-styles';
-import { resolveToProperty } from '../objectHelpers';
-import { CSS_INHERIT_VALUE } from './cssDefaults';
+import { getGlobalStyles } from '../../../global-styles';
+import { resolveToProperty } from '../../objectHelpers';
+import { CSS_INHERIT_VALUE } from '../cssDefaults';
 
-const { zIndex: zIndexSchema } = getGlobalStyles();
+const {
 
+  zIndex: zIndexSchema,
+} = getGlobalStyles();
 export const zIndexForBase = style({
   // The corresponding CSS property (defaults to prop argument)
   cssProperty: 'z-index',
