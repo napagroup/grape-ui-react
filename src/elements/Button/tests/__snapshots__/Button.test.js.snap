@@ -13,7 +13,9 @@ exports[`Button Component base with style should return a Button with a zIndex w
 <button
   className="c0"
 >
+   
   Do this
+   
 </button>
 `;
 
@@ -30,7 +32,9 @@ exports[`Button Component base with style should return a Button with a zIndex w
 <button
   className="c0"
 >
+   
   Do this
+   
 </button>
 `;
 
@@ -47,7 +51,9 @@ exports[`Button Component base with style should return a Button with bgColor an
   className="c0"
   id="exampleColor"
 >
+   
   Do this
+   
 </button>
 `;
 
@@ -64,7 +70,9 @@ exports[`Button Component base with style should return a Button with lg 1`] = `
   className="c0"
   id="exampleColor"
 >
+   
   Do this
+   
 </button>
 `;
 
@@ -81,8 +89,51 @@ exports[`Button Component base with style should return a Button with sm 1`] = `
   className="c0"
   id="exampleColor"
 >
+   
   Do this
+   
 </button>
+`;
+
+exports[`Button Component base with style should return a Link with href with button look 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(323.3,84.6%,28%);
+  line-height: 1.5;
+  position: relative;
+}
+
+<a
+  className="c0"
+  href="https://www.google.com/"
+  target="_blank"
+>
+   
+  google
+   
+</a>
+`;
+
+exports[`Button Component base with style should return a Link with to with button look 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(323.3,84.6%,28%);
+  line-height: 1.5;
+  position: relative;
+}
+
+<a
+  className="c0"
+  href="/404"
+  onClick={[Function]}
+  target="_self"
+>
+   
+  404
+   
+</a>
 `;
 
 exports[`Button base should return a Button 1`] = `
@@ -97,7 +148,9 @@ exports[`Button base should return a Button 1`] = `
 <button
   className="c0"
 >
+   
   Do this
+   
 </button>
 `;
 
@@ -115,7 +168,9 @@ exports[`Button base should return a Button with disabled 1`] = `
   disabled={true}
   id="exampleColor"
 >
+   
   Do this
+   
 </button>
 `;
 
@@ -134,7 +189,9 @@ exports[`Button using theme colors Button using styled system fontSize should re
   fontSize={3}
   variant="primary"
 >
+   
   Do this
+   
 </button>
 `;
 
@@ -167,6 +224,8 @@ exports[`Button using theme colors should return a Button 1`] = `
 <button
   className="c0"
 >
+   
   Do this
+   
 </button>
 `;

@@ -4,6 +4,7 @@ import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { getGlobalStyles } from 'src/global-styles';
+import { MemoryRouter as Router } from 'react-router-dom';
 
 const assertReactElement = element => {
   const component = renderer.create(element);
@@ -43,6 +44,14 @@ describe('Button Component base with style', () => {
   });
   it('should return a Button with a zIndex when using a number', () => {
     const element = <Button zIndex={500}>Do this</Button>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+  it('should return a Link with href with button look', () => {
+    const element = <Button href="https://www.google.com/" target="_blank">google</Button>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+  it('should return a Link with to with button look', () => {
+    const element = <Router><Button to="/404">404</Button></Router>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

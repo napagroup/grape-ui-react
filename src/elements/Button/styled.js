@@ -91,6 +91,7 @@ Button.propTypes = {
   ...flexWrap.propTypes,
   ...fontSize.propTypes,
   ...height.propTypes,
+  href: PropTypes.string,
   ...justifyContent.propTypes,
   ...left.propTypes,
   ...letterSpacing.propTypes,
@@ -107,6 +108,7 @@ Button.propTypes = {
   ...size.propTypes,
   ...space.propTypes,
   ...textAlign.propTypes,
+  to: PropTypes.string,
   ...top.propTypes,
   ...width.propTypes,
   ...zIndex.propTypes,
@@ -114,6 +116,8 @@ Button.propTypes = {
 
 Button.defaultProps = {
   contained: false,
+  href: null,
   outline: false,
   raised: false,
+  to: null,
 };
