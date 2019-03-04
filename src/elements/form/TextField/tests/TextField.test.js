@@ -69,8 +69,8 @@ describe('TextField a plainText TextFieldComponent', () => {
   });
 });
 describe('TextField a TextFieldComponent object', () => {
-  it('should return a TextFieldComponent object with a red bgColor ', () => {
-    const element = <TextField bgColor="red" controlId="exampleFullName2" labelText="Full name2" />;
+  it('should return a TextFieldComponent object with a red bg', () => {
+    const element = <TextField bg="red" controlId="exampleFullName2" labelText="Full name2" />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

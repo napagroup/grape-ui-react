@@ -78,7 +78,6 @@ const propsToTrimForLink = {
   ...alignContent.propTypes,
   ...alignItems.propTypes,
   ...alignSelf.propTypes,
-  bgColor: '',
   ...border.propTypes,
   ...borderWidth.propTypes,
   ...bottom.propTypes,

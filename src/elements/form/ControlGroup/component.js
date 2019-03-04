@@ -3,15 +3,17 @@ import PropTypes from 'prop-types';
 import { ControlLabel } from 'src/elements/form/ControlLabel';
 import { AssistiveText } from 'src/elements/form/AssistiveText';
 import { space } from 'styled-system';
-import { defaultControlStylesBase } from 'src/elements/form/ControlGroup/baseControlStyle';
-import { passThrough } from 'src/utils/componentHelpers';
-import { typography } from 'src/elements/typography/textStyles';
+import { removeSomeProps } from 'src/utils/componentHelpers';
+import {
+  defaultControlStyles,
+  typography,
+} from 'src/utils/styledHelpers';
 
 const renderControlGroupLabel = propsFromControlGroup => {
   const {
     text,
     activeColor,
-    bgColor: bgColorFromProps,
+    bg: bgColorFromProps,
     disabled,
     controlId,
     hideLabel,
@@ -22,7 +24,7 @@ const renderControlGroupLabel = propsFromControlGroup => {
   }
   const labelProps = {
     activeColor,
-    bgColor: bgColorFromProps,
+    bg: bgColorFromProps,
     disabled,
     htmlFor: controlId,
     validationError,
@@ -44,12 +46,23 @@ const renderControlGroupAssistive = propsFromControlGroup => {
   return <AssistiveText color="brandDanger" id={`${id}Error`}>{error}</AssistiveText>;
 };
 
+const propsToTrim = [
+  'activeColor',
+  'assistiveText',
+  'controlId',
+  'disabled',
+  'hideLabel',
+  'labelText',
+  'validationError',
+  ...Object.keys(space.propTypes),
+  ...Object.keys(typography.propTypes),
+];
 export const ControlGroupComponent = ({ children, ...props }) => {
   const {
     assistiveText,
     labelText,
     activeColor,
-    bgColor: bgColorFromProps,
+    bg: bgColorFromProps,
     disabled,
     controlId,
     validationError,
@@ -70,7 +83,7 @@ export const ControlGroupComponent = ({ children, ...props }) => {
     validationError,
   };
   return (
-    <div {...passThrough(ControlGroupComponent, props)}>
+    <div {...removeSomeProps(props, propsToTrim)}>
       {children}
       {renderControlGroupLabel(labelProps)}
       {renderControlGroupAssistive(assistiveProps)}
@@ -81,7 +94,7 @@ export const ControlGroupComponent = ({ children, ...props }) => {
 ControlGroupComponent.propTypes = {
   activeColor: PropTypes.string,
   assistiveText: PropTypes.string,
-  bgColor: PropTypes.string,
+  bg: PropTypes.string,
   children: PropTypes.any.isRequired,
   controlId: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
@@ -92,11 +105,10 @@ ControlGroupComponent.propTypes = {
   ...typography.propTypes,
 };
 
-
 ControlGroupComponent.defaultProps = {
-  activeColor: defaultControlStylesBase.activeColor,
+  activeColor: defaultControlStyles.activeColor,
   assistiveText: '',
-  bgColor: defaultControlStylesBase.bgColor,
+  bg: defaultControlStyles.bg,
   disabled: false,
   hideLabel: false,
   labelText: '',

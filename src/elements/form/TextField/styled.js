@@ -1,48 +1,51 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
-import { passThrough, resolveColor } from 'src/utils/componentHelpers';
-import { space } from 'styled-system';
+import { removeSomeProps } from 'src/utils/componentHelpers';
+import { fontWeight, space } from 'styled-system';
 import styled from 'styled-components';
 import {
-  getFontFamily,
-  getFontSize,
-  getFontWeight,
-  getLetterSpacing,
-  getLineHeight,
-  getFontStyle,
-  getColor,
-  getTextAlign,
-  getTextDecoration,
+  colorCore,
+  control,
+  controlStyles,
+  defaultControlStyles,
+  defaultStylesBase,
+  fontFamilyCore,
+  fontSizeCore,
+  fontStyleCore,
+  letterSpacingCore,
+  lineHeightCore,
+  textAlignCore,
+  textDecorationCore,
   typography,
-} from 'src/elements/typography/textStyles';
-import { defaultControlStylesBase, control, controlStylesBase } from '../ControlGroup/baseControlStyle';
+} from 'src/utils/styledHelpers';
 import { TextInputComponent } from './component';
 
-const controlStylesBaseForTextField = props => (!props.validationError ? controlStylesBase(props) : controlStylesBase({ ...props, activeColor: resolveColor('brandDanger'), borderColor: resolveColor('brandDanger') }));
+const controlStylesTextField = props => (!props.validationError ? controlStyles(props)
+  : controlStyles({ ...props, activeColor: 'brandDanger', borderColor: 'brandDanger' }));
 
 export const TextFieldComponent = styled(TextInputComponent)`
-  ${getFontFamily}
-  ${getFontSize}
-  ${getFontWeight}
-  ${getLetterSpacing}
-  ${getLineHeight}
-  ${getFontStyle}
-  ${getColor}
-  ${getTextAlign}
-  ${getTextDecoration}
-  ${controlStylesBaseForTextField}
+  ${colorCore}
+  ${fontFamilyCore}
+  ${fontSizeCore}
+  ${fontWeight}
+  ${letterSpacingCore}
+  ${lineHeightCore}
+  ${fontStyleCore}
+  ${textAlignCore}
+  ${textDecorationCore}
+  ${controlStylesTextField}
   `;
 
 TextFieldComponent.propTypes = {
+  formStyle: PropTypes.string,
   ...control.propTypes,
   ...typography.propTypes,
-  validationError: PropTypes.string,
 };
 
 TextFieldComponent.defaultProps = {
-  ...defaultControlStylesBase,
-  validationError: '',
+  formStyle: '',
+  ...defaultControlStyles,
 };
 
 const getAssistiveText = props => {
@@ -52,30 +55,43 @@ const getAssistiveText = props => {
   }
   return assistiveText;
 };
-
+const propsToTrim = [
+  'activeColor',
+  'assistiveText',
+  'controlId',
+  'labelText',
+  'validationError',
+  ...Object.keys(space.propTypes),
+];
 export const TextField = props => {
   const {
     activeColor,
-    bgColor,
+    bg,
     controlId,
     labelText,
     required,
     validationError,
     ...otherProps
   } = props;
-  const childProps = { id: controlId, required, ...passThrough(TextField, otherProps) };
+  const childProps = {
+    bg,
+    id: controlId,
+    required,
+    validationError,
+    ...removeSomeProps(otherProps, propsToTrim),
+  };
   return (
     <ControlGroup
       activeColor={activeColor}
       assistiveText={getAssistiveText(props)}
-      bgColor={bgColor}
+      bg={defaultControlStyles.bg}
       controlId={controlId}
       labelText={labelText}
       pb={3}
       pt={1}
       validationError={validationError}
     >
-      <TextFieldComponent validationError={validationError} {...childProps} />
+      <TextFieldComponent {...childProps} />
     </ControlGroup>
   );
 };
@@ -83,18 +99,19 @@ export const TextField = props => {
 TextField.propTypes = {
   activeColor: PropTypes.string,
   assistiveText: PropTypes.string,
-  bgColor: PropTypes.string,
+  bg: PropTypes.string,
   controlId: PropTypes.string.isRequired,
+  formStyle: PropTypes.string,
   labelText: PropTypes.string.isRequired,
   required: PropTypes.bool,
   validationError: PropTypes.string,
-  ...space.propTypes,
 };
 
 TextField.defaultProps = {
-  activeColor: defaultControlStylesBase.activeColor,
+  activeColor: defaultControlStyles.activeColor,
   assistiveText: '',
-  bgColor: defaultControlStylesBase.bgColor,
+  bg: defaultStylesBase.bg,
+  formStyle: '',
   required: false,
   validationError: '',
 };

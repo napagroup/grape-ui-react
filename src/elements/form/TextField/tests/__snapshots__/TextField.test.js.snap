@@ -2,11 +2,10 @@
 
 exports[`TextField  a large TextFieldComponent object should return a large TextFieldComponent object  1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -23,6 +22,7 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 
 .c0 {
   position: relative;
+  color: inherit;
   background-color: hsl(0,0%,100%);
   padding-bottom: 16px;
   padding-top: 4px;
@@ -30,15 +30,15 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 }
 
 .c1 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: 1.2rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -108,11 +108,10 @@ exports[`TextField  a large TextFieldComponent object should return a large Text
 
 exports[`TextField Component base should return a TextField object 1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -129,6 +128,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
 
 .c0 {
   position: relative;
+  color: inherit;
   background-color: hsl(0,0%,100%);
   padding-bottom: 16px;
   padding-top: 4px;
@@ -136,15 +136,15 @@ exports[`TextField Component base should return a TextField object 1`] = `
 }
 
 .c1 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -212,13 +212,12 @@ exports[`TextField Component base should return a TextField object 1`] = `
 </div>
 `;
 
-exports[`TextField a TextFieldComponent object should return a TextFieldComponent object with a red bgColor  1`] = `
+exports[`TextField a TextFieldComponent object should return a TextFieldComponent object with a red bg 1`] = `
 .c2 {
-  background-color: hsl(4.1,89.6%,58.4%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -235,22 +234,23 @@ exports[`TextField a TextFieldComponent object should return a TextFieldComponen
 
 .c0 {
   position: relative;
-  background-color: hsl(4.1,89.6%,58.4%);
+  color: inherit;
+  background-color: hsl(0,0%,100%);
   padding-bottom: 16px;
   padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
+  color: inherit;
+  background-color: hsl(4.1,89.6%,58.4%);
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -320,11 +320,10 @@ exports[`TextField a TextFieldComponent object should return a TextFieldComponen
 
 exports[`TextField a plainText TextFieldComponent should return a disabled TextFieldComponent 1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -341,6 +340,7 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
 
 .c0 {
   position: relative;
+  color: inherit;
   background-color: hsl(0,0%,100%);
   padding-bottom: 16px;
   padding-top: 4px;
@@ -348,15 +348,15 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
 }
 
 .c1 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -388,11 +388,10 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
 
 exports[`TextField a small TextFieldComponent object should return a disabled TextFieldComponent 1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -409,6 +408,7 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
 
 .c0 {
   position: relative;
+  color: inherit;
   background-color: hsl(0,0%,100%);
   padding-bottom: 16px;
   padding-top: 4px;
@@ -416,15 +416,15 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
 }
 
 .c1 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -495,11 +495,10 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
 
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object  1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -516,6 +515,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 .c0 {
   position: relative;
+  color: inherit;
   background-color: hsl(0,0%,100%);
   padding-bottom: 16px;
   padding-top: 4px;
@@ -523,15 +523,15 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c1 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -601,11 +601,10 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object with a red activeColor  1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -622,6 +621,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 .c0 {
   position: relative;
+  color: inherit;
   background-color: hsl(0,0%,100%);
   padding-bottom: 16px;
   padding-top: 4px;
@@ -629,15 +629,15 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c1 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -707,11 +707,10 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object with space mb  1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -728,6 +727,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 .c0 {
   position: relative;
+  color: inherit;
   background-color: hsl(0,0%,100%);
   padding-bottom: 16px;
   padding-top: 4px;
@@ -735,15 +735,15 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 }
 
 .c1 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -813,11 +813,10 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 
 exports[`TextField with assistive text should return a TextField object contain Assistive Text 1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -834,6 +833,7 @@ exports[`TextField with assistive text should return a TextField object contain 
 
 .c3 {
   color: hsl(0,0%,50%);
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -850,6 +850,7 @@ exports[`TextField with assistive text should return a TextField object contain 
 
 .c0 {
   position: relative;
+  color: inherit;
   background-color: hsl(0,0%,100%);
   padding-bottom: 16px;
   padding-top: 4px;
@@ -857,15 +858,15 @@ exports[`TextField with assistive text should return a TextField object contain 
 }
 
 .c1 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -941,11 +942,10 @@ exports[`TextField with assistive text should return a TextField object contain 
 
 exports[`TextField with some other props should return a TextField object contain input with those other props  1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -962,6 +962,7 @@ exports[`TextField with some other props should return a TextField object contai
 
 .c3 {
   color: hsl(0,0%,50%);
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -978,6 +979,7 @@ exports[`TextField with some other props should return a TextField object contai
 
 .c0 {
   position: relative;
+  color: inherit;
   background-color: hsl(0,0%,100%);
   padding-bottom: 16px;
   padding-top: 4px;
@@ -985,15 +987,15 @@ exports[`TextField with some other props should return a TextField object contai
 }
 
 .c1 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -1070,11 +1072,10 @@ exports[`TextField with some other props should return a TextField object contai
 
 exports[`TextField with validation error should return a TextField object contain Assistive Text with error style 1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: hsl(4.1,89.6%,58.4%);
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1091,6 +1092,7 @@ exports[`TextField with validation error should return a TextField object contai
 
 .c3 {
   color: hsl(4.1,89.6%,58.4%);
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1107,6 +1109,7 @@ exports[`TextField with validation error should return a TextField object contai
 
 .c0 {
   position: relative;
+  color: inherit;
   background-color: hsl(0,0%,100%);
   padding-bottom: 16px;
   padding-top: 4px;
@@ -1114,15 +1117,15 @@ exports[`TextField with validation error should return a TextField object contai
 }
 
 .c1 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;

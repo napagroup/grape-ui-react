@@ -2,15 +2,15 @@
 
 exports[`TextFieldComponent base should return a TextFieldComponent object 1`] = `
 .c0 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -68,15 +68,15 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
 
 exports[`TextFieldComponent base should return a large TextFieldComponent object 1`] = `
 .c0 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 1.2rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -134,15 +134,15 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
 
 exports[`TextFieldComponent base should return a small TextFieldComponent object 1`] = `
 .c0 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;

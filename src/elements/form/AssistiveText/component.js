@@ -1,16 +1,21 @@
 import React from 'react';
-import { typography } from 'src/elements/typography/textStyles';
-import { passThrough } from 'src/utils/componentHelpers';
+import PropTypes from 'prop-types';
+import { typography } from 'src/utils/styledHelpers';
+import { removeSomeProps } from 'src/utils/componentHelpers';
+
+const propsToTrim = {
+  ...typography.propTypes,
+};
 
 export const AssistiveTextComponent = ({ children, ...props }) => (
-  <div {...passThrough(AssistiveTextComponent, props)}>
+  <div {...removeSomeProps(props, Object.keys(propsToTrim))}>
     {children}
   </div>
 );
 AssistiveTextComponent.propTypes = {
-  ...typography.propTypes,
+  children: PropTypes.any,
 };
 
 AssistiveTextComponent.defaultProps = {
-  color: 'gray',
+  children: null,
 };

@@ -1,36 +1,40 @@
 import styled from 'styled-components';
+import { fontWeight } from 'styled-system';
 import {
-  getFontFamily,
-  getFontSize,
-  getFontWeight,
-  getLetterSpacing,
-  getLineHeight,
-  getFontStyle,
-  getColor,
-  getTextAlign,
-  getTextDecoration,
-} from 'src/elements/typography/textStyles';
+  colorCore,
+  defaultStylesBase,
+  fontFamilyCore,
+  fontSizeCore,
+  fontStyleCore,
+  letterSpacingCore,
+  lineHeightCore,
+  textAlignCore,
+  textDecorationCore,
+  typography,
+} from 'src/utils/styledHelpers';
 import { getGlobalStyles } from 'src/global-styles';
 import { AssistiveTextComponent } from './component';
 
 const { grid: gridSchema } = getGlobalStyles();
 const padding = gridSchema.gutter;
-const fontSizeForAssistiveText = props => `${getFontSize({ ...props, sm: true })};`;
+const fontSizeAssistiveText = props => fontSizeCore({ ...props, sm: true });
 export const AssistiveText = styled(AssistiveTextComponent)`
-  ${getColor}
-  ${getFontFamily}
-  ${fontSizeForAssistiveText}
-  ${getFontStyle}
-  ${getFontWeight}
-  ${getLetterSpacing}
-  ${getLineHeight}
-  ${getTextAlign}
-  ${getTextDecoration}
+  ${colorCore}
+  ${fontFamilyCore}
+  ${fontSizeAssistiveText}
+  ${fontWeight}
+  ${letterSpacingCore}
+  ${lineHeightCore}
+  ${fontStyleCore}
+  ${textAlignCore}
+  ${textDecorationCore}
   padding: 0 ${padding};
   `;
 AssistiveText.propTypes = {
+  ...typography.propTypes,
 };
 
 AssistiveText.defaultProps = {
+  ...defaultStylesBase,
   color: 'gray',
 };

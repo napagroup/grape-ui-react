@@ -2,52 +2,50 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { getGlobalStyles } from 'src/global-styles';
 import { getScaledSize } from 'src/elements/typography/utils';
-import { resolveColor } from 'src/utils/componentHelpers';
-import { defaultControlStylesBase } from 'src/elements/form/ControlGroup/baseControlStyle';
+import { fontWeight } from 'styled-system';
 import {
-  getFontFamily,
-  getFontSize,
-  getFontWeight,
-  getLetterSpacing,
-  getLineHeight,
-  getFontStyle,
-  getColor,
-  getTextAlign,
-  getTextDecoration,
+  colorCore,
+  defaultControlStyles,
+  fontFamilyCore,
+  fontSizeCore,
+  fontStyleCore,
+  letterSpacingCore,
+  lineHeightCore,
+  textAlignCore,
+  textDecorationCore,
   typography,
-} from 'src/elements/typography/textStyles';
+} from 'src/utils/styledHelpers';
 import { ControlLabelComponent } from './component';
 
 const { grid: gridSchema } = getGlobalStyles();
 
 const padding = getScaledSize(gridSchema.gutter, 0.5);
-const bgColor = props => `background-color: ${resolveColor(props.bgColor)};`;
-const colorForLabel = props => `${getColor({
+const colorLabel = props => colorCore({
   ...props,
   color: !props.validationError ? props.color : 'brandDanger',
-})};`;
-const fontSizeForLabel = props => `${getFontSize({ ...props, sm: true })};`;
+});
+const fontSizeLabel = props => fontSizeCore({ ...props, sm: true });
 const positionStyle = props => `position: ${props.isRelative ? 'relative' : 'absolute'};`;
-const topStyle = props => (props.isRelative ? '' : `top: -${padding};`);
+const top = props => (props.isRelative ? '' : `top: -${padding};`);
 export const ControlLabel = styled(ControlLabelComponent)`
-  ${bgColor}
-  ${colorForLabel}
-  ${getFontFamily}
-  ${fontSizeForLabel}
-  ${getFontStyle}
-  ${getFontWeight}
-  ${getLetterSpacing}
-  ${getLineHeight}
-  ${getTextAlign}
-  ${getTextDecoration}
+  ${colorLabel}
+  ${fontFamilyCore}
+  ${fontSizeLabel}
+  ${fontStyleCore}
+  ${fontWeight}
+  ${letterSpacingCore}
+  ${lineHeightCore}
+  ${fontStyleCore}
+  ${textAlignCore}
+  ${textDecorationCore}
   left: ${padding};
   padding: 0 ${padding};
-  ${topStyle};
+  ${top};
   ${positionStyle}
 `;
 
 ControlLabel.propTypes = {
-  bgColor: PropTypes.string,
+  bg: PropTypes.string,
   disabled: PropTypes.bool,
   isRelative: PropTypes.bool,
   ...typography.propTypes,
@@ -55,7 +53,7 @@ ControlLabel.propTypes = {
 };
 
 ControlLabel.defaultProps = {
-  bgColor: defaultControlStylesBase.bgColor,
+  bg: defaultControlStyles.bg,
   disabled: false,
   isRelative: false,
   validationError: '',
