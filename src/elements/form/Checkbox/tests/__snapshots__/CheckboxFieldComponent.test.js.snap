@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComponent that contains CheckboxComponent object 1`] = `
-.c0 {
+.c1 {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -14,27 +14,31 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   margin-right: 1rem;
   -webkit-align-items: baseline;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1rem 0.5rem;
 }
 
 <div
+  className="c0"
   id=""
-  style={
-    Object {
-      "display": "flex",
-    }
-  }
 >
   <label
-    className="c0"
+    className="c1"
     id="exampleColor"
     value={
       Array [
@@ -50,6 +54,7 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
       onChange={[Function]}
       style={
         Object {
+          "cursor": "pointer",
           "marginRight": "0.5rem",
         }
       }
@@ -59,7 +64,7 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
     Red
   </label>
   <label
-    className="c0"
+    className="c1"
     id="exampleColor"
     value={
       Array [
@@ -75,6 +80,7 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
       onChange={[Function]}
       style={
         Object {
+          "cursor": "pointer",
           "marginRight": "0.5rem",
         }
       }
@@ -84,7 +90,7 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
     Yellow
   </label>
   <label
-    className="c0"
+    className="c1"
     id="exampleColor"
     value={
       Array [
@@ -100,6 +106,7 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
       onChange={[Function]}
       style={
         Object {
+          "cursor": "pointer",
           "marginRight": "0.5rem",
         }
       }

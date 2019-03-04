@@ -2,11 +2,10 @@
 
 exports[`SelectField Component base should return a SelectField that contains ControlLabel object 1`] = `
 .c0 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -31,11 +30,10 @@ exports[`SelectField Component base should return a SelectField that contains Co
 
 exports[`SelectField Component base should return a SelectField that contains SelectFieldComponent object 1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -52,7 +50,8 @@ exports[`SelectField Component base should return a SelectField that contains Se
 
 .c0 {
   position: relative;
-  background-color: hsl(0,0%,100%);
+  color: inherit;
+  background-color: transparent;
   padding-bottom: 16px;
   padding-top: 4px;
   width: 100%;
@@ -186,6 +185,7 @@ exports[`SelectField Component base should return a SelectField that contains Se
 }
 
 <div
+  bgColor="white.light"
   className="c0"
 >
   <div
@@ -305,11 +305,10 @@ exports[`SelectField Component base should return a SelectField that contains Se
 
 exports[`SelectField Component with ControlLabel with * should return a SelectField  with ControlLabel with * 1`] = `
 .c0 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -335,6 +334,7 @@ exports[`SelectField Component with ControlLabel with * should return a SelectFi
 exports[`SelectField Component with assistive text should return a SelectField with assistive text 1`] = `
 .c0 {
   color: hsl(0,0%,50%);
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -360,6 +360,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
 exports[`SelectField Component with assistive text should return a SelectField with error text 1`] = `
 .c0 {
   color: hsl(4.1,89.6%,58.4%);
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -396,10 +397,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 0;
-  display: block;
-  outline: 0;
-  padding: 1rem;
 }
 
 <div
@@ -414,11 +411,10 @@ exports[`SelectField Component with plainText or disabled should return a Select
 
 exports[`SelectField Component with space should return a SelectField with space with  margin: 32px;  padding: 32px; on c0 1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -435,6 +431,7 @@ exports[`SelectField Component with space should return a SelectField with space
 
 .c3 {
   color: hsl(0,0%,50%);
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -451,7 +448,8 @@ exports[`SelectField Component with space should return a SelectField with space
 
 .c0 {
   position: relative;
-  background-color: hsl(0,0%,100%);
+  color: inherit;
+  background-color: transparent;
   padding-bottom: 16px;
   padding-top: 4px;
   width: 100%;
@@ -585,6 +583,7 @@ exports[`SelectField Component with space should return a SelectField with space
 }
 
 <div
+  bgColor="white.light"
   className="c0"
 >
   <div
@@ -710,11 +709,10 @@ exports[`SelectField Component with space should return a SelectField with space
 
 exports[`SelectField Component with style should return a SelectField with background-color: hsl(4.1,89.6%,58.4%) in c0 and c2  1`] = `
 .c2 {
-  background-color: hsl(4.1,89.6%,58.4%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -731,6 +729,7 @@ exports[`SelectField Component with style should return a SelectField with backg
 
 .c3 {
   color: hsl(0,0%,50%);
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -747,7 +746,8 @@ exports[`SelectField Component with style should return a SelectField with backg
 
 .c0 {
   position: relative;
-  background-color: hsl(4.1,89.6%,58.4%);
+  color: inherit;
+  background-color: transparent;
   padding-bottom: 16px;
   padding-top: 4px;
   width: 100%;
@@ -881,6 +881,7 @@ exports[`SelectField Component with style should return a SelectField with backg
 }
 
 <div
+  bgColor="red"
   className="c0"
 >
   <div
@@ -1006,11 +1007,10 @@ exports[`SelectField Component with style should return a SelectField with backg
 
 exports[`SelectField Component with style should return a SelectField with orange borderColor with border: 1px solid orange in c1; 1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1027,6 +1027,7 @@ exports[`SelectField Component with style should return a SelectField with orang
 
 .c3 {
   color: hsl(0,0%,50%);
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1043,7 +1044,8 @@ exports[`SelectField Component with style should return a SelectField with orang
 
 .c0 {
   position: relative;
-  background-color: hsl(0,0%,100%);
+  color: inherit;
+  background-color: transparent;
   padding-bottom: 16px;
   padding-top: 4px;
   width: 100%;
@@ -1177,6 +1179,7 @@ exports[`SelectField Component with style should return a SelectField with orang
 }
 
 <div
+  bgColor="white.light"
   className="c0"
 >
   <div
@@ -1302,11 +1305,10 @@ exports[`SelectField Component with style should return a SelectField with orang
 
 exports[`SelectField Component with style should return a SelectFieldComponent with props where lg={true} 1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1323,6 +1325,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 
 .c3 {
   color: hsl(0,0%,50%);
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1339,7 +1342,8 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 
 .c0 {
   position: relative;
-  background-color: hsl(0,0%,100%);
+  color: inherit;
+  background-color: transparent;
   padding-bottom: 16px;
   padding-top: 4px;
   width: 100%;
@@ -1473,6 +1477,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 }
 
 <div
+  bgColor="white.light"
   className="c0"
 >
   <div
@@ -1598,11 +1603,10 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 
 exports[`SelectField Component with style should return a SelectFieldComponent with props where sm={true} 1`] = `
 .c2 {
-  background-color: hsl(0,0%,100%);
   color: inherit;
+  background-color: hsl(0,0%,100%);
   font-family: inherit;
   font-size: 0.8rem;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1619,6 +1623,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 
 .c3 {
   color: hsl(0,0%,50%);
+  background-color: transparent;
   font-family: inherit;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1635,7 +1640,8 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 
 .c0 {
   position: relative;
-  background-color: hsl(0,0%,100%);
+  color: inherit;
+  background-color: transparent;
   padding-bottom: 16px;
   padding-top: 4px;
   width: 100%;
@@ -1769,6 +1775,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 }
 
 <div
+  bgColor="white.light"
   className="c0"
 >
   <div

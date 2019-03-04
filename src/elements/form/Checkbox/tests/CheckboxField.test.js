@@ -21,8 +21,8 @@ describe('CheckboxFieldComponent Component base', () => {
 });
 describe('CheckboxFieldComponent Component with plaintext', () => {
   it('should return a CheckboxFieldComponent that contains CheckboxComponent object with plainText', () => {
-    const selectedValue = ['red'];
-    const element = <CheckboxField controlId="exampleColor" labelText="Color" name="Color" options={colorOptions} plainText value={selectedValue} />;
+    const selectedValue = colorOptions[0];
+    const element = <CheckboxField assistiveText="Please select one" controlId="exampleColor" labelText="Color" name="Color" options={colorOptions} plainText value={selectedValue} />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
@@ -30,6 +30,13 @@ describe('CheckboxFieldComponent Component with disabled', () => {
   it('should return a CheckboxFieldComponent that contains CheckboxComponent object with disabled', () => {
     const selectedValue = ['red'];
     const element = <CheckboxField controlId="exampleColor" disabled labelText="Color" name="Color" options={colorOptions} value={selectedValue} />;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+describe('CheckboxFieldComponent Component with flex-direction', () => {
+  it('should return a CheckboxFieldComponent that contains CheckboxComponent object with flex-direction', () => {
+    const selectedValue = ['red'];
+    const element = <CheckboxField controlId="exampleColor" flexDirection={['column', 'row']} labelText="Color" name="Color" options={colorOptions} value={selectedValue} />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

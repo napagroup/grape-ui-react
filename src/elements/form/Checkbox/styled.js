@@ -10,17 +10,17 @@ import { defaultControlStylesBase } from '../ControlGroup/baseControlStyle';
 
 const renderValueOrComponent = (component, propsFromComponent) => {
   const {
-    controlId, plainText, disabled, value, defaultValue,
+    controlId, plainText, disabled, value, defaultValue, flexDirection,
   } = propsFromComponent;
   if (plainText) {
     const plainTextProps = {
       value,
-      ...removeSomeProps(propsFromComponent, ['controlId', 'labelText', 'assistiveText', 'name', 'onChange', 'options', 'plainText', 'validationError']),
+      ...removeSomeProps(propsFromComponent, ['controlId', 'labelText', 'assistiveText', 'name', 'onChange', 'options', 'plainText', 'validationError', 'flexDirection']),
     };
     return (<PlainText {...plainTextProps} />);
   }
   const childProps = { id: controlId, ...passThrough(component, propsFromComponent) };
-  return (<CheckboxFieldComponent {...childProps} disabled={disabled} value={value || defaultValue} />);
+  return (<CheckboxFieldComponent {...childProps} disabled={disabled} flexDirection={flexDirection} value={value || defaultValue} />);
 };
 export const CheckboxField = props => {
   const {
@@ -42,7 +42,11 @@ export const CheckboxField = props => {
   };
 
   return (
-    <ControlGroup {...controlGroupProps}>
+    <ControlGroup
+      pb={3}
+      pt={1}
+      {...controlGroupProps}
+    >
       <ControlLabel
         activeColor={activeColor}
         bgColor={bgColor}
@@ -64,6 +68,10 @@ CheckboxField.propTypes = {
   bgColor: PropTypes.string,
   controlId: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
+  flexDirection: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array,
+  ]),
   labelText: PropTypes.string,
   plainText: PropTypes.bool,
   validationError: PropTypes.string,
@@ -75,6 +83,7 @@ CheckboxField.defaultProps = {
   assistiveText: '',
   bgColor: defaultControlStylesBase.bgColor,
   disabled: false,
+  flexDirection: 'column',
   labelText: '',
   plainText: false,
   validationError: '',
