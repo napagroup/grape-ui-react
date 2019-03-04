@@ -1,8 +1,8 @@
 import React from 'react';
-import { Box } from '../';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 import { ThemeProvider } from 'styled-components';
+import { Box } from '..';
 
 describe('Box Component base', () => {
   it('should return a Box object with base styling', () => {
@@ -278,8 +278,8 @@ describe('Box Component using custom theme breakpoints', () => {
         '35em', '47em', '67em',
       ],
       heights: ['1.1px', '0.8px', '0.6px', '0.33px'],
-      maxWidths: ['1.1px', '0.8px', '0.6px', '0.33px'],
       maxHeights: ['1.1px', '0.8px', '0.6px', '0.33px'],
+      maxWidths: ['1.1px', '0.8px', '0.6px', '0.33px'],
     };
     it('should return a Box object with overridden breakpoints for display', () => {
       const component = renderer.create(<ThemeProvider theme={theme}>

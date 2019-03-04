@@ -5,7 +5,8 @@ import { passThrough } from 'src/utils/componentHelpers';
 export const AssistiveTextComponent = ({ children, ...props }) => (
   <div {...passThrough(AssistiveTextComponent, props)}>
     {children}
-  </div>);
+  </div>
+);
 AssistiveTextComponent.propTypes = {
   ...typography.propTypes,
 };

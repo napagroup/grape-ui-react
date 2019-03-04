@@ -1,6 +1,6 @@
 import React from 'react';
-import { List } from '../';
 import renderer from 'react-test-renderer';
+import { List } from '..';
 import 'jest-styled-components';
 
 describe('List Component', () => {
@@ -194,4 +194,3 @@ describe('Numbered List Specific Styling', () => {
     expect(tree).toMatchSnapshot();
   });
 });
-

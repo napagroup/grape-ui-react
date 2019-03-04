@@ -42,7 +42,7 @@ const SingleCheckBox = props => {
   const propsForChildren = removeSomeProps(passThrough(Checkbox, props), ['controlId', 'plainText', 'name', 'onChange', 'option']);
   const stylePropsForCheckBox = { marginRight: getScaledSize(gutter, 0.5) };
   return (
-    <CheckboxLabel key={`${option.label}-label`} {...propsForChildren} >
+    <CheckboxLabel key={`${option.label}-label`} {...propsForChildren}>
       <Checkbox
         key={option.label}
         disabled={disabled}
@@ -50,7 +50,8 @@ const SingleCheckBox = props => {
         {...propsForChildren}
         style={stylePropsForCheckBox}
         value={option.value}
-      />{option.label}
+      />
+      {option.label}
     </CheckboxLabel>
   );
 };

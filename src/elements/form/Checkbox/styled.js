@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { ControlLabel } from 'src/elements/form/ControlLabel';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
 import { passThrough, removeSomeProps } from 'src/utils/componentHelpers';
-import { CheckboxFieldComponent } from './component';
 import { space } from 'styled-system';
-import { defaultControlStylesBase } from '../ControlGroup/baseControlStyle';
 import { PlainText } from 'src/elements/form/PlainText';
+import { CheckboxFieldComponent } from './component';
+import { defaultControlStylesBase } from '../ControlGroup/baseControlStyle';
 
 const renderValueOrComponent = (component, propsFromComponent) => {
   const {
@@ -50,9 +50,12 @@ export const CheckboxField = props => {
         htmlFor={controlId}
         isRelative
         validationError={validationError}
-      >{labelCaption}{renderValueOrComponent(CheckboxField, { ...props, plainText })}
+      >
+        {labelCaption}
+        {renderValueOrComponent(CheckboxField, { ...props, plainText })}
       </ControlLabel>
-    </ControlGroup>);
+    </ControlGroup>
+  );
 };
 
 CheckboxField.propTypes = {
@@ -76,4 +79,3 @@ CheckboxField.defaultProps = {
   plainText: false,
   validationError: '',
 };
-

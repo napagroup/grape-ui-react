@@ -24,8 +24,8 @@ import {
   width,
   zIndex,
 } from 'styled-system';
-import { FormComponent } from './component';
 import PropTypes from 'prop-types';
+import { FormComponent } from './component';
 
 export const Form = styled(FormComponent)`
   ${alignContent}

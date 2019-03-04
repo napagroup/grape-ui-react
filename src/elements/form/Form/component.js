@@ -4,8 +4,8 @@ import { removeSomeProps } from 'src/utils/componentHelpers';
 import { width, display } from 'styled-system';
 
 const formComponentPropsToRemove = {
-  ...width.propTypes,
   ...display.propTypes,
+  ...width.propTypes,
   formInline: false,
 };
 export const applyFormStyleToChild = (child, formStylefromParent) => {
@@ -23,11 +23,18 @@ export const applyFormStyleToChild = (child, formStylefromParent) => {
 export const FormComponent = ({ children, formStyle, ...props }) => {
   let output = null;
   if (!formStyle) {
-    output = (<form {...removeSomeProps(props, Object.keys(formComponentPropsToRemove))}> {children} </form>
+    output = (
+      <form {...removeSomeProps(props, Object.keys(formComponentPropsToRemove))}>
+        {children}
+      </form>
     );
   } else {
     const childrenWithProps = React.Children.map(children, child => applyFormStyleToChild(child, formStyle));
-    output = (<form {...removeSomeProps(props, Object.keys(formComponentPropsToRemove))}> {childrenWithProps} </form>);
+    output = (
+      <form {...removeSomeProps(props, Object.keys(formComponentPropsToRemove))}>
+        {childrenWithProps}
+      </form>
+    );
   }
   return output;
 };
@@ -40,4 +47,3 @@ FormComponent.defaultProps = {
   children: null,
   formStyle: '',
 };
-

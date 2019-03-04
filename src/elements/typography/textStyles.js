@@ -1,7 +1,7 @@
 import { getGlobalStyles } from 'src/global-styles';
 import { resolveColor } from 'src/utils/componentHelpers';
-import { getScaledFontSize } from './utils';
 import PropTypes from 'prop-types';
+import { getScaledFontSize } from './utils';
 
 const { fontFamily: fontFamilySchema, fontSize: fontSizeSchema } = getGlobalStyles();
 

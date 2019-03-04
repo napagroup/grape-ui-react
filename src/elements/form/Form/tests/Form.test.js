@@ -1,8 +1,8 @@
 import React from 'react';
-import { Form } from '../';
+import { Form } from '..';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
-import { TextField } from '../../TextField/';
+import { TextField } from '../../TextField';
 
 const assertReactElement = element => {
   const component = renderer.create(element);
@@ -33,7 +33,12 @@ describe('Form Component base', () => {
   });
 
   it('should return a Form object with 2 filled formStyle and textField', () => {
-    const element = <Form display="flex" formStyle="filled"><TextField controlId="exampleFullName" labelText="Full name" /><TextField controlId="address" labelText="Address" /></Form>;
+    const element = (
+      <Form display="flex" formStyle="filled">
+        <TextField controlId="exampleFullName" labelText="Full name" />
+        <TextField controlId="address" labelText="Address" />
+      </Form>
+    );
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

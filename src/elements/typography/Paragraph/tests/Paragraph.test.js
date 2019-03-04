@@ -1,6 +1,6 @@
 import React from 'react';
-import { Paragraph } from '../';
 import renderer from 'react-test-renderer';
+import { Paragraph } from '..';
 import 'jest-styled-components';
 
 describe('Paragraph Component base', () => {

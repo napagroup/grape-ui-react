@@ -1,5 +1,5 @@
-import { scaleFont, scaleFactor } from '../';
 import { getGlobalStyles } from 'src/global-styles';
+import { scaleFont, scaleFactor } from '..';
 
 const {
   fontSize: fontSizeSchema,

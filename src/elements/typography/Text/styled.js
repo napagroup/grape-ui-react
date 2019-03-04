@@ -33,4 +33,3 @@ Text.propTypes = {
 Text.defaultProps = {
   ...defaultStylesBase,
 };
-

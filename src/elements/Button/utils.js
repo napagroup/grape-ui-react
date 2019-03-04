@@ -3,6 +3,7 @@ import { getGlobalStyles } from 'src/global-styles';
 import { resolveColor } from 'src/utils/componentHelpers';
 import { POSITION_DEFAULT_VALUE } from 'src/utils/styledHelpers';
 import { DEFAULT_BUTTON_LINE_HEIGHT } from './constants';
+
 const { colors: colorSchema } = getGlobalStyles();
 const { brandPrimary } = colorSchema;
 
@@ -14,9 +15,9 @@ const raisedStyle = '';
 export const getAdvanceButtonStyle = (props = {}) => {
   if (props.contained) {
     return containedStyle;
-  } else if (props.outline) {
+  } if (props.outline) {
     return outlineStyle;
-  } else if (props.raised) {
+  } if (props.raised) {
     return raisedStyle;
   }
   return '';
@@ -30,16 +31,12 @@ export const backgroundColorForButton = style({
   // React prop name
   prop: 'bg',
   // add a fallback scale object or array, if theme is not present
-  scale: [ 0, 4, 8, 16, 32 ],
+  scale: [0, 4, 8, 16, 32],
   // accessor function for transforming the value
-  transformValue: color => {
-    console.log({ color });
-    return color ? resolveColor(color) : 'transparent';
-    return 'transparent';
-  },
+  transformValue: color => (color ? resolveColor(color) : 'transparent'),
 });
 
-const borderStyle = style({
+const borderWidthStyle = style({
   // The corresponding CSS property (defaults to prop argument)
   cssProperty: 'border',
   // key for theme values
@@ -53,7 +50,6 @@ const borderStyle = style({
 });
 
 export const borderForButton = props => (props.borderWidth ? borderWidthStyle(props) : `border: 1px solid ${brandPrimary.base};`);
-
 
 export const colorForButton = style({
   // The corresponding CSS property (defaults to prop argument)

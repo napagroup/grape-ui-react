@@ -1,7 +1,7 @@
 import { themeGet } from 'styled-system';
 import { getGlobalStyles } from 'src/global-styles';
 import { isKeyNestedProp, resolveToProperty } from 'src/utils/objectHelpers';
-import { defaultStylesBase } from '../';
+import { defaultStylesBase } from '..';
 
 const {
   colors: colorSchema,

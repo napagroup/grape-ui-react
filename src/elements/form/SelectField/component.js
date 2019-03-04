@@ -10,11 +10,11 @@ import Select from 'react-select';
 
 const styleOverrides = {
   control: styles => null,
-  option: styles => null,
   input: styles => null,
   multiValue: styles => null,
   multiValueLabel: styles => null,
   multiValueRemove: styles => null,
+  option: styles => null,
   placeholder: styles => null,
   singleValue: styles => null,
 };

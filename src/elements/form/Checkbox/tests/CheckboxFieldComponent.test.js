@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckboxFieldComponent } from '../';
+import { CheckboxFieldComponent } from '..';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 
@@ -9,9 +9,9 @@ const assertReactElement = element => {
 };
 
 const colorOptions = [
-  { value: 'red', label: 'Red' },
-  { value: 'yellow', label: 'Yellow' },
-  { value: 'green', label: 'Green' },
+  { label: 'Red', value: 'red' },
+  { label: 'Yellow', value: 'yellow' },
+  { label: 'Green', value: 'green' },
 ];
 
 describe('CheckboxFieldComponent Component base', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text } from '../';
 import renderer from 'react-test-renderer';
+import { Text } from '..';
 import 'jest-styled-components';
 
 describe('Text Component base', () => {
@@ -57,4 +57,3 @@ describe('Text Component specified styles', () => {
     expect(tree).toMatchSnapshot();
   });
 });
-

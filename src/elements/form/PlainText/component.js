@@ -11,7 +11,7 @@ const getDisplayValue = props => {
   const { value } = props;
   if (!!value && !!value.label) {
     return value.label;
-  } else if (typeof value === 'string') {
+  } if (typeof value === 'string') {
     return value;
   }
   return '';

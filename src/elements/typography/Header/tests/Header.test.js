@@ -1,6 +1,6 @@
 import React from 'react';
-import { Header } from '../';
 import renderer from 'react-test-renderer';
+import { Header } from '..';
 import 'jest-styled-components';
 
 describe('Header.h1 Component base', () => {

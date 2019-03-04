@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextField } from '../';
+import { TextField } from '..';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 
@@ -58,7 +58,7 @@ describe('TextField a small TextFieldComponent object', () => {
 });
 describe('TextField a small TextFieldComponent object', () => {
   it('should return a disabled TextFieldComponent', () => {
-    const element = <TextField activeColor="red" controlId="exampleFullName2" labelText="Full name2" disabled />;
+    const element = <TextField activeColor="red" controlId="exampleFullName2" disabled labelText="Full name2" />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

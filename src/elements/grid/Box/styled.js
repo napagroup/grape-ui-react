@@ -37,4 +37,3 @@ export const Box = styled(BoxComponent)`
   ${width}
   ${zIndex}
 `;
-

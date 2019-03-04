@@ -3,10 +3,7 @@
 exports[`Form Component base should return a Form object 1`] = `
 <form
   className=""
->
-   
-   
-</form>
+/>
 `;
 
 exports[`Form Component base should return a Form object and textField with filled formStyle 1`] = `
@@ -105,7 +102,6 @@ exports[`Form Component base should return a Form object and textField with fill
 <form
   className="c0"
 >
-   
   <div
     className="c1"
   >
@@ -124,7 +120,6 @@ exports[`Form Component base should return a Form object and textField with fill
       Full name
     </label>
   </div>
-   
 </form>
 `;
 
@@ -224,7 +219,6 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
 <form
   className="c0"
 >
-   
   <div
     className="c1"
   >
@@ -261,7 +255,6 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
       Address
     </label>
   </div>
-   
 </form>
 `;
 
@@ -276,11 +269,9 @@ exports[`Form Component base should return a Form object with div that do not ge
 <form
   className="c0"
 >
-   
   <div
     id="1"
   />
-   
 </form>
 `;
 
@@ -380,7 +371,6 @@ exports[`Form Component base should return a Form object with filled formStyle a
 <form
   className="c0"
 >
-   
   <div
     className="c1"
   >
@@ -399,7 +389,6 @@ exports[`Form Component base should return a Form object with filled formStyle a
       Full name
     </label>
   </div>
-   
 </form>
 `;
 
@@ -417,8 +406,5 @@ exports[`Form Component base should return a Form object with flex direction col
 <form
   className="c0"
   flexDirection="column"
->
-   
-   
-</form>
+/>
 `;

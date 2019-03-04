@@ -38,7 +38,7 @@ const renderControlGroupAssistive = propsFromControlGroup => {
   const { assistiveText, validationError: error, controlId: id } = propsFromControlGroup;
   if (!assistiveText && !error) {
     return null;
-  } else if (assistiveText && !error) {
+  } if (assistiveText && !error) {
     return <AssistiveText id={`${id}Help`}>{assistiveText}</AssistiveText>;
   }
   return <AssistiveText color="brandDanger" id={`${id}Error`}>{error}</AssistiveText>;
@@ -56,12 +56,12 @@ export const ControlGroupComponent = ({ children, ...props }) => {
     hideLabel,
   } = props;
   const labelProps = {
-    text: labelText,
     activeColor,
     bgColor: bgColorFromProps,
-    disabled,
     controlId,
+    disabled,
     hideLabel,
+    text: labelText,
     validationError,
   };
   const assistiveProps = {
@@ -74,7 +74,8 @@ export const ControlGroupComponent = ({ children, ...props }) => {
       {children}
       {renderControlGroupLabel(labelProps)}
       {renderControlGroupAssistive(assistiveProps)}
-    </div>);
+    </div>
+  );
 };
 
 ControlGroupComponent.propTypes = {

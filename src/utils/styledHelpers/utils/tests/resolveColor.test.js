@@ -1,6 +1,6 @@
 
-import { resolveColor } from '../../';
 import { getGlobalStyles } from 'src/global-styles';
+import { resolveColor } from '../..';
 
 const {
   colors: colorSchema,

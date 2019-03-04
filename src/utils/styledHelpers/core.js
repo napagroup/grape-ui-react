@@ -6,13 +6,13 @@ import {
   lineHeight,
   textAlign,
 } from 'styled-system';
+import { getGlobalStyles } from 'src/global-styles';
 import { defaultStylesBase } from './cssDefaults';
 import {
   resolveColorByPropName,
   scaleFont,
   scaleFactor,
 } from './utils';
-import { getGlobalStyles } from 'src/global-styles';
 
 const {
   fontFamily: fontFamilySchema,

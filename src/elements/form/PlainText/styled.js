@@ -16,8 +16,7 @@ import {
 } from 'src/elements/typography/textStyles';
 import { PlainTextComponent } from './component';
 
-const controlStylesBaseForPlainText = props =>
-  (!props.validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') }));
+const controlStylesBaseForPlainText = props => (!props.validationError ? controlStylesBase(props) : controlStylesBase({ ...props, activeColor: resolveColor('brandDanger'), borderColor: resolveColor('brandDanger') }));
 
 export const PlainText = styled(PlainTextComponent)`
 ${getFontFamily}

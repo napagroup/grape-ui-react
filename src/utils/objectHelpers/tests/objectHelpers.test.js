@@ -64,4 +64,3 @@ describe('When determining if a string key is a nested prop', () => {
     expect(actual).toBeFalsy();
   });
 });
-

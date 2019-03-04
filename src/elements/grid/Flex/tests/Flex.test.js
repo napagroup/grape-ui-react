@@ -1,9 +1,9 @@
 /* eslint-disable function-paren-newline */
 import React from 'react';
-import { Flex } from '../';
-import { Box } from '../../Box';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
+import { Flex } from '..';
+import { Box } from '../../Box';
 import 'jest-styled-components';
 
 describe('Flex base', () => {
@@ -276,8 +276,8 @@ describe('Flex using custom theme breakpoints', () => {
         '35em', '47em', '67em',
       ],
       heights: ['1.1px', '0.8px', '0.6px', '0.33px'],
-      maxWidths: ['1.1px', '0.8px', '0.6px', '0.33px'],
       maxHeights: ['1.1px', '0.8px', '0.6px', '0.33px'],
+      maxWidths: ['1.1px', '0.8px', '0.6px', '0.33px'],
     };
     it('should return a Flex object with overridden breakpoints for maxWidth', () => {
       const component = renderer.create(<ThemeProvider theme={theme}>

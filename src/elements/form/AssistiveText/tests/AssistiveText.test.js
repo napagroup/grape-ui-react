@@ -1,5 +1,5 @@
 import React from 'react';
-import { AssistiveText } from '../';
+import { AssistiveText } from '..';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 

@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
 import { passThrough, resolveColor } from 'src/utils/componentHelpers';
-import { TextInputComponent } from './component';
 import { space } from 'styled-system';
-import { defaultControlStylesBase, control, controlStylesBase } from '../ControlGroup/baseControlStyle';
 import styled from 'styled-components';
 import {
   getFontFamily,
@@ -18,8 +16,10 @@ import {
   getTextDecoration,
   typography,
 } from 'src/elements/typography/textStyles';
+import { defaultControlStylesBase, control, controlStylesBase } from '../ControlGroup/baseControlStyle';
+import { TextInputComponent } from './component';
 
-const controlStylesBaseForTextField = props => (!props.validationError ? controlStylesBase(props) : controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') }));
+const controlStylesBaseForTextField = props => (!props.validationError ? controlStylesBase(props) : controlStylesBase({ ...props, activeColor: resolveColor('brandDanger'), borderColor: resolveColor('brandDanger') }));
 
 export const TextFieldComponent = styled(TextInputComponent)`
   ${getFontFamily}
@@ -76,7 +76,8 @@ export const TextField = props => {
       validationError={validationError}
     >
       <TextFieldComponent validationError={validationError} {...childProps} />
-    </ControlGroup>);
+    </ControlGroup>
+  );
 };
 
 TextField.propTypes = {
@@ -97,4 +98,3 @@ TextField.defaultProps = {
   required: false,
   validationError: '',
 };
-

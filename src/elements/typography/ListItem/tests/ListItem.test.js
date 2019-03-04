@@ -1,6 +1,6 @@
 import React from 'react';
-import { ListItem } from '../';
 import renderer from 'react-test-renderer';
+import { ListItem } from '..';
 import 'jest-styled-components';
 
 describe('ListItem Component base', () => {

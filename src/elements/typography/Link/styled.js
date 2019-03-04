@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { LinkComponent } from './component';
 import { fontWeight } from 'styled-system';
 import {
   colorCore,
@@ -15,6 +14,7 @@ import {
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
+import { LinkComponent } from './component';
 
 const hoverColor = props => `&:active {
   color: ${resolveColor(props.hoverColor)};

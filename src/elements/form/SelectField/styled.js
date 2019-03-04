@@ -1,11 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
-import { passThrough, removeSomeProps, resolveColor, resolveElevation } from 'src/utils/componentHelpers';
-import { SelectComponent } from './component';
+import {
+  passThrough, removeSomeProps, resolveColor, resolveElevation,
+} from 'src/utils/componentHelpers';
 import { space } from 'styled-system';
 import styled from 'styled-components';
-import { defaultControlStylesBase, controlStylesBase, control, focusStylesBase } from 'src/elements/form/ControlGroup/baseControlStyle';
+import {
+  defaultControlStylesBase, controlStylesBase, control, focusStylesBase,
+} from 'src/elements/form/ControlGroup/baseControlStyle';
 import {
   getFontFamily,
   getFontSize,
@@ -20,14 +23,15 @@ import {
   defaultTextStylesBase,
 } from 'src/elements/typography/textStyles';
 import { PlainText } from 'src/elements/form/PlainText';
+import { SelectComponent } from './component';
 
 const controlStylesBaseForSelectFieldComponent = props => {
   if (!props.validationError && !props.isDisabled) {
     return controlStylesBase(props);
-  } else if (props.validationError) {
-    return controlStylesBase({ ...props, borderColor: resolveColor('brandDanger'), activeColor: resolveColor('brandDanger') });
+  } if (props.validationError) {
+    return controlStylesBase({ ...props, activeColor: resolveColor('brandDanger'), borderColor: resolveColor('brandDanger') });
   }
-  return controlStylesBase({ ...props, borderColor: resolveColor('white.light'), activeColor: resolveColor('white.light') });
+  return controlStylesBase({ ...props, activeColor: resolveColor('white.light'), borderColor: resolveColor('white.light') });
 };
 const getFocusStyle = props => {
   if (props.isFocused) {
@@ -191,7 +195,8 @@ export const SelectField = props => {
       validationError={validationError}
     >
       {renderValueOrComponent(SelectField, { plainText, ...props })}
-    </ControlGroup>);
+    </ControlGroup>
+  );
 };
 
 SelectField.propTypes = {
@@ -214,4 +219,3 @@ SelectField.defaultProps = {
   plainText: false,
   validationError: '',
 };
-

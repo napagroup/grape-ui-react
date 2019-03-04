@@ -1,5 +1,5 @@
-import { textStylesBase, defaultTextStylesBase } from '../textStyles';
 import { getGlobalStyles } from 'src/global-styles';
+import { textStylesBase, defaultTextStylesBase } from '../textStyles';
 import { getScaledFontSize } from '../utils';
 
 const { fontFamily: fontFamilySchema } = getGlobalStyles();
@@ -8,8 +8,7 @@ const defaultParams = { ...defaultTextStylesBase };
 
 const renderTest = ({
   fontFamily, fontSize, kerning, italic, color, fontWeight, textAlign, scaleFactor, textDecoration,
-}) =>
-  `
+}) => `
     font-family: ${fontFamily};
     font-size: ${scaleFactor ? getScaledFontSize(fontSize, scaleFactor) : fontSize};
     font-weight: ${fontWeight};

@@ -1,10 +1,10 @@
 import React from 'react';
-import { SelectField } from '../';
 import 'jest-styled-components';
 import Adapter from 'enzyme-adapter-react-16';
 import { configure, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 import { PlainText } from 'src/elements/form/PlainText';
+import { SelectField } from '..';
 
 const assertReactElement = element => {
   const component = renderer.create(element);
@@ -12,23 +12,19 @@ const assertReactElement = element => {
 };
 configure({ adapter: new Adapter() });
 const colorOptions = [
-  { value: 'red', label: 'Red', color: '#FF5630' },
-  { value: 'yellow', label: 'Yellow', color: '#FFC400' },
-  { value: 'green', label: 'Green', color: '#36B37E' },
+  { color: '#FF5630', label: 'Red', value: 'red' },
+  { color: '#FFC400', label: 'Yellow', value: 'yellow' },
+  { color: '#36B37E', label: 'Green', value: 'green' },
 ];
 
 describe('SelectField Component base', () => {
   it('should return a SelectField that contains SelectFieldComponent object', () => {
-    // const component = mount(<SelectField controlId="exampleColor" labelText="Color" id="exampleColor" options={colorOptions} sm value={colorOptions[1]} />);
-    // expect((component.find('SelectField').html())).toMatchSnapshot();
     const element = <SelectField controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} sm value={colorOptions[1]} />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
   it('should return a SelectField that contains ControlLabel object', () => {
     const component = mount(<SelectField controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} sm value={colorOptions[1]} />);
     expect(component.find('label')).toMatchSnapshot();
-    // const element = <SelectField controlId="exampleColor" labelText="Color" id="exampleColor" options={colorOptions} sm value={colorOptions[1]} />;
-    // expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
 
@@ -36,16 +32,11 @@ describe('SelectField Component with assistive text', () => {
   it('should return a SelectField with assistive text', () => {
     const component = mount(<SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} value={colorOptions[1]} />);
     expect(component.find('div[id="exampleColorHelp"]')).toMatchSnapshot();
-    // expect((component.html())).toMatchSnapshot();
-    // const element = <SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} value={colorOptions[1]} />;
-    // expect(assertReactElement(element)).toMatchSnapshot();
   });
 
   it('should return a SelectField with error text', () => {
     const component = mount(<SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} validationError="This is a required field." value={colorOptions[1]} />);
     expect(component.find('div[id="exampleColorError"]')).toMatchSnapshot();
-    // const element = <SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} validationError="This is a required field." value={colorOptions[1]} />;
-    // expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
 
@@ -53,21 +44,15 @@ describe('SelectField Component with ControlLabel with *', () => {
   it('should return a SelectField  with ControlLabel with *', () => {
     const component = mount(<SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} required value={colorOptions[1]} />);
     expect(component.find('label')).toMatchSnapshot();
-    // const element = <SelectField assistiveText="Please tell me your color" controlId="exampleColor" labelText="Color" id="exampleColor" options={colorOptions} required value={colorOptions[1]} />;
-    // expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
 
 describe('SelectField Component with style', () => {
   it('should return a SelectFieldComponent with props where lg={true}', () => {
-    // const component = mount(<SelectField assistiveText="Please tell me your color" controlId="exampleColor" labelText="Color" id="exampleColor" lg options={colorOptions} value={colorOptions[1]} />);
-    // expect((component.find('SelectField').props('lg'))).toMatchSnapshot();
     const element = <SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" lg options={colorOptions} value={colorOptions[1]} />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
   it('should return a SelectFieldComponent with props where sm={true}', () => {
-    // const component = mount(<SelectField assistiveText="Please tell me your color" controlId="exampleColor" labelText="Color" id="exampleColor" options={colorOptions} sm value={colorOptions[1]} />);
-    // expect((component.find('SelectField').props('sm'))).toMatchSnapshot();
     const element = <SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} sm value={colorOptions[1]} />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });

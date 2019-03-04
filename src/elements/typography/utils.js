@@ -1,3 +1,4 @@
+/* eslint-disable complexity */
 // Use this function to convert sizes and avoid IE quirks
 export const getScaledSize = (size, scaleFactor, defaultSize, defaultUnit) => {
   // Convert the font size and scale factor to floats for calculation

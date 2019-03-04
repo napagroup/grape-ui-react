@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextFieldComponent } from '../';
+import { TextFieldComponent } from '..';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 

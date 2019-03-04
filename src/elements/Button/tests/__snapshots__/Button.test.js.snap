@@ -12,10 +12,9 @@ exports[`Button Component base with style should return a Button with a zIndex w
 
 <button
   className="c0"
+  type="button"
 >
-   
   Do this
-   
 </button>
 `;
 
@@ -31,10 +30,9 @@ exports[`Button Component base with style should return a Button with a zIndex w
 
 <button
   className="c0"
+  type="button"
 >
-   
   Do this
-   
 </button>
 `;
 
@@ -50,10 +48,9 @@ exports[`Button Component base with style should return a Button with bgColor an
 <button
   className="c0"
   id="exampleColor"
+  type="button"
 >
-   
   Do this
-   
 </button>
 `;
 
@@ -69,10 +66,9 @@ exports[`Button Component base with style should return a Button with lg 1`] = `
 <button
   className="c0"
   id="exampleColor"
+  type="button"
 >
-   
   Do this
-   
 </button>
 `;
 
@@ -88,10 +84,9 @@ exports[`Button Component base with style should return a Button with sm 1`] = `
 <button
   className="c0"
   id="exampleColor"
+  type="button"
 >
-   
   Do this
-   
 </button>
 `;
 
@@ -109,9 +104,7 @@ exports[`Button Component base with style should return a Link with href with bu
   href="https://www.google.com/"
   target="_blank"
 >
-   
   google
-   
 </a>
 `;
 
@@ -130,9 +123,7 @@ exports[`Button Component base with style should return a Link with to with butt
   onClick={[Function]}
   target="_self"
 >
-   
   404
-   
 </a>
 `;
 
@@ -147,10 +138,9 @@ exports[`Button base should return a Button 1`] = `
 
 <button
   className="c0"
+  type="button"
 >
-   
   Do this
-   
 </button>
 `;
 
@@ -167,10 +157,9 @@ exports[`Button base should return a Button with disabled 1`] = `
   className="c0"
   disabled={true}
   id="exampleColor"
+  type="button"
 >
-   
   Do this
-   
 </button>
 `;
 
@@ -187,11 +176,10 @@ exports[`Button using theme colors Button using styled system fontSize should re
 <button
   className="c0"
   fontSize={3}
+  type="button"
   variant="primary"
 >
-   
   Do this
-   
 </button>
 `;
 
@@ -223,9 +211,8 @@ exports[`Button using theme colors should return a Button 1`] = `
 
 <button
   className="c0"
+  type="button"
 >
-   
   Do this
-   
 </button>
 `;

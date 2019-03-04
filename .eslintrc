@@ -58,6 +58,7 @@
       "no-use-before-define": [2, "nofunc"],
       "quotes": [2, "single"],
       "react/forbid-prop-types": 0,
+      "react/forbid-foreign-prop-types": 0,
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
       "react/jsx-indent": 0,
       "react/jsx-uses-react": 2,

@@ -33,13 +33,13 @@ import {
   width,
   zIndex,
 } from 'styled-system';
+import { colorCore } from 'src/utils/styledHelpers';
 import {
   borderForButton,
   lineHeightForButton,
   positionForButton,
 } from './utils';
 import { ButtonComponent } from './component';
-import { colorCore } from 'src/utils/styledHelpers';
 
 // TODO: For Ryan, please put the correct style into for contained, outline and raised here.
 export const Button = styled(ButtonComponent)`

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SelectFieldComponent } from '../';
+import { SelectFieldComponent } from '..';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 
@@ -8,9 +8,9 @@ const assertReactElement = element => {
   return component.toJSON();
 };
 const colorOptions = [
-  { value: 'red', label: 'Red', color: '#FF5630' },
-  { value: 'yellow', label: 'Yellow', color: '#FFC400' },
-  { value: 'green', label: 'Green', color: '#36B37E' },
+  { color: '#FF5630', label: 'Red', value: 'red' },
+  { color: '#FFC400', label: 'Yellow', value: 'yellow' },
+  { color: '#36B37E', label: 'Green', value: 'green' },
 ];
 
 describe('SelectFieldComponent base', () => {
@@ -30,4 +30,3 @@ describe('SelectFieldComponent with some style relate', () => {
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
-

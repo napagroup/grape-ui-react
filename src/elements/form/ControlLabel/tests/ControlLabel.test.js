@@ -1,5 +1,5 @@
 import React from 'react';
-import { ControlLabel } from '../';
+import { ControlLabel } from '..';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 

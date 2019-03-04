@@ -119,15 +119,27 @@ export const ButtonComponent = ({
 }) => {
   let output = null;
   if (href) {
-    output = (<a {...removeSomeProps(props, Object.keys(propsToTrimForLink))} href={href} target={target}> {children} </a>);
+    output = (
+      <a {...removeSomeProps(props, Object.keys(propsToTrimForLink))} href={href} target={target}>
+        {children}
+      </a>
+    );
   } else if (to) {
     const linkProps = {
       target,
       to,
     };
-    output = (<ReactRouterLink {...removeSomeProps(props, Object.keys(propsToTrimForLink))} {...linkProps} > {children} </ReactRouterLink>);
+    output = (
+      <ReactRouterLink {...removeSomeProps(props, Object.keys(propsToTrimForLink))} {...linkProps}>
+        {children}
+      </ReactRouterLink>
+    );
   } else {
-    output = (<button {...removeSomeProps(props, Object.keys(propsToTrimForButton))}> {children} </button>);
+    output = (
+      <button type="button" {...removeSomeProps(props, Object.keys(propsToTrimForButton))}>
+        {children}
+      </button>
+    );
   }
   return output;
 };

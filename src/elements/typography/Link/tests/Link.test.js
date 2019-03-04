@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from '../';
 import renderer from 'react-test-renderer';
 import { MemoryRouter as Router } from 'react-router-dom';
+import { Link } from '..';
 import 'jest-styled-components';
 
 describe('Link Component base', () => {

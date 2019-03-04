@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckboxField } from '../';
+import { CheckboxField } from '..';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 
@@ -33,4 +33,3 @@ describe('CheckboxFieldComponent Component with disabled', () => {
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
-

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Button } from '../';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { getGlobalStyles } from 'src/global-styles';
 import { MemoryRouter as Router } from 'react-router-dom';
+import { Button } from '..';
 
 const assertReactElement = element => {
   const component = renderer.create(element);

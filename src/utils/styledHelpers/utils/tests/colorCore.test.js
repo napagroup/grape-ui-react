@@ -1,6 +1,5 @@
-import { colorCore, defaultStylesBase } from '../..';
-// import { defaultStylesBase } from '../..';
 import { getGlobalStyles } from 'src/global-styles';
+import { colorCore, defaultStylesBase } from '../..';
 
 const {
   colors: colorSchema,

@@ -5,10 +5,12 @@ import { defaultControlStylesBase } from 'src/elements/form/ControlGroup/baseCon
 import { typography } from 'src/elements/typography/textStyles';
 
 export const ControlLabelComponent = ({ children, ...props }) => (
+  /* eslint-disable jsx-a11y/label-has-associated-control */
   // eslint-disable-next-line jsx-a11y/label-has-for
   <label {...passThrough(ControlLabelComponent, removeSomeProps(props, ['isRelative']))}>
     {children}
-  </label>);
+  </label>
+);
 ControlLabelComponent.propTypes = {
   activeColor: PropTypes.string,
   bgColor: PropTypes.string,
