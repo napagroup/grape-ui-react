@@ -24,8 +24,7 @@ const renderValueOrComponent = propsFromComponent => {
   } = propsFromComponent;
   if (plainText) {
     const plainTextProps = {
-      value,
-      ...removeSomeProps(propsFromComponent, ['controlId', 'labelText', 'assistiveText', 'name', 'onChange', 'options', 'plainText', 'validationError', 'flexDirection']),
+      ...removeSomeProps(propsFromComponent, ['controlId', 'labelText', 'assistiveText', 'name', 'onChange', 'options', 'plainText', 'validationError', 'flexDirection', 'assistiveText', 'validationError']),
     };
     return (<PlainText {...plainTextProps} />);
   }
@@ -56,6 +55,7 @@ export const CheckboxField = props => {
       pb={3}
       pt={1}
       {...controlGroupProps}
+      validationError={validationError}
     >
       <ControlLabel
         activeColor={activeColor}

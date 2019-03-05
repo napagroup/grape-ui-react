@@ -4,4 +4,3 @@ export * from './ListItem';
 export * from './Paragraph';
 export * from './Text';
 export * from './Link';
-export * from './textStyles';

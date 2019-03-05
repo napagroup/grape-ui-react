@@ -161,6 +161,343 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
 </div>
 `;
 
+exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComponent that contains CheckboxComponent validationError 1`] = `
+.c3 {
+  color: inherit;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-right: 1rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1rem 0.5rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  color: hsl(4.1,89.6%,58.4%);
+  background-color: hsl(0,0%,100%);
+  font-family: inherit;
+  font-size: 0.8rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: relative;
+}
+
+.c4 {
+  color: hsl(4.1,89.6%,58.4%);
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
+.c0 {
+  position: relative;
+  color: inherit;
+  background-color: transparent;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    htmlFor="exampleColor"
+  >
+    Color*
+    <div
+      className="c2"
+      id=""
+    >
+      <label
+        className="c3"
+        disabled={false}
+        id="exampleColor"
+        required={true}
+        value={
+          Array [
+            "red",
+          ]
+        }
+      >
+        <input
+          checked={true}
+          disabled={false}
+          id="exampleColor"
+          name="Color"
+          onChange={[Function]}
+          required={true}
+          style={
+            Object {
+              "cursor": "pointer",
+              "marginRight": "0.5rem",
+            }
+          }
+          type="checkbox"
+          value="red"
+        />
+        Red
+      </label>
+      <label
+        className="c3"
+        disabled={false}
+        id="exampleColor"
+        required={true}
+        value={
+          Array [
+            "red",
+          ]
+        }
+      >
+        <input
+          checked={false}
+          disabled={false}
+          id="exampleColor"
+          name="Color"
+          onChange={[Function]}
+          required={true}
+          style={
+            Object {
+              "cursor": "pointer",
+              "marginRight": "0.5rem",
+            }
+          }
+          type="checkbox"
+          value="yellow"
+        />
+        Yellow
+      </label>
+      <label
+        className="c3"
+        disabled={false}
+        id="exampleColor"
+        required={true}
+        value={
+          Array [
+            "red",
+          ]
+        }
+      >
+        <input
+          checked={false}
+          disabled={false}
+          id="exampleColor"
+          name="Color"
+          onChange={[Function]}
+          required={true}
+          style={
+            Object {
+              "cursor": "pointer",
+              "marginRight": "0.5rem",
+            }
+          }
+          type="checkbox"
+          value="green"
+        />
+        Green
+      </label>
+    </div>
+  </label>
+  <div
+    className="c4"
+    id="exampleColorError"
+  >
+    This is required
+  </div>
+</div>
+`;
+
+exports[`CheckboxFieldComponent Component with 1 plaintext should return a CheckboxFieldComponent that contains CheckboxComponent object with plainText 1`] = `
+.c2 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c1 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: inherit;
+  font-size: 0.8rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: relative;
+}
+
+.c3 {
+  color: hsl(0,0%,50%);
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
+.c0 {
+  position: relative;
+  color: inherit;
+  background-color: transparent;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    htmlFor="exampleColor"
+  >
+    Color
+    <div
+      className="c2"
+      disabled={false}
+    >
+      Red
+    </div>
+  </label>
+  <div
+    className="c3"
+    id="exampleColorHelp"
+  >
+    Please select one
+  </div>
+</div>
+`;
+
+exports[`CheckboxFieldComponent Component with 2 plaintext should return a CheckboxFieldComponent that contains CheckboxComponent object with disabled 1`] = `
+.c2 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c1 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: inherit;
+  font-size: 0.8rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: relative;
+}
+
+.c0 {
+  position: relative;
+  color: inherit;
+  background-color: transparent;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    htmlFor="exampleColor"
+  >
+    Color
+    <div
+      className="c2"
+      disabled={false}
+    >
+      Red,Yellow
+    </div>
+  </label>
+</div>
+`;
+
 exports[`CheckboxFieldComponent Component with disabled should return a CheckboxFieldComponent that contains CheckboxComponent object with disabled 1`] = `
 .c3 {
   color: inherit;
@@ -492,13 +829,12 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
 </div>
 `;
 
-exports[`CheckboxFieldComponent Component with plaintext should return a CheckboxFieldComponent that contains CheckboxComponent object with plainText 1`] = `
-.c2 {
+exports[`CheckboxFieldComponent Component with flex-direction should return a CheckboxFieldComponent that contains CheckboxComponent object with flex-direction 2`] = `
+.c3 {
   color: inherit;
-  background-color: hsl(0,0%,100%);
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
-  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -507,6 +843,26 @@ exports[`CheckboxFieldComponent Component with plaintext should return a Checkbo
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  margin-right: 1rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1rem 0.5rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c1 {
@@ -527,23 +883,6 @@ exports[`CheckboxFieldComponent Component with plaintext should return a Checkbo
   position: relative;
 }
 
-.c3 {
-  color: hsl(0,0%,50%);
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  padding: 0 1rem;
-}
-
 .c0 {
   position: relative;
   color: inherit;
@@ -551,6 +890,14 @@ exports[`CheckboxFieldComponent Component with plaintext should return a Checkbo
   padding-bottom: 16px;
   padding-top: 4px;
   width: 100%;
+}
+
+@media screen and (min-width:40em) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 <div
@@ -563,16 +910,90 @@ exports[`CheckboxFieldComponent Component with plaintext should return a Checkbo
     Color
     <div
       className="c2"
-      disabled={false}
+      id=""
     >
-      Red
+      <label
+        className="c3"
+        disabled={false}
+        id="exampleColor"
+        value={
+          Array [
+            "red",
+          ]
+        }
+      >
+        <input
+          checked={true}
+          disabled={false}
+          id="exampleColor"
+          name="Color"
+          onChange={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+              "marginRight": "0.5rem",
+            }
+          }
+          type="checkbox"
+          value="red"
+        />
+        Red
+      </label>
+      <label
+        className="c3"
+        disabled={false}
+        id="exampleColor"
+        value={
+          Array [
+            "red",
+          ]
+        }
+      >
+        <input
+          checked={false}
+          disabled={false}
+          id="exampleColor"
+          name="Color"
+          onChange={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+              "marginRight": "0.5rem",
+            }
+          }
+          type="checkbox"
+          value="yellow"
+        />
+        Yellow
+      </label>
+      <label
+        className="c3"
+        disabled={false}
+        id="exampleColor"
+        value={
+          Array [
+            "red",
+          ]
+        }
+      >
+        <input
+          checked={false}
+          disabled={false}
+          id="exampleColor"
+          name="Color"
+          onChange={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+              "marginRight": "0.5rem",
+            }
+          }
+          type="checkbox"
+          value="green"
+        />
+        Green
+      </label>
     </div>
   </label>
-  <div
-    className="c3"
-    id="exampleColorHelp"
-  >
-    Please select one
-  </div>
 </div>
 `;
