@@ -70,7 +70,7 @@ export const ControlGroupComponent = ({ children, ...props }) => {
   } = props;
   const labelProps = {
     activeColor,
-    bgColor: bgColorFromProps,
+    bg: bgColorFromProps,
     controlId,
     disabled,
     hideLabel,

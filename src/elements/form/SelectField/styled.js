@@ -1,46 +1,41 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
-import {
-  passThrough, removeSomeProps,
-  resolveColor,
-  resolveElevation,
-} from 'src/utils/componentHelpers';
-import { space } from 'styled-system';
+import { removeSomeProps } from 'src/utils/componentHelpers';
+import { fontWeight, space } from 'styled-system';
 import styled from 'styled-components';
 import {
+  colorCore,
   control,
-  controlStylesBase,
-  defaultControlStylesBase,
-  focusStylesBase,
-} from 'src/elements/form/ControlGroup/baseControlStyle';
-import {
-  getFontFamily,
-  getFontSize,
-  getFontWeight,
-  getLetterSpacing,
-  getLineHeight,
-  getFontStyle,
-  getColor,
-  getTextAlign,
-  getTextDecoration,
+  controlStyles,
+  defaultControlStyles,
+  defaultStylesBase,
+  focusStyles,
+  fontFamilyCore,
+  fontSizeCore,
+  fontStyleCore,
+  letterSpacingCore,
+  lineHeightCore,
+  resolveColor,
+  resolveElevation,
+  textAlignCore,
+  textDecorationCore,
   typography,
-  defaultTextStylesBase,
-} from 'src/elements/typography/textStyles';
+} from 'src/utils/styledHelpers';
 import { PlainText } from 'src/elements/form/PlainText';
 import { SelectComponent } from './component';
 
-const controlStylesBaseForSelectFieldComponent = props => {
+const controlStylesSelectField = props => {
   if (!props.validationError && !props.isDisabled) {
-    return controlStylesBase(props);
+    return controlStyles(props);
   } if (props.validationError) {
-    return controlStylesBase({ ...props, activeColor: resolveColor('brandDanger'), borderColor: resolveColor('brandDanger') });
+    return controlStyles({ ...props, activeColor: 'brandDanger', borderColor: 'brandDanger' });
   }
-  return controlStylesBase({ ...props, activeColor: resolveColor('white.light'), borderColor: resolveColor('white.light') });
+  return controlStyles({ ...props, activeColor: 'white.light', borderColor: 'white.light' });
 };
-const getFocusStyle = props => {
+const focusStyleSelectField = props => {
   if (props.isFocused) {
-    return focusStylesBase(props);
+    return focusStyles(props);
   }
   return '';
 };
@@ -109,17 +104,17 @@ const reactSelectStylesOverrides = props => {
 };
 
 export const SelectFieldComponent = styled(SelectComponent)`
-  ${getFontFamily}
-  ${getFontSize}
-  ${getFontWeight}
-  ${getLetterSpacing}
-  ${getLineHeight}
-  ${getFontStyle}
-  ${getColor}
-  ${getTextAlign}
-  ${getTextDecoration}
-  ${controlStylesBaseForSelectFieldComponent}
-  ${getFocusStyle}
+  ${colorCore}
+  ${fontFamilyCore}
+  ${fontSizeCore}
+  ${fontWeight}
+  ${letterSpacingCore}
+  ${lineHeightCore}
+  ${fontStyleCore}
+  ${textAlignCore}
+  ${textDecorationCore}
+  ${controlStylesSelectField}
+  ${focusStyleSelectField}
   ${reactSelectStylesOverrides}
 `;
 SelectFieldComponent.propTypes = {
@@ -137,8 +132,8 @@ SelectFieldComponent.propTypes = {
 
 SelectFieldComponent.defaultProps = {
   chipBg: 'white.dark',
-  ...defaultControlStylesBase,
-  ...defaultTextStylesBase,
+  ...defaultControlStyles,
+  ...defaultStylesBase,
   isDisabled: false,
   menuFocusBg: 'brandLinkHover',
   menuFocusColor: 'white',
@@ -152,12 +147,21 @@ const renderSelectFieldComponent = selectFieldProps => {
   const {
     defaultValue,
     value,
-    validationError,
   } = selectFieldProps;
 
-  return (<SelectFieldComponent validationError={validationError} {...selectFieldProps} value={value || defaultValue} />);
+  return (<SelectFieldComponent {...selectFieldProps} value={value || defaultValue} />);
 };
-const renderValueOrComponent = (component, propsFromComponent) => {
+const propsToTrim = [
+  'activeColor',
+  'bg',
+  'controlId',
+  'disabled',
+  'assistiveText',
+  'labelText',
+  'required',
+  'plainText',
+];
+const renderValueOrComponent = propsFromComponent => {
   const {
     controlId,
     disabled,
@@ -169,7 +173,7 @@ const renderValueOrComponent = (component, propsFromComponent) => {
   }
   const childProps = {
     id: controlId,
-    ...passThrough(component, propsFromComponent),
+    ...removeSomeProps(propsFromComponent, propsToTrim),
     isDisabled: disabled,
   };
   return renderSelectFieldComponent(childProps);
@@ -177,7 +181,7 @@ const renderValueOrComponent = (component, propsFromComponent) => {
 export const SelectField = props => {
   const {
     activeColor,
-    bgColor,
+    bg,
     controlId,
     disabled,
     assistiveText,
@@ -191,7 +195,7 @@ export const SelectField = props => {
     <ControlGroup
       activeColor={activeColor}
       assistiveText={assistiveText}
-      bgColor={bgColor}
+      bg={bg}
       controlId={controlId}
       disabled={disabled}
       labelText={newlabel}
@@ -199,7 +203,7 @@ export const SelectField = props => {
       pt={1}
       validationError={validationError}
     >
-      {renderValueOrComponent(SelectField, { plainText, ...props })}
+      {renderValueOrComponent({ plainText, ...props })}
     </ControlGroup>
   );
 };
@@ -207,7 +211,7 @@ export const SelectField = props => {
 SelectField.propTypes = {
   activeColor: PropTypes.string,
   assistiveText: PropTypes.string,
-  bgColor: PropTypes.string,
+  bg: PropTypes.string,
   controlId: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   labelText: PropTypes.string.isRequired,
@@ -217,9 +221,9 @@ SelectField.propTypes = {
 };
 
 SelectField.defaultProps = {
-  activeColor: defaultControlStylesBase.activeColor,
+  activeColor: defaultControlStyles.activeColor,
   assistiveText: '',
-  bgColor: defaultControlStylesBase.bgColor,
+  bg: defaultControlStyles.bgColor,
   disabled: false,
   plainText: false,
   validationError: '',

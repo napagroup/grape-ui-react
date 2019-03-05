@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  defaultTextStylesBase,
+  control,
   typography,
-} from 'src/elements/typography/textStyles';
-import { control, defaultControlStylesBase } from 'src/elements/form/ControlGroup/baseControlStyle';
-import { passThrough } from 'src/utils/componentHelpers';
+} from 'src/utils/styledHelpers';
+import { removeSomeProps } from 'src/utils/componentHelpers';
 import Select from 'react-select';
 
 const styleOverrides = {
@@ -18,7 +17,18 @@ const styleOverrides = {
   placeholder: styles => null,
   singleValue: styles => null,
 };
-
+const propsToTrim = [
+  ...Object.keys(control.propTypes),
+  'chipBg',
+  'isDisabled',
+  'menuFocusBg',
+  'menuFocusColor',
+  'menuSelectedBg',
+  'menuSelectedColor',
+  'multiple',
+  ...Object.keys(typography.propTypes),
+  'validationError',
+];
 export const SelectComponent = ({ children, ...props }) => {
   const { isDisabled, multiple } = props;
   return (
@@ -28,33 +38,19 @@ export const SelectComponent = ({ children, ...props }) => {
       isDisabled={isDisabled}
       isMulti={multiple}
       styles={styleOverrides}
-      {...passThrough(SelectComponent, props)}
+      {...removeSomeProps(props, propsToTrim)}
     >
       {children}
     </Select>
   );
 };
 SelectComponent.propTypes = {
-  ...control.propTypes,
-  chipBg: PropTypes.string,
+  children: PropTypes.any,
   isDisabled: PropTypes.bool,
-  menuFocusBg: PropTypes.string,
-  menuFocusColor: PropTypes.string,
-  menuSelectedBg: PropTypes.string,
-  menuSelectedColor: PropTypes.string,
   multiple: PropTypes.bool,
-  ...typography.propTypes,
-  validationError: PropTypes.string,
 };
 SelectComponent.defaultProps = {
-  chipBg: 'white.dark',
-  ...defaultControlStylesBase,
-  ...defaultTextStylesBase,
+  children: null,
   isDisabled: false,
-  menuFocusBg: 'brandLinkHover',
-  menuFocusColor: 'white',
-  menuSelectedBg: 'brandLink',
-  menuSelectedColor: 'white',
   multiple: false,
-  validationError: '',
 };

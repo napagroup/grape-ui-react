@@ -57,7 +57,7 @@ describe('SelectField Component with style', () => {
     expect(assertReactElement(element)).toMatchSnapshot();
   });
   it('should return a SelectField with background-color: hsl(4.1,89.6%,58.4%) in c0 and c2 ', () => {
-    const element = <SelectField assistiveText="Please tell me your color" bgColor="red" controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} value={colorOptions[1]} />;
+    const element = <SelectField assistiveText="Please tell me your color" bg="red" controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} value={colorOptions[1]} />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 

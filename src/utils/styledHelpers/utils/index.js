@@ -1,4 +1,4 @@
 export * from './control';
-export * from './resolveColor';
+export * from './resolvers';
 export * from './scaleFont';
 export * from './typography';
