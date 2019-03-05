@@ -175,7 +175,6 @@ exports[`Button using theme colors Button using styled system fontSize should re
 
 <button
   className="c0"
-  fontSize={3}
   type="button"
   variant="primary"
 >

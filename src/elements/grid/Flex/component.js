@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   alignContent,
   alignItems,
@@ -24,15 +25,9 @@ import {
   width,
   zIndex,
 } from 'styled-system';
-import { passThrough } from 'src/utils/componentHelpers';
+import { removeSomeProps } from 'src/utils/componentHelpers';
 
-export const FlexComponent = ({ children, ...props }) => (
-  <div {...passThrough(FlexComponent, props)}>
-    {children}
-  </div>
-);
-
-FlexComponent.propTypes = {
+const propsToTrim = {
   ...alignContent.propTypes,
   ...alignItems.propTypes,
   ...alignSelf.propTypes,
@@ -56,4 +51,18 @@ FlexComponent.propTypes = {
   ...top.propTypes,
   ...width.propTypes,
   ...zIndex.propTypes,
+};
+
+export const FlexComponent = ({ children, ...props }) => (
+  <div {...removeSomeProps(props, Object.keys(propsToTrim))}>
+    {children}
+  </div>
+);
+
+FlexComponent.propTypes = {
+  children: PropTypes.any,
+};
+
+FlexComponent.defaultProps = {
+  children: null,
 };

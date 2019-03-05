@@ -1,7 +1,6 @@
 import { style } from 'styled-system';
 import { getGlobalStyles } from 'src/global-styles';
-import { resolveColor } from 'src/utils/componentHelpers';
-import { POSITION_DEFAULT_VALUE } from 'src/utils/styledHelpers';
+import { resolveColor, POSITION_DEFAULT_VALUE } from 'src/utils/styledHelpers';
 import { DEFAULT_BUTTON_LINE_HEIGHT } from './constants';
 
 const { colors: colorSchema } = getGlobalStyles();

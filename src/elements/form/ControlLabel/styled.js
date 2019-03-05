@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { getGlobalStyles } from 'src/global-styles';
-import { getScaledSize } from 'src/elements/typography/utils';
 import { fontWeight } from 'styled-system';
 import {
   colorCore,
@@ -11,6 +10,7 @@ import {
   fontStyleCore,
   letterSpacingCore,
   lineHeightCore,
+  scaleFont,
   textAlignCore,
   textDecorationCore,
   typography,
@@ -19,7 +19,7 @@ import { ControlLabelComponent } from './component';
 
 const { grid: gridSchema } = getGlobalStyles();
 
-const padding = getScaledSize(gridSchema.gutter, 0.5);
+const padding = scaleFont(gridSchema.gutter, 0.5);
 const colorLabel = props => colorCore({
   ...props,
   color: !props.validationError ? props.color : 'brandDanger',

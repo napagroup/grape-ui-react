@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { typography } from 'src/elements/typography/textStyles';
+import { typography } from 'src/utils/styledHelpers';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import {
   alignContent,

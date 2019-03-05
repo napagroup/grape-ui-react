@@ -1,11 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import { passThrough } from 'src/utils/componentHelpers';
-
-import { control } from 'src/elements/form/ControlGroup/baseControlStyle';
-
-import { typography } from 'src/elements/typography/textStyles';
+import { removeSomeProps } from 'src/utils/componentHelpers';
+import { control, typography } from 'src/utils/styledHelpers';
 
 const getDisplayValue = props => {
   const { value } = props;
@@ -17,9 +13,14 @@ const getDisplayValue = props => {
   return '';
 };
 
+const propsToTrim = [
+  ...Object.keys(control.propTypes),
+  ...Object.keys(typography.propTypes),
+  'value',
+];
 export const PlainTextComponent = props => {
   const displayString = getDisplayValue(props);
-  return (<div {...passThrough(PlainTextComponent, props)}>{displayString}</div>);
+  return (<div {...removeSomeProps(props, propsToTrim)}>{displayString}</div>);
 };
 
 PlainTextComponent.propTypes = {

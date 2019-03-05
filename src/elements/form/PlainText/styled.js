@@ -1,35 +1,34 @@
 import styled from 'styled-components';
-
+import { fontWeight } from 'styled-system';
 import {
-  getFontFamily,
-  getFontSize,
-  getFontWeight,
-  getLetterSpacing,
-  getLineHeight,
-  getFontStyle,
-  getColor,
-  getTextAlign,
-  getTextDecoration,
-  defaultTextStylesBase,
+  colorCore,
+  defaultStylesBase,
+  fontFamilyCore,
+  fontSizeCore,
+  fontStyleCore,
+  letterSpacingCore,
+  lineHeightCore,
+  textAlignCore,
+  textDecorationCore,
   typography,
-} from 'src/elements/typography/textStyles';
+} from 'src/utils/styledHelpers';
 import { PlainTextComponent } from './component';
 
 export const PlainText = styled(PlainTextComponent)`
-  ${getFontFamily}
-  ${getFontSize}
-  ${getFontWeight}
-  ${getLetterSpacing}
-  ${getLineHeight}
-  ${getFontStyle}
-  ${getColor}
-  ${getTextAlign}
-  ${getTextDecoration}
+  ${colorCore}
+  ${fontFamilyCore}
+  ${fontSizeCore}
+  ${fontWeight}
+  ${letterSpacingCore}
+  ${lineHeightCore}
+  ${fontStyleCore}
+  ${textAlignCore}
+  ${textDecorationCore}
 `;
 PlainText.propTypes = {
   ...typography.propTypes,
 };
 
 PlainText.defaultProps = {
-  ...defaultTextStylesBase,
+  ...defaultStylesBase,
 };

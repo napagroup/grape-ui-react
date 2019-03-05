@@ -20,15 +20,9 @@ import {
   zIndex,
 } from 'styled-system';
 
-import { passThrough } from 'src/utils/componentHelpers';
+import { removeSomeProps } from 'src/utils/componentHelpers';
 
-export const BoxComponent = ({ children, ...props }) => (
-  <div {...passThrough(BoxComponent, props)}>
-    {children}
-  </div>
-);
-BoxComponent.propTypes = {
-  children: PropTypes.any.isRequired,
+const propsToTrim = {
   ...bottom.propTypes,
   ...display.propTypes,
   ...left.propTypes,
@@ -45,4 +39,12 @@ BoxComponent.propTypes = {
   ...top.propTypes,
   ...width.propTypes,
   ...zIndex.propTypes,
+};
+export const BoxComponent = ({ children, ...props }) => (
+  <div {...removeSomeProps(props, Object.keys(propsToTrim))}>
+    {children}
+  </div>
+);
+BoxComponent.propTypes = {
+  children: PropTypes.any.isRequired,
 };

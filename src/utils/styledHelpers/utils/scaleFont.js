@@ -29,10 +29,10 @@ const getUnit = (size, defaultUnit) => {
   }
   return unit;
 };
-export const scaleFont = (size, factor, defaultSize = 1, defaultUnit = 'rem') => {
+export const scaleFont = (size, factor = 1, defaultSize = 1, defaultUnit = 'rem') => {
   // Convert the font size and scale factor to floats for calculation
-  const floatSize = parseFloat(size) || defaultSize || 1;
-  const floatScaleFactor = parseFloat(factor) || 1;
+  const floatSize = parseFloat(size) || defaultSize;
+  const floatScaleFactor = parseFloat(factor);
   const unit = size ? getUnit(size, defaultUnit) : defaultUnit;
   // Calculate the final font size
   return (floatSize * floatScaleFactor).toString() + unit;

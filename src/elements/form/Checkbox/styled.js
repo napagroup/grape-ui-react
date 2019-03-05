@@ -2,13 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ControlLabel } from 'src/elements/form/ControlLabel';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
-import { passThrough, removeSomeProps } from 'src/utils/componentHelpers';
+import { removeSomeProps } from 'src/utils/componentHelpers';
 import { space } from 'styled-system';
 import { PlainText } from 'src/elements/form/PlainText';
+import { defaultControlStyles } from 'src/utils/styledHelpers';
 import { CheckboxFieldComponent } from './component';
-import { defaultControlStylesBase } from '../ControlGroup/baseControlStyle';
 
-const renderValueOrComponent = (component, propsFromComponent) => {
+const propsToTrim = [
+  'activeColor',
+  'assistiveText',
+  'bg',
+  'controlId',
+  'labelText',
+  'plainText',
+  'validationError',
+  ...Object.keys(space.propTypes),
+];
+const renderValueOrComponent = propsFromComponent => {
   const {
     controlId, plainText, disabled, value, defaultValue, flexDirection,
   } = propsFromComponent;
@@ -19,7 +29,7 @@ const renderValueOrComponent = (component, propsFromComponent) => {
     };
     return (<PlainText {...plainTextProps} />);
   }
-  const childProps = { id: controlId, ...passThrough(component, propsFromComponent) };
+  const childProps = { id: controlId, ...removeSomeProps(propsFromComponent, propsToTrim) };
   return (<CheckboxFieldComponent {...childProps} disabled={disabled} flexDirection={flexDirection} value={value || defaultValue} />);
 };
 export const CheckboxField = props => {
@@ -32,7 +42,7 @@ export const CheckboxField = props => {
     required,
     validationError,
     plainText,
-    bgColor,
+    bg,
   } = props;
 
   const labelCaption = !required ? labelText : `${labelText}*`;
@@ -49,14 +59,14 @@ export const CheckboxField = props => {
     >
       <ControlLabel
         activeColor={activeColor}
-        bgColor={bgColor}
+        bg={bg}
         disabled={disabled}
         htmlFor={controlId}
         isRelative
         validationError={validationError}
       >
         {labelCaption}
-        {renderValueOrComponent(CheckboxField, { ...props, plainText })}
+        {renderValueOrComponent({ ...props, plainText })}
       </ControlLabel>
     </ControlGroup>
   );
@@ -65,7 +75,7 @@ export const CheckboxField = props => {
 CheckboxField.propTypes = {
   activeColor: PropTypes.string,
   assistiveText: PropTypes.string,
-  bgColor: PropTypes.string,
+  bg: PropTypes.string,
   controlId: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   flexDirection: PropTypes.oneOfType([
@@ -79,9 +89,9 @@ CheckboxField.propTypes = {
 };
 
 CheckboxField.defaultProps = {
-  activeColor: defaultControlStylesBase.activeColor,
+  activeColor: defaultControlStyles.activeColor,
   assistiveText: '',
-  bgColor: defaultControlStylesBase.bgColor,
+  bg: defaultControlStyles.bg,
   disabled: false,
   flexDirection: 'column',
   labelText: '',

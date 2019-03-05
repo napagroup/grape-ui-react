@@ -1,37 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { flexDirection, fontWeight } from 'styled-system';
 import {
-  getFontFamily,
-  getFontSize,
-  getFontWeight,
-  getLetterSpacing,
-  getLineHeight,
-  getFontStyle,
-  getColor,
-  getTextAlign,
-  getTextDecoration,
-} from 'src/elements/typography/textStyles';
-import { flexDirection } from 'styled-system';
+  colorCore,
+  fontFamilyCore,
+  fontSizeCore,
+  fontStyleCore,
+  letterSpacingCore,
+  lineHeightCore,
+  scaleFont,
+  textAlignCore,
+  textDecorationCore,
+} from 'src/utils/styledHelpers';
 import { passThrough, removeSomeProps } from 'src/utils/componentHelpers';
 import { CheckboxGroup, Checkbox } from 'react-checkbox-group';
 import { PlainText } from 'src/elements/form/PlainText';
-import { getScaledSize } from 'src/elements/typography/utils';
 import { getGlobalStyles } from 'src/global-styles';
 
 const { grid: { gutter } } = getGlobalStyles();
 const opacity = props => `${props.disabled ? 'opacity: 0.6;' : ''}`;
-const marginRight = () => `margin-right: ${getScaledSize(gutter, 1)}`;
+const marginRight = () => `margin-right: ${scaleFont(gutter, 1)}`;
 const CheckboxLabel = styled.label`
-  ${getFontFamily}
-  ${getFontSize}
-  ${getFontWeight}
-  ${getLetterSpacing}
-  ${getLineHeight}
-  ${getFontStyle}
-  ${getColor}
-  ${getTextAlign}
-  ${getTextDecoration}
+  ${colorCore}
+  ${fontFamilyCore}
+  ${fontSizeCore}
+  ${fontWeight}
+  ${letterSpacingCore}
+  ${lineHeightCore}
+  ${fontStyleCore}
+  ${textAlignCore}
+  ${textDecorationCore}
   ${marginRight}
   ${opacity}
   align-items: baseline;
@@ -59,7 +58,7 @@ Wrapper.defaultProps = {
 
 const CheckboxGroupWrapper = styled(Wrapper)`
   display: flex;
-  padding: 0 ${getScaledSize(gutter, 1)} ${getScaledSize(gutter, 0.5)};
+  padding: 0 ${scaleFont(gutter, 1)} ${scaleFont(gutter, 0.5)};
   ${flexDirection}
 `;
 
@@ -71,7 +70,7 @@ CheckboxGroupWrapper.propTypes = {
 const SingleCheckBox = props => {
   const { disabled, option } = props;
   const propsForChildren = removeSomeProps(passThrough(Checkbox, props), ['controlId', 'plainText', 'name', 'onChange', 'option']);
-  const stylePropsForCheckBox = { cursor: 'pointer', marginRight: getScaledSize(gutter, 0.5) };
+  const stylePropsForCheckBox = { cursor: 'pointer', marginRight: scaleFont(gutter, 0.5) };
   return (
     <CheckboxLabel key={`${option.label}-label`} {...propsForChildren}>
       <Checkbox

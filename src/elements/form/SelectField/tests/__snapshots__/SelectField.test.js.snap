@@ -385,6 +385,8 @@ exports[`SelectField Component with assistive text should return a SelectField w
 
 exports[`SelectField Component with plainText or disabled should return a SelectField with plainText with <div> Yellow </div> rendered 1`] = `
 .c0 {
+  color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -393,7 +395,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  color: inherit;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -402,7 +403,6 @@ exports[`SelectField Component with plainText or disabled should return a Select
 <div
   className="c0"
   disabled={false}
-  fontSize="inherit"
   id="exampleColor"
 >
   Yellow
