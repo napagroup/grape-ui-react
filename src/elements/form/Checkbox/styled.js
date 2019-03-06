@@ -6,6 +6,7 @@ import { removeSomeProps } from 'src/utils/componentHelpers';
 import { space } from 'styled-system';
 import { PlainText } from 'src/elements/form/PlainText';
 import { defaultControlStyles } from 'src/utils/styledHelpers';
+import { getAssistiveText } from 'src/elements/form/AssistiveText';
 import { CheckboxFieldComponent } from './component';
 
 const propsToTrim = [
@@ -46,15 +47,16 @@ export const CheckboxField = props => {
 
   const labelCaption = !required ? labelText : `${labelText}*`;
   const controlGroupProps = {
-    assistiveText,
     controlId,
   };
+  const assistiveProps = { assistiveText, required };
 
   return (
     <ControlGroup
       pb={3}
       pt={1}
       {...controlGroupProps}
+      assistiveText={getAssistiveText(assistiveProps)}
       validationError={validationError}
     >
       <ControlLabel

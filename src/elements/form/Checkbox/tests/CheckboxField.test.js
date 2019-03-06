@@ -33,10 +33,22 @@ describe('CheckboxFieldComponent Component with flex-direction', () => {
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
-describe('CheckboxFieldComponent Component base', () => {
+describe('CheckboxFieldComponent Component with assistive text', () => {
+  it('should return a CheckboxFieldComponent that contains CheckboxComponent with assistive text', () => {
+    const element = <CheckboxField assistiveText="Tell me your color" controlId="exampleColor" labelText="Color" name="Color" options={colorOptions} required value="" />;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+describe('CheckboxFieldComponent Component with required', () => {
+  it('should return a CheckboxFieldComponent that contains CheckboxComponent required', () => {
+    const element = <CheckboxField controlId="exampleColor" labelText="Color" name="Color" options={colorOptions} required value="" />;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+describe('CheckboxFieldComponent Component with validationError', () => {
   it('should return a CheckboxFieldComponent that contains CheckboxComponent validationError', () => {
     const selectedValue = ['red'];
-    const element = <CheckboxField assistiveText="Please tell me your color" controlId="exampleColor" labelText="Color" name="Color" options={colorOptions} required validationError="This is required" value={selectedValue} />;
+    const element = <CheckboxField assistiveText="" controlId="exampleColor" labelText="Color" name="Color" options={colorOptions} required validationError="This is required" value={selectedValue} />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

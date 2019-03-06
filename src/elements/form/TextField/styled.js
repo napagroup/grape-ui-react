@@ -19,6 +19,7 @@ import {
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
+import { getAssistiveText } from 'src/elements/form/AssistiveText';
 import { TextInputComponent } from './component';
 
 const controlStylesTextField = props => (!props.validationError ? controlStyles(props)
@@ -48,13 +49,6 @@ TextFieldComponent.defaultProps = {
   ...defaultControlStyles,
 };
 
-const getAssistiveText = props => {
-  const { assistiveText, required } = props;
-  if (required && !assistiveText) {
-    return '*Required';
-  }
-  return assistiveText;
-};
 const propsToTrim = [
   'activeColor',
   'assistiveText',

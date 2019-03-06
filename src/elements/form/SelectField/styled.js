@@ -23,6 +23,7 @@ import {
   typography,
 } from 'src/utils/styledHelpers';
 import { PlainText } from 'src/elements/form/PlainText';
+import { getAssistiveText } from 'src/elements/form/AssistiveText';
 import { SelectComponent } from './component';
 
 const controlStylesSelectField = props => {
@@ -191,11 +192,12 @@ export const SelectField = props => {
     validationError,
     plainText,
   } = props;
+  const assistiveProps = { assistiveText, required };
   const newlabel = !required ? labelText : `${labelText}*`;
   return (
     <ControlGroup
       activeColor={activeColor}
-      assistiveText={assistiveText}
+      assistiveText={getAssistiveText(assistiveProps)}
       bg={bg}
       controlId={controlId}
       disabled={disabled}
