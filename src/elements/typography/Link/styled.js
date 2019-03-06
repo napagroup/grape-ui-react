@@ -16,8 +16,9 @@ import {
 } from 'src/utils/styledHelpers';
 import { LinkComponent } from './component';
 
-const hoverColor = props => `&:active {
-  color: ${resolveColor(props.hoverColor)};
+const hoverStyle = props => `&:active {
+  color: ${resolveColor(props.hoverStyle)};
+  cursor: pointer;
  }`;
 
 const Link = styled(LinkComponent)`
@@ -31,19 +32,19 @@ const Link = styled(LinkComponent)`
   ${textAlignCore}
   ${textDecorationCore}
   &:hover,
-  ${hoverColor}
+  ${hoverStyle}
   `;
 
 Link.propTypes = {
   ...typography.propTypes,
-  hoverColor: PropTypes.string,
+  hoverStyle: PropTypes.string,
   to: PropTypes.string,
 };
 
 Link.defaultProps = {
   ...defaultStylesBase,
   color: 'brandLink',
-  hoverColor: 'brandLinkHover',
+  hoverStyle: 'brandLinkHover',
   textDecoration: 'none',
 };
 

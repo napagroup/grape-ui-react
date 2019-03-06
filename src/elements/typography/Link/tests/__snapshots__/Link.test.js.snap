@@ -20,6 +20,7 @@ exports[`Link Component base should return a react router tag, given a 'to' attr
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -51,6 +52,7 @@ exports[`Link Component base should return an anchor tag 1`] = `
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -80,6 +82,7 @@ exports[`Link Component base should return an anchor tag with an href, given the
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -110,6 +113,7 @@ exports[`Link Component specified styles should return a Link object with a base
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -139,6 +143,7 @@ exports[`Link Component specified styles should return a Link object with a base
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -168,6 +173,7 @@ exports[`Link Component specified styles should return a Link object with a dark
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -197,6 +203,7 @@ exports[`Link Component specified styles should return a Link object with a ligh
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -226,6 +233,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -255,6 +263,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -284,6 +293,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -313,6 +323,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -342,6 +353,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -371,6 +383,7 @@ exports[`Link Component specified styles should return a Link object with font-s
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -400,6 +413,7 @@ exports[`Link Component specified styles should return a Link object with font-s
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
@@ -430,6 +444,7 @@ exports[`Link Component specified styles should return a Link object with font-s
 .c0:hover,
 .c0:active {
   color: hsl(207,90%,54%);
+  cursor: pointer;
 }
 
 <a
