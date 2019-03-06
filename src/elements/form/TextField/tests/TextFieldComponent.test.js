@@ -22,3 +22,17 @@ describe('TextFieldComponent base', () => {
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
+
+describe('TextFieldComponent with a password attribute', () => {
+  it('should return a TextFieldComponent of input type password', () => {
+    const element = <TextFieldComponent password />;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+
+describe('TextFieldComponent with an email attribute', () => {
+  it('should return a TextFieldComponent of input type email', () => {
+    const element = <TextFieldComponent email />;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});

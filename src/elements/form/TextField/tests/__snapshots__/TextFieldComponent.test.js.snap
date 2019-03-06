@@ -197,3 +197,135 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   type="text"
 />
 `;
+
+exports[`TextFieldComponent with a password attribute should return a TextFieldComponent of input type password 1`] = `
+.c0 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<input
+  className="c0"
+  readOnly={false}
+  tabIndex="0"
+  type="password"
+/>
+`;
+
+exports[`TextFieldComponent with an email attribute should return a TextFieldComponent of input type email 1`] = `
+.c0 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<input
+  className="c0"
+  readOnly={false}
+  tabIndex="0"
+  type="email"
+/>
+`;

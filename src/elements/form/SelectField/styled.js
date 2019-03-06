@@ -161,6 +161,7 @@ const propsToTrim = [
   'required',
   'plainText',
 ];
+const plaintextPropsToTrim = ['controlId', 'labelText', 'assistiveText', 'validationError', 'required'];
 const renderValueOrComponent = propsFromComponent => {
   const {
     controlId,
@@ -168,7 +169,7 @@ const renderValueOrComponent = propsFromComponent => {
     plainText,
   } = propsFromComponent;
   if (plainText) {
-    const plainTextProps = removeSomeProps(propsFromComponent, ['controlId', 'labelText', 'assistiveText', 'validationError']);
+    const plainTextProps = removeSomeProps(propsFromComponent, plaintextPropsToTrim);
     return <PlainText {...plainTextProps} />;
   }
   const childProps = {
@@ -216,6 +217,7 @@ SelectField.propTypes = {
   disabled: PropTypes.bool,
   labelText: PropTypes.string.isRequired,
   plainText: PropTypes.bool,
+  required: PropTypes.bool,
   validationError: PropTypes.string,
   ...space.propTypes,
 };
@@ -226,5 +228,6 @@ SelectField.defaultProps = {
   bg: defaultControlStyles.bgColor,
   disabled: false,
   plainText: false,
+  required: false,
   validationError: '',
 };

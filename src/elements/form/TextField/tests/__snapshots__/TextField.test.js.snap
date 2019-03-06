@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextField  a large TextFieldComponent object should return a large TextFieldComponent object  1`] = `
+exports[`TextField  a large TextField object should return a large TextField object  1`] = `
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
@@ -212,7 +212,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
 </div>
 `;
 
-exports[`TextField a TextFieldComponent object should return a TextFieldComponent object with a red bg 1`] = `
+exports[`TextField a TextField object should return a TextField object with a red bg 1`] = `
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
@@ -318,7 +318,7 @@ exports[`TextField a TextFieldComponent object should return a TextFieldComponen
 </div>
 `;
 
-exports[`TextField a plainText TextFieldComponent should return a disabled TextFieldComponent 1`] = `
+exports[`TextField a plainText TextField should return a disabled TextField 1`] = `
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
@@ -386,7 +386,7 @@ exports[`TextField a plainText TextFieldComponent should return a disabled TextF
 </div>
 `;
 
-exports[`TextField a small TextFieldComponent object should return a disabled TextFieldComponent 1`] = `
+exports[`TextField a small TextField object should return a disabled TextField 1`] = `
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
@@ -493,7 +493,7 @@ exports[`TextField a small TextFieldComponent object should return a disabled Te
 </div>
 `;
 
-exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object  1`] = `
+exports[`TextField a small TextField object should return a small TextField object  1`] = `
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
@@ -599,7 +599,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 </div>
 `;
 
-exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object with a red activeColor  1`] = `
+exports[`TextField a small TextField object should return a small TextField object with a red activeColor  1`] = `
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
@@ -705,7 +705,7 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
 </div>
 `;
 
-exports[`TextField a small TextFieldComponent object should return a small TextFieldComponent object with space mb  1`] = `
+exports[`TextField a small TextField object should return a small TextField object with space mb  1`] = `
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
@@ -808,6 +808,168 @@ exports[`TextField a small TextFieldComponent object should return a small TextF
   >
     Full name2
   </label>
+</div>
+`;
+
+exports[`TextField with a password attribute should return a TextField of input type password 1`] = `
+.c0 {
+  position: relative;
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  color: inherit;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1[required] + label:after {
+  content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    id="password"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="password"
+  />
+</div>
+`;
+
+exports[`TextField with an email attribute should return a TextField of input type email 1`] = `
+.c0 {
+  position: relative;
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  color: inherit;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  padding: 1rem;
+  outline: 0;
+  width: 100%;
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1[required] + label:after {
+  content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    id="email"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="email"
+  />
 </div>
 `;
 

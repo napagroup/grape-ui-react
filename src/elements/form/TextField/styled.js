@@ -102,7 +102,7 @@ TextField.propTypes = {
   bg: PropTypes.string,
   controlId: PropTypes.string.isRequired,
   formStyle: PropTypes.string,
-  labelText: PropTypes.string.isRequired,
+  labelText: PropTypes.string,
   required: PropTypes.bool,
   validationError: PropTypes.string,
 };
@@ -112,6 +112,7 @@ TextField.defaultProps = {
   assistiveText: '',
   bg: defaultStylesBase.bg,
   formStyle: '',
+  labelText: '',
   required: false,
   validationError: '',
 };

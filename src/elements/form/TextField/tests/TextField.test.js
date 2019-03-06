@@ -32,45 +32,58 @@ describe('TextField with some other props', () => {
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
-describe('TextField  a large TextFieldComponent object', () => {
-  it('should return a large TextFieldComponent object ', () => {
+describe('TextField  a large TextField object', () => {
+  it('should return a large TextField object ', () => {
     const element = <TextField controlId="exampleFullName" labelText="Full name" lg />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
-describe('TextField a small TextFieldComponent object', () => {
-  it('should return a small TextFieldComponent object ', () => {
+describe('TextField a small TextField object', () => {
+  it('should return a small TextField object ', () => {
     const element = <TextField controlId="exampleFullName" labelText="Full name" sm />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
-describe('TextField a small TextFieldComponent object', () => {
-  it('should return a small TextFieldComponent object with space mb ', () => {
+describe('TextField a small TextField object', () => {
+  it('should return a small TextField object with space mb ', () => {
     const element = <TextField controlId="exampleFullName2" labelText="Full name2" m="1" />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
-describe('TextField a small TextFieldComponent object', () => {
-  it('should return a small TextFieldComponent object with a red activeColor ', () => {
+describe('TextField a small TextField object', () => {
+  it('should return a small TextField object with a red activeColor ', () => {
     const element = <TextField activeColor="red" controlId="exampleFullName2" labelText="Full name2" />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
-describe('TextField a small TextFieldComponent object', () => {
-  it('should return a disabled TextFieldComponent', () => {
+describe('TextField a small TextField object', () => {
+  it('should return a disabled TextField', () => {
     const element = <TextField activeColor="red" controlId="exampleFullName2" disabled labelText="Full name2" />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
-describe('TextField a plainText TextFieldComponent', () => {
-  it('should return a disabled TextFieldComponent', () => {
+describe('TextField a plainText TextField', () => {
+  it('should return a disabled TextField', () => {
     const element = <TextField activeColor="red" controlId="exampleFullName2" labelText="Full name2" plainText />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
-describe('TextField a TextFieldComponent object', () => {
-  it('should return a TextFieldComponent object with a red bg', () => {
+describe('TextField a TextField object', () => {
+  it('should return a TextField object with a red bg', () => {
     const element = <TextField bg="red" controlId="exampleFullName2" labelText="Full name2" />;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+describe('TextField with a password attribute', () => {
+  it('should return a TextField of input type password', () => {
+    const element = <TextField controlId="password" password />;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+
+describe('TextField with an email attribute', () => {
+  it('should return a TextField of input type email', () => {
+    const element = <TextField controlId="email" email />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
