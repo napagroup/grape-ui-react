@@ -68,8 +68,8 @@ export const CheckboxField = props => {
         validationError={validationError}
       >
         {labelCaption}
-        {renderValueOrComponent({ ...props, plainText })}
       </ControlLabel>
+      {renderValueOrComponent({ ...props, plainText })}
     </ControlGroup>
   );
 };
