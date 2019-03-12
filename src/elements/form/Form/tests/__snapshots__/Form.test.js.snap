@@ -37,8 +37,8 @@ exports[`Form Component base should return a Form object and textField with fill
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -154,8 +154,8 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -306,8 +306,8 @@ exports[`Form Component base should return a Form object with filled formStyle a
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 

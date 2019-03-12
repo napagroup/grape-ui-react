@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ControlLabel } from 'src/elements/form/ControlLabel';
 import { AssistiveText } from 'src/elements/form/AssistiveText';
-import { space } from 'styled-system';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import {
   defaultControlStyles,
+  spaceProps,
   typography,
 } from 'src/utils/styledHelpers';
 
@@ -54,7 +54,7 @@ const propsToTrim = [
   'hideLabel',
   'labelText',
   'validationError',
-  ...Object.keys(space.propTypes),
+  ...Object.keys(spaceProps.propTypes),
   ...Object.keys(typography.propTypes),
 ];
 export const ControlGroupComponent = ({ children, ...props }) => {
@@ -100,7 +100,7 @@ ControlGroupComponent.propTypes = {
   disabled: PropTypes.bool,
   hideLabel: PropTypes.bool,
   labelText: PropTypes.string,
-  ...space.propTypes,
+  ...spaceProps.propTypes,
   validationError: PropTypes.string,
   ...typography.propTypes,
 };

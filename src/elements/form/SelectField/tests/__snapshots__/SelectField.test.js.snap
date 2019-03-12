@@ -52,8 +52,8 @@ exports[`SelectField Component base should return a SelectField that contains Se
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -450,8 +450,8 @@ exports[`SelectField Component with space should return a SelectField with space
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -748,8 +748,8 @@ exports[`SelectField Component with style should return a SelectField with backg
   position: relative;
   color: inherit;
   background-color: hsl(4.1,89.6%,58.4%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -1046,8 +1046,8 @@ exports[`SelectField Component with style should return a SelectField with orang
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -1344,8 +1344,8 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -1642,8 +1642,8 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 

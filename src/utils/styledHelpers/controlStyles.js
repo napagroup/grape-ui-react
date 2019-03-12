@@ -1,4 +1,4 @@
-import { getGlobalStyles } from 'src/global-styles';
+import { getGlobalStyles, getGlobalOverrides } from 'src/global-styles';
 import { resolveColor } from './utils';
 import { defaultControlStyles } from './cssDefaults';
 
@@ -6,7 +6,8 @@ const { border: borderSchema, grid: gridSchema } = getGlobalStyles();
 
 export const focusStyles = props => {
   const { activeColor } = props;
-  const focusColor = !activeColor ? resolveColor(defaultControlStyles.activeColor) : resolveColor(activeColor);
+  const globalOverrides = getGlobalOverrides(props);
+  const focusColor = !activeColor ? resolveColor(defaultControlStyles.activeColor, globalOverrides) : resolveColor(activeColor, globalOverrides);
   return `
     border-color: ${focusColor};
     box-shadow: 0 0 0 1px ${focusColor};
@@ -32,12 +33,13 @@ const getFinalStyle = ({
   borderColor,
   focusStyle,
   formStyle,
+  globalOverrides,
   padding,
   placeholderColor,
   scale,
 }) => {
-  const resolvedBorderColor = resolveColor(borderColor);
-  const resolvedPlaceholderColor = resolveColor(placeholderColor);
+  const resolvedBorderColor = resolveColor(borderColor, globalOverrides);
+  const resolvedPlaceholderColor = resolveColor(placeholderColor, globalOverrides);
   // TODO: Ryan please apply the filled style here
   if (formStyle === 'filled') {
     return `
@@ -88,6 +90,7 @@ export const controlStyles = (props = {}) => {
       padding: gridSchema[props.gutter] || defaultControlStyles.padding,
     };
   }
+  const globalOverrides = getGlobalOverrides(props);
   const {
     activeColor,
     borderColor,
@@ -95,8 +98,9 @@ export const controlStyles = (props = {}) => {
     placeholderColor,
     plainText,
     formStyle,
+
   } = overrides;
-  const focusStyle = focusStyles(activeColor);
+  const focusStyle = focusStyles(activeColor, globalOverrides);
 
   if (plainText) {
     return `
@@ -110,6 +114,7 @@ export const controlStyles = (props = {}) => {
     borderColor,
     focusStyle,
     formStyle,
+    globalOverrides,
     padding,
     placeholderColor,
     scale: scaleFactor(props),

@@ -183,11 +183,6 @@ describe('Box Component with specified layout properties', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
-  it('should return a Box object with ratio', () => {
-    const component = renderer.create(<Box ratio={1 / 4}>Lorem Ipsum</Box>);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
   describe('Box Component with specified position properties', () => {
     it('should return a Box object with position', () => {
       const component = renderer.create(<Box position="absolute">Lorem Ipsum</Box>);

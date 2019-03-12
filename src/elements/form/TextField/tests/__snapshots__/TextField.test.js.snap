@@ -24,8 +24,8 @@ exports[`TextField  a large TextField object should return a large TextField obj
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -130,8 +130,8 @@ exports[`TextField Component base should return a TextField object 1`] = `
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -236,8 +236,8 @@ exports[`TextField a TextField object should return a TextField object with a re
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -342,8 +342,8 @@ exports[`TextField a plainText TextField should return a disabled TextField 1`] 
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -410,8 +410,8 @@ exports[`TextField a small TextField object should return a disabled TextField 1
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -517,8 +517,8 @@ exports[`TextField a small TextField object should return a small TextField obje
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -623,8 +623,8 @@ exports[`TextField a small TextField object should return a small TextField obje
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -729,8 +729,8 @@ exports[`TextField a small TextField object should return a small TextField obje
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -816,8 +816,8 @@ exports[`TextField with a password attribute should return a TextField of input 
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -897,8 +897,8 @@ exports[`TextField with an email attribute should return a TextField of input ty
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -1014,8 +1014,8 @@ exports[`TextField with assistive text should return a TextField object contain 
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -1143,8 +1143,8 @@ exports[`TextField with some other props should return a TextField object contai
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -1273,8 +1273,8 @@ exports[`TextField with validation error should return a TextField object contai
   position: relative;
   color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 

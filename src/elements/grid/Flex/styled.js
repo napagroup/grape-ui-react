@@ -16,7 +16,6 @@ import {
   minHeight,
   minWidth,
   position,
-  ratio,
   right,
   size,
   space,
@@ -44,7 +43,6 @@ export const Flex = styled(FlexComponent)`
   ${minHeight}
   ${minWidth}
   ${position}
-  ${ratio}
   ${right}
   ${size}
   ${top}

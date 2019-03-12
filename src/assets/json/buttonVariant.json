@@ -1,0 +1,146 @@
+{
+  "plain": {
+    "default": {
+      "backgroundColor": null,
+      "color": null
+    },
+    "primary": {
+      "backgroundColor": null,
+      "color": "brandPrimary"
+    },
+    "danger": {
+      "backgroundColor": null,
+      "color": "brandDanger"
+    },
+    "dark": {
+      "backgroundColor": null,
+      "color": "brandDark"
+    },
+    "info": {
+      "backgroundColor": null,
+      "color": "brandInfo"
+    },
+    "light": {
+      "backgroundColor": null,
+      "color": "brandLight"
+    },
+    "link": {
+      "backgroundColor": null,
+      "color": "brandLink"
+    },
+    "secondary": {
+      "backgroundColor": null,
+      "color": "brandSecondary"
+    },
+    "success": {
+      "backgroundColor": null,
+      "color": "brandSuccess"
+    },
+    "warning": {
+      "backgroundColor": null,
+      "color": "brandWarning"
+    }
+  },
+  "contained": {
+    "default": {
+      "backgroundColor": null,
+      "color": null
+    },
+    "primary": {
+      "backgroundColor": "brandPrimary",
+      "color": null,
+      "focusColor": "brandPrimary.light",
+      "hoverColor": "brandPrimary.dark"
+    },
+    "danger": {
+      "backgroundColor": "brandDanger",
+      "color": "white",
+      "focusColor": "brandDanger.light",
+      "hoverColor": "brandDanger.dark"
+    },
+    "dark": {
+      "backgroundColor": "brandDark",
+      "color": "white",
+      "focusColor": "brandDark.light",
+      "hoverColor": "brandDark.dark"
+    },
+    "info": {
+      "backgroundColor": "brandInfo",
+      "color": "black",
+      "focusColor": "brandInfo.light",
+      "hoverColor": "brandInfo.dark"
+    },
+    "light": {
+      "backgroundColor": "brandLight",
+      "color": "black",
+      "focusColor": "brandLight.light",
+      "hoverColor": "brandLight.dark"
+    },
+    "link": {
+      "backgroundColor": "brandLink",
+      "color": "white",
+      "focusColor": "brandLink.light",
+      "hoverColor": "brandLinkHover"
+    },
+    "secondary": {
+      "backgroundColor": "brandSecondary",
+      "color": "black",
+      "focusColor": "brandSecondary.light",
+      "hoverColor": "brandSecondary.dark"
+    },
+    "success": {
+      "backgroundColor": "brandSuccess",
+      "color": "white",
+      "focusColor": "brandSuccess.light",
+      "hoverColor": "brandSuccess.dark"
+    },
+    "warning": {
+      "backgroundColor": "brandWarning",
+      "color": "white",
+      "focusColor": "brandWarning.light",
+      "hoverColor": "brandWarning.dark"
+    }
+  },
+  "outline": {
+    "default": {
+      "backgroundColor": null,
+      "color": null
+    },
+    "primary": {
+      "backgroundColor": null,
+      "color": "brandPrimary"
+    },
+    "danger": {
+      "backgroundColor": null,
+      "color": "brandDanger"
+    },
+    "dark": {
+      "backgroundColor": null,
+      "color": "brandDark"
+    },
+    "info": {
+      "backgroundColor": null,
+      "color": "brandInfo"
+    },
+    "light": {
+      "backgroundColor": null,
+      "color": "brandLight"
+    },
+    "link": {
+      "backgroundColor": null,
+      "color": "brandLink"
+    },
+    "secondary": {
+      "backgroundColor": null,
+      "color": "brandSecondary"
+    },
+    "success": {
+      "backgroundColor": null,
+      "color": "brandSuccess"
+    },
+    "warning": {
+      "backgroundColor": null,
+      "color": "brandWarning"
+    }
+  }
+}

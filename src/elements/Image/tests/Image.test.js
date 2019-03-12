@@ -21,7 +21,7 @@ describe('Image Component base', () => {
     expect(toJson(component.find('Img'))).toMatchSnapshot();
   });
   it('should return a Image object with width applied', () => {
-    const component = mount(<Image alt="blue flower" src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg" w={[1, 3 / 4, 2 / 3, 1 / 2]} />);
+    const component = mount(<Image alt="blue flower" src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg" width={[1, 3 / 4, 2 / 3, 1 / 2]} />);
     expect(toJson(component.find('Img'))).toMatchSnapshot();
   });
 });

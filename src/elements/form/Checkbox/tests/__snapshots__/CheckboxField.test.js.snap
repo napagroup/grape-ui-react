@@ -58,8 +58,8 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -218,8 +218,8 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -286,8 +286,8 @@ exports[`CheckboxFieldComponent Component with 2 plaintext should return a Check
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -384,8 +384,8 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -407,7 +407,6 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
       className="c3"
       disabled={false}
       id="exampleColor"
-      required={true}
       value={null}
     >
       <input
@@ -416,7 +415,6 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
         id="exampleColor"
         name="Color"
         onChange={[Function]}
-        required={true}
         style={
           Object {
             "cursor": "pointer",
@@ -432,7 +430,6 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
       className="c3"
       disabled={false}
       id="exampleColor"
-      required={true}
       value={null}
     >
       <input
@@ -441,7 +438,6 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
         id="exampleColor"
         name="Color"
         onChange={[Function]}
-        required={true}
         style={
           Object {
             "cursor": "pointer",
@@ -457,7 +453,6 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
       className="c3"
       disabled={false}
       id="exampleColor"
-      required={true}
       value={null}
     >
       <input
@@ -466,7 +461,6 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
         id="exampleColor"
         name="Color"
         onChange={[Function]}
-        required={true}
         style={
           Object {
             "cursor": "pointer",
@@ -547,8 +541,8 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -709,8 +703,8 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -879,8 +873,8 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -1066,8 +1060,8 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -1089,7 +1083,6 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
       className="c3"
       disabled={false}
       id="exampleColor"
-      required={true}
       value={null}
     >
       <input
@@ -1098,7 +1091,6 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
         id="exampleColor"
         name="Color"
         onChange={[Function]}
-        required={true}
         style={
           Object {
             "cursor": "pointer",
@@ -1114,7 +1106,6 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
       className="c3"
       disabled={false}
       id="exampleColor"
-      required={true}
       value={null}
     >
       <input
@@ -1123,7 +1114,6 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
         id="exampleColor"
         name="Color"
         onChange={[Function]}
-        required={true}
         style={
           Object {
             "cursor": "pointer",
@@ -1139,7 +1129,6 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
       className="c3"
       disabled={false}
       id="exampleColor"
-      required={true}
       value={null}
     >
       <input
@@ -1148,7 +1137,6 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
         id="exampleColor"
         name="Color"
         onChange={[Function]}
-        required={true}
         style={
           Object {
             "cursor": "pointer",
@@ -1245,8 +1233,8 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
   position: relative;
   color: inherit;
   background-color: transparent;
-  padding-bottom: 16px;
   padding-top: 4px;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -1268,7 +1256,6 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
       className="c3"
       disabled={false}
       id="exampleColor"
-      required={true}
       value={
         Array [
           "red",
@@ -1281,7 +1268,6 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
         id="exampleColor"
         name="Color"
         onChange={[Function]}
-        required={true}
         style={
           Object {
             "cursor": "pointer",
@@ -1297,7 +1283,6 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
       className="c3"
       disabled={false}
       id="exampleColor"
-      required={true}
       value={
         Array [
           "red",
@@ -1310,7 +1295,6 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
         id="exampleColor"
         name="Color"
         onChange={[Function]}
-        required={true}
         style={
           Object {
             "cursor": "pointer",
@@ -1326,7 +1310,6 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
       className="c3"
       disabled={false}
       id="exampleColor"
-      required={true}
       value={
         Array [
           "red",
@@ -1339,7 +1322,6 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
         id="exampleColor"
         name="Color"
         onChange={[Function]}
-        required={true}
         style={
           Object {
             "cursor": "pointer",

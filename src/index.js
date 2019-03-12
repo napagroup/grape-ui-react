@@ -15,6 +15,7 @@ import {
   Text,
 } from './elements/typography';
 import { getGlobalStyles } from './global-styles';
+import * as styledHelpers from './utils/styledHelpers';
 
 module.exports = {
   Box,
@@ -31,6 +32,7 @@ module.exports = {
   Paragraph,
   SelectField,
   styledComponents,
+  styledHelpers,
   Text,
   TextField,
 };

@@ -6,10 +6,10 @@ import {
   lineHeight,
   textAlign,
 } from 'styled-system';
-import { getGlobalStyles } from 'src/global-styles';
+import { getGlobalStyles, getGlobalOverrides } from 'src/global-styles';
 import { defaultStylesBase } from './cssDefaults';
 import {
-  resolveColorByPropName,
+  resolveColor,
   scaleFont,
   scaleFactor,
 } from './utils';
@@ -19,11 +19,21 @@ const {
 } = getGlobalStyles();
 
 export const colorCore = props => {
-  const nextProps = {
-    ...props,
-    bg: resolveColorByPropName(props, 'bg', defaultStylesBase.bg),
-    color: resolveColorByPropName(props, 'color'),
-  };
+  let nextProps = null;
+  const nextGlobalOverrides = getGlobalOverrides(props);
+  if (props.variant) {
+    nextProps = {
+      ...props,
+      bg: resolveColor(props.bg, nextGlobalOverrides, null),
+      color: resolveColor(props.color, nextGlobalOverrides, null),
+    };
+  } else {
+    nextProps = {
+      ...props,
+      bg: resolveColor(props.bg, nextGlobalOverrides, defaultStylesBase.bg),
+      color: resolveColor(props.color, nextGlobalOverrides),
+    };
+  }
   return color(nextProps);
 };
 export const fontSizeCore = props => {

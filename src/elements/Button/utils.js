@@ -22,19 +22,6 @@ export const getAdvanceButtonStyle = (props = {}) => {
   return '';
 };
 
-export const backgroundColorForButton = style({
-  // The corresponding CSS property (defaults to prop argument)
-  cssProperty: 'backgroundColor',
-  // key for theme values
-  key: 'bg',
-  // React prop name
-  prop: 'bg',
-  // add a fallback scale object or array, if theme is not present
-  scale: [0, 4, 8, 16, 32],
-  // accessor function for transforming the value
-  transformValue: color => (color ? resolveColor(color) : 'transparent'),
-});
-
 const borderWidthStyle = style({
   // The corresponding CSS property (defaults to prop argument)
   cssProperty: 'border',
@@ -48,20 +35,7 @@ const borderWidthStyle = style({
   transformValue: value => value || `1px solid ${resolveColor()}`,
 });
 
-export const borderForButton = props => (props.borderWidth ? borderWidthStyle(props) : `border: 1px solid ${brandPrimary.base};`);
-
-export const colorForButton = style({
-  // The corresponding CSS property (defaults to prop argument)
-  cssProperty: 'color',
-  // key for theme values
-  key: 'colors',
-  // React prop name
-  prop: 'color',
-  // add a fallback scale object or array, if theme is not present
-  scale: ['', '', '', '', ''],
-  // accessor function for transforming the value
-  transformValue: resolveColor,
-});
+export const borderButton = props => (props.borderWidth ? borderWidthStyle(props) : `border: 1px solid ${brandPrimary.base};`);
 
 export const lineHeightStyle = style({
   // The corresponding CSS property (defaults to prop argument)
@@ -76,7 +50,7 @@ export const lineHeightStyle = style({
   transformValue: lineHeight => parseFloat(lineHeight) || DEFAULT_BUTTON_LINE_HEIGHT,
 });
 
-export const lineHeightForButton = props => (props.lineHeight ? lineHeightStyle(props) : `line-height: ${DEFAULT_BUTTON_LINE_HEIGHT};`);
+export const lineHeightButton = props => (props.lineHeight ? lineHeightStyle(props) : `line-height: ${DEFAULT_BUTTON_LINE_HEIGHT};`);
 
 const positionStyle = style({
   // The corresponding CSS property (defaults to prop argument)
@@ -91,4 +65,4 @@ const positionStyle = style({
   transformValue: position => position || POSITION_DEFAULT_VALUE,
 });
 
-export const positionForButton = props => (props.position ? positionStyle(props) : `position: ${POSITION_DEFAULT_VALUE};`);
+export const positionButton = props => (props.position ? positionStyle(props) : `position: ${POSITION_DEFAULT_VALUE};`);

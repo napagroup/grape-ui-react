@@ -1,10 +1,14 @@
 
-import { getGlobalStyles } from 'src/global-styles';
-import { resolveColor } from '../..';
+import * as mockGlobalStyles from 'src/global-styles';
+import { defaultStylesBase, resolveColor } from '../..';
 
-const {
-  colors: colorSchema,
-} = getGlobalStyles();
+const colors = {
+  grape: {
+    base: 'hsl(323.3, 84.6%, 29%)',
+    dark: 'hsl(302.9, 33.9%, 23.7%)',
+    light: 'hsl(312.8, 67.8%, 47.5%)',
+  },
+};
 
 const defaultValue = 'inherit';
 describe('When resolving a color given an empty string or non-string value', () => {
@@ -35,41 +39,77 @@ describe('When resolving a color given an empty string or non-string value', () 
 });
 
 describe('When resolving a color given an unrecognized color', () => {
+  beforeEach(() => {
+    mockGlobalStyles.getGlobalStyles = jest.fn().mockReturnValue({
+      colors,
+    });
+  });
   it('should return \'inherit\' when color is ChocolateCoveredTunaEnchiladas', () => {
     expect(resolveColor('ChocolateCoveredTunaEnchiladas')).toEqual(defaultValue);
   });
 });
 
 describe('When resolving a color given an recognized color', () => {
+  beforeEach(() => {
+    mockGlobalStyles.getGlobalStyles = jest.fn().mockReturnValue({
+      colors,
+    });
+  });
   it('should return a base color', () => {
-    expect(resolveColor('green')).toEqual('hsl(122.4, 39.4%, 49.2%)');
+    expect(resolveColor('grape')).toEqual(colors.grape.base);
   });
   it('should return a dark color', () => {
-    expect(resolveColor('green.dark')).toEqual('hsl(122.4, 39.4%, 29.2%)');
+    expect(resolveColor('grape.dark')).toEqual(colors.grape.dark);
   });
   it('should return a light color', () => {
-    expect(resolveColor('green.light')).toEqual('hsl(122.4, 39.4%, 69.2%)');
+    expect(resolveColor('grape.light')).toEqual(colors.grape.light);
   });
 });
 
 describe('When resolving a color given a color theme', () => {
+  beforeEach(() => {
+    mockGlobalStyles.getGlobalStyles = jest.fn().mockReturnValue({
+      colors,
+    });
+  });
   it('should return a theme color', () => {
-    const theme = {
-      colors: {
-        yellow: {
-          base: 'hsl(65, 65%, 50%)',
+    const props = {
+      theme: {
+        colors: {
+          yellow: {
+            base: 'hsl(65, 65%, 50%)',
+          },
         },
       },
     };
-    expect(resolveColor('yellow', theme.colors)).toEqual(theme.colors.yellow.base);
+    expect(resolveColor('yellow', props)).toEqual(props.theme.colors.yellow.base);
   });
 });
 
-describe('When resolving a color given undefined colorsTheme', () => {
-  it('should return theme color based on a default theme', () => {
+describe('When resolving a color given undefined colors Theme', () => {
+  beforeEach(() => {
+    mockGlobalStyles.getGlobalStyles = jest.fn().mockReturnValue({
+      colors,
+    });
+  });
+  it('should return the implicitly defined default value', () => {
     const theme = {
       colors: undefined,
     };
-    expect(resolveColor('yellow', theme.colors)).toEqual(colorSchema.yellow.base);
+    expect(resolveColor('yellow', theme)).toEqual(defaultStylesBase.color);
+  });
+});
+
+describe('When resolving a color given undefined colors Theme and an explicit value to default to', () => {
+  beforeEach(() => {
+    mockGlobalStyles.getGlobalStyles = jest.fn().mockReturnValue({
+      colors,
+    });
+  });
+  it('should return the explicit default value', () => {
+    const theme = {
+      colors: undefined,
+    };
+    expect(resolveColor('yellow', theme, defaultValue)).toEqual(defaultValue);
   });
 });

@@ -19,9 +19,9 @@ describe('Flex base', () => {
   });
   it('should return a Flex object with 2 responsive Box elements as the children', () => {
     const component = renderer.create(
-      <Flex align="flex-start" wrap="wrap">
-        <Box w={[1, 1 / 3]}>Lorem</Box>
-        <Box w={[1, 2 / 3]}>Ipsum</Box>
+      <Flex alignItems="flex-start" flexWrap="wrap">
+        <Box width={[1, 1 / 3]}>Lorem</Box>
+        <Box width={[1, 2 / 3]}>Ipsum</Box>
       </Flex>
     );
     const tree = component.toJSON();

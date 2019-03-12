@@ -9,7 +9,6 @@ import {
   minHeight,
   minWidth,
   position,
-  ratio,
   right,
   size,
   space,
@@ -29,7 +28,6 @@ export const Box = styled(BoxComponent)`
   ${minHeight}
   ${minWidth}
   ${position}
-  ${ratio}
   ${right}
   ${top}
   ${size}

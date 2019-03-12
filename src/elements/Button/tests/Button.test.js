@@ -2,9 +2,10 @@ import React from 'react';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
-import { getGlobalStyles } from 'src/global-styles';
+import { getGlobalStyles, getGlobalOverrides } from 'src/global-styles';
 import { MemoryRouter as Router } from 'react-router-dom';
 import { Button } from '..';
+import { buttonThemes } from 'src/utils/styledHelpers';
 
 const assertReactElement = element => {
   const component = renderer.create(element);
@@ -13,20 +14,35 @@ const assertReactElement = element => {
 describe('Button base', () => {
   it('should return a Button', () => {
     const element = (
-      <Button>Do this</Button>
+      <Button>Button Base</Button>
     );
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 
+  it('should return an outlined Button', () => {
+    const element = <Button id="buttonOutline" outline>Button Outline</Button>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+
+  it('should return an contained Button', () => {
+    const element = <Button contained id="buttonContained">Button Contained</Button>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+
+  it('should return an contained raised Button', () => {
+    const element = <Button contained id="buttonContainedRaised" raised>Button Contained and Raised</Button>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+
   it('should return a Button with disabled', () => {
-    const element = <Button disabled id="exampleColor">Do this</Button>;
+    const element = <Button disabled id="exampleColor">Disabled button</Button>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
 
 describe('Button Component base with style', () => {
-  it('should return a Button with bgColor and color', () => {
-    const element = <Button bg="green" color="brandDanger" id="exampleColor">Do this</Button>;
+  it('should return a Button with bg and color', () => {
+    const element = <Button bg="green" color="white" id="exampleColor">Happy St. Patrick&#39;s Day!</Button>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
   it('should return a Button with sm', () => {
@@ -86,23 +102,111 @@ describe('Button using theme colors', () => {
       expect(assertReactElement(element)).toMatchSnapshot();
     });
   });
-  describe('Button using variant style theme colors', () => {
-    xit('should return a Button', () => {
-      const theme = {
-        buttons: {
-          primary: {
-            '&:hover': {
-              backgroundColor: 'black',
-            },
-            backgroundColor: 'blue',
-            color: 'white',
-          },
-        },
-        space: [0, 4, 8, 16],
-      };
+});
+
+describe('Button using variant styles', () => {
+  const theme = {
+    buttons: {
+      ...buttonThemes(),
+    },
+    space: [0, 4, 8, 16],
+  };
+  describe('Button with variant set to primary', () => {
+    it('should return a Button with primary styling', () => {
       const element = (
         <ThemeProvider theme={theme}>
           <Button variant="primary">Do this</Button>
+        </ThemeProvider>
+      );
+      expect(assertReactElement(element)).toMatchSnapshot();
+    });
+  });
+  describe('Button with variant set to danger', () => {
+    it('should return a Button with danger styling', () => {
+      const element = (
+        <ThemeProvider theme={theme}>
+          <Button variant="danger">Do this</Button>
+        </ThemeProvider>
+      );
+      expect(assertReactElement(element)).toMatchSnapshot();
+    });
+  });
+  describe('Button with variant set to contained-light', () => {
+    it('should return a Button with contained-light styling', () => {
+      const element = (
+        <ThemeProvider theme={theme}>
+          <Button variant="contained-light">Do this</Button>
+        </ThemeProvider>
+      );
+      expect(assertReactElement(element)).toMatchSnapshot();
+    });
+  });
+  describe('Button with variant set to contained-danger', () => {
+    it('should return a Button with contained-danger styling', () => {
+      const element = (
+        <ThemeProvider theme={theme}>
+          <Button variant="contained-danger">Do this</Button>
+        </ThemeProvider>
+      );
+      expect(assertReactElement(element)).toMatchSnapshot();
+    });
+  });
+  describe('Button set to an unknown variant', () => {
+    it('should return a Button with no variant styling', () => {
+      const element = (
+        <ThemeProvider theme={theme}>
+          <Button variant="not-a-variant">Do this</Button>
+        </ThemeProvider>
+      );
+      expect(assertReactElement(element)).toMatchSnapshot();
+    });
+  });
+  describe('Button set with no variant', () => {
+    it('should return a Button with bg and color styling preserved', () => {
+      const element = (
+        <ThemeProvider theme={theme}>
+          <Button bg="yellow" color="yellow.dark">Do this</Button>
+        </ThemeProvider>
+      );
+      expect(assertReactElement(element)).toMatchSnapshot();
+    });
+  });
+  describe('Button set with variant, bg and color', () => {
+    it('should return a Button with bg and color styling overwriting the variant bg and color style', () => {
+      const element = (
+        <ThemeProvider theme={theme}>
+          <Button bg="yellow" color="yellow.dark" variant="contained-danger">Do this</Button>
+        </ThemeProvider>
+      );
+      expect(assertReactElement(element)).toMatchSnapshot();
+    });
+  });
+});
+
+describe('Button using variant styles with theme colors', () => {
+  const props = {
+    theme: {
+      colors: {
+        brandPrimary: {
+          base: 'hsl(323.31, 85.61%, 29.98%)',
+          dark: 'hsl(302.91, 34.91%, 24.71%)',
+          light: 'hsl(312.81, 68.81%, 48.51%)',
+        },
+      },
+    },
+  };
+  const globalOverrides = getGlobalOverrides(props);
+  const theme = {
+    buttons: {
+      ...buttonThemes(null, globalOverrides),
+    },
+    space: [0, 4, 8, 16],
+  };
+  describe('Button with variant set to contained-primary', () => {
+    it('should return a Button with contained-primary styling based on theme.colors', () => {
+      const element = (
+        <ThemeProvider theme={theme}>
+          <Button variant="contained-primary">Do this</Button>
         </ThemeProvider>
       );
       expect(assertReactElement(element)).toMatchSnapshot();

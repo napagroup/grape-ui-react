@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { ControlLabel } from 'src/elements/form/ControlLabel';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import { space } from 'styled-system';
 import { PlainText } from 'src/elements/form/PlainText';
 import { defaultControlStyles } from 'src/utils/styledHelpers';
 import { getAssistiveText } from 'src/elements/form/AssistiveText';
@@ -17,7 +16,7 @@ const propsToTrim = [
   'labelText',
   'plainText',
   'validationError',
-  ...Object.keys(space.propTypes),
+  'required',
 ];
 const renderValueOrComponent = propsFromComponent => {
   const {
@@ -25,7 +24,7 @@ const renderValueOrComponent = propsFromComponent => {
   } = propsFromComponent;
   if (plainText) {
     const plainTextProps = {
-      ...removeSomeProps(propsFromComponent, ['controlId', 'labelText', 'assistiveText', 'name', 'onChange', 'options', 'plainText', 'validationError', 'flexDirection', 'assistiveText', 'validationError']),
+      ...removeSomeProps(propsFromComponent, ['controlId', 'labelText', 'assistiveText', 'name', 'onChange', 'options', 'plainText', 'validationError', 'flexDirection', 'assistiveText', 'validationError', 'required']),
     };
     return (<PlainText {...plainTextProps} />);
   }
@@ -86,8 +85,8 @@ CheckboxField.propTypes = {
   ]),
   labelText: PropTypes.string,
   plainText: PropTypes.bool,
+  required: PropTypes.bool,
   validationError: PropTypes.string,
-  ...space.propTypes,
 };
 
 CheckboxField.defaultProps = {
@@ -98,5 +97,6 @@ CheckboxField.defaultProps = {
   flexDirection: 'column',
   labelText: '',
   plainText: false,
+  required: false,
   validationError: '',
 };

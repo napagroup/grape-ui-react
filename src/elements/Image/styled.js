@@ -11,7 +11,6 @@ import {
 } from 'styled-system';
 import { ImageComponent } from './component';
 
-
 export const Image = styled(ImageComponent)`
   ${width}
   ${display}
@@ -25,7 +24,6 @@ export const Image = styled(ImageComponent)`
 Image.propTypes = {
   alt: PropTypes.string,
   maxWidth: PropTypes.string,
-  w: PropTypes.string,
   ...width.propTypes,
   ...display.propTypes,
   ...maxWidth.propTypes,
@@ -35,9 +33,8 @@ Image.propTypes = {
   ...minHeight.propTypes,
 };
 
-
 Image.defaultProps = {
   alt: '',
   maxWidth: '100%',
-  w: '100%',
+  width: '100%',
 };

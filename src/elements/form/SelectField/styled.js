@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
+import { getGlobalOverrides } from 'src/global-styles';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import { fontWeight, space } from 'styled-system';
 import styled from 'styled-components';
@@ -50,6 +51,7 @@ const reactSelectStylesOverrides = props => {
     menuSelectedColor,
     placeholderColor,
   } = props;
+  const globalOverrides = getGlobalOverrides(props);
   return `
   .grape-ui-select__control {
     display: flex;
@@ -68,28 +70,28 @@ const reactSelectStylesOverrides = props => {
     left: 0;
     margin: 0;
     padding: 0.5rem 0;
-    ${resolveElevation('03')}
+    ${resolveElevation('03', globalOverrides)}
   }
   .grape-ui-select__option {
     padding: 0.5rem 1rem;
   }
   .grape-ui-select__option--is-focused {
-    background: ${resolveColor(menuFocusBg)};
-    color: ${resolveColor(menuFocusColor)};
+    background: ${resolveColor(menuFocusBg, globalOverrides)};
+    color: ${resolveColor(menuFocusColor, globalOverrides)};
   }
   .grape-ui-select__option--is-selected {
-    background: ${resolveColor(menuSelectedBg)};
-    color: ${resolveColor(menuSelectedColor)};
+    background: ${resolveColor(menuSelectedBg, globalOverrides)};
+    color: ${resolveColor(menuSelectedColor, globalOverrides)};
   }
   .grape-ui-select__placeholder {
-    color: ${resolveColor(placeholderColor)};
+    color: ${resolveColor(placeholderColor, globalOverrides)};
   }
   .grape-ui-select__multi-value {
     display: flex;
     margin-right: 0.25rem;
     padding: 0.25rem;
     border-radius: 4px;
-    background-color: ${resolveColor(chipBg)};
+    background-color: ${resolveColor(chipBg, globalOverrides)};
     font-size: 80%;
   }
   .grape-ui-select__multi-value__label {
@@ -98,7 +100,7 @@ const reactSelectStylesOverrides = props => {
   .grape-ui-select__multi-value__remove {
     cursor: pointer;
     &:hover path {
-      fill: ${resolveColor('brandLinkHover')}
+      fill: ${resolveColor('brandLinkHover', globalOverrides)}
     }
   }
 `;

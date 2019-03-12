@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { fontWeight } from 'styled-system';
+import { getGlobalOverrides } from 'src/global-styles';
 import {
   colorCore,
   defaultStylesBase,
@@ -17,7 +18,7 @@ import {
 import { LinkComponent } from './component';
 
 const hoverStyle = props => `&:active {
-  color: ${resolveColor(props.hoverStyle)};
+  color: ${resolveColor(props.hoverStyle, getGlobalOverrides(props))};
   cursor: pointer;
  }`;
 

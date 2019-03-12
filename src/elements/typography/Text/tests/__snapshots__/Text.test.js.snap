@@ -150,13 +150,13 @@ exports[`Text Component specified styles should return a Text object with font-s
   background-color: transparent;
   font-family: inherit;
   font-size: inherit;
+  font-style: italic;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  font-style: italic;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;

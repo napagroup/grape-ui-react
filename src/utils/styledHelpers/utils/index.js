@@ -1,4 +1,4 @@
-export * from './control';
 export * from './resolvers';
 export * from './scaleFont';
-export * from './typography';
+export * from './props';
+export { buttonThemes } from './buttonThemes';

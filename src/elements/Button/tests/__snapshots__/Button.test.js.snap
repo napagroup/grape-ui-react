@@ -2,12 +2,40 @@
 
 exports[`Button Component base with style should return a Button with a zIndex when using a number 1`] = `
 .c0 {
+  border-radius: 4px;
   color: inherit;
   background-color: transparent;
-  border: 1px solid hsl(323.3,84.6%,28%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   z-index: 500;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 <button
@@ -20,12 +48,40 @@ exports[`Button Component base with style should return a Button with a zIndex w
 
 exports[`Button Component base with style should return a Button with a zIndex when using a string 1`] = `
 .c0 {
+  border-radius: 4px;
   color: inherit;
   background-color: transparent;
-  border: 1px solid hsl(323.3,84.6%,28%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   z-index: 500;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 <button
@@ -36,13 +92,41 @@ exports[`Button Component base with style should return a Button with a zIndex w
 </button>
 `;
 
-exports[`Button Component base with style should return a Button with bgColor and color 1`] = `
+exports[`Button Component base with style should return a Button with bg and color 1`] = `
 .c0 {
-  color: hsl(4.1,89.6%,58.4%);
+  border-radius: 4px;
+  color: hsl(0,0%,98%);
   background-color: hsl(122.4,39.4%,49.2%);
-  border: 1px solid hsl(323.3,84.6%,28%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 <button
@@ -50,17 +134,45 @@ exports[`Button Component base with style should return a Button with bgColor an
   id="exampleColor"
   type="button"
 >
-  Do this
+  Happy St. Patrick's Day!
 </button>
 `;
 
 exports[`Button Component base with style should return a Button with lg 1`] = `
 .c0 {
+  border-radius: 4px;
   color: inherit;
   background-color: transparent;
-  border: 1px solid hsl(323.3,84.6%,28%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   position: relative;
+  margin: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 32px;
+  padding-right: 32px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 <button
@@ -74,11 +186,39 @@ exports[`Button Component base with style should return a Button with lg 1`] = `
 
 exports[`Button Component base with style should return a Button with sm 1`] = `
 .c0 {
+  border-radius: 4px;
   color: inherit;
   background-color: transparent;
-  border: 1px solid hsl(323.3,84.6%,28%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   position: relative;
+  margin: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 <button
@@ -92,11 +232,39 @@ exports[`Button Component base with style should return a Button with sm 1`] = `
 
 exports[`Button Component base with style should return a Link with href with button look 1`] = `
 .c0 {
+  border-radius: 4px;
   color: inherit;
   background-color: transparent;
-  border: 1px solid hsl(323.3,84.6%,28%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 <a
@@ -110,11 +278,39 @@ exports[`Button Component base with style should return a Link with href with bu
 
 exports[`Button Component base with style should return a Link with to with button look 1`] = `
 .c0 {
+  border-radius: 4px;
   color: inherit;
   background-color: transparent;
-  border: 1px solid hsl(323.3,84.6%,28%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 <a
@@ -129,28 +325,84 @@ exports[`Button Component base with style should return a Link with to with butt
 
 exports[`Button base should return a Button 1`] = `
 .c0 {
+  border-radius: 4px;
   color: inherit;
   background-color: transparent;
-  border: 1px solid hsl(323.3,84.6%,28%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 <button
   className="c0"
   type="button"
 >
-  Do this
+  Button Base
 </button>
 `;
 
 exports[`Button base should return a Button with disabled 1`] = `
 .c0 {
+  border-radius: 4px;
   color: inherit;
   background-color: transparent;
-  border: 1px solid hsl(323.3,84.6%,28%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 <button
@@ -159,41 +411,192 @@ exports[`Button base should return a Button with disabled 1`] = `
   id="exampleColor"
   type="button"
 >
-  Do this
+  Disabled button
+</button>
+`;
+
+exports[`Button base should return an contained Button 1`] = `
+.c0 {
+  border-radius: 4px;
+  color: inherit;
+  background-color: transparent;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  id="buttonContained"
+  type="button"
+>
+  Button Contained
+</button>
+`;
+
+exports[`Button base should return an contained raised Button 1`] = `
+.c0 {
+  border-radius: 4px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+  color: inherit;
+  background-color: transparent;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:active {
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  id="buttonContainedRaised"
+  type="button"
+>
+  Button Contained and Raised
+</button>
+`;
+
+exports[`Button base should return an outlined Button 1`] = `
+.c0 {
+  border: 1px solid hsl(0,0%,75%);
+  border-radius: 4px;
+  color: inherit;
+  background-color: transparent;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  id="buttonOutline"
+  type="button"
+>
+  Button Outline
 </button>
 `;
 
 exports[`Button using theme colors Button using styled system fontSize should return a Button with specified font size 1`] = `
 .c0 {
-  color: inherit;
-  background-color: transparent;
-  border: 1px solid hsl(323.3,84.6%,28%);
+  border-radius: 4px;
+  display: inline-block;
+  font-family: inherit;
   font-size: 20px;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 <button
   className="c0"
   type="button"
-  variant="primary"
->
-  Do this
-</button>
-`;
-
-exports[`Button using theme colors Button using variant style theme colors should return a Button 1`] = `
-.c0 {
-  color: inherit;
-  background-color: transparent;
-  border: 1px solid hsl(323.3,84.6%,28%);
-  line-height: 1.5;
-  position: relative;
-}
-
-<button
-  className="c0"
-  variant="primary"
 >
   Do this
 </button>
@@ -201,11 +604,428 @@ exports[`Button using theme colors Button using variant style theme colors shoul
 
 exports[`Button using theme colors should return a Button 1`] = `
 .c0 {
+  border-radius: 4px;
   color: hsl(65,65%,25%);
   background-color: hsl(65,65%,50%);
-  border: 1px solid hsl(323.3,84.6%,28%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
   line-height: 1.5;
   position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  Do this
+</button>
+`;
+
+exports[`Button using variant styles Button set to an unknown variant should return a Button with no variant styling 1`] = `
+.c0 {
+  border-radius: 4px;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  Do this
+</button>
+`;
+
+exports[`Button using variant styles Button set with no variant should return a Button with bg and color styling preserved 1`] = `
+.c0 {
+  border-radius: 4px;
+  color: hsl(53.9,100%,41.6%);
+  background-color: hsl(53.9,100%,61.6%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  Do this
+</button>
+`;
+
+exports[`Button using variant styles Button set with variant, bg and color should return a Button with bg and color styling overwriting the variant bg and color style 1`] = `
+.c0 {
+  border-radius: 4px;
+  background-color: hsl(4.1,89.6%,58.4%);
+  color: hsl(0,0%,98%);
+  color: hsl(53.9,100%,41.6%);
+  background-color: hsl(53.9,100%,61.6%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:focus {
+  background-color: hsl(4.1,89.6%,68.4%);
+}
+
+.c0:hover {
+  background-color: hsl(4.1,89.6%,40.4%);
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  Do this
+</button>
+`;
+
+exports[`Button using variant styles Button with variant set to contained-danger should return a Button with contained-danger styling 1`] = `
+.c0 {
+  border-radius: 4px;
+  background-color: hsl(4.1,89.6%,58.4%);
+  color: hsl(0,0%,98%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:focus {
+  background-color: hsl(4.1,89.6%,68.4%);
+}
+
+.c0:hover {
+  background-color: hsl(4.1,89.6%,40.4%);
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  Do this
+</button>
+`;
+
+exports[`Button using variant styles Button with variant set to contained-light should return a Button with contained-light styling 1`] = `
+.c0 {
+  border-radius: 4px;
+  background-color: hsl(0,0%,98%);
+  color: hsl(0,0%,25%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:focus {
+  background-color: hsl(0,0%,100%);
+}
+
+.c0:hover {
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  Do this
+</button>
+`;
+
+exports[`Button using variant styles Button with variant set to danger should return a Button with danger styling 1`] = `
+.c0 {
+  border-radius: 4px;
+  color: hsl(4.1,89.6%,58.4%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  Do this
+</button>
+`;
+
+exports[`Button using variant styles Button with variant set to primary should return a Button with primary styling 1`] = `
+.c0 {
+  border-radius: 4px;
+  color: hsl(323.3,84.6%,28%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  Do this
+</button>
+`;
+
+exports[`Button using variant styles with theme colors Button with variant set to contained-primary should return a Button with contained-primary styling based on theme.colors 1`] = `
+.c0 {
+  border-radius: 4px;
+  background-color: hsl(323.31,85.61%,29.98%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:focus {
+  background-color: hsl(312.81,68.81%,48.51%);
+}
+
+.c0:hover {
+  background-color: hsl(302.91,34.91%,24.71%);
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 <button

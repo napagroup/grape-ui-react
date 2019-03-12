@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import { fontWeight, space } from 'styled-system';
+import { fontWeight } from 'styled-system';
 import styled from 'styled-components';
 import {
   colorCore,
@@ -15,6 +15,7 @@ import {
   fontStyleCore,
   letterSpacingCore,
   lineHeightCore,
+  spaceProps,
   textAlignCore,
   textDecorationCore,
   typography,
@@ -55,7 +56,7 @@ const propsToTrim = [
   'controlId',
   'labelText',
   'validationError',
-  ...Object.keys(space.propTypes),
+  ...Object.keys(spaceProps.propTypes),
 ];
 export const TextField = props => {
   const {

@@ -18,10 +18,10 @@ export const Text = styled(TextComponent)`
   ${colorCore}
   ${fontFamilyCore}
   ${fontSizeCore}
+  ${fontStyleCore}
   ${fontWeight}
   ${letterSpacingCore}
   ${lineHeightCore}
-  ${fontStyleCore}
   ${textAlignCore}
   ${textDecorationCore}
 `;

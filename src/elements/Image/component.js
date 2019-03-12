@@ -1,25 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  width,
-  display,
-  maxWidth,
-  minWidth,
-  height,
-  maxHeight,
-  minHeight,
-} from 'styled-system';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import Img from 'react-image';
+import {
+  layoutProps,
+  spaceProps,
+} from 'src/utils/styledHelpers';
 
 const componentPropsToRemove = {
-  ...width.propTypes,
-  ...display.propTypes,
-  ...maxWidth.propTypes,
-  ...minWidth.propTypes,
-  ...height.propTypes,
-  ...maxHeight.propTypes,
-  ...minHeight.propTypes,
+  ...layoutProps.propTypes,
+  ...spaceProps.propTypes,
 };
 
 export const ImageComponent = ({ alt, ...props }) => {
@@ -34,13 +24,6 @@ export const ImageComponent = ({ alt, ...props }) => {
 
 ImageComponent.propTypes = {
   alt: PropTypes.string,
-  ...width.propTypes,
-  ...display.propTypes,
-  ...maxWidth.propTypes,
-  ...minWidth.propTypes,
-  ...height.propTypes,
-  ...maxHeight.propTypes,
-  ...minHeight.propTypes,
 };
 
 ImageComponent.defaultProps = {
