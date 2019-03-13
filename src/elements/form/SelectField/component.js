@@ -20,6 +20,7 @@ const styleOverrides = {
 const propsToTrim = [
   ...Object.keys(control.propTypes),
   'chipBg',
+  'formStyle',
   'isDisabled',
   'menuFocusBg',
   'menuFocusColor',

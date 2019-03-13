@@ -12,7 +12,7 @@ export const applyFormStyleToChild = (child, formStylefromParent) => {
   const { formStyle } = child.props;
   let output;
   // Only TextField will try to apply form style
-  if (formStyle || child.type.name !== 'TextField') {
+  if (formStyle || (child.type.name !== 'TextField' && child.type.name !== 'SelectField')) {
     output = child;
   } else {
     output = React.cloneElement(child, { formStyle: formStylefromParent });

@@ -184,7 +184,7 @@ Button.propTypes = {
 Button.defaultProps = {
   ...defaultStylesBase,
   bg: null,
-  border: `1px solid ${resolveColor('gray.light')}`,
+  border: `1px solid ${resolveColor('borderColor')}`,
   borderRadius: '4px',
   color: null,
   contained: false,

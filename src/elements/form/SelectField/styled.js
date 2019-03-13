@@ -6,8 +6,8 @@ import { removeSomeProps } from 'src/utils/componentHelpers';
 import { fontWeight, space } from 'styled-system';
 import styled from 'styled-components';
 import {
-  colorCore,
   control,
+  controlColor,
   controlStyles,
   defaultControlStyles,
   defaultStylesBase,
@@ -107,7 +107,7 @@ const reactSelectStylesOverrides = props => {
 };
 
 export const SelectFieldComponent = styled(SelectComponent)`
-  ${colorCore}
+  ${controlColor}
   ${fontFamilyCore}
   ${fontSizeCore}
   ${fontWeight}
@@ -122,7 +122,9 @@ export const SelectFieldComponent = styled(SelectComponent)`
 `;
 SelectFieldComponent.propTypes = {
   ...control.propTypes,
+  bg: PropTypes.string,
   chipBg: PropTypes.string,
+  formStyle: PropTypes.string,
   isDisabled: PropTypes.bool,
   menuFocusBg: PropTypes.string,
   menuFocusColor: PropTypes.string,
@@ -134,9 +136,11 @@ SelectFieldComponent.propTypes = {
 };
 
 SelectFieldComponent.defaultProps = {
-  chipBg: 'white.dark',
   ...defaultControlStyles,
   ...defaultStylesBase,
+  bg: null,
+  chipBg: 'white.dark',
+  formStyle: '',
   isDisabled: false,
   menuFocusBg: 'brandLinkHover',
   menuFocusColor: 'white',
@@ -164,7 +168,7 @@ const propsToTrim = [
   'required',
   'plainText',
 ];
-const plaintextPropsToTrim = ['controlId', 'labelText', 'assistiveText', 'validationError', 'required'];
+const plaintextPropsToTrim = ['controlId', 'labelText', 'assistiveText', 'validationError', 'required', 'formStyle'];
 const renderValueOrComponent = propsFromComponent => {
   const {
     controlId,
@@ -188,6 +192,7 @@ export const SelectField = props => {
     bg,
     controlId,
     disabled,
+    formStyle,
     assistiveText,
     labelText,
     required,
@@ -208,7 +213,7 @@ export const SelectField = props => {
       pt={1}
       validationError={validationError}
     >
-      {renderValueOrComponent({ plainText, ...props })}
+      {renderValueOrComponent({ formStyle, plainText, ...props })}
     </ControlGroup>
   );
 };
@@ -216,9 +221,9 @@ export const SelectField = props => {
 SelectField.propTypes = {
   activeColor: PropTypes.string,
   assistiveText: PropTypes.string,
-  bg: PropTypes.string,
   controlId: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
+  formStyle: PropTypes.string,
   labelText: PropTypes.string.isRequired,
   plainText: PropTypes.bool,
   required: PropTypes.bool,
@@ -229,8 +234,8 @@ SelectField.propTypes = {
 SelectField.defaultProps = {
   activeColor: defaultControlStyles.activeColor,
   assistiveText: '',
-  bg: defaultControlStyles.bgColor,
   disabled: false,
+  formStyle: '',
   plainText: false,
   required: false,
   validationError: '',
