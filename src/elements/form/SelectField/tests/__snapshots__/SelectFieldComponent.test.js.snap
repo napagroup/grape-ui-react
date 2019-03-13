@@ -22,15 +22,6 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
   width: 100%;
 }
 
-.c0:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c0[required] + label:after {
   content: "*";
 }
@@ -41,6 +32,15 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
 
 .c0[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c0::-webkit-input-placeholder {
@@ -259,15 +259,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   width: 100%;
 }
 
-.c0:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c0[required] + label:after {
   content: "*";
 }
@@ -278,6 +269,15 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
 
 .c0[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c0::-webkit-input-placeholder {
@@ -496,15 +496,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   width: 100%;
 }
 
-.c0:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c0[required] + label:after {
   content: "*";
 }
@@ -515,6 +506,15 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
 
 .c0[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c0::-webkit-input-placeholder {

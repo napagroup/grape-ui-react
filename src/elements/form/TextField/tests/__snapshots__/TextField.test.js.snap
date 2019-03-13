@@ -10,13 +10,14 @@ exports[`TextField  a large TextField object should return a large TextField obj
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: -0.5rem;
+  top: 0;
+  height: 0.4rem;
   position: absolute;
 }
 
@@ -49,15 +50,6 @@ exports[`TextField  a large TextField object should return a large TextField obj
   width: 100%;
 }
 
-.c1:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c1:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c1[required] + label:after {
   content: "*";
 }
@@ -68,6 +60,15 @@ exports[`TextField  a large TextField object should return a large TextField obj
 
 .c1[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1::-webkit-input-placeholder {
@@ -116,13 +117,14 @@ exports[`TextField Component base should return a TextField object 1`] = `
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: -0.5rem;
+  top: 0;
+  height: 0.4rem;
   position: absolute;
 }
 
@@ -155,15 +157,6 @@ exports[`TextField Component base should return a TextField object 1`] = `
   width: 100%;
 }
 
-.c1:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c1:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c1[required] + label:after {
   content: "*";
 }
@@ -174,6 +167,15 @@ exports[`TextField Component base should return a TextField object 1`] = `
 
 .c1[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1::-webkit-input-placeholder {
@@ -222,13 +224,14 @@ exports[`TextField a TextField object should return a TextField object with a re
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: -0.5rem;
+  top: 0;
+  height: 0.4rem;
   position: absolute;
 }
 
@@ -261,15 +264,6 @@ exports[`TextField a TextField object should return a TextField object with a re
   width: 100%;
 }
 
-.c1:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c1:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c1[required] + label:after {
   content: "*";
 }
@@ -280,6 +274,15 @@ exports[`TextField a TextField object should return a TextField object with a re
 
 .c1[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1::-webkit-input-placeholder {
@@ -328,13 +331,14 @@ exports[`TextField a plainText TextField should return a disabled TextField 1`] 
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: -0.5rem;
+  top: 0;
+  height: 0.4rem;
   position: absolute;
 }
 
@@ -396,13 +400,14 @@ exports[`TextField a small TextField object should return a disabled TextField 1
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: -0.5rem;
+  top: 0;
+  height: 0.4rem;
   position: absolute;
 }
 
@@ -435,15 +440,6 @@ exports[`TextField a small TextField object should return a disabled TextField 1
   width: 100%;
 }
 
-.c1:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c1:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c1[required] + label:after {
   content: "*";
 }
@@ -454,6 +450,15 @@ exports[`TextField a small TextField object should return a disabled TextField 1
 
 .c1[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1::-webkit-input-placeholder {
@@ -503,13 +508,14 @@ exports[`TextField a small TextField object should return a small TextField obje
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: -0.5rem;
+  top: 0;
+  height: 0.4rem;
   position: absolute;
 }
 
@@ -542,15 +548,6 @@ exports[`TextField a small TextField object should return a small TextField obje
   width: 100%;
 }
 
-.c1:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c1:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c1[required] + label:after {
   content: "*";
 }
@@ -561,6 +558,15 @@ exports[`TextField a small TextField object should return a small TextField obje
 
 .c1[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1::-webkit-input-placeholder {
@@ -609,13 +615,14 @@ exports[`TextField a small TextField object should return a small TextField obje
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: -0.5rem;
+  top: 0;
+  height: 0.4rem;
   position: absolute;
 }
 
@@ -648,15 +655,6 @@ exports[`TextField a small TextField object should return a small TextField obje
   width: 100%;
 }
 
-.c1:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c1:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c1[required] + label:after {
   content: "*";
 }
@@ -667,6 +665,15 @@ exports[`TextField a small TextField object should return a small TextField obje
 
 .c1[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1::-webkit-input-placeholder {
@@ -715,13 +722,14 @@ exports[`TextField a small TextField object should return a small TextField obje
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: -0.5rem;
+  top: 0;
+  height: 0.4rem;
   position: absolute;
 }
 
@@ -754,15 +762,6 @@ exports[`TextField a small TextField object should return a small TextField obje
   width: 100%;
 }
 
-.c1:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c1:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c1[required] + label:after {
   content: "*";
 }
@@ -773,6 +772,15 @@ exports[`TextField a small TextField object should return a small TextField obje
 
 .c1[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1::-webkit-input-placeholder {
@@ -841,15 +849,6 @@ exports[`TextField with a password attribute should return a TextField of input 
   width: 100%;
 }
 
-.c1:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c1:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c1[required] + label:after {
   content: "*";
 }
@@ -860,6 +859,15 @@ exports[`TextField with a password attribute should return a TextField of input 
 
 .c1[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1::-webkit-input-placeholder {
@@ -922,15 +930,6 @@ exports[`TextField with an email attribute should return a TextField of input ty
   width: 100%;
 }
 
-.c1:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c1:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c1[required] + label:after {
   content: "*";
 }
@@ -941,6 +940,15 @@ exports[`TextField with an email attribute should return a TextField of input ty
 
 .c1[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1::-webkit-input-placeholder {
@@ -983,13 +991,14 @@ exports[`TextField with assistive text should return a TextField object contain 
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: -0.5rem;
+  top: 0;
+  height: 0.4rem;
   position: absolute;
 }
 
@@ -1039,15 +1048,6 @@ exports[`TextField with assistive text should return a TextField object contain 
   width: 100%;
 }
 
-.c1:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c1:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c1[required] + label:after {
   content: "*";
 }
@@ -1058,6 +1058,15 @@ exports[`TextField with assistive text should return a TextField object contain 
 
 .c1[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1::-webkit-input-placeholder {
@@ -1112,13 +1121,14 @@ exports[`TextField with some other props should return a TextField object contai
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: -0.5rem;
+  top: 0;
+  height: 0.4rem;
   position: absolute;
 }
 
@@ -1168,15 +1178,6 @@ exports[`TextField with some other props should return a TextField object contai
   width: 100%;
 }
 
-.c1:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c1:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c1[required] + label:after {
   content: "*";
 }
@@ -1187,6 +1188,15 @@ exports[`TextField with some other props should return a TextField object contai
 
 .c1[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c1::-webkit-input-placeholder {
@@ -1242,13 +1252,14 @@ exports[`TextField with validation error should return a TextField object contai
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: -0.5rem;
+  top: 0;
+  height: 0.4rem;
   position: absolute;
 }
 
@@ -1298,15 +1309,6 @@ exports[`TextField with validation error should return a TextField object contai
   width: 100%;
 }
 
-.c1:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c1:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c1[required] + label:after {
   content: "*";
 }
@@ -1317,6 +1319,15 @@ exports[`TextField with validation error should return a TextField object contai
 
 .c1[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(4.1,89.6%,58.4%);
+  box-shadow: 0 0 0 1px hsl(4.1,89.6%,58.4%);
+}
+
+.c1:focus + label {
+  color: hsl(4.1,89.6%,58.4%);
 }
 
 .c1::-webkit-input-placeholder {

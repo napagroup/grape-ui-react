@@ -5,11 +5,10 @@ import { removeSomeProps } from 'src/utils/componentHelpers';
 import { fontWeight } from 'styled-system';
 import styled from 'styled-components';
 import {
-  colorCore,
   control,
+  controlColor,
   controlStyles,
   defaultControlStyles,
-  defaultStylesBase,
   fontFamilyCore,
   fontSizeCore,
   fontStyleCore,
@@ -27,7 +26,7 @@ const controlStylesTextField = props => (!props.validationError ? controlStyles(
   : controlStyles({ ...props, activeColor: 'brandDanger', borderColor: 'brandDanger' }));
 
 export const TextFieldComponent = styled(TextInputComponent)`
-  ${colorCore}
+  ${controlColor}
   ${fontFamilyCore}
   ${fontSizeCore}
   ${fontWeight}
@@ -37,7 +36,7 @@ export const TextFieldComponent = styled(TextInputComponent)`
   ${textAlignCore}
   ${textDecorationCore}
   ${controlStylesTextField}
-  `;
+`;
 
 TextFieldComponent.propTypes = {
   formStyle: PropTypes.string,
@@ -105,7 +104,7 @@ TextField.propTypes = {
 TextField.defaultProps = {
   activeColor: defaultControlStyles.activeColor,
   assistiveText: '',
-  bg: defaultStylesBase.bg,
+  bg: null,
   formStyle: '',
   labelText: '',
   required: false,

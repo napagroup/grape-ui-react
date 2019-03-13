@@ -45,7 +45,7 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -205,7 +205,7 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -273,7 +273,7 @@ exports[`CheckboxFieldComponent Component with 2 plaintext should return a Check
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -371,7 +371,7 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -528,7 +528,7 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -690,7 +690,7 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -860,7 +860,7 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -1047,7 +1047,7 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -1220,7 +1220,7 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
-  line-height: 1.5;
+  line-height: 0.8;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;

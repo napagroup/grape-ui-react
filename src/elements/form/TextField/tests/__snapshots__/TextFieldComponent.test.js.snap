@@ -21,15 +21,6 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   width: 100%;
 }
 
-.c0:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c0[required] + label:after {
   content: "*";
 }
@@ -40,6 +31,15 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
 
 .c0[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c0::-webkit-input-placeholder {
@@ -87,15 +87,6 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   width: 100%;
 }
 
-.c0:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c0[required] + label:after {
   content: "*";
 }
@@ -106,6 +97,15 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
 
 .c0[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c0::-webkit-input-placeholder {
@@ -153,15 +153,6 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   width: 100%;
 }
 
-.c0:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c0[required] + label:after {
   content: "*";
 }
@@ -172,6 +163,15 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
 
 .c0[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c0::-webkit-input-placeholder {
@@ -219,15 +219,6 @@ exports[`TextFieldComponent with a password attribute should return a TextFieldC
   width: 100%;
 }
 
-.c0:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c0[required] + label:after {
   content: "*";
 }
@@ -238,6 +229,15 @@ exports[`TextFieldComponent with a password attribute should return a TextFieldC
 
 .c0[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c0::-webkit-input-placeholder {
@@ -285,15 +285,6 @@ exports[`TextFieldComponent with an email attribute should return a TextFieldCom
   width: 100%;
 }
 
-.c0:focus {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
 .c0[required] + label:after {
   content: "*";
 }
@@ -304,6 +295,15 @@ exports[`TextFieldComponent with an email attribute should return a TextFieldCom
 
 .c0[disabled] ~ * {
   color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
 }
 
 .c0::-webkit-input-placeholder {
