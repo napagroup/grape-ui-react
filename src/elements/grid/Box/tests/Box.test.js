@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 import { ThemeProvider } from 'styled-components';
-import { Box } from '..';
+import { Box } from '../..';
 
 describe('Box Component base', () => {
   it('should return a Box object with base styling', () => {

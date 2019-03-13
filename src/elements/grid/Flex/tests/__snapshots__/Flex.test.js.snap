@@ -1,6 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Flex base should return a Flex object with 2 responsive Box elements as the children 1`] = `
+.c1 {
+  width: 100%;
+}
+
+.c2 {
+  width: 100%;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -13,14 +21,6 @@ exports[`Flex base should return a Flex object with 2 responsive Box elements as
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-.c1 {
-  width: 100%;
-}
-
-.c2 {
-  width: 100%;
 }
 
 @media screen and (min-width:40em) {

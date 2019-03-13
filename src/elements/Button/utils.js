@@ -1,41 +1,6 @@
 import { style } from 'styled-system';
-import { getGlobalStyles } from 'src/global-styles';
-import { resolveColor, POSITION_DEFAULT_VALUE } from 'src/utils/styledHelpers';
+import { POSITION_DEFAULT_VALUE } from 'src/utils/styledHelpers';
 import { DEFAULT_BUTTON_LINE_HEIGHT } from './constants';
-
-const { colors: colorSchema } = getGlobalStyles();
-const { brandPrimary } = colorSchema;
-
-const containedStyle = '';
-const outlineStyle = '';
-const raisedStyle = '';
-
-// I see user can only apply one of those contained, outline and raised. if you need to apply both and/or all styles, let Ping know
-export const getAdvanceButtonStyle = (props = {}) => {
-  if (props.contained) {
-    return containedStyle;
-  } if (props.outline) {
-    return outlineStyle;
-  } if (props.raised) {
-    return raisedStyle;
-  }
-  return '';
-};
-
-const borderWidthStyle = style({
-  // The corresponding CSS property (defaults to prop argument)
-  cssProperty: 'border',
-  // key for theme values
-  key: 'border',
-  // React prop name
-  prop: 'border',
-  // add a fallback scale object or array, if theme is not present
-  scale: ['', '', '', '', ''],
-  // accessor function for transforming the value
-  transformValue: value => value || `1px solid ${resolveColor()}`,
-});
-
-export const borderButton = props => (props.borderWidth ? borderWidthStyle(props) : `border: 1px solid ${brandPrimary.base};`);
 
 export const lineHeightStyle = style({
   // The corresponding CSS property (defaults to prop argument)

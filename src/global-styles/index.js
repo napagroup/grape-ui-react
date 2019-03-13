@@ -42,6 +42,6 @@ export const getGlobalStyles = (overrides = {}) => {
  * Returns a new global style object with properties of global styles merged and overridden with styles defined in the theme.
  * @param {Object} props The object containing the theme object.
  */
-export const getGlobalOverrides = props => getGlobalStyles({
+export const getGlobalOverrides = (props = {}) => getGlobalStyles({
   colors: themeGet('colors', null)(props),
 });

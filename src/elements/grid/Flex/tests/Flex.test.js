@@ -2,8 +2,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
-import { Flex } from '..';
-import { Box } from '../../Box';
+import { Box, Flex } from '../..';
 import 'jest-styled-components';
 
 describe('Flex base', () => {
