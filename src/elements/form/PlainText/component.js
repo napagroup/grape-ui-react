@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import { control, typography } from 'src/utils/styledHelpers';
+import { control, spaceProps, typography } from 'src/utils/styledHelpers';
 
 const isArrayOptionsValue = value => !!value && Array.isArray(value);
 const getDisplayValue = props => {
@@ -20,6 +20,7 @@ const getDisplayValue = props => {
 
 const propsToTrim = [
   ...Object.keys(control.propTypes),
+  ...Object.keys(spaceProps.propTypes),
   ...Object.keys(typography.propTypes),
   'value',
 ];

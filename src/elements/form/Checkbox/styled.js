@@ -63,7 +63,7 @@ export const CheckboxField = props => {
         bg={bg}
         disabled={disabled}
         htmlFor={controlId}
-        isRelative
+        isRelative={!plainText}
         validationError={validationError}
       >
         {labelCaption}

@@ -174,6 +174,10 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -211,7 +215,9 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  position: relative;
+  top: 0;
+  height: 0.4rem;
+  position: absolute;
 }
 
 .c0 {
@@ -259,6 +265,10 @@ exports[`CheckboxFieldComponent Component with 2 plaintext should return a Check
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -279,7 +289,9 @@ exports[`CheckboxFieldComponent Component with 2 plaintext should return a Check
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  position: relative;
+  top: 0;
+  height: 0.4rem;
+  position: absolute;
 }
 
 .c0 {
