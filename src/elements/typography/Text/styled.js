@@ -16,16 +16,16 @@ import { TextComponent } from './component';
 
 export const Text = styled(TextComponent)`
   ${colorCore}
-  ${fontFamilyCore}
-  ${fontSizeCore}
-  ${fontStyleCore}
-  ${fontWeight}
-  ${letterSpacingCore}
-  ${lineHeightCore}
-  ${textAlignCore}
-  ${textDecorationCore}
 `;
 
+  // ${fontFamilyCore}
+  // ${fontSizeCore}
+  // ${fontStyleCore}
+  // ${fontWeight}
+  // ${letterSpacingCore}
+  // ${lineHeightCore}
+  // ${textAlignCore}
+  // ${textDecorationCore}
 Text.propTypes = {
   ...typography.propTypes,
 };
