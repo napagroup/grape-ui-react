@@ -22,6 +22,7 @@ const propsToTrim = [
   'chipBg',
   'formStyle',
   'isDisabled',
+  'isFocused',
   'menuFocusBg',
   'menuFocusColor',
   'menuSelectedBg',
@@ -31,12 +32,13 @@ const propsToTrim = [
   'validationError',
 ];
 export const SelectComponent = ({ children, ...props }) => {
-  const { isDisabled, multiple } = props;
+  const { isDisabled, isFocused, multiple } = props;
   return (
     <Select
       className="grape-ui-select-container"
       classNamePrefix="grape-ui-select"
       isDisabled={isDisabled}
+      isFocused={isFocused}
       isMulti={multiple}
       styles={styleOverrides}
       {...removeSomeProps(props, propsToTrim)}
@@ -48,10 +50,12 @@ export const SelectComponent = ({ children, ...props }) => {
 SelectComponent.propTypes = {
   children: PropTypes.any,
   isDisabled: PropTypes.bool,
+  isFocused: PropTypes.bool,
   multiple: PropTypes.bool,
 };
 SelectComponent.defaultProps = {
   children: null,
   isDisabled: false,
+  isFocused: false,
   multiple: false,
 };

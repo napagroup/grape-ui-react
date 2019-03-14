@@ -86,6 +86,7 @@ describe('SelectField Component with plainText or disabled', () => {
   });
 });
 
+// TODO: This test down below isn't running.  Not sure why.  --R
 describe('SelectField Component with react-select predefined props', () => {
   it('should return a SelectField with isClearable set to true', () => {
     const component = mount(<SelectField assistiveText="Please tell me your color, hit x to clear" controlId="exampleColor" id="exampleColor" isClearable labelText="Color" m={4} options={colorOptions} p={4} placeholder="Please search your color" />);

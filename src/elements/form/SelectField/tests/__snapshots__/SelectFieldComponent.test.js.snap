@@ -64,6 +64,9 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  border: 0;
+  box-shadow: none;
+  min-height: 0;
 }
 
 .c0 .grape-ui-select__indicator {
@@ -110,7 +113,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 0.25rem;
+  margin: 0.25rem;
   padding: 0.25rem;
   border-radius: 4px;
   background-color: hsl(0,0%,90%);
@@ -298,6 +301,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  border: 0;
+  box-shadow: none;
+  min-height: 0;
 }
 
 .c0 .grape-ui-select__indicator {
@@ -344,7 +350,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 0.25rem;
+  margin: 0.25rem;
   padding: 0.25rem;
   border-radius: 4px;
   background-color: hsl(0,0%,90%);
@@ -532,6 +538,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  border: 0;
+  box-shadow: none;
+  min-height: 0;
 }
 
 .c0 .grape-ui-select__indicator {
@@ -578,7 +587,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 0.25rem;
+  margin: 0.25rem;
   padding: 0.25rem;
   border-radius: 4px;
   background-color: hsl(0,0%,90%);

@@ -215,7 +215,7 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -289,7 +289,7 @@ exports[`CheckboxFieldComponent Component with 2 plaintext should return a Check
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }

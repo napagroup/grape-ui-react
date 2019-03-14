@@ -16,7 +16,7 @@ exports[`SelectField Component base should return a SelectField that contains Co
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -45,7 +45,7 @@ exports[`SelectField Component base should return a SelectField that contains Se
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -122,6 +122,9 @@ exports[`SelectField Component base should return a SelectField that contains Se
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  border: 0;
+  box-shadow: none;
+  min-height: 0;
 }
 
 .c1 .grape-ui-select__indicator {
@@ -168,7 +171,7 @@ exports[`SelectField Component base should return a SelectField that contains Se
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 0.25rem;
+  margin: 0.25rem;
   padding: 0.25rem;
   border-radius: 4px;
   background-color: hsl(0,0%,90%);
@@ -318,7 +321,7 @@ exports[`SelectField Component with ControlLabel with * should return a SelectFi
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -429,7 +432,7 @@ exports[`SelectField Component with space should return a SelectField with space
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -523,6 +526,9 @@ exports[`SelectField Component with space should return a SelectField with space
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  border: 0;
+  box-shadow: none;
+  min-height: 0;
 }
 
 .c1 .grape-ui-select__indicator {
@@ -569,7 +575,7 @@ exports[`SelectField Component with space should return a SelectField with space
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 0.25rem;
+  margin: 0.25rem;
   padding: 0.25rem;
   border-radius: 4px;
   background-color: hsl(0,0%,90%);
@@ -725,7 +731,7 @@ exports[`SelectField Component with style should return a SelectField with backg
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -819,6 +825,9 @@ exports[`SelectField Component with style should return a SelectField with backg
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  border: 0;
+  box-shadow: none;
+  min-height: 0;
 }
 
 .c1 .grape-ui-select__indicator {
@@ -865,7 +874,7 @@ exports[`SelectField Component with style should return a SelectField with backg
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 0.25rem;
+  margin: 0.25rem;
   padding: 0.25rem;
   border-radius: 4px;
   background-color: hsl(0,0%,90%);
@@ -1021,7 +1030,7 @@ exports[`SelectField Component with style should return a SelectField with orang
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -1115,6 +1124,9 @@ exports[`SelectField Component with style should return a SelectField with orang
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  border: 0;
+  box-shadow: none;
+  min-height: 0;
 }
 
 .c1 .grape-ui-select__indicator {
@@ -1161,7 +1173,7 @@ exports[`SelectField Component with style should return a SelectField with orang
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 0.25rem;
+  margin: 0.25rem;
   padding: 0.25rem;
   border-radius: 4px;
   background-color: hsl(0,0%,90%);
@@ -1317,7 +1329,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -1411,6 +1423,9 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  border: 0;
+  box-shadow: none;
+  min-height: 0;
 }
 
 .c1 .grape-ui-select__indicator {
@@ -1457,7 +1472,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 0.25rem;
+  margin: 0.25rem;
   padding: 0.25rem;
   border-radius: 4px;
   background-color: hsl(0,0%,90%);
@@ -1613,7 +1628,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -1707,6 +1722,9 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  border: 0;
+  box-shadow: none;
+  min-height: 0;
 }
 
 .c1 .grape-ui-select__indicator {
@@ -1753,7 +1771,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 0.25rem;
+  margin: 0.25rem;
   padding: 0.25rem;
   border-radius: 4px;
   background-color: hsl(0,0%,90%);

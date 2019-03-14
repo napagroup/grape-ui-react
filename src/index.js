@@ -14,7 +14,7 @@ import {
   Paragraph,
   Text,
 } from './elements/typography';
-import { getGlobalStyles } from './global-styles';
+import { getGlobalStyles, getGlobalOverrides } from './global-styles';
 import * as styledHelpers from './utils/styledHelpers';
 
 module.exports = {
@@ -23,6 +23,7 @@ module.exports = {
   CheckboxField,
   Flex,
   Form,
+  getGlobalOverrides,
   getGlobalStyles,
   Header,
   Image,

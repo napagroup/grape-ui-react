@@ -26,7 +26,7 @@ const colorLabel = props => colorCore({
 });
 const fontSizeLabel = props => fontSizeCore({ ...props, sm: true });
 const positionStyle = props => `position: ${props.isRelative ? 'relative' : 'absolute'};`;
-const isRelativeStyle = props => (props.isRelative ? '' : `top: 0; height: ${fontSizeSchema.sizeVariants.sm / 2}rem`);
+const isRelativeStyle = props => (props.isRelative ? '' : `top: -1px; height: ${fontSizeSchema.sizeVariants.sm / 2}rem`);
 export const ControlLabel = styled(ControlLabelComponent)`
   ${colorLabel}
   ${fontFamilyCore}

@@ -56,7 +56,7 @@ const getFinalStyle = props => {
   } = props;
   const scale = scaleFactor(props);
   const globalOverrides = getGlobalOverrides(props);
-  const focusStyle = focusStyles({ activeColor, formStyle, globalOverrides });
+  const focusStyle = focusStyles({ activeColor, formStyle, ...globalOverrides });
   const resolvedBorderColor = resolveColor(borderColor, globalOverrides);
   const resolvedPlaceholderColor = resolveColor(placeholderColor, globalOverrides);
   const filledPadding = `${Number.parseInt(padding, 10) * 1.5}rem ${padding} ${Number.parseInt(padding, 10) / 2}rem`;

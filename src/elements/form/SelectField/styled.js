@@ -45,6 +45,7 @@ const focusStyleSelectField = props => {
 const reactSelectStylesOverrides = props => {
   const {
     chipBg,
+    formStyle,
     menuFocusBg,
     menuFocusColor,
     menuSelectedBg,
@@ -52,58 +53,64 @@ const reactSelectStylesOverrides = props => {
     placeholderColor,
   } = props;
   const globalOverrides = getGlobalOverrides(props);
+  const dropdownOffset = formStyle === 'filled' ? '.grape-ui-select__dropdown-indicator { margin-top: -0.5rem; }' : '';
   return `
-  .grape-ui-select__control {
-    display: flex;
-  }
-  .grape-ui-select__indicator {
-    padding: 0;
-  }
-  .grape-ui-select__indicator-separator {
-    display: none;
-  }
-  .grape-ui-select__value-container {
-    padding: 0;
-  }
-  .grape-ui-select__menu {
-    position: absolute;
-    left: 0;
-    margin: 0;
-    padding: 0.5rem 0;
-    ${resolveElevation('03', globalOverrides)}
-  }
-  .grape-ui-select__option {
-    padding: 0.5rem 1rem;
-  }
-  .grape-ui-select__option--is-focused {
-    background: ${resolveColor(menuFocusBg, globalOverrides)};
-    color: ${resolveColor(menuFocusColor, globalOverrides)};
-  }
-  .grape-ui-select__option--is-selected {
-    background: ${resolveColor(menuSelectedBg, globalOverrides)};
-    color: ${resolveColor(menuSelectedColor, globalOverrides)};
-  }
-  .grape-ui-select__placeholder {
-    color: ${resolveColor(placeholderColor, globalOverrides)};
-  }
-  .grape-ui-select__multi-value {
-    display: flex;
-    margin-right: 0.25rem;
-    padding: 0.25rem;
-    border-radius: 4px;
-    background-color: ${resolveColor(chipBg, globalOverrides)};
-    font-size: 80%;
-  }
-  .grape-ui-select__multi-value__label {
-    padding: 0 0.25rem;
-  }
-  .grape-ui-select__multi-value__remove {
-    cursor: pointer;
-    &:hover path {
-      fill: ${resolveColor('brandLinkHover', globalOverrides)}
+    .grape-ui-select__control {
+      display: flex;
+      border: 0;
+      box-shadow: none;
+      min-height: 0;
     }
-  }
-`;
+    .grape-ui-select__indicator {
+      padding: 0;
+    }
+    .grape-ui-select__indicator-separator {
+      display: none;
+    }
+    .grape-ui-select__value-container {
+      padding: 0;
+    }
+    .grape-ui-select__menu {
+      position: absolute;
+      left: 0;
+      margin: 0;
+      padding: 0.5rem 0;
+      ${resolveElevation('03', globalOverrides)}
+    }
+    .grape-ui-select__option {
+      padding: 0.5rem 1rem;
+    }
+    .grape-ui-select__option--is-focused {
+      background: ${resolveColor(menuFocusBg, globalOverrides)};
+      color: ${resolveColor(menuFocusColor, globalOverrides)};
+    }
+    .grape-ui-select__option--is-selected {
+      background: ${resolveColor(menuSelectedBg, globalOverrides)};
+      color: ${resolveColor(menuSelectedColor, globalOverrides)};
+    }
+    .grape-ui-select__placeholder {
+      color: ${resolveColor(placeholderColor, globalOverrides)};
+    }
+    .grape-ui-select__multi-value {
+      display: flex;
+      margin: 0.25rem;
+      padding: 0.25rem;
+      border-radius: 4px;
+      background-color: ${resolveColor(chipBg, globalOverrides)};
+      font-size: 80%;
+    }
+    .grape-ui-select__multi-value__label {
+      padding: 0 0.25rem;
+    }
+    .grape-ui-select__multi-value__remove {
+      cursor: pointer;
+      &:hover path {
+        fill: ${resolveColor('brandLinkHover', globalOverrides)}
+      }
+    }
+    &:has(.grape-ui-select__control--is-focused) {  }
+    ${dropdownOffset}
+  `;
 };
 
 export const SelectFieldComponent = styled(SelectComponent)`
@@ -126,6 +133,7 @@ SelectFieldComponent.propTypes = {
   chipBg: PropTypes.string,
   formStyle: PropTypes.string,
   isDisabled: PropTypes.bool,
+  isFocused: PropTypes.bool,
   menuFocusBg: PropTypes.string,
   menuFocusColor: PropTypes.string,
   menuSelectedBg: PropTypes.string,
@@ -142,6 +150,7 @@ SelectFieldComponent.defaultProps = {
   chipBg: 'white.dark',
   formStyle: '',
   isDisabled: false,
+  isFocused: false,
   menuFocusBg: 'brandLinkHover',
   menuFocusColor: 'white',
   menuSelectedBg: 'brandLink',
@@ -159,7 +168,6 @@ const renderSelectFieldComponent = selectFieldProps => {
   return (<SelectFieldComponent {...selectFieldProps} value={value || defaultValue} />);
 };
 const propsToTrim = [
-  'activeColor',
   'bg',
   'controlId',
   'disabled',

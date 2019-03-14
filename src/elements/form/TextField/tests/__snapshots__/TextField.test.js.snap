@@ -16,7 +16,7 @@ exports[`TextField  a large TextField object should return a large TextField obj
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -123,7 +123,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -230,7 +230,7 @@ exports[`TextField a TextField object should return a TextField object with a re
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -337,7 +337,7 @@ exports[`TextField a plainText TextField should return a disabled TextField 1`] 
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -406,7 +406,7 @@ exports[`TextField a small TextField object should return a disabled TextField 1
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -514,7 +514,7 @@ exports[`TextField a small TextField object should return a small TextField obje
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -621,7 +621,7 @@ exports[`TextField a small TextField object should return a small TextField obje
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -728,7 +728,7 @@ exports[`TextField a small TextField object should return a small TextField obje
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -997,7 +997,7 @@ exports[`TextField with assistive text should return a TextField object contain 
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -1127,7 +1127,7 @@ exports[`TextField with some other props should return a TextField object contai
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
@@ -1258,7 +1258,7 @@ exports[`TextField with validation error should return a TextField object contai
   text-decoration: inherit;
   left: 0.5rem;
   padding: 0 0.5rem;
-  top: 0;
+  top: -1px;
   height: 0.4rem;
   position: absolute;
 }
