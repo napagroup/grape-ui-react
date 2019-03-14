@@ -49,7 +49,6 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
   >
     <input
       checked={true}
-      disabled={undefined}
       id="exampleColor"
       name="Color"
       onChange={[Function]}
@@ -75,7 +74,6 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
   >
     <input
       checked={false}
-      disabled={undefined}
       id="exampleColor"
       name="Color"
       onChange={[Function]}
@@ -101,7 +99,6 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
   >
     <input
       checked={false}
-      disabled={undefined}
       id="exampleColor"
       name="Color"
       onChange={[Function]}

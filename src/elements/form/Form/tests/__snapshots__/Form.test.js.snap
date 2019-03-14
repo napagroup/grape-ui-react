@@ -443,12 +443,9 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
             >
               <input
                 aria-autocomplete="list"
-                aria-label={undefined}
-                aria-labelledby={undefined}
                 autoCapitalize="none"
                 autoComplete="off"
                 autoCorrect="off"
-                className={undefined}
                 disabled={false}
                 id="react-select-2-input"
                 onBlur={[Function]}

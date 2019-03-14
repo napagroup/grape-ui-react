@@ -57,7 +57,9 @@
       "<rootDir>/src/internals",
       "<rootDir>/src/elements/typography/index.js"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/src/internals/testing/test-bundler.js",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/internals/testing/test-bundler.js"
+    ],
     "testRegex": "tests/.*\\.test\\.js$",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
@@ -78,10 +80,13 @@
     "styled-system": "^4.0.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^22.4.3",
+    "babel-jest": "^24.5.0",
     "babel-loader": "7.1.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-dynamic-import-node": "1.0.2",
@@ -93,15 +98,10 @@
     "babel-plugin-transform-class-properties": "^6.22.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-plugin-transform-object-rest-spread": "^6.22.0",
     "babel-plugin-transform-react-constant-elements": "6.23.0",
     "babel-plugin-transform-react-inline-elements": "6.22.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.1",
     "babel-plugin-webpack-alias": "^2.1.2",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "6.24.1",
     "coveralls": "^3.0.1",
     "cross-env": "^5.1.5",
     "enzyme": "^3.4.4",
@@ -114,8 +114,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-watch": "^3.1.4",
-    "jest": "^22.4.3",
-    "jest-cli": "~22.4.3",
+    "jest": "^24.5.0",
+    "jest-cli": "^24.5.0",
     "jest-styled-components": "^5.0.1",
     "react-test-renderer": "^16.3.2",
     "webpack": "^3.11.0"

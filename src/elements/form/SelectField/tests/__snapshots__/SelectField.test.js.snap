@@ -221,12 +221,9 @@ exports[`SelectField Component base should return a SelectField that contains Se
           >
             <input
               aria-autocomplete="list"
-              aria-label={undefined}
-              aria-labelledby={undefined}
               autoCapitalize="none"
               autoComplete="off"
               autoCorrect="off"
-              className={undefined}
               disabled={false}
               id="react-select-2-input"
               onBlur={[Function]}
@@ -625,12 +622,9 @@ exports[`SelectField Component with space should return a SelectField with space
           >
             <input
               aria-autocomplete="list"
-              aria-label={undefined}
-              aria-labelledby={undefined}
               autoCapitalize="none"
               autoComplete="off"
               autoCorrect="off"
-              className={undefined}
               disabled={false}
               id="react-select-11-input"
               onBlur={[Function]}
@@ -924,12 +918,9 @@ exports[`SelectField Component with style should return a SelectField with backg
           >
             <input
               aria-autocomplete="list"
-              aria-label={undefined}
-              aria-labelledby={undefined}
               autoCapitalize="none"
               autoComplete="off"
               autoCorrect="off"
-              className={undefined}
               disabled={false}
               id="react-select-9-input"
               onBlur={[Function]}
@@ -1223,12 +1214,9 @@ exports[`SelectField Component with style should return a SelectField with orang
           >
             <input
               aria-autocomplete="list"
-              aria-label={undefined}
-              aria-labelledby={undefined}
               autoCapitalize="none"
               autoComplete="off"
               autoCorrect="off"
-              className={undefined}
               disabled={false}
               id="react-select-10-input"
               onBlur={[Function]}
@@ -1522,12 +1510,9 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
           >
             <input
               aria-autocomplete="list"
-              aria-label={undefined}
-              aria-labelledby={undefined}
               autoCapitalize="none"
               autoComplete="off"
               autoCorrect="off"
-              className={undefined}
               disabled={false}
               id="react-select-7-input"
               onBlur={[Function]}
@@ -1821,12 +1806,9 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
           >
             <input
               aria-autocomplete="list"
-              aria-label={undefined}
-              aria-labelledby={undefined}
               autoCapitalize="none"
               autoComplete="off"
               autoCorrect="off"
-              className={undefined}
               disabled={false}
               id="react-select-8-input"
               onBlur={[Function]}

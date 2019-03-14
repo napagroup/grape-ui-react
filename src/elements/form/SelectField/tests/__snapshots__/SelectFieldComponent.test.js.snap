@@ -160,12 +160,9 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
         >
           <input
             aria-autocomplete="list"
-            aria-label={undefined}
-            aria-labelledby={undefined}
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect="off"
-            className={undefined}
             disabled={false}
             id="react-select-2-input"
             onBlur={[Function]}
@@ -397,12 +394,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
         >
           <input
             aria-autocomplete="list"
-            aria-label={undefined}
-            aria-labelledby={undefined}
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect="off"
-            className={undefined}
             disabled={false}
             id="react-select-3-input"
             onBlur={[Function]}
@@ -634,12 +628,9 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
         >
           <input
             aria-autocomplete="list"
-            aria-label={undefined}
-            aria-labelledby={undefined}
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect="off"
-            className={undefined}
             disabled={false}
             id="react-select-4-input"
             onBlur={[Function]}
