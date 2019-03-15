@@ -72,7 +72,7 @@
   "formControlFilledBg": {
     "base": "hsl(0, 0%, 90%)",
     "dark": "hsl(0, 0%, 85%)",
-    "light": "hsl(0, 0%, 95%"
+    "light": "hsl(0, 0%, 95%)"
   },
   "grape": {
     "base": "hsl(323.3, 84.6%, 28%)",
