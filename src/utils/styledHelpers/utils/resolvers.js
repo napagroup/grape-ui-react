@@ -45,6 +45,7 @@ export const resolveZIndex = (depth, globalOverrides) => {
   return resolvedZIndex || CSS_INHERIT_VALUE;
 };
 
+// TODO: This function below needs to be fixed becuase one path returns just the value and another returns properties and values.
 export const resolveElevation = (depth, globalOverrides) => {
   if (!depth || typeof depth !== 'string') {
     return CSS_INHERIT_VALUE;

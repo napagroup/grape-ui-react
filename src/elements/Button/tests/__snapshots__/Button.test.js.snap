@@ -988,6 +988,7 @@ exports[`Button using variant styles with theme colors Button with variant set t
 .c0 {
   border-radius: 4px;
   background-color: hsl(323.31,85.61%,29.98%);
+  color: hsl(0,0%,98%);
   display: inline-block;
   font-family: inherit;
   font-size: inherit;
