@@ -45,6 +45,8 @@ import {
   typography,
 } from 'src/utils/styledHelpers';
 import {
+  activeColorButton,
+  hoverColorButton,
   lineHeightButton,
   positionButton,
 } from './utils';
@@ -93,6 +95,7 @@ const scaleButton = props => {
   return space(nextProps);
 };
 
+
 export const Button = styled(ButtonComponent)`
   ${alignContent}
   ${alignItems}
@@ -134,9 +137,11 @@ export const Button = styled(ButtonComponent)`
   text-transform: uppercase;
   &:hover {
     cursor: pointer;
+    ${hoverColorButton};
   }
   &:active {
-    ${boxShadowButtonMemoized('02')}
+    ${boxShadowButtonMemoized('02')};
+    ${activeColorButton};
   }
   &[disabled] {
     opacity: 0.4;
@@ -149,6 +154,8 @@ Button.propTypes = {
   ...alignContent.propTypes,
   ...alignItems.propTypes,
   ...alignSelf.propTypes,
+  bgActiveColor: PropTypes.string,
+  bgHoverColor: PropTypes.string,
   ...border.propTypes,
   ...borderRadius.propTypes,
   ...bottom.propTypes,
@@ -179,11 +186,14 @@ Button.propTypes = {
   ...typography.propTypes,
   ...width.propTypes,
   ...zIndex.propTypes,
+
 };
 
 Button.defaultProps = {
   ...defaultStylesBase,
   bg: null,
+  bgActiveColor: null,
+  bgHoverColor: null,
   border: `1px solid ${resolveColor('borderColor')}`,
   borderRadius: '4px',
   color: null,

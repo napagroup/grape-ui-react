@@ -30,6 +30,11 @@ exports[`Button Component base with style should return a Button with a zIndex w
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
 }
 
 .c0[disabled] {
@@ -76,6 +81,11 @@ exports[`Button Component base with style should return a Button with a zIndex w
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
 }
 
 .c0[disabled] {
@@ -121,6 +131,62 @@ exports[`Button Component base with style should return a Button with bg and col
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  id="exampleColor"
+  type="button"
+>
+  Happy St. Patrick's Day!
+</button>
+`;
+
+exports[`Button Component base with style should return a Button with bg and color and bgActiveColor and bgHoverColor  1`] = `
+.c0 {
+  border-radius: 4px;
+  color: hsl(0,0%,98%);
+  background-color: hsl(122.4,39.4%,49.2%);
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+  background-color: hsl(122.4,39.4%,29.2%);
+}
+
+.c0:active {
+  background-color: hsl(122.4,39.4%,69.2%);
 }
 
 .c0[disabled] {
@@ -167,6 +233,11 @@ exports[`Button Component base with style should return a Button with lg 1`] = `
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
 }
 
 .c0[disabled] {
@@ -213,6 +284,11 @@ exports[`Button Component base with style should return a Button with sm 1`] = `
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
 }
 
 .c0[disabled] {
@@ -259,6 +335,11 @@ exports[`Button Component base with style should return a Link with href with bu
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
 }
 
 .c0[disabled] {
@@ -305,6 +386,11 @@ exports[`Button Component base with style should return a Link with to with butt
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
 }
 
 .c0[disabled] {
@@ -352,6 +438,11 @@ exports[`Button base should return a Button 1`] = `
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
 }
 
 .c0[disabled] {
@@ -397,6 +488,11 @@ exports[`Button base should return a Button with disabled 1`] = `
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
 }
 
 .c0[disabled] {
@@ -444,6 +540,11 @@ exports[`Button base should return an contained Button 1`] = `
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
 }
 
 .c0[disabled] {
@@ -491,10 +592,12 @@ exports[`Button base should return an contained raised Button 1`] = `
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
 }
 
 .c0:active {
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3);
+  background-color: hsl(0,0%,100%);
 }
 
 .c0[disabled] {
@@ -542,6 +645,11 @@ exports[`Button base should return an outlined Button 1`] = `
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
 }
 
 .c0[disabled] {
@@ -631,6 +739,11 @@ exports[`Button using theme colors should return a Button 1`] = `
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
 }
 
 .c0[disabled] {
@@ -719,6 +832,11 @@ exports[`Button using variant styles Button set with no variant should return a 
 
 .c0:hover {
   cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
 }
 
 .c0[disabled] {

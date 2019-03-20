@@ -1,5 +1,5 @@
 import { style } from 'styled-system';
-import { POSITION_DEFAULT_VALUE } from 'src/utils/styledHelpers';
+import { POSITION_DEFAULT_VALUE, resolveColor } from 'src/utils/styledHelpers';
 import { DEFAULT_BUTTON_LINE_HEIGHT } from './constants';
 
 export const lineHeightStyle = style({
@@ -31,3 +31,28 @@ const positionStyle = style({
 });
 
 export const positionButton = props => (props.position ? positionStyle(props) : `position: ${POSITION_DEFAULT_VALUE};`);
+
+const hasVariant = variant => {
+  if (!variant) {
+    return false;
+  }
+  return !!variant;
+};
+
+export const activeColorButton = props => {
+  const { bgActiveColor, variant } = props;
+  if (hasVariant(variant)) {
+    return null;
+  }
+  const color = (!bgActiveColor || bgActiveColor === null) ? resolveColor('white.light') : resolveColor(bgActiveColor);
+  return `background-color: ${color}`;
+};
+
+export const hoverColorButton = props => {
+  const { bgHoverColor, variant } = props;
+  if (hasVariant(variant)) {
+    return null;
+  }
+  const color = (!bgHoverColor || bgHoverColor === null) ? resolveColor('white.dark') : resolveColor(bgHoverColor);
+  return `background-color: ${color}`;
+};

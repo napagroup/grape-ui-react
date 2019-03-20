@@ -22,6 +22,8 @@ const propsToTrim = {
 const propsToTrimForButton = {
   ...propsToTrim,
   ...boxShadow.propTypes,
+  bgActiveColor: PropTypes.string,
+  bgHoverColor: PropTypes.string,
   contained: false,
   href: PropTypes.string,
   outline: false,
@@ -33,6 +35,8 @@ const propsToTrimForButton = {
 const propsToTrimForLink = {
   ...propsToTrim,
   ...boxShadow.propTypes,
+  bgActiveColor: PropTypes.string,
+  bgHoverColor: PropTypes.string,
   contained: false,
   outline: false,
   raised: false,

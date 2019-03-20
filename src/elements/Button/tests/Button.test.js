@@ -45,6 +45,10 @@ describe('Button Component base with style', () => {
     const element = <Button bg="green" color="white" id="exampleColor">Happy St. Patrick&#39;s Day!</Button>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
+  it('should return a Button with bg and color and bgActiveColor and bgHoverColor ', () => {
+    const element = <Button bg="green" bgActiveColor="green.light" bgHoverColor="green.dark" color="white" id="exampleColor">Happy St. Patrick&#39;s Day!</Button>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
   it('should return a Button with sm', () => {
     const element = <Button id="exampleColor" sm>Do this</Button>;
     expect(assertReactElement(element)).toMatchSnapshot();

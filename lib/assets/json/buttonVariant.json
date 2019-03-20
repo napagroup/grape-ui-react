@@ -48,7 +48,7 @@
     },
     "primary": {
       "backgroundColor": "brandPrimary",
-      "color": null,
+      "color": "white",
       "focusColor": "brandPrimary.light",
       "hoverColor": "brandPrimary.dark"
     },
