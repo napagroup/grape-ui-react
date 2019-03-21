@@ -64,8 +64,9 @@ exports[`Form Component base should return a Form object and textField with fill
 }
 
 .c2 + label {
-  top: 0.9rem;
   background: transparent;
+  line-height: 1;
+  top: 0.8rem;
 }
 
 .c2[required] + label:after {
@@ -196,8 +197,9 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
 }
 
 .c2 + label {
-  top: 0.9rem;
   background: transparent;
+  line-height: 1;
+  top: 0.8rem;
 }
 
 .c2[required] + label:after {
@@ -259,8 +261,9 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
 }
 
 .c5 + label {
-  top: 0.9rem;
   background: transparent;
+  line-height: 1;
+  top: 0.8rem;
 }
 
 .c5[required] + label:after {

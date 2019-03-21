@@ -60,7 +60,7 @@ const getFinalStyle = props => {
   const resolvedBorderColor = resolveColor(borderColor, globalOverrides);
   const resolvedPlaceholderColor = resolveColor(placeholderColor, globalOverrides);
   const filledPadding = `${Number.parseInt(padding, 10) * 1.5}rem ${padding} ${Number.parseInt(padding, 10) / 2}rem`;
-  const topLabel = `${Number.parseInt(padding, 10) - 0.1}rem`;
+  const topLabel = `${Number.parseInt(padding, 10) - 0.2}rem`;
   const controlSharedStyle = `
     outline: 0;
     width: 100%;
@@ -78,8 +78,9 @@ const getFinalStyle = props => {
       border-radius: ${scale} ${scale} 0 0;
       padding: ${filledPadding};
       + label {
-        top: ${topLabel};
         background: transparent;
+        line-height: 1;
+        top: ${topLabel};
       }
       ${controlSharedStyle}
     `;
