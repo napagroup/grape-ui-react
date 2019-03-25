@@ -34,7 +34,6 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
 }
 
 <div
-  assistiveText=""
   className="c0"
   id=""
 >
