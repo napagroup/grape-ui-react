@@ -25,7 +25,6 @@ exports[`Link Component base should return a react router tag, given a 'to' attr
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
   href="/home"
   onClick={[Function]}
 >
@@ -58,7 +57,6 @@ exports[`Link Component base should return an anchor tag 1`] = `
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
 >
   Lorem Ipsum
 </a>
@@ -89,7 +87,6 @@ exports[`Link Component base should return an anchor tag with an href, given the
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
   href="./home"
 >
   Lorem Ipsum
@@ -121,7 +118,6 @@ exports[`Link Component specified styles should return a Link object with a base
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
 >
   Lorem Ipsum
 </a>
@@ -152,7 +148,6 @@ exports[`Link Component specified styles should return a Link object with a base
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
 >
   Lorem Ipsum
 </a>
@@ -183,7 +178,6 @@ exports[`Link Component specified styles should return a Link object with a dark
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
 >
   Lorem Ipsum
 </a>
@@ -214,7 +208,6 @@ exports[`Link Component specified styles should return a Link object with a ligh
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
 >
   Lorem Ipsum
 </a>
@@ -245,7 +238,6 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
 >
   Lorem Ipsum
 </a>
@@ -276,7 +268,6 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
 >
   Lorem Ipsum
 </a>
@@ -307,7 +298,6 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
 >
   Lorem Ipsum
 </a>
@@ -338,7 +328,6 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
 >
   Lorem Ipsum
 </a>
@@ -369,7 +358,6 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
 >
   Lorem Ipsum
 </a>
@@ -400,7 +388,6 @@ exports[`Link Component specified styles should return a Link object with font-s
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
 >
   Lorem Ipsum
 </a>
@@ -431,7 +418,6 @@ exports[`Link Component specified styles should return a Link object with font-s
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
 >
   Lorem Ipsum
 </a>
@@ -463,7 +449,6 @@ exports[`Link Component specified styles should return a Link object with font-s
 
 <a
   className="c0"
-  hoverStyle="brandLinkHover"
 >
   Lorem Ipsum
 </a>
