@@ -16,8 +16,8 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -82,8 +82,8 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 8px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -148,8 +148,8 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -214,8 +214,8 @@ exports[`TextFieldComponent with a password attribute should return a TextFieldC
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -280,8 +280,8 @@ exports[`TextFieldComponent with an email attribute should return a TextFieldCom
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 

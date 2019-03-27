@@ -58,8 +58,8 @@ exports[`Form Component base should return a Form object and textField with fill
   text-decoration: inherit;
   border-bottom: 1px solid hsl(0,0%,25%);
   border-radius: 4px 4px 0 0;
-  padding: 1.5rem 1rem 0.5rem;
   outline: 0;
+  padding: 1.5rem 1rem 0.5rem;
   width: 100%;
 }
 
@@ -191,8 +191,8 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   text-decoration: inherit;
   border-bottom: 1px solid hsl(0,0%,25%);
   border-radius: 4px 4px 0 0;
-  padding: 1.5rem 1rem 0.5rem;
   outline: 0;
+  padding: 1.5rem 1rem 0.5rem;
   width: 100%;
 }
 
@@ -255,8 +255,8 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   text-decoration: inherit;
   border-bottom: 1px solid hsl(0,0%,25%);
   border-radius: 2px 2px 0 0;
-  padding: 1.5rem 1rem 0.5rem;
   outline: 0;
+  padding: 1.5rem 1rem 0.5rem;
   width: 100%;
 }
 
@@ -604,8 +604,8 @@ exports[`Form Component base should return a Form object with filled formStyle a
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 

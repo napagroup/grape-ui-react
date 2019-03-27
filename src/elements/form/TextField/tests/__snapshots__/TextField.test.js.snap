@@ -45,8 +45,8 @@ exports[`TextField  a large TextField object should return a large TextField obj
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 8px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -152,8 +152,8 @@ exports[`TextField Component base should return a TextField object 1`] = `
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -259,8 +259,8 @@ exports[`TextField a TextField object should return a TextField object with a re
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -435,8 +435,8 @@ exports[`TextField a small TextField object should return a disabled TextField 1
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -543,8 +543,8 @@ exports[`TextField a small TextField object should return a small TextField obje
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -650,8 +650,8 @@ exports[`TextField a small TextField object should return a small TextField obje
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -757,8 +757,8 @@ exports[`TextField a small TextField object should return a small TextField obje
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -844,8 +844,8 @@ exports[`TextField with a password attribute should return a TextField of input 
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -925,8 +925,8 @@ exports[`TextField with an email attribute should return a TextField of input ty
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -1043,8 +1043,8 @@ exports[`TextField with assistive text should return a TextField object contain 
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -1173,8 +1173,8 @@ exports[`TextField with some other props should return a TextField object contai
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -1304,8 +1304,8 @@ exports[`TextField with validation error should return a TextField object contai
   text-decoration: inherit;
   border: 1px solid hsl(4.1,89.6%,58.4%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 

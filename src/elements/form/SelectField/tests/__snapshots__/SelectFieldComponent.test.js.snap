@@ -17,8 +17,8 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -254,8 +254,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 8px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -491,8 +491,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 

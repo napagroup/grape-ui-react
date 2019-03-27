@@ -179,11 +179,10 @@ const propsToTrim = [
   'controlId',
   'disabled',
   'assistiveText',
-  'labelText',
   'required',
   'plainText',
 ];
-const plaintextPropsToTrim = ['controlId', 'labelText', 'assistiveText', 'validationError', 'required', 'formStyle'];
+const plaintextPropsToTrim = ['controlId', 'assistiveText', 'validationError', 'required', 'formStyle'];
 const renderValueOrComponent = propsFromComponent => {
   const {
     controlId,
@@ -228,7 +227,12 @@ export const SelectField = props => {
       pt={1}
       validationError={validationError}
     >
-      {renderValueOrComponent({ formStyle, plainText, ...props })}
+      {renderValueOrComponent({
+        ...props,
+        formStyle,
+        labelText,
+        plainText,
+      })}
     </ControlGroup>
   );
 };

@@ -5,6 +5,7 @@ import { removeSomeProps } from 'src/utils/componentHelpers';
 
 const propsToTrim = [
   'formStyle',
+  'labelText',
   'plainText',
   'validationError',
   'email',

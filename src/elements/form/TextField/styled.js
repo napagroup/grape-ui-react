@@ -70,6 +70,7 @@ export const TextField = props => {
   const childProps = {
     bg,
     id: controlId,
+    labelText,
     required,
     validationError,
     ...removeSomeProps(otherProps, propsToTrim),

@@ -23,6 +23,7 @@ const propsToTrim = [
   'formStyle',
   'isDisabled',
   'isFocused',
+  'labelText',
   'menuFocusBg',
   'menuFocusColor',
   'menuSelectedBg',

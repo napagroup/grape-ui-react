@@ -169,7 +169,6 @@ describe('When given null (falsy)', () => {
   it('should return all available themes', () => {
     const type = null;
     const actual = buttonThemes(type);
-    // console.log({actual, g: getGlobalStyles()})
     expect(actual).toEqual(expected);
     expect(actual.danger).toEqual(expected.danger);
     expect(actual.default).toEqual(expected.default);

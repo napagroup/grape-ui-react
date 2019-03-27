@@ -75,8 +75,8 @@ exports[`SelectField Component base should return a SelectField that contains Se
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -462,8 +462,8 @@ exports[`SelectField Component with plainText or disabled should return an input
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
   opacity: 0.3;
 }
@@ -760,8 +760,8 @@ exports[`SelectField Component with space should return a SelectField with space
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -1059,8 +1059,8 @@ exports[`SelectField Component with style should return a SelectField with backg
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -1358,8 +1358,8 @@ exports[`SelectField Component with style should return a SelectField with orang
   text-decoration: inherit;
   border: 1px solid hsl(35.8,100%,50%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -1657,8 +1657,8 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 8px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -1956,8 +1956,8 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 

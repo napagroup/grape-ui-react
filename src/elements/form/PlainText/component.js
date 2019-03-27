@@ -7,8 +7,7 @@ const isArrayOptionsValue = value => !!value && Array.isArray(value);
 const getDisplayValue = props => {
   const { value } = props;
   if (isArrayOptionsValue(value)) {
-    const output = value.map(e => e.label).join(',');
-    return output;
+    return value.map(e => e.label).join(',');
   }
   if (!!value && !!value.label) {
     return value.label;
@@ -19,6 +18,7 @@ const getDisplayValue = props => {
 };
 
 const propsToTrim = [
+  'labelText',
   ...Object.keys(control.propTypes),
   ...Object.keys(spaceProps.propTypes),
   ...Object.keys(typography.propTypes),
