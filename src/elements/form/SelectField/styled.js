@@ -11,6 +11,7 @@ import {
   controlStyles,
   defaultControlStyles,
   defaultStylesBase,
+  disabledStyle,
   focusStyles,
   fontFamilyCore,
   fontSizeCore,
@@ -28,16 +29,22 @@ import { getAssistiveText } from 'src/elements/form/AssistiveText';
 import { SelectComponent } from './component';
 
 const controlStylesSelectField = props => {
-  if (!props.validationError && !props.isDisabled) {
-    return controlStyles(props);
-  } if (props.validationError) {
+  if (props.validationError) {
     return controlStyles({ ...props, activeColor: 'brandDanger', borderColor: 'brandDanger' });
   }
-  return controlStyles({ ...props, activeColor: 'white.light', borderColor: 'white.light' });
+  return controlStyles(props);
 };
+
 const focusStyleSelectField = props => {
   if (props.isFocused) {
     return focusStyles(props);
+  }
+  return '';
+};
+
+const disabledStyleSelectField = props => {
+  if (props.isDisabled) {
+    return disabledStyle;
   }
   return '';
 };
@@ -108,7 +115,6 @@ const reactSelectStylesOverrides = props => {
         fill: ${resolveColor('brandLinkHover', globalOverrides)}
       }
     }
-    &:has(.grape-ui-select__control--is-focused) {  }
     ${dropdownOffset}
   `;
 };
@@ -126,6 +132,7 @@ export const SelectFieldComponent = styled(SelectComponent)`
   ${controlStylesSelectField}
   ${focusStyleSelectField}
   ${reactSelectStylesOverrides}
+  ${disabledStyleSelectField}
 `;
 SelectFieldComponent.propTypes = {
   ...control.propTypes,

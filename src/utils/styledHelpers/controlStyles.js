@@ -32,6 +32,11 @@ export const focusStyles = props => {
   `;
 };
 
+export const disabledStyle = `
+  opacity: 0.3;
+  ~ * { color: rgba(0,0,0,0.3); }
+`;
+
 const scaleFactor = props => {
   const { sm, lg } = props;
   const { borderRadius: { base: schemaBase, sm: schemaSm, lg: schemaLg } } = borderSchema;
@@ -66,8 +71,7 @@ const getFinalStyle = props => {
     width: 100%;
     &[required] + label:after { content: "*" }
     &[disabled] {
-      opacity: 0.3;
-      ~ * { color: rgba(0,0,0,0.3); }
+      ${disabledStyle}
     }
     &:focus{ ${focusStyle} }
     &::placeholder { color: ${resolvedPlaceholderColor} }

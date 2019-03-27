@@ -80,9 +80,9 @@ describe('SelectField Component with plainText or disabled', () => {
     const component = mount(element);
     expect(component.find(PlainText).find('div')).toMatchSnapshot();
   });
-  it('should return a SelectField with disabled input contains a props "disabled": true', () => {
-    const component = mount(<SelectField controlId="exampleColor" disabled id="exampleColor" labelText="Color" value={colorOptions[1]} />);
-    expect(component.find('input').props().disabled).toEqual(true);
+  it('should return an input with disabled: true', () => {
+    const element = <SelectField controlId="exampleColor" disabled labelText="Color" value={colorOptions[1]} />;
+    expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
 
