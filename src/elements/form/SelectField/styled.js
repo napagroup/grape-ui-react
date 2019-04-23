@@ -52,7 +52,6 @@ const disabledStyleSelectField = props => {
 const reactSelectStylesOverrides = props => {
   const {
     chipBg,
-    formStyle,
     menuFocusBg,
     menuFocusColor,
     menuSelectedBg,
@@ -60,7 +59,8 @@ const reactSelectStylesOverrides = props => {
     placeholderColor,
   } = props;
   const globalOverrides = getGlobalOverrides(props);
-  const dropdownOffset = formStyle === 'filled' ? '.grape-ui-select__dropdown-indicator { margin-top: -0.5rem; }' : '';
+  const { padding } = defaultControlStyles;
+  const indicatorsWidth = '40px';
   return `
     .grape-ui-select__control {
       display: flex;
@@ -76,6 +76,7 @@ const reactSelectStylesOverrides = props => {
     }
     .grape-ui-select__value-container {
       padding: 0;
+      padding-right: ${indicatorsWidth};
     }
     .grape-ui-select__menu {
       position: absolute;
@@ -115,7 +116,24 @@ const reactSelectStylesOverrides = props => {
         fill: ${resolveColor('brandLinkHover', globalOverrides)}
       }
     }
-    ${dropdownOffset}
+    .grape-ui-select__indicators {
+      height: 100%;
+      justify-content: flex-end;
+      position: absolute;
+      right: ${padding};
+      top: 0;
+      width: ${indicatorsWidth};
+    }
+    &.grape-ui-select--is-rtl {
+      .grape-ui-select__value-container {
+        padding-right: 0;
+        padding-left: ${indicatorsWidth};
+      }
+      .grape-ui-select__indicators {
+        left: ${padding};
+        right: auto;
+      }
+    }
   `;
 };
 

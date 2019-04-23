@@ -79,6 +79,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
 
 .c0 .grape-ui-select__value-container {
   padding: 0;
+  padding-right: 40px;
 }
 
 .c0 .grape-ui-select__menu {
@@ -130,6 +131,28 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
 
 .c0 .grape-ui-select__multi-value__remove:hover path {
   fill: hsl(207,90%,54%);
+}
+
+.c0 .grape-ui-select__indicators {
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: 40px;
+}
+
+.c0.grape-ui-select--is-rtl .grape-ui-select__value-container {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.c0.grape-ui-select--is-rtl .grape-ui-select__indicators {
+  left: 1rem;
+  right: auto;
 }
 
 <div
@@ -316,6 +339,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
 
 .c0 .grape-ui-select__value-container {
   padding: 0;
+  padding-right: 40px;
 }
 
 .c0 .grape-ui-select__menu {
@@ -367,6 +391,28 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
 
 .c0 .grape-ui-select__multi-value__remove:hover path {
   fill: hsl(207,90%,54%);
+}
+
+.c0 .grape-ui-select__indicators {
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: 40px;
+}
+
+.c0.grape-ui-select--is-rtl .grape-ui-select__value-container {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.c0.grape-ui-select--is-rtl .grape-ui-select__indicators {
+  left: 1rem;
+  right: auto;
 }
 
 <div
@@ -553,6 +599,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
 
 .c0 .grape-ui-select__value-container {
   padding: 0;
+  padding-right: 40px;
 }
 
 .c0 .grape-ui-select__menu {
@@ -604,6 +651,28 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
 
 .c0 .grape-ui-select__multi-value__remove:hover path {
   fill: hsl(207,90%,54%);
+}
+
+.c0 .grape-ui-select__indicators {
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: 40px;
+}
+
+.c0.grape-ui-select--is-rtl .grape-ui-select__value-container {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.c0.grape-ui-select--is-rtl .grape-ui-select__indicators {
+  left: 1rem;
+  right: auto;
 }
 
 <div

@@ -33,7 +33,11 @@ const propsToTrim = [
   'validationError',
 ];
 export const SelectComponent = ({ children, ...props }) => {
-  const { isDisabled, isFocused, multiple } = props;
+  const {
+    isDisabled,
+    isFocused,
+    multiple,
+  } = props;
   return (
     <Select
       className="grape-ui-select-container"

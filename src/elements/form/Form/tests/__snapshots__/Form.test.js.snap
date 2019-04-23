@@ -323,6 +323,7 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
 
 .c5 .grape-ui-select__value-container {
   padding: 0;
+  padding-right: 40px;
 }
 
 .c5 .grape-ui-select__menu {
@@ -376,8 +377,26 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   fill: hsl(207,90%,54%);
 }
 
-.c5 .grape-ui-select__dropdown-indicator {
-  margin-top: -0.5rem;
+.c5 .grape-ui-select__indicators {
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: 40px;
+}
+
+.c5.grape-ui-select--is-rtl .grape-ui-select__value-container {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.c5.grape-ui-select--is-rtl .grape-ui-select__indicators {
+  left: 1rem;
+  right: auto;
 }
 
 <form

@@ -65,6 +65,10 @@ describe('SelectField Component with style', () => {
     const element = <SelectField assistiveText="Please tell me your color" borderColor="orange" controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} value={colorOptions[1]} />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
+  it('should return a SelectField that is from right to left;', () => {
+    const element = <SelectField assistiveText="Please tell me your color" controlId="exampleColor" isRtl labelText="Color" options={colorOptions} value={colorOptions[1]} />;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
 });
 
 describe('SelectField Component with space', () => {
