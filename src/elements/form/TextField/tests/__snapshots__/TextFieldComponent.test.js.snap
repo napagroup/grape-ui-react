@@ -198,6 +198,222 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
 />
 `;
 
+exports[`TextFieldComponent with a currency attribute should return a TextFieldComponent that contains has currency style 1`] = `
+.c0 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<input
+  autoComplete="no"
+  className="c0"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  readOnly={false}
+  tabIndex="0"
+  type="text"
+  value="$"
+/>
+`;
+
+exports[`TextFieldComponent with a integer attribute should return a TextFieldComponent that contains has integer style 1`] = `
+.c0 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<input
+  autoComplete="no"
+  className="c0"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  readOnly={false}
+  tabIndex="0"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`TextFieldComponent with a numeric attribute should return a TextFieldComponent that contains has numeric style 1`] = `
+.c0 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<input
+  autoComplete="no"
+  className="c0"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  readOnly={false}
+  tabIndex="0"
+  type="text"
+  value=""
+/>
+`;
+
 exports[`TextFieldComponent with a password attribute should return a TextFieldComponent of input type password 1`] = `
 .c0 {
   color: inherit;
@@ -261,6 +477,150 @@ exports[`TextFieldComponent with a password attribute should return a TextFieldC
   readOnly={false}
   tabIndex="0"
   type="password"
+/>
+`;
+
+exports[`TextFieldComponent with a phone attribute should return a TextFieldComponent that contains has phone style 1`] = `
+.c0 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<input
+  autoComplete="no"
+  className="c0"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  readOnly={false}
+  tabIndex="0"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`TextFieldComponent with a postalCode attribute should return a TextFieldComponent that contains has postalCode style 1`] = `
+.c0 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<input
+  autoComplete="no"
+  className="c0"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  readOnly={false}
+  tabIndex="0"
+  type="text"
+  value=""
 />
 `;
 

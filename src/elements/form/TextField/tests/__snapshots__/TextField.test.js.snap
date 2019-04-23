@@ -819,6 +819,343 @@ exports[`TextField a small TextField object should return a small TextField obje
 </div>
 `;
 
+exports[`TextField with a currency attribute should return a TextField of input type currency 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<TextInputComponent
+  activeColor="brandPrimary"
+  bg={null}
+  borderColor="borderColor"
+  borderRadius="4px"
+  className="c0"
+  currency={true}
+  email={false}
+  formStyle=""
+  id="currency"
+  isFocused={false}
+  labelText=""
+  padding="1rem"
+  password={false}
+  placeholderColor="gray.light"
+  plainText={false}
+  required={false}
+  validationError=""
+>
+  <Component
+    autoComplete="no"
+    className="c0"
+    id="currency"
+    options={
+      Object {
+        "initValue": undefined,
+        "numeral": true,
+        "numeralThousandsGroupStyle": "thousand",
+        "prefix": "$",
+      }
+    }
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+  >
+    <input
+      autoComplete="no"
+      className="c0"
+      id="currency"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      readOnly={false}
+      required={false}
+      tabIndex="0"
+      type="text"
+      value="$"
+    />
+  </Component>
+</TextInputComponent>
+`;
+
+exports[`TextField with a formatterOptions attribute should return a TextField with formatterOptions 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<TextInputComponent
+  activeColor="brandPrimary"
+  bg={null}
+  borderColor="borderColor"
+  borderRadius="4px"
+  className="c0"
+  email={false}
+  formStyle=""
+  formatterOptions={
+    Object {
+      "initValue": undefined,
+      "numeral": true,
+      "numeralThousandsGroupStyle": "thousand",
+    }
+  }
+  id="formatterOptions"
+  isFocused={false}
+  labelText=""
+  padding="1rem"
+  password={false}
+  placeholderColor="gray.light"
+  plainText={false}
+  required={false}
+  validationError=""
+>
+  <Component
+    autoComplete="no"
+    className="c0"
+    id="formatterOptions"
+    options={
+      Object {
+        "initValue": undefined,
+        "numeral": true,
+        "numeralThousandsGroupStyle": "thousand",
+      }
+    }
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+  >
+    <input
+      autoComplete="no"
+      className="c0"
+      id="formatterOptions"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      readOnly={false}
+      required={false}
+      tabIndex="0"
+      type="text"
+      value=""
+    />
+  </Component>
+</TextInputComponent>
+`;
+
+exports[`TextField with a numeric attribute should return a TextField of input type numeric 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<TextInputComponent
+  activeColor="brandPrimary"
+  bg={null}
+  borderColor="borderColor"
+  borderRadius="4px"
+  className="c0"
+  email={false}
+  formStyle=""
+  id="numeric"
+  isFocused={false}
+  labelText=""
+  numeric={true}
+  padding="1rem"
+  password={false}
+  placeholderColor="gray.light"
+  plainText={false}
+  required={false}
+  validationError=""
+>
+  <Component
+    autoComplete="no"
+    className="c0"
+    id="numeric"
+    options={
+      Object {
+        "initValue": undefined,
+        "numeral": true,
+        "numeralThousandsGroupStyle": "thousand",
+      }
+    }
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+  >
+    <input
+      autoComplete="no"
+      className="c0"
+      id="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      readOnly={false}
+      required={false}
+      tabIndex="0"
+      type="text"
+      value=""
+    />
+  </Component>
+</TextInputComponent>
+`;
+
 exports[`TextField with a password attribute should return a TextField of input type password 1`] = `
 .c0 {
   position: relative;
@@ -900,6 +1237,232 @@ exports[`TextField with a password attribute should return a TextField of input 
 </div>
 `;
 
+exports[`TextField with a phone attribute should return a TextField of input type phone 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<TextInputComponent
+  activeColor="brandPrimary"
+  bg={null}
+  borderColor="borderColor"
+  borderRadius="4px"
+  className="c0"
+  email={false}
+  formStyle=""
+  id="phone"
+  isFocused={false}
+  labelText=""
+  padding="1rem"
+  password={false}
+  phone={true}
+  placeholderColor="gray.light"
+  plainText={false}
+  required={false}
+  validationError=""
+>
+  <Component
+    autoComplete="no"
+    className="c0"
+    id="phone"
+    options={
+      Object {
+        "delimiter": "-",
+        "initValue": undefined,
+        "phone": true,
+        "phoneRegionCode": "US",
+      }
+    }
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+  >
+    <input
+      autoComplete="no"
+      className="c0"
+      id="phone"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      readOnly={false}
+      required={false}
+      tabIndex="0"
+      type="text"
+      value=""
+    />
+  </Component>
+</TextInputComponent>
+`;
+
+exports[`TextField with a postalCode attribute should return a TextField of input type postalCode 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<TextInputComponent
+  activeColor="brandPrimary"
+  bg={null}
+  borderColor="borderColor"
+  borderRadius="4px"
+  className="c0"
+  email={false}
+  formStyle=""
+  id="postalCode"
+  isFocused={false}
+  labelText=""
+  padding="1rem"
+  password={false}
+  placeholderColor="gray.light"
+  plainText={false}
+  postalCode={true}
+  required={false}
+  validationError=""
+>
+  <Component
+    autoComplete="no"
+    className="c0"
+    id="postalCode"
+    options={
+      Object {
+        "blocks": Array [
+          5,
+          4,
+        ],
+        "delimiter": "-",
+        "delimiterLazyShow": true,
+        "initValue": undefined,
+        "numericOnly": true,
+      }
+    }
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+  >
+    <input
+      autoComplete="no"
+      className="c0"
+      id="postalCode"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      readOnly={false}
+      required={false}
+      tabIndex="0"
+      type="text"
+      value=""
+    />
+  </Component>
+</TextInputComponent>
+`;
+
 exports[`TextField with an email attribute should return a TextField of input type email 1`] = `
 .c0 {
   position: relative;
@@ -979,6 +1542,117 @@ exports[`TextField with an email attribute should return a TextField of input ty
     type="email"
   />
 </div>
+`;
+
+exports[`TextField with an integer attribute should return a TextField of input type integer 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<TextInputComponent
+  activeColor="brandPrimary"
+  bg={null}
+  borderColor="borderColor"
+  borderRadius="4px"
+  className="c0"
+  email={false}
+  formStyle=""
+  id="integer"
+  integer={true}
+  isFocused={false}
+  labelText=""
+  padding="1rem"
+  password={false}
+  placeholderColor="gray.light"
+  plainText={false}
+  required={false}
+  validationError=""
+>
+  <Component
+    autoComplete="no"
+    className="c0"
+    id="integer"
+    options={
+      Object {
+        "initValue": undefined,
+        "numeral": true,
+        "numeralDecimalScale": 0,
+        "numeralThousandsGroupStyle": "thousand",
+      }
+    }
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+  >
+    <input
+      autoComplete="no"
+      className="c0"
+      id="integer"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      readOnly={false}
+      required={false}
+      tabIndex="0"
+      type="text"
+      value=""
+    />
+  </Component>
+</TextInputComponent>
 `;
 
 exports[`TextField with assistive text should return a TextField object contain Assistive Text 1`] = `
