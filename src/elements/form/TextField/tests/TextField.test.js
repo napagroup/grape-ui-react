@@ -1,7 +1,10 @@
 import React from 'react';
 import { TextField } from '..';
+import { Link } from 'elements/typography';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
+
+const proclaimersSong = <Link href="https://youtu.be/tbNlMtqrYS0" target="_blank">Well you know I&#39;m gonna be...</Link>;
 
 const assertReactElement = element => {
   const component = renderer.create(element);
@@ -17,6 +20,12 @@ describe('TextField Component base', () => {
 describe('TextField with assistive text', () => {
   it('should return a TextField object contain Assistive Text', () => {
     const element = <TextField assistiveText="Please tell me your name" controlId="exampleFullName" labelText="Full name" />;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+describe('TextField with object in assistive text', () => {
+  it('should return a TextField object contain Assistive Text', () => {
+    const element = <TextField assistiveText={proclaimersSong} controlId="exampleFullName" labelText="Full name" />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

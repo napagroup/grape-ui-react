@@ -93,7 +93,10 @@ export const TextField = props => {
 
 TextField.propTypes = {
   activeColor: PropTypes.string,
-  assistiveText: PropTypes.string,
+  assistiveText: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string,
+  ]),
   bg: PropTypes.string,
   controlId: PropTypes.string.isRequired,
   formStyle: PropTypes.string,

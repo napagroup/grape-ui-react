@@ -1111,6 +1111,164 @@ exports[`TextField with assistive text should return a TextField object contain 
 </div>
 `;
 
+exports[`TextField with object in assistive text should return a TextField object contain Assistive Text 1`] = `
+.c2 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: inherit;
+  font-size: 0.8rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  top: -1px;
+  height: 0.4rem;
+  position: absolute;
+}
+
+.c3 {
+  color: hsl(0,0%,50%);
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
+.c0 {
+  position: relative;
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  padding-top: 4px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+.c1 {
+  color: inherit;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.c1[required] + label:after {
+  content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c4 {
+  color: hsl(186.8,100%,41.6%);
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4:hover,
+.c4:active {
+  color: hsl(207,90%,54%);
+  cursor: pointer;
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    id="exampleFullName"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullName"
+  >
+    Full name
+  </label>
+  <div
+    className="c3"
+    id="exampleFullNameHelp"
+  >
+    <a
+      className="c4"
+      href="https://youtu.be/tbNlMtqrYS0"
+      target="_blank"
+    >
+      Well you know I'm gonna be...
+    </a>
+  </div>
+</div>
+`;
+
 exports[`TextField with some other props should return a TextField object contain input with those other props  1`] = `
 .c2 {
   color: inherit;

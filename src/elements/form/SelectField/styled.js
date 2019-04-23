@@ -257,7 +257,10 @@ export const SelectField = props => {
 
 SelectField.propTypes = {
   activeColor: PropTypes.string,
-  assistiveText: PropTypes.string,
+  assistiveText: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string,
+  ]),
   controlId: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   formStyle: PropTypes.string,

@@ -548,6 +548,7 @@ exports[`SelectField Component with plainText or disabled should return an input
 
 .c1 .grape-ui-select__value-container {
   padding: 0;
+  padding-right: 40px;
 }
 
 .c1 .grape-ui-select__menu {
@@ -601,6 +602,28 @@ exports[`SelectField Component with plainText or disabled should return an input
   fill: hsl(207,90%,54%);
 }
 
+.c1 .grape-ui-select__indicators {
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__value-container {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__indicators {
+  left: 1rem;
+  right: auto;
+}
+
 .c1 ~ * {
   color: rgba(0,0,0,0.3);
 }
@@ -643,7 +666,7 @@ exports[`SelectField Component with plainText or disabled should return an input
               autoComplete="off"
               autoCorrect="off"
               disabled={true}
-              id="react-select-12-input"
+              id="react-select-13-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -1105,8 +1128,8 @@ exports[`SelectField Component with style should return a SelectField that is fr
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
