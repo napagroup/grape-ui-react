@@ -1,9 +1,8 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+import { getAssistiveText } from 'src/elements/form/AssistiveText';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import { fontWeight } from 'styled-system';
-import styled from 'styled-components';
 import {
   control,
   controlColor,
@@ -19,7 +18,8 @@ import {
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
-import { getAssistiveText } from 'src/elements/form/AssistiveText';
+import styled from 'styled-components';
+import { borderRadius, fontWeight } from 'styled-system';
 import { TextInputComponent } from './component';
 
 const controlStylesTextField = props => (!props.validationError ? controlStyles(props)
@@ -27,15 +27,15 @@ const controlStylesTextField = props => (!props.validationError ? controlStyles(
 
 export const TextFieldComponent = styled(TextInputComponent)`
   ${controlColor}
+  ${controlStylesTextField}
   ${fontFamilyCore}
   ${fontSizeCore}
+  ${fontStyleCore}
   ${fontWeight}
   ${letterSpacingCore}
   ${lineHeightCore}
-  ${fontStyleCore}
   ${textAlignCore}
   ${textDecorationCore}
-  ${controlStylesTextField}
 `;
 
 TextFieldComponent.propTypes = {
@@ -103,6 +103,7 @@ TextField.propTypes = {
   labelText: PropTypes.string,
   required: PropTypes.bool,
   validationError: PropTypes.string,
+  ...borderRadius.propTypes,
 };
 
 TextField.defaultProps = {

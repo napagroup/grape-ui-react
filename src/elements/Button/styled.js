@@ -32,6 +32,7 @@ import {
   zIndex,
 } from 'styled-system';
 import {
+  borderRadiusCore,
   colorCore,
   defaultStylesBase,
   fontFamilyCore,
@@ -101,7 +102,7 @@ export const Button = styled(ButtonComponent)`
   ${alignItems}
   ${alignSelf}
   ${borderButton}
-  ${borderRadius}
+  ${borderRadiusCore}
   ${borderWidth}
   ${boxShadowButtonMemoized()}
   ${bottom}
@@ -195,7 +196,7 @@ Button.defaultProps = {
   bgActiveColor: null,
   bgHoverColor: null,
   border: `1px solid ${resolveColor('borderColor')}`,
-  borderRadius: '4px',
+  borderRadius: '',
   color: null,
   contained: false,
   display: 'inline-block',

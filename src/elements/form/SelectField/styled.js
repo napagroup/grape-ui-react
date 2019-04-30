@@ -1,10 +1,10 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+import { getAssistiveText } from 'src/elements/form/AssistiveText';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
+import { PlainText } from 'src/elements/form/PlainText';
 import { getGlobalOverrides } from 'src/global-styles';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import { fontWeight, space } from 'styled-system';
-import styled from 'styled-components';
 import {
   control,
   controlColor,
@@ -24,8 +24,8 @@ import {
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
-import { PlainText } from 'src/elements/form/PlainText';
-import { getAssistiveText } from 'src/elements/form/AssistiveText';
+import styled from 'styled-components';
+import { borderRadius, fontWeight, space } from 'styled-system';
 import { SelectComponent } from './component';
 
 const controlStylesSelectField = props => {
@@ -268,6 +268,7 @@ SelectField.propTypes = {
   plainText: PropTypes.bool,
   required: PropTypes.bool,
   validationError: PropTypes.string,
+  ...borderRadius.propTypes,
   ...space.propTypes,
 };
 

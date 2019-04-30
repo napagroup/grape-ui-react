@@ -4,7 +4,7 @@ exports[`Link Component base should return a react router tag, given a 'to' attr
 .c0 {
   color: hsl(186.8,100%,41.6%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -36,7 +36,7 @@ exports[`Link Component base should return an anchor tag 1`] = `
 .c0 {
   color: hsl(186.8,100%,41.6%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -66,7 +66,7 @@ exports[`Link Component base should return an anchor tag with an href, given the
 .c0 {
   color: hsl(186.8,100%,41.6%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -97,7 +97,7 @@ exports[`Link Component specified styles should return a Link object with a base
 .c0 {
   color: hsl(122.4,39.4%,49.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -127,7 +127,7 @@ exports[`Link Component specified styles should return a Link object with a base
 .c0 {
   color: hsl(122.4,39.4%,49.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -157,7 +157,7 @@ exports[`Link Component specified styles should return a Link object with a dark
 .c0 {
   color: hsl(122.4,39.4%,29.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -187,7 +187,7 @@ exports[`Link Component specified styles should return a Link object with a ligh
 .c0 {
   color: hsl(122.4,39.4%,69.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -247,7 +247,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 .c0 {
   color: hsl(186.8,100%,41.6%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: bold;
   -webkit-letter-spacing: inherit;
@@ -277,7 +277,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 .c0 {
   color: hsl(186.8,100%,41.6%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: 2px;
@@ -307,7 +307,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 .c0 {
   color: hsl(186.8,100%,41.6%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -337,7 +337,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 .c0 {
   color: hsl(186.8,100%,41.6%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -367,7 +367,7 @@ exports[`Link Component specified styles should return a Link object with font-s
 .c0 {
   color: hsl(186.8,100%,41.6%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -397,7 +397,7 @@ exports[`Link Component specified styles should return a Link object with font-s
 .c0 {
   color: hsl(186.8,100%,41.6%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -427,7 +427,7 @@ exports[`Link Component specified styles should return a Link object with font-s
 .c0 {
   color: hsl(186.8,100%,41.6%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;

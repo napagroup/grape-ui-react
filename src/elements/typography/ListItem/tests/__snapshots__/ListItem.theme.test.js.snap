@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem using Theme Font Family should return a ListItem object with a custom font family 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  font-family: "DejaVu Sans Mono","Bitstream Vera Sans Mono",Courier;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-bottom: 0.25rem;
+}
+
+<li
+  className="c0"
+>
+  Lorem Ipsum
+</li>
+`;
+
+exports[`ListItem using Theme color should return a ListItem object with custom color 1`] = `
+.c0 {
+  color: hsl(313,67.8%,47.5%);
+  background-color: hsl(305,33.9%,23.7%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-bottom: 0.25rem;
+}
+
+<li
+  className="c0"
+>
+  Lorem Ipsum
+</li>
+`;

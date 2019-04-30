@@ -29,7 +29,9 @@
     "<rootDir>/src/internals",
     "<rootDir>/src/elements/typography/index.js"
   ],
-  "setupTestFrameworkScriptFile": "<rootDir>/src/internals/testing/test-bundler.js",
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/internals/testing/test-bundler.js"
+  ],
   "testRegex": "tests/.*\\.test\\.js$",
   "snapshotSerializers": [
     "enzyme-to-json/serializer"

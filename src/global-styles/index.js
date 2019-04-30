@@ -43,5 +43,7 @@ export const getGlobalStyles = (overrides = {}) => {
  * @param {Object} props The object containing the theme object.
  */
 export const getGlobalOverrides = (props = {}) => getGlobalStyles({
+  border: themeGet('border', null)(props),
   colors: themeGet('colors', null)(props),
+  fontFamily: themeGet('fonts', null)(props),
 });

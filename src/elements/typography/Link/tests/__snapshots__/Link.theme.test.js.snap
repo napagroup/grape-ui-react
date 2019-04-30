@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link using Theme Font Family should return a Link object with a custom font family 1`] = `
+.c0 {
+  color: hsl(186.8,100%,41.6%);
+  background-color: transparent;
+  font-family: "DejaVu Sans Mono","Bitstream Vera Sans Mono",Courier;
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+  cursor: pointer;
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
+exports[`Link using Theme color should return a Link object with custom color 1`] = `
+.c0 {
+  color: hsl(313,67.8%,47.5%);
+  background-color: hsl(305,33.9%,23.7%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+  cursor: pointer;
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;

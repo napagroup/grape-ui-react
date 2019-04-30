@@ -4,7 +4,7 @@ exports[`ListItem Component base should return a ListItem object with base styli
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -29,7 +29,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 .c0 {
   color: hsl(122.4,39.4%,49.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -54,7 +54,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 .c0 {
   color: hsl(122.4,39.4%,49.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -79,7 +79,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 .c0 {
   color: hsl(122.4,39.4%,29.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -104,7 +104,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 .c0 {
   color: hsl(122.4,39.4%,69.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -154,7 +154,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: bold;
   -webkit-letter-spacing: inherit;
@@ -179,7 +179,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: 2px;
@@ -204,7 +204,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -229,7 +229,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -254,7 +254,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -279,7 +279,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -304,7 +304,7 @@ exports[`ListItem Component specified styles should return a ListItem object wit
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;

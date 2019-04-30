@@ -4,7 +4,7 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;

@@ -49,4 +49,20 @@ describe('When calling global overrides with props with theme', () => {
     expect(actual.colors.grape).toEqual(themeColors.grape);
     expect(actual.colors.kiwi).toEqual(themeColors.kiwi);
   });
+  it('should return global styles merged with theme border radius', () => {
+    // Arrange
+    const themeBorder = {
+      borderRadius: {
+        base: '8px',
+        lg: '12px',
+        sm: '4px',
+      },
+    };
+    const props = { theme: { border: themeBorder } };
+    // Act
+    const actual = getGlobalOverrides(props);
+    // Assert
+    assertGlobalStyleInterface(actual);
+    expect(actual.border.borderRadius).toEqual(themeBorder.borderRadius);
+  });
 });

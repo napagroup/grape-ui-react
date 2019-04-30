@@ -1,5 +1,5 @@
 import { getGlobalStyles, getGlobalOverrides } from 'src/global-styles';
-import { resolveColor } from './utils';
+import { resolveBorderRadius, resolveColor } from './utils';
 import { defaultControlStyles, defaultStylesBase } from './cssDefaults';
 import { colorCore } from './core';
 
@@ -71,6 +71,7 @@ const getFinalStyle = props => {
   const resolvedPlaceholderColor = resolveColor(placeholderColor, globalOverrides);
   const topLabel = `${Number.parseInt(padding, 10) - 0.2}rem`;
   const controlSharedStyle = `
+    border-radius: ${resolveBorderRadius(props)};
     outline: 0;
     padding: ${getFinalFieldPadding(padding, formStyle, labelText)};
     width: 100%;
