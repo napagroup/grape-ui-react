@@ -1,4 +1,5 @@
 import {
+  borderRadius,
   color,
   fontFamily,
   fontSize,
@@ -6,17 +7,23 @@ import {
   lineHeight,
   textAlign,
 } from 'styled-system';
-import { getGlobalStyles, getGlobalOverrides } from 'src/global-styles';
+import { getGlobalOverrides } from 'src/global-styles';
 import { defaultStylesBase } from './cssDefaults';
 import {
   resolveColor,
+  resolveFontFamily,
   scaleFont,
-  scaleFactor,
+  scaleFactor, resolveBorderRadius,
 } from './utils';
 
-const {
-  fontFamily: fontFamilySchema,
-} = getGlobalStyles();
+export const borderRadiusCore = props => {
+  const nextGlobalOverrides = getGlobalOverrides(props);
+  const nextProps = {
+    ...props,
+    borderRadius: resolveBorderRadius(props, nextGlobalOverrides),
+  };
+  return borderRadius(nextProps);
+};
 
 export const colorCore = props => {
   let nextProps = null;
@@ -36,6 +43,7 @@ export const colorCore = props => {
   }
   return color(nextProps);
 };
+
 export const fontSizeCore = props => {
   let value = props.fontSize || defaultStylesBase.fontSize;
   const scaleValue = scaleFactor(props);
@@ -50,9 +58,11 @@ export const fontSizeCore = props => {
 };
 
 export const fontFamilyCore = props => {
-  let value = defaultStylesBase.fontFamily;
+  const defaultValue = resolveFontFamily(defaultStylesBase.fontFamily);
+  let value = defaultValue;
   if (props && props.fontFamily) {
-    value = fontFamilySchema[props.fontFamily] || defaultStylesBase.fontFamily;
+    const nextGlobalOverrides = getGlobalOverrides(props);
+    value = resolveFontFamily(props.fontFamily, nextGlobalOverrides, defaultValue);
   }
   const nextProps = {
     ...props,

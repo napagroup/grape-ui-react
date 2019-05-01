@@ -65,6 +65,10 @@ describe('SelectField Component with style', () => {
     const element = <SelectField assistiveText="Please tell me your color" borderColor="orange" controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} value={colorOptions[1]} />;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
+  it('should return a SelectField that is from right to left;', () => {
+    const element = <SelectField assistiveText="Please tell me your color" controlId="exampleColor" isRtl labelText="Color" options={colorOptions} value={colorOptions[1]} />;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
 });
 
 describe('SelectField Component with space', () => {
@@ -80,9 +84,9 @@ describe('SelectField Component with plainText or disabled', () => {
     const component = mount(element);
     expect(component.find(PlainText).find('div')).toMatchSnapshot();
   });
-  it('should return a SelectField with disabled input contains a props "disabled": true', () => {
-    const component = mount(<SelectField controlId="exampleColor" disabled id="exampleColor" labelText="Color" value={colorOptions[1]} />);
-    expect(component.find('input').props().disabled).toEqual(true);
+  it('should return an input with disabled: true', () => {
+    const element = <SelectField controlId="exampleColor" disabled labelText="Color" value={colorOptions[1]} />;
+    expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
 

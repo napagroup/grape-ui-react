@@ -4,8 +4,9 @@ exports[`TextField  a large TextField object should return a large TextField obj
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -33,7 +34,13 @@ exports[`TextField  a large TextField object should return a large TextField obj
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 8px;
+  border-radius: 8px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -43,11 +50,6 @@ exports[`TextField  a large TextField object should return a large TextField obj
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 8px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
 }
 
 .c1[required] + label:after {
@@ -111,8 +113,9 @@ exports[`TextField Component base should return a TextField object 1`] = `
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -140,7 +143,13 @@ exports[`TextField Component base should return a TextField object 1`] = `
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -150,11 +159,6 @@ exports[`TextField Component base should return a TextField object 1`] = `
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
 }
 
 .c1[required] + label:after {
@@ -218,8 +222,9 @@ exports[`TextField a TextField object should return a TextField object with a re
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -247,7 +252,13 @@ exports[`TextField a TextField object should return a TextField object with a re
 .c1 {
   color: inherit;
   background-color: hsl(4.1,89.6%,58.4%);
-  font-family: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -257,11 +268,6 @@ exports[`TextField a TextField object should return a TextField object with a re
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
 }
 
 .c1[required] + label:after {
@@ -325,8 +331,9 @@ exports[`TextField a plainText TextField should return a disabled TextField 1`] 
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -354,7 +361,11 @@ exports[`TextField a plainText TextField should return a disabled TextField 1`] 
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  border: 0;
+  display: block;
+  outline: 0;
+  padding: 1rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -364,10 +375,6 @@ exports[`TextField a plainText TextField should return a disabled TextField 1`] 
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 0;
-  display: block;
-  outline: 0;
-  padding: 1rem;
 }
 
 <div
@@ -394,8 +401,9 @@ exports[`TextField a small TextField object should return a disabled TextField 1
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -423,7 +431,13 @@ exports[`TextField a small TextField object should return a disabled TextField 1
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -433,11 +447,6 @@ exports[`TextField a small TextField object should return a disabled TextField 1
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
 }
 
 .c1[required] + label:after {
@@ -502,8 +511,9 @@ exports[`TextField a small TextField object should return a small TextField obje
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -531,7 +541,13 @@ exports[`TextField a small TextField object should return a small TextField obje
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 2px;
+  border-radius: 2px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -541,11 +557,6 @@ exports[`TextField a small TextField object should return a small TextField obje
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 2px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
 }
 
 .c1[required] + label:after {
@@ -609,8 +620,9 @@ exports[`TextField a small TextField object should return a small TextField obje
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -638,7 +650,13 @@ exports[`TextField a small TextField object should return a small TextField obje
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -648,11 +666,6 @@ exports[`TextField a small TextField object should return a small TextField obje
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
 }
 
 .c1[required] + label:after {
@@ -716,8 +729,9 @@ exports[`TextField a small TextField object should return a small TextField obje
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -745,7 +759,13 @@ exports[`TextField a small TextField object should return a small TextField obje
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -755,11 +775,6 @@ exports[`TextField a small TextField object should return a small TextField obje
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
 }
 
 .c1[required] + label:after {
@@ -819,6 +834,343 @@ exports[`TextField a small TextField object should return a small TextField obje
 </div>
 `;
 
+exports[`TextField with a currency attribute should return a TextField of input type currency 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<TextInputComponent
+  activeColor="brandPrimary"
+  bg={null}
+  borderColor="borderColor"
+  className="c0"
+  currency={true}
+  email={false}
+  formStyle=""
+  id="currency"
+  isFocused={false}
+  labelText=""
+  padding="1rem"
+  password={false}
+  placeholderColor="gray.light"
+  plainText={false}
+  required={false}
+  validationError=""
+>
+  <Component
+    autoComplete="no"
+    className="c0"
+    id="currency"
+    options={
+      Object {
+        "initValue": undefined,
+        "numeral": true,
+        "numeralThousandsGroupStyle": "thousand",
+        "prefix": "$",
+      }
+    }
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+  >
+    <input
+      autoComplete="no"
+      className="c0"
+      id="currency"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      readOnly={false}
+      required={false}
+      tabIndex="0"
+      type="text"
+      value="$"
+    />
+  </Component>
+</TextInputComponent>
+`;
+
+exports[`TextField with a formatterOptions attribute should return a TextField with formatterOptions 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<TextInputComponent
+  activeColor="brandPrimary"
+  bg={null}
+  borderColor="borderColor"
+  className="c0"
+  email={false}
+  formStyle=""
+  formatterOptions={
+    Object {
+      "initValue": undefined,
+      "numeral": true,
+      "numeralThousandsGroupStyle": "thousand",
+    }
+  }
+  id="formatterOptions"
+  isFocused={false}
+  labelText=""
+  padding="1rem"
+  password={false}
+  placeholderColor="gray.light"
+  plainText={false}
+  required={false}
+  validationError=""
+>
+  <Component
+    autoComplete="no"
+    className="c0"
+    id="formatterOptions"
+    options={
+      Object {
+        "initValue": undefined,
+        "numeral": true,
+        "numeralThousandsGroupStyle": "thousand",
+      }
+    }
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+  >
+    <input
+      autoComplete="no"
+      className="c0"
+      id="formatterOptions"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      readOnly={false}
+      required={false}
+      tabIndex="0"
+      type="text"
+      value=""
+    />
+  </Component>
+</TextInputComponent>
+`;
+
+exports[`TextField with a numeric attribute should return a TextField of input type numeric 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<TextInputComponent
+  activeColor="brandPrimary"
+  bg={null}
+  borderColor="borderColor"
+  className="c0"
+  email={false}
+  formStyle=""
+  id="numeric"
+  isFocused={false}
+  labelText=""
+  numeric={true}
+  padding="1rem"
+  password={false}
+  placeholderColor="gray.light"
+  plainText={false}
+  required={false}
+  validationError=""
+>
+  <Component
+    autoComplete="no"
+    className="c0"
+    id="numeric"
+    options={
+      Object {
+        "initValue": undefined,
+        "numeral": true,
+        "numeralThousandsGroupStyle": "thousand",
+      }
+    }
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+  >
+    <input
+      autoComplete="no"
+      className="c0"
+      id="numeric"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      readOnly={false}
+      required={false}
+      tabIndex="0"
+      type="text"
+      value=""
+    />
+  </Component>
+</TextInputComponent>
+`;
+
 exports[`TextField with a password attribute should return a TextField of input type password 1`] = `
 .c0 {
   position: relative;
@@ -832,7 +1184,13 @@ exports[`TextField with a password attribute should return a TextField of input 
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -842,11 +1200,6 @@ exports[`TextField with a password attribute should return a TextField of input 
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
 }
 
 .c1[required] + label:after {
@@ -900,6 +1253,232 @@ exports[`TextField with a password attribute should return a TextField of input 
 </div>
 `;
 
+exports[`TextField with a phone attribute should return a TextField of input type phone 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<TextInputComponent
+  activeColor="brandPrimary"
+  bg={null}
+  borderColor="borderColor"
+  className="c0"
+  email={false}
+  formStyle=""
+  id="phone"
+  isFocused={false}
+  labelText=""
+  padding="1rem"
+  password={false}
+  phone={true}
+  placeholderColor="gray.light"
+  plainText={false}
+  required={false}
+  validationError=""
+>
+  <Component
+    autoComplete="no"
+    className="c0"
+    id="phone"
+    options={
+      Object {
+        "delimiter": "-",
+        "initValue": undefined,
+        "phone": true,
+        "phoneRegionCode": "US",
+      }
+    }
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+  >
+    <input
+      autoComplete="no"
+      className="c0"
+      id="phone"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      readOnly={false}
+      required={false}
+      tabIndex="0"
+      type="text"
+      value=""
+    />
+  </Component>
+</TextInputComponent>
+`;
+
+exports[`TextField with a postalCode attribute should return a TextField of input type postalCode 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<TextInputComponent
+  activeColor="brandPrimary"
+  bg={null}
+  borderColor="borderColor"
+  className="c0"
+  email={false}
+  formStyle=""
+  id="postalCode"
+  isFocused={false}
+  labelText=""
+  padding="1rem"
+  password={false}
+  placeholderColor="gray.light"
+  plainText={false}
+  postalCode={true}
+  required={false}
+  validationError=""
+>
+  <Component
+    autoComplete="no"
+    className="c0"
+    id="postalCode"
+    options={
+      Object {
+        "blocks": Array [
+          5,
+          4,
+        ],
+        "delimiter": "-",
+        "delimiterLazyShow": true,
+        "initValue": undefined,
+        "numericOnly": true,
+      }
+    }
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+  >
+    <input
+      autoComplete="no"
+      className="c0"
+      id="postalCode"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      readOnly={false}
+      required={false}
+      tabIndex="0"
+      type="text"
+      value=""
+    />
+  </Component>
+</TextInputComponent>
+`;
+
 exports[`TextField with an email attribute should return a TextField of input type email 1`] = `
 .c0 {
   position: relative;
@@ -913,7 +1492,13 @@ exports[`TextField with an email attribute should return a TextField of input ty
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -923,11 +1508,6 @@ exports[`TextField with an email attribute should return a TextField of input ty
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
 }
 
 .c1[required] + label:after {
@@ -981,12 +1561,141 @@ exports[`TextField with an email attribute should return a TextField of input ty
 </div>
 `;
 
+exports[`TextField with an integer attribute should return a TextField of input type integer 1`] = `
+.c0 {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0[required] + label:after {
+  content: "*";
+}
+
+.c0[disabled] {
+  opacity: 0.3;
+}
+
+.c0[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c0:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c0:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c0::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c0::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<TextInputComponent
+  activeColor="brandPrimary"
+  bg={null}
+  borderColor="borderColor"
+  className="c0"
+  email={false}
+  formStyle=""
+  id="integer"
+  integer={true}
+  isFocused={false}
+  labelText=""
+  padding="1rem"
+  password={false}
+  placeholderColor="gray.light"
+  plainText={false}
+  required={false}
+  validationError=""
+>
+  <Component
+    autoComplete="no"
+    className="c0"
+    id="integer"
+    options={
+      Object {
+        "initValue": undefined,
+        "numeral": true,
+        "numeralDecimalScale": 0,
+        "numeralThousandsGroupStyle": "thousand",
+      }
+    }
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+  >
+    <input
+      autoComplete="no"
+      className="c0"
+      id="integer"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      readOnly={false}
+      required={false}
+      tabIndex="0"
+      type="text"
+      value=""
+    />
+  </Component>
+</TextInputComponent>
+`;
+
 exports[`TextField with assistive text should return a TextField object contain Assistive Text 1`] = `
+.c3 {
+  color: hsl(0,0%,50%);
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1002,23 +1711,6 @@ exports[`TextField with assistive text should return a TextField object contain 
   position: absolute;
 }
 
-.c3 {
-  color: hsl(0,0%,50%);
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  padding: 0 1rem;
-}
-
 .c0 {
   position: relative;
   color: inherit;
@@ -1031,7 +1723,13 @@ exports[`TextField with assistive text should return a TextField object contain 
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1041,11 +1739,6 @@ exports[`TextField with assistive text should return a TextField object contain 
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
 }
 
 .c1[required] + label:after {
@@ -1111,12 +1804,30 @@ exports[`TextField with assistive text should return a TextField object contain 
 </div>
 `;
 
-exports[`TextField with some other props should return a TextField object contain input with those other props  1`] = `
+exports[`TextField with object in assistive text should return a TextField object contain Assistive Text 1`] = `
+.c3 {
+  color: hsl(0,0%,50%);
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1132,10 +1843,132 @@ exports[`TextField with some other props should return a TextField object contai
   position: absolute;
 }
 
+.c0 {
+  position: relative;
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  padding-top: 4px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+.c1 {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c1[required] + label:after {
+  content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c4 {
+  color: hsl(186.8,100%,41.6%);
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4:hover,
+.c4:active {
+  color: hsl(207,90%,54%);
+  cursor: pointer;
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    id="exampleFullName"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullName"
+  >
+    Full name
+  </label>
+  <div
+    className="c3"
+    id="exampleFullNameHelp"
+  >
+    <a
+      className="c4"
+      href="https://youtu.be/tbNlMtqrYS0"
+      target="_blank"
+    >
+      Well you know I'm gonna be...
+    </a>
+  </div>
+</div>
+`;
+
+exports[`TextField with some other props should return a TextField object contain input with those other props  1`] = `
 .c3 {
   color: hsl(0,0%,50%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -1147,6 +1980,27 @@ exports[`TextField with some other props should return a TextField object contai
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   padding: 0 1rem;
+}
+
+.c2 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  top: -1px;
+  height: 0.4rem;
+  position: absolute;
 }
 
 .c0 {
@@ -1161,7 +2015,13 @@ exports[`TextField with some other props should return a TextField object contai
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1171,11 +2031,6 @@ exports[`TextField with some other props should return a TextField object contai
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
 }
 
 .c1[required] + label:after {
@@ -1243,11 +2098,29 @@ exports[`TextField with some other props should return a TextField object contai
 `;
 
 exports[`TextField with validation error should return a TextField object contain Assistive Text with error style 1`] = `
+.c3 {
+  color: hsl(4.1,89.6%,58.4%);
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
 .c2 {
   color: hsl(4.1,89.6%,58.4%);
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1263,23 +2136,6 @@ exports[`TextField with validation error should return a TextField object contai
   position: absolute;
 }
 
-.c3 {
-  color: hsl(4.1,89.6%,58.4%);
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  padding: 0 1rem;
-}
-
 .c0 {
   position: relative;
   color: inherit;
@@ -1292,7 +2148,13 @@ exports[`TextField with validation error should return a TextField object contai
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  border: 1px solid hsl(4.1,89.6%,58.4%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -1302,11 +2164,6 @@ exports[`TextField with validation error should return a TextField object contai
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(4.1,89.6%,58.4%);
-  border-radius: 4px;
-  padding: 1rem;
-  outline: 0;
-  width: 100%;
 }
 
 .c1[required] + label:after {

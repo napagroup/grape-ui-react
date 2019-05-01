@@ -4,6 +4,7 @@ import { getGlobalStyles } from 'src/global-styles';
 import { fontWeight } from 'styled-system';
 import {
   colorCore,
+  defaultStylesBase,
   defaultControlStyles,
   fontFamilyCore,
   fontSizeCore,
@@ -35,7 +36,6 @@ export const ControlLabel = styled(ControlLabelComponent)`
   ${fontWeight}
   ${letterSpacingCore}
   ${lineHeightCore}
-  ${fontStyleCore}
   ${textAlignCore}
   ${textDecorationCore}
   left: ${padding};
@@ -53,6 +53,7 @@ ControlLabel.propTypes = {
 };
 
 ControlLabel.defaultProps = {
+  ...defaultStylesBase,
   bg: defaultControlStyles.bg,
   disabled: false,
   isRelative: false,

@@ -1,16 +1,17 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
+import { getAssistiveText } from 'src/elements/form/AssistiveText';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
+import { PlainText } from 'src/elements/form/PlainText';
 import { getGlobalOverrides } from 'src/global-styles';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import { fontWeight, space } from 'styled-system';
-import styled from 'styled-components';
 import {
   control,
   controlColor,
   controlStyles,
   defaultControlStyles,
   defaultStylesBase,
+  disabledStyle,
   focusStyles,
   fontFamilyCore,
   fontSizeCore,
@@ -23,18 +24,17 @@ import {
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
-import { PlainText } from 'src/elements/form/PlainText';
-import { getAssistiveText } from 'src/elements/form/AssistiveText';
+import styled from 'styled-components';
+import { borderRadius, fontWeight, space } from 'styled-system';
 import { SelectComponent } from './component';
 
 const controlStylesSelectField = props => {
-  if (!props.validationError && !props.isDisabled) {
-    return controlStyles(props);
-  } if (props.validationError) {
+  if (props.validationError) {
     return controlStyles({ ...props, activeColor: 'brandDanger', borderColor: 'brandDanger' });
   }
-  return controlStyles({ ...props, activeColor: 'white.light', borderColor: 'white.light' });
+  return controlStyles(props);
 };
+
 const focusStyleSelectField = props => {
   if (props.isFocused) {
     return focusStyles(props);
@@ -42,10 +42,16 @@ const focusStyleSelectField = props => {
   return '';
 };
 
+const disabledStyleSelectField = props => {
+  if (props.isDisabled) {
+    return disabledStyle;
+  }
+  return '';
+};
+
 const reactSelectStylesOverrides = props => {
   const {
     chipBg,
-    formStyle,
     menuFocusBg,
     menuFocusColor,
     menuSelectedBg,
@@ -53,7 +59,8 @@ const reactSelectStylesOverrides = props => {
     placeholderColor,
   } = props;
   const globalOverrides = getGlobalOverrides(props);
-  const dropdownOffset = formStyle === 'filled' ? '.grape-ui-select__dropdown-indicator { margin-top: -0.5rem; }' : '';
+  const { padding } = defaultControlStyles;
+  const indicatorsWidth = '40px';
   return `
     .grape-ui-select__control {
       display: flex;
@@ -69,6 +76,7 @@ const reactSelectStylesOverrides = props => {
     }
     .grape-ui-select__value-container {
       padding: 0;
+      padding-right: ${indicatorsWidth};
     }
     .grape-ui-select__menu {
       position: absolute;
@@ -108,8 +116,24 @@ const reactSelectStylesOverrides = props => {
         fill: ${resolveColor('brandLinkHover', globalOverrides)}
       }
     }
-    &:has(.grape-ui-select__control--is-focused) {  }
-    ${dropdownOffset}
+    .grape-ui-select__indicators {
+      height: 100%;
+      justify-content: flex-end;
+      position: absolute;
+      right: ${padding};
+      top: 0;
+      width: ${indicatorsWidth};
+    }
+    &.grape-ui-select--is-rtl {
+      .grape-ui-select__value-container {
+        padding-right: 0;
+        padding-left: ${indicatorsWidth};
+      }
+      .grape-ui-select__indicators {
+        left: ${padding};
+        right: auto;
+      }
+    }
   `;
 };
 
@@ -126,6 +150,7 @@ export const SelectFieldComponent = styled(SelectComponent)`
   ${controlStylesSelectField}
   ${focusStyleSelectField}
   ${reactSelectStylesOverrides}
+  ${disabledStyleSelectField}
 `;
 SelectFieldComponent.propTypes = {
   ...control.propTypes,
@@ -172,11 +197,10 @@ const propsToTrim = [
   'controlId',
   'disabled',
   'assistiveText',
-  'labelText',
   'required',
   'plainText',
 ];
-const plaintextPropsToTrim = ['controlId', 'labelText', 'assistiveText', 'validationError', 'required', 'formStyle'];
+const plaintextPropsToTrim = ['controlId', 'assistiveText', 'validationError', 'required', 'formStyle'];
 const renderValueOrComponent = propsFromComponent => {
   const {
     controlId,
@@ -221,14 +245,22 @@ export const SelectField = props => {
       pt={1}
       validationError={validationError}
     >
-      {renderValueOrComponent({ formStyle, plainText, ...props })}
+      {renderValueOrComponent({
+        ...props,
+        formStyle,
+        labelText,
+        plainText,
+      })}
     </ControlGroup>
   );
 };
 
 SelectField.propTypes = {
   activeColor: PropTypes.string,
-  assistiveText: PropTypes.string,
+  assistiveText: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string,
+  ]),
   controlId: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   formStyle: PropTypes.string,
@@ -236,6 +268,7 @@ SelectField.propTypes = {
   plainText: PropTypes.bool,
   required: PropTypes.bool,
   validationError: PropTypes.string,
+  ...borderRadius.propTypes,
   ...space.propTypes,
 };
 

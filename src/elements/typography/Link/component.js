@@ -4,14 +4,10 @@ import { removeSomeProps } from 'src/utils/componentHelpers';
 import { Link as ReactRouterLink } from 'react-router-dom';
 import { typography } from 'src/utils/styledHelpers';
 
-const propsToTrim = {
-  hoverColor: '',
-  ...typography.propTypes,
-};
 export const LinkComponent = ({
   children, to, ...props
 }) => {
-  const trimmedProps = removeSomeProps(props, Object.keys(propsToTrim));
+  const trimmedProps = removeSomeProps(props, Object.keys(typography.propTypes));
   if (to) {
     const linkProps = {
       to,

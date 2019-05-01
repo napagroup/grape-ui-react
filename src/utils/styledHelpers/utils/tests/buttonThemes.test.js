@@ -151,6 +151,22 @@ describe('When given an empty array', () => {
     expect(actual).toEqual({});
   });
 });
+describe('When given a truthy value that is not an array', () => {
+  beforeEach(() => {
+    mockGlobalStyles.getGlobalStyles = jest.fn().mockReturnValue({
+      buttonVariant,
+      colors,
+    });
+  });
+  test('should return return null', () => {
+    // Arrange
+    const type = {};
+    // Act
+    const actual = buttonThemes(type);
+    // Assert
+    expect(actual).toBeNull();
+  });
+});
 
 describe('When given null (falsy)', () => {
   let expected = null;
@@ -169,7 +185,6 @@ describe('When given null (falsy)', () => {
   it('should return all available themes', () => {
     const type = null;
     const actual = buttonThemes(type);
-    // console.log({actual, g: getGlobalStyles()})
     expect(actual).toEqual(expected);
     expect(actual.danger).toEqual(expected.danger);
     expect(actual.default).toEqual(expected.default);

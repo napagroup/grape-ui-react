@@ -4,8 +4,9 @@ exports[`SelectField Component base should return a SelectField that contains Co
 .c0 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -33,8 +34,9 @@ exports[`SelectField Component base should return a SelectField that contains Se
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -62,7 +64,7 @@ exports[`SelectField Component base should return a SelectField that contains Se
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -75,8 +77,9 @@ exports[`SelectField Component base should return a SelectField that contains Se
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
-  padding: 1rem;
+  border-radius: 2px;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -137,6 +140,7 @@ exports[`SelectField Component base should return a SelectField that contains Se
 
 .c1 .grape-ui-select__value-container {
   padding: 0;
+  padding-right: 40px;
 }
 
 .c1 .grape-ui-select__menu {
@@ -188,6 +192,28 @@ exports[`SelectField Component base should return a SelectField that contains Se
 
 .c1 .grape-ui-select__multi-value__remove:hover path {
   fill: hsl(207,90%,54%);
+}
+
+.c1 .grape-ui-select__indicators {
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__value-container {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__indicators {
+  left: 1rem;
+  right: auto;
 }
 
 <div
@@ -309,8 +335,9 @@ exports[`SelectField Component with ControlLabel with * should return a SelectFi
 .c0 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -338,7 +365,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
 .c0 {
   color: hsl(0,0%,50%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -364,7 +391,7 @@ exports[`SelectField Component with assistive text should return a SelectField w
 .c0 {
   color: hsl(4.1,89.6%,58.4%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -390,7 +417,7 @@ exports[`SelectField Component with plainText or disabled should return a Select
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -416,12 +443,13 @@ exports[`SelectField Component with plainText or disabled should return a Select
 </div>
 `;
 
-exports[`SelectField Component with space should return a SelectField with space with  margin: 32px;  padding: 32px; on c0 1`] = `
+exports[`SelectField Component with plainText or disabled should return an input with disabled: true 1`] = `
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -437,10 +465,295 @@ exports[`SelectField Component with space should return a SelectField with space
   position: absolute;
 }
 
+.c0 {
+  position: relative;
+  color: inherit;
+  background-color: transparent;
+  padding-top: 4px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+.c1 {
+  color: inherit;
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  opacity: 0.3;
+}
+
+.c1[required] + label:after {
+  content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1 .grape-ui-select__control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  box-shadow: none;
+  min-height: 0;
+}
+
+.c1 .grape-ui-select__indicator {
+  padding: 0;
+}
+
+.c1 .grape-ui-select__indicator-separator {
+  display: none;
+}
+
+.c1 .grape-ui-select__value-container {
+  padding: 0;
+  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__menu {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding: 0.5rem 0;
+  z-index: 1030;
+  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2);
+}
+
+.c1 .grape-ui-select__option {
+  padding: 0.5rem 1rem;
+}
+
+.c1 .grape-ui-select__option--is-focused {
+  background: hsl(207,90%,54%);
+  color: hsl(0,0%,98%);
+}
+
+.c1 .grape-ui-select__option--is-selected {
+  background: hsl(186.8,100%,41.6%);
+  color: hsl(0,0%,98%);
+}
+
+.c1 .grape-ui-select__placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1 .grape-ui-select__multi-value {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  background-color: hsl(0,0%,90%);
+  font-size: 80%;
+}
+
+.c1 .grape-ui-select__multi-value__label {
+  padding: 0 0.25rem;
+}
+
+.c1 .grape-ui-select__multi-value__remove {
+  cursor: pointer;
+}
+
+.c1 .grape-ui-select__multi-value__remove:hover path {
+  fill: hsl(207,90%,54%);
+}
+
+.c1 .grape-ui-select__indicators {
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__value-container {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__indicators {
+  left: 1rem;
+  right: auto;
+}
+
+.c1 ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="css-1sontr1 c1 grape-ui-select--is-disabled"
+    id="exampleColor"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="css-0 grape-ui-select__control grape-ui-select__control--is-disabled"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className="css-1hwfws3 grape-ui-select__value-container grape-ui-select__value-container--has-value"
+      >
+        <div
+          className="css-0 grape-ui-select__single-value grape-ui-select__single-value--is-disabled"
+        >
+          Yellow
+        </div>
+        <div
+          className="css-0"
+        >
+          <div
+            className="grape-ui-select__input"
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              disabled={true}
+              id="react-select-13-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "boxSizing": "content-box",
+                  "color": "inherit",
+                  "fontSize": "inherit",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "1px",
+                }
+              }
+              tabIndex="0"
+              type="text"
+              value=""
+            />
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "overflow": "scroll",
+                  "position": "absolute",
+                  "top": 0,
+                  "visibility": "hidden",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-1wy0on6 grape-ui-select__indicators"
+      >
+        <span
+          className="css-ln5n5c grape-ui-select__indicator-separator"
+        />
+        <div
+          aria-hidden="true"
+          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-19bqh2r"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <label
+    className="c2"
+    htmlFor="exampleColor"
+  >
+    Color
+  </label>
+</div>
+`;
+
+exports[`SelectField Component with space should return a SelectField with space with  margin: 32px;  padding: 32px; on c0 1`] = `
 .c3 {
   color: hsl(0,0%,50%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -452,6 +765,27 @@ exports[`SelectField Component with space should return a SelectField with space
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   padding: 0 1rem;
+}
+
+.c2 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  top: -1px;
+  height: 0.4rem;
+  position: absolute;
 }
 
 .c0 {
@@ -466,7 +800,7 @@ exports[`SelectField Component with space should return a SelectField with space
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -479,8 +813,9 @@ exports[`SelectField Component with space should return a SelectField with space
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
+  border-radius: 4px;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -541,6 +876,7 @@ exports[`SelectField Component with space should return a SelectField with space
 
 .c1 .grape-ui-select__value-container {
   padding: 0;
+  padding-right: 40px;
 }
 
 .c1 .grape-ui-select__menu {
@@ -594,11 +930,357 @@ exports[`SelectField Component with space should return a SelectField with space
   fill: hsl(207,90%,54%);
 }
 
+.c1 .grape-ui-select__indicators {
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__value-container {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__indicators {
+  left: 1rem;
+  right: auto;
+}
+
 <div
   className="c0"
 >
   <div
     className="css-10nd86i c1"
+    id="exampleColor"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="css-0 grape-ui-select__control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className="css-1hwfws3 grape-ui-select__value-container grape-ui-select__value-container--has-value"
+      >
+        <div
+          className="css-0 grape-ui-select__single-value"
+        >
+          Yellow
+        </div>
+        <div
+          className="css-0"
+        >
+          <div
+            className="grape-ui-select__input"
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              disabled={false}
+              id="react-select-12-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "boxSizing": "content-box",
+                  "color": "inherit",
+                  "fontSize": "inherit",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "1px",
+                }
+              }
+              tabIndex="0"
+              type="text"
+              value=""
+            />
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "overflow": "scroll",
+                  "position": "absolute",
+                  "top": 0,
+                  "visibility": "hidden",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-1wy0on6 grape-ui-select__indicators"
+      >
+        <span
+          className="css-d8oujb grape-ui-select__indicator-separator"
+        />
+        <div
+          aria-hidden="true"
+          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-19bqh2r"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <label
+    className="c2"
+    htmlFor="exampleColor"
+  >
+    Color
+  </label>
+  <div
+    className="c3"
+    id="exampleColorHelp"
+  >
+    Please tell me your color
+  </div>
+</div>
+`;
+
+exports[`SelectField Component with style should return a SelectField that is from right to left; 1`] = `
+.c3 {
+  color: hsl(0,0%,50%);
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
+.c2 {
+  color: inherit;
+  background-color: hsl(0,0%,100%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  top: -1px;
+  height: 0.4rem;
+  position: absolute;
+}
+
+.c0 {
+  position: relative;
+  color: inherit;
+  background-color: transparent;
+  padding-top: 4px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+.c1 {
+  color: inherit;
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.c1[required] + label:after {
+  content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1 .grape-ui-select__control {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  box-shadow: none;
+  min-height: 0;
+}
+
+.c1 .grape-ui-select__indicator {
+  padding: 0;
+}
+
+.c1 .grape-ui-select__indicator-separator {
+  display: none;
+}
+
+.c1 .grape-ui-select__value-container {
+  padding: 0;
+  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__menu {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  padding: 0.5rem 0;
+  z-index: 1030;
+  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2);
+}
+
+.c1 .grape-ui-select__option {
+  padding: 0.5rem 1rem;
+}
+
+.c1 .grape-ui-select__option--is-focused {
+  background: hsl(207,90%,54%);
+  color: hsl(0,0%,98%);
+}
+
+.c1 .grape-ui-select__option--is-selected {
+  background: hsl(186.8,100%,41.6%);
+  color: hsl(0,0%,98%);
+}
+
+.c1 .grape-ui-select__placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1 .grape-ui-select__multi-value {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  background-color: hsl(0,0%,90%);
+  font-size: 80%;
+}
+
+.c1 .grape-ui-select__multi-value__label {
+  padding: 0 0.25rem;
+}
+
+.c1 .grape-ui-select__multi-value__remove {
+  cursor: pointer;
+}
+
+.c1 .grape-ui-select__multi-value__remove:hover path {
+  fill: hsl(207,90%,54%);
+}
+
+.c1 .grape-ui-select__indicators {
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__value-container {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__indicators {
+  left: 1rem;
+  right: auto;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="css-18h43lu c1 grape-ui-select--is-rtl"
     id="exampleColor"
     onKeyDown={[Function]}
   >
@@ -716,11 +1398,29 @@ exports[`SelectField Component with space should return a SelectField with space
 `;
 
 exports[`SelectField Component with style should return a SelectField with background-color: hsl(4.1,89.6%,58.4%) in c0 and c2  1`] = `
+.c3 {
+  color: hsl(0,0%,50%);
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
 .c2 {
   color: inherit;
   background-color: hsl(4.1,89.6%,58.4%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -736,23 +1436,6 @@ exports[`SelectField Component with style should return a SelectField with backg
   position: absolute;
 }
 
-.c3 {
-  color: hsl(0,0%,50%);
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  padding: 0 1rem;
-}
-
 .c0 {
   position: relative;
   color: inherit;
@@ -765,7 +1448,7 @@ exports[`SelectField Component with style should return a SelectField with backg
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -778,8 +1461,9 @@ exports[`SelectField Component with style should return a SelectField with backg
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  padding: 1rem;
+  border-radius: 4px;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -840,6 +1524,7 @@ exports[`SelectField Component with style should return a SelectField with backg
 
 .c1 .grape-ui-select__value-container {
   padding: 0;
+  padding-right: 40px;
 }
 
 .c1 .grape-ui-select__menu {
@@ -891,6 +1576,28 @@ exports[`SelectField Component with style should return a SelectField with backg
 
 .c1 .grape-ui-select__multi-value__remove:hover path {
   fill: hsl(207,90%,54%);
+}
+
+.c1 .grape-ui-select__indicators {
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__value-container {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__indicators {
+  left: 1rem;
+  right: auto;
 }
 
 <div
@@ -1015,11 +1722,29 @@ exports[`SelectField Component with style should return a SelectField with backg
 `;
 
 exports[`SelectField Component with style should return a SelectField with orange borderColor with border: 1px solid orange in c1; 1`] = `
+.c3 {
+  color: hsl(0,0%,50%);
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1035,23 +1760,6 @@ exports[`SelectField Component with style should return a SelectField with orang
   position: absolute;
 }
 
-.c3 {
-  color: hsl(0,0%,50%);
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  padding: 0 1rem;
-}
-
 .c0 {
   position: relative;
   color: inherit;
@@ -1064,7 +1772,7 @@ exports[`SelectField Component with style should return a SelectField with orang
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -1077,8 +1785,9 @@ exports[`SelectField Component with style should return a SelectField with orang
   text-decoration: inherit;
   border: 1px solid hsl(35.8,100%,50%);
   border-radius: 4px;
-  padding: 1rem;
+  border-radius: 4px;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -1139,6 +1848,7 @@ exports[`SelectField Component with style should return a SelectField with orang
 
 .c1 .grape-ui-select__value-container {
   padding: 0;
+  padding-right: 40px;
 }
 
 .c1 .grape-ui-select__menu {
@@ -1190,6 +1900,28 @@ exports[`SelectField Component with style should return a SelectField with orang
 
 .c1 .grape-ui-select__multi-value__remove:hover path {
   fill: hsl(207,90%,54%);
+}
+
+.c1 .grape-ui-select__indicators {
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__value-container {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__indicators {
+  left: 1rem;
+  right: auto;
 }
 
 <div
@@ -1314,11 +2046,29 @@ exports[`SelectField Component with style should return a SelectField with orang
 `;
 
 exports[`SelectField Component with style should return a SelectFieldComponent with props where lg={true} 1`] = `
+.c3 {
+  color: hsl(0,0%,50%);
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1334,23 +2084,6 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   position: absolute;
 }
 
-.c3 {
-  color: hsl(0,0%,50%);
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  padding: 0 1rem;
-}
-
 .c0 {
   position: relative;
   color: inherit;
@@ -1363,7 +2096,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -1376,8 +2109,9 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 8px;
-  padding: 1rem;
+  border-radius: 8px;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -1438,6 +2172,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 
 .c1 .grape-ui-select__value-container {
   padding: 0;
+  padding-right: 40px;
 }
 
 .c1 .grape-ui-select__menu {
@@ -1489,6 +2224,28 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 
 .c1 .grape-ui-select__multi-value__remove:hover path {
   fill: hsl(207,90%,54%);
+}
+
+.c1 .grape-ui-select__indicators {
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__value-container {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__indicators {
+  left: 1rem;
+  right: auto;
 }
 
 <div
@@ -1613,11 +2370,29 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 `;
 
 exports[`SelectField Component with style should return a SelectFieldComponent with props where sm={true} 1`] = `
+.c3 {
+  color: hsl(0,0%,50%);
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
 .c2 {
   color: inherit;
   background-color: hsl(0,0%,100%);
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
+  font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1633,23 +2408,6 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   position: absolute;
 }
 
-.c3 {
-  color: hsl(0,0%,50%);
-  background-color: transparent;
-  font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  padding: 0 1rem;
-}
-
 .c0 {
   position: relative;
   color: inherit;
@@ -1662,7 +2420,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 .c1 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -1675,8 +2433,9 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
-  padding: 1rem;
+  border-radius: 2px;
   outline: 0;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -1737,6 +2496,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 
 .c1 .grape-ui-select__value-container {
   padding: 0;
+  padding-right: 40px;
 }
 
 .c1 .grape-ui-select__menu {
@@ -1788,6 +2548,28 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 
 .c1 .grape-ui-select__multi-value__remove:hover path {
   fill: hsl(207,90%,54%);
+}
+
+.c1 .grape-ui-select__indicators {
+  height: 100%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__value-container {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+.c1.grape-ui-select--is-rtl .grape-ui-select__indicators {
+  left: 1rem;
+  right: auto;
 }
 
 <div

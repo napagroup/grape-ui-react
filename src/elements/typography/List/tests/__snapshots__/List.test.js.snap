@@ -4,7 +4,7 @@ exports[`List Component should return a List object with base styling 1`] = `
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -30,7 +30,7 @@ exports[`List Component should return a List object with font-size: lg 1`] = `
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -56,7 +56,7 @@ exports[`List Component should return a List object with font-size: sm 1`] = `
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -82,7 +82,7 @@ exports[`List Component should return a List object with font-style: italic 1`] 
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -109,7 +109,7 @@ exports[`List Specific Styling should return a List object with a base color (im
 .c0 {
   color: hsl(122.4,39.4%,49.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -135,7 +135,7 @@ exports[`List Specific Styling should return a List object with a base color 1`]
 .c0 {
   color: hsl(122.4,39.4%,49.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -161,7 +161,7 @@ exports[`List Specific Styling should return a List object with a dark color 1`]
 .c0 {
   color: hsl(122.4,39.4%,29.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -187,7 +187,7 @@ exports[`List Specific Styling should return a List object with a light color 1`
 .c0 {
   color: hsl(122.4,39.4%,69.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -239,7 +239,7 @@ exports[`List Specific Styling should return a List object with a specified font
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: bold;
   -webkit-letter-spacing: inherit;
@@ -265,7 +265,7 @@ exports[`List Specific Styling should return a List object with a specified kern
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: 2px;
@@ -291,7 +291,7 @@ exports[`List Specific Styling should return a List object with a specified text
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -317,7 +317,7 @@ exports[`List Specific Styling should return a List object with a specified text
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -343,7 +343,7 @@ exports[`List Specific Styling should return a List object with font-size: sm 1`
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -369,7 +369,7 @@ exports[`List Specific Styling should return an inline List object 1`] = `
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -403,7 +403,7 @@ exports[`List Specific Styling should return an unstyled List object 1`] = `
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
@@ -433,7 +433,7 @@ exports[`Numbered List Component should return a List object with Alpha lowercas
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -459,7 +459,7 @@ exports[`Numbered List Component should return a List object with Alpha uppercas
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -485,7 +485,7 @@ exports[`Numbered List Component should return a Numbered List object with base 
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -510,7 +510,7 @@ exports[`Numbered List Component should return a Numbered List object with font-
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -535,7 +535,7 @@ exports[`Numbered List Component should return a Numbered List object with font-
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -561,7 +561,7 @@ exports[`Numbered List Component should return a Numbered List object with roman
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -587,7 +587,7 @@ exports[`Numbered List Component should return a Numbered List object with roman
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -613,7 +613,7 @@ exports[`Numbered List Component should return a Numbered Numbered List object w
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -638,7 +638,7 @@ exports[`Numbered List Specific Styling should return a List.ol object with a ba
 .c0 {
   color: hsl(122.4,39.4%,49.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -663,7 +663,7 @@ exports[`Numbered List Specific Styling should return a List.ol object with a ba
 .c0 {
   color: hsl(122.4,39.4%,49.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -688,7 +688,7 @@ exports[`Numbered List Specific Styling should return a List.ol object with a da
 .c0 {
   color: hsl(122.4,39.4%,29.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -713,7 +713,7 @@ exports[`Numbered List Specific Styling should return a List.ol object with a li
 .c0 {
   color: hsl(122.4,39.4%,69.2%);
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -763,7 +763,7 @@ exports[`Numbered List Specific Styling should return a List.ol object with a sp
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: bold;
   -webkit-letter-spacing: inherit;
@@ -789,7 +789,7 @@ exports[`Numbered List Specific Styling should return a List.ol object with a sp
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: 2px;
   -moz-letter-spacing: 2px;
@@ -814,7 +814,7 @@ exports[`Numbered List Specific Styling should return a List.ol object with a sp
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -839,7 +839,7 @@ exports[`Numbered List Specific Styling should return a List.ol object with a sp
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -864,7 +864,7 @@ exports[`Numbered List Specific Styling should return a List.ol object with font
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -889,7 +889,7 @@ exports[`Numbered List Specific Styling should return an inline Numbered List ob
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -922,7 +922,7 @@ exports[`Numbered List Specific Styling should return an unstyled Numbered List 
 .c0 {
   color: inherit;
   background-color: transparent;
-  font-family: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;

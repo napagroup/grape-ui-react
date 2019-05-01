@@ -10,6 +10,8 @@ export const typography = {
     fontFamily: PropTypes.string,
     fontSize: PropTypes.any,
     fontWeight: PropTypes.any,
+    hoverColor: PropTypes.string,
+    hoverStyle: PropTypes.any,
     italic: PropTypes.bool,
     kerning: PropTypes.any,
     letterSpacing: PropTypes.any,

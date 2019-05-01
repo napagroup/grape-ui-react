@@ -88,6 +88,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
+  ...defaultStylesBase,
   display: false,
   fontWeight: defaultStylesBase.fontWeight,
 };

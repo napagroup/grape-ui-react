@@ -37,12 +37,11 @@ const CheckboxLabel = styled.label`
   align-self: flex-start;
   cursor: pointer;
 `;
-import { getAssistiveText } from 'src/elements/form/AssistiveText';
 
 const Wrapper = ({ children, ...props }) => {
   const checkboxGroupProps = removeSomeProps(props, ['flexDirection']);
   return (
-    <CheckboxGroup {...checkboxGroupProps} assistiveText={getAssistiveText(props)}>
+    <CheckboxGroup {...checkboxGroupProps}>
       { children }
     </CheckboxGroup>
   );

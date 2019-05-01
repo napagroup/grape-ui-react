@@ -1,5 +1,5 @@
 import { getGlobalStyles, getGlobalOverrides } from 'src/global-styles';
-import { resolveColor } from './utils';
+import { resolveBorderRadius, resolveColor } from './utils';
 import { defaultControlStyles, defaultStylesBase } from './cssDefaults';
 import { colorCore } from './core';
 
@@ -32,6 +32,11 @@ export const focusStyles = props => {
   `;
 };
 
+export const disabledStyle = `
+  opacity: 0.3;
+  ~ * { color: rgba(0,0,0,0.3); }
+`;
+
 const scaleFactor = props => {
   const { sm, lg } = props;
   const { borderRadius: { base: schemaBase, sm: schemaSm, lg: schemaLg } } = borderSchema;
@@ -46,11 +51,16 @@ const scaleFactor = props => {
   return value;
 };
 
+export const getFinalFieldPadding = (padding, formStyle, labelText) => ((formStyle === 'filled' && labelText)
+  ? `${Number.parseInt(padding, 10) * 1.5}rem ${padding} ${Number.parseInt(padding, 10) / 2}rem`
+  : padding);
+
 const getFinalStyle = props => {
   const {
     activeColor,
     borderColor,
     formStyle,
+    labelText,
     padding,
     placeholderColor,
   } = props;
@@ -59,15 +69,15 @@ const getFinalStyle = props => {
   const focusStyle = focusStyles({ activeColor, formStyle, ...globalOverrides });
   const resolvedBorderColor = resolveColor(borderColor, globalOverrides);
   const resolvedPlaceholderColor = resolveColor(placeholderColor, globalOverrides);
-  const filledPadding = `${Number.parseInt(padding, 10) * 1.5}rem ${padding} ${Number.parseInt(padding, 10) / 2}rem`;
   const topLabel = `${Number.parseInt(padding, 10) - 0.2}rem`;
   const controlSharedStyle = `
+    border-radius: ${resolveBorderRadius(props)};
     outline: 0;
+    padding: ${getFinalFieldPadding(padding, formStyle, labelText)};
     width: 100%;
     &[required] + label:after { content: "*" }
     &[disabled] {
-      opacity: 0.3;
-      ~ * { color: rgba(0,0,0,0.3); }
+      ${disabledStyle}
     }
     &:focus{ ${focusStyle} }
     &::placeholder { color: ${resolvedPlaceholderColor} }
@@ -76,7 +86,6 @@ const getFinalStyle = props => {
     return `
       border-bottom: 1px solid ${resolvedBorderColor};
       border-radius: ${scale} ${scale} 0 0;
-      padding: ${filledPadding};
       + label {
         background: transparent;
         line-height: 1;
@@ -88,7 +97,6 @@ const getFinalStyle = props => {
   return `
     border: 1px solid ${resolvedBorderColor};
     border-radius: ${scale};
-    padding: ${padding};
     ${controlSharedStyle}
   `;
 };

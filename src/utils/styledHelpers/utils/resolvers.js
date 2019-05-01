@@ -1,3 +1,7 @@
+/**
+ * Grape UI Core style helpers.
+ */
+
 import { getGlobalStyles, getGlobalOverrides } from 'src/global-styles';
 import { isKeyNestedProp, resolveToProperty } from 'src/utils/objectHelpers';
 import { defaultStylesBase } from '..';
@@ -13,6 +17,31 @@ export const resolveGlobal = (globalOverrides = getGlobalStyles()) => {
   return theme ? getGlobalOverrides(globalOverrides) : globalOverrides;
 };
 
+export const getBorderRadiusForFormFieldType = (borderRadius, formStyle) => ((formStyle === 'filled')
+  ? `${borderRadius} ${borderRadius} 0 0`
+  : borderRadius);
+
+export const resolveBorderRadius = (props, globalOverrides, defaultBorderRadius = defaultStylesBase.borderRadius) => {
+  if (!props) {
+    return getBorderRadiusForFormFieldType(defaultBorderRadius);
+  }
+
+  // Grape UI lg or sm options
+  const globalStyles = resolveGlobal(globalOverrides);
+  const { border: borderSchema } = globalStyles;
+  const { formStyle, lg, sm } = props;
+  if (lg) {
+    return getBorderRadiusForFormFieldType(borderSchema.borderRadius.lg, formStyle);
+  }
+  if (sm) {
+    return getBorderRadiusForFormFieldType(borderSchema.borderRadius.sm, formStyle);
+  }
+
+  // User specified or base value
+  const { borderRadius } = props;
+  return getBorderRadiusForFormFieldType((borderRadius || borderSchema.borderRadius.base), formStyle);
+};
+
 export const resolveColor = (colorToResolve, globalOverrides, defaultColor = defaultStylesBase.color) => {
   const globalStyles = resolveGlobal(globalOverrides);
   const { colors: colorSchema } = globalStyles;
@@ -21,9 +50,12 @@ export const resolveColor = (colorToResolve, globalOverrides, defaultColor = def
     : resolveToProperty(`${colorToResolve}.base`, colorSchema);
   return resolvedValue || defaultColor;
 };
-/*
-  Grape UI Core style helpers.
-*/
+
+export const resolveFontFamily = (fontFamilyToResolve, globalOverrides, defaultValue) => {
+  const globalStyles = resolveGlobal(globalOverrides);
+  const { fontFamily: fontFamilySchema } = globalStyles;
+  return resolveToProperty(fontFamilyToResolve, fontFamilySchema) || defaultValue;
+};
 
 export const resolveBoxShadow = (depth, globalOverrides) => {
   const { shadow: shadowSchema } = resolveGlobal(globalOverrides);

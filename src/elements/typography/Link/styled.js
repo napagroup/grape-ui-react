@@ -17,10 +17,11 @@ import {
 } from 'src/utils/styledHelpers';
 import { LinkComponent } from './component';
 
+
 const hoverStyle = props => `&:active {
   color: ${resolveColor(props.hoverStyle, getGlobalOverrides(props))};
   cursor: pointer;
- }`;
+}`;
 
 const Link = styled(LinkComponent)`
   ${colorCore}

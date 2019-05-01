@@ -1,7 +1,7 @@
 import * as styledComponents from 'styled-components';
 import { Button } from './elements/Button';
 import { Box, Flex } from './elements/grid';
-import { Image } from './elements/image';
+import { Image } from './elements/Image';
 import { Form } from './elements/form/Form';
 import { TextField } from './elements/form/TextField';
 import { SelectField } from './elements/form/SelectField';

@@ -93,7 +93,10 @@ export const ControlGroupComponent = ({ children, ...props }) => {
 
 ControlGroupComponent.propTypes = {
   activeColor: PropTypes.string,
-  assistiveText: PropTypes.string,
+  assistiveText: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.string,
+  ]),
   bg: PropTypes.string,
   children: PropTypes.any.isRequired,
   controlId: PropTypes.string.isRequired,
