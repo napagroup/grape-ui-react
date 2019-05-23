@@ -10,15 +10,57 @@ These instructions will allow you to use the extensible Grape UI component libra
 - ReactJS
 - Styled Components
 
-### Installing
+
+
+## Setting up your npm registry on Gemfury
+
+[https://gemfury.com/help/npm-registry](https://gemfury.com/help/npm-registry)
+
+To start using your npm registry, you will need to update your npm config:
+
+```
+npm config set registry https://npm.fury.io/napadev/
+```
+
+It is important to include a trailing slash in the registry URL, otherwise npm may incorrectly connect to our registry.
+
+At this point, you can start to npm install public packages from your account.
+
+```
+npm install
+```
+
+To publish and install private packages, you will first authenticate with your Gemfury credentials. If you do not have a token, you will have to [create one](https://manage.fury.io/manage/napadev/tokens/push):
+
+```
+npm login --registry=https://npm.fury.io/napadev/
+
+Username: napadev
+Password: ${PUSH_TOKEN}
+Email: dev@napa.com
+```
+
+### Publish GrapeUI to Gemfury
+
+Once logged in, you can npm publish and npm install private packages from your Gemfury account.
+
+```
+npm run publish
+```
+
+### Installing GrapeUI on your project
 Add GrapeUI as a dependency to your project
 
 ```
 "dependencies": {
   ...
-  "grape-ui-react": "git+https://bitbucket.org/napagroupnyc/grape-ui-react/grape-ui-react.git",
+    "grape-ui-react": "^0.4.0",
   ...
 },
+```
+Login to gemfury with the napa account:
+```
+  npm login --registry=https://npm.fury.io/napadev/
 ```
 
 Import Grape UI components into your project
@@ -42,24 +84,10 @@ render() {
 ```
 
 ## Running the tests
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-Explain what these tests test and why
-
+To run all the tests
 ```
-Give an example
+  npm run test
 ```
-
-### And coding style tests
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 * [styled-components](https://github.com/styled-components/styled-components) - The visual primitives library used.
