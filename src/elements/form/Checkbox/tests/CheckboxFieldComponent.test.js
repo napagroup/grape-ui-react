@@ -1,7 +1,8 @@
 import React from 'react';
+import renderer from 'react-test-renderer';
+import { ThemeProvider } from 'styled-components';
 import { CheckboxFieldComponent } from '..';
 import 'jest-styled-components';
-import renderer from 'react-test-renderer';
 
 const assertReactElement = element => {
   const component = renderer.create(element);
@@ -17,7 +18,7 @@ const colorOptions = [
 describe('CheckboxFieldComponent Component base', () => {
   it('should return a CheckboxFieldComponent that contains CheckboxComponent object', () => {
     const selectedValue = ['red'];
-    const element = <CheckboxFieldComponent id="exampleColor" name="Color" options={colorOptions} value={selectedValue} />;
+    const element = <ThemeProvider theme={{}}><CheckboxFieldComponent id="exampleColor" name="Color" options={colorOptions} value={selectedValue} /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

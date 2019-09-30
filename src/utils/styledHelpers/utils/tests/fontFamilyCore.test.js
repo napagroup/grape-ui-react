@@ -43,7 +43,7 @@ describe('When given props with a font family value', () => {
   });
   it('should return the resolved font family', () => {
     const actual = { fontFamily: 'geneva' };
-    const expected = [{ fontFamily: fonts.geneva }];
+    const expected = { fontFamily: fonts.geneva };
     expect(fontFamilyCore(actual)).toEqual(expected);
   });
   it('should have props passed down to the global overrides', () => {

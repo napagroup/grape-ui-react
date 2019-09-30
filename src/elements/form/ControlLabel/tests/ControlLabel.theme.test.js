@@ -1,8 +1,8 @@
 import React from 'react';
-import { ControlLabel } from '..';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
+import { ControlLabel } from '..';
 
 describe('ControlLabel using Theme color', () => {
   it('should return a ControlLabel object with custom color', () => {

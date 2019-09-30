@@ -3,16 +3,16 @@
 exports[`TextField using Theme Font Family should return a TextField object with a custom font family 1`] = `
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -87,16 +87,16 @@ exports[`TextField using Theme Font Family should return a TextField object with
 exports[`TextField using Theme color should return a TextField object with custom color 1`] = `
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: hsl(313,67.8%,47.5%);
   background-color: hsl(305,33.9%,23.7%);
+  color: hsl(313,67.8%,47.5%);
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;

@@ -48,7 +48,6 @@ import {
 import {
   activeColorButton,
   hoverColorButton,
-  lineHeightButton,
   positionButton,
 } from './utils';
 import { ButtonComponent } from './component';
@@ -120,7 +119,7 @@ export const Button = styled(ButtonComponent)`
   ${justifyContent}
   ${left}
   ${letterSpacingCore}
-  ${lineHeightButton}
+  ${lineHeight}
   ${maxHeight}
   ${maxWidth}
   ${minHeight}

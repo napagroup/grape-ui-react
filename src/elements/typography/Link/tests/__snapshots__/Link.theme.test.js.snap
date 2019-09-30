@@ -2,8 +2,8 @@
 
 exports[`Link using Theme Font Family should return a Link object with a custom font family 1`] = `
 .c0 {
-  color: hsl(186.8,100%,41.6%);
   background-color: transparent;
+  color: hsl(186.8,100%,41.6%);
   font-family: "DejaVu Sans Mono","Bitstream Vera Sans Mono",Courier;
   font-size: inherit;
   font-weight: inherit;
@@ -32,8 +32,8 @@ exports[`Link using Theme Font Family should return a Link object with a custom 
 
 exports[`Link using Theme color should return a Link object with custom color 1`] = `
 .c0 {
-  color: hsl(313,67.8%,47.5%);
   background-color: hsl(305,33.9%,23.7%);
+  color: hsl(313,67.8%,47.5%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;

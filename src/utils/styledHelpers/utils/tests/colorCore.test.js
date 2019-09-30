@@ -1,3 +1,4 @@
+/* eslint-disable import/no-duplicates */
 import { getGlobalStyles } from 'src/global-styles';
 import { colorCore, defaultStylesBase } from '../..';
 
@@ -8,11 +9,10 @@ const {
 describe('When given props with undefined color and bg', () => {
   it('should return the default styling for background and color', () => {
     const props = {};
-    const expected = [{
-      color: defaultStylesBase.color,
-    }, {
+    const expected = {
       backgroundColor: defaultStylesBase.bg,
-    }];
+      color: defaultStylesBase.color,
+    };
     expect(colorCore(props)).toEqual(expected);
   });
 });
@@ -23,11 +23,10 @@ describe('When given props with color and bg', () => {
       bg: 'green.dark',
       color: 'green',
     };
-    const expected = [{
-      color: colorSchema.green.base,
-    }, {
+    const expected = {
       backgroundColor: colorSchema.green.dark,
-    }];
+      color: colorSchema.green.base,
+    };
     expect(colorCore(props)).toEqual(expected);
   });
 });

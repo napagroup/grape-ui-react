@@ -3,8 +3,8 @@ import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { getGlobalOverrides } from 'src/global-styles';
-import { Button } from '..';
 import { buttonThemes } from 'src/utils/styledHelpers';
+import { Button } from '..';
 
 const assertReactElement = element => {
   const component = renderer.create(element);

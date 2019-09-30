@@ -137,42 +137,12 @@ exports[`Box Component using custom theme breakpoints for Core Styling should re
 </div>
 `;
 
-exports[`Box Component using custom theme breakpoints for Core Styling should return a Box object with overridden breakpoints for width 1`] = `
-.c0 {
-  width: 100%;
-}
-
-@media screen and (min-width:35em) {
-  .c0 {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width:47em) {
-  .c0 {
-    width: 25%;
-  }
-}
-
-@media screen and (min-width:67em) {
-  .c0 {
-    width: 12.5%;
-  }
-}
-
-<div
-  className="c0"
->
-  Lorem Ipsum
-</div>
-`;
-
 exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for display 1`] = `
 .c0 {
   display: block;
 }
 
-@media screen and (min-width:35em) {
+@media screen and (min-width:40em) {
   .c0 {
     display: inline-block;
   }
@@ -181,200 +151,7 @@ exports[`Box Component using custom theme breakpoints for Layout should return a
 <div
   className="c0"
 >
-  Lorem Ipsum
-</div>
-`;
-
-exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for height 1`] = `
-.c0 {
-  height: 1.1px;
-}
-
-@media screen and (min-width:35em) {
-  .c0 {
-    height: 0.8px;
-  }
-}
-
-@media screen and (min-width:47em) {
-  .c0 {
-    height: 0.6px;
-  }
-}
-
-@media screen and (min-width:67em) {
-  .c0 {
-    height: 0.33px;
-  }
-}
-
-<div
-  className="c0"
->
-  Lorem Ipsum
-</div>
-`;
-
-exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for maxHeight 1`] = `
-.c0 {
-  max-height: 1.1px;
-}
-
-@media screen and (min-width:35em) {
-  .c0 {
-    max-height: 0.8px;
-  }
-}
-
-@media screen and (min-width:47em) {
-  .c0 {
-    max-height: 0.6px;
-  }
-}
-
-@media screen and (min-width:67em) {
-  .c0 {
-    max-height: 0.33px;
-  }
-}
-
-<div
-  className="c0"
->
-  Lorem Ipsum
-</div>
-`;
-
-exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for maxWidth 1`] = `
-.c0 {
-  max-width: 1.1px;
-}
-
-@media screen and (min-width:35em) {
-  .c0 {
-    max-width: 0.8px;
-  }
-}
-
-@media screen and (min-width:47em) {
-  .c0 {
-    max-width: 0.6px;
-  }
-}
-
-@media screen and (min-width:67em) {
-  .c0 {
-    max-width: 0.33px;
-  }
-}
-
-<div
-  className="c0"
->
-  Lorem Ipsum
-</div>
-`;
-
-exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for minHeight 1`] = `
-.c0 {
-  min-height: 1px;
-}
-
-@media screen and (min-width:35em) {
-  .c0 {
-    min-height: 0.5px;
-  }
-}
-
-@media screen and (min-width:47em) {
-  .c0 {
-    min-height: 0.25px;
-  }
-}
-
-@media screen and (min-width:67em) {
-  .c0 {
-    min-height: 0.125px;
-  }
-}
-
-<div
-  className="c0"
->
-  Lorem Ipsum
-</div>
-`;
-
-exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for minWidth 1`] = `
-.c0 {
-  min-width: 1px;
-}
-
-@media screen and (min-width:35em) {
-  .c0 {
-    min-width: 0.5px;
-  }
-}
-
-@media screen and (min-width:47em) {
-  .c0 {
-    min-width: 0.25px;
-  }
-}
-
-<div
-  className="c0"
->
-  Lorem Ipsum
-</div>
-`;
-
-exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for size 1`] = `
-.c0 {
-  width: 100%;
-  height: 0.8px;
-}
-
-@media screen and (min-width:35em) {
-  .c0 {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width:47em) {
-  .c0 {
-    width: 25%;
-  }
-}
-
-@media screen and (min-width:67em) {
-  .c0 {
-    width: 12.5%;
-  }
-}
-
-@media screen and (min-width:35em) {
-  .c0 {
-    height: 0.5px;
-  }
-}
-
-@media screen and (min-width:47em) {
-  .c0 {
-    height: 0.25px;
-  }
-}
-
-@media screen and (min-width:67em) {
-  .c0 {
-    height: 0.125px;
-  }
-}
-
-<div
-  className="c0"
->
-  Lorem Ipsum
+  I am block until 35em
 </div>
 `;
 
@@ -670,11 +447,6 @@ exports[`Box Component with specified layout properties should return a Box obje
 @media screen and (min-width:40em) {
   .c0 {
     width: 48px;
-  }
-}
-
-@media screen and (min-width:40em) {
-  .c0 {
     height: 48px;
   }
 }

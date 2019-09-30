@@ -2,8 +2,8 @@
 
 exports[`TextField  a large TextField object should return a large TextField object  1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -24,16 +24,16 @@ exports[`TextField  a large TextField object should return a large TextField obj
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 8px;
   border-radius: 8px;
@@ -111,8 +111,8 @@ exports[`TextField  a large TextField object should return a large TextField obj
 
 exports[`TextField Component base should return a TextField object 1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -133,16 +133,16 @@ exports[`TextField Component base should return a TextField object 1`] = `
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -220,8 +220,8 @@ exports[`TextField Component base should return a TextField object 1`] = `
 
 exports[`TextField a TextField object should return a TextField object with a red bg 1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -242,16 +242,16 @@ exports[`TextField a TextField object should return a TextField object with a re
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: hsl(4.1,89.6%,58.4%);
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -329,8 +329,8 @@ exports[`TextField a TextField object should return a TextField object with a re
 
 exports[`TextField a plainText TextField should return a disabled TextField 1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -351,16 +351,16 @@ exports[`TextField a plainText TextField should return a disabled TextField 1`] 
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 0;
   display: block;
   outline: 0;
@@ -399,8 +399,8 @@ exports[`TextField a plainText TextField should return a disabled TextField 1`] 
 
 exports[`TextField a small TextField object should return a disabled TextField 1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -421,16 +421,16 @@ exports[`TextField a small TextField object should return a disabled TextField 1
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -509,8 +509,8 @@ exports[`TextField a small TextField object should return a disabled TextField 1
 
 exports[`TextField a small TextField object should return a small TextField object  1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -531,16 +531,16 @@ exports[`TextField a small TextField object should return a small TextField obje
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
   border-radius: 2px;
@@ -618,8 +618,8 @@ exports[`TextField a small TextField object should return a small TextField obje
 
 exports[`TextField a small TextField object should return a small TextField object with a red activeColor  1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -640,16 +640,16 @@ exports[`TextField a small TextField object should return a small TextField obje
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -727,8 +727,8 @@ exports[`TextField a small TextField object should return a small TextField obje
 
 exports[`TextField a small TextField object should return a small TextField object with space mb  1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -749,16 +749,16 @@ exports[`TextField a small TextField object should return a small TextField obje
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -836,8 +836,8 @@ exports[`TextField a small TextField object should return a small TextField obje
 
 exports[`TextField with a currency attribute should return a TextField of input type currency 1`] = `
 .c0 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -947,8 +947,8 @@ exports[`TextField with a currency attribute should return a TextField of input 
 
 exports[`TextField with a formatterOptions attribute should return a TextField with formatterOptions 1`] = `
 .c0 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -1063,8 +1063,8 @@ exports[`TextField with a formatterOptions attribute should return a TextField w
 
 exports[`TextField with a numeric attribute should return a TextField of input type numeric 1`] = `
 .c0 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -1174,16 +1174,16 @@ exports[`TextField with a numeric attribute should return a TextField of input t
 exports[`TextField with a password attribute should return a TextField of input type password 1`] = `
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -1255,8 +1255,8 @@ exports[`TextField with a password attribute should return a TextField of input 
 
 exports[`TextField with a phone attribute should return a TextField of input type phone 1`] = `
 .c0 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -1366,8 +1366,8 @@ exports[`TextField with a phone attribute should return a TextField of input typ
 
 exports[`TextField with a postalCode attribute should return a TextField of input type postalCode 1`] = `
 .c0 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -1482,16 +1482,16 @@ exports[`TextField with a postalCode attribute should return a TextField of inpu
 exports[`TextField with an email attribute should return a TextField of input type email 1`] = `
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -1563,8 +1563,8 @@ exports[`TextField with an email attribute should return a TextField of input ty
 
 exports[`TextField with an integer attribute should return a TextField of input type integer 1`] = `
 .c0 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -1674,8 +1674,8 @@ exports[`TextField with an integer attribute should return a TextField of input 
 
 exports[`TextField with assistive text should return a TextField object contain Assistive Text 1`] = `
 .c3 {
-  color: hsl(0,0%,50%);
   background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1691,8 +1691,8 @@ exports[`TextField with assistive text should return a TextField object contain 
 }
 
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1713,16 +1713,16 @@ exports[`TextField with assistive text should return a TextField object contain 
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -1805,9 +1805,31 @@ exports[`TextField with assistive text should return a TextField object contain 
 `;
 
 exports[`TextField with object in assistive text should return a TextField object contain Assistive Text 1`] = `
-.c3 {
-  color: hsl(0,0%,50%);
+.c4 {
   background-color: transparent;
+  color: hsl(186.8,100%,41.6%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4:hover,
+.c4:active {
+  color: hsl(207,90%,54%);
+  cursor: pointer;
+}
+
+.c3 {
+  background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1823,8 +1845,8 @@ exports[`TextField with object in assistive text should return a TextField objec
 }
 
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1845,16 +1867,16 @@ exports[`TextField with object in assistive text should return a TextField objec
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -1910,28 +1932,6 @@ exports[`TextField with object in assistive text should return a TextField objec
   color: hsl(0,0%,75%);
 }
 
-.c4 {
-  color: hsl(186.8,100%,41.6%);
-  background-color: transparent;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c4:hover,
-.c4:active {
-  color: hsl(207,90%,54%);
-  cursor: pointer;
-}
-
 <div
   className="c0"
 >
@@ -1966,8 +1966,8 @@ exports[`TextField with object in assistive text should return a TextField objec
 
 exports[`TextField with some other props should return a TextField object contain input with those other props  1`] = `
 .c3 {
-  color: hsl(0,0%,50%);
   background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1983,8 +1983,8 @@ exports[`TextField with some other props should return a TextField object contai
 }
 
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -2005,16 +2005,16 @@ exports[`TextField with some other props should return a TextField object contai
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -2116,8 +2116,8 @@ exports[`TextField with validation error should return a TextField object contai
 }
 
 .c2 {
-  color: hsl(4.1,89.6%,58.4%);
   background-color: hsl(0,0%,100%);
+  color: hsl(4.1,89.6%,58.4%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -2138,16 +2138,16 @@ exports[`TextField with validation error should return a TextField object contai
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(4.1,89.6%,58.4%);
   border-radius: 4px;
   border-radius: 4px;

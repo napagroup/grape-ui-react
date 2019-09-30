@@ -2,8 +2,8 @@
 
 exports[`SelectField Component base should return a SelectField that contains ControlLabel object 1`] = `
 .c0 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -32,8 +32,8 @@ exports[`SelectField Component base should return a SelectField that contains Co
 
 exports[`SelectField Component base should return a SelectField that contains SelectFieldComponent object 1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -54,16 +54,16 @@ exports[`SelectField Component base should return a SelectField that contains Se
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -220,7 +220,7 @@ exports[`SelectField Component base should return a SelectField that contains Se
   className="c0"
 >
   <div
-    className="css-10nd86i c1"
+    className="css-1pcexqc-container c1"
     id="exampleColor"
     onKeyDown={[Function]}
   >
@@ -266,6 +266,7 @@ exports[`SelectField Component base should return a SelectField that contains Se
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -298,11 +299,11 @@ exports[`SelectField Component base should return a SelectField that contains Se
         className="css-1wy0on6 grape-ui-select__indicators"
       >
         <span
-          className="css-d8oujb grape-ui-select__indicator-separator"
+          className="css-bgvzuu-indicatorSeparator grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -333,8 +334,8 @@ exports[`SelectField Component base should return a SelectField that contains Se
 
 exports[`SelectField Component with ControlLabel with * should return a SelectField  with ControlLabel with * 1`] = `
 .c0 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -363,8 +364,8 @@ exports[`SelectField Component with ControlLabel with * should return a SelectFi
 
 exports[`SelectField Component with assistive text should return a SelectField with assistive text 1`] = `
 .c0 {
-  color: hsl(0,0%,50%);
   background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -415,8 +416,8 @@ exports[`SelectField Component with assistive text should return a SelectField w
 
 exports[`SelectField Component with plainText or disabled should return a SelectField with plainText with <div> Yellow </div> rendered 1`] = `
 .c0 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -425,10 +426,10 @@ exports[`SelectField Component with plainText or disabled should return a Select
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 1rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
@@ -445,8 +446,8 @@ exports[`SelectField Component with plainText or disabled should return a Select
 
 exports[`SelectField Component with plainText or disabled should return an input with disabled: true 1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -467,16 +468,16 @@ exports[`SelectField Component with plainText or disabled should return an input
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -638,7 +639,7 @@ exports[`SelectField Component with plainText or disabled should return an input
   className="c0"
 >
   <div
-    className="css-1sontr1 c1 grape-ui-select--is-disabled"
+    className="css-ssi0ig-container c1 grape-ui-select--is-disabled"
     id="exampleColor"
     onKeyDown={[Function]}
   >
@@ -684,6 +685,7 @@ exports[`SelectField Component with plainText or disabled should return an input
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -716,11 +718,11 @@ exports[`SelectField Component with plainText or disabled should return an input
         className="css-1wy0on6 grape-ui-select__indicators"
       >
         <span
-          className="css-ln5n5c grape-ui-select__indicator-separator"
+          className="css-622gbt-indicatorSeparator grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -751,8 +753,8 @@ exports[`SelectField Component with plainText or disabled should return an input
 
 exports[`SelectField Component with space should return a SelectField with space with  margin: 32px;  padding: 32px; on c0 1`] = `
 .c3 {
-  color: hsl(0,0%,50%);
   background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -768,8 +770,8 @@ exports[`SelectField Component with space should return a SelectField with space
 }
 
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -790,16 +792,16 @@ exports[`SelectField Component with space should return a SelectField with space
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -956,7 +958,7 @@ exports[`SelectField Component with space should return a SelectField with space
   className="c0"
 >
   <div
-    className="css-10nd86i c1"
+    className="css-1pcexqc-container c1"
     id="exampleColor"
     onKeyDown={[Function]}
   >
@@ -1002,6 +1004,7 @@ exports[`SelectField Component with space should return a SelectField with space
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -1034,11 +1037,11 @@ exports[`SelectField Component with space should return a SelectField with space
         className="css-1wy0on6 grape-ui-select__indicators"
       >
         <span
-          className="css-d8oujb grape-ui-select__indicator-separator"
+          className="css-bgvzuu-indicatorSeparator grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -1075,8 +1078,8 @@ exports[`SelectField Component with space should return a SelectField with space
 
 exports[`SelectField Component with style should return a SelectField that is from right to left; 1`] = `
 .c3 {
-  color: hsl(0,0%,50%);
   background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1092,8 +1095,8 @@ exports[`SelectField Component with style should return a SelectField that is fr
 }
 
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1114,16 +1117,16 @@ exports[`SelectField Component with style should return a SelectField that is fr
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -1280,7 +1283,7 @@ exports[`SelectField Component with style should return a SelectField that is fr
   className="c0"
 >
   <div
-    className="css-18h43lu c1 grape-ui-select--is-rtl"
+    className="css-xpmi2q-container c1 grape-ui-select--is-rtl"
     id="exampleColor"
     onKeyDown={[Function]}
   >
@@ -1326,6 +1329,7 @@ exports[`SelectField Component with style should return a SelectField that is fr
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -1358,11 +1362,11 @@ exports[`SelectField Component with style should return a SelectField that is fr
         className="css-1wy0on6 grape-ui-select__indicators"
       >
         <span
-          className="css-d8oujb grape-ui-select__indicator-separator"
+          className="css-bgvzuu-indicatorSeparator grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -1399,8 +1403,8 @@ exports[`SelectField Component with style should return a SelectField that is fr
 
 exports[`SelectField Component with style should return a SelectField with background-color: hsl(4.1,89.6%,58.4%) in c0 and c2  1`] = `
 .c3 {
-  color: hsl(0,0%,50%);
   background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1416,8 +1420,8 @@ exports[`SelectField Component with style should return a SelectField with backg
 }
 
 .c2 {
-  color: inherit;
   background-color: hsl(4.1,89.6%,58.4%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1438,16 +1442,16 @@ exports[`SelectField Component with style should return a SelectField with backg
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(4.1,89.6%,58.4%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -1604,7 +1608,7 @@ exports[`SelectField Component with style should return a SelectField with backg
   className="c0"
 >
   <div
-    className="css-10nd86i c1"
+    className="css-1pcexqc-container c1"
     id="exampleColor"
     onKeyDown={[Function]}
   >
@@ -1650,6 +1654,7 @@ exports[`SelectField Component with style should return a SelectField with backg
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -1682,11 +1687,11 @@ exports[`SelectField Component with style should return a SelectField with backg
         className="css-1wy0on6 grape-ui-select__indicators"
       >
         <span
-          className="css-d8oujb grape-ui-select__indicator-separator"
+          className="css-bgvzuu-indicatorSeparator grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -1723,8 +1728,8 @@ exports[`SelectField Component with style should return a SelectField with backg
 
 exports[`SelectField Component with style should return a SelectField with orange borderColor with border: 1px solid orange in c1; 1`] = `
 .c3 {
-  color: hsl(0,0%,50%);
   background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1740,8 +1745,8 @@ exports[`SelectField Component with style should return a SelectField with orang
 }
 
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1762,16 +1767,16 @@ exports[`SelectField Component with style should return a SelectField with orang
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -1928,7 +1933,7 @@ exports[`SelectField Component with style should return a SelectField with orang
   className="c0"
 >
   <div
-    className="css-10nd86i c1"
+    className="css-1pcexqc-container c1"
     id="exampleColor"
     onKeyDown={[Function]}
   >
@@ -1974,6 +1979,7 @@ exports[`SelectField Component with style should return a SelectField with orang
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -2006,11 +2012,11 @@ exports[`SelectField Component with style should return a SelectField with orang
         className="css-1wy0on6 grape-ui-select__indicators"
       >
         <span
-          className="css-d8oujb grape-ui-select__indicator-separator"
+          className="css-bgvzuu-indicatorSeparator grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -2047,8 +2053,8 @@ exports[`SelectField Component with style should return a SelectField with orang
 
 exports[`SelectField Component with style should return a SelectFieldComponent with props where lg={true} 1`] = `
 .c3 {
-  color: hsl(0,0%,50%);
   background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -2064,8 +2070,8 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 }
 
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -2086,16 +2092,16 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
   font-weight: inherit;
@@ -2252,7 +2258,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   className="c0"
 >
   <div
-    className="css-10nd86i c1"
+    className="css-1pcexqc-container c1"
     id="exampleColor"
     onKeyDown={[Function]}
   >
@@ -2298,6 +2304,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -2330,11 +2337,11 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
         className="css-1wy0on6 grape-ui-select__indicators"
       >
         <span
-          className="css-d8oujb grape-ui-select__indicator-separator"
+          className="css-bgvzuu-indicatorSeparator grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -2371,8 +2378,8 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 
 exports[`SelectField Component with style should return a SelectFieldComponent with props where sm={true} 1`] = `
 .c3 {
-  color: hsl(0,0%,50%);
   background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -2388,8 +2395,8 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 }
 
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -2410,16 +2417,16 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -2576,7 +2583,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   className="c0"
 >
   <div
-    className="css-10nd86i c1"
+    className="css-1pcexqc-container c1"
     id="exampleColor"
     onKeyDown={[Function]}
   >
@@ -2622,6 +2629,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -2654,11 +2662,11 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
         className="css-1wy0on6 grape-ui-select__indicators"
       >
         <span
-          className="css-d8oujb grape-ui-select__indicator-separator"
+          className="css-bgvzuu-indicatorSeparator grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >

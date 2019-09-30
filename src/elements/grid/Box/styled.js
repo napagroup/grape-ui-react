@@ -1,37 +1,13 @@
 import styled from 'styled-components';
 import {
-  bottom,
-  display,
-  height,
-  left,
-  maxHeight,
-  maxWidth,
-  minHeight,
-  minWidth,
+  layout,
   position,
-  right,
-  size,
   space,
-  top,
-  width,
-  zIndex,
 } from 'styled-system';
 import { BoxComponent } from './component';
 
 export const Box = styled(BoxComponent)`
-  ${bottom}
-  ${display}
-  ${left}
-  ${height}
-  ${maxHeight}
-  ${maxWidth}
-  ${minHeight}
-  ${minWidth}
-  ${position}
-  ${right}
-  ${top}
-  ${size}
+  ${layout}
+  ${position}  
   ${space}
-  ${width}
-  ${zIndex}
 `;

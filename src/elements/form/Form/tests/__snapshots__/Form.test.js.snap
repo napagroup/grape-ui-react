@@ -15,8 +15,8 @@ exports[`Form Component base should return a Form object and textField with fill
 }
 
 .c3 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -37,16 +37,16 @@ exports[`Form Component base should return a Form object and textField with fill
 
 .c1 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,90%);
+  color: inherit;
   border-bottom: 1px solid hsl(0,0%,25%);
   border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
@@ -141,8 +141,8 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
 }
 
 .c3 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -163,25 +163,25 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
 
 .c1 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c4 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,90%);
+  color: inherit;
   border-bottom: 1px solid hsl(0,0%,25%);
   border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
@@ -244,8 +244,8 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
 }
 
 .c5 {
-  color: inherit;
   background-color: hsl(0,0%,90%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -447,7 +447,7 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
     className="c4"
   >
     <div
-      className="css-10nd86i c5"
+      className="css-1pcexqc-container c5"
       id="exampleColor"
       onKeyDown={[Function]}
     >
@@ -493,6 +493,7 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
                     "boxSizing": "content-box",
                     "color": "inherit",
                     "fontSize": "inherit",
+                    "label": "input",
                     "opacity": 1,
                     "outline": 0,
                     "padding": 0,
@@ -525,11 +526,11 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
           className="css-1wy0on6 grape-ui-select__indicators"
         >
           <span
-            className="css-d8oujb grape-ui-select__indicator-separator"
+            className="css-bgvzuu-indicatorSeparator grape-ui-select__indicator-separator"
           />
           <div
             aria-hidden="true"
-            className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+            className="css-16pqwjk-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
             onMouseDown={[Function]}
             onTouchEnd={[Function]}
           >
@@ -585,8 +586,8 @@ exports[`Form Component base should return a Form object with filled formStyle a
 }
 
 .c3 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -607,16 +608,16 @@ exports[`Form Component base should return a Form object with filled formStyle a
 
 .c1 {
   position: relative;
-  color: inherit;
   background-color: hsl(0,0%,100%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c2 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;

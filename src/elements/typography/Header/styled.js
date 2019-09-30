@@ -76,11 +76,6 @@ const headerFactory = factoryProps => {
 const Header = headerFactory({ tag: 'h1' });
 
 Header.h1 = Header;
-Header.h2 = headerFactory({ tag: 'h2' });
-Header.h3 = headerFactory({ tag: 'h3' });
-Header.h4 = headerFactory({ tag: 'h4' });
-Header.h5 = headerFactory({ tag: 'h5' });
-Header.h6 = headerFactory({ tag: 'h6' });
 
 Header.propTypes = {
   display: PropTypes.bool,
@@ -92,4 +87,19 @@ Header.defaultProps = {
   display: false,
   fontWeight: defaultStylesBase.fontWeight,
 };
+for (let i = 2; i <= 6; i++) {
+  const subHeaderTag = `h${i}`;
+  Header[subHeaderTag] = headerFactory({ tag: subHeaderTag });
+
+  Header[subHeaderTag].propTypes = {
+    display: PropTypes.bool,
+    ...typography.propTypes,
+  };
+  Header[subHeaderTag].defaultProps = {
+    ...defaultStylesBase,
+    display: false,
+    fontWeight: defaultStylesBase.fontWeight,
+  };
+}
+
 export { Header };

@@ -3,8 +3,8 @@
 exports[`Button Component base with style should return a Button with a zIndex when using a number 1`] = `
 .c0 {
   border-radius: 4px;
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -16,10 +16,10 @@ exports[`Button Component base with style should return a Button with a zIndex w
   line-height: 1.5;
   position: relative;
   margin: 4px;
-  padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 4px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -54,8 +54,8 @@ exports[`Button Component base with style should return a Button with a zIndex w
 exports[`Button Component base with style should return a Button with a zIndex when using a string 1`] = `
 .c0 {
   border-radius: 4px;
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -67,10 +67,10 @@ exports[`Button Component base with style should return a Button with a zIndex w
   line-height: 1.5;
   position: relative;
   margin: 4px;
-  padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 4px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -105,8 +105,8 @@ exports[`Button Component base with style should return a Button with a zIndex w
 exports[`Button Component base with style should return a Button with bg and color 1`] = `
 .c0 {
   border-radius: 4px;
-  color: hsl(0,0%,98%);
   background-color: hsl(122.4,39.4%,49.2%);
+  color: hsl(0,0%,98%);
   display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -118,10 +118,10 @@ exports[`Button Component base with style should return a Button with bg and col
   line-height: 1.5;
   position: relative;
   margin: 4px;
-  padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 4px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -156,8 +156,8 @@ exports[`Button Component base with style should return a Button with bg and col
 exports[`Button Component base with style should return a Button with bg and color and bgActiveColor and bgHoverColor  1`] = `
 .c0 {
   border-radius: 4px;
-  color: hsl(0,0%,98%);
   background-color: hsl(122.4,39.4%,49.2%);
+  color: hsl(0,0%,98%);
   display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -169,10 +169,10 @@ exports[`Button Component base with style should return a Button with bg and col
   line-height: 1.5;
   position: relative;
   margin: 4px;
-  padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 4px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -207,8 +207,8 @@ exports[`Button Component base with style should return a Button with bg and col
 exports[`Button Component base with style should return a Button with lg 1`] = `
 .c0 {
   border-radius: 8px;
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
@@ -220,10 +220,10 @@ exports[`Button Component base with style should return a Button with lg 1`] = `
   line-height: 1.5;
   position: relative;
   margin: 4px;
-  padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 32px;
   padding-right: 32px;
+  padding-top: 8px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -258,8 +258,8 @@ exports[`Button Component base with style should return a Button with lg 1`] = `
 exports[`Button Component base with style should return a Button with sm 1`] = `
 .c0 {
   border-radius: 2px;
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
@@ -271,10 +271,10 @@ exports[`Button Component base with style should return a Button with sm 1`] = `
   line-height: 1.5;
   position: relative;
   margin: 4px;
-  padding-top: 0;
   padding-bottom: 0;
   padding-left: 8px;
   padding-right: 8px;
+  padding-top: 0;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -309,8 +309,8 @@ exports[`Button Component base with style should return a Button with sm 1`] = `
 exports[`Button Component base with style should return a Link with href with button look 1`] = `
 .c0 {
   border-radius: 4px;
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -322,10 +322,10 @@ exports[`Button Component base with style should return a Link with href with bu
   line-height: 1.5;
   position: relative;
   margin: 4px;
-  padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 4px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -360,8 +360,8 @@ exports[`Button Component base with style should return a Link with href with bu
 exports[`Button Component base with style should return a Link with to with button look 1`] = `
 .c0 {
   border-radius: 4px;
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -373,10 +373,10 @@ exports[`Button Component base with style should return a Link with to with butt
   line-height: 1.5;
   position: relative;
   margin: 4px;
-  padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 4px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -412,8 +412,8 @@ exports[`Button Component base with style should return a Link with to with butt
 exports[`Button base should return a Button 1`] = `
 .c0 {
   border-radius: 4px;
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -425,10 +425,10 @@ exports[`Button base should return a Button 1`] = `
   line-height: 1.5;
   position: relative;
   margin: 4px;
-  padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 4px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -462,8 +462,8 @@ exports[`Button base should return a Button 1`] = `
 exports[`Button base should return a Button with disabled 1`] = `
 .c0 {
   border-radius: 4px;
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -475,10 +475,10 @@ exports[`Button base should return a Button with disabled 1`] = `
   line-height: 1.5;
   position: relative;
   margin: 4px;
-  padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 4px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -514,8 +514,8 @@ exports[`Button base should return a Button with disabled 1`] = `
 exports[`Button base should return an contained Button 1`] = `
 .c0 {
   border-radius: 4px;
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -527,10 +527,10 @@ exports[`Button base should return an contained Button 1`] = `
   line-height: 1.5;
   position: relative;
   margin: 4px;
-  padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 4px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -566,8 +566,8 @@ exports[`Button base should return an contained raised Button 1`] = `
 .c0 {
   border-radius: 4px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -579,10 +579,10 @@ exports[`Button base should return an contained raised Button 1`] = `
   line-height: 1.5;
   position: relative;
   margin: 4px;
-  padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 4px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -619,8 +619,8 @@ exports[`Button base should return an outlined Button 1`] = `
 .c0 {
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -632,10 +632,10 @@ exports[`Button base should return an outlined Button 1`] = `
   line-height: 1.5;
   position: relative;
   margin: 4px;
-  padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 4px;
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;

@@ -31,12 +31,14 @@ export const colorCore = props => {
   if (props.variant) {
     nextProps = {
       ...props,
+      backgroundColor: resolveColor(props.bg, nextGlobalOverrides, null),
       bg: resolveColor(props.bg, nextGlobalOverrides, null),
       color: resolveColor(props.color, nextGlobalOverrides, null),
     };
   } else {
     nextProps = {
       ...props,
+      backgroundColor: resolveColor(props.bg, nextGlobalOverrides, defaultStylesBase.bg),
       bg: resolveColor(props.bg, nextGlobalOverrides, defaultStylesBase.bg),
       color: resolveColor(props.color, nextGlobalOverrides),
     };

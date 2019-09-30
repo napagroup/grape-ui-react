@@ -2,8 +2,8 @@
 
 exports[`Assistive Text Component base should return an Assistive Text object 1`] = `
 .c0 {
-  color: hsl(0,0%,50%);
   background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;

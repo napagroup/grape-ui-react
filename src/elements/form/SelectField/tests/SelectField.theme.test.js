@@ -1,8 +1,8 @@
 import React from 'react';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
-import { SelectField } from '..';
 import { ThemeProvider } from 'styled-components';
+import { SelectField } from '..';
 
 const assertReactElement = element => {
   const component = renderer.create(element);

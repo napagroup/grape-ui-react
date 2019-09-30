@@ -1,4 +1,4 @@
-import { themeGet } from 'styled-system';
+import { themeGet } from '@styled-system/theme-get';
 import * as border from 'src/assets/json/border.json';
 import * as breakpoints from 'src/assets/json/breakpoints.json';
 import * as colors from 'src/assets/json/colors.json';

@@ -2,8 +2,8 @@
 
 exports[`SelectField using Theme Font Family should return a SelectField object with a custom font family 1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -24,16 +24,16 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
 .c1 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: "DejaVu Sans Mono","Bitstream Vera Sans Mono",Courier;
   font-size: 0.8rem;
   font-weight: inherit;
@@ -190,7 +190,7 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   className="c0"
 >
   <div
-    className="css-10nd86i c1"
+    className="css-1pcexqc-container c1"
     id="exampleControl"
     onKeyDown={[Function]}
   >
@@ -236,6 +236,7 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -268,11 +269,11 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
         className="css-1wy0on6 grape-ui-select__indicators"
       >
         <span
-          className="css-d8oujb grape-ui-select__indicator-separator"
+          className="css-bgvzuu-indicatorSeparator grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -303,8 +304,8 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
 
 exports[`SelectField using Theme color should return a SelectField object with custom color 1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(305,33.9%,23.7%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -325,10 +326,10 @@ exports[`SelectField using Theme color should return a SelectField object with c
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: hsl(305,33.9%,23.7%);
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -491,7 +492,7 @@ exports[`SelectField using Theme color should return a SelectField object with c
   className="c0"
 >
   <div
-    className="css-10nd86i c1"
+    className="css-1pcexqc-container c1"
     id="exampleControl"
     onKeyDown={[Function]}
   >
@@ -537,6 +538,7 @@ exports[`SelectField using Theme color should return a SelectField object with c
                   "boxSizing": "content-box",
                   "color": "inherit",
                   "fontSize": "inherit",
+                  "label": "input",
                   "opacity": 1,
                   "outline": 0,
                   "padding": 0,
@@ -569,11 +571,11 @@ exports[`SelectField using Theme color should return a SelectField object with c
         className="css-1wy0on6 grape-ui-select__indicators"
       >
         <span
-          className="css-d8oujb grape-ui-select__indicator-separator"
+          className="css-bgvzuu-indicatorSeparator grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-1ep9fjw grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="css-16pqwjk-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >

@@ -2,8 +2,8 @@
 
 exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComponent that contains CheckboxComponent object 1`] = `
 .c3 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
@@ -37,8 +37,8 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
 }
 
 .c1 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -57,10 +57,10 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -164,8 +164,8 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
 
 exports[`CheckboxFieldComponent Component with 1 plaintext should return a CheckboxFieldComponent that contains CheckboxComponent object with plainText 1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -174,18 +174,18 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 1rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
 }
 
 .c1 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -205,8 +205,8 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
 }
 
 .c3 {
-  color: hsl(0,0%,50%);
   background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -223,10 +223,10 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -256,8 +256,8 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
 
 exports[`CheckboxFieldComponent Component with 2 plaintext should return a CheckboxFieldComponent that contains CheckboxComponent object with disabled 1`] = `
 .c2 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -266,18 +266,18 @@ exports[`CheckboxFieldComponent Component with 2 plaintext should return a Check
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 1rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
 }
 
 .c1 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -298,10 +298,10 @@ exports[`CheckboxFieldComponent Component with 2 plaintext should return a Check
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -325,8 +325,8 @@ exports[`CheckboxFieldComponent Component with 2 plaintext should return a Check
 
 exports[`CheckboxFieldComponent Component with assistive text should return a CheckboxFieldComponent that contains CheckboxComponent with assistive text 1`] = `
 .c3 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
@@ -360,8 +360,8 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
 }
 
 .c1 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -379,8 +379,8 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
 }
 
 .c4 {
-  color: hsl(0,0%,50%);
   background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -397,10 +397,10 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -498,8 +498,8 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
 
 exports[`CheckboxFieldComponent Component with disabled should return a CheckboxFieldComponent that contains CheckboxComponent object with disabled 1`] = `
 .c3 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
@@ -534,8 +534,8 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
 }
 
 .c1 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -554,10 +554,10 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -661,8 +661,8 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
 
 exports[`CheckboxFieldComponent Component with flex-direction should return a CheckboxFieldComponent that contains CheckboxComponent object with flex-direction 1`] = `
 .c3 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
@@ -696,8 +696,8 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
 }
 
 .c1 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -716,10 +716,10 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -831,8 +831,8 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
 
 exports[`CheckboxFieldComponent Component with flex-direction should return a CheckboxFieldComponent that contains CheckboxComponent object with flex-direction 2`] = `
 .c3 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
@@ -866,8 +866,8 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
 }
 
 .c1 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -886,10 +886,10 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -1001,8 +1001,8 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
 
 exports[`CheckboxFieldComponent Component with required should return a CheckboxFieldComponent that contains CheckboxComponent required 1`] = `
 .c3 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
@@ -1036,8 +1036,8 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
 }
 
 .c1 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1055,8 +1055,8 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
 }
 
 .c4 {
-  color: hsl(0,0%,50%);
   background-color: transparent;
+  color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1073,10 +1073,10 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -1174,8 +1174,8 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
 
 exports[`CheckboxFieldComponent Component with validationError should return a CheckboxFieldComponent that contains CheckboxComponent validationError 1`] = `
 .c3 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   -webkit-letter-spacing: inherit;
@@ -1209,8 +1209,8 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
 }
 
 .c1 {
-  color: hsl(4.1,89.6%,58.4%);
   background-color: hsl(0,0%,100%);
+  color: hsl(4.1,89.6%,58.4%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -1246,10 +1246,10 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 

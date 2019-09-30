@@ -43,3 +43,21 @@ describe('Header using Theme Font Family', () => {
     expect(tree).toMatchSnapshot();
   });
 });
+
+describe('Header using overridden base Font Family', () => {
+  it('should return a Header object with the custom base font family', () => {
+    const theme = {
+      fonts: {
+        base: 'Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif',
+      },
+    };
+    const element = (
+      <ThemeProvider theme={theme}>
+        <Header.h2>Lorem Ipsum</Header.h2>
+      </ThemeProvider>
+    );
+    const component = renderer.create(element);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});

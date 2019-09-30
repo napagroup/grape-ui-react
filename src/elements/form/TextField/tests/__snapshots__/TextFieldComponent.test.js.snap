@@ -2,8 +2,8 @@
 
 exports[`TextFieldComponent base should return a TextFieldComponent object 1`] = `
 .c0 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -69,8 +69,8 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
 
 exports[`TextFieldComponent base should return a large TextFieldComponent object 1`] = `
 .c0 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 8px;
   border-radius: 8px;
@@ -136,8 +136,8 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
 
 exports[`TextFieldComponent base should return a small TextFieldComponent object 1`] = `
 .c0 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
   border-radius: 2px;
@@ -203,8 +203,8 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
 
 exports[`TextFieldComponent with a currency attribute should return a TextFieldComponent that contains has currency style 1`] = `
 .c0 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -276,8 +276,8 @@ exports[`TextFieldComponent with a currency attribute should return a TextFieldC
 
 exports[`TextFieldComponent with a integer attribute should return a TextFieldComponent that contains has integer style 1`] = `
 .c0 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -349,8 +349,8 @@ exports[`TextFieldComponent with a integer attribute should return a TextFieldCo
 
 exports[`TextFieldComponent with a numeric attribute should return a TextFieldComponent that contains has numeric style 1`] = `
 .c0 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -422,8 +422,8 @@ exports[`TextFieldComponent with a numeric attribute should return a TextFieldCo
 
 exports[`TextFieldComponent with a password attribute should return a TextFieldComponent of input type password 1`] = `
 .c0 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -489,8 +489,8 @@ exports[`TextFieldComponent with a password attribute should return a TextFieldC
 
 exports[`TextFieldComponent with a phone attribute should return a TextFieldComponent that contains has phone style 1`] = `
 .c0 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -562,8 +562,8 @@ exports[`TextFieldComponent with a phone attribute should return a TextFieldComp
 
 exports[`TextFieldComponent with a postalCode attribute should return a TextFieldComponent that contains has postalCode style 1`] = `
 .c0 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;
@@ -635,8 +635,8 @@ exports[`TextFieldComponent with a postalCode attribute should return a TextFiel
 
 exports[`TextFieldComponent with an email attribute should return a TextFieldComponent of input type email 1`] = `
 .c0 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   border-radius: 4px;

@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import { width, display } from 'styled-system';
+import propTypes from '@styled-system/prop-types';
 
 const formComponentPropsToRemove = {
-  ...display.propTypes,
-  ...width.propTypes,
+  ...propTypes.layout,
+  ...propTypes.space,
   formInline: false,
 };
 export const applyFormStyleToChild = (child, formStyleFromParent) => {

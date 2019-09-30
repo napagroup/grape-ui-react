@@ -1,8 +1,8 @@
 import React from 'react';
-import { TextField } from '..';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
+import { TextField } from '..';
 
 describe('TextField using Theme color', () => {
   it('should return a TextField object with custom color', () => {

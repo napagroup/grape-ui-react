@@ -2,8 +2,8 @@
 
 exports[`CheckboxField using Theme Font Family should return a CheckboxField object with a custom font family 1`] = `
 .c3 {
-  color: inherit;
   background-color: transparent;
+  color: inherit;
   font-family: "DejaVu Sans Mono","Bitstream Vera Sans Mono",Courier;
   font-size: inherit;
   -webkit-letter-spacing: inherit;
@@ -37,8 +37,8 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
 }
 
 .c1 {
-  color: inherit;
   background-color: hsl(0,0%,100%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -57,10 +57,10 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
@@ -211,8 +211,8 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
 }
 
 .c1 {
-  color: inherit;
   background-color: hsl(305,33.9%,23.7%);
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -231,10 +231,10 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
 
 .c0 {
   position: relative;
-  color: inherit;
   background-color: transparent;
-  padding-top: 4px;
+  color: inherit;
   padding-bottom: 16px;
+  padding-top: 4px;
   width: 100%;
 }
 
