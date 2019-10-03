@@ -12,7 +12,7 @@ definitions:
               - sonar
               script:
               - npm install
-              - npm build
+              - npm run build
       - step: &check-quality-gate-sonarcloud
               name: Check the Quality Gate on SonarCloud
               script:
