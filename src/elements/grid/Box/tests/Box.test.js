@@ -18,10 +18,10 @@ const assertReactElement = element => {
 };
 
 describe('Box Component base', () => {
-  it('should return a Box object with base styling', () => {
+  it('should return an empty Box object with base styling', () => {
     const element = (
       <ThemeProvider theme={emptyTheme}>
-        <Box>Lorem Ipsum</Box>
+        <Box />
       </ThemeProvider>
     );
     expect(assertReactElement(element)).toMatchSnapshot();

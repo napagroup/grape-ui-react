@@ -9,12 +9,10 @@ exports[`Box Component base should return a Box object with acceptable attribute
 </div>
 `;
 
-exports[`Box Component base should return a Box object with base styling 1`] = `
+exports[`Box Component base should return an empty Box object with base styling 1`] = `
 <div
   className=""
->
-  Lorem Ipsum
-</div>
+/>
 `;
 
 exports[`Box Component using custom theme breakpoints for Core Styling should return a Box object with overridden breakpoints for margin 1`] = `

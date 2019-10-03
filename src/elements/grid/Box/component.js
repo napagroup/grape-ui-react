@@ -20,6 +20,11 @@ export const BoxComponent = ({ children, ...props }) => (
     {children}
   </div>
 );
+
 BoxComponent.propTypes = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.any,
+};
+
+BoxComponent.defaultProps = {
+  children: null,
 };
