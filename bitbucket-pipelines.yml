@@ -1,15 +1,29 @@
-# This is a sample build configuration for JavaScript.
-# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
-# Only use spaces to indent your .yml configuration.
-# -----
-# You can specify a custom docker image from Docker Hub as your build environment.
 image: node:10.15.3
+clone:
+      depth: full
 
-pipelines:
-  default:
-    - step:
-        caches:
-          - node
-        script: # Modify the commands below to build your repository.
-          - npm install
-          - npm test
+definitions:
+      caches:
+            sonar: ~/.sonar/cache
+      steps:
+      - step: &build-test-sonarcloud
+              name: Build, test and analyze on SonarCloud
+              caches:
+              - sonar
+              script:
+              - npm install
+              - npm build
+      - step: &check-quality-gate-sonarcloud
+              name: Check the Quality Gate on SonarCloud
+              script:
+              - pipe: sonarsource/sonarcloud-quality-gate:0.1.3
+
+pipelines:                 # More info here: https://confluence.atlassian.com/bitbucket/configure-bitbucket-pipelines-yml-792298910.html
+  branches:
+    master:
+      - step: *build-test-sonarcloud
+      - step: *check-quality-gate-sonarcloud
+  pull-requests:
+    '**':
+      - step: *build-test-sonarcloud
+      - step: *check-quality-gate-sonarcloud
