@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { fontWeight } from 'styled-system';
+import { fontWeight, space } from 'styled-system';
 import { getGlobalOverrides } from 'src/global-styles';
 import {
   colorCore,
@@ -33,6 +33,7 @@ const Link = styled(LinkComponent)`
   ${fontStyleCore}
   ${textAlignCore}
   ${textDecorationCore}
+  ${space}
   &:hover,
   ${hoverStyle}
   `;

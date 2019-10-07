@@ -12,10 +12,10 @@ exports[`ListItem Component base should return a ListItem object with base styli
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li
@@ -37,10 +37,10 @@ exports[`ListItem Component specified styles should return a ListItem object wit
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li
@@ -62,10 +62,10 @@ exports[`ListItem Component specified styles should return a ListItem object wit
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li
@@ -87,10 +87,10 @@ exports[`ListItem Component specified styles should return a ListItem object wit
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li
@@ -112,10 +112,10 @@ exports[`ListItem Component specified styles should return a ListItem object wit
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li
@@ -137,10 +137,10 @@ exports[`ListItem Component specified styles should return a ListItem object wit
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li
@@ -162,10 +162,10 @@ exports[`ListItem Component specified styles should return a ListItem object wit
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li
@@ -187,10 +187,10 @@ exports[`ListItem Component specified styles should return a ListItem object wit
   -ms-letter-spacing: 2px;
   letter-spacing: 2px;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li
@@ -212,10 +212,10 @@ exports[`ListItem Component specified styles should return a ListItem object wit
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: right;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li
@@ -237,10 +237,35 @@ exports[`ListItem Component specified styles should return a ListItem object wit
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  margin-bottom: 0.25rem;
+}
+
+<li
+  className="c0"
+>
+  Lorem Ipsum
+</li>
+`;
+
+exports[`ListItem Component specified styles should return a ListItem object with custom margins 1`] = `
+.c0 {
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  margin-bottom: 4px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
 }
 
 <li
@@ -262,10 +287,10 @@ exports[`ListItem Component specified styles should return a ListItem object wit
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li
@@ -287,10 +312,10 @@ exports[`ListItem Component specified styles should return a ListItem object wit
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li
@@ -313,10 +338,10 @@ exports[`ListItem Component specified styles should return a ListItem object wit
   letter-spacing: inherit;
   line-height: 1.5;
   font-style: italic;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li

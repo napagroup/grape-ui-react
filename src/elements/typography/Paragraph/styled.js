@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { fontWeight } from 'styled-system';
+import { fontWeight, space } from 'styled-system';
 import { getGlobalStyles } from 'src/global-styles';
 import {
   colorCore,
@@ -28,6 +28,7 @@ const fontWeightParagraph = props => {
 };
 
 const Paragraph = styled(ParagraphComponent)`
+  margin: 0 0 ${gridSchema.gutter};
   ${colorCore}
   ${fontFamilyCore}
   ${fontSizeParagraph}
@@ -37,8 +38,8 @@ const Paragraph = styled(ParagraphComponent)`
   ${fontStyleCore}
   ${textAlignCore}
   ${textDecorationCore}
-  margin: 0 0 ${gridSchema.gutter};
-  `;
+  ${space}
+`;
 
 Paragraph.propTypes = {
   ...typography.propTypes,
@@ -49,4 +50,5 @@ Paragraph.defaultProps = {
   ...defaultStylesBase,
   lead: false,
 };
+
 export { Paragraph };

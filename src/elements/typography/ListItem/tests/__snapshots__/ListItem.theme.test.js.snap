@@ -12,10 +12,10 @@ exports[`ListItem using Theme Font Family should return a ListItem object with a
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li
@@ -37,10 +37,10 @@ exports[`ListItem using Theme color should return a ListItem object with custom 
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin-bottom: 0.25rem;
 }
 
 <li

@@ -2,6 +2,7 @@
 
 exports[`Paragraph Component base should return a Paragraph object with base styling 1`] = `
 .c0 {
+  margin: 0 0 1rem;
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -15,7 +16,6 @@ exports[`Paragraph Component base should return a Paragraph object with base sty
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin: 0 0 1rem;
 }
 
 <p
@@ -27,6 +27,7 @@ exports[`Paragraph Component base should return a Paragraph object with base sty
 
 exports[`Paragraph Component specified styles should return a Paragraph object with a bold font-weight 1`] = `
 .c0 {
+  margin: 0 0 1rem;
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -40,7 +41,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin: 0 0 1rem;
 }
 
 <p
@@ -52,6 +52,7 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with a green color 1`] = `
 .c0 {
+  margin: 0 0 1rem;
   color: hsl(122.4,39.4%,49.2%);
   background-color: transparent;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -65,7 +66,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin: 0 0 1rem;
 }
 
 <p
@@ -77,6 +77,7 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with a lead paragraph stlying 1`] = `
 .c0 {
+  margin: 0 0 1rem;
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -90,7 +91,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin: 0 0 1rem;
 }
 
 <p
@@ -102,6 +102,7 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with a serif font-family 1`] = `
 .c0 {
+  margin: 0 0 1rem;
   background-color: transparent;
   color: inherit;
   font-family: "Palatino Linotype",Palatino,Palladio,"URW Palladio L","Book Antiqua",Baskerville,"Bookman Old Style","Bitstream Charter","Nimbus Roman No9 L",Garamond,"Apple Garamond","ITC Garamond Narrow","New Century Schoolbook","Century Schoolbook","Century Schoolbook L",Georgia,serif;
@@ -115,7 +116,33 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+}
+
+<p
+  className="c0"
+>
+  Lorem Ipsum
+</p>
+`;
+
+exports[`Paragraph Component specified styles should return a Paragraph object with custom margins 1`] = `
+.c0 {
   margin: 0 0 1rem;
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-bottom: 4px;
+  margin-top: 4px;
 }
 
 <p
@@ -127,6 +154,7 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with font-size: lg 1`] = `
 .c0 {
+  margin: 0 0 1rem;
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -140,7 +168,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin: 0 0 1rem;
 }
 
 <p
@@ -152,6 +179,7 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with font-size: sm 1`] = `
 .c0 {
+  margin: 0 0 1rem;
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -165,7 +193,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin: 0 0 1rem;
 }
 
 <p
@@ -177,6 +204,7 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with font-style: italic 1`] = `
 .c0 {
+  margin: 0 0 1rem;
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -191,7 +219,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin: 0 0 1rem;
 }
 
 <p
@@ -203,6 +230,7 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with specified kerning 1`] = `
 .c0 {
+  margin: 0 0 1rem;
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -216,7 +244,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin: 0 0 1rem;
 }
 
 <p
@@ -228,6 +255,7 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with text-align: right 1`] = `
 .c0 {
+  margin: 0 0 1rem;
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -241,7 +269,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   text-align: right;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  margin: 0 0 1rem;
 }
 
 <p
@@ -253,6 +280,7 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 
 exports[`Paragraph Component specified styles should return a Paragraph object with text-decoration: underline 1`] = `
 .c0 {
+  margin: 0 0 1rem;
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -266,7 +294,6 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
   text-align: inherit;
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  margin: 0 0 1rem;
 }
 
 <p

@@ -25,6 +25,11 @@ describe('List Component', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a List object with custom margin and paddings', () => {
+    const component = renderer.create(<ThemeProvider theme={{}}><List m={1} p={1}>Lorem Ipsum</List></ThemeProvider>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
 
 describe('List Specific Styling', () => {

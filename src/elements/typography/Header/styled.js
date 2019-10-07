@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { fontWeight } from 'styled-system';
+import { fontWeight, space } from 'styled-system';
 import {
   colorCore,
   defaultStylesBase,
@@ -10,6 +10,7 @@ import {
   fontStyleCore,
   letterSpacingCore,
   lineHeightCore,
+  spaceProps,
   textAlignCore,
   textDecorationCore,
   typography,
@@ -44,8 +45,9 @@ const getHeaderFontWeight = props => {
   return fontWeight(overrides);
 };
 const propsToTrim = {
-  children: PropTypes.any.isRequired,
+  ...spaceProps.propTypes,
   ...typography.propTypes,
+  children: PropTypes.any.isRequired,
   display: PropTypes.bool,
 };
 
@@ -60,6 +62,7 @@ const headerFactory = factoryProps => {
   };
   const getHeaderFontSize = getHeaderFontSizeFromTag(factoryProps);
   return styled(HeaderComponent)`
+    margin: 0 0 ${gridSchema.gutter};
     ${colorCore}
     ${fontFamilyCore}
     ${fontStyleCore}
@@ -69,7 +72,7 @@ const headerFactory = factoryProps => {
     ${lineHeightCore}
     ${textAlignCore}
     ${textDecorationCore}
-    margin: 0 0 ${gridSchema.gutter};
+    ${space}
   `;
 };
 

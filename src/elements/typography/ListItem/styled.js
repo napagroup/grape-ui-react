@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { getGlobalStyles } from 'src/global-styles';
-import { fontWeight } from 'styled-system';
+import { fontWeight, space } from 'styled-system';
 import {
   colorCore,
   defaultStylesBase,
@@ -18,8 +18,6 @@ import { ListItemComponent } from './component';
 
 const { grid: { gutter } } = getGlobalStyles();
 
-const marginBottom = props => `margin-bottom: ${scaleFont(gutter, 0.25)}`;
-
 export const ListItem = styled(ListItemComponent)`
   ${colorCore}
   ${fontFamilyCore}
@@ -28,9 +26,9 @@ export const ListItem = styled(ListItemComponent)`
   ${letterSpacingCore}
   ${lineHeightCore}
   ${fontStyleCore}
+  ${space}
   ${textAlignCore}
   ${textDecorationCore}
-  ${marginBottom}
 `;
 
 ListItem.propTypes = {
@@ -39,4 +37,5 @@ ListItem.propTypes = {
 
 ListItem.defaultProps = {
   ...defaultStylesBase,
+  mb: scaleFont(gutter, 0.25),
 };

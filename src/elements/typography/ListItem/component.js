@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { typography } from 'src/utils/styledHelpers';
+import { spaceProps, typography } from 'src/utils/styledHelpers';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 
 const propsToTrim = {
+  ...spaceProps.propTypes,
   ...typography.propTypes,
 };
 export const ListItemComponent = ({ children, ...props }) => (

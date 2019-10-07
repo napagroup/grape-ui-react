@@ -363,6 +363,38 @@ exports[`Link Component specified styles should return a Link object with a spec
 </a>
 `;
 
+exports[`Link Component specified styles should return a Link object with custom margin & padding 1`] = `
+.c0 {
+  background-color: transparent;
+  color: hsl(186.8,100%,41.6%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin: 4px;
+  padding: 4px;
+}
+
+.c0:hover,
+.c0:active {
+  color: hsl(207,90%,54%);
+  cursor: pointer;
+}
+
+<a
+  className="c0"
+>
+  Lorem Ipsum
+</a>
+`;
+
 exports[`Link Component specified styles should return a Link object with font-size: lg 1`] = `
 .c0 {
   background-color: transparent;

@@ -72,4 +72,9 @@ describe('ListItem Component specified styles', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a ListItem object with custom margins', () => {
+    const component = renderer.create(<ThemeProvider theme={{}}><ListItem mb={1}>Lorem Ipsum</ListItem></ThemeProvider>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

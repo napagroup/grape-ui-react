@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fontWeight } from 'styled-system';
+import { fontWeight, space } from 'styled-system';
 import {
   colorCore,
   defaultStylesBase,
@@ -24,6 +24,7 @@ export const Text = styled(TextComponent)`
   ${lineHeightCore}
   ${textAlignCore}
   ${textDecorationCore}
+  ${space}
 `;
 
 Text.propTypes = {

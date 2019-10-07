@@ -48,6 +48,53 @@ exports[`Text Component specified styles should return a Text object with a spec
 </span>
 `;
 
+exports[`Text Component specified styles should return a Text object with a specified padding 1`] = `
+.c0 {
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c0 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+<span
+  className="c0"
+>
+  Lorem Ipsum
+</span>
+`;
+
 exports[`Text Component specified styles should return a Text object with a specified text-align 1`] = `
 .c0 {
   background-color: transparent;

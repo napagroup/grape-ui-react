@@ -83,4 +83,9 @@ describe('Link Component specified styles', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Link object with custom margin & padding', () => {
+    const component = renderer.create(<ThemeProvider theme={{}}><Link m={1} p={1} textDecoration="underline">Lorem Ipsum</Link></ThemeProvider>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

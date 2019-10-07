@@ -57,4 +57,9 @@ describe('Text Component specified styles', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Text object with a specified padding', () => {
+    const component = renderer.create(<ThemeProvider theme={{}}><Text px={[1, 2, 3, 4]}>Lorem Ipsum</Text></ThemeProvider>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

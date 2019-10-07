@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import propTypes from '@styled-system/prop-types';
 import styled from 'styled-components';
 import { getGlobalStyles } from 'src/global-styles';
-import { fontWeight } from 'styled-system';
+import { fontWeight, space } from 'styled-system';
 import {
   colorCore,
   defaultStylesBase,
@@ -36,8 +37,9 @@ const paddingLeft = props => `padding-left:  ${(props.unstyled || props.inline) 
 const listStyle = props => `${props.unstyled ? '> li { list-style: none; }' : ''}`;
 const margin = props => `margin: 0 0 ${gridSchema.gutter};`;
 const listComponentPropsToTrim = {
-  inline: PropTypes.bool,
+  ...propTypes.space,
   ...typography.propTypes,
+  inline: PropTypes.bool,
   unstyled: PropTypes.bool,
 };
 const listFactory = factoryProps => {
@@ -63,7 +65,8 @@ const listFactory = factoryProps => {
     ${paddingLeft}
     ${listStyle}
     ${inlineStyle}
-    `;
+    ${space}
+  `;
 };
 
 const List = listFactory({ tag: 'ul' });
