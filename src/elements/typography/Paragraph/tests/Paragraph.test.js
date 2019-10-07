@@ -17,6 +17,11 @@ describe('Paragraph Component specified styles', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Paragraph object with ellipsis', () => {
+    const component = renderer.create(<Paragraph ellipsis>Lorem Ipsum</Paragraph>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
   it('should return a Paragraph object with a serif font-family', () => {
     const component = renderer.create(<ThemeProvider theme={{}}><Paragraph fontFamily="serif">Lorem Ipsum</Paragraph></ThemeProvider>);
     const tree = component.toJSON();

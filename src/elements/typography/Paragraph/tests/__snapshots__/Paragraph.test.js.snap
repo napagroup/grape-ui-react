@@ -152,6 +152,34 @@ exports[`Paragraph Component specified styles should return a Paragraph object w
 </p>
 `;
 
+exports[`Paragraph Component specified styles should return a Paragraph object with ellipsis 1`] = `
+.c0 {
+  margin: 0 0 1rem;
+  background-color: transparent;
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<p
+  className="c0"
+>
+  Lorem Ipsum
+</p>
+`;
+
 exports[`Paragraph Component specified styles should return a Paragraph object with font-size: lg 1`] = `
 .c0 {
   margin: 0 0 1rem;

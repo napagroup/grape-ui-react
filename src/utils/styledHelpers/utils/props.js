@@ -7,6 +7,7 @@ export const typography = {
     borderRadius: PropTypes.string,
     color: PropTypes.string,
     display: PropTypes.any,
+    ellipsis: PropTypes.bool,
     fontFamily: PropTypes.string,
     fontSize: PropTypes.any,
     fontWeight: PropTypes.any,

@@ -4,6 +4,7 @@ import { fontWeight, space } from 'styled-system';
 import {
   colorCore,
   defaultStylesBase,
+  ellipsisCore,
   fontFamilyCore,
   fontSizeCore,
   fontStyleCore,
@@ -20,6 +21,7 @@ const { grid: { gutter } } = getGlobalStyles();
 
 export const ListItem = styled(ListItemComponent)`
   ${colorCore}
+  ${ellipsisCore}
   ${fontFamilyCore}
   ${fontSizeCore}
   ${fontWeight}

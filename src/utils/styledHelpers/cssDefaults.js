@@ -10,6 +10,7 @@ export const defaultStylesBase = {
   bg: 'transparent',
   borderRadius: borderSchema.borderRadius.base,
   color: CSS_INHERIT_VALUE,
+  ellipsis: false,
   fontFamily: CSS_DEFAULT_FONTFAMILY_VALUE,
   fontSize: CSS_INHERIT_VALUE,
   fontWeight: CSS_INHERIT_VALUE,

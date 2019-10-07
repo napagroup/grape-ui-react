@@ -452,6 +452,34 @@ exports[`Header.h1 Component specified styles should return a Header object with
 </h1>
 `;
 
+exports[`Header.h1 Component specified styles should return a Header object with ellipsis 1`] = `
+.c0 {
+  margin: 0 0 1rem;
+  background-color: transparent;
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 2.5rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<h1
+  className="c0"
+>
+  Lorem Ipsum
+</h1>
+`;
+
 exports[`Header.h1 Component specified styles should return a Header object with font-size: display 1`] = `
 .c0 {
   margin: 0 0 1rem;

@@ -43,6 +43,11 @@ describe('Link Component specified styles', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Link object with ellipsis', () => {
+    const component = renderer.create(<ThemeProvider theme={{}}><Link ellipsis>Lorem Ipsum</Link></ThemeProvider>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
   it('should return a Link object with a specified font-family', () => {
     const component = renderer.create(<ThemeProvider theme={{}}><Link fontFamily="monospace">Lorem Ipsum</Link></ThemeProvider>);
     const tree = component.toJSON();

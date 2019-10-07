@@ -78,3 +78,14 @@ export const lineHeightCore = props => lineHeight({ ...props, lineHeight: props.
 export const fontStyleCore = props => `${props.italic ? 'font-style: italic;' : ''}`;
 export const textAlignCore = props => textAlign({ ...props, textAlign: props.textAlign || defaultStylesBase.textAlign });
 export const textDecorationCore = props => `text-decoration: ${props.textDecoration || defaultStylesBase.textDecoration};`;
+
+export const ellipsisCore = props => {
+  if (props.ellipsis) {
+    return {
+      overflow: 'hidden',
+      textOverflow: 'ellipsis',
+      whiteSpace: 'nowrap',
+    };
+  }
+  return {};
+};

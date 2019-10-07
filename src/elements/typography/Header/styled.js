@@ -5,6 +5,7 @@ import { fontWeight, space } from 'styled-system';
 import {
   colorCore,
   defaultStylesBase,
+  ellipsisCore,
   fontFamilyCore,
   fontSizeCore,
   fontStyleCore,
@@ -64,6 +65,7 @@ const headerFactory = factoryProps => {
   return styled(HeaderComponent)`
     margin: 0 0 ${gridSchema.gutter};
     ${colorCore}
+    ${ellipsisCore}
     ${fontFamilyCore}
     ${fontStyleCore}
     ${getHeaderFontSize}

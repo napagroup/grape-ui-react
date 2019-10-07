@@ -47,6 +47,11 @@ describe('ListItem Component specified styles', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a ListItem object with ellipsis', () => {
+    const component = renderer.create(<ThemeProvider theme={{}}><ListItem ellipsis>Lorem Ipsum</ListItem></ThemeProvider>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
   it('should return a ListItem object with a specified font-family', () => {
     const component = renderer.create(<ThemeProvider theme={{}}><ListItem fontFamily="monospace">Lorem Ipsum</ListItem></ThemeProvider>);
     const tree = component.toJSON();

@@ -5,6 +5,7 @@ import { getGlobalStyles } from 'src/global-styles';
 import {
   colorCore,
   defaultStylesBase,
+  ellipsisCore,
   fontFamilyCore,
   fontSizeCore,
   fontStyleCore,
@@ -30,6 +31,7 @@ const fontWeightParagraph = props => {
 const Paragraph = styled(ParagraphComponent)`
   margin: 0 0 ${gridSchema.gutter};
   ${colorCore}
+  ${ellipsisCore}
   ${fontFamilyCore}
   ${fontSizeParagraph}
   ${fontWeightParagraph}

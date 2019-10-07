@@ -17,6 +17,11 @@ describe('Text Component specified styles', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Text object with ellipsis', () => {
+    const component = renderer.create(<ThemeProvider theme={{}}><Text ellipsis>Lorem Ipsum</Text></ThemeProvider>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
   it('should return a Text object with specified font-family', () => {
     const component = renderer.create(<ThemeProvider theme={{}}><Text fontFamily="monospace">Lorem Ipsum</Text></ThemeProvider>);
     const tree = component.toJSON();

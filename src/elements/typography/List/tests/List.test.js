@@ -63,6 +63,11 @@ describe('List Specific Styling', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a List object with ellipsis', () => {
+    const component = renderer.create(<ThemeProvider theme={{}}><List ellipsis>Lorem Ipsum</List></ThemeProvider>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
   it('should return a List object with a specified font-family', () => {
     const component = renderer.create(<ThemeProvider theme={{}}><List fontFamily="monospace">Lorem Ipsum</List></ThemeProvider>);
     const tree = component.toJSON();

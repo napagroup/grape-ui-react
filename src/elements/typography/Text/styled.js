@@ -3,6 +3,7 @@ import { fontWeight, space } from 'styled-system';
 import {
   colorCore,
   defaultStylesBase,
+  ellipsisCore,
   fontFamilyCore,
   fontSizeCore,
   fontStyleCore,
@@ -16,6 +17,7 @@ import { TextComponent } from './component';
 
 export const Text = styled(TextComponent)`
   ${colorCore}
+  ${ellipsisCore}
   ${fontFamilyCore}
   ${fontSizeCore}
   ${fontStyleCore}

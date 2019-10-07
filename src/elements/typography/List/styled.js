@@ -6,6 +6,7 @@ import { getGlobalStyles } from 'src/global-styles';
 import { fontWeight, space } from 'styled-system';
 import {
   colorCore,
+  ellipsisCore,
   defaultStylesBase,
   fontFamilyCore,
   fontSizeCore,
@@ -53,6 +54,7 @@ const listFactory = factoryProps => {
 
   return styled(ListComponent)`
     ${colorCore}
+    ${ellipsisCore}
     ${fontFamilyCore}
     ${fontSizeCore}
     ${fontWeight}

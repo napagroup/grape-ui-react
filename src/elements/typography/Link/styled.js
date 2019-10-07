@@ -5,6 +5,7 @@ import { getGlobalOverrides } from 'src/global-styles';
 import {
   colorCore,
   defaultStylesBase,
+  ellipsisCore,
   fontFamilyCore,
   fontSizeCore,
   fontStyleCore,
@@ -25,6 +26,7 @@ const hoverStyle = props => `&:active {
 
 const Link = styled(LinkComponent)`
   ${colorCore}
+  ${ellipsisCore}
   ${fontFamilyCore}
   ${fontSizeCore}
   ${fontWeight}
