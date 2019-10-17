@@ -61,16 +61,19 @@ export const TextField = props => {
   const {
     activeColor,
     bg,
+    controlGroupProps,
     controlId,
     labelText,
+    name,
     required,
     validationError,
     ...otherProps
   } = props;
   const childProps = {
     bg,
-    id: controlId,
+    id: controlId || name,
     labelText,
+    name,
     required,
     validationError,
     ...removeSomeProps(otherProps, propsToTrim),
@@ -82,9 +85,9 @@ export const TextField = props => {
       bg={defaultControlStyles.bg}
       controlId={controlId}
       labelText={labelText}
-      pb={3}
-      pt={1}
+      name={name}
       validationError={validationError}
+      {...controlGroupProps}
     >
       <TextFieldComponent {...childProps} />
     </ControlGroup>
@@ -98,9 +101,11 @@ TextField.propTypes = {
     PropTypes.string,
   ]),
   bg: PropTypes.string,
-  controlId: PropTypes.string.isRequired,
+  controlGroupProps: PropTypes.object,
+  controlId: PropTypes.string,
   formStyle: PropTypes.string,
   labelText: PropTypes.string,
+  name: PropTypes.string,
   required: PropTypes.bool,
   validationError: PropTypes.string,
   ...borderRadius.propTypes,
@@ -110,8 +115,11 @@ TextField.defaultProps = {
   activeColor: defaultControlStyles.activeColor,
   assistiveText: '',
   bg: null,
+  controlGroupProps: {},
+  controlId: '',
   formStyle: '',
   labelText: '',
+  name: '',
   required: false,
   validationError: '',
 };

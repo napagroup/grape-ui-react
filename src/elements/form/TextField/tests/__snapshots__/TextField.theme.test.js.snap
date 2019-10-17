@@ -74,6 +74,7 @@ exports[`TextField using Theme Font Family should return a TextField object with
   <input
     className="c1"
     id="myButton"
+    name="myButton"
     readOnly={false}
     required={false}
     tabIndex="0"
@@ -158,6 +159,7 @@ exports[`TextField using Theme color should return a TextField object with custo
   <input
     className="c1"
     id="myButton"
+    name="myButton"
     readOnly={false}
     required={false}
     tabIndex="0"

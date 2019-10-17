@@ -117,6 +117,7 @@ exports[`Form Component base should return a Form object and textField with fill
     <input
       className="c2"
       id="exampleFullName"
+      name=""
       readOnly={false}
       required={false}
       tabIndex="0"
@@ -413,6 +414,7 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
     <input
       className="c2"
       id="exampleFullName"
+      name=""
       readOnly={false}
       required={false}
       tabIndex="0"
@@ -431,6 +433,7 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
     <input
       className="c2"
       id="address"
+      name=""
       readOnly={false}
       required={false}
       tabIndex="0"
@@ -682,6 +685,7 @@ exports[`Form Component base should return a Form object with filled formStyle a
     <input
       className="c2"
       id="exampleFullName"
+      name=""
       readOnly={false}
       required={false}
       tabIndex="0"

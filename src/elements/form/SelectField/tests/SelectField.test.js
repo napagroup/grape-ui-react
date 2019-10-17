@@ -4,7 +4,6 @@ import Adapter from 'enzyme-adapter-react-16';
 import { configure, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
-import { PlainText } from 'src/elements/form/PlainText';
 import { SelectField } from '..';
 
 const assertReactElement = element => {
@@ -79,14 +78,16 @@ describe('SelectField Component with space', () => {
   });
 });
 
-describe('SelectField Component with plainText or disabled', () => {
-  it('should return a SelectField with plainText with <div> Yellow </div> rendered', () => {
-    const element = <ThemeProvider theme={{}}><SelectField controlId="exampleColor" id="exampleColor" labelText="Color" plainText value={colorOptions[1]} /></ThemeProvider>;
-    const component = mount(element);
-    expect(component.find(PlainText).find('div')).toMatchSnapshot();
+describe('SelectField Component with space', () => {
+  it('should return a SelectField with space with  margin: 32px;  padding: 32px; on c0', () => {
+    const element = <ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" m={4} options={colorOptions} p={4} value={colorOptions[1]} /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
   });
-  it('should return an input with disabled: true', () => {
-    const element = <ThemeProvider theme={{}}><SelectField controlId="exampleColor" disabled labelText="Color" value={colorOptions[1]} /></ThemeProvider>;
+});
+
+describe('SelectField Component with custom Control Group props', () => {
+  it('should return a SelectField with custom control group props', () => {
+    const element = <ThemeProvider theme={{}}><SelectField controlGroupProps={{ pb: 2, pt: 0 }} /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

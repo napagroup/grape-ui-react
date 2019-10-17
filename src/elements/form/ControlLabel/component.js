@@ -11,8 +11,7 @@ const propsToTrim = {
   validationError: '',
 };
 export const ControlLabelComponent = ({ children, ...props }) => (
-  /* eslint-disable jsx-a11y/label-has-associated-control */
-  // eslint-disable-next-line jsx-a11y/label-has-for
+  // eslint-disable-next-line jsx-a11y/label-has-associated-control, jsx-a11y/label-has-for
   <label {...removeSomeProps(props, Object.keys(propsToTrim))}>
     {children}
   </label>

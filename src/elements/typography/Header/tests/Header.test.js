@@ -38,7 +38,7 @@ describe('Header.h1 Component specified styles', () => {
     expect(tree).toMatchSnapshot();
   });
   it('should return a Header object with ellipsis', () => {
-    const component = renderer.create(<Header ellipsis>Lorem Ipsum</Header>);
+    const component = renderer.create(<ThemeProvider theme={{}}><Header ellipsis>Lorem Ipsum</Header></ThemeProvider>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

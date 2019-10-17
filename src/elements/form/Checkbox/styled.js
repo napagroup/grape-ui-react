@@ -8,66 +8,107 @@ import { defaultControlStyles } from 'src/utils/styledHelpers';
 import { getAssistiveText } from 'src/elements/form/AssistiveText';
 import { CheckboxFieldComponent } from './component';
 
+const renderControlGroupLabel = propsFromControlGroup => {
+  const {
+    activeColor,
+    bg,
+    controlId,
+    disabled,
+    labelText,
+    plainText,
+    required,
+    validationError,
+  } = propsFromControlGroup;
+  if (!labelText) {
+    return null;
+  }
+  const labelProps = {
+    activeColor,
+    bg,
+    disabled,
+    htmlFor: controlId,
+    validationError,
+  };
+  const labelCaption = !required ? labelText : `${labelText}*`;
+  return (
+    <ControlLabel isRelative={!plainText} {...labelProps}>
+      {labelCaption}
+    </ControlLabel>
+  );
+};
+
 const propsToTrim = [
   'activeColor',
   'assistiveText',
   'bg',
+  'controlGroupProps',
   'controlId',
   'labelText',
   'plainText',
   'validationError',
   'required',
 ];
+
 const renderValueOrComponent = propsFromComponent => {
   const {
-    controlId, plainText, disabled, value, defaultValue, flexDirection,
+    controlId,
+    defaultValue,
+    disabled,
+    flexDirection,
+    plainText,
+    value,
   } = propsFromComponent;
   if (plainText) {
     const plainTextProps = {
-      ...removeSomeProps(propsFromComponent, ['controlId', 'labelText', 'assistiveText', 'name', 'onChange', 'options', 'plainText', 'validationError', 'flexDirection', 'assistiveText', 'validationError', 'required']),
+      ...removeSomeProps(propsFromComponent, ['controlGroupProps', 'controlId', 'labelText', 'assistiveText', 'name', 'onChange', 'options', 'plainText', 'validationError', 'flexDirection', 'assistiveText', 'validationError', 'required', 'wrapperProps']),
     };
     return (<PlainText {...plainTextProps} />);
   }
   const childProps = { id: controlId, ...removeSomeProps(propsFromComponent, propsToTrim) };
-  return (<CheckboxFieldComponent {...childProps} disabled={disabled} flexDirection={flexDirection} value={value || defaultValue} />);
+  return (
+    <CheckboxFieldComponent
+      {...childProps}
+      disabled={disabled}
+      flexDirection={flexDirection}
+      value={value || defaultValue}
+    />
+  );
 };
 export const CheckboxField = props => {
   const {
     activeColor,
     assistiveText,
+    bg,
+    controlGroupProps,
+    controlId,
+    disabled,
+    labelText,
+    plainText,
+    required,
+    validationError,
+  } = props;
+  const additionalControlGroupProps = {
+    controlGroupProps,
+    controlId,
+  };
+  const labelProps = {
+    activeColor,
+    bg,
     controlId,
     disabled,
     labelText,
     required,
     validationError,
-    plainText,
-    bg,
-  } = props;
-
-  const labelCaption = !required ? labelText : `${labelText}*`;
-  const controlGroupProps = {
-    controlId,
   };
   const assistiveProps = { assistiveText, required };
 
   return (
     <ControlGroup
-      pb={3}
-      pt={1}
-      {...controlGroupProps}
+      {...additionalControlGroupProps}
       assistiveText={getAssistiveText(assistiveProps)}
       validationError={validationError}
     >
-      <ControlLabel
-        activeColor={activeColor}
-        bg={bg}
-        disabled={disabled}
-        htmlFor={controlId}
-        isRelative={!plainText}
-        validationError={validationError}
-      >
-        {labelCaption}
-      </ControlLabel>
+      {renderControlGroupLabel(labelProps)}
       {renderValueOrComponent({ ...props, plainText })}
     </ControlGroup>
   );
@@ -80,26 +121,33 @@ CheckboxField.propTypes = {
     PropTypes.string,
   ]),
   bg: PropTypes.string,
-  controlId: PropTypes.string.isRequired,
+  controlGroupProps: PropTypes.object,
+  controlId: PropTypes.string,
   disabled: PropTypes.bool,
   flexDirection: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.array,
   ]),
+  fontFamily: PropTypes.string,
   labelText: PropTypes.string,
   plainText: PropTypes.bool,
   required: PropTypes.bool,
   validationError: PropTypes.string,
+  wrapperProps: PropTypes.object,
 };
 
 CheckboxField.defaultProps = {
   activeColor: defaultControlStyles.activeColor,
   assistiveText: '',
   bg: defaultControlStyles.bg,
+  controlGroupProps: {},
+  controlId: '',
   disabled: false,
   flexDirection: 'column',
+  fontFamily: 'base',
   labelText: '',
   plainText: false,
   required: false,
   validationError: '',
+  wrapperProps: {},
 };

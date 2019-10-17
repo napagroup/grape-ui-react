@@ -194,13 +194,14 @@ const renderSelectFieldComponent = selectFieldProps => {
 };
 const propsToTrim = [
   'bg',
+  'controlGroupProps',
   'controlId',
   'disabled',
   'assistiveText',
   'required',
   'plainText',
 ];
-const plaintextPropsToTrim = ['controlId', 'assistiveText', 'validationError', 'required', 'formStyle'];
+const plaintextPropsToTrim = ['controlId', 'assistiveText', 'validationError', 'required', 'formStyle', 'controlGroupProps'];
 const renderValueOrComponent = propsFromComponent => {
   const {
     controlId,
@@ -222,6 +223,7 @@ export const SelectField = props => {
   const {
     activeColor,
     bg,
+    controlGroupProps,
     controlId,
     disabled,
     formStyle,
@@ -241,9 +243,8 @@ export const SelectField = props => {
       controlId={controlId}
       disabled={disabled}
       labelText={newlabel}
-      pb={3}
-      pt={1}
       validationError={validationError}
+      {...controlGroupProps}
     >
       {renderValueOrComponent({
         ...props,
@@ -261,10 +262,11 @@ SelectField.propTypes = {
     PropTypes.object,
     PropTypes.string,
   ]),
-  controlId: PropTypes.string.isRequired,
+  controlGroupProps: PropTypes.object,
+  controlId: PropTypes.string,
   disabled: PropTypes.bool,
   formStyle: PropTypes.string,
-  labelText: PropTypes.string.isRequired,
+  labelText: PropTypes.string,
   plainText: PropTypes.bool,
   required: PropTypes.bool,
   validationError: PropTypes.string,
@@ -275,8 +277,11 @@ SelectField.propTypes = {
 SelectField.defaultProps = {
   activeColor: defaultControlStyles.activeColor,
   assistiveText: '',
+  controlGroupProps: {},
+  controlId: '',
   disabled: false,
   formStyle: '',
+  labelText: '',
   plainText: false,
   required: false,
   validationError: '',

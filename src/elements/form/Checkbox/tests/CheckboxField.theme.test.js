@@ -49,4 +49,29 @@ describe('CheckboxField using Theme Font Family', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a CheckboxField object with a custom base font family defined', () => {
+    const theme = {
+      fonts: {
+        base: 'Nunito, sans-serif',
+      },
+    };
+    const element = (
+      <ThemeProvider theme={theme}>
+        <CheckboxField
+          color="red"
+          controlId="checkbox"
+          labelText="Color"
+          name="Color"
+          options={colorOptions}
+          sm
+          value={selectedValue}
+        >
+          This should be Nunito and red
+        </CheckboxField>
+      </ThemeProvider>
+    );
+    const component = renderer.create(element);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

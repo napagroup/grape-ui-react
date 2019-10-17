@@ -76,3 +76,38 @@ describe('CheckboxFieldComponent Component with flex-direction', () => {
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
+describe('CheckboxField Component with no label', () => {
+  it('should return a CheckboxField that contains no ControlLabel', () => {
+    const selectedValue = ['red'];
+    const element = <ThemeProvider theme={emptyTheme}><CheckboxField controlId="exampleColor" flexDirection={['column', 'row']} name="Color" options={colorOptions} value={selectedValue} /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+describe('CheckboxField Component with custom controlGroupProps', () => {
+  it('should return a CheckboxField that contains custom controlGroupProps', () => {
+    const selectedValue = ['red'];
+    const element = <ThemeProvider theme={emptyTheme}><CheckboxField controlGroupProps={{ pb: 2, pt: 0 }} controlId="exampleColor" flexDirection={['column', 'row']} name="Color" options={colorOptions} value={selectedValue} /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+describe('CheckboxField Component with custom wrapper props', () => {
+  it('should return a CheckboxField that contain custom wrapper props', () => {
+    const selectedValue = ['red'];
+    const element = (
+      <ThemeProvider theme={emptyTheme}>
+        <CheckboxField
+          controlId="exampleColor"
+          flexDirection={['column', 'row']}
+          name="Color"
+          options={colorOptions}
+          value={selectedValue}
+          wrapperProps={{
+            pb: 1,
+            px: 2,
+          }}
+        />
+      </ThemeProvider>
+    );
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});

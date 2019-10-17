@@ -30,7 +30,9 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 1rem 0.5rem;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 <div

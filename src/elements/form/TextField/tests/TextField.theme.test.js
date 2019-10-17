@@ -17,7 +17,7 @@ describe('TextField using Theme color', () => {
     };
     const element = (
       <ThemeProvider theme={theme}>
-        <TextField bg="grapeSoda.dark" color="grapeSoda.light" controlId="myButton">Lorem Ipsum</TextField>
+        <TextField bg="grapeSoda.dark" color="grapeSoda.light" name="myButton">Lorem Ipsum</TextField>
       </ThemeProvider>
     );
     const component = renderer.create(element);
@@ -35,7 +35,7 @@ describe('TextField using Theme Font Family', () => {
     };
     const element = (
       <ThemeProvider theme={theme}>
-        <TextField controlId="myButton" fontFamily="trueSpace">Lorem Ipsum</TextField>
+        <TextField fontFamily="trueSpace" name="myButton">Lorem Ipsum</TextField>
       </ThemeProvider>
     );
     const component = renderer.create(element);

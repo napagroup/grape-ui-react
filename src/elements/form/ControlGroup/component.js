@@ -49,10 +49,12 @@ const renderControlGroupAssistive = propsFromControlGroup => {
 const propsToTrim = [
   'activeColor',
   'assistiveText',
+  'controlGroupProps',
   'controlId',
   'disabled',
   'hideLabel',
   'labelText',
+  'name',
   'validationError',
   ...Object.keys(spaceProps.propTypes),
   ...Object.keys(typography.propTypes),
@@ -65,13 +67,15 @@ export const ControlGroupComponent = ({ children, ...props }) => {
     bg: bgColorFromProps,
     disabled,
     controlId,
+    name,
     validationError,
     hideLabel,
   } = props;
+  const nextControlId = controlId || name;
   const labelProps = {
     activeColor,
     bg: bgColorFromProps,
-    controlId,
+    controlId: nextControlId,
     disabled,
     hideLabel,
     text: labelText,
@@ -79,7 +83,7 @@ export const ControlGroupComponent = ({ children, ...props }) => {
   };
   const assistiveProps = {
     assistiveText,
-    controlId,
+    controlId: nextControlId,
     validationError,
   };
   return (
@@ -92,6 +96,8 @@ export const ControlGroupComponent = ({ children, ...props }) => {
 };
 
 ControlGroupComponent.propTypes = {
+  ...spaceProps.propTypes,
+  ...typography.propTypes,
   activeColor: PropTypes.string,
   assistiveText: PropTypes.oneOfType([
     PropTypes.object,
@@ -99,21 +105,22 @@ ControlGroupComponent.propTypes = {
   ]),
   bg: PropTypes.string,
   children: PropTypes.any.isRequired,
-  controlId: PropTypes.string.isRequired,
+  controlId: PropTypes.string,
   disabled: PropTypes.bool,
   hideLabel: PropTypes.bool,
   labelText: PropTypes.string,
-  ...spaceProps.propTypes,
+  name: PropTypes.string,
   validationError: PropTypes.string,
-  ...typography.propTypes,
 };
 
 ControlGroupComponent.defaultProps = {
   activeColor: defaultControlStyles.activeColor,
   assistiveText: '',
   bg: defaultControlStyles.bg,
+  controlId: '',
   disabled: false,
   hideLabel: false,
   labelText: '',
+  name: '',
   validationError: '',
 };

@@ -1,5 +1,175 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`CheckboxField using Theme Font Family should return a CheckboxField object with a custom base font family defined 1`] = `
+.c3 {
+  color: hsl(4.1,89.6%,58.4%);
+  background-color: transparent;
+  font-family: Nunito,sans-serif;
+  font-size: 0.8rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-right: 1rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: Nunito,sans-serif;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  position: relative;
+}
+
+.c0 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <label
+    className="c1"
+    htmlFor="checkbox"
+  >
+    Color
+  </label>
+  <div
+    className="c2"
+    id=""
+  >
+    <label
+      className="c3"
+      disabled={false}
+      id="checkbox"
+      value={
+        Array [
+          "red",
+        ]
+      }
+    >
+      <input
+        checked={true}
+        disabled={false}
+        id="checkbox"
+        name="Color"
+        onChange={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+            "marginRight": "0.5rem",
+          }
+        }
+        type="checkbox"
+        value="red"
+      >
+        This should be Nunito and red
+      </input>
+      Red
+    </label>
+    <label
+      className="c3"
+      disabled={false}
+      id="checkbox"
+      value={
+        Array [
+          "red",
+        ]
+      }
+    >
+      <input
+        checked={false}
+        disabled={false}
+        id="checkbox"
+        name="Color"
+        onChange={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+            "marginRight": "0.5rem",
+          }
+        }
+        type="checkbox"
+        value="yellow"
+      >
+        This should be Nunito and red
+      </input>
+      Yellow
+    </label>
+    <label
+      className="c3"
+      disabled={false}
+      id="checkbox"
+      value={
+        Array [
+          "red",
+        ]
+      }
+    >
+      <input
+        checked={false}
+        disabled={false}
+        id="checkbox"
+        name="Color"
+        onChange={[Function]}
+        style={
+          Object {
+            "cursor": "pointer",
+            "marginRight": "0.5rem",
+          }
+        }
+        type="checkbox"
+        value="green"
+      >
+        This should be Nunito and red
+      </input>
+      Green
+    </label>
+  </div>
+</div>
+`;
+
 exports[`CheckboxField using Theme Font Family should return a CheckboxField object with a custom font family 1`] = `
 .c3 {
   background-color: transparent;
@@ -30,7 +200,9 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 1rem 0.5rem;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -80,7 +252,6 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
     <label
       className="c3"
       disabled={false}
-      fontFamily="trueSpace"
       id="checkbox"
       value={
         Array [
@@ -91,7 +262,6 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
       <input
         checked={true}
         disabled={false}
-        fontFamily="trueSpace"
         id="checkbox"
         name="Color"
         onChange={[Function]}
@@ -111,7 +281,6 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
     <label
       className="c3"
       disabled={false}
-      fontFamily="trueSpace"
       id="checkbox"
       value={
         Array [
@@ -122,7 +291,6 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
       <input
         checked={false}
         disabled={false}
-        fontFamily="trueSpace"
         id="checkbox"
         name="Color"
         onChange={[Function]}
@@ -142,7 +310,6 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
     <label
       className="c3"
       disabled={false}
-      fontFamily="trueSpace"
       id="checkbox"
       value={
         Array [
@@ -153,7 +320,6 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
       <input
         checked={false}
         disabled={false}
-        fontFamily="trueSpace"
         id="checkbox"
         name="Color"
         onChange={[Function]}
@@ -204,7 +370,9 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 1rem 0.5rem;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -253,7 +421,6 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
   >
     <label
       className="c3"
-      color="grapeSoda.light"
       disabled={false}
       id="checkbox"
       value={
@@ -264,7 +431,6 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
     >
       <input
         checked={true}
-        color="grapeSoda.light"
         disabled={false}
         id="checkbox"
         name="Color"
@@ -284,7 +450,6 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
     </label>
     <label
       className="c3"
-      color="grapeSoda.light"
       disabled={false}
       id="checkbox"
       value={
@@ -295,7 +460,6 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
     >
       <input
         checked={false}
-        color="grapeSoda.light"
         disabled={false}
         id="checkbox"
         name="Color"
@@ -315,7 +479,6 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
     </label>
     <label
       className="c3"
-      color="grapeSoda.light"
       disabled={false}
       id="checkbox"
       value={
@@ -326,7 +489,6 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
     >
       <input
         checked={false}
-        color="grapeSoda.light"
         disabled={false}
         id="checkbox"
         name="Color"

@@ -18,7 +18,7 @@ describe('Paragraph Component specified styles', () => {
     expect(tree).toMatchSnapshot();
   });
   it('should return a Paragraph object with ellipsis', () => {
-    const component = renderer.create(<Paragraph ellipsis>Lorem Ipsum</Paragraph>);
+    const component = renderer.create(<ThemeProvider theme={{}}><Paragraph ellipsis>Lorem Ipsum</Paragraph></ThemeProvider>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

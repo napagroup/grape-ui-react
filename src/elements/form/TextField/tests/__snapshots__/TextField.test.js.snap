@@ -95,6 +95,7 @@ exports[`TextField  a large TextField object should return a large TextField obj
   <input
     className="c1"
     id="exampleFullName"
+    name="exampleFullName"
     readOnly={false}
     required={false}
     tabIndex="0"
@@ -204,6 +205,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
   <input
     className="c1"
     id="exampleFullName"
+    name="exampleFullName"
     readOnly={false}
     required={false}
     tabIndex="0"
@@ -313,6 +315,7 @@ exports[`TextField a TextField object should return a TextField object with a re
   <input
     className="c1"
     id="exampleFullName2"
+    name="exampleFullName2"
     readOnly={false}
     required={false}
     tabIndex="0"
@@ -383,6 +386,7 @@ exports[`TextField a plainText TextField should return a disabled TextField 1`] 
   <input
     className="c1"
     id="exampleFullName2"
+    name="exampleFullName2"
     readOnly={true}
     required={false}
     tabIndex="-1"
@@ -493,6 +497,7 @@ exports[`TextField a small TextField object should return a disabled TextField 1
     className="c1"
     disabled={true}
     id="exampleFullName2"
+    name="exampleFullName2"
     readOnly={false}
     required={false}
     tabIndex="0"
@@ -602,6 +607,7 @@ exports[`TextField a small TextField object should return a small TextField obje
   <input
     className="c1"
     id="exampleFullName"
+    name="exampleFullName"
     readOnly={false}
     required={false}
     tabIndex="0"
@@ -711,6 +717,7 @@ exports[`TextField a small TextField object should return a small TextField obje
   <input
     className="c1"
     id="exampleFullName2"
+    name="exampleFullName2"
     readOnly={false}
     required={false}
     tabIndex="0"
@@ -820,6 +827,7 @@ exports[`TextField a small TextField object should return a small TextField obje
   <input
     className="c1"
     id="exampleFullName2"
+    name="exampleFullName2"
     readOnly={false}
     required={false}
     tabIndex="0"
@@ -904,6 +912,7 @@ exports[`TextField with a currency attribute should return a TextField of input 
   id="currency"
   isFocused={false}
   labelText=""
+  name="currency"
   padding="1rem"
   password={false}
   placeholderColor="gray.light"
@@ -915,6 +924,7 @@ exports[`TextField with a currency attribute should return a TextField of input 
     autoComplete="no"
     className="c0"
     id="currency"
+    name="currency"
     options={
       Object {
         "initValue": undefined,
@@ -931,6 +941,7 @@ exports[`TextField with a currency attribute should return a TextField of input 
       autoComplete="no"
       className="c0"
       id="currency"
+      name="currency"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1021,6 +1032,7 @@ exports[`TextField with a formatterOptions attribute should return a TextField w
   id="formatterOptions"
   isFocused={false}
   labelText=""
+  name="formatterOptions"
   padding="1rem"
   password={false}
   placeholderColor="gray.light"
@@ -1032,6 +1044,7 @@ exports[`TextField with a formatterOptions attribute should return a TextField w
     autoComplete="no"
     className="c0"
     id="formatterOptions"
+    name="formatterOptions"
     options={
       Object {
         "initValue": undefined,
@@ -1047,6 +1060,7 @@ exports[`TextField with a formatterOptions attribute should return a TextField w
       autoComplete="no"
       className="c0"
       id="formatterOptions"
+      name="formatterOptions"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1130,6 +1144,7 @@ exports[`TextField with a numeric attribute should return a TextField of input t
   id="numeric"
   isFocused={false}
   labelText=""
+  name="numeric"
   numeric={true}
   padding="1rem"
   password={false}
@@ -1142,6 +1157,7 @@ exports[`TextField with a numeric attribute should return a TextField of input t
     autoComplete="no"
     className="c0"
     id="numeric"
+    name="numeric"
     options={
       Object {
         "initValue": undefined,
@@ -1157,6 +1173,7 @@ exports[`TextField with a numeric attribute should return a TextField of input t
       autoComplete="no"
       className="c0"
       id="numeric"
+      name="numeric"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1245,6 +1262,7 @@ exports[`TextField with a password attribute should return a TextField of input 
   <input
     className="c1"
     id="password"
+    name="password"
     readOnly={false}
     required={false}
     tabIndex="0"
@@ -1322,6 +1340,7 @@ exports[`TextField with a phone attribute should return a TextField of input typ
   id="phone"
   isFocused={false}
   labelText=""
+  name="phone"
   padding="1rem"
   password={false}
   phone={true}
@@ -1334,6 +1353,7 @@ exports[`TextField with a phone attribute should return a TextField of input typ
     autoComplete="no"
     className="c0"
     id="phone"
+    name="phone"
     options={
       Object {
         "delimiter": "-",
@@ -1350,6 +1370,7 @@ exports[`TextField with a phone attribute should return a TextField of input typ
       autoComplete="no"
       className="c0"
       id="phone"
+      name="phone"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1433,6 +1454,7 @@ exports[`TextField with a postalCode attribute should return a TextField of inpu
   id="postalCode"
   isFocused={false}
   labelText=""
+  name="postalCode"
   padding="1rem"
   password={false}
   placeholderColor="gray.light"
@@ -1445,6 +1467,7 @@ exports[`TextField with a postalCode attribute should return a TextField of inpu
     autoComplete="no"
     className="c0"
     id="postalCode"
+    name="postalCode"
     options={
       Object {
         "blocks": Array [
@@ -1465,6 +1488,7 @@ exports[`TextField with a postalCode attribute should return a TextField of inpu
       autoComplete="no"
       className="c0"
       id="postalCode"
+      name="postalCode"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1553,11 +1577,145 @@ exports[`TextField with an email attribute should return a TextField of input ty
   <input
     className="c1"
     id="email"
+    name="email"
     readOnly={false}
     required={false}
     tabIndex="0"
     type="email"
   />
+</div>
+`;
+
+exports[`TextField with an id attribute provided should return a TextField with Label.htmlFor value based on controlId attribute 1`] = `
+.c3 {
+  background-color: transparent;
+  color: hsl(0,0%,50%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  padding: 0 1rem;
+}
+
+.c2 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  left: 0.5rem;
+  padding: 0 0.5rem;
+  top: -1px;
+  height: 0.4rem;
+  position: absolute;
+}
+
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c1[required] + label:after {
+  content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    id="exampleFullNameCID"
+    name="exampleFullName"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="text"
+  />
+  <label
+    className="c2"
+    htmlFor="exampleFullNameCID"
+  >
+    Full name
+  </label>
+  <div
+    className="c3"
+    id="exampleFullNameCIDHelp"
+  >
+    Please tell me your name
+  </div>
 </div>
 `;
 
@@ -1631,6 +1789,7 @@ exports[`TextField with an integer attribute should return a TextField of input 
   integer={true}
   isFocused={false}
   labelText=""
+  name="integer"
   padding="1rem"
   password={false}
   placeholderColor="gray.light"
@@ -1642,6 +1801,7 @@ exports[`TextField with an integer attribute should return a TextField of input 
     autoComplete="no"
     className="c0"
     id="integer"
+    name="integer"
     options={
       Object {
         "initValue": undefined,
@@ -1658,6 +1818,7 @@ exports[`TextField with an integer attribute should return a TextField of input 
       autoComplete="no"
       className="c0"
       id="integer"
+      name="integer"
       onBlur={[Function]}
       onChange={[Function]}
       onFocus={[Function]}
@@ -1784,6 +1945,7 @@ exports[`TextField with assistive text should return a TextField object contain 
   <input
     className="c1"
     id="exampleFullName"
+    name="exampleFullName"
     readOnly={false}
     required={false}
     tabIndex="0"
@@ -1801,6 +1963,89 @@ exports[`TextField with assistive text should return a TextField object contain 
   >
     Please tell me your name
   </div>
+</div>
+`;
+
+exports[`TextField with custom control group props should return a TextField with custom control group props 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 8px;
+  padding-top: 0;
+  width: 100%;
+}
+
+.c1 {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c1[required] + label:after {
+  content: "*";
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    id="formatterOptions"
+    name="formatterOptions"
+    readOnly={false}
+    required={false}
+    tabIndex="0"
+    type="text"
+  />
 </div>
 `;
 
@@ -1938,6 +2183,7 @@ exports[`TextField with object in assistive text should return a TextField objec
   <input
     className="c1"
     id="exampleFullName"
+    name="exampleFullName"
     readOnly={false}
     required={false}
     tabIndex="0"
@@ -2077,6 +2323,7 @@ exports[`TextField with some other props should return a TextField object contai
     className="c1"
     id="exampleFullName"
     link="abc"
+    name="exampleFullName"
     readOnly={false}
     required={true}
     tabIndex="0"
@@ -2209,6 +2456,7 @@ exports[`TextField with validation error should return a TextField object contai
   <input
     className="c1"
     id="exampleFullName"
+    name="exampleFullName"
     readOnly={false}
     required={false}
     tabIndex="0"
