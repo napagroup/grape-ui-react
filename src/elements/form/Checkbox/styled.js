@@ -88,7 +88,7 @@ export const CheckboxField = props => {
     validationError,
   } = props;
   const additionalControlGroupProps = {
-    controlGroupProps,
+    ...controlGroupProps,
     controlId,
   };
   const labelProps = {
