@@ -42,8 +42,8 @@ exports[`CheckboxField Component with custom controlGroupProps should return a C
   position: relative;
   background-color: transparent;
   color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
+  padding-bottom: 0;
+  padding-top: 0;
   width: 100%;
 }
 

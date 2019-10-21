@@ -86,7 +86,7 @@ describe('CheckboxField Component with no label', () => {
 describe('CheckboxField Component with custom controlGroupProps', () => {
   it('should return a CheckboxField that contains custom controlGroupProps', () => {
     const selectedValue = ['red'];
-    const element = <ThemeProvider theme={emptyTheme}><CheckboxField controlGroupProps={{ pb: 2, pt: 0 }} controlId="exampleColor" flexDirection={['column', 'row']} name="Color" options={colorOptions} value={selectedValue} /></ThemeProvider>;
+    const element = <ThemeProvider theme={emptyTheme}><CheckboxField controlGroupProps={{ pb: 0, pt: 0 }} controlId="exampleColor" flexDirection={['column', 'row']} name="Color" options={colorOptions} value={selectedValue} /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
