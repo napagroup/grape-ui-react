@@ -1,13 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import { typography } from 'src/utils/styledHelpers';
+import {
+  layoutProps,
+  positionProps,
+  spaceProps,
+  typography,
+} from 'src/utils/styledHelpers';
 
 const propsToTrim = {
+  ...layoutProps.propTypes,
+  ...positionProps.propTypes,
+  ...spaceProps.propTypes,
   ...typography.propTypes,
   activeColor: '',
   disabled: false,
-  isRelative: false,
   validationError: '',
 };
 export const ControlLabelComponent = ({ children, ...props }) => (

@@ -11,12 +11,13 @@ import {
 
 const renderControlGroupLabel = propsFromControlGroup => {
   const {
-    text,
     activeColor,
     bg: bgColorFromProps,
     disabled,
     controlId,
+    controlLabelProps,
     hideLabel,
+    text,
     validationError,
   } = propsFromControlGroup;
   if (!text || hideLabel) {
@@ -25,6 +26,7 @@ const renderControlGroupLabel = propsFromControlGroup => {
   const labelProps = {
     activeColor,
     bg: bgColorFromProps,
+    ...controlLabelProps,
     disabled,
     htmlFor: controlId,
     validationError,
@@ -37,20 +39,27 @@ const renderControlGroupLabel = propsFromControlGroup => {
 };
 
 const renderControlGroupAssistive = propsFromControlGroup => {
-  const { assistiveText, validationError: error, controlId: id } = propsFromControlGroup;
+  const {
+    assistiveText,
+    assistiveTextProps,
+    controlId: id,
+    validationError: error,
+  } = propsFromControlGroup;
   if (!assistiveText && !error) {
     return null;
   } if (assistiveText && !error) {
-    return <AssistiveText id={`${id}Help`}>{assistiveText}</AssistiveText>;
+    return <AssistiveText id={`${id}Help`} {...assistiveTextProps}>{assistiveText}</AssistiveText>;
   }
-  return <AssistiveText color="brandDanger" id={`${id}Error`}>{error}</AssistiveText>;
+  return <AssistiveText color="brandDanger" id={`${id}Error`} {...assistiveTextProps}>{error}</AssistiveText>;
 };
 
 const propsToTrim = [
   'activeColor',
   'assistiveText',
+  'assistiveTextProps',
   'controlGroupProps',
   'controlId',
+  'controlLabelProps',
   'disabled',
   'hideLabel',
   'labelText',
@@ -61,21 +70,24 @@ const propsToTrim = [
 ];
 export const ControlGroupComponent = ({ children, ...props }) => {
   const {
-    assistiveText,
-    labelText,
     activeColor,
+    assistiveText,
+    assistiveTextProps,
     bg: bgColorFromProps,
-    disabled,
     controlId,
+    controlLabelProps,
+    disabled,
+    hideLabel,
+    labelText,
     name,
     validationError,
-    hideLabel,
   } = props;
   const nextControlId = controlId || name;
   const labelProps = {
     activeColor,
     bg: bgColorFromProps,
     controlId: nextControlId,
+    controlLabelProps,
     disabled,
     hideLabel,
     text: labelText,
@@ -83,6 +95,7 @@ export const ControlGroupComponent = ({ children, ...props }) => {
   };
   const assistiveProps = {
     assistiveText,
+    assistiveTextProps,
     controlId: nextControlId,
     validationError,
   };
@@ -106,6 +119,7 @@ ControlGroupComponent.propTypes = {
   bg: PropTypes.string,
   children: PropTypes.any.isRequired,
   controlId: PropTypes.string,
+  controlLabelProps: PropTypes.object,
   disabled: PropTypes.bool,
   hideLabel: PropTypes.bool,
   labelText: PropTypes.string,
@@ -118,6 +132,7 @@ ControlGroupComponent.defaultProps = {
   assistiveText: '',
   bg: defaultControlStyles.bg,
   controlId: '',
+  controlLabelProps: {},
   disabled: false,
   hideLabel: false,
   labelText: '',

@@ -20,19 +20,20 @@ exports[`Form Component base should return a Form object and textField with fill
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
+  height: 0.4rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 8px;
+  padding-right: 8px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  top: -1px;
-  height: 0.4rem;
-  position: absolute;
 }
 
 .c1 {
@@ -69,10 +70,6 @@ exports[`Form Component base should return a Form object and textField with fill
   background: transparent;
   line-height: 1;
   top: 0.8rem;
-}
-
-.c2[required] + label:after {
-  content: "*";
 }
 
 .c2[disabled] {
@@ -119,7 +116,6 @@ exports[`Form Component base should return a Form object and textField with fill
       id="exampleFullName"
       name=""
       readOnly={false}
-      required={false}
       tabIndex="0"
       type="text"
     />
@@ -147,19 +143,20 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
+  height: 0.4rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 8px;
+  padding-right: 8px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  top: -1px;
-  height: 0.4rem;
-  position: absolute;
 }
 
 .c1 {
@@ -205,10 +202,6 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   background: transparent;
   line-height: 1;
   top: 0.8rem;
-}
-
-.c2[required] + label:after {
-  content: "*";
 }
 
 .c2[disabled] {
@@ -270,10 +263,6 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   background: transparent;
   line-height: 1;
   top: 0.8rem;
-}
-
-.c5[required] + label:after {
-  content: "*";
 }
 
 .c5[disabled] {
@@ -416,7 +405,6 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
       id="exampleFullName"
       name=""
       readOnly={false}
-      required={false}
       tabIndex="0"
       type="text"
     />
@@ -435,7 +423,6 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
       id="address"
       name=""
       readOnly={false}
-      required={false}
       tabIndex="0"
       type="text"
     />
@@ -594,19 +581,20 @@ exports[`Form Component base should return a Form object with filled formStyle a
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
+  height: 0.4rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 8px;
+  padding-right: 8px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  top: -1px;
-  height: 0.4rem;
-  position: absolute;
 }
 
 .c1 {
@@ -637,10 +625,6 @@ exports[`Form Component base should return a Form object with filled formStyle a
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c2[required] + label:after {
-  content: "*";
 }
 
 .c2[disabled] {
@@ -687,7 +671,6 @@ exports[`Form Component base should return a Form object with filled formStyle a
       id="exampleFullName"
       name=""
       readOnly={false}
-      required={false}
       tabIndex="0"
       type="text"
     />

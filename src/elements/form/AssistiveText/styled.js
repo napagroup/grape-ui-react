@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fontWeight } from 'styled-system';
+import { fontWeight, space } from 'styled-system';
 import {
   colorCore,
   defaultStylesBase,
@@ -8,15 +8,13 @@ import {
   fontStyleCore,
   letterSpacingCore,
   lineHeightCore,
+  spaceProps,
   textAlignCore,
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
-import { getGlobalStyles } from 'src/global-styles';
 import { AssistiveTextComponent } from './component';
 
-const { grid: gridSchema } = getGlobalStyles();
-const padding = gridSchema.gutter;
 const fontSizeAssistiveText = props => fontSizeCore({ ...props, sm: true });
 export const AssistiveText = styled(AssistiveTextComponent)`
   ${colorCore}
@@ -26,15 +24,18 @@ export const AssistiveText = styled(AssistiveTextComponent)`
   ${letterSpacingCore}
   ${lineHeightCore}
   ${fontStyleCore}
+  ${space}
   ${textAlignCore}
   ${textDecorationCore}
-  padding: 0 ${padding};
-  `;
+`;
+
 AssistiveText.propTypes = {
+  ...spaceProps.propTypes,
   ...typography.propTypes,
 };
 
 AssistiveText.defaultProps = {
   ...defaultStylesBase,
   color: 'gray',
+  px: 3,
 };

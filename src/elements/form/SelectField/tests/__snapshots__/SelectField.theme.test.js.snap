@@ -7,19 +7,20 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
+  height: 0.4rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 8px;
+  padding-right: 8px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  top: -1px;
-  height: 0.4rem;
-  position: absolute;
 }
 
 .c0 {
@@ -51,10 +52,6 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   outline: 0;
   padding: 1rem;
   width: 100%;
-}
-
-.c1[required] + label:after {
-  content: "*";
 }
 
 .c1[disabled] {
@@ -309,19 +306,20 @@ exports[`SelectField using Theme color should return a SelectField object with c
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
+  height: 0.4rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 8px;
+  padding-right: 8px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  left: 0.5rem;
-  padding: 0 0.5rem;
-  top: -1px;
-  height: 0.4rem;
-  position: absolute;
 }
 
 .c0 {
@@ -353,10 +351,6 @@ exports[`SelectField using Theme color should return a SelectField object with c
   outline: 0;
   padding: 1rem;
   width: 100%;
-}
-
-.c1[required] + label:after {
-  content: "*";
 }
 
 .c1[disabled] {

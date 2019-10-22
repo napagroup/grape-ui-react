@@ -65,6 +65,7 @@ const CheckboxLabel = styled(CheckboxLabelComponent)`
 const Wrapper = ({ children, ...props }) => {
   const propsToTrim = [
     'controlGroupProps',
+    'controlLabelProps',
     'flexDirection',
     ...Object.keys(spaceProps.propTypes),
   ];
@@ -103,6 +104,7 @@ CheckboxGroupWrapper.defaultProps = {
 
 const propsToTrimLabel = [
   'controlId',
+  'controlLabelProps',
   'plainText',
   'name',
   'onChange',
@@ -153,27 +155,27 @@ export const CheckboxFieldComponent = props => {
     value,
     wrapperProps,
   } = props;
+  const propsToTrim = [
+    'controlGroupProps',
+    'controlId',
+    'controlLabelProps',
+    'flexDirection',
+    'labelText',
+    'name',
+    'onChange',
+    'options',
+    'plainText',
+    'wrapperProps',
+  ];
+
   if (plainText) {
     const plainTextProps = {
       value,
-      ...removeSomeProps(
-        props,
-        [
-          'controlGroupProps',
-          'controlId',
-          'flexDirection',
-          'labelText',
-          'name',
-          'onChange',
-          'options',
-          'plainText',
-          'wrapperProps',
-        ]
-      ),
+      ...removeSomeProps(props, propsToTrim),
     };
     return (<PlainText {...plainTextProps} />);
   }
-  const checkboxProps = removeSomeProps(props, ['controlGroupProps', 'controlId', 'plainText', 'name', 'onChange', 'options', 'flexDirection', 'wrapperProps']);
+  const checkboxProps = removeSomeProps(props, propsToTrim);
   const optionsList = options.map(option => (SingleCheckBox({ ...checkboxProps, option })));
   return (
     <CheckboxGroupWrapper

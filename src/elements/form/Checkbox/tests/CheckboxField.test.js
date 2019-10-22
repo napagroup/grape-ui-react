@@ -38,20 +38,20 @@ describe('CheckboxFieldComponent Component with flex-direction', () => {
 });
 describe('CheckboxFieldComponent Component with assistive text', () => {
   it('should return a CheckboxFieldComponent that contains CheckboxComponent with assistive text', () => {
-    const element = <ThemeProvider theme={emptyTheme}><CheckboxField assistiveText="Tell me your color" controlId="exampleColor" labelText="Color" name="Color" options={colorOptions} required value="" /></ThemeProvider>;
+    const element = <ThemeProvider theme={emptyTheme}><CheckboxField assistiveText="Tell me your color" controlId="exampleColor" isRequired labelText="Color" name="Color" options={colorOptions} value="" /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
 describe('CheckboxFieldComponent Component with required', () => {
-  it('should return a CheckboxFieldComponent that contains CheckboxComponent required', () => {
-    const element = <ThemeProvider theme={emptyTheme}><CheckboxField controlId="exampleColor" labelText="Color" name="Color" options={colorOptions} required value="" /></ThemeProvider>;
+  it('should return a CheckboxFieldComponent that contains CheckboxComponent is required', () => {
+    const element = <ThemeProvider theme={emptyTheme}><CheckboxField controlId="exampleColor" isRequired labelText="Color" name="Color" options={colorOptions} value="" /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
 describe('CheckboxFieldComponent Component with validationError', () => {
   it('should return a CheckboxFieldComponent that contains CheckboxComponent validationError', () => {
     const selectedValue = ['red'];
-    const element = <ThemeProvider theme={emptyTheme}><CheckboxField assistiveText="" controlId="exampleColor" labelText="Color" name="Color" options={colorOptions} required validationError="This is required" value={selectedValue} /></ThemeProvider>;
+    const element = <ThemeProvider theme={emptyTheme}><CheckboxField assistiveText="" controlId="exampleColor" isRequired labelText="Color" name="Color" options={colorOptions} validationError="This is required" value={selectedValue} /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
@@ -83,10 +83,24 @@ describe('CheckboxField Component with no label', () => {
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
+describe('CheckboxField Component with custom assistive text props', () => {
+  test.only('should return a CheckboxField that contains custom assistive text props', () => {
+    const selectedValue = ['red'];
+    const element = <ThemeProvider theme={emptyTheme}><CheckboxField assistiveText="Select at least one" assistiveTextProps={{ px: 0, py: 3 }} controlId="exampleColor" name="Color" options={colorOptions} value={selectedValue} /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
 describe('CheckboxField Component with custom controlGroupProps', () => {
   it('should return a CheckboxField that contains custom controlGroupProps', () => {
     const selectedValue = ['red'];
     const element = <ThemeProvider theme={emptyTheme}><CheckboxField controlGroupProps={{ pb: 0, pt: 0 }} controlId="exampleColor" flexDirection={['column', 'row']} name="Color" options={colorOptions} value={selectedValue} /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+describe('CheckboxField Component with custom controlLabelProps', () => {
+  test.only('should return a CheckboxField that contains custom controlLabelProps', () => {
+    const selectedValue = ['red'];
+    const element = <ThemeProvider theme={emptyTheme}><CheckboxField controlId="exampleColor" controlLabelProps={{ px: 0, py: 1 }} labelText="Color" name="Color" options={colorOptions} value={selectedValue} /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

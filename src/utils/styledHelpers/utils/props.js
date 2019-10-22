@@ -104,6 +104,7 @@ export const control = {
     borderColor: PropTypes.string,
     borderRadius: PropTypes.string,
     isFocused: PropTypes.bool,
+    isRequired: PropTypes.bool,
     padding: PropTypes.string,
     placeholderColor: PropTypes.string,
     plainText: PropTypes.bool,

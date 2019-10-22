@@ -1,7 +1,7 @@
 
 export const getAssistiveText = props => {
-  const { assistiveText, required } = props;
-  if (required && !assistiveText) {
+  const { assistiveText, isRequired } = props;
+  if (isRequired && !assistiveText) {
     return '*Required';
   }
   return assistiveText || '';

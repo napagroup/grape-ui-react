@@ -12,10 +12,11 @@ exports[`Assistive Text Component base should return an Assistive Text object 1`
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  padding: 0 1rem;
 }
 
 <div
@@ -38,10 +39,11 @@ exports[`Assistive Text Component base should return an Assistive Text object wi
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  padding: 0 1rem;
 }
 
 <div

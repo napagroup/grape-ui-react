@@ -22,10 +22,6 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   text-decoration: inherit;
 }
 
-.c0[required] + label:after {
-  content: "*";
-}
-
 .c0[disabled] {
   opacity: 0.3;
 }
@@ -87,10 +83,6 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0[required] + label:after {
-  content: "*";
 }
 
 .c0[disabled] {
@@ -156,10 +148,6 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   text-decoration: inherit;
 }
 
-.c0[required] + label:after {
-  content: "*";
-}
-
 .c0[disabled] {
   opacity: 0.3;
 }
@@ -221,10 +209,6 @@ exports[`TextFieldComponent with a currency attribute should return a TextFieldC
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0[required] + label:after {
-  content: "*";
 }
 
 .c0[disabled] {
@@ -296,10 +280,6 @@ exports[`TextFieldComponent with a integer attribute should return a TextFieldCo
   text-decoration: inherit;
 }
 
-.c0[required] + label:after {
-  content: "*";
-}
-
 .c0[disabled] {
   opacity: 0.3;
 }
@@ -367,10 +347,6 @@ exports[`TextFieldComponent with a numeric attribute should return a TextFieldCo
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0[required] + label:after {
-  content: "*";
 }
 
 .c0[disabled] {
@@ -442,10 +418,6 @@ exports[`TextFieldComponent with a password attribute should return a TextFieldC
   text-decoration: inherit;
 }
 
-.c0[required] + label:after {
-  content: "*";
-}
-
 .c0[disabled] {
   opacity: 0.3;
 }
@@ -507,10 +479,6 @@ exports[`TextFieldComponent with a phone attribute should return a TextFieldComp
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0[required] + label:after {
-  content: "*";
 }
 
 .c0[disabled] {
@@ -582,10 +550,6 @@ exports[`TextFieldComponent with a postalCode attribute should return a TextFiel
   text-decoration: inherit;
 }
 
-.c0[required] + label:after {
-  content: "*";
-}
-
 .c0[disabled] {
   opacity: 0.3;
 }
@@ -653,10 +617,6 @@ exports[`TextFieldComponent with an email attribute should return a TextFieldCom
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0[required] + label:after {
-  content: "*";
 }
 
 .c0[disabled] {

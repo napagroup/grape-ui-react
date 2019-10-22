@@ -31,10 +31,6 @@ exports[`TextField using Theme Font Family should return a TextField object with
   text-decoration: inherit;
 }
 
-.c1[required] + label:after {
-  content: "*";
-}
-
 .c1[disabled] {
   opacity: 0.3;
 }
@@ -76,7 +72,6 @@ exports[`TextField using Theme Font Family should return a TextField object with
     id="myButton"
     name="myButton"
     readOnly={false}
-    required={false}
     tabIndex="0"
     type="text"
   >
@@ -116,10 +111,6 @@ exports[`TextField using Theme color should return a TextField object with custo
   text-decoration: inherit;
 }
 
-.c1[required] + label:after {
-  content: "*";
-}
-
 .c1[disabled] {
   opacity: 0.3;
 }
@@ -161,11 +152,90 @@ exports[`TextField using Theme color should return a TextField object with custo
     id="myButton"
     name="myButton"
     readOnly={false}
-    required={false}
     tabIndex="0"
     type="text"
   >
     Lorem Ipsum
+  </input>
+</div>
+`;
+
+exports[`TextField using custom brand colors should return a TextField object with custom brand primary color 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: Nunito,sans-serif;
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(100,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(100,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(100,84.6%,28%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    id="myButton"
+    name="myButton"
+    readOnly={false}
+    tabIndex="0"
+    type="text"
+  >
+    I should be hsl(100, 84.6%, 28%) on focus and I should be in Nunito
   </input>
 </div>
 `;

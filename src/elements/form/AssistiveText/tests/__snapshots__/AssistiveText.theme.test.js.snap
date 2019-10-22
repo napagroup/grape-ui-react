@@ -12,10 +12,11 @@ exports[`AssistiveText using Theme Font Family should return a AssistiveText obj
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  padding: 0 1rem;
 }
 
 <div
@@ -37,10 +38,11 @@ exports[`AssistiveText using Theme color should return a AssistiveText object wi
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  padding: 0 1rem;
 }
 
 <div

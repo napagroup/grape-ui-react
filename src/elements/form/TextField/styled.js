@@ -50,41 +50,47 @@ TextFieldComponent.defaultProps = {
 };
 
 const propsToTrim = [
-  'activeColor',
   'assistiveText',
   'controlId',
   'labelText',
+  'controlLabelProps',
   'validationError',
   ...Object.keys(spaceProps.propTypes),
 ];
 export const TextField = props => {
   const {
     activeColor,
+    assistiveTextProps,
     bg,
     controlGroupProps,
     controlId,
+    controlLabelProps,
+    isRequired,
     labelText,
     name,
-    required,
     validationError,
     ...otherProps
   } = props;
   const childProps = {
+    activeColor,
     bg,
     id: controlId || name,
+    isRequired,
     labelText,
     name,
-    required,
     validationError,
     ...removeSomeProps(otherProps, propsToTrim),
   };
+  const newlabel = !isRequired ? labelText : `${labelText}*`;
   return (
     <ControlGroup
       activeColor={activeColor}
       assistiveText={getAssistiveText(props)}
+      assistiveTextProps={assistiveTextProps}
       bg={defaultControlStyles.bg}
       controlId={controlId}
-      labelText={labelText}
+      controlLabelProps={controlLabelProps}
+      labelText={newlabel}
       name={name}
       validationError={validationError}
       {...controlGroupProps}
@@ -100,13 +106,16 @@ TextField.propTypes = {
     PropTypes.object,
     PropTypes.string,
   ]),
+  assistiveTextProps: PropTypes.object,
   bg: PropTypes.string,
   controlGroupProps: PropTypes.object,
   controlId: PropTypes.string,
+  controlLabelProps: PropTypes.object,
+  fontFamily: PropTypes.string,
   formStyle: PropTypes.string,
+  isRequired: PropTypes.bool,
   labelText: PropTypes.string,
   name: PropTypes.string,
-  required: PropTypes.bool,
   validationError: PropTypes.string,
   ...borderRadius.propTypes,
 };
@@ -114,12 +123,15 @@ TextField.propTypes = {
 TextField.defaultProps = {
   activeColor: defaultControlStyles.activeColor,
   assistiveText: '',
+  assistiveTextProps: {},
   bg: null,
   controlGroupProps: {},
   controlId: '',
+  controlLabelProps: {},
+  fontFamily: defaultControlStyles.fontFamily,
   formStyle: '',
+  isRequired: false,
   labelText: '',
   name: '',
-  required: false,
   validationError: '',
 };

@@ -16,8 +16,7 @@ export const focusStyles = props => {
     activeColor,
     formStyle,
   } = props;
-  const globalOverrides = getGlobalOverrides(props);
-  const focusColor = !activeColor ? resolveColor(defaultControlStyles.activeColor, globalOverrides) : resolveColor(activeColor, globalOverrides);
+  const focusColor = !activeColor ? resolveColor(defaultControlStyles.activeColor, props) : resolveColor(activeColor, props);
   if (formStyle === 'filled') {
     return `
       border-bottom: 2px solid ${focusColor};
@@ -75,7 +74,6 @@ const getFinalStyle = props => {
     outline: 0;
     padding: ${getFinalFieldPadding(padding, formStyle, labelText)};
     width: 100%;
-    &[required] + label:after { content: "*" }
     &[disabled] {
       ${disabledStyle}
     }

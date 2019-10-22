@@ -46,7 +46,7 @@ describe('TextField with validation error', () => {
 });
 describe('TextField with some other props', () => {
   it('should return a TextField object contain input with those other props ', () => {
-    const element = <ThemeProvider theme={{}}><TextField labelText="Full name" link="abc" name="exampleFullName" required /></ThemeProvider>;
+    const element = <ThemeProvider theme={{}}><TextField isRequired labelText="Full Name" link="abc" name="exampleFullName" validationError="This is a required field." /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
@@ -153,6 +153,28 @@ describe('TextField with custom control group props', () => {
       pt: 0,
     };
     const element = <ThemeProvider theme={{}}><TextField controlGroupProps={controlGroupProps} name="formatterOptions" /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+
+describe('TextField with custom control label props', () => {
+  it('should return a TextField with custom control label props', () => {
+    const controlLabelProps = {
+      px: 0,
+      py: 2,
+    };
+    const element = <ThemeProvider theme={{}}><TextField controlLabelProps={controlLabelProps} labelText="Address" name="formatterOptions" /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+
+describe('TextField with custom assistive text props', () => {
+  it('should return a TextField with custom assistive text props', () => {
+    const assistiveTextProps = {
+      px: 0,
+      py: 3,
+    };
+    const element = <ThemeProvider theme={{}}><TextField assistiveText="Example: 123 ABC" assistiveTextProps={assistiveTextProps} name="formatterOptions" /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

@@ -13,25 +13,34 @@ const renderControlGroupLabel = propsFromControlGroup => {
     activeColor,
     bg,
     controlId,
+    controlLabelProps,
     disabled,
     labelText,
     plainText,
-    required,
+    isRequired,
     validationError,
   } = propsFromControlGroup;
   if (!labelText) {
     return null;
   }
+  const labelCaption = !isRequired ? labelText : `${labelText}*`;
+  const defaultPositionProps = {
+    height: 'auto',
+    position: 'relative',
+    top: 'auto',
+  };
+  const positionProps = !plainText ? defaultPositionProps : '';
   const labelProps = {
     activeColor,
     bg,
+    ...controlLabelProps,
     disabled,
     htmlFor: controlId,
     validationError,
+    ...positionProps,
   };
-  const labelCaption = !required ? labelText : `${labelText}*`;
   return (
-    <ControlLabel isRelative={!plainText} {...labelProps}>
+    <ControlLabel {...labelProps}>
       {labelCaption}
     </ControlLabel>
   );
@@ -40,13 +49,24 @@ const renderControlGroupLabel = propsFromControlGroup => {
 const propsToTrim = [
   'activeColor',
   'assistiveText',
+  'assistiveTextProps',
   'bg',
   'controlGroupProps',
   'controlId',
+  'controlLabelProps',
+  'isRequired',
   'labelText',
   'plainText',
   'validationError',
-  'required',
+];
+
+const plainTextPropsToTrim = [
+  'flexDirection',
+  'name',
+  'onChange',
+  'options',
+  'wrapperProps',
+  ...propsToTrim,
 ];
 
 const renderValueOrComponent = propsFromComponent => {
@@ -60,7 +80,7 @@ const renderValueOrComponent = propsFromComponent => {
   } = propsFromComponent;
   if (plainText) {
     const plainTextProps = {
-      ...removeSomeProps(propsFromComponent, ['controlGroupProps', 'controlId', 'labelText', 'assistiveText', 'name', 'onChange', 'options', 'plainText', 'validationError', 'flexDirection', 'assistiveText', 'validationError', 'required', 'wrapperProps']),
+      ...removeSomeProps(propsFromComponent, plainTextPropsToTrim),
     };
     return (<PlainText {...plainTextProps} />);
   }
@@ -78,13 +98,15 @@ export const CheckboxField = props => {
   const {
     activeColor,
     assistiveText,
+    assistiveTextProps,
     bg,
     controlGroupProps,
     controlId,
+    controlLabelProps,
     disabled,
+    isRequired,
     labelText,
     plainText,
-    required,
     validationError,
   } = props;
   const additionalControlGroupProps = {
@@ -95,17 +117,20 @@ export const CheckboxField = props => {
     activeColor,
     bg,
     controlId,
+    controlLabelProps,
     disabled,
+    isRequired,
     labelText,
-    required,
+    plainText,
     validationError,
   };
-  const assistiveProps = { assistiveText, required };
+  const assistiveProps = { assistiveText, isRequired };
 
   return (
     <ControlGroup
       {...additionalControlGroupProps}
       assistiveText={getAssistiveText(assistiveProps)}
+      assistiveTextProps={assistiveTextProps}
       validationError={validationError}
     >
       {renderControlGroupLabel(labelProps)}
@@ -120,18 +145,20 @@ CheckboxField.propTypes = {
     PropTypes.object,
     PropTypes.string,
   ]),
+  assistiveTextProps: PropTypes.object,
   bg: PropTypes.string,
   controlGroupProps: PropTypes.object,
   controlId: PropTypes.string,
+  controlLabelProps: PropTypes.object,
   disabled: PropTypes.bool,
   flexDirection: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.array,
   ]),
   fontFamily: PropTypes.string,
+  isRequired: PropTypes.bool,
   labelText: PropTypes.string,
   plainText: PropTypes.bool,
-  required: PropTypes.bool,
   validationError: PropTypes.string,
   wrapperProps: PropTypes.object,
 };
@@ -139,15 +166,17 @@ CheckboxField.propTypes = {
 CheckboxField.defaultProps = {
   activeColor: defaultControlStyles.activeColor,
   assistiveText: '',
+  assistiveTextProps: {},
   bg: defaultControlStyles.bg,
   controlGroupProps: {},
   controlId: '',
+  controlLabelProps: {},
   disabled: false,
   flexDirection: 'column',
   fontFamily: 'base',
+  isRequired: false,
   labelText: '',
   plainText: false,
-  required: false,
   validationError: '',
   wrapperProps: {},
 };

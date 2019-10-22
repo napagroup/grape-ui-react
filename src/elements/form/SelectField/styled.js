@@ -198,10 +198,10 @@ const propsToTrim = [
   'controlId',
   'disabled',
   'assistiveText',
-  'required',
+  'isRequired',
   'plainText',
 ];
-const plaintextPropsToTrim = ['controlId', 'assistiveText', 'validationError', 'required', 'formStyle', 'controlGroupProps'];
+const plaintextPropsToTrim = ['controlId', 'assistiveText', 'validationError', 'isRequired', 'formStyle', 'controlGroupProps'];
 const renderValueOrComponent = propsFromComponent => {
   const {
     controlId,
@@ -222,25 +222,29 @@ const renderValueOrComponent = propsFromComponent => {
 export const SelectField = props => {
   const {
     activeColor,
+    assistiveTextProps,
     bg,
     controlGroupProps,
     controlId,
+    controlLabelProps,
     disabled,
     formStyle,
     assistiveText,
+    isRequired,
     labelText,
-    required,
     validationError,
     plainText,
   } = props;
-  const assistiveProps = { assistiveText, required };
-  const newlabel = !required ? labelText : `${labelText}*`;
+  const assistiveProps = { assistiveText, isRequired };
+  const newlabel = !isRequired ? labelText : `${labelText}*`;
   return (
     <ControlGroup
       activeColor={activeColor}
       assistiveText={getAssistiveText(assistiveProps)}
+      assistiveTextProps={assistiveTextProps}
       bg={bg}
       controlId={controlId}
+      controlLabelProps={controlLabelProps}
       disabled={disabled}
       labelText={newlabel}
       validationError={validationError}
@@ -262,13 +266,15 @@ SelectField.propTypes = {
     PropTypes.object,
     PropTypes.string,
   ]),
+  assistiveTextProps: PropTypes.object,
   controlGroupProps: PropTypes.object,
   controlId: PropTypes.string,
+  controlLabelProps: PropTypes.object,
   disabled: PropTypes.bool,
   formStyle: PropTypes.string,
+  isRequired: PropTypes.bool,
   labelText: PropTypes.string,
   plainText: PropTypes.bool,
-  required: PropTypes.bool,
   validationError: PropTypes.string,
   ...borderRadius.propTypes,
   ...space.propTypes,
@@ -277,12 +283,14 @@ SelectField.propTypes = {
 SelectField.defaultProps = {
   activeColor: defaultControlStyles.activeColor,
   assistiveText: '',
+  assistiveTextProps: {},
   controlGroupProps: {},
   controlId: '',
+  controlLabelProps: {},
   disabled: false,
   formStyle: '',
+  isRequired: false,
   labelText: '',
   plainText: false,
-  required: false,
   validationError: '',
 };

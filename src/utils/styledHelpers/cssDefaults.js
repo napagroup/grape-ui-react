@@ -1,6 +1,6 @@
 export const CSS_INHERIT_VALUE = 'inherit';
 export const POSITION_DEFAULT_VALUE = 'relative';
-export const CSS_DEFAULT_FONTFAMILY_VALUE = 'base';
+export const CSS_DEFAULT_FONT_FAMILY_VALUE = 'base';
 
 import { getGlobalStyles } from 'src/global-styles';
 
@@ -11,7 +11,7 @@ export const defaultStylesBase = {
   borderRadius: borderSchema.borderRadius.base,
   color: CSS_INHERIT_VALUE,
   ellipsis: false,
-  fontFamily: CSS_DEFAULT_FONTFAMILY_VALUE,
+  fontFamily: CSS_DEFAULT_FONT_FAMILY_VALUE,
   fontSize: CSS_INHERIT_VALUE,
   fontWeight: CSS_INHERIT_VALUE,
   italic: false,
@@ -26,7 +26,9 @@ export const defaultControlStyles = {
   activeColor: 'brandPrimary',
   bg: 'white.light',
   borderColor: 'borderColor',
+  fontFamily: CSS_DEFAULT_FONT_FAMILY_VALUE,
   isFocused: false,
+  isRequired: false,
   padding: gridSchema.gutter,
   placeholderColor: 'gray.light',
   plainText: false,

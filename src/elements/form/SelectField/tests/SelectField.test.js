@@ -42,7 +42,7 @@ describe('SelectField Component with assistive text', () => {
 
 describe('SelectField Component with ControlLabel with *', () => {
   it('should return a SelectField  with ControlLabel with *', () => {
-    const component = mount(<ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} required value={colorOptions[1]} /></ThemeProvider>);
+    const component = mount(<ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" isRequired labelText="Color" options={colorOptions} value={colorOptions[1]} /></ThemeProvider>);
     expect(component.find('label')).toMatchSnapshot();
   });
 });
@@ -88,6 +88,24 @@ describe('SelectField Component with space', () => {
 describe('SelectField Component with custom Control Group props', () => {
   it('should return a SelectField with custom control group props', () => {
     const element = <ThemeProvider theme={{}}><SelectField controlGroupProps={{ pb: 2, pt: 0 }} /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+
+describe('SelectField Component with custom Control Label props', () => {
+  it('should return a SelectField with custom control label props', () => {
+    const element = <ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" controlLabelProps={{ px: 0, py: 3 }} id="exampleColor" labelText="Color" m={4} options={colorOptions} p={4} value={colorOptions[1]} /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+
+describe('TextField with custom assistive text props', () => {
+  it('should return a TextField with custom assistive text props', () => {
+    const assistiveTextProps = {
+      px: 0,
+      py: 3,
+    };
+    const element = <ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" assistiveTextProps={assistiveTextProps} controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} value={colorOptions[1]} /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

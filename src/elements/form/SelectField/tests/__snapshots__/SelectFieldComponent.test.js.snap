@@ -23,10 +23,6 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
   width: 100%;
 }
 
-.c0[required] + label:after {
-  content: "*";
-}
-
 .c0[disabled] {
   opacity: 0.3;
 }
@@ -285,10 +281,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   width: 100%;
 }
 
-.c0[required] + label:after {
-  content: "*";
-}
-
 .c0[disabled] {
   opacity: 0.3;
 }
@@ -545,10 +537,6 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   outline: 0;
   padding: 1rem;
   width: 100%;
-}
-
-.c0[required] + label:after {
-  content: "*";
 }
 
 .c0[disabled] {
