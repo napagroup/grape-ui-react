@@ -24,7 +24,7 @@ import { TextInputComponent } from './component';
 
 const controlStylesTextField = props => (!props.validationError ? controlStyles(props)
   : controlStyles({ ...props, activeColor: 'brandDanger', borderColor: 'brandDanger' }));
-
+const multilineStyles = props => (props.multiline ? 'resize: none;' : '');
 export const TextFieldComponent = styled(TextInputComponent)`
   ${controlColor}
   ${controlStylesTextField}
@@ -34,6 +34,7 @@ export const TextFieldComponent = styled(TextInputComponent)`
   ${fontWeight}
   ${letterSpacingCore}
   ${lineHeightCore}
+  ${multilineStyles}
   ${textAlignCore}
   ${textDecorationCore}
 `;
@@ -52,6 +53,7 @@ TextFieldComponent.defaultProps = {
 const propsToTrim = [
   'assistiveText',
   'controlId',
+  'controlLabelProps',
   'labelText',
   'controlLabelProps',
   'validationError',

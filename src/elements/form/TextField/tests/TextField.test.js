@@ -178,3 +178,10 @@ describe('TextField with custom assistive text props', () => {
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
+
+describe('TextField with a multiline option', () => {
+  it('should return a multiline TextField', () => {
+    const element = <ThemeProvider theme={{}}><TextField maxRows={7} minRows={2} multiline name="exampleDescription" /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});

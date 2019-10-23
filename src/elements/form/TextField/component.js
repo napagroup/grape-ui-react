@@ -4,6 +4,7 @@ import { control, typography } from 'src/utils/styledHelpers';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import Cleave from 'cleave.js/react';
 import CleavePhone from 'cleave.js/dist/addons/cleave-phone.us'; // eslint-disable-line no-unused-vars
+import TextareaAutosize from 'react-textarea-autosize';
 import { cleaveOption, isCleaveInput } from './utils';
 
 const propsToTrim = [
@@ -15,6 +16,8 @@ const propsToTrim = [
   'email',
   'formatterOptions',
   'integer',
+  'maxRows',
+  'multiline',
   'numeric',
   'password',
   'phone',
@@ -34,23 +37,40 @@ const getInputType = props => {
   return 'text';
 };
 
-
-export const TextInputComponent = ({ plainText, ...props }) => {
+export const TextInputComponent = ({ maxRows, multiline, plainText, ...props }) => {
   if (isCleaveInput(props)) {
     return <Cleave autoComplete="no" options={cleaveOption(props)} readOnly={plainText} tabIndex={plainText ? '-1' : '0'} {...removeSomeProps(props, propsToTrim)} />;
+  }
+  if (multiline) {
+    return (
+      <>
+        <div />
+        <TextareaAutosize
+          maxRows={maxRows}
+          readOnly={plainText}
+          tabIndex={plainText ? '-1' : '0'}
+          {...removeSomeProps(props, propsToTrim)}
+        />
+      </>
+    );
   }
   return (
     <input readOnly={plainText} tabIndex={plainText ? '-1' : '0'} type={getInputType(props)} {...removeSomeProps(props, propsToTrim)} />
   );
 };
+
 TextInputComponent.propTypes = {
   email: PropTypes.bool,
+  maxRows: PropTypes.number,
+  multiline: PropTypes.bool,
   password: PropTypes.bool,
   plainText: PropTypes.bool,
 };
 
 TextInputComponent.defaultProps = {
   email: false,
+  maxRows: 4,
+  multiline: false,
   password: false,
   plainText: false,
 };

@@ -996,10 +996,11 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  padding: 0 1rem;
 }
 
 .c0 {
@@ -1176,10 +1177,11 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  padding: 0 1rem;
 }
 
 .c0 {
@@ -1872,10 +1874,11 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  padding: 0 1rem;
 }
 
 .c0 {
@@ -2050,10 +2053,11 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  padding: 0 1rem;
 }
 
 .c0 {

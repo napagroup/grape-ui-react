@@ -873,6 +873,7 @@ exports[`TextField with a currency attribute should return a TextField of input 
   activeColor="brandPrimary"
   bg={null}
   borderColor="borderColor"
+  borderRadius="4px"
   className="c0"
   currency={true}
   email={false}
@@ -882,6 +883,8 @@ exports[`TextField with a currency attribute should return a TextField of input 
   isFocused={false}
   isRequired={false}
   labelText=""
+  maxRows={4}
+  multiline={false}
   name="currency"
   padding="1rem"
   password={false}
@@ -982,6 +985,7 @@ exports[`TextField with a formatterOptions attribute should return a TextField w
   activeColor="brandPrimary"
   bg={null}
   borderColor="borderColor"
+  borderRadius="4px"
   className="c0"
   email={false}
   fontFamily="base"
@@ -997,6 +1001,8 @@ exports[`TextField with a formatterOptions attribute should return a TextField w
   isFocused={false}
   isRequired={false}
   labelText=""
+  maxRows={4}
+  multiline={false}
   name="formatterOptions"
   padding="1rem"
   password={false}
@@ -1035,6 +1041,91 @@ exports[`TextField with a formatterOptions attribute should return a TextField w
     />
   </Component>
 </TextInputComponent>
+`;
+
+exports[`TextField with a multiline option should return a multiline TextField 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  resize: none;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<div
+  className="c0"
+>
+  <div />
+  <textarea
+    className="c1"
+    id="exampleDescription"
+    name="exampleDescription"
+    onChange={[Function]}
+    readOnly={false}
+    style={
+      Object {
+        "height": 0,
+      }
+    }
+    tabIndex="0"
+  />
+</div>
 `;
 
 exports[`TextField with a numeric attribute should return a TextField of input type numeric 1`] = `
@@ -1096,6 +1187,7 @@ exports[`TextField with a numeric attribute should return a TextField of input t
   activeColor="brandPrimary"
   bg={null}
   borderColor="borderColor"
+  borderRadius="4px"
   className="c0"
   email={false}
   fontFamily="base"
@@ -1104,6 +1196,8 @@ exports[`TextField with a numeric attribute should return a TextField of input t
   isFocused={false}
   isRequired={false}
   labelText=""
+  maxRows={4}
+  multiline={false}
   name="numeric"
   numeric={true}
   padding="1rem"
@@ -1282,6 +1376,7 @@ exports[`TextField with a phone attribute should return a TextField of input typ
   activeColor="brandPrimary"
   bg={null}
   borderColor="borderColor"
+  borderRadius="4px"
   className="c0"
   email={false}
   fontFamily="base"
@@ -1290,6 +1385,8 @@ exports[`TextField with a phone attribute should return a TextField of input typ
   isFocused={false}
   isRequired={false}
   labelText=""
+  maxRows={4}
+  multiline={false}
   name="phone"
   padding="1rem"
   password={false}
@@ -1391,6 +1488,7 @@ exports[`TextField with a postalCode attribute should return a TextField of inpu
   activeColor="brandPrimary"
   bg={null}
   borderColor="borderColor"
+  borderRadius="4px"
   className="c0"
   email={false}
   fontFamily="base"
@@ -1399,6 +1497,8 @@ exports[`TextField with a postalCode attribute should return a TextField of inpu
   isFocused={false}
   isRequired={false}
   labelText=""
+  maxRows={4}
+  multiline={false}
   name="postalCode"
   padding="1rem"
   password={false}
@@ -1712,6 +1812,7 @@ exports[`TextField with an integer attribute should return a TextField of input 
   activeColor="brandPrimary"
   bg={null}
   borderColor="borderColor"
+  borderRadius="4px"
   className="c0"
   email={false}
   fontFamily="base"
@@ -1721,6 +1822,8 @@ exports[`TextField with an integer attribute should return a TextField of input 
   isFocused={false}
   isRequired={false}
   labelText=""
+  maxRows={4}
+  multiline={false}
   name="integer"
   padding="1rem"
   password={false}

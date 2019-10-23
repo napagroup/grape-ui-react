@@ -27,7 +27,7 @@ describe('TextField using Theme color', () => {
 });
 
 describe('TextField using custom brand colors', () => {
-  test.only('should return a TextField object with custom brand primary color', () => {
+  it('should return a TextField object with custom brand primary color', () => {
     const theme = {
       colors: {
         brandPrimary: {

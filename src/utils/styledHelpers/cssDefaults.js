@@ -26,6 +26,7 @@ export const defaultControlStyles = {
   activeColor: 'brandPrimary',
   bg: 'white.light',
   borderColor: 'borderColor',
+  borderRadius: borderSchema.borderRadius.base,
   fontFamily: CSS_DEFAULT_FONT_FAMILY_VALUE,
   isFocused: false,
   isRequired: false,

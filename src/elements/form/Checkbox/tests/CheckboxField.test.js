@@ -84,7 +84,7 @@ describe('CheckboxField Component with no label', () => {
   });
 });
 describe('CheckboxField Component with custom assistive text props', () => {
-  test.only('should return a CheckboxField that contains custom assistive text props', () => {
+  it('should return a CheckboxField that contains custom assistive text props', () => {
     const selectedValue = ['red'];
     const element = <ThemeProvider theme={emptyTheme}><CheckboxField assistiveText="Select at least one" assistiveTextProps={{ px: 0, py: 3 }} controlId="exampleColor" name="Color" options={colorOptions} value={selectedValue} /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
@@ -98,7 +98,7 @@ describe('CheckboxField Component with custom controlGroupProps', () => {
   });
 });
 describe('CheckboxField Component with custom controlLabelProps', () => {
-  test.only('should return a CheckboxField that contains custom controlLabelProps', () => {
+  it('should return a CheckboxField that contains custom controlLabelProps', () => {
     const selectedValue = ['red'];
     const element = <ThemeProvider theme={emptyTheme}><CheckboxField controlId="exampleColor" controlLabelProps={{ px: 0, py: 1 }} labelText="Color" name="Color" options={colorOptions} value={selectedValue} /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
