@@ -185,3 +185,24 @@ describe('TextField with a multiline option', () => {
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
+
+describe('TextField with formStyle set to filled', () => {
+  it('should return a formStyle filled TextField', () => {
+    const element = <ThemeProvider theme={{}}><TextField formStyle="filled" labelText="Full name" name="exampleFullName" /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+
+describe('TextField with formStyle set to filled and plain text', () => {
+  it('should return a formStyle filled readonly TextField', () => {
+    const element = <ThemeProvider theme={{}}><TextField formStyle="filled" labelText="Full name" name="exampleFullName" plainText /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+
+describe('TextField with formStyle set to filled, multiline and plain text', () => {
+  it('should return a formStyle filled multline readonly TextField', () => {
+    const element = <ThemeProvider theme={{}}><TextField formStyle="filled" labelText="Full name" multiline name="exampleFullName" plainText value="I should have tabIndex of -1" /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});

@@ -111,6 +111,8 @@ export const controlStyles = (props = {}) => {
     };
   }
   const {
+    formStyle,
+    labelText,
     padding,
     plainText,
   } = overrides;
@@ -119,7 +121,7 @@ export const controlStyles = (props = {}) => {
       border: 0;
       display: block;
       outline: 0;
-      padding: ${padding};
+      padding: ${getFinalFieldPadding(padding, formStyle, labelText)};
     `;
   }
   return getFinalStyle({

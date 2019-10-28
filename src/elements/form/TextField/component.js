@@ -37,25 +37,31 @@ const getInputType = props => {
   return 'text';
 };
 
-export const TextInputComponent = ({ maxRows, multiline, plainText, ...props }) => {
+const getTabIndex = plainText => {
+  return plainText ? '-1' : '0';
+};
+
+export const TextInputComponent = ({
+  maxRows, multiline, plainText, ...props
+}) => {
   if (isCleaveInput(props)) {
-    return <Cleave autoComplete="no" options={cleaveOption(props)} readOnly={plainText} tabIndex={plainText ? '-1' : '0'} {...removeSomeProps(props, propsToTrim)} />;
+    return <Cleave autoComplete="no" options={cleaveOption(props)} readOnly={plainText} tabIndex={getTabIndex(plainText)} {...removeSomeProps(props, propsToTrim)} />;
   }
   if (multiline) {
     return (
       <>
-        <div />
+        <div className="multiline-scroll-shield" />
         <TextareaAutosize
           maxRows={maxRows}
           readOnly={plainText}
-          tabIndex={plainText ? '-1' : '0'}
+          tabIndex={getTabIndex(plainText)}
           {...removeSomeProps(props, propsToTrim)}
         />
       </>
     );
   }
   return (
-    <input readOnly={plainText} tabIndex={plainText ? '-1' : '0'} type={getInputType(props)} {...removeSomeProps(props, propsToTrim)} />
+    <input readOnly={plainText} tabIndex={getTabIndex(plainText)} type={getInputType(props)} {...removeSomeProps(props, propsToTrim)} />
   );
 };
 

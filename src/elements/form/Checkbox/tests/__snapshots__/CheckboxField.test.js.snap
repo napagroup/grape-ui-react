@@ -949,6 +949,7 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  width: 100%;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1043,6 +1044,7 @@ exports[`CheckboxFieldComponent Component with 2 plaintext should return a Check
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  width: 100%;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;

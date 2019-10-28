@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fontWeight, space } from 'styled-system';
+import { fontWeight, layout, space } from 'styled-system';
 import {
   colorCore,
   defaultControlStyles,
@@ -7,6 +7,7 @@ import {
   fontFamilyCore,
   fontSizeCore,
   fontStyleCore,
+  layoutProps,
   letterSpacingCore,
   lineHeightCore,
   textAlignCore,
@@ -24,6 +25,7 @@ export const PlainText = styled(PlainTextComponent)`
   ${fontSizeCore}
   ${fontStyleCore}
   ${fontWeight}
+  ${layout}
   ${letterSpacingCore}
   ${lineHeightCore}
   ${space}
@@ -32,6 +34,7 @@ export const PlainText = styled(PlainTextComponent)`
 `;
 
 PlainText.propTypes = {
+  ...layoutProps.propTypes,
   ...space.propTypes,
   ...typography.propTypes,
 };
@@ -42,4 +45,5 @@ PlainText.defaultProps = {
   pl: gridSchema.gutter || defaultControlStyles.padding,
   pr: gridSchema.gutter || defaultControlStyles.padding,
   pt: gridSchema.gutter || defaultControlStyles.padding,
+  width: 1,
 };
