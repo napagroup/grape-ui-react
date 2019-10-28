@@ -51,8 +51,15 @@ const scaleFactor = props => {
 };
 
 export const getFinalFieldPadding = (padding, formStyle, labelText) => ((formStyle === 'filled' && labelText)
-  ? `${Number.parseInt(padding, 10) * 1.5}rem ${padding} ${Number.parseInt(padding, 10) / 2}rem`
-  : padding);
+  ? `
+    padding: ${Number.parseInt(padding, 10) * 1.5}rem ${padding} ${Number.parseInt(padding, 10) / 2}rem;
+    + label {
+      background: transparent;
+      line-height: 1;
+      top: ${Number.parseInt(padding, 10) - 0.2}rem;
+    }
+  `
+  : `padding: ${padding};`);
 
 const getFinalStyle = props => {
   const {
@@ -68,12 +75,11 @@ const getFinalStyle = props => {
   const focusStyle = focusStyles({ activeColor, formStyle, ...globalOverrides });
   const resolvedBorderColor = resolveColor(borderColor, globalOverrides);
   const resolvedPlaceholderColor = resolveColor(placeholderColor, globalOverrides);
-  const topLabel = `${Number.parseInt(padding, 10) - 0.2}rem`;
   const controlSharedStyle = `
     border-radius: ${resolveBorderRadius(props)};
     outline: 0;
-    padding: ${getFinalFieldPadding(padding, formStyle, labelText)};
     width: 100%;
+    ${getFinalFieldPadding(padding, formStyle, labelText)}
     &[disabled] {
       ${disabledStyle}
     }
@@ -84,11 +90,6 @@ const getFinalStyle = props => {
     return `
       border-bottom: 1px solid ${resolvedBorderColor};
       border-radius: ${scale} ${scale} 0 0;
-      + label {
-        background: transparent;
-        line-height: 1;
-        top: ${topLabel};
-      }
       ${controlSharedStyle}
     `;
   }
@@ -121,7 +122,8 @@ export const controlStyles = (props = {}) => {
       border: 0;
       display: block;
       outline: 0;
-      padding: ${getFinalFieldPadding(padding, formStyle, labelText)};
+      width: 100%;
+      ${getFinalFieldPadding(padding, formStyle, labelText)}
     `;
   }
   return getFinalStyle({
