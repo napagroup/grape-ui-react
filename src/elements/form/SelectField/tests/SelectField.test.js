@@ -117,3 +117,22 @@ describe('SelectField Component with react-select predefined props', () => {
     expect(component.find('SelectField').props().isClearable).toEqual(true);
   });
 });
+
+describe('SelectField with isCreatable prop set to true', () => {
+  it('should return a Creatable Multiselect SelectField component', () => {
+    const element = (
+      <ThemeProvider theme={{}}>
+        <SelectField
+          controlId="exampleColor"
+          id="exampleColor"
+          isCreatable
+          labelText="Color"
+          options={colorOptions}
+          sm
+          value={colorOptions[1]}
+        />
+      </ThemeProvider>
+    );
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
