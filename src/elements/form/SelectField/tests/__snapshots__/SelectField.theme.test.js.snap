@@ -50,8 +50,8 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   border-radius: 2px;
   border-radius: 2px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c1[disabled] {
@@ -62,12 +62,14 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -169,7 +171,7 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 
@@ -332,8 +334,8 @@ exports[`SelectField using Theme color should return a SelectField object with c
 }
 
 .c1 {
+  background-color: hsl(305,33.9%,23.7%);
   color: hsl(313,67.8%,47.5%);
-  background-color: transparent;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -349,8 +351,8 @@ exports[`SelectField using Theme color should return a SelectField object with c
   border-radius: 2px;
   border-radius: 2px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c1[disabled] {
@@ -361,12 +363,14 @@ exports[`SelectField using Theme color should return a SelectField object with c
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -468,7 +472,7 @@ exports[`SelectField using Theme color should return a SelectField object with c
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 

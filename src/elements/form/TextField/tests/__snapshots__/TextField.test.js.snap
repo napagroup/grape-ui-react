@@ -61,12 +61,14 @@ exports[`TextField  a large TextField object should return a large TextField obj
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -167,12 +169,14 @@ exports[`TextField Component base should return a TextField object 1`] = `
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -273,12 +277,14 @@ exports[`TextField a TextField object should return a TextField object with a re
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -451,12 +457,14 @@ exports[`TextField a small TextField object should return a disabled TextField 1
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(4.1,89.6%,58.4%);
   box-shadow: 0 0 0 1px hsl(4.1,89.6%,58.4%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(4.1,89.6%,58.4%);
 }
 
@@ -558,12 +566,14 @@ exports[`TextField a small TextField object should return a small TextField obje
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -664,12 +674,14 @@ exports[`TextField a small TextField object should return a small TextField obje
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(4.1,89.6%,58.4%);
   box-shadow: 0 0 0 1px hsl(4.1,89.6%,58.4%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(4.1,89.6%,58.4%);
 }
 
@@ -770,12 +782,14 @@ exports[`TextField a small TextField object should return a small TextField obje
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -845,12 +859,14 @@ exports[`TextField with a currency attribute should return a TextField of input 
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -957,12 +973,14 @@ exports[`TextField with a formatterOptions attribute should return a TextField w
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -1084,12 +1102,14 @@ exports[`TextField with a multiline option should return a multiline TextField 1
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -1161,12 +1181,14 @@ exports[`TextField with a numeric attribute should return a TextField of input t
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -1281,12 +1303,14 @@ exports[`TextField with a password attribute should return a TextField of input 
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -1350,12 +1374,14 @@ exports[`TextField with a phone attribute should return a TextField of input typ
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -1462,12 +1488,14 @@ exports[`TextField with a postalCode attribute should return a TextField of inpu
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -1587,12 +1615,14 @@ exports[`TextField with an email attribute should return a TextField of input ty
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -1705,12 +1735,14 @@ exports[`TextField with an id attribute provided should return a TextField with 
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -1786,12 +1818,14 @@ exports[`TextField with an integer attribute should return a TextField of input 
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -1947,12 +1981,14 @@ exports[`TextField with assistive text should return a TextField object contain 
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -2057,12 +2093,14 @@ exports[`TextField with custom assistive text props should return a TextField wi
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -2141,12 +2179,14 @@ exports[`TextField with custom control group props should return a TextField wit
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -2243,12 +2283,14 @@ exports[`TextField with custom control label props should return a TextField wit
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -2433,12 +2475,14 @@ exports[`TextField with formStyle set to filled should return a formStyle filled
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-bottom: 2px solid hsl(323.3,84.6%,28%);
   margin-bottom: -1px;
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -2667,12 +2711,14 @@ exports[`TextField with object in assistive text should return a TextField objec
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -2803,12 +2849,14 @@ exports[`TextField with some other props should return a TextField object contai
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(4.1,89.6%,58.4%);
   box-shadow: 0 0 0 1px hsl(4.1,89.6%,58.4%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(4.1,89.6%,58.4%);
 }
 
@@ -2934,12 +2982,14 @@ exports[`TextField with validation error should return a TextField object contai
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(4.1,89.6%,58.4%);
   box-shadow: 0 0 0 1px hsl(4.1,89.6%,58.4%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(4.1,89.6%,58.4%);
 }
 

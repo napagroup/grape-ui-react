@@ -37,9 +37,7 @@ const getInputType = props => {
   return 'text';
 };
 
-const getTabIndex = plainText => {
-  return plainText ? '-1' : '0';
-};
+const getTabIndex = plainText => (plainText ? '-1' : '0');
 
 export const TextInputComponent = ({
   maxRows, multiline, plainText, ...props

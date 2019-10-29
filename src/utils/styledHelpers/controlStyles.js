@@ -83,7 +83,7 @@ const getFinalStyle = props => {
     &[disabled] {
       ${disabledStyle}
     }
-    &:focus{ ${focusStyle} }
+    &:focus, &:focus-within{ ${focusStyle} }
     &::placeholder { color: ${resolvedPlaceholderColor} }
   `;
   if (formStyle === 'filled') {

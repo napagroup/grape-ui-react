@@ -19,8 +19,8 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
   border-radius: 4px;
   border-radius: 4px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c0[disabled] {
@@ -31,12 +31,14 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -138,7 +140,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 
@@ -277,8 +279,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   border-radius: 8px;
   border-radius: 8px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c0[disabled] {
@@ -289,12 +291,14 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -396,7 +400,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 
@@ -535,8 +539,8 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   border-radius: 2px;
   border-radius: 2px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c0[disabled] {
@@ -547,12 +551,14 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -654,7 +660,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 

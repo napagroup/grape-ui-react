@@ -39,12 +39,14 @@ exports[`TextField using Theme Font Family should return a TextField object with
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -119,12 +121,14 @@ exports[`TextField using Theme color should return a TextField object with custo
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -199,12 +203,14 @@ exports[`TextField using custom brand colors should return a TextField object wi
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(100,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(100,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(100,84.6%,28%);
 }
 

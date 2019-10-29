@@ -9,7 +9,14 @@ describe('getFinalFieldPadding', () => {
     // Act
     const actual = getFinalFieldPadding(padding, formStyle, labelText);
     // Assert
-    expect(actual).toEqual('6rem 4px 2rem');
+    expect(actual).toEqual(`
+    padding: 6rem 4px 2rem;
+    + label {
+      background: transparent;
+      line-height: 1;
+      top: 3.8rem;
+    }
+  `);
   });
   test('should return padding if the formStyle is filled and there is no labelText', () => {
     // Arrange
@@ -18,7 +25,7 @@ describe('getFinalFieldPadding', () => {
     // Act
     const actual = getFinalFieldPadding(padding, formStyle, labelText);
     // Assert
-    expect(actual).toEqual('4px');
+    expect(actual).toEqual('padding: 4px;');
   });
   test('should return padding if the formStyle is not filled and there is labelText', () => {
     // Arrange
@@ -27,7 +34,7 @@ describe('getFinalFieldPadding', () => {
     // Act
     const actual = getFinalFieldPadding(padding, formStyle, labelText);
     // Assert
-    expect(actual).toEqual('4px');
+    expect(actual).toEqual('padding: 4px;');
   });
   test('should return padding if the formStyle is not filled and there is no labelText', () => {
     // Arrange
@@ -36,6 +43,6 @@ describe('getFinalFieldPadding', () => {
     // Act
     const actual = getFinalFieldPadding(padding, formStyle, labelText);
     // Assert
-    expect(actual).toEqual('4px');
+    expect(actual).toEqual('padding: 4px;');
   });
 });

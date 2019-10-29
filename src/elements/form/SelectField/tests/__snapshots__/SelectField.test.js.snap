@@ -81,8 +81,8 @@ exports[`SelectField Component base should return a SelectField that contains Se
   border-radius: 2px;
   border-radius: 2px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c1[disabled] {
@@ -93,12 +93,14 @@ exports[`SelectField Component base should return a SelectField that contains Se
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -200,7 +202,7 @@ exports[`SelectField Component base should return a SelectField that contains Se
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 
@@ -443,8 +445,8 @@ exports[`SelectField Component with custom Control Group props should return a S
   border-radius: 4px;
   border-radius: 4px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c1[disabled] {
@@ -455,12 +457,14 @@ exports[`SelectField Component with custom Control Group props should return a S
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -562,7 +566,7 @@ exports[`SelectField Component with custom Control Group props should return a S
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 
@@ -756,8 +760,8 @@ exports[`SelectField Component with custom Control Label props should return a S
   border-radius: 4px;
   border-radius: 4px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c1[disabled] {
@@ -768,12 +772,14 @@ exports[`SelectField Component with custom Control Label props should return a S
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -875,7 +881,7 @@ exports[`SelectField Component with custom Control Label props should return a S
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 
@@ -1079,8 +1085,8 @@ exports[`SelectField Component with space should return a SelectField with space
   border-radius: 4px;
   border-radius: 4px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c1[disabled] {
@@ -1091,12 +1097,14 @@ exports[`SelectField Component with space should return a SelectField with space
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -1198,7 +1206,7 @@ exports[`SelectField Component with space should return a SelectField with space
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 
@@ -1402,8 +1410,8 @@ exports[`SelectField Component with space should return a SelectField with space
   border-radius: 4px;
   border-radius: 4px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c1[disabled] {
@@ -1414,12 +1422,14 @@ exports[`SelectField Component with space should return a SelectField with space
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -1521,7 +1531,7 @@ exports[`SelectField Component with space should return a SelectField with space
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 
@@ -1725,8 +1735,8 @@ exports[`SelectField Component with style should return a SelectField that is fr
   border-radius: 4px;
   border-radius: 4px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c1[disabled] {
@@ -1737,12 +1747,14 @@ exports[`SelectField Component with style should return a SelectField that is fr
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -1844,7 +1856,7 @@ exports[`SelectField Component with style should return a SelectField that is fr
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 
@@ -2031,7 +2043,7 @@ exports[`SelectField Component with style should return a SelectField with backg
 }
 
 .c1 {
-  background-color: transparent;
+  background-color: hsl(4.1,89.6%,58.4%);
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -2048,8 +2060,8 @@ exports[`SelectField Component with style should return a SelectField with backg
   border-radius: 4px;
   border-radius: 4px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c1[disabled] {
@@ -2060,12 +2072,14 @@ exports[`SelectField Component with style should return a SelectField with backg
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -2167,7 +2181,7 @@ exports[`SelectField Component with style should return a SelectField with backg
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 
@@ -2371,8 +2385,8 @@ exports[`SelectField Component with style should return a SelectField with orang
   border-radius: 4px;
   border-radius: 4px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c1[disabled] {
@@ -2383,12 +2397,14 @@ exports[`SelectField Component with style should return a SelectField with orang
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -2490,7 +2506,7 @@ exports[`SelectField Component with style should return a SelectField with orang
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 
@@ -2694,8 +2710,8 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   border-radius: 8px;
   border-radius: 8px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c1[disabled] {
@@ -2706,12 +2722,14 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -2813,7 +2831,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 
@@ -3017,8 +3035,8 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   border-radius: 2px;
   border-radius: 2px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c1[disabled] {
@@ -3029,12 +3047,14 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -3136,7 +3156,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 
@@ -3342,8 +3362,8 @@ exports[`TextField with custom assistive text props should return a TextField wi
   border-radius: 4px;
   border-radius: 4px;
   outline: 0;
-  padding: 1rem;
   width: 100%;
+  padding: 1rem;
 }
 
 .c1[disabled] {
@@ -3354,12 +3374,14 @@ exports[`TextField with custom assistive text props should return a TextField wi
   color: rgba(0,0,0,0.3);
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c1:focus + label {
+.c1:focus + label,
+.c1:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -3461,7 +3483,7 @@ exports[`TextField with custom assistive text props should return a TextField wi
   justify-content: flex-end;
   position: absolute;
   right: 1rem;
-  top: 0;
+  bottom: 0;
   width: 40px;
 }
 

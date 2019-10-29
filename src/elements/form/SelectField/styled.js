@@ -35,6 +35,12 @@ const controlStylesSelectField = props => {
   return controlStyles(props);
 };
 
+const getIndicatorsHeight = props => {
+  const { formStyle, labelText } = props;
+  if (formStyle === 'filled' && labelText) return 'calc(100% - 1rem)';
+  return '100%';
+};
+
 const focusStyleSelectField = props => {
   if (props.isFocused) {
     return focusStyles(props);
@@ -117,11 +123,11 @@ const reactSelectStylesOverrides = props => {
       }
     }
     .grape-ui-select__indicators {
-      height: 100%;
+      height: ${getIndicatorsHeight(props)};
       justify-content: flex-end;
       position: absolute;
       right: ${padding};
-      top: 0;
+      bottom: 0;
       width: ${indicatorsWidth};
     }
     &.grape-ui-select--is-rtl {
@@ -193,7 +199,6 @@ const renderSelectFieldComponent = selectFieldProps => {
   return (<SelectFieldComponent {...selectFieldProps} value={value || defaultValue} />);
 };
 const propsToTrim = [
-  'bg',
   'controlGroupProps',
   'controlId',
   'disabled',
@@ -228,12 +233,10 @@ export const SelectField = props => {
     controlId,
     controlLabelProps,
     disabled,
-    formStyle,
     assistiveText,
     isRequired,
     labelText,
     validationError,
-    plainText,
   } = props;
   const assistiveProps = { assistiveText, isRequired };
   const newlabel = !isRequired ? labelText : `${labelText}*`;
@@ -252,9 +255,6 @@ export const SelectField = props => {
     >
       {renderValueOrComponent({
         ...props,
-        formStyle,
-        labelText,
-        plainText,
       })}
     </ControlGroup>
   );

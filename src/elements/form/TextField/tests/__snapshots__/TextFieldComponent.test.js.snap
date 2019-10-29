@@ -30,12 +30,14 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -93,12 +95,14 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -156,12 +160,14 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -219,12 +225,14 @@ exports[`TextFieldComponent with a currency attribute should return a TextFieldC
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -288,12 +296,14 @@ exports[`TextFieldComponent with a integer attribute should return a TextFieldCo
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -357,12 +367,14 @@ exports[`TextFieldComponent with a numeric attribute should return a TextFieldCo
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -426,12 +438,14 @@ exports[`TextFieldComponent with a password attribute should return a TextFieldC
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -489,12 +503,14 @@ exports[`TextFieldComponent with a phone attribute should return a TextFieldComp
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -558,12 +574,14 @@ exports[`TextFieldComponent with a postalCode attribute should return a TextFiel
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
@@ -627,12 +645,14 @@ exports[`TextFieldComponent with an email attribute should return a TextFieldCom
   color: rgba(0,0,0,0.3);
 }
 
-.c0:focus {
+.c0:focus,
+.c0:focus-within {
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
 }
 
-.c0:focus + label {
+.c0:focus + label,
+.c0:focus-within + label {
   color: hsl(323.3,84.6%,28%);
 }
 
