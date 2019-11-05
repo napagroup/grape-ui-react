@@ -323,8 +323,17 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
 }
 
 .c5 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c5 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c5 .grape-ui-select__menu {

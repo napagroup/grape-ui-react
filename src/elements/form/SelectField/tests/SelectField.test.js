@@ -47,6 +47,13 @@ describe('SelectField Component with ControlLabel with *', () => {
   });
 });
 
+describe('SelectField Component with only name provided', () => {
+  it('should return a SelectField with name used in place of id', () => {
+    const component = mount(<ThemeProvider theme={{}}><SelectField labelText="Color" name="exampleColor" options={colorOptions} value={colorOptions[1]} /></ThemeProvider>);
+    expect(component.find('label')).toMatchSnapshot();
+  });
+});
+
 describe('SelectField Component with style', () => {
   it('should return a SelectFieldComponent with props where lg={true}', () => {
     const element = <ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" lg options={colorOptions} value={colorOptions[1]} /></ThemeProvider>;

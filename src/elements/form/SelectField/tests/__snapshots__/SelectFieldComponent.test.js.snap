@@ -77,8 +77,17 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
 }
 
 .c0 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c0 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c0 .grape-ui-select__menu {
@@ -337,8 +346,17 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
 }
 
 .c0 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c0 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c0 .grape-ui-select__menu {
@@ -597,8 +615,17 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
 }
 
 .c0 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c0 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c0 .grape-ui-select__menu {

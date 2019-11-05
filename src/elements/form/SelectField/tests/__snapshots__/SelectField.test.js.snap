@@ -139,8 +139,17 @@ exports[`SelectField Component base should return a SelectField that contains Se
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {
@@ -503,8 +512,17 @@ exports[`SelectField Component with custom Control Group props should return a S
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {
@@ -618,7 +636,7 @@ exports[`SelectField Component with custom Control Group props should return a S
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-14-input"
+              id="react-select-15-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -818,8 +836,17 @@ exports[`SelectField Component with custom Control Label props should return a S
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {
@@ -933,7 +960,7 @@ exports[`SelectField Component with custom Control Label props should return a S
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-15-input"
+              id="react-select-16-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -1015,6 +1042,37 @@ exports[`SelectField Component with custom Control Label props should return a S
     Please tell me your color
   </div>
 </div>
+`;
+
+exports[`SelectField Component with only name provided should return a SelectField with name used in place of id 1`] = `
+.c0 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  height: 0.4rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<label
+  className="c0"
+  htmlFor="exampleColor"
+>
+  Color
+</label>
 `;
 
 exports[`SelectField Component with space should return a SelectField with space with  margin: 32px;  padding: 32px; on c0 1`] = `
@@ -1143,8 +1201,17 @@ exports[`SelectField Component with space should return a SelectField with space
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {
@@ -1258,7 +1325,7 @@ exports[`SelectField Component with space should return a SelectField with space
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-12-input"
+              id="react-select-13-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -1468,8 +1535,17 @@ exports[`SelectField Component with space should return a SelectField with space
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {
@@ -1583,7 +1659,7 @@ exports[`SelectField Component with space should return a SelectField with space
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-13-input"
+              id="react-select-14-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -1793,8 +1869,17 @@ exports[`SelectField Component with style should return a SelectField that is fr
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {
@@ -1908,7 +1993,7 @@ exports[`SelectField Component with style should return a SelectField that is fr
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-11-input"
+              id="react-select-12-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -2118,8 +2203,17 @@ exports[`SelectField Component with style should return a SelectField with backg
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {
@@ -2233,7 +2327,7 @@ exports[`SelectField Component with style should return a SelectField with backg
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-9-input"
+              id="react-select-10-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -2443,8 +2537,17 @@ exports[`SelectField Component with style should return a SelectField with orang
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {
@@ -2558,7 +2661,7 @@ exports[`SelectField Component with style should return a SelectField with orang
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-10-input"
+              id="react-select-11-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -2768,8 +2871,17 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {
@@ -2883,7 +2995,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-7-input"
+              id="react-select-8-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -3093,8 +3205,17 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {
@@ -3208,7 +3329,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-8-input"
+              id="react-select-9-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -3400,8 +3521,17 @@ exports[`SelectField with isCreatable prop set to true should return a Creatable
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {
@@ -3515,7 +3645,7 @@ exports[`SelectField with isCreatable prop set to true should return a Creatable
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-18-input"
+              id="react-select-19-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -3721,8 +3851,17 @@ exports[`TextField with custom assistive text props should return a TextField wi
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {
@@ -3836,7 +3975,7 @@ exports[`TextField with custom assistive text props should return a TextField wi
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-16-input"
+              id="react-select-17-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}

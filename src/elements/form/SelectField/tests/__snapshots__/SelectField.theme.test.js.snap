@@ -108,8 +108,17 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {
@@ -409,8 +418,17 @@ exports[`SelectField using Theme color should return a SelectField object with c
 }
 
 .c1 .grape-ui-select__value-container {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: 40px;
   padding: 0;
-  padding-right: 40px;
+}
+
+.c1 .grape-ui-select__single-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .c1 .grape-ui-select__menu {

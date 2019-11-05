@@ -81,8 +81,14 @@ const reactSelectStylesOverrides = props => {
       display: none;
     }
     .grape-ui-select__value-container {
+      flex-wrap: nowrap;
+      margin-right: ${indicatorsWidth};
       padding: 0;
-      padding-right: ${indicatorsWidth};
+    }
+    .grape-ui-select__single-value {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .grape-ui-select__menu {
       position: absolute;
@@ -211,6 +217,7 @@ const renderValueOrComponent = propsFromComponent => {
   const {
     controlId,
     disabled,
+    name,
     plainText,
   } = propsFromComponent;
   if (plainText) {
@@ -218,9 +225,9 @@ const renderValueOrComponent = propsFromComponent => {
     return <PlainText {...plainTextProps} />;
   }
   const childProps = {
-    id: controlId,
-    ...removeSomeProps(propsFromComponent, propsToTrim),
+    id: controlId || name,
     isDisabled: disabled,
+    ...removeSomeProps(propsFromComponent, propsToTrim),
   };
   return renderSelectFieldComponent(childProps);
 };
@@ -236,6 +243,7 @@ export const SelectField = props => {
     assistiveText,
     isRequired,
     labelText,
+    name,
     validationError,
   } = props;
   const assistiveProps = { assistiveText, isRequired };
@@ -250,6 +258,7 @@ export const SelectField = props => {
       controlLabelProps={controlLabelProps}
       disabled={disabled}
       labelText={newlabel}
+      name={name}
       validationError={validationError}
       {...controlGroupProps}
     >
@@ -274,6 +283,7 @@ SelectField.propTypes = {
   formStyle: PropTypes.string,
   isRequired: PropTypes.bool,
   labelText: PropTypes.string,
+  name: PropTypes.string,
   plainText: PropTypes.bool,
   validationError: PropTypes.string,
   ...borderRadius.propTypes,
@@ -291,6 +301,7 @@ SelectField.defaultProps = {
   formStyle: '',
   isRequired: false,
   labelText: '',
+  name: '',
   plainText: false,
   validationError: '',
 };
