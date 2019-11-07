@@ -11,6 +11,10 @@ describe('getFinalFieldPadding', () => {
     // Assert
     expect(actual).toEqual(`
     padding: 6rem 4px 2rem;
+    .grape-ui-select__control {
+      margin: -6rem -4px -2rem;
+      padding: 6rem 4px 2rem;
+    }
     + label {
       background: transparent;
       line-height: 1;
@@ -25,7 +29,13 @@ describe('getFinalFieldPadding', () => {
     // Act
     const actual = getFinalFieldPadding(padding, formStyle, labelText);
     // Assert
-    expect(actual).toEqual('padding: 4px;');
+    expect(actual).toEqual(`
+    padding: 4px;
+    .grape-ui-select__control {
+      margin: -4px;
+      padding: 4px;
+    }
+  `);
   });
   test('should return padding if the formStyle is not filled and there is labelText', () => {
     // Arrange
@@ -34,7 +44,13 @@ describe('getFinalFieldPadding', () => {
     // Act
     const actual = getFinalFieldPadding(padding, formStyle, labelText);
     // Assert
-    expect(actual).toEqual('padding: 4px;');
+    expect(actual).toEqual(`
+    padding: 4px;
+    .grape-ui-select__control {
+      margin: -4px;
+      padding: 4px;
+    }
+  `);
   });
   test('should return padding if the formStyle is not filled and there is no labelText', () => {
     // Arrange
@@ -43,6 +59,12 @@ describe('getFinalFieldPadding', () => {
     // Act
     const actual = getFinalFieldPadding(padding, formStyle, labelText);
     // Assert
-    expect(actual).toEqual('padding: 4px;');
+    expect(actual).toEqual(`
+    padding: 4px;
+    .grape-ui-select__control {
+      margin: -4px;
+      padding: 4px;
+    }
+  `);
   });
 });

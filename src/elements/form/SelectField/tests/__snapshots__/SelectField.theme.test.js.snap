@@ -54,6 +54,11 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   padding: 1rem;
 }
 
+.c1 .grape-ui-select__control {
+  margin: -1rem;
+  padding: 1rem;
+}
+
 .c1[disabled] {
   opacity: 0.3;
 }
@@ -89,111 +94,6 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   color: hsl(0,0%,75%);
 }
 
-.c1 .grape-ui-select__control {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: 0;
-  box-shadow: none;
-  min-height: 0;
-}
-
-.c1 .grape-ui-select__indicator {
-  padding: 0;
-}
-
-.c1 .grape-ui-select__indicator-separator {
-  display: none;
-}
-
-.c1 .grape-ui-select__value-container {
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  margin-right: 40px;
-  padding: 0;
-}
-
-.c1 .grape-ui-select__single-value {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c1 .grape-ui-select__menu {
-  position: absolute;
-  left: 0;
-  margin: 0;
-  padding: 0.5rem 0;
-  z-index: 1030;
-  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2);
-}
-
-.c1 .grape-ui-select__option {
-  padding: 0.5rem 1rem;
-}
-
-.c1 .grape-ui-select__option--is-focused {
-  background: hsl(207,90%,54%);
-  color: hsl(0,0%,98%);
-}
-
-.c1 .grape-ui-select__option--is-selected {
-  background: hsl(186.8,100%,41.6%);
-  color: hsl(0,0%,98%);
-}
-
-.c1 .grape-ui-select__placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c1 .grape-ui-select__multi-value {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0.25rem;
-  padding: 0.25rem;
-  border-radius: 4px;
-  background-color: hsl(0,0%,90%);
-  font-size: 80%;
-}
-
-.c1 .grape-ui-select__multi-value__label {
-  padding: 0 0.25rem;
-}
-
-.c1 .grape-ui-select__multi-value__remove {
-  cursor: pointer;
-}
-
-.c1 .grape-ui-select__multi-value__remove:hover path {
-  fill: hsl(207,90%,54%);
-}
-
-.c1 .grape-ui-select__indicators {
-  height: 100%;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  position: absolute;
-  right: 1rem;
-  bottom: 0;
-  width: 40px;
-}
-
-.c1.grape-ui-select--is-rtl .grape-ui-select__value-container {
-  padding-right: 0;
-  padding-left: 40px;
-}
-
-.c1.grape-ui-select--is-rtl .grape-ui-select__indicators {
-  left: 1rem;
-  right: auto;
-}
-
 <div
   className="c0"
 >
@@ -203,15 +103,15 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
     onKeyDown={[Function]}
   >
     <div
-      className="css-0 grape-ui-select__control"
+      className="css-mazh0z grape-ui-select__control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-1hwfws3 grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
-          className="css-0 grape-ui-select__single-value"
+          className="css-8uhtka grape-ui-select__single-value"
         >
           Yellow
         </div>
@@ -274,14 +174,14 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
         </div>
       </div>
       <div
-        className="css-1wy0on6 grape-ui-select__indicators"
+        className="css-1rtnzd2 grape-ui-select__indicators"
       >
         <span
-          className="css-bgvzuu-indicatorSeparator grape-ui-select__indicator-separator"
+          className="css-1hyfx7x grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-16pqwjk-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -364,6 +264,11 @@ exports[`SelectField using Theme color should return a SelectField object with c
   padding: 1rem;
 }
 
+.c1 .grape-ui-select__control {
+  margin: -1rem;
+  padding: 1rem;
+}
+
 .c1[disabled] {
   opacity: 0.3;
 }
@@ -399,111 +304,6 @@ exports[`SelectField using Theme color should return a SelectField object with c
   color: hsl(0,0%,75%);
 }
 
-.c1 .grape-ui-select__control {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border: 0;
-  box-shadow: none;
-  min-height: 0;
-}
-
-.c1 .grape-ui-select__indicator {
-  padding: 0;
-}
-
-.c1 .grape-ui-select__indicator-separator {
-  display: none;
-}
-
-.c1 .grape-ui-select__value-container {
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  margin-right: 40px;
-  padding: 0;
-}
-
-.c1 .grape-ui-select__single-value {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.c1 .grape-ui-select__menu {
-  position: absolute;
-  left: 0;
-  margin: 0;
-  padding: 0.5rem 0;
-  z-index: 1030;
-  box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.2);
-}
-
-.c1 .grape-ui-select__option {
-  padding: 0.5rem 1rem;
-}
-
-.c1 .grape-ui-select__option--is-focused {
-  background: hsl(207,90%,54%);
-  color: hsl(0,0%,98%);
-}
-
-.c1 .grape-ui-select__option--is-selected {
-  background: hsl(186.8,100%,41.6%);
-  color: hsl(0,0%,98%);
-}
-
-.c1 .grape-ui-select__placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c1 .grape-ui-select__multi-value {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0.25rem;
-  padding: 0.25rem;
-  border-radius: 4px;
-  background-color: hsl(0,0%,90%);
-  font-size: 80%;
-}
-
-.c1 .grape-ui-select__multi-value__label {
-  padding: 0 0.25rem;
-}
-
-.c1 .grape-ui-select__multi-value__remove {
-  cursor: pointer;
-}
-
-.c1 .grape-ui-select__multi-value__remove:hover path {
-  fill: hsl(207,90%,54%);
-}
-
-.c1 .grape-ui-select__indicators {
-  height: 100%;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  position: absolute;
-  right: 1rem;
-  bottom: 0;
-  width: 40px;
-}
-
-.c1.grape-ui-select--is-rtl .grape-ui-select__value-container {
-  padding-right: 0;
-  padding-left: 40px;
-}
-
-.c1.grape-ui-select--is-rtl .grape-ui-select__indicators {
-  left: 1rem;
-  right: auto;
-}
-
 <div
   className="c0"
 >
@@ -513,15 +313,15 @@ exports[`SelectField using Theme color should return a SelectField object with c
     onKeyDown={[Function]}
   >
     <div
-      className="css-0 grape-ui-select__control"
+      className="css-mazh0z grape-ui-select__control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-1hwfws3 grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
-          className="css-0 grape-ui-select__single-value"
+          className="css-8uhtka grape-ui-select__single-value"
         >
           Yellow
         </div>
@@ -584,14 +384,14 @@ exports[`SelectField using Theme color should return a SelectField object with c
         </div>
       </div>
       <div
-        className="css-1wy0on6 grape-ui-select__indicators"
+        className="css-1rtnzd2 grape-ui-select__indicators"
       >
         <span
-          className="css-bgvzuu-indicatorSeparator grape-ui-select__indicator-separator"
+          className="css-1hyfx7x grape-ui-select__indicator-separator"
         />
         <div
           aria-hidden="true"
-          className="css-16pqwjk-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >

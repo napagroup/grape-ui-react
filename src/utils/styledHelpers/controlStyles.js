@@ -53,13 +53,23 @@ const scaleFactor = props => {
 export const getFinalFieldPadding = (padding, formStyle, labelText) => ((formStyle === 'filled' && labelText)
   ? `
     padding: ${Number.parseInt(padding, 10) * 1.5}rem ${padding} ${Number.parseInt(padding, 10) / 2}rem;
+    .grape-ui-select__control {
+      margin: -${Number.parseInt(padding, 10) * 1.5}rem -${padding} -${Number.parseInt(padding, 10) / 2}rem;
+      padding: ${Number.parseInt(padding, 10) * 1.5}rem ${padding} ${Number.parseInt(padding, 10) / 2}rem;
+    }
     + label {
       background: transparent;
       line-height: 1;
       top: ${Number.parseInt(padding, 10) - 0.2}rem;
     }
   `
-  : `padding: ${padding};`);
+  : `
+    padding: ${padding};
+    .grape-ui-select__control {
+      margin: -${padding};
+      padding: ${padding};
+    }
+  `);
 
 const getFinalStyle = props => {
   const {

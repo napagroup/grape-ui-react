@@ -117,6 +117,13 @@ describe('TextField with custom assistive text props', () => {
   });
 });
 
+describe('TextField with custom menu elevatiom', () => {
+  it('should return a TextField with different zIndex and boxShadow values', () => {
+    const element = <ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" menuElevation="03" options={colorOptions} value={colorOptions[1]} /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+
 // TODO: This test down below isn't running.  Not sure why.  --R
 describe('SelectField Component with react-select predefined props', () => {
   it('should return a SelectField with isClearable set to true', () => {

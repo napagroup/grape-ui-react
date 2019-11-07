@@ -3,7 +3,6 @@ import React from 'react';
 import { getAssistiveText } from 'src/elements/form/AssistiveText';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
 import { PlainText } from 'src/elements/form/PlainText';
-import { getGlobalOverrides } from 'src/global-styles';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import {
   control,
@@ -18,14 +17,13 @@ import {
   fontStyleCore,
   letterSpacingCore,
   lineHeightCore,
-  resolveColor,
-  resolveElevation,
+  spaceProps,
   textAlignCore,
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
 import styled from 'styled-components';
-import { borderRadius, fontWeight, space } from 'styled-system';
+import { borderRadius, fontWeight } from 'styled-system';
 import { SelectComponent } from './component';
 
 const controlStylesSelectField = props => {
@@ -33,12 +31,6 @@ const controlStylesSelectField = props => {
     return controlStyles({ ...props, activeColor: 'brandDanger', borderColor: 'brandDanger' });
   }
   return controlStyles(props);
-};
-
-const getIndicatorsHeight = props => {
-  const { formStyle, labelText } = props;
-  if (formStyle === 'filled' && labelText) return 'calc(100% - 1rem)';
-  return '100%';
 };
 
 const focusStyleSelectField = props => {
@@ -55,100 +47,6 @@ const disabledStyleSelectField = props => {
   return '';
 };
 
-const reactSelectStylesOverrides = props => {
-  const {
-    chipBg,
-    menuFocusBg,
-    menuFocusColor,
-    menuSelectedBg,
-    menuSelectedColor,
-    placeholderColor,
-  } = props;
-  const globalOverrides = getGlobalOverrides(props);
-  const { padding } = defaultControlStyles;
-  const indicatorsWidth = '40px';
-  return `
-    .grape-ui-select__control {
-      display: flex;
-      border: 0;
-      box-shadow: none;
-      min-height: 0;
-    }
-    .grape-ui-select__indicator {
-      padding: 0;
-    }
-    .grape-ui-select__indicator-separator {
-      display: none;
-    }
-    .grape-ui-select__value-container {
-      flex-wrap: nowrap;
-      margin-right: ${indicatorsWidth};
-      padding: 0;
-    }
-    .grape-ui-select__single-value {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .grape-ui-select__menu {
-      position: absolute;
-      left: 0;
-      margin: 0;
-      padding: 0.5rem 0;
-      ${resolveElevation('03', globalOverrides)}
-    }
-    .grape-ui-select__option {
-      padding: 0.5rem 1rem;
-    }
-    .grape-ui-select__option--is-focused {
-      background: ${resolveColor(menuFocusBg, globalOverrides)};
-      color: ${resolveColor(menuFocusColor, globalOverrides)};
-    }
-    .grape-ui-select__option--is-selected {
-      background: ${resolveColor(menuSelectedBg, globalOverrides)};
-      color: ${resolveColor(menuSelectedColor, globalOverrides)};
-    }
-    .grape-ui-select__placeholder {
-      color: ${resolveColor(placeholderColor, globalOverrides)};
-    }
-    .grape-ui-select__multi-value {
-      display: flex;
-      margin: 0.25rem;
-      padding: 0.25rem;
-      border-radius: 4px;
-      background-color: ${resolveColor(chipBg, globalOverrides)};
-      font-size: 80%;
-    }
-    .grape-ui-select__multi-value__label {
-      padding: 0 0.25rem;
-    }
-    .grape-ui-select__multi-value__remove {
-      cursor: pointer;
-      &:hover path {
-        fill: ${resolveColor('brandLinkHover', globalOverrides)}
-      }
-    }
-    .grape-ui-select__indicators {
-      height: ${getIndicatorsHeight(props)};
-      justify-content: flex-end;
-      position: absolute;
-      right: ${padding};
-      bottom: 0;
-      width: ${indicatorsWidth};
-    }
-    &.grape-ui-select--is-rtl {
-      .grape-ui-select__value-container {
-        padding-right: 0;
-        padding-left: ${indicatorsWidth};
-      }
-      .grape-ui-select__indicators {
-        left: ${padding};
-        right: auto;
-      }
-    }
-  `;
-};
-
 export const SelectFieldComponent = styled(SelectComponent)`
   ${controlColor}
   ${fontFamilyCore}
@@ -161,18 +59,14 @@ export const SelectFieldComponent = styled(SelectComponent)`
   ${textDecorationCore}
   ${controlStylesSelectField}
   ${focusStyleSelectField}
-  ${reactSelectStylesOverrides}
   ${disabledStyleSelectField}
 `;
 SelectFieldComponent.propTypes = {
   ...control.propTypes,
   bg: PropTypes.string,
-  chipBg: PropTypes.string,
   formStyle: PropTypes.string,
   isDisabled: PropTypes.bool,
   isFocused: PropTypes.bool,
-  menuFocusBg: PropTypes.string,
-  menuFocusColor: PropTypes.string,
   menuSelectedBg: PropTypes.string,
   menuSelectedColor: PropTypes.string,
   multiple: PropTypes.bool,
@@ -184,14 +78,9 @@ SelectFieldComponent.defaultProps = {
   ...defaultControlStyles,
   ...defaultStylesBase,
   bg: null,
-  chipBg: 'white.dark',
   formStyle: '',
   isDisabled: false,
   isFocused: false,
-  menuFocusBg: 'brandLinkHover',
-  menuFocusColor: 'white',
-  menuSelectedBg: 'brandLink',
-  menuSelectedColor: 'white',
   multiple: false,
   validationError: '',
 };
@@ -231,7 +120,7 @@ const renderValueOrComponent = propsFromComponent => {
   };
   return renderSelectFieldComponent(childProps);
 };
-export const SelectField = props => {
+const SelectField = props => {
   const {
     activeColor,
     assistiveTextProps,
@@ -270,24 +159,49 @@ export const SelectField = props => {
 };
 
 SelectField.propTypes = {
+  /** Defines the color for the label and border color when the focus is in the control. */
   activeColor: PropTypes.string,
+  /** Provides helper text for the control.  When provided with no `assistiveText`, `isRequired` will add a default '*Required` helper text.  When provided with `validationError`, `assistiveText`'s value will not be displayed on the UI. */
   assistiveText: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.string,
   ]),
+  /** Allows for custom props to be passed down to the `AsssistiveText` component. */
   assistiveTextProps: PropTypes.object,
+  /** Allows for custom props to be passed down to the `ControlGroup` component. */
   controlGroupProps: PropTypes.object,
+  /** Will pass its value to the control's `id` as well as the label's `htmlFor`.
+   * @deprecated Do not use! Use `name` instead!
+  */
   controlId: PropTypes.string,
+  /** Allows for custom props to be passed down to the `ControlLabel` component. */
   controlLabelProps: PropTypes.object,
+  /** Basic HTML attribute, needed for styling. */
   disabled: PropTypes.bool,
+  /**
+   * Use 'filled' or 'outlined'
+   * @see See [Material Design](https://material.io/components/text-fields/#usage) for options */
   formStyle: PropTypes.string,
+  /** Should be used when the control is not meant to be required and is able to handle a null value.
+   * @see See [React-Select/Select-Props](https://react-select.com/props#select-props) for more on this prop. */
+  isClearable: PropTypes.bool,
+  /** Using React-Select's `Creatable` control, this allows dropdowns to allow for custom values.
+   * @see See [React-Select/Creatable](https://react-select.com/creatable) for more on this control. */
+  isCreatable: PropTypes.bool,
+  /** This will add an asterisk (*) to the `labelText` and provided `assistiveText` if none is provided. */
   isRequired: PropTypes.bool,
+  /** The string value displayed on top of the control in the `ControlLabel` component. */
   labelText: PropTypes.string,
+  /** `'01'`, `'02'`, `'03'`, `'04'`, `'05'`, `'06'`.  Use these to define the boxShadow and zIndex styles. */
+  menuElevation: PropTypes.string,
+  /** Should be used on each form control.  When no `id` or `controlId` are provided, `name` will populate both fields. */
   name: PropTypes.string,
+  /** Used to render a dropdown control as a `PlainText` element. */
   plainText: PropTypes.bool,
+  /** Error text that will appear below the control when validation fires. */
   validationError: PropTypes.string,
   ...borderRadius.propTypes,
-  ...space.propTypes,
+  ...spaceProps.propTypes,
 };
 
 SelectField.defaultProps = {
@@ -298,10 +212,16 @@ SelectField.defaultProps = {
   controlId: '',
   controlLabelProps: {},
   disabled: false,
-  formStyle: '',
+  formStyle: 'outlined',
+  isClearable: false,
+  isCreatable: false,
   isRequired: false,
   labelText: '',
+  menuElevation: '01',
   name: '',
   plainText: false,
   validationError: '',
 };
+
+/** @component */
+export { SelectField };
