@@ -108,7 +108,7 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
           className="css-8uhtka grape-ui-select__single-value"
@@ -318,7 +318,7 @@ exports[`SelectField using Theme color should return a SelectField object with c
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
           className="css-8uhtka grape-ui-select__single-value"

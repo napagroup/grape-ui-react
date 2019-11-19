@@ -74,7 +74,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
     onTouchEnd={[Function]}
   >
     <div
-      className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+      className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
     >
       <div
         className="css-8uhtka grape-ui-select__single-value"
@@ -243,7 +243,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
     onTouchEnd={[Function]}
   >
     <div
-      className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+      className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
     >
       <div
         className="css-8uhtka grape-ui-select__single-value"
@@ -412,7 +412,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
     onTouchEnd={[Function]}
   >
     <div
-      className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+      className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
     >
       <div
         className="css-8uhtka grape-ui-select__single-value"

@@ -6,8 +6,11 @@ import {
 } from 'styled-system';
 import { BoxComponent } from './component';
 
-export const Box = styled(BoxComponent)`
+const Box = styled(BoxComponent)`
   ${layout}
-  ${position}  
+  ${position}
   ${space}
 `;
+
+/** @component */
+export { Box };

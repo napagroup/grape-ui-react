@@ -17,6 +17,7 @@ import { getGlobalOverrides } from 'src/global-styles';
 const styleOverrides = ({ ...props }) => {
   const { menuElevation } = props;
   const globalOverrides = getGlobalOverrides(props);
+  const multiValueMargin = 2;
   const resolveBackground = ({ isFocused, isSelected }) => {
     let background = 'inherit';
     if (isFocused) {
@@ -63,18 +64,20 @@ const styleOverrides = ({ ...props }) => {
       zIndex: resolveZIndex(menuElevation, globalOverrides),
     }),
     multiValue: () => ({
-      backgroundColor: resolveColor('white.dark', globalOverrides),
+      backgroundColor: 'rgba(0, 0, 0, 0.1)',
       borderRadius: '4px',
       display: 'flex',
       fontSize: '80%',
-      margin: '4px',
+      margin: multiValueMargin,
       padding: '4px',
     }),
     multiValueLabel: () => ({
       padding: '0 4px',
     }),
     multiValueRemove: () => ({
+      alignItems: 'center',
       cursor: 'pointer',
+      display: 'flex',
     }),
     option: (styles, { isFocused, isSelected }) => ({
       background: resolveBackground({ isFocused, isSelected }),
@@ -90,10 +93,11 @@ const styleOverrides = ({ ...props }) => {
       textOverflow: 'ellipsis',
       whiteSpace: 'nowrap',
     }),
-    valueContainer: provided => ({
+    valueContainer: (provided, { hasValue, isMulti }) => ({
       ...provided,
       flex: '1 1 0',
-      flexWrap: 'nowrap',
+      flexWrap: isMulti ? 'wrap' : 'nowrap',
+      margin: hasValue && isMulti ? multiValueMargin * -1.5 : null,
       padding: '0',
     }),
   };

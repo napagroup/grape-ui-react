@@ -53,4 +53,5 @@ Paragraph.defaultProps = {
   lead: false,
 };
 
+/** @component */
 export { Paragraph };

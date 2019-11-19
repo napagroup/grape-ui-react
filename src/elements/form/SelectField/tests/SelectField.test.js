@@ -5,52 +5,140 @@ import { configure, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { SelectField } from '..';
+import { colorOptions } from '../examples';
 
 const assertReactElement = element => {
   const component = renderer.create(element);
   return component.toJSON();
 };
 configure({ adapter: new Adapter() });
-const colorOptions = [
-  { color: '#FF5630', label: 'Red', value: 'red' },
-  { color: '#FFC400', label: 'Yellow', value: 'yellow' },
-  { color: '#36B37E', label: 'Green', value: 'green' },
-];
 
-describe('SelectField Component base', () => {
+const linkState = () => null;
+
+describe('SelectField Component', () => {
   it('should return a SelectField that contains SelectFieldComponent object', () => {
-    const element = <ThemeProvider theme={{}}><SelectField controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} sm value={colorOptions[1]} /></ThemeProvider>;
+    const element = (
+      <ThemeProvider theme={{}}>
+        <SelectField
+          name="exampleBasicUsage"
+          onChange={linkState()}
+          options={colorOptions}
+        />
+      </ThemeProvider>
+    );
     expect(assertReactElement(element)).toMatchSnapshot();
   });
-  it('should return a SelectField that contains ControlLabel object', () => {
-    const component = mount(<ThemeProvider theme={{}}><SelectField controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} sm value={colorOptions[1]} /></ThemeProvider>);
-    expect(component.find('label')).toMatchSnapshot();
+});
+
+describe('SelectFieldComponent with a Control Label', () => {
+  it('should return a SelectField that contains a ControlLabel object', () => {
+    const element = (
+      <ThemeProvider theme={{}}>
+        <SelectField
+          labelText="Color"
+          name="exampleControlLabel"
+          onChange={linkState()}
+          options={colorOptions}
+        />
+      </ThemeProvider>
+    );
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+  it('should return a SelectField that adds an asterisk to the ControlLabel object', () => {
+    const element = (
+      <ThemeProvider theme={{}}>
+        <SelectField
+          isRequired
+          labelText="Color"
+          name="exampleControlLabelRequired"
+          onChange={linkState()}
+          options={colorOptions}
+        />
+      </ThemeProvider>
+    );
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+  it('should return a SelectField with custom Control Label props', () => {
+    const element = (
+      <ThemeProvider theme={{}}>
+        <SelectField
+          controlLabelProps={{ px: 0, py: 3 }}
+          isRequired
+          labelText="Color"
+          name="exampleControlLabelRequired"
+          onChange={linkState()}
+          options={colorOptions}
+        />
+      </ThemeProvider>
+    );
+    expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
 
-describe('SelectField Component with assistive text', () => {
-  it('should return a SelectField with assistive text', () => {
-    const component = mount(<ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} value={colorOptions[1]} /></ThemeProvider>);
-    expect(component.find('div[id="exampleColorHelp"]')).toMatchSnapshot();
-  });
-
-  it('should return a SelectField with error text', () => {
-    const component = mount(<ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" options={colorOptions} validationError="This is a required field." value={colorOptions[1]} /></ThemeProvider>);
-    expect(component.find('div[id="exampleColorError"]')).toMatchSnapshot();
+describe('SelectField Component dropdown', () => {
+  it('should return a dropdown menu with the selected option is in the proper color', () => {
+    const element = mount(
+      <ThemeProvider theme={{}}>
+        <SelectField
+          assistiveText="Only three colors are available."
+          labelText="Color"
+          menuIsOpen
+          name="exampleAssistiveText"
+          options={colorOptions}
+          value={colorOptions[1]}
+        />
+      </ThemeProvider>
+    );
+    expect(element.find('div.grape-ui-select__option--is-selected')).toMatchSnapshot();
   });
 });
 
-describe('SelectField Component with ControlLabel with *', () => {
-  it('should return a SelectField  with ControlLabel with *', () => {
-    const component = mount(<ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" isRequired labelText="Color" options={colorOptions} value={colorOptions[1]} /></ThemeProvider>);
-    expect(component.find('label')).toMatchSnapshot();
+describe('SelectField Component with Assistive Text', () => {
+  it('should return a SelectField that contains an AssistiveText object', () => {
+    const component = mount(
+      <ThemeProvider theme={{}}>
+        <SelectField
+          assistiveText="Only three colors are available."
+          labelText="Color"
+          name="exampleAssistiveText"
+          options={colorOptions}
+        />
+      </ThemeProvider>
+    );
+    expect(component.find('div[id="exampleAssistiveTextHelp"]')).toMatchSnapshot();
   });
-});
-
-describe('SelectField Component with only name provided', () => {
-  it('should return a SelectField with name used in place of id', () => {
-    const component = mount(<ThemeProvider theme={{}}><SelectField labelText="Color" name="exampleColor" options={colorOptions} value={colorOptions[1]} /></ThemeProvider>);
-    expect(component.find('label')).toMatchSnapshot();
+  it('should return a SelectField where error text hides assistive text', () => {
+    const component = mount(
+      <ThemeProvider theme={{}}>
+        <SelectField
+          assistiveText="Only three colors are available."
+          isRequired
+          labelText="Color"
+          name="exampleAssistiveText"
+          options={colorOptions}
+          validationError="This field is required."
+        />
+      </ThemeProvider>
+    );
+    expect(component.find('div[id="exampleAssistiveTextError"]')).toMatchSnapshot();
+  });
+  it('should return a SelectField with custom AssistiveText props', () => {
+    const component = mount(
+      <ThemeProvider theme={{}}>
+        <SelectField
+          assistiveText="Only three colors are available."
+          assistiveTextProps={{
+            px: 0,
+            py: 3,
+          }}
+          labelText="Color"
+          name="exampleAssistiveText"
+          options={colorOptions}
+        />
+      </ThemeProvider>
+    );
+    expect(assertReactElement(component)).toMatchSnapshot();
+    // expect(component.find('.c1')).toHaveStyleRule('padding-left', '0');
   });
 });
 

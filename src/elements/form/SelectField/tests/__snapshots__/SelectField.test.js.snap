@@ -1,59 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SelectField Component base should return a SelectField that contains ControlLabel object 1`] = `
-.c0 {
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 0.8rem;
-  font-weight: inherit;
-  height: 0.4rem;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 0.8;
-  left: 8px;
-  position: absolute;
-  top: -1px;
-  padding-left: 8px;
-  padding-right: 8px;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-<label
-  className="c0"
-  htmlFor="exampleColor"
+exports[`SelectField Component dropdown should return a dropdown menu with the selected option is in the proper color 1`] = `
+<div
+  className="css-3nnq85 grape-ui-select__option grape-ui-select__option--is-selected"
+  id="react-select-6-option-1"
+  onClick={[Function]}
+  onMouseMove={[Function]}
+  onMouseOver={[Function]}
+  tabIndex={-1}
 >
-  Color
-</label>
+  Yellow
+</div>
 `;
 
-exports[`SelectField Component base should return a SelectField that contains SelectFieldComponent object 1`] = `
-.c2 {
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 0.8rem;
-  font-weight: inherit;
-  height: 0.4rem;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 0.8;
-  left: 8px;
-  position: absolute;
-  top: -1px;
-  padding-left: 8px;
-  padding-right: 8px;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
+exports[`SelectField Component should return a SelectField that contains SelectFieldComponent object 1`] = `
 .c0 {
   position: relative;
   background-color: transparent;
@@ -67,7 +27,7 @@ exports[`SelectField Component base should return a SelectField that contains Se
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 0.8rem;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
@@ -78,8 +38,8 @@ exports[`SelectField Component base should return a SelectField that contains Se
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
-  border-radius: 2px;
-  border-radius: 2px;
+  border-radius: 4px;
+  border-radius: 4px;
   outline: 0;
   width: 100%;
   padding: 1rem;
@@ -130,7 +90,7 @@ exports[`SelectField Component base should return a SelectField that contains Se
 >
   <div
     className="css-1pcexqc-container c1"
-    id="exampleColor"
+    id="exampleBasicUsage"
     onKeyDown={[Function]}
   >
     <div
@@ -139,12 +99,12 @@ exports[`SelectField Component base should return a SelectField that contains Se
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="css-ufc069 grape-ui-select__placeholder"
         >
-          Yellow
+          Select...
         </div>
         <div
           className="css-0"
@@ -231,18 +191,91 @@ exports[`SelectField Component base should return a SelectField that contains Se
         </div>
       </div>
     </div>
+    <input
+      name="exampleBasicUsage"
+      type="hidden"
+      value=""
+    />
   </div>
-  <label
-    className="c2"
-    htmlFor="exampleColor"
-  >
-    Color
-  </label>
 </div>
 `;
 
-exports[`SelectField Component with ControlLabel with * should return a SelectField  with ControlLabel with * 1`] = `
+exports[`SelectField Component with Assistive Text should return a SelectField that contains an AssistiveText object 1`] = `
 .c0 {
+  background-color: transparent;
+  color: hsl(0,0%,50%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<div
+  className="c0"
+  id="exampleAssistiveTextHelp"
+>
+  Only three colors are available.
+</div>
+`;
+
+exports[`SelectField Component with Assistive Text should return a SelectField where error text hides assistive text 1`] = `
+.c0 {
+  color: hsl(4.1,89.6%,58.4%);
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+<div
+  className="c0"
+  id="exampleAssistiveTextError"
+>
+  This field is required.
+</div>
+`;
+
+exports[`SelectField Component with Assistive Text should return a SelectField with custom AssistiveText props 1`] = `
+.c3 {
+  background-color: transparent;
+  color: hsl(0,0%,50%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -264,65 +297,201 @@ exports[`SelectField Component with ControlLabel with * should return a SelectFi
   text-decoration: inherit;
 }
 
-<label
-  className="c0"
-  htmlFor="exampleColor"
->
-  Color*
-</label>
-`;
-
-exports[`SelectField Component with assistive text should return a SelectField with assistive text 1`] = `
 .c0 {
+  position: relative;
   background-color: transparent;
-  color: hsl(0,0%,50%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: transparent;
+  color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 0.8rem;
+  font-size: inherit;
   font-weight: inherit;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  padding-left: 16px;
-  padding-right: 16px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.c1 .grape-ui-select__control {
+  margin: -1rem;
+  padding: 1rem;
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus,
+.c1:focus-within {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label,
+.c1:focus-within + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
 }
 
 <div
   className="c0"
-  id="exampleColorHelp"
 >
-  Please tell me your color
-</div>
-`;
-
-exports[`SelectField Component with assistive text should return a SelectField with error text 1`] = `
-.c0 {
-  color: hsl(4.1,89.6%,58.4%);
-  background-color: transparent;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  padding-left: 16px;
-  padding-right: 16px;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-<div
-  className="c0"
-  id="exampleColorError"
->
-  This is a required field.
+  <div
+    className="css-1pcexqc-container c1"
+    id="exampleAssistiveText"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="css-mazh0z grape-ui-select__control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className="css-14cvlpc grape-ui-select__value-container"
+      >
+        <div
+          className="css-ufc069 grape-ui-select__placeholder"
+        >
+          Select...
+        </div>
+        <div
+          className="css-0"
+        >
+          <div
+            className="grape-ui-select__input"
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              disabled={false}
+              id="react-select-10-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "boxSizing": "content-box",
+                  "color": "inherit",
+                  "fontSize": "inherit",
+                  "label": "input",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "1px",
+                }
+              }
+              tabIndex="0"
+              type="text"
+              value=""
+            />
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "overflow": "scroll",
+                  "position": "absolute",
+                  "top": 0,
+                  "visibility": "hidden",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-1rtnzd2 grape-ui-select__indicators"
+      >
+        <span
+          className="css-1hyfx7x grape-ui-select__indicator-separator"
+        />
+        <div
+          aria-hidden="true"
+          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-19bqh2r"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <input
+      name="exampleAssistiveText"
+      type="hidden"
+      value=""
+    />
+  </div>
+  <label
+    className="c2"
+    htmlFor="exampleAssistiveText"
+  >
+    Color
+  </label>
+  <div
+    className="c3"
+    id="exampleAssistiveTextHelp"
+  >
+    Only three colors are available.
+  </div>
 </div>
 `;
 
@@ -412,7 +581,7 @@ exports[`SelectField Component with custom Control Group props should return a S
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container"
+        className="css-14cvlpc grape-ui-select__value-container"
       >
         <div
           className="css-ufc069 grape-ui-select__placeholder"
@@ -436,7 +605,7 @@ exports[`SelectField Component with custom Control Group props should return a S
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-15-input"
+              id="react-select-18-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -636,7 +805,7 @@ exports[`SelectField Component with custom Control Label props should return a S
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
           className="css-8uhtka grape-ui-select__single-value"
@@ -660,7 +829,7 @@ exports[`SelectField Component with custom Control Label props should return a S
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-16-input"
+              id="react-select-19-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -742,37 +911,6 @@ exports[`SelectField Component with custom Control Label props should return a S
     Please tell me your color
   </div>
 </div>
-`;
-
-exports[`SelectField Component with only name provided should return a SelectField with name used in place of id 1`] = `
-.c0 {
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 0.8rem;
-  font-weight: inherit;
-  height: 0.4rem;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 0.8;
-  left: 8px;
-  position: absolute;
-  top: -1px;
-  padding-left: 8px;
-  padding-right: 8px;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-<label
-  className="c0"
-  htmlFor="exampleColor"
->
-  Color
-</label>
 `;
 
 exports[`SelectField Component with space should return a SelectField with space with  margin: 32px;  padding: 32px; on c0 1`] = `
@@ -901,7 +1039,7 @@ exports[`SelectField Component with space should return a SelectField with space
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
           className="css-8uhtka grape-ui-select__single-value"
@@ -925,7 +1063,7 @@ exports[`SelectField Component with space should return a SelectField with space
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-13-input"
+              id="react-select-16-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -1135,7 +1273,7 @@ exports[`SelectField Component with space should return a SelectField with space
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
           className="css-8uhtka grape-ui-select__single-value"
@@ -1159,7 +1297,7 @@ exports[`SelectField Component with space should return a SelectField with space
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-14-input"
+              id="react-select-17-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -1369,7 +1507,7 @@ exports[`SelectField Component with style should return a SelectField that is fr
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
           className="css-8uhtka grape-ui-select__single-value"
@@ -1393,7 +1531,7 @@ exports[`SelectField Component with style should return a SelectField that is fr
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-12-input"
+              id="react-select-15-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -1603,7 +1741,7 @@ exports[`SelectField Component with style should return a SelectField with backg
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
           className="css-8uhtka grape-ui-select__single-value"
@@ -1627,7 +1765,7 @@ exports[`SelectField Component with style should return a SelectField with backg
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-10-input"
+              id="react-select-13-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -1837,7 +1975,7 @@ exports[`SelectField Component with style should return a SelectField with orang
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
           className="css-8uhtka grape-ui-select__single-value"
@@ -1861,7 +1999,7 @@ exports[`SelectField Component with style should return a SelectField with orang
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-11-input"
+              id="react-select-14-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -2071,7 +2209,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
           className="css-8uhtka grape-ui-select__single-value"
@@ -2095,7 +2233,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-8-input"
+              id="react-select-11-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -2305,7 +2443,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
           className="css-8uhtka grape-ui-select__single-value"
@@ -2329,7 +2467,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-9-input"
+              id="react-select-12-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -2521,7 +2659,7 @@ exports[`SelectField with isCreatable prop set to true should return a Creatable
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
           className="css-8uhtka grape-ui-select__single-value"
@@ -2545,7 +2683,7 @@ exports[`SelectField with isCreatable prop set to true should return a Creatable
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-20-input"
+              id="react-select-23-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -2620,6 +2758,701 @@ exports[`SelectField with isCreatable prop set to true should return a Creatable
   >
     Color
   </label>
+</div>
+`;
+
+exports[`SelectFieldComponent with a Control Label should return a SelectField that adds an asterisk to the ControlLabel object 1`] = `
+.c3 {
+  background-color: transparent;
+  color: hsl(0,0%,50%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c2 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  height: 0.4rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.c1 .grape-ui-select__control {
+  margin: -1rem;
+  padding: 1rem;
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus,
+.c1:focus-within {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label,
+.c1:focus-within + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="css-1pcexqc-container c1"
+    id="exampleControlLabelRequired"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="css-mazh0z grape-ui-select__control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className="css-14cvlpc grape-ui-select__value-container"
+      >
+        <div
+          className="css-ufc069 grape-ui-select__placeholder"
+        >
+          Select...
+        </div>
+        <div
+          className="css-0"
+        >
+          <div
+            className="grape-ui-select__input"
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              disabled={false}
+              id="react-select-4-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "boxSizing": "content-box",
+                  "color": "inherit",
+                  "fontSize": "inherit",
+                  "label": "input",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "1px",
+                }
+              }
+              tabIndex="0"
+              type="text"
+              value=""
+            />
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "overflow": "scroll",
+                  "position": "absolute",
+                  "top": 0,
+                  "visibility": "hidden",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-1rtnzd2 grape-ui-select__indicators"
+      >
+        <span
+          className="css-1hyfx7x grape-ui-select__indicator-separator"
+        />
+        <div
+          aria-hidden="true"
+          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-19bqh2r"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <input
+      name="exampleControlLabelRequired"
+      type="hidden"
+      value=""
+    />
+  </div>
+  <label
+    className="c2"
+    htmlFor="exampleControlLabelRequired"
+  >
+    Color*
+  </label>
+  <div
+    className="c3"
+    id="exampleControlLabelRequiredHelp"
+  >
+    *Required
+  </div>
+</div>
+`;
+
+exports[`SelectFieldComponent with a Control Label should return a SelectField that contains a ControlLabel object 1`] = `
+.c2 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  height: 0.4rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.c1 .grape-ui-select__control {
+  margin: -1rem;
+  padding: 1rem;
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus,
+.c1:focus-within {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label,
+.c1:focus-within + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="css-1pcexqc-container c1"
+    id="exampleControlLabel"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="css-mazh0z grape-ui-select__control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className="css-14cvlpc grape-ui-select__value-container"
+      >
+        <div
+          className="css-ufc069 grape-ui-select__placeholder"
+        >
+          Select...
+        </div>
+        <div
+          className="css-0"
+        >
+          <div
+            className="grape-ui-select__input"
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              disabled={false}
+              id="react-select-3-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "boxSizing": "content-box",
+                  "color": "inherit",
+                  "fontSize": "inherit",
+                  "label": "input",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "1px",
+                }
+              }
+              tabIndex="0"
+              type="text"
+              value=""
+            />
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "overflow": "scroll",
+                  "position": "absolute",
+                  "top": 0,
+                  "visibility": "hidden",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-1rtnzd2 grape-ui-select__indicators"
+      >
+        <span
+          className="css-1hyfx7x grape-ui-select__indicator-separator"
+        />
+        <div
+          aria-hidden="true"
+          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-19bqh2r"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <input
+      name="exampleControlLabel"
+      type="hidden"
+      value=""
+    />
+  </div>
+  <label
+    className="c2"
+    htmlFor="exampleControlLabel"
+  >
+    Color
+  </label>
+</div>
+`;
+
+exports[`SelectFieldComponent with a Control Label should return a SelectField with custom Control Label props 1`] = `
+.c3 {
+  background-color: transparent;
+  color: hsl(0,0%,50%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c2 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  height: 0.4rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.c1 .grape-ui-select__control {
+  margin: -1rem;
+  padding: 1rem;
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus,
+.c1:focus-within {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label,
+.c1:focus-within + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="css-1pcexqc-container c1"
+    id="exampleControlLabelRequired"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="css-mazh0z grape-ui-select__control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className="css-14cvlpc grape-ui-select__value-container"
+      >
+        <div
+          className="css-ufc069 grape-ui-select__placeholder"
+        >
+          Select...
+        </div>
+        <div
+          className="css-0"
+        >
+          <div
+            className="grape-ui-select__input"
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              disabled={false}
+              id="react-select-5-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "boxSizing": "content-box",
+                  "color": "inherit",
+                  "fontSize": "inherit",
+                  "label": "input",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "1px",
+                }
+              }
+              tabIndex="0"
+              type="text"
+              value=""
+            />
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "overflow": "scroll",
+                  "position": "absolute",
+                  "top": 0,
+                  "visibility": "hidden",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-1rtnzd2 grape-ui-select__indicators"
+      >
+        <span
+          className="css-1hyfx7x grape-ui-select__indicator-separator"
+        />
+        <div
+          aria-hidden="true"
+          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-19bqh2r"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <input
+      name="exampleControlLabelRequired"
+      type="hidden"
+      value=""
+    />
+  </div>
+  <label
+    className="c2"
+    htmlFor="exampleControlLabelRequired"
+  >
+    Color*
+  </label>
+  <div
+    className="c3"
+    id="exampleControlLabelRequiredHelp"
+  >
+    *Required
+  </div>
 </div>
 `;
 
@@ -2751,7 +3584,7 @@ exports[`TextField with custom assistive text props should return a TextField wi
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
           className="css-8uhtka grape-ui-select__single-value"
@@ -2775,7 +3608,7 @@ exports[`TextField with custom assistive text props should return a TextField wi
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-17-input"
+              id="react-select-20-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -2985,7 +3818,7 @@ exports[`TextField with custom menu elevatiom should return a TextField with dif
       onTouchEnd={[Function]}
     >
       <div
-        className="css-17i4a5f grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
       >
         <div
           className="css-8uhtka grape-ui-select__single-value"
@@ -3009,7 +3842,7 @@ exports[`TextField with custom menu elevatiom should return a TextField with dif
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-18-input"
+              id="react-select-21-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}

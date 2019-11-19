@@ -188,6 +188,8 @@ SelectField.propTypes = {
   /** Using React-Select's `Creatable` control, this allows dropdowns to allow for custom values.
    * @see See [React-Select/Creatable](https://react-select.com/creatable) for more on this control. */
   isCreatable: PropTypes.bool,
+  /** Allows for multiple options, each displayed as a chip. */
+  isMulti: PropTypes.bool,
   /** This will add an asterisk (*) to the `labelText` and provided `assistiveText` if none is provided. */
   isRequired: PropTypes.bool,
   /** The string value displayed on top of the control in the `ControlLabel` component. */
@@ -215,6 +217,7 @@ SelectField.defaultProps = {
   formStyle: 'outlined',
   isClearable: false,
   isCreatable: false,
+  isMulti: false,
   isRequired: false,
   labelText: '',
   menuElevation: '01',

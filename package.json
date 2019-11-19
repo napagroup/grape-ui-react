@@ -1,12 +1,13 @@
 {
   "name": "grape-ui-react",
-  "version": "0.6.2",
+  "version": "0.7.0",
   "description": "A React component library built with styled-components.",
   "main": "lib/index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=src/internals/webpack/webpack.config.js",
     "build": "babel src/ -d lib --ignore **/*.json && babel src/assets --out-dir lib/assets --copy-files",
     "build:clean": "rimraf ./build",
+    "build:styleguide": "npx styleguidist build",
     "lint": "npm run lint:js",
     "lint:js": "npm run lint:eslint -- .",
     "lint:eslint": "eslint",
@@ -14,6 +15,7 @@
     "lint:watch": "esw -w src/**",
     "prepublish": "npm run build",
     "pretest": "npm run test:clean && npm run lint",
+    "start": "npx styleguidist server",
     "test:clean": "rimraf ./coverage",
     "test": "cross-env NODE_ENV=test jest --coverage",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
@@ -89,6 +91,7 @@
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.0.0",
+    "acorn": "^6.3.0",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "8.0.6",
@@ -121,6 +124,7 @@
     "jest": "^24.9.0",
     "jest-cli": "^24.9.0",
     "jest-styled-components": "^6.3.3",
+    "react-styleguidist": "^9.1.16",
     "react-test-renderer": "^16.9.0",
     "webpack": "^4.41.0"
   }
