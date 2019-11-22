@@ -205,9 +205,16 @@ describe('TextField with custom assistive text props', () => {
   });
 });
 
-describe('TextField with custom menu elevatiom', () => {
+describe('TextField with custom menu elevation', () => {
   it('should return a TextField with different zIndex and boxShadow values', () => {
     const element = <ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" menuElevation="03" options={colorOptions} value={colorOptions[1]} /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+
+describe('TextField with custom z-index', () => {
+  it('should return a TextField with different zIndex than the menuElevation preset', () => {
+    const element = <ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" menuElevation="03" menuZIndex="2000" options={colorOptions} value={colorOptions[1]} /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

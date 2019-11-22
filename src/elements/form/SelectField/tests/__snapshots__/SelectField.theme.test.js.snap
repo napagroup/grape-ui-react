@@ -419,3 +419,218 @@ exports[`SelectField using Theme color should return a SelectField object with c
   </label>
 </div>
 `;
+
+exports[`SelectField using custom brand colors should return a SelectField object with custom brand primary color 1`] = `
+.c2 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: Nunito,sans-serif;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  height: 0.4rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: transparent;
+  color: inherit;
+  font-family: Nunito,sans-serif;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 2px;
+  border-radius: 2px;
+  outline: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.c1 .grape-ui-select__control {
+  margin: -1rem;
+  padding: 1rem;
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus,
+.c1:focus-within {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus + label,
+.c1:focus-within + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="css-1pcexqc-container c1"
+    id="selectColor"
+    onKeyDown={[Function]}
+  >
+    <div
+      className="css-mazh0z grape-ui-select__control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+      >
+        <div
+          className="css-8uhtka grape-ui-select__single-value"
+        >
+          Yellow
+        </div>
+        <div
+          className="css-0"
+        >
+          <div
+            className="grape-ui-select__input"
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              disabled={false}
+              id="react-select-4-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "boxSizing": "content-box",
+                  "color": "inherit",
+                  "fontSize": "inherit",
+                  "label": "input",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "1px",
+                }
+              }
+              tabIndex="0"
+              type="text"
+              value=""
+            />
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "overflow": "scroll",
+                  "position": "absolute",
+                  "top": 0,
+                  "visibility": "hidden",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="css-1rtnzd2 grape-ui-select__indicators"
+      >
+        <span
+          className="css-1hyfx7x grape-ui-select__indicator-separator"
+        />
+        <div
+          aria-hidden="true"
+          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-19bqh2r"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <input
+      name="selectColor"
+      type="hidden"
+      value="yellow"
+    />
+  </div>
+  <label
+    className="c2"
+    htmlFor="selectColor"
+  >
+    Color
+  </label>
+</div>
+`;

@@ -2,22 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   control,
-  CSS_DEFAULT_FONT_FAMILY_VALUE,
   defaultControlStyles,
   resolveBoxShadow,
   resolveColor,
-  resolveFontFamily,
   resolveZIndex,
-  typography,
 } from 'src/utils/styledHelpers';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import Select, { Creatable } from 'react-select';
 import { getGlobalOverrides } from 'src/global-styles';
 
 const styleOverrides = ({ ...props }) => {
-  const { menuElevation } = props;
+  const { menuElevation, menuZIndex } = props;
   const globalOverrides = getGlobalOverrides(props);
   const multiValueMargin = 2;
+  const styleZIndex = menuZIndex || resolveZIndex(menuElevation, globalOverrides);
   const resolveBackground = ({ isFocused, isSelected }) => {
     let background = 'inherit';
     if (isFocused) {
@@ -61,7 +59,11 @@ const styleOverrides = ({ ...props }) => {
       padding: '8px 0',
       position: 'absolute',
       width: '100%',
-      zIndex: resolveZIndex(menuElevation, globalOverrides),
+      zIndex: styleZIndex,
+    }),
+    menuPortal: provided => ({
+      ...provided,
+      zIndex: styleZIndex,
     }),
     multiValue: () => ({
       backgroundColor: 'rgba(0, 0, 0, 0.1)',
@@ -82,7 +84,6 @@ const styleOverrides = ({ ...props }) => {
     option: (styles, { isFocused, isSelected }) => ({
       background: resolveBackground({ isFocused, isSelected }),
       color: isFocused || isSelected ? resolveColor('white', globalOverrides) : 'inherit',
-      fontFamily: resolveFontFamily(CSS_DEFAULT_FONT_FAMILY_VALUE),
       padding: '8px 16px',
     }),
     placeholder: () => ({
@@ -113,7 +114,6 @@ const propsToTrim = [
   'menuSelectedBg',
   'menuSelectedColor',
   'multiple',
-  ...Object.keys(typography.propTypes),
   'validationError',
 ];
 export const SelectComponent = ({ children, ...props }) => {
