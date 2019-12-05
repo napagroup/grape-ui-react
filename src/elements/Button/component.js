@@ -57,7 +57,6 @@ export const ButtonComponent = ({
     );
   } else if (to) {
     const linkProps = {
-      target,
       to,
     };
     output = (

@@ -403,7 +403,6 @@ exports[`Button Component base with style should return a Link with to with butt
   className="c0"
   href="/404"
   onClick={[Function]}
-  target="_self"
 >
   404
 </a>
