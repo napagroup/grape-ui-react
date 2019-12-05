@@ -82,6 +82,6 @@ ButtonComponent.propTypes = {
 ButtonComponent.defaultProps = {
   children: null,
   href: null,
-  target: '_self',
+  target: null,
   to: null,
 };
