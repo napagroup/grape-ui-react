@@ -44,20 +44,18 @@ const propsToTrimForLink = {
 export const ButtonComponent = ({
   children,
   href,
-  target,
   to,
   ...props
 }) => {
   let output = null;
   if (href) {
     output = (
-      <a {...removeSomeProps(props, Object.keys(propsToTrimForLink))} href={href} target={target}>
+      <a {...removeSomeProps(props, Object.keys(propsToTrimForLink))} href={href}>
         {children}
       </a>
     );
   } else if (to) {
     const linkProps = {
-      target,
       to,
     };
     output = (
@@ -77,12 +75,10 @@ export const ButtonComponent = ({
 ButtonComponent.propTypes = {
   children: PropTypes.any,
   href: PropTypes.string,
-  target: PropTypes.string,
   to: PropTypes.string,
 };
 ButtonComponent.defaultProps = {
   children: null,
   href: null,
-  target: '_self',
   to: null,
 };
