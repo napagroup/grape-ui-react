@@ -114,7 +114,7 @@
     "coveralls": "^3.0.6",
     "cross-env": "^6.0.0",
     "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.0",
     "eslint": "^6.4.0",
     "eslint-config-airbnb": "^18.0.1",
@@ -127,7 +127,7 @@
     "jest-cli": "^24.9.0",
     "jest-styled-components": "^6.3.3",
     "react-styleguidist": "^9.1.16",
-    "react-test-renderer": "^16.9.0",
+    "react-test-renderer": "^16.12.0",
     "webpack": "^4.41.0"
   }
 }

@@ -60,7 +60,7 @@ export const TextInputComponent = React.forwardRef((props, ref) => {
       <>
         <div className="multiline-scroll-shield" />
         <TextareaAutosize
-          inputRef={ref}
+          inputRef={ref || {}}
           maxRows={maxRows}
           readOnly={plainText}
           tabIndex={getTabIndex(plainText)}
