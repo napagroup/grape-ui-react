@@ -6,6 +6,7 @@
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+
 const colorOptions = [
   { label: 'Red', value: 'red' },
   { label: 'Yellow', value: 'yellow' },
@@ -38,6 +39,64 @@ const linkState = () => null;
 </ThemeProvider>
 ```
 
+#### Demonstrating Controlled Components (via react-hook-form-input)
+```jsx inside Markdown
+import useForm from "react-hook-form";
+import { RHFInput } from 'react-hook-form-input';
+import { ThemeProvider } from 'styled-components';
+import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+import { Header } from '../../typography';
+import { Button } from '../../Button';
+
+const theme = {
+  colors: {
+    grapeSoda: {
+      base: 'hsl(325, 84.6%, 28%)',
+      dark: 'hsl(305, 33.9%, 23.7%)',
+      light: 'hsl(313, 67.8%, 47.5%)',
+    },
+  },
+};
+const colorOptions = [
+  { label: 'Grape', value: 'grapeSoda.light' },
+  { label: 'Yellow', value: 'yellow' },
+  { label: 'Green', value: 'green' },
+  { label: 'Blue', value: 'blue' },
+];
+const { getValues, register, setValue, watch  } = useForm();
+
+const myColor = watch('myColor');
+const getLabel = colorOption => {myColor ? myColor.label : 'None selected'}
+const getValue = colorOption => {myColor ? myColor.value : ''}
+
+<ThemeProvider theme={theme}>
+  <Header.h5 margin="0 0 1rem">My color: {getLabel(myColor)} </Header.h5>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <RHFInput
+        as={
+          <SelectField
+            color="grapeSoda.light"
+            isClearable
+            labelText="Color"
+            options={colorOptions}
+          />
+        }
+        register={register}
+        setValue={setValue}
+        name="myColor"
+      />
+    </Box>
+    <Button
+      onClick={() => {
+        alert(JSON.stringify(getValues()));
+      }}
+    >
+      Get Values
+    </Button>
+  </Flex>
+</ThemeProvider>
+```
 #### Kitchen Sink Usage
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';

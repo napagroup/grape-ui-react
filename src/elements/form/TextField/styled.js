@@ -59,7 +59,7 @@ const propsToTrim = [
   'validationError',
   ...Object.keys(spaceProps.propTypes),
 ];
-export const TextField = props => {
+export const TextField = React.forwardRef((props, ref) => {
   const {
     activeColor,
     assistiveTextProps,
@@ -80,6 +80,7 @@ export const TextField = props => {
     isRequired,
     labelText,
     name,
+    ref,
     validationError,
     ...removeSomeProps(otherProps, propsToTrim),
   };
@@ -100,7 +101,7 @@ export const TextField = props => {
       <TextFieldComponent {...childProps} />
     </ControlGroup>
   );
-};
+});
 
 TextField.propTypes = {
   activeColor: PropTypes.string,

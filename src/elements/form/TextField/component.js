@@ -39,29 +39,46 @@ const getInputType = props => {
 
 const getTabIndex = plainText => (plainText ? '-1' : '0');
 
-export const TextInputComponent = ({
-  maxRows, multiline, plainText, ...props
-}) => {
-  if (isCleaveInput(props)) {
-    return <Cleave autoComplete="no" options={cleaveOption(props)} readOnly={plainText} tabIndex={getTabIndex(plainText)} {...removeSomeProps(props, propsToTrim)} />;
+export const TextInputComponent = React.forwardRef((props, ref) => {
+  const {
+    maxRows, multiline, plainText, ...otherProps
+  } = props;
+  if (isCleaveInput(otherProps)) {
+    return (
+      <Cleave
+        autoComplete="no"
+        htmlRef={ref}
+        options={cleaveOption(otherProps)}
+        readOnly={plainText}
+        tabIndex={getTabIndex(plainText)}
+        {...removeSomeProps(otherProps, propsToTrim)}
+      />
+    );
   }
   if (multiline) {
     return (
       <>
         <div className="multiline-scroll-shield" />
         <TextareaAutosize
+          inputRef={ref}
           maxRows={maxRows}
           readOnly={plainText}
           tabIndex={getTabIndex(plainText)}
-          {...removeSomeProps(props, propsToTrim)}
+          {...removeSomeProps(otherProps, propsToTrim)}
         />
       </>
     );
   }
   return (
-    <input readOnly={plainText} tabIndex={getTabIndex(plainText)} type={getInputType(props)} {...removeSomeProps(props, propsToTrim)} />
+    <input
+      ref={ref}
+      readOnly={plainText}
+      tabIndex={getTabIndex(plainText)}
+      type={getInputType(otherProps)}
+      {...removeSomeProps(otherProps, propsToTrim)}
+    />
   );
-};
+});
 
 TextInputComponent.propTypes = {
   email: PropTypes.bool,
