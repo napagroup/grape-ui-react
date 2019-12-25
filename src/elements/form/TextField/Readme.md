@@ -3,7 +3,7 @@
 
 #### Basic Usage
 ```jsx inside Markdown
-import useForm from "react-hook-form";
+import useForm from 'react-hook-form';
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
 import { Header } from '../../typography';
@@ -34,7 +34,7 @@ const theme = {
 You can pass in either a createRef(), or via "callback refs". Examples are demonstrated below
 #### Ref support - Getting to the element
 ```jsx inside Markdown
-import { useRef } from "react";
+import { useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
 import { Button } from '../../Button';
@@ -104,8 +104,8 @@ const theme = {
 
 #### Demonstrating Controlled Components (via react-hook-form-input)
 ```jsx inside Markdown
-import { useRef } from "react";
-import useForm from "react-hook-form";
+import { useRef } from 'react';
+import useForm from 'react-hook-form';
 import { RHFInput } from 'react-hook-form-input';
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
