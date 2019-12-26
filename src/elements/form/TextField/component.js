@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { control, typography } from 'src/utils/styledHelpers';
+import { control, typography, refType } from 'src/utils/styledHelpers';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import Cleave from 'cleave.js/react';
 import CleavePhone from 'cleave.js/dist/addons/cleave-phone.us'; // eslint-disable-line no-unused-vars
@@ -15,6 +15,7 @@ const propsToTrim = [
   'currency',
   'email',
   'formatterOptions',
+  'inputRef',
   'integer',
   'maxRows',
   'multiline',
@@ -39,6 +40,11 @@ const getInputType = props => {
 
 const getTabIndex = plainText => (plainText ? '-1' : '0');
 
+const getRef = (props, ref) => {
+  const { inputRef } = props;
+  return ref || inputRef;
+};
+
 export const TextInputComponent = React.forwardRef((props, ref) => {
   const {
     maxRows, multiline, plainText, ...otherProps
@@ -47,7 +53,7 @@ export const TextInputComponent = React.forwardRef((props, ref) => {
     return (
       <Cleave
         autoComplete="no"
-        htmlRef={ref}
+        htmlRef={getRef(props, ref)}
         options={cleaveOption(otherProps)}
         readOnly={plainText}
         tabIndex={getTabIndex(plainText)}
@@ -60,7 +66,8 @@ export const TextInputComponent = React.forwardRef((props, ref) => {
       <>
         <div className="multiline-scroll-shield" />
         <TextareaAutosize
-          inputRef={ref || {}}
+          // inputRef={ref || {}}
+          inputRef={getRef(props, ref)}
           maxRows={maxRows}
           readOnly={plainText}
           tabIndex={getTabIndex(plainText)}
@@ -71,7 +78,8 @@ export const TextInputComponent = React.forwardRef((props, ref) => {
   }
   return (
     <input
-      ref={ref}
+      // ref={ref}
+      ref={getRef(props, ref)}
       readOnly={plainText}
       tabIndex={getTabIndex(plainText)}
       type={getInputType(otherProps)}
@@ -82,6 +90,7 @@ export const TextInputComponent = React.forwardRef((props, ref) => {
 
 TextInputComponent.propTypes = {
   email: PropTypes.bool,
+  inputRef: refType,
   maxRows: PropTypes.number,
   multiline: PropTypes.bool,
   password: PropTypes.bool,
@@ -90,6 +99,7 @@ TextInputComponent.propTypes = {
 
 TextInputComponent.defaultProps = {
   email: false,
+  inputRef: () => {},
   maxRows: 4,
   multiline: false,
   password: false,

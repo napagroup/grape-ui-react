@@ -66,18 +66,18 @@ const theme = {
         color="grapeSoda.light"
         labelText="Name"
         name="name"
-        ref={e => { nameRef.current = e; }}
+        inputRef={e => { nameRef.current = e; }}
       />
       <TextField
         color="grapeSoda.light"
-        ref={ref => { this.age = ref; }}
+        inputRef={ref => { this.age = ref; }}
         integer
         labelText="Age"
         name="age"
       />
       <TextField
         color="grapeSoda.light"
-        ref={ref => { this.desc = ref; }}
+        inputRef={ref => { this.desc = ref; }}
         labelText="Description"
         multiline
         name="description"
@@ -144,7 +144,7 @@ const theme = {
           color="grapeSoda.light"
           labelText="Name"
           name="name"
-          ref={e => { nameRef.current = e; }}
+          inputRef={e => { nameRef.current = e; }}
         />}
         register={register}
         setValue={setValue}
@@ -153,7 +153,7 @@ const theme = {
       <RHFInput
         as={<TextField
           integer
-          ref={ref => { this.ageRhf = ref; }}
+          inputRef={ref => { this.ageRhf = ref; }}
           labelText="Age"
           name="age"
 
@@ -164,7 +164,7 @@ const theme = {
       />
       <RHFInput
         as={<TextField
-          ref={ref => { this.descRhf = ref; }}
+          inputRef={ref => { this.descRhf = ref; }}
           multiline
           labelText="Description"
           name="description"

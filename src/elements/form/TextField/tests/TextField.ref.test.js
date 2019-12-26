@@ -14,7 +14,7 @@ describe('When supporting a forward ref for TextField ', () => {
     const component = mount(
       <ThemeProvider theme={{}}>
         <TextField
-          ref={register}
+          inputRef={register}
           labelText="name"
           name="name"
         />
@@ -22,13 +22,13 @@ describe('When supporting a forward ref for TextField ', () => {
     );
     expect(component.find('input').instance()).toEqual(ref.current);
   });
-  it('should reference the underlying Cleave element', () => {
+  it('should reference the underlying Cleave DOM element', () => {
     const ref = React.createRef();
     const register = e => { ref.current = e; };
     const component = mount(
       <ThemeProvider theme={{}}>
         <TextField
-          ref={register}
+          inputRef={register}
           integer
           labelText="Quantity"
           name="quantity"
@@ -37,19 +37,19 @@ describe('When supporting a forward ref for TextField ', () => {
     );
     expect(component.find('input').instance()).toEqual(ref.current);
   });
-  it('should reference the underlying TextareaAutosize element', () => {
+  it('should reference the underlying TextareaAutosize DOM element', () => {
     const ref = React.createRef();
     const register = e => { ref.current = e; };
     const component = mount(
       <ThemeProvider theme={{}}>
         <TextField
-          ref={register}
+          inputRef={register}
           labelText="Description"
           multiline
           name="description"
         />
       </ThemeProvider>
     );
-    expect(component.find('input').instance()).toEqual(ref.current);
+    expect(component.find('textarea').instance()).toEqual(ref.current);
   });
 });
