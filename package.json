@@ -81,7 +81,7 @@
     "react-hook-form": "^3.28.15",
     "react-hook-form-input": "^1.1.10",
     "react-image": "^2.2.0",
-    "react-router-dom": "^4.2.0",
+    "react-router-dom": "5.0.0",
     "react-select": "^2.4.4",
     "react-textarea-autosize": "^7.1.0",
     "styled-components": "^4.4.0",
