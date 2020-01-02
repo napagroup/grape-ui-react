@@ -30,3 +30,17 @@ describe('When given props with color and bg', () => {
     expect(colorCore(props)).toEqual(expected);
   });
 });
+
+describe('When given props with non-variable color and bg', () => {
+  it('should return the default styling for background and color', () => {
+    const props = {
+      bg: '#ff0000',
+      color: '#ffffff',
+    };
+    const expected = {
+      backgroundColor: props.bg,
+      color: props.color,
+    };
+    expect(colorCore(props)).toEqual(expected);
+  });
+});

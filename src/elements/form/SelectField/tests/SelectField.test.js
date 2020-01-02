@@ -194,8 +194,8 @@ describe('SelectField Component with custom Control Label props', () => {
   });
 });
 
-describe('TextField with custom assistive text props', () => {
-  it('should return a TextField with custom assistive text props', () => {
+describe('SelectField with custom assistive text props', () => {
+  it('should return a SelectField with custom assistive text props', () => {
     const assistiveTextProps = {
       px: 0,
       py: 3,
@@ -205,16 +205,30 @@ describe('TextField with custom assistive text props', () => {
   });
 });
 
-describe('TextField with custom menu elevation', () => {
-  it('should return a TextField with different zIndex and boxShadow values', () => {
+describe('SelectField with custom menu elevation', () => {
+  it('should return a SelectField with different zIndex and boxShadow values', () => {
     const element = <ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" menuElevation="03" options={colorOptions} value={colorOptions[1]} /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
 
-describe('TextField with custom z-index', () => {
-  it('should return a TextField with different zIndex than the menuElevation preset', () => {
+describe('SelectField with custom z-index', () => {
+  it('should return a SelectField with different zIndex than the menuElevation preset', () => {
     const element = <ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" labelText="Color" menuElevation="03" menuZIndex="2000" options={colorOptions} value={colorOptions[1]} /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+
+describe('SelectField with focus', () => {
+  it('should return a SelectField with isFocused set to true', () => {
+    const element = <ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" isFocused labelText="Color" menuElevation="03" menuZIndex="2000" options={colorOptions} value={colorOptions[1]} /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+
+describe('SelectField that is disabled', () => {
+  it('should return a SelectField with isDisabled set to true', () => {
+    const element = <ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" isDisabled labelText="Color" menuElevation="03" menuZIndex="2000" options={colorOptions} value={colorOptions[1]} /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

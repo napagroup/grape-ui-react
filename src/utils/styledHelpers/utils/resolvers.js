@@ -48,7 +48,7 @@ export const resolveColor = (colorToResolve, globalOverrides, defaultColor = def
   const resolvedValue = isKeyNestedProp(colorToResolve)
     ? resolveToProperty(colorToResolve, colorSchema)
     : resolveToProperty(`${colorToResolve}.base`, colorSchema);
-  return resolvedValue || defaultColor;
+  return resolvedValue || colorToResolve || defaultColor;
 };
 
 export const resolveFontFamily = (fontFamilyToResolve, globalOverrides, defaultValue) => {
@@ -77,11 +77,7 @@ export const resolveZIndex = (depth, globalOverrides) => {
   return resolvedZIndex || CSS_INHERIT_VALUE;
 };
 
-// TODO: This function below needs to be fixed becuase one path returns just the value and another returns properties and values.
 export const resolveElevation = (depth, globalOverrides) => {
-  if (!depth || typeof depth !== 'string') {
-    return CSS_INHERIT_VALUE;
-  }
   const resolvedBoxShadow = resolveBoxShadow(depth, globalOverrides);
   const resolvedZIndex = resolveZIndex(depth, globalOverrides);
   return `z-index: ${resolvedZIndex}; box-shadow: ${resolvedBoxShadow}` || CSS_INHERIT_VALUE;

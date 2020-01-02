@@ -1,4 +1,5 @@
 import { getGlobalStyles, getGlobalOverrides } from 'src/global-styles';
+import { DateFieldControlOverrides } from 'src/elements/form/DateField/constants';
 import { resolveBorderRadius, resolveColor } from './utils';
 import { defaultControlStyles, defaultStylesBase } from './cssDefaults';
 import { colorCore } from './core';
@@ -53,9 +54,13 @@ const scaleFactor = props => {
 export const getFinalFieldPadding = (padding, formStyle, labelText) => ((formStyle === 'filled' && labelText)
   ? `
     padding: ${Number.parseInt(padding, 10) * 1.5}rem ${padding} ${Number.parseInt(padding, 10) / 2}rem;
-    .grape-ui-select__control {
+    .grape-ui-select__control,
+    .DayPickerInput > input {
       margin: -${Number.parseInt(padding, 10) * 1.5}rem -${padding} -${Number.parseInt(padding, 10) / 2}rem;
       padding: ${Number.parseInt(padding, 10) * 1.5}rem ${padding} ${Number.parseInt(padding, 10) / 2}rem;
+      + .DayPickerInput-OverlayWrapper {
+        transform: translateX(-${padding}) translateY(calc(${Number.parseInt(padding, 10) / 2}rem + 2px));
+      }
     }
     + label {
       background: transparent;
@@ -65,9 +70,13 @@ export const getFinalFieldPadding = (padding, formStyle, labelText) => ((formSty
   `
   : `
     padding: ${padding};
-    .grape-ui-select__control {
+    .grape-ui-select__control,
+    .DayPickerInput > input {
       margin: -${padding};
       padding: ${padding};
+      + .DayPickerInput-OverlayWrapper {
+        transform: translateX(-${padding}) translateY(calc(${padding} + 2px));
+      }
     }
   `);
 
@@ -94,7 +103,11 @@ const getFinalStyle = props => {
       ${disabledStyle}
     }
     &:focus, &:focus-within{ ${focusStyle} }
-    &::placeholder { color: ${resolvedPlaceholderColor} }
+    &::placeholder,
+    input::placeholder {
+      color: ${resolvedPlaceholderColor}
+    }
+    ${DateFieldControlOverrides}
   `;
   if (formStyle === 'filled') {
     return `
@@ -112,15 +125,11 @@ const getFinalStyle = props => {
 
 export const controlStyles = (props = {}) => {
   let overrides = null;
-  if (!props || Array.isArray(props)) {
-    overrides = defaultControlStyles;
-  } else {
-    overrides = {
-      ...defaultControlStyles,
-      ...props,
-      padding: gridSchema[props.gutter] || defaultControlStyles.padding,
-    };
-  }
+  overrides = {
+    ...defaultControlStyles,
+    ...props,
+    padding: gridSchema[props.gutter] || defaultControlStyles.padding,
+  };
   const {
     formStyle,
     labelText,

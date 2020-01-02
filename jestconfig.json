@@ -29,6 +29,7 @@
     "<rootDir>/src/internals",
     "<rootDir>/src/elements/typography/index.js"
   ],
+  "resolver": null,
   "setupFilesAfterEnv": [
     "<rootDir>/src/internals/testing/test-bundler.js"
   ],

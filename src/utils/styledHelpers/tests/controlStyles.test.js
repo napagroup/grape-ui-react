@@ -11,9 +11,13 @@ describe('getFinalFieldPadding', () => {
     // Assert
     expect(actual).toEqual(`
     padding: 6rem 4px 2rem;
-    .grape-ui-select__control {
+    .grape-ui-select__control,
+    .DayPickerInput > input {
       margin: -6rem -4px -2rem;
       padding: 6rem 4px 2rem;
+      + .DayPickerInput-OverlayWrapper {
+        transform: translateX(-4px) translateY(calc(2rem + 2px));
+      }
     }
     + label {
       background: transparent;
@@ -31,9 +35,13 @@ describe('getFinalFieldPadding', () => {
     // Assert
     expect(actual).toEqual(`
     padding: 4px;
-    .grape-ui-select__control {
+    .grape-ui-select__control,
+    .DayPickerInput > input {
       margin: -4px;
       padding: 4px;
+      + .DayPickerInput-OverlayWrapper {
+        transform: translateX(-4px) translateY(calc(4px + 2px));
+      }
     }
   `);
   });
@@ -46,9 +54,13 @@ describe('getFinalFieldPadding', () => {
     // Assert
     expect(actual).toEqual(`
     padding: 4px;
-    .grape-ui-select__control {
+    .grape-ui-select__control,
+    .DayPickerInput > input {
       margin: -4px;
       padding: 4px;
+      + .DayPickerInput-OverlayWrapper {
+        transform: translateX(-4px) translateY(calc(4px + 2px));
+      }
     }
   `);
   });
@@ -61,9 +73,13 @@ describe('getFinalFieldPadding', () => {
     // Assert
     expect(actual).toEqual(`
     padding: 4px;
-    .grape-ui-select__control {
+    .grape-ui-select__control,
+    .DayPickerInput > input {
       margin: -4px;
       padding: 4px;
+      + .DayPickerInput-OverlayWrapper {
+        transform: translateX(-4px) translateY(calc(4px + 2px));
+      }
     }
   `);
   });

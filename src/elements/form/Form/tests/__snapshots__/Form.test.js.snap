@@ -66,9 +66,17 @@ exports[`Form Component base should return a Form object and textField with fill
   text-decoration: inherit;
 }
 
-.c2 .grape-ui-select__control {
+.c2 .grape-ui-select__control,
+.c2 .DayPickerInput > input {
   margin: -1.5rem -1rem -0.5rem;
   padding: 1.5rem 1rem 0.5rem;
+}
+
+.c2 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c2 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+  transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
 }
 
 .c2 + label {
@@ -96,20 +104,32 @@ exports[`Form Component base should return a Form object and textField with fill
   color: hsl(323.3,84.6%,28%);
 }
 
-.c2::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder,
+.c2 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c2::-moz-placeholder {
+.c2::-moz-placeholder,
+.c2 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c2:-ms-input-placeholder {
+.c2:-ms-input-placeholder,
+.c2 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c2::placeholder {
+.c2::placeholder,
+.c2 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c2 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <form
@@ -205,9 +225,17 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   text-decoration: inherit;
 }
 
-.c2 .grape-ui-select__control {
+.c2 .grape-ui-select__control,
+.c2 .DayPickerInput > input {
   margin: -1.5rem -1rem -0.5rem;
   padding: 1.5rem 1rem 0.5rem;
+}
+
+.c2 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c2 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+  transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
 }
 
 .c2 + label {
@@ -235,20 +263,32 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   color: hsl(323.3,84.6%,28%);
 }
 
-.c2::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder,
+.c2 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c2::-moz-placeholder {
+.c2::-moz-placeholder,
+.c2 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c2:-ms-input-placeholder {
+.c2:-ms-input-placeholder,
+.c2 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c2::placeholder {
+.c2::placeholder,
+.c2 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c2 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 .c5 {
@@ -273,9 +313,17 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   padding: 1rem;
 }
 
-.c5 .grape-ui-select__control {
+.c5 .grape-ui-select__control,
+.c5 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c5 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c5 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c5[disabled] {
@@ -297,20 +345,32 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   color: hsl(323.3,84.6%,28%);
 }
 
-.c5::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder,
+.c5 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c5::-moz-placeholder {
+.c5::-moz-placeholder,
+.c5 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c5:-ms-input-placeholder {
+.c5:-ms-input-placeholder,
+.c5 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c5::placeholder {
+.c5::placeholder,
+.c5 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c5 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <form
@@ -546,9 +606,17 @@ exports[`Form Component base should return a Form object with filled formStyle a
   text-decoration: inherit;
 }
 
-.c2 .grape-ui-select__control {
+.c2 .grape-ui-select__control,
+.c2 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c2 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c2 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c2[disabled] {
@@ -570,20 +638,32 @@ exports[`Form Component base should return a Form object with filled formStyle a
   color: hsl(323.3,84.6%,28%);
 }
 
-.c2::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder,
+.c2 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c2::-moz-placeholder {
+.c2::-moz-placeholder,
+.c2 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c2:-ms-input-placeholder {
+.c2:-ms-input-placeholder,
+.c2 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c2::placeholder {
+.c2::placeholder,
+.c2 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c2 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <form

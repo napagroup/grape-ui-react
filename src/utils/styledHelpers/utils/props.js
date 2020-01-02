@@ -26,6 +26,7 @@ export const typography = {
 
 export const spaceProps = {
   propTypes: {
+    /** Margin space on all four sides */
     m: PropTypes.any,
     mb: PropTypes.any,
     ml: PropTypes.any,

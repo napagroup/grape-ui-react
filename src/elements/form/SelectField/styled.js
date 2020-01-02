@@ -94,14 +94,21 @@ const renderSelectFieldComponent = selectFieldProps => {
   return (<SelectFieldComponent {...selectFieldProps} value={value || defaultValue} />);
 };
 const propsToTrim = [
+  'assistiveText',
   'controlGroupProps',
   'controlId',
   'disabled',
-  'assistiveText',
   'isRequired',
   'plainText',
 ];
-const plaintextPropsToTrim = ['controlId', 'assistiveText', 'validationError', 'isRequired', 'formStyle', 'controlGroupProps'];
+const plaintextPropsToTrim = [
+  'assistiveText',
+  'controlGroupProps',
+  'controlId',
+  'formStyle',
+  'isRequired',
+  'validationError',
+];
 const renderValueOrComponent = propsFromComponent => {
   const {
     controlId,
@@ -136,7 +143,7 @@ const SelectField = props => {
     validationError,
   } = props;
   const assistiveProps = { assistiveText, isRequired };
-  const newlabel = !isRequired ? labelText : `${labelText}*`;
+  const newlabel = isRequired && labelText ? `${labelText}*` : labelText;
   return (
     <ControlGroup
       activeColor={activeColor}

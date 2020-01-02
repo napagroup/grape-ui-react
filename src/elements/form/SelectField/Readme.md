@@ -1,4 +1,4 @@
-`<SelectField>` is our basic select cotrol. It was built on top of [React Select](http://react-select.com).  All props that were introduced by 🍇UI as well as some important existing can be found in the props table above, but for a full list of props that come with React Select, visit [React Select's Props list](https://react-select.com/props).
+`<SelectField>` is our basic select control. It was built on top of [React Select](http://react-select.com).  All props that were introduced by 🍇UI as well as some important existing can be found in the props table above, but for a full list of props that come with React Select, visit [React Select's Props list](https://react-select.com/props).
 
 > <small>**NOTE:** All examples below will demonstrate both Outlined and Filled views for each example.</small>
 

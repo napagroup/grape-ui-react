@@ -54,9 +54,17 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   padding: 1rem;
 }
 
-.c1 .grape-ui-select__control {
+.c1 .grape-ui-select__control,
+.c1 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c1 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c1 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c1[disabled] {
@@ -78,20 +86,32 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   color: hsl(323.3,84.6%,28%);
 }
 
-.c1::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder,
+.c1 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c1::-moz-placeholder {
+.c1::-moz-placeholder,
+.c1 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c1:-ms-input-placeholder {
+.c1:-ms-input-placeholder,
+.c1 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c1::placeholder {
+.c1::placeholder,
+.c1 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c1 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <div
@@ -264,9 +284,17 @@ exports[`SelectField using Theme color should return a SelectField object with c
   padding: 1rem;
 }
 
-.c1 .grape-ui-select__control {
+.c1 .grape-ui-select__control,
+.c1 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c1 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c1 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c1[disabled] {
@@ -288,20 +316,32 @@ exports[`SelectField using Theme color should return a SelectField object with c
   color: hsl(323.3,84.6%,28%);
 }
 
-.c1::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder,
+.c1 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c1::-moz-placeholder {
+.c1::-moz-placeholder,
+.c1 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c1:-ms-input-placeholder {
+.c1:-ms-input-placeholder,
+.c1 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c1::placeholder {
+.c1::placeholder,
+.c1 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c1 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <div
@@ -474,9 +514,17 @@ exports[`SelectField using custom brand colors should return a SelectField objec
   padding: 1rem;
 }
 
-.c1 .grape-ui-select__control {
+.c1 .grape-ui-select__control,
+.c1 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c1 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c1 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c1[disabled] {
@@ -498,20 +546,32 @@ exports[`SelectField using custom brand colors should return a SelectField objec
   color: hsl(323.3,84.6%,28%);
 }
 
-.c1::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder,
+.c1 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c1::-moz-placeholder {
+.c1::-moz-placeholder,
+.c1 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c1:-ms-input-placeholder {
+.c1:-ms-input-placeholder,
+.c1 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c1::placeholder {
+.c1::placeholder,
+.c1 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c1 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <div

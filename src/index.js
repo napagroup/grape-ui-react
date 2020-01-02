@@ -1,5 +1,6 @@
 import * as styledComponents from 'styled-components';
 import { Button } from './elements/Button';
+import { DateField } from './elements/form/DateField';
 import { Box, Flex } from './elements/grid';
 import { Image } from './elements/Image';
 import { Form } from './elements/form/Form';
@@ -21,6 +22,7 @@ module.exports = {
   Box,
   Button,
   CheckboxField,
+  DateField,
   Flex,
   Form,
   getGlobalOverrides,

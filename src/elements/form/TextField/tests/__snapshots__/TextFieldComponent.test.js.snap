@@ -22,9 +22,17 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   text-decoration: inherit;
 }
 
-.c0 .grape-ui-select__control {
+.c0 .grape-ui-select__control,
+.c0 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c0[disabled] {
@@ -46,20 +54,32 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   color: hsl(323.3,84.6%,28%);
 }
 
-.c0::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder,
+.c0 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::-moz-placeholder {
+.c0::-moz-placeholder,
+.c0 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0:-ms-input-placeholder {
+.c0:-ms-input-placeholder,
+.c0 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::placeholder {
+.c0::placeholder,
+.c0 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c0 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <input
@@ -92,9 +112,17 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   text-decoration: inherit;
 }
 
-.c0 .grape-ui-select__control {
+.c0 .grape-ui-select__control,
+.c0 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c0[disabled] {
@@ -116,20 +144,32 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   color: hsl(323.3,84.6%,28%);
 }
 
-.c0::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder,
+.c0 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::-moz-placeholder {
+.c0::-moz-placeholder,
+.c0 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0:-ms-input-placeholder {
+.c0:-ms-input-placeholder,
+.c0 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::placeholder {
+.c0::placeholder,
+.c0 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c0 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <input
@@ -162,9 +202,17 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   text-decoration: inherit;
 }
 
-.c0 .grape-ui-select__control {
+.c0 .grape-ui-select__control,
+.c0 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c0[disabled] {
@@ -186,20 +234,32 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   color: hsl(323.3,84.6%,28%);
 }
 
-.c0::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder,
+.c0 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::-moz-placeholder {
+.c0::-moz-placeholder,
+.c0 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0:-ms-input-placeholder {
+.c0:-ms-input-placeholder,
+.c0 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::placeholder {
+.c0::placeholder,
+.c0 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c0 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <input
@@ -232,9 +292,17 @@ exports[`TextFieldComponent with a currency attribute should return a TextFieldC
   text-decoration: inherit;
 }
 
-.c0 .grape-ui-select__control {
+.c0 .grape-ui-select__control,
+.c0 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c0[disabled] {
@@ -256,20 +324,32 @@ exports[`TextFieldComponent with a currency attribute should return a TextFieldC
   color: hsl(323.3,84.6%,28%);
 }
 
-.c0::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder,
+.c0 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::-moz-placeholder {
+.c0::-moz-placeholder,
+.c0 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0:-ms-input-placeholder {
+.c0:-ms-input-placeholder,
+.c0 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::placeholder {
+.c0::placeholder,
+.c0 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c0 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <input
@@ -308,9 +388,17 @@ exports[`TextFieldComponent with a integer attribute should return a TextFieldCo
   text-decoration: inherit;
 }
 
-.c0 .grape-ui-select__control {
+.c0 .grape-ui-select__control,
+.c0 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c0[disabled] {
@@ -332,20 +420,32 @@ exports[`TextFieldComponent with a integer attribute should return a TextFieldCo
   color: hsl(323.3,84.6%,28%);
 }
 
-.c0::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder,
+.c0 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::-moz-placeholder {
+.c0::-moz-placeholder,
+.c0 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0:-ms-input-placeholder {
+.c0:-ms-input-placeholder,
+.c0 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::placeholder {
+.c0::placeholder,
+.c0 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c0 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <input
@@ -384,9 +484,17 @@ exports[`TextFieldComponent with a numeric attribute should return a TextFieldCo
   text-decoration: inherit;
 }
 
-.c0 .grape-ui-select__control {
+.c0 .grape-ui-select__control,
+.c0 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c0[disabled] {
@@ -408,20 +516,32 @@ exports[`TextFieldComponent with a numeric attribute should return a TextFieldCo
   color: hsl(323.3,84.6%,28%);
 }
 
-.c0::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder,
+.c0 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::-moz-placeholder {
+.c0::-moz-placeholder,
+.c0 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0:-ms-input-placeholder {
+.c0:-ms-input-placeholder,
+.c0 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::placeholder {
+.c0::placeholder,
+.c0 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c0 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <input
@@ -460,9 +580,17 @@ exports[`TextFieldComponent with a password attribute should return a TextFieldC
   text-decoration: inherit;
 }
 
-.c0 .grape-ui-select__control {
+.c0 .grape-ui-select__control,
+.c0 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c0[disabled] {
@@ -484,20 +612,32 @@ exports[`TextFieldComponent with a password attribute should return a TextFieldC
   color: hsl(323.3,84.6%,28%);
 }
 
-.c0::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder,
+.c0 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::-moz-placeholder {
+.c0::-moz-placeholder,
+.c0 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0:-ms-input-placeholder {
+.c0:-ms-input-placeholder,
+.c0 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::placeholder {
+.c0::placeholder,
+.c0 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c0 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <input
@@ -530,9 +670,17 @@ exports[`TextFieldComponent with a phone attribute should return a TextFieldComp
   text-decoration: inherit;
 }
 
-.c0 .grape-ui-select__control {
+.c0 .grape-ui-select__control,
+.c0 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c0[disabled] {
@@ -554,20 +702,32 @@ exports[`TextFieldComponent with a phone attribute should return a TextFieldComp
   color: hsl(323.3,84.6%,28%);
 }
 
-.c0::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder,
+.c0 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::-moz-placeholder {
+.c0::-moz-placeholder,
+.c0 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0:-ms-input-placeholder {
+.c0:-ms-input-placeholder,
+.c0 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::placeholder {
+.c0::placeholder,
+.c0 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c0 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <input
@@ -606,9 +766,17 @@ exports[`TextFieldComponent with a postalCode attribute should return a TextFiel
   text-decoration: inherit;
 }
 
-.c0 .grape-ui-select__control {
+.c0 .grape-ui-select__control,
+.c0 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c0[disabled] {
@@ -630,20 +798,32 @@ exports[`TextFieldComponent with a postalCode attribute should return a TextFiel
   color: hsl(323.3,84.6%,28%);
 }
 
-.c0::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder,
+.c0 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::-moz-placeholder {
+.c0::-moz-placeholder,
+.c0 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0:-ms-input-placeholder {
+.c0:-ms-input-placeholder,
+.c0 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::placeholder {
+.c0::placeholder,
+.c0 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c0 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <input
@@ -682,9 +862,17 @@ exports[`TextFieldComponent with an email attribute should return a TextFieldCom
   text-decoration: inherit;
 }
 
-.c0 .grape-ui-select__control {
+.c0 .grape-ui-select__control,
+.c0 .DayPickerInput > input {
   margin: -1rem;
   padding: 1rem;
+}
+
+.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
 }
 
 .c0[disabled] {
@@ -706,20 +894,32 @@ exports[`TextFieldComponent with an email attribute should return a TextFieldCom
   color: hsl(323.3,84.6%,28%);
 }
 
-.c0::-webkit-input-placeholder {
+.c0::-webkit-input-placeholder,
+.c0 input::-webkit-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::-moz-placeholder {
+.c0::-moz-placeholder,
+.c0 input::-moz-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0:-ms-input-placeholder {
+.c0:-ms-input-placeholder,
+.c0 input:-ms-input-placeholder {
   color: hsl(0,0%,75%);
 }
 
-.c0::placeholder {
+.c0::placeholder,
+.c0 input::placeholder {
   color: hsl(0,0%,75%);
+}
+
+.c0 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
 }
 
 <input

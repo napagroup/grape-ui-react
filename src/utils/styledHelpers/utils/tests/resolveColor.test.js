@@ -1,6 +1,6 @@
 
 import * as mockGlobalStyles from 'src/global-styles';
-import { defaultStylesBase, resolveColor } from '../..';
+import { resolveColor } from '../..';
 
 const colors = {
   grape: {
@@ -33,8 +33,8 @@ describe('When resolving a color given an empty string or non-string value', () 
   it('should return \'inherit\' when color is NaN', () => {
     expect(resolveColor(NaN)).toEqual(defaultValue);
   });
-  it('should return \'inherit\' when color is Infinity', () => {
-    expect(resolveColor(Infinity)).toEqual(defaultValue);
+  it('should return Infinity when color is Infinity (an invalid color)', () => {
+    expect(resolveColor(Infinity)).toEqual(Infinity);
   });
 });
 
@@ -44,8 +44,8 @@ describe('When resolving a color given an unrecognized color', () => {
       colors,
     });
   });
-  it('should return \'inherit\' when color is ChocolateCoveredTunaEnchiladas', () => {
-    expect(resolveColor('ChocolateCoveredTunaEnchiladas')).toEqual(defaultValue);
+  it('should return ChocolateCoveredTunaEnchiladas when color is ChocolateCoveredTunaEnchiladas', () => {
+    expect(resolveColor('ChocolateCoveredTunaEnchiladas')).toEqual('ChocolateCoveredTunaEnchiladas');
   });
 });
 
@@ -96,7 +96,7 @@ describe('When resolving a color given undefined colors Theme', () => {
     const theme = {
       colors: undefined,
     };
-    expect(resolveColor('yellow', theme)).toEqual(defaultStylesBase.color);
+    expect(resolveColor('yellow', theme)).toEqual('yellow');
   });
 });
 
@@ -110,6 +110,6 @@ describe('When resolving a color given undefined colors Theme and an explicit va
     const theme = {
       colors: undefined,
     };
-    expect(resolveColor('yellow', theme, defaultValue)).toEqual(defaultValue);
+    expect(resolveColor('yellow', theme, defaultValue)).toEqual('yellow');
   });
 });
