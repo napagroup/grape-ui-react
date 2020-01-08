@@ -69,7 +69,6 @@ export const DayPickerControlStyles = props => `
   .DayPickerInput-OverlayWrapper {
     position: absolute;
     z-index: ${resolveZIndex(props.menuElevation, getGlobalOverrides(props))};;
-    width: 100%;
     max-width: 100%;
     ${props.menuDirectionViewportBreakpoint.column ? `
       @media (max-width: ${props.menuDirectionViewportBreakpoint.column}) {
@@ -102,6 +101,7 @@ export const DayPickerControlStyles = props => `
     background-size: 50%;
     background-repeat: no-repeat;
     cursor: pointer;
+    pointer-events: auto;
     &:hover {
       opacity: 0.8;
     }
@@ -181,6 +181,7 @@ export const DayPickerControlStyles = props => `
     vertical-align: middle;
     text-align: center;
     cursor: pointer;
+    pointer-events: auto;
     box-sizing: border-box;
     height: 40px;
     width: 40px;
@@ -197,6 +198,7 @@ export const DayPickerControlStyles = props => `
     font-size: small;
     padding: 0.5rem;
     min-width: 1rem;
+    pointer-events: auto;
     border-right: 1px solid ${resolveColor(props.controlColorProps.weekNumberBorderColor, getGlobalOverrides(props))};
     color: ${resolveColor(props.controlColorProps.weekNumberColor, getGlobalOverrides(props))};
     vertical-align: middle;
@@ -220,6 +222,7 @@ export const DayPickerControlStyles = props => `
     color: #4A90E2;
     font-size: 0.875em;
     cursor: pointer;
+    pointer-events: auto;
   }
 
   .DayPicker-Day--today {
@@ -253,11 +256,14 @@ export const DayPickerControlStyles = props => `
     color: ${resolveColor(props.controlColorProps.outsideColor, getGlobalOverrides(props))};
     cursor: default;
     background: transparent !important;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   .DayPicker-Day--disabled {
     color: ${resolveColor(props.controlColorProps.disabledColor, getGlobalOverrides(props))};
     cursor: default;
+    pointer-events: none;
   }
 
 `;

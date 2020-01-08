@@ -33,6 +33,7 @@ export const plaintextPropsToTrim = [
   'dayPickerProps',
   'formStyle',
   'inputProps',
+  'inputRef',
   'isRequired',
   'menuAlignment',
   'menuDirection',

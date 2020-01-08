@@ -6,6 +6,7 @@
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+
 const colorOptions = [
   { label: 'Red', value: 'red' },
   { label: 'Yellow', value: 'yellow' },
@@ -38,6 +39,116 @@ const linkState = () => null;
 </ThemeProvider>
 ```
 
+`<SelectField>` Supports a ref attribute to get to the underlying input element.
+You can pass in either a createRef(), or via "callback refs". Examples are demonstrated below
+#### Ref support - Getting to the element
+```jsx inside Markdown
+import { useRef } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+import { Button } from '../../Button';
+
+const onBtnClick = inputName => () => {
+  if(this[inputName]) {
+    this[inputName].focus();
+  }
+};
+const nameRef = useRef();
+const onRegisterClick = () => {
+  nameRef.current.focus();
+};
+
+const colorOptions = [
+  { label: 'Red', value: 'red' },
+  { label: 'Yellow', value: 'yellow' },
+  { label: 'Green', value: 'green' },
+  { label: 'Blue', value: 'blue' },
+];
+const linkState = () => null;
+<ThemeProvider theme={{}}>
+  <Flex flexDirection={['column', 'row']} justifyContent="center" mb={[1, 2]}>
+    <Button onClick={onRegisterClick}>
+      Focus Outlined
+    </Button>
+    <Button onClick={onBtnClick('exampleColorFilled')}>
+      Focus Filled
+    </Button>
+  </Flex>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <SelectField
+        inputRef={e => { nameRef.current = e; }}
+        isClearable
+        labelText="Color"
+        name="exampleColorOutlined"
+        onChange={linkState()}
+        options={colorOptions}
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <SelectField
+        formStyle="filled"
+        inputRef={ref => { this.exampleColorFilled = ref; }}
+        isClearable
+        labelText="Color"
+        name="exampleColorFilled"
+        onChange={linkState()}
+        options={colorOptions}
+      />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```
+
+#### Demonstrating Controlled Components (via react-hook-form-input)
+```jsx inside Markdown
+import useForm from "react-hook-form";
+import { RHFInput } from 'react-hook-form-input';
+import { ThemeProvider } from 'styled-components';
+import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+import { Header } from '../../typography';
+import { Button } from '../../Button';
+
+const colorOptions = [
+  { label: 'Grape', value: 'grapeSoda.light' },
+  { label: 'Yellow', value: 'yellow' },
+  { label: 'Green', value: 'green' },
+  { label: 'Blue', value: 'blue' },
+];
+const { getValues, register, setValue, watch  } = useForm();
+
+const myColor = watch('myColor');
+const getLabel = colorOption => {myColor ? myColor.label : 'None selected'}
+const getValue = colorOption => {myColor ? myColor.value : ''}
+
+<ThemeProvider theme={{}}>
+  <Header.h5 margin="0 0 1rem">My color: {getLabel(myColor)} </Header.h5>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <RHFInput
+        as={
+          <SelectField
+            color="grapeSoda.light"
+            isClearable
+            labelText="Color"
+            options={colorOptions}
+          />
+        }
+        register={register}
+        setValue={setValue}
+        name="myColor"
+      />
+    </Box>
+    <Button
+      onClick={() => {
+        alert(JSON.stringify(getValues()));
+      }}
+    >
+      Get Values
+    </Button>
+  </Flex>
+</ThemeProvider>
+```
 #### Kitchen Sink Usage
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';

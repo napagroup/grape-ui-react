@@ -20,6 +20,7 @@ exports[`SelectFieldComponent base should return a SelectFieldComponent object 1
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -209,6 +210,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   border-radius: 8px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -398,6 +400,7 @@ exports[`SelectFieldComponent with some style relate should return a SelectField
   border-radius: 2px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 

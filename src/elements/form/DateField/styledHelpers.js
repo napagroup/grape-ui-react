@@ -3,6 +3,7 @@ import { variant } from 'styled-system';
 
 export const menuStyledHelper = css`
   .DayPickerInput-OverlayWrapper {
+    pointer-events: none;
     ${variant({
     prop: 'menuAlignment',
     variants: {

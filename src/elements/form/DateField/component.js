@@ -19,7 +19,7 @@ const dayPickerInputStyle = {
   },
 };
 
-export const DateFieldComponent = React.forwardRef((props, ref) => {
+export const DateFieldComponent = props => {
   const {
     calendarOnly,
     format,
@@ -34,22 +34,21 @@ export const DateFieldComponent = React.forwardRef((props, ref) => {
     if (onChange) {
       onChange({
         formattedDay,
+        selectedDay,
       });
     }
   };
   const handleOnChange = (selectedDay, modifiers, dayPickerInput) => {
-    const input = dayPickerInput.getInput();
     const formattedDay = formatForOnChange(selectedDay, valueFormat, locale);
     if (onChange) {
       onChange({
-        formattedDay, input, modifiers, selectedDay,
+        dayPickerInput, formattedDay, modifiers, selectedDay,
       });
     }
   };
   if (calendarOnly) {
     return (
       <DayPicker
-        ref={ref}
         locale={locale}
         localeUtils={MomentLocaleUtils}
         onDayClick={handleDayPickerClick}
@@ -59,7 +58,6 @@ export const DateFieldComponent = React.forwardRef((props, ref) => {
   }
   return (
     <DayPickerInput
-      ref={ref}
       format={format}
       formatDate={formatDate}
       locale={locale}
@@ -71,7 +69,7 @@ export const DateFieldComponent = React.forwardRef((props, ref) => {
       {...removeSomeProps(props, propsToTrim)}
     />
   );
-});
+};
 
 DateFieldComponent.propTypes = {
   calendarOnly: PropTypes.bool,

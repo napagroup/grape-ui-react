@@ -40,6 +40,7 @@ exports[`TextField  a large TextField object should return a large TextField obj
   border-radius: 8px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
@@ -118,6 +119,7 @@ exports[`TextField  a large TextField object should return a large TextField obj
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullName"
     name="exampleFullName"
     readOnly={false}
@@ -173,6 +175,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -251,6 +254,7 @@ exports[`TextField Component base should return a TextField object 1`] = `
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullName"
     name="exampleFullName"
     readOnly={false}
@@ -306,6 +310,7 @@ exports[`TextField a TextField object should return a TextField object with a re
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -384,6 +389,7 @@ exports[`TextField a TextField object should return a TextField object with a re
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullName2"
     name="exampleFullName2"
     readOnly={false}
@@ -469,6 +475,7 @@ exports[`TextField a plainText TextField should return a disabled TextField 1`] 
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullName2"
     name="exampleFullName2"
     readOnly={true}
@@ -524,6 +531,7 @@ exports[`TextField a small TextField object should return a disabled TextField 1
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -658,6 +666,7 @@ exports[`TextField a small TextField object should return a small TextField obje
   border-radius: 2px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
@@ -736,6 +745,7 @@ exports[`TextField a small TextField object should return a small TextField obje
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullName"
     name="exampleFullName"
     readOnly={false}
@@ -791,6 +801,7 @@ exports[`TextField a small TextField object should return a small TextField obje
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -869,6 +880,7 @@ exports[`TextField a small TextField object should return a small TextField obje
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullName2"
     name="exampleFullName2"
     readOnly={false}
@@ -924,6 +936,7 @@ exports[`TextField a small TextField object should return a small TextField obje
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -1002,6 +1015,7 @@ exports[`TextField a small TextField object should return a small TextField obje
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullName2"
     name="exampleFullName2"
     readOnly={false}
@@ -1015,289 +1029,6 @@ exports[`TextField a small TextField object should return a small TextField obje
     Full name2
   </label>
 </div>
-`;
-
-exports[`TextField with a currency attribute should return a TextField of input type currency 1`] = `
-.c0 {
-  background-color: transparent;
-  color: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  border-radius: 4px;
-  outline: 0;
-  width: 100%;
-  padding: 1rem;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c0 .grape-ui-select__control,
-.c0 .DayPickerInput > input {
-  margin: -1rem;
-  padding: 1rem;
-}
-
-.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
-.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
-  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  transform: translateX(-1rem) translateY(calc(1rem + 2px));
-}
-
-.c0[disabled] {
-  opacity: 0.3;
-}
-
-.c0[disabled] ~ * {
-  color: rgba(0,0,0,0.3);
-}
-
-.c0:focus,
-.c0:focus-within {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label,
-.c0:focus-within + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
-.c0::-webkit-input-placeholder,
-.c0 input::-webkit-input-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0::-moz-placeholder,
-.c0 input::-moz-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0:-ms-input-placeholder,
-.c0 input:-ms-input-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0::placeholder,
-.c0 input::placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0 .DayPickerInput > input {
-  background: transparent;
-  border: 0;
-  font: inherit;
-  outline: 0;
-  width: 100%;
-}
-
-<TextInputComponent
-  activeColor="brandPrimary"
-  bg={null}
-  borderColor="borderColor"
-  borderRadius="4px"
-  className="c0"
-  currency={true}
-  email={false}
-  fontFamily="base"
-  formStyle=""
-  id="currency"
-  isFocused={false}
-  isRequired={false}
-  labelText=""
-  maxRows={4}
-  multiline={false}
-  name="currency"
-  padding="1rem"
-  password={false}
-  placeholderColor="gray.light"
-  plainText={false}
-  validationError=""
->
-  <Component
-    autoComplete="no"
-    className="c0"
-    id="currency"
-    name="currency"
-    options={
-      Object {
-        "initValue": undefined,
-        "numeral": true,
-        "numeralThousandsGroupStyle": "thousand",
-        "prefix": "$",
-      }
-    }
-    readOnly={false}
-    tabIndex="0"
-  >
-    <input
-      autoComplete="no"
-      className="c0"
-      id="currency"
-      name="currency"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      readOnly={false}
-      tabIndex="0"
-      type="text"
-      value="$"
-    />
-  </Component>
-</TextInputComponent>
-`;
-
-exports[`TextField with a formatterOptions attribute should return a TextField with formatterOptions 1`] = `
-.c0 {
-  background-color: transparent;
-  color: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  border-radius: 4px;
-  outline: 0;
-  width: 100%;
-  padding: 1rem;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c0 .grape-ui-select__control,
-.c0 .DayPickerInput > input {
-  margin: -1rem;
-  padding: 1rem;
-}
-
-.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
-.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
-  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  transform: translateX(-1rem) translateY(calc(1rem + 2px));
-}
-
-.c0[disabled] {
-  opacity: 0.3;
-}
-
-.c0[disabled] ~ * {
-  color: rgba(0,0,0,0.3);
-}
-
-.c0:focus,
-.c0:focus-within {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label,
-.c0:focus-within + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
-.c0::-webkit-input-placeholder,
-.c0 input::-webkit-input-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0::-moz-placeholder,
-.c0 input::-moz-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0:-ms-input-placeholder,
-.c0 input:-ms-input-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0::placeholder,
-.c0 input::placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0 .DayPickerInput > input {
-  background: transparent;
-  border: 0;
-  font: inherit;
-  outline: 0;
-  width: 100%;
-}
-
-<TextInputComponent
-  activeColor="brandPrimary"
-  bg={null}
-  borderColor="borderColor"
-  borderRadius="4px"
-  className="c0"
-  email={false}
-  fontFamily="base"
-  formStyle=""
-  formatterOptions={
-    Object {
-      "initValue": undefined,
-      "numeral": true,
-      "numeralThousandsGroupStyle": "thousand",
-    }
-  }
-  id="formatterOptions"
-  isFocused={false}
-  isRequired={false}
-  labelText=""
-  maxRows={4}
-  multiline={false}
-  name="formatterOptions"
-  padding="1rem"
-  password={false}
-  placeholderColor="gray.light"
-  plainText={false}
-  validationError=""
->
-  <Component
-    autoComplete="no"
-    className="c0"
-    id="formatterOptions"
-    name="formatterOptions"
-    options={
-      Object {
-        "initValue": undefined,
-        "numeral": true,
-        "numeralThousandsGroupStyle": "thousand",
-      }
-    }
-    readOnly={false}
-    tabIndex="0"
-  >
-    <input
-      autoComplete="no"
-      className="c0"
-      id="formatterOptions"
-      name="formatterOptions"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      readOnly={false}
-      tabIndex="0"
-      type="text"
-      value=""
-    />
-  </Component>
-</TextInputComponent>
 `;
 
 exports[`TextField with a multiline option should return a multiline TextField 1`] = `
@@ -1318,6 +1049,7 @@ exports[`TextField with a multiline option should return a multiline TextField 1
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -1400,6 +1132,7 @@ exports[`TextField with a multiline option should return a multiline TextField 1
   />
   <textarea
     className="c1"
+    disabled={false}
     id="exampleDescription"
     name="exampleDescription"
     onChange={[Function]}
@@ -1412,144 +1145,6 @@ exports[`TextField with a multiline option should return a multiline TextField 1
     tabIndex="0"
   />
 </div>
-`;
-
-exports[`TextField with a numeric attribute should return a TextField of input type numeric 1`] = `
-.c0 {
-  background-color: transparent;
-  color: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  border-radius: 4px;
-  outline: 0;
-  width: 100%;
-  padding: 1rem;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c0 .grape-ui-select__control,
-.c0 .DayPickerInput > input {
-  margin: -1rem;
-  padding: 1rem;
-}
-
-.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
-.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
-  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  transform: translateX(-1rem) translateY(calc(1rem + 2px));
-}
-
-.c0[disabled] {
-  opacity: 0.3;
-}
-
-.c0[disabled] ~ * {
-  color: rgba(0,0,0,0.3);
-}
-
-.c0:focus,
-.c0:focus-within {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label,
-.c0:focus-within + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
-.c0::-webkit-input-placeholder,
-.c0 input::-webkit-input-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0::-moz-placeholder,
-.c0 input::-moz-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0:-ms-input-placeholder,
-.c0 input:-ms-input-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0::placeholder,
-.c0 input::placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0 .DayPickerInput > input {
-  background: transparent;
-  border: 0;
-  font: inherit;
-  outline: 0;
-  width: 100%;
-}
-
-<TextInputComponent
-  activeColor="brandPrimary"
-  bg={null}
-  borderColor="borderColor"
-  borderRadius="4px"
-  className="c0"
-  email={false}
-  fontFamily="base"
-  formStyle=""
-  id="numeric"
-  isFocused={false}
-  isRequired={false}
-  labelText=""
-  maxRows={4}
-  multiline={false}
-  name="numeric"
-  numeric={true}
-  padding="1rem"
-  password={false}
-  placeholderColor="gray.light"
-  plainText={false}
-  validationError=""
->
-  <Component
-    autoComplete="no"
-    className="c0"
-    id="numeric"
-    name="numeric"
-    options={
-      Object {
-        "initValue": undefined,
-        "numeral": true,
-        "numeralThousandsGroupStyle": "thousand",
-      }
-    }
-    readOnly={false}
-    tabIndex="0"
-  >
-    <input
-      autoComplete="no"
-      className="c0"
-      id="numeric"
-      name="numeric"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      readOnly={false}
-      tabIndex="0"
-      type="text"
-      value=""
-    />
-  </Component>
-</TextInputComponent>
 `;
 
 exports[`TextField with a password attribute should return a TextField of input type password 1`] = `
@@ -1570,6 +1165,7 @@ exports[`TextField with a password attribute should return a TextField of input 
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -1648,6 +1244,7 @@ exports[`TextField with a password attribute should return a TextField of input 
 >
   <input
     className="c1"
+    disabled={false}
     id="password"
     name="password"
     readOnly={false}
@@ -1655,288 +1252,6 @@ exports[`TextField with a password attribute should return a TextField of input 
     type="password"
   />
 </div>
-`;
-
-exports[`TextField with a phone attribute should return a TextField of input type phone 1`] = `
-.c0 {
-  background-color: transparent;
-  color: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  border-radius: 4px;
-  outline: 0;
-  width: 100%;
-  padding: 1rem;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c0 .grape-ui-select__control,
-.c0 .DayPickerInput > input {
-  margin: -1rem;
-  padding: 1rem;
-}
-
-.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
-.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
-  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  transform: translateX(-1rem) translateY(calc(1rem + 2px));
-}
-
-.c0[disabled] {
-  opacity: 0.3;
-}
-
-.c0[disabled] ~ * {
-  color: rgba(0,0,0,0.3);
-}
-
-.c0:focus,
-.c0:focus-within {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label,
-.c0:focus-within + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
-.c0::-webkit-input-placeholder,
-.c0 input::-webkit-input-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0::-moz-placeholder,
-.c0 input::-moz-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0:-ms-input-placeholder,
-.c0 input:-ms-input-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0::placeholder,
-.c0 input::placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0 .DayPickerInput > input {
-  background: transparent;
-  border: 0;
-  font: inherit;
-  outline: 0;
-  width: 100%;
-}
-
-<TextInputComponent
-  activeColor="brandPrimary"
-  bg={null}
-  borderColor="borderColor"
-  borderRadius="4px"
-  className="c0"
-  email={false}
-  fontFamily="base"
-  formStyle=""
-  id="phone"
-  isFocused={false}
-  isRequired={false}
-  labelText=""
-  maxRows={4}
-  multiline={false}
-  name="phone"
-  padding="1rem"
-  password={false}
-  phone={true}
-  placeholderColor="gray.light"
-  plainText={false}
-  validationError=""
->
-  <Component
-    autoComplete="no"
-    className="c0"
-    id="phone"
-    name="phone"
-    options={
-      Object {
-        "delimiter": "-",
-        "initValue": undefined,
-        "phone": true,
-        "phoneRegionCode": "US",
-      }
-    }
-    readOnly={false}
-    tabIndex="0"
-  >
-    <input
-      autoComplete="no"
-      className="c0"
-      id="phone"
-      name="phone"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      readOnly={false}
-      tabIndex="0"
-      type="text"
-      value=""
-    />
-  </Component>
-</TextInputComponent>
-`;
-
-exports[`TextField with a postalCode attribute should return a TextField of input type postalCode 1`] = `
-.c0 {
-  background-color: transparent;
-  color: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  border-radius: 4px;
-  outline: 0;
-  width: 100%;
-  padding: 1rem;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c0 .grape-ui-select__control,
-.c0 .DayPickerInput > input {
-  margin: -1rem;
-  padding: 1rem;
-}
-
-.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
-.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
-  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  transform: translateX(-1rem) translateY(calc(1rem + 2px));
-}
-
-.c0[disabled] {
-  opacity: 0.3;
-}
-
-.c0[disabled] ~ * {
-  color: rgba(0,0,0,0.3);
-}
-
-.c0:focus,
-.c0:focus-within {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label,
-.c0:focus-within + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
-.c0::-webkit-input-placeholder,
-.c0 input::-webkit-input-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0::-moz-placeholder,
-.c0 input::-moz-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0:-ms-input-placeholder,
-.c0 input:-ms-input-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0::placeholder,
-.c0 input::placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0 .DayPickerInput > input {
-  background: transparent;
-  border: 0;
-  font: inherit;
-  outline: 0;
-  width: 100%;
-}
-
-<TextInputComponent
-  activeColor="brandPrimary"
-  bg={null}
-  borderColor="borderColor"
-  borderRadius="4px"
-  className="c0"
-  email={false}
-  fontFamily="base"
-  formStyle=""
-  id="postalCode"
-  isFocused={false}
-  isRequired={false}
-  labelText=""
-  maxRows={4}
-  multiline={false}
-  name="postalCode"
-  padding="1rem"
-  password={false}
-  placeholderColor="gray.light"
-  plainText={false}
-  postalCode={true}
-  validationError=""
->
-  <Component
-    autoComplete="no"
-    className="c0"
-    id="postalCode"
-    name="postalCode"
-    options={
-      Object {
-        "blocks": Array [
-          5,
-          4,
-        ],
-        "delimiter": "-",
-        "delimiterLazyShow": true,
-        "initValue": undefined,
-        "numericOnly": true,
-      }
-    }
-    readOnly={false}
-    tabIndex="0"
-  >
-    <input
-      autoComplete="no"
-      className="c0"
-      id="postalCode"
-      name="postalCode"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      readOnly={false}
-      tabIndex="0"
-      type="text"
-      value=""
-    />
-  </Component>
-</TextInputComponent>
 `;
 
 exports[`TextField with an email attribute should return a TextField of input type email 1`] = `
@@ -1957,6 +1272,7 @@ exports[`TextField with an email attribute should return a TextField of input ty
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -2035,6 +1351,7 @@ exports[`TextField with an email attribute should return a TextField of input ty
 >
   <input
     className="c1"
+    disabled={false}
     id="email"
     name="email"
     readOnly={false}
@@ -2102,6 +1419,7 @@ exports[`TextField with an id attribute provided should return a TextField with 
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -2180,6 +1498,7 @@ exports[`TextField with an id attribute provided should return a TextField with 
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullNameCID"
     name="exampleFullName"
     readOnly={false}
@@ -2199,145 +1518,6 @@ exports[`TextField with an id attribute provided should return a TextField with 
     Please tell me your name
   </div>
 </div>
-`;
-
-exports[`TextField with an integer attribute should return a TextField of input type integer 1`] = `
-.c0 {
-  background-color: transparent;
-  color: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 4px;
-  border-radius: 4px;
-  outline: 0;
-  width: 100%;
-  padding: 1rem;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c0 .grape-ui-select__control,
-.c0 .DayPickerInput > input {
-  margin: -1rem;
-  padding: 1rem;
-}
-
-.c0 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
-.c0 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
-  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  transform: translateX(-1rem) translateY(calc(1rem + 2px));
-}
-
-.c0[disabled] {
-  opacity: 0.3;
-}
-
-.c0[disabled] ~ * {
-  color: rgba(0,0,0,0.3);
-}
-
-.c0:focus,
-.c0:focus-within {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
-}
-
-.c0:focus + label,
-.c0:focus-within + label {
-  color: hsl(323.3,84.6%,28%);
-}
-
-.c0::-webkit-input-placeholder,
-.c0 input::-webkit-input-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0::-moz-placeholder,
-.c0 input::-moz-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0:-ms-input-placeholder,
-.c0 input:-ms-input-placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0::placeholder,
-.c0 input::placeholder {
-  color: hsl(0,0%,75%);
-}
-
-.c0 .DayPickerInput > input {
-  background: transparent;
-  border: 0;
-  font: inherit;
-  outline: 0;
-  width: 100%;
-}
-
-<TextInputComponent
-  activeColor="brandPrimary"
-  bg={null}
-  borderColor="borderColor"
-  borderRadius="4px"
-  className="c0"
-  email={false}
-  fontFamily="base"
-  formStyle=""
-  id="integer"
-  integer={true}
-  isFocused={false}
-  isRequired={false}
-  labelText=""
-  maxRows={4}
-  multiline={false}
-  name="integer"
-  padding="1rem"
-  password={false}
-  placeholderColor="gray.light"
-  plainText={false}
-  validationError=""
->
-  <Component
-    autoComplete="no"
-    className="c0"
-    id="integer"
-    name="integer"
-    options={
-      Object {
-        "initValue": undefined,
-        "numeral": true,
-        "numeralDecimalScale": 0,
-        "numeralThousandsGroupStyle": "thousand",
-      }
-    }
-    readOnly={false}
-    tabIndex="0"
-  >
-    <input
-      autoComplete="no"
-      className="c0"
-      id="integer"
-      name="integer"
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      readOnly={false}
-      tabIndex="0"
-      type="text"
-      value=""
-    />
-  </Component>
-</TextInputComponent>
 `;
 
 exports[`TextField with assistive text should return a TextField object contain Assistive Text 1`] = `
@@ -2398,6 +1578,7 @@ exports[`TextField with assistive text should return a TextField object contain 
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -2476,6 +1657,7 @@ exports[`TextField with assistive text should return a TextField object contain 
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullName"
     name="exampleFullName"
     readOnly={false}
@@ -2535,6 +1717,7 @@ exports[`TextField with custom assistive text props should return a TextField wi
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -2613,6 +1796,7 @@ exports[`TextField with custom assistive text props should return a TextField wi
 >
   <input
     className="c1"
+    disabled={false}
     id="formatterOptions"
     name="formatterOptions"
     readOnly={false}
@@ -2646,6 +1830,7 @@ exports[`TextField with custom control group props should return a TextField wit
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -2724,6 +1909,7 @@ exports[`TextField with custom control group props should return a TextField wit
 >
   <input
     className="c1"
+    disabled={false}
     id="formatterOptions"
     name="formatterOptions"
     readOnly={false}
@@ -2775,6 +1961,7 @@ exports[`TextField with custom control label props should return a TextField wit
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -2853,6 +2040,7 @@ exports[`TextField with custom control label props should return a TextField wit
 >
   <input
     className="c1"
+    disabled={false}
     id="formatterOptions"
     name="formatterOptions"
     readOnly={false}
@@ -2944,6 +2132,7 @@ exports[`TextField with formStyle set to filled and plain text should return a f
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullName"
     name="exampleFullName"
     readOnly={true}
@@ -2994,11 +2183,13 @@ exports[`TextField with formStyle set to filled should return a formStyle filled
 .c1 {
   background-color: hsl(0,0%,90%);
   color: inherit;
+  border: 0;
   border-bottom: 1px solid hsl(0,0%,25%);
   border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1.5rem 1rem 0.5rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -3083,6 +2274,7 @@ exports[`TextField with formStyle set to filled should return a formStyle filled
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullName"
     name="exampleFullName"
     readOnly={false}
@@ -3178,6 +2370,7 @@ exports[`TextField with formStyle set to filled, multiline and plain text should
   />
   <textarea
     className="c1"
+    disabled={false}
     id="exampleFullName"
     name="exampleFullName"
     onChange={[Function]}
@@ -3279,6 +2472,7 @@ exports[`TextField with object in assistive text should return a TextField objec
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -3357,6 +2551,7 @@ exports[`TextField with object in assistive text should return a TextField objec
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullName"
     name="exampleFullName"
     readOnly={false}
@@ -3442,6 +2637,7 @@ exports[`TextField with some other props should return a TextField object contai
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -3520,6 +2716,7 @@ exports[`TextField with some other props should return a TextField object contai
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullName"
     link="abc"
     name="exampleFullName"
@@ -3600,6 +2797,7 @@ exports[`TextField with validation error should return a TextField object contai
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -3678,6 +2876,7 @@ exports[`TextField with validation error should return a TextField object contai
 >
   <input
     className="c1"
+    disabled={false}
     id="exampleFullName"
     name="exampleFullName"
     readOnly={false}

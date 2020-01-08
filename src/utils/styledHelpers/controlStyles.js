@@ -98,6 +98,7 @@ const getFinalStyle = props => {
     border-radius: ${resolveBorderRadius(props)};
     outline: 0;
     width: 100%;
+    box-sizing: border-box;
     ${getFinalFieldPadding(padding, formStyle, labelText)}
     &[disabled] {
       ${disabledStyle}
@@ -111,6 +112,7 @@ const getFinalStyle = props => {
   `;
   if (formStyle === 'filled') {
     return `
+      border: 0;
       border-bottom: 1px solid ${resolvedBorderColor};
       border-radius: ${scale} ${scale} 0 0;
       ${controlSharedStyle}

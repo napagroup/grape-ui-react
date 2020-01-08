@@ -17,6 +17,7 @@ import {
   fontStyleCore,
   letterSpacingCore,
   lineHeightCore,
+  refType,
   spaceProps,
   textAlignCore,
   textDecorationCore,
@@ -189,6 +190,9 @@ SelectField.propTypes = {
    * Use 'filled' or 'outlined'
    * @see See [Material Design](https://material.io/components/text-fields/#usage) for options */
   formStyle: PropTypes.string,
+  /** Allows for a ref to be defined to the DOM input.
+   * @see See [React-Select/Replacing Components](https://react-select.com/props#replacing-components) for more */
+  inputRef: refType,
   /** Should be used when the control is not meant to be required and is able to handle a null value.
    * @see See [React-Select/Select-Props](https://react-select.com/props#select-props) for more on this prop. */
   isClearable: PropTypes.bool,
@@ -224,6 +228,7 @@ SelectField.defaultProps = {
   controlLabelProps: {},
   disabled: false,
   formStyle: 'outlined',
+  inputRef: () => {},
   isClearable: false,
   isCreatable: false,
   isMulti: false,

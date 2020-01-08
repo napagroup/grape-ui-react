@@ -9,6 +9,7 @@ exports[`TextFieldComponent base should return a TextFieldComponent object 1`] =
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -99,6 +100,7 @@ exports[`TextFieldComponent base should return a large TextFieldComponent object
   border-radius: 8px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
@@ -189,6 +191,7 @@ exports[`TextFieldComponent base should return a small TextFieldComponent object
   border-radius: 2px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
@@ -279,6 +282,7 @@ exports[`TextFieldComponent with a currency attribute should return a TextFieldC
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -375,6 +379,7 @@ exports[`TextFieldComponent with a integer attribute should return a TextFieldCo
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -471,6 +476,7 @@ exports[`TextFieldComponent with a numeric attribute should return a TextFieldCo
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -567,6 +573,7 @@ exports[`TextFieldComponent with a password attribute should return a TextFieldC
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -657,6 +664,7 @@ exports[`TextFieldComponent with a phone attribute should return a TextFieldComp
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -753,6 +761,7 @@ exports[`TextFieldComponent with a postalCode attribute should return a TextFiel
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -849,6 +858,7 @@ exports[`TextFieldComponent with an email attribute should return a TextFieldCom
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;

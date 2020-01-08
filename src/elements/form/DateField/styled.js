@@ -15,6 +15,7 @@ import {
   fontStyleCore,
   letterSpacingCore,
   lineHeightCore,
+  refType,
   spaceProps,
   textAlignCore,
   textDecorationCore,
@@ -122,6 +123,7 @@ const renderDateFieldComponent = dateFieldProps => {
     format,
     formStyle,
     inputProps,
+    inputRef,
     labelText,
     placeholder,
     validationError,
@@ -129,6 +131,7 @@ const renderDateFieldComponent = dateFieldProps => {
   const controlProps = {
     ...inputProps,
     disabled,
+    ref: inputRef,
   };
   const stylingProps = {
     bg,
@@ -255,6 +258,8 @@ DateField.propTypes = {
   /** Additional props to add to the input component. The value key is ignored: use the value prop instead.
    * @see See [React-Day-Picker DayPicker API](https://react-day-picker.js.org/api/DayPickerInput#inputProps) for more */
   inputProps: PropTypes.object,
+  /** Allows for a ref to be defined to the DOM input */
+  inputRef: refType,
   /** This will add an asterisk (*) to the `labelText` and provided `assistiveText` if none is provided. */
   isRequired: PropTypes.bool,
   /** The string value displayed on top of the control in the `ControlLabel` component. */
@@ -323,6 +328,7 @@ DateField.defaultProps = {
   format: DEFAULT_DATE_FORMAT,
   formStyle: 'outlined',
   inputProps: {},
+  inputRef: () => {},
   isRequired: false,
   labelText: '',
   locale: 'en',

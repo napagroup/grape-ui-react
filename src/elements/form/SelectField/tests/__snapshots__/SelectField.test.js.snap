@@ -42,6 +42,7 @@ exports[`SelectField Component should return a SelectField that contains SelectF
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -345,6 +346,7 @@ exports[`SelectField Component with Assistive Text should return a SelectField w
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -564,6 +566,7 @@ exports[`SelectField Component with custom Control Group props should return a S
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -808,6 +811,7 @@ exports[`SelectField Component with custom Control Label props should return a S
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -1062,6 +1066,7 @@ exports[`SelectField Component with space should return a SelectField with space
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -1316,6 +1321,7 @@ exports[`SelectField Component with space should return a SelectField with space
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -1570,6 +1576,7 @@ exports[`SelectField Component with style should return a SelectField that is fr
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -1824,6 +1831,7 @@ exports[`SelectField Component with style should return a SelectField with backg
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -2078,6 +2086,7 @@ exports[`SelectField Component with style should return a SelectField with orang
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -2332,6 +2341,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   border-radius: 8px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -2586,6 +2596,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   border-radius: 2px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -2840,6 +2851,7 @@ exports[`SelectField that is disabled should return a SelectField with isDisable
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   opacity: 0.3;
 }
@@ -3101,6 +3113,7 @@ exports[`SelectField with custom assistive text props should return a SelectFiel
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -3355,6 +3368,7 @@ exports[`SelectField with custom menu elevation should return a SelectField with
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -3609,6 +3623,7 @@ exports[`SelectField with custom z-index should return a SelectField with differ
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -3863,6 +3878,7 @@ exports[`SelectField with focus should return a SelectField with isFocused set t
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   border-color: hsl(323.3,84.6%,28%);
   box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
@@ -4105,6 +4121,7 @@ exports[`SelectField with isCreatable prop set to true should return a Creatable
   border-radius: 2px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -4353,6 +4370,7 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField t
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -4594,6 +4612,7 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField t
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -4849,6 +4868,7 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField w
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 

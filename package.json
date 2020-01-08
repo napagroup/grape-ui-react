@@ -1,6 +1,6 @@
 {
   "name": "grape-ui-react",
-  "version": "0.8.0-alpha-5.0",
+  "version": "0.8.0",
   "description": "A React component library built with styled-components.",
   "main": "lib/index.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "pretest": "npm run test:clean && npm run lint",
     "start": "npx styleguidist server",
     "test:clean": "rimraf ./coverage",
+    "test:quick": "cross-env NODE_ENV=test jest",
     "test": "cross-env NODE_ENV=test jest --coverage",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "test:update": "cross-env NODE_ENV=test jest -u"
@@ -79,13 +80,15 @@
     "moment-timezone": "0.5.27",
     "polished": "^3.4.1",
     "prop-types": "^15.7.2",
-    "react": "^16.9.0",
+    "react": "16.12.0",
     "react-checkbox-group": "^4.0.1",
     "react-day-picker": "7.3.2",
-    "react-dom": "^16.9.0",
+    "react-dom": "16.12.0",
+    "react-hook-form": "^3.28.15",
+    "react-hook-form-input": "^1.1.10",
     "react-image": "^2.2.0",
     "react-moment": "~0.9.7",
-    "react-router-dom": "^4.2.0",
+    "react-router-dom": "5.0.0",
     "react-select": "^2.4.4",
     "react-textarea-autosize": "^7.1.0",
     "styled-components": "^4.4.0",
@@ -119,7 +122,7 @@
     "cross-env": "^6.0.0",
     "css-loader": "^3.3.0",
     "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.0",
     "eslint": "^6.4.0",
     "eslint-config-airbnb": "^18.0.1",
@@ -132,7 +135,7 @@
     "jest-cli": "^24.9.0",
     "jest-styled-components": "^6.3.3",
     "react-styleguidist": "^10.3.2",
-    "react-test-renderer": "^16.9.0",
+    "react-test-renderer": "^16.12.0",
     "style-loader": "^1.0.1",
     "webpack": "^4.41.0"
   }

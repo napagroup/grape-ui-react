@@ -81,16 +81,4 @@ describe('DateFieldComponent OnChange', () => {
       selectedDay: callbackData.selectedDate,
     }));
   });
-  it('should test Calendar OnChange function toBeCalledWith callbackData', () => {
-    const callbackData = {
-      formattedDay: '2019-12-02',
-    };
-
-    const onChangeMock = jest.fn();
-    const component = mount(<DateFieldComponent calendarOnly onChange={onChangeMock} />);
-    component.find('[aria-label="Mon Dec 2, 2019"]').simulate('click');
-    expect(onChangeMock).toBeCalledWith(expect.objectContaining({
-      formattedDay: callbackData.formattedDay,
-    }));
-  });
 });

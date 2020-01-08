@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { control, typography } from 'src/utils/styledHelpers';
+import { control, typography, refType } from 'src/utils/styledHelpers';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import Cleave from 'cleave.js/react';
 import CleavePhone from 'cleave.js/dist/addons/cleave-phone.us'; // eslint-disable-line no-unused-vars
@@ -15,6 +15,7 @@ const propsToTrim = [
   'currency',
   'email',
   'formatterOptions',
+  'inputRef',
   'integer',
   'maxRows',
   'multiline',
@@ -39,32 +40,50 @@ const getInputType = props => {
 
 const getTabIndex = plainText => (plainText ? '-1' : '0');
 
-export const TextInputComponent = ({
-  maxRows, multiline, plainText, ...props
-}) => {
-  if (isCleaveInput(props)) {
-    return <Cleave autoComplete="no" options={cleaveOption(props)} readOnly={plainText} tabIndex={getTabIndex(plainText)} {...removeSomeProps(props, propsToTrim)} />;
+export const TextInputComponent = props => {
+  const {
+    inputRef, maxRows, multiline, plainText, ...otherProps
+  } = props;
+  if (isCleaveInput(otherProps)) {
+    return (
+      <Cleave
+        autoComplete="no"
+        htmlRef={inputRef}
+        options={cleaveOption(otherProps)}
+        readOnly={plainText}
+        tabIndex={getTabIndex(plainText)}
+        {...removeSomeProps(otherProps, propsToTrim)}
+      />
+    );
   }
   if (multiline) {
     return (
       <>
         <div className="multiline-scroll-shield" />
         <TextareaAutosize
+          inputRef={inputRef}
           maxRows={maxRows}
           readOnly={plainText}
           tabIndex={getTabIndex(plainText)}
-          {...removeSomeProps(props, propsToTrim)}
+          {...removeSomeProps(otherProps, propsToTrim)}
         />
       </>
     );
   }
   return (
-    <input readOnly={plainText} tabIndex={getTabIndex(plainText)} type={getInputType(props)} {...removeSomeProps(props, propsToTrim)} />
+    <input
+      ref={inputRef}
+      readOnly={plainText}
+      tabIndex={getTabIndex(plainText)}
+      type={getInputType(otherProps)}
+      {...removeSomeProps(otherProps, propsToTrim)}
+    />
   );
 };
 
 TextInputComponent.propTypes = {
   email: PropTypes.bool,
+  inputRef: refType,
   maxRows: PropTypes.number,
   multiline: PropTypes.bool,
   password: PropTypes.bool,
@@ -73,6 +92,7 @@ TextInputComponent.propTypes = {
 
 TextInputComponent.defaultProps = {
   email: false,
+  inputRef: () => {},
   maxRows: 4,
   multiline: false,
   password: false,

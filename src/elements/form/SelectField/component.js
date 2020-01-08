@@ -4,6 +4,7 @@ import {
   control,
   defaultControlStyles,
   resolveBoxShadow,
+  refType,
   resolveColor,
   resolveZIndex,
 } from 'src/utils/styledHelpers';
@@ -118,6 +119,7 @@ const propsToTrim = [
 ];
 export const SelectComponent = ({ children, ...props }) => {
   const {
+    inputRef,
     isCreatable,
     isDisabled,
     isFocused,
@@ -126,6 +128,7 @@ export const SelectComponent = ({ children, ...props }) => {
   if (isCreatable) {
     return (
       <Creatable
+        ref={inputRef}
         className="grape-ui-select-container"
         classNamePrefix="grape-ui-select"
         isDisabled={isDisabled}
@@ -140,6 +143,7 @@ export const SelectComponent = ({ children, ...props }) => {
   }
   return (
     <Select
+      ref={inputRef}
       className="grape-ui-select-container"
       classNamePrefix="grape-ui-select"
       isDisabled={isDisabled}
@@ -154,6 +158,7 @@ export const SelectComponent = ({ children, ...props }) => {
 };
 SelectComponent.propTypes = {
   children: PropTypes.any,
+  inputRef: refType,
   isCreatable: PropTypes.bool,
   isDisabled: PropTypes.bool,
   isFocused: PropTypes.bool,
@@ -161,6 +166,7 @@ SelectComponent.propTypes = {
 };
 SelectComponent.defaultProps = {
   children: null,
+  inputRef: () => {},
   isCreatable: false,
   isDisabled: false,
   isFocused: false,

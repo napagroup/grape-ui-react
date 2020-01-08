@@ -30,6 +30,7 @@ exports[`DateField Component base should return a DateField Input object as disa
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   opacity: 0.3;
 }
@@ -71,7 +72,6 @@ exports[`DateField Component base should return a DateField Input object as disa
 .c1 .DayPickerInput-OverlayWrapper {
   position: absolute;
   z-index: 1010;
-  width: 100%;
   max-width: 100%;
 }
 
@@ -88,6 +88,7 @@ exports[`DateField Component base should return a DateField Input object as disa
   background-size: 50%;
   background-repeat: no-repeat;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .c1 .DayPicker-NavButton:hover {
@@ -169,6 +170,7 @@ exports[`DateField Component base should return a DateField Input object as disa
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
+  pointer-events: auto;
   box-sizing: border-box;
   height: 40px;
   width: 40px;
@@ -184,6 +186,7 @@ exports[`DateField Component base should return a DateField Input object as disa
   font-size: small;
   padding: 0.5rem;
   min-width: 1rem;
+  pointer-events: auto;
   border-right: 1px solid hsl(0,0%,75%);
   color: hsl(0,0%,50%);
   vertical-align: middle;
@@ -207,6 +210,7 @@ exports[`DateField Component base should return a DateField Input object as disa
   color: #4A90E2;
   font-size: 0.875em;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .c1 .DayPicker-Day--today {
@@ -243,11 +247,14 @@ exports[`DateField Component base should return a DateField Input object as disa
   color: hsl(0,0%,40%);
   cursor: default;
   background: transparent !important;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .c1 .DayPicker-Day--disabled {
   color: hsl(0,0%,75%);
   cursor: default;
+  pointer-events: none;
 }
 
 .c1.c1.c1 .DayPickerInput {
@@ -329,6 +336,7 @@ exports[`DateField Component base should return a DateField Input object as disa
 }
 
 .c1 .DayPickerInput-OverlayWrapper {
+  pointer-events: none;
   left: 1rem;
   right: auto;
 }
@@ -453,7 +461,6 @@ exports[`DateField Component base should return a DateField object as Calendar 1
 .c1 .DayPickerInput-OverlayWrapper {
   position: absolute;
   z-index: 1010;
-  width: 100%;
   max-width: 100%;
 }
 
@@ -470,6 +477,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
   background-size: 50%;
   background-repeat: no-repeat;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .c1 .DayPicker-NavButton:hover {
@@ -551,6 +559,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
+  pointer-events: auto;
   box-sizing: border-box;
   height: 40px;
   width: 40px;
@@ -566,6 +575,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
   font-size: small;
   padding: 0.5rem;
   min-width: 1rem;
+  pointer-events: auto;
   border-right: 1px solid hsl(0,0%,75%);
   color: hsl(0,0%,50%);
   vertical-align: middle;
@@ -589,6 +599,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
   color: #4A90E2;
   font-size: 0.875em;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .c1 .DayPicker-Day--today {
@@ -625,11 +636,14 @@ exports[`DateField Component base should return a DateField object as Calendar 1
   color: hsl(0,0%,40%);
   cursor: default;
   background: transparent !important;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .c1 .DayPicker-Day--disabled {
   color: hsl(0,0%,75%);
   cursor: default;
+  pointer-events: none;
 }
 
 .c1.c1.c1 .DayPickerInput {
@@ -643,6 +657,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
 }
 
 .c1 .DayPickerInput-OverlayWrapper {
+  pointer-events: none;
   left: 1rem;
   right: auto;
 }
@@ -717,7 +732,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
               <div
                 onKeyUp={[Function]}
               >
-                December 2019
+                January 2020
               </div>
             </div>
             <div
@@ -809,8 +824,20 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 role="row"
               >
                 <div
+                  aria-disabled={true}
+                  className="DayPicker-Day DayPicker-Day--outside"
+                />
+                <div
+                  aria-disabled={true}
+                  className="DayPicker-Day DayPicker-Day--outside"
+                />
+                <div
+                  aria-disabled={true}
+                  className="DayPicker-Day DayPicker-Day--outside"
+                />
+                <div
                   aria-disabled={false}
-                  aria-label="Sun Dec 1, 2019"
+                  aria-label="Wed Jan 1, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -822,7 +849,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Mon Dec 2, 2019"
+                  aria-label="Thu Jan 2, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -834,7 +861,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Tue Dec 3, 2019"
+                  aria-label="Fri Jan 3, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -846,7 +873,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Wed Dec 4, 2019"
+                  aria-label="Sat Jan 4, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -856,9 +883,14 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   4
                 </div>
+              </div>
+              <div
+                className="DayPicker-Week"
+                role="row"
+              >
                 <div
                   aria-disabled={false}
-                  aria-label="Thu Dec 5, 2019"
+                  aria-label="Sun Jan 5, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -870,7 +902,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Fri Dec 6, 2019"
+                  aria-label="Mon Jan 6, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -882,9 +914,9 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Sat Dec 7, 2019"
+                  aria-label="Tue Jan 7, 2020"
                   aria-selected={false}
-                  className="DayPicker-Day"
+                  className="DayPicker-Day DayPicker-Day--today"
                   onClick={[Function]}
                   onKeyDown={[Function]}
                   role="gridcell"
@@ -892,14 +924,9 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   7
                 </div>
-              </div>
-              <div
-                className="DayPicker-Week"
-                role="row"
-              >
                 <div
                   aria-disabled={false}
-                  aria-label="Sun Dec 8, 2019"
+                  aria-label="Wed Jan 8, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -911,7 +938,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Mon Dec 9, 2019"
+                  aria-label="Thu Jan 9, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -923,7 +950,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Tue Dec 10, 2019"
+                  aria-label="Fri Jan 10, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -935,7 +962,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Wed Dec 11, 2019"
+                  aria-label="Sat Jan 11, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -945,9 +972,14 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   11
                 </div>
+              </div>
+              <div
+                className="DayPicker-Week"
+                role="row"
+              >
                 <div
                   aria-disabled={false}
-                  aria-label="Thu Dec 12, 2019"
+                  aria-label="Sun Jan 12, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -959,7 +991,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Fri Dec 13, 2019"
+                  aria-label="Mon Jan 13, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -971,7 +1003,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Sat Dec 14, 2019"
+                  aria-label="Tue Jan 14, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -981,14 +1013,9 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   14
                 </div>
-              </div>
-              <div
-                className="DayPicker-Week"
-                role="row"
-              >
                 <div
                   aria-disabled={false}
-                  aria-label="Sun Dec 15, 2019"
+                  aria-label="Wed Jan 15, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1000,7 +1027,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Mon Dec 16, 2019"
+                  aria-label="Thu Jan 16, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1012,7 +1039,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Tue Dec 17, 2019"
+                  aria-label="Fri Jan 17, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1024,7 +1051,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Wed Dec 18, 2019"
+                  aria-label="Sat Jan 18, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1034,9 +1061,14 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   18
                 </div>
+              </div>
+              <div
+                className="DayPicker-Week"
+                role="row"
+              >
                 <div
                   aria-disabled={false}
-                  aria-label="Thu Dec 19, 2019"
+                  aria-label="Sun Jan 19, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1048,9 +1080,9 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Fri Dec 20, 2019"
+                  aria-label="Mon Jan 20, 2020"
                   aria-selected={false}
-                  className="DayPicker-Day DayPicker-Day--today"
+                  className="DayPicker-Day"
                   onClick={[Function]}
                   onKeyDown={[Function]}
                   role="gridcell"
@@ -1060,7 +1092,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Sat Dec 21, 2019"
+                  aria-label="Tue Jan 21, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1070,14 +1102,9 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   21
                 </div>
-              </div>
-              <div
-                className="DayPicker-Week"
-                role="row"
-              >
                 <div
                   aria-disabled={false}
-                  aria-label="Sun Dec 22, 2019"
+                  aria-label="Wed Jan 22, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1089,7 +1116,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Mon Dec 23, 2019"
+                  aria-label="Thu Jan 23, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1101,7 +1128,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Tue Dec 24, 2019"
+                  aria-label="Fri Jan 24, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1113,7 +1140,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Wed Dec 25, 2019"
+                  aria-label="Sat Jan 25, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1123,9 +1150,14 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   25
                 </div>
+              </div>
+              <div
+                className="DayPicker-Week"
+                role="row"
+              >
                 <div
                   aria-disabled={false}
-                  aria-label="Thu Dec 26, 2019"
+                  aria-label="Sun Jan 26, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1137,7 +1169,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Fri Dec 27, 2019"
+                  aria-label="Mon Jan 27, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1149,7 +1181,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Sat Dec 28, 2019"
+                  aria-label="Tue Jan 28, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1159,14 +1191,9 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   28
                 </div>
-              </div>
-              <div
-                className="DayPicker-Week"
-                role="row"
-              >
                 <div
                   aria-disabled={false}
-                  aria-label="Sun Dec 29, 2019"
+                  aria-label="Wed Jan 29, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1178,7 +1205,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Mon Dec 30, 2019"
+                  aria-label="Thu Jan 30, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1190,7 +1217,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Tue Dec 31, 2019"
+                  aria-label="Fri Jan 31, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1200,18 +1227,6 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   31
                 </div>
-                <div
-                  aria-disabled={true}
-                  className="DayPicker-Day DayPicker-Day--outside"
-                />
-                <div
-                  aria-disabled={true}
-                  className="DayPicker-Day DayPicker-Day--outside"
-                />
-                <div
-                  aria-disabled={true}
-                  className="DayPicker-Day DayPicker-Day--outside"
-                />
                 <div
                   aria-disabled={true}
                   className="DayPicker-Day DayPicker-Day--outside"
@@ -1256,6 +1271,7 @@ exports[`DateField Component base should return a DateField object as Input 1`] 
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -1296,7 +1312,6 @@ exports[`DateField Component base should return a DateField object as Input 1`] 
 .c1 .DayPickerInput-OverlayWrapper {
   position: absolute;
   z-index: 1010;
-  width: 100%;
   max-width: 100%;
 }
 
@@ -1313,6 +1328,7 @@ exports[`DateField Component base should return a DateField object as Input 1`] 
   background-size: 50%;
   background-repeat: no-repeat;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .c1 .DayPicker-NavButton:hover {
@@ -1394,6 +1410,7 @@ exports[`DateField Component base should return a DateField object as Input 1`] 
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
+  pointer-events: auto;
   box-sizing: border-box;
   height: 40px;
   width: 40px;
@@ -1409,6 +1426,7 @@ exports[`DateField Component base should return a DateField object as Input 1`] 
   font-size: small;
   padding: 0.5rem;
   min-width: 1rem;
+  pointer-events: auto;
   border-right: 1px solid hsl(0,0%,75%);
   color: hsl(0,0%,50%);
   vertical-align: middle;
@@ -1432,6 +1450,7 @@ exports[`DateField Component base should return a DateField object as Input 1`] 
   color: #4A90E2;
   font-size: 0.875em;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .c1 .DayPicker-Day--today {
@@ -1468,11 +1487,14 @@ exports[`DateField Component base should return a DateField object as Input 1`] 
   color: hsl(0,0%,40%);
   cursor: default;
   background: transparent !important;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .c1 .DayPicker-Day--disabled {
   color: hsl(0,0%,75%);
   cursor: default;
+  pointer-events: none;
 }
 
 .c1.c1.c1 .DayPickerInput {
@@ -1550,6 +1572,7 @@ exports[`DateField Component base should return a DateField object as Input 1`] 
 }
 
 .c1 .DayPickerInput-OverlayWrapper {
+  pointer-events: none;
   left: 1rem;
   right: auto;
 }
@@ -1639,6 +1662,7 @@ exports[`DateField Component base should return a DateField object as Input disp
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -1679,7 +1703,6 @@ exports[`DateField Component base should return a DateField object as Input disp
 .c1 .DayPickerInput-OverlayWrapper {
   position: absolute;
   z-index: 1010;
-  width: 100%;
   max-width: 100%;
 }
 
@@ -1696,6 +1719,7 @@ exports[`DateField Component base should return a DateField object as Input disp
   background-size: 50%;
   background-repeat: no-repeat;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .c1 .DayPicker-NavButton:hover {
@@ -1777,6 +1801,7 @@ exports[`DateField Component base should return a DateField object as Input disp
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
+  pointer-events: auto;
   box-sizing: border-box;
   height: 40px;
   width: 40px;
@@ -1792,6 +1817,7 @@ exports[`DateField Component base should return a DateField object as Input disp
   font-size: small;
   padding: 0.5rem;
   min-width: 1rem;
+  pointer-events: auto;
   border-right: 1px solid hsl(0,0%,75%);
   color: hsl(0,0%,50%);
   vertical-align: middle;
@@ -1815,6 +1841,7 @@ exports[`DateField Component base should return a DateField object as Input disp
   color: #4A90E2;
   font-size: 0.875em;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .c1 .DayPicker-Day--today {
@@ -1851,11 +1878,14 @@ exports[`DateField Component base should return a DateField object as Input disp
   color: hsl(0,0%,40%);
   cursor: default;
   background: transparent !important;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .c1 .DayPicker-Day--disabled {
   color: hsl(0,0%,75%);
   cursor: default;
+  pointer-events: none;
 }
 
 .c1.c1.c1 .DayPickerInput {
@@ -1933,6 +1963,7 @@ exports[`DateField Component base should return a DateField object as Input disp
 }
 
 .c1 .DayPickerInput-OverlayWrapper {
+  pointer-events: none;
   left: 1rem;
   right: auto;
 }
@@ -2022,6 +2053,7 @@ exports[`DateField Component base should return a DateField object as Input disp
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -2062,7 +2094,6 @@ exports[`DateField Component base should return a DateField object as Input disp
 .c1 .DayPickerInput-OverlayWrapper {
   position: absolute;
   z-index: 1010;
-  width: 100%;
   max-width: 100%;
 }
 
@@ -2079,6 +2110,7 @@ exports[`DateField Component base should return a DateField object as Input disp
   background-size: 50%;
   background-repeat: no-repeat;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .c1 .DayPicker-NavButton:hover {
@@ -2160,6 +2192,7 @@ exports[`DateField Component base should return a DateField object as Input disp
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
+  pointer-events: auto;
   box-sizing: border-box;
   height: 40px;
   width: 40px;
@@ -2175,6 +2208,7 @@ exports[`DateField Component base should return a DateField object as Input disp
   font-size: small;
   padding: 0.5rem;
   min-width: 1rem;
+  pointer-events: auto;
   border-right: 1px solid hsl(0,0%,75%);
   color: hsl(0,0%,50%);
   vertical-align: middle;
@@ -2198,6 +2232,7 @@ exports[`DateField Component base should return a DateField object as Input disp
   color: #4A90E2;
   font-size: 0.875em;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .c1 .DayPicker-Day--today {
@@ -2234,11 +2269,14 @@ exports[`DateField Component base should return a DateField object as Input disp
   color: hsl(0,0%,40%);
   cursor: default;
   background: transparent !important;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .c1 .DayPicker-Day--disabled {
   color: hsl(0,0%,75%);
   cursor: default;
+  pointer-events: none;
 }
 
 .c1.c1.c1 .DayPickerInput {
@@ -2316,6 +2354,7 @@ exports[`DateField Component base should return a DateField object as Input disp
 }
 
 .c1 .DayPickerInput-OverlayWrapper {
+  pointer-events: none;
   left: 1rem;
   right: auto;
 }
@@ -2422,11 +2461,13 @@ exports[`DateField Component base should return a DateFieldComponent object as I
   text-decoration: inherit;
   box-sizing: border-box;
   width: 100%;
+  border: 0;
   border-bottom: 1px solid hsl(0,0%,25%);
   border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1.5rem 1rem 0.5rem;
 }
 
@@ -2467,7 +2508,6 @@ exports[`DateField Component base should return a DateFieldComponent object as I
 .c1 .DayPickerInput-OverlayWrapper {
   position: absolute;
   z-index: 1010;
-  width: 100%;
   max-width: 100%;
 }
 
@@ -2484,6 +2524,7 @@ exports[`DateField Component base should return a DateFieldComponent object as I
   background-size: 50%;
   background-repeat: no-repeat;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .c1 .DayPicker-NavButton:hover {
@@ -2565,6 +2606,7 @@ exports[`DateField Component base should return a DateFieldComponent object as I
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
+  pointer-events: auto;
   box-sizing: border-box;
   height: 40px;
   width: 40px;
@@ -2580,6 +2622,7 @@ exports[`DateField Component base should return a DateFieldComponent object as I
   font-size: small;
   padding: 0.5rem;
   min-width: 1rem;
+  pointer-events: auto;
   border-right: 1px solid hsl(0,0%,75%);
   color: hsl(0,0%,50%);
   vertical-align: middle;
@@ -2603,6 +2646,7 @@ exports[`DateField Component base should return a DateFieldComponent object as I
   color: #4A90E2;
   font-size: 0.875em;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .c1 .DayPicker-Day--today {
@@ -2639,11 +2683,14 @@ exports[`DateField Component base should return a DateFieldComponent object as I
   color: hsl(0,0%,40%);
   cursor: default;
   background: transparent !important;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .c1 .DayPicker-Day--disabled {
   color: hsl(0,0%,75%);
   cursor: default;
+  pointer-events: none;
 }
 
 .c1.c1.c1 .DayPickerInput {
@@ -2727,6 +2774,7 @@ exports[`DateField Component base should return a DateFieldComponent object as I
 }
 
 .c1 .DayPickerInput-OverlayWrapper {
+  pointer-events: none;
   left: 1rem;
   right: auto;
 }

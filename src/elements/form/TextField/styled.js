@@ -13,6 +13,7 @@ import {
   fontStyleCore,
   letterSpacingCore,
   lineHeightCore,
+  refType,
   spaceProps,
   textAlignCore,
   textDecorationCore,
@@ -55,7 +56,6 @@ const propsToTrim = [
   'controlId',
   'controlLabelProps',
   'labelText',
-  'controlLabelProps',
   'validationError',
   ...Object.keys(spaceProps.propTypes),
 ];
@@ -103,21 +103,45 @@ export const TextField = props => {
 };
 
 TextField.propTypes = {
+  /** Defines the color for the label and border color when the focus is in the control. */
   activeColor: PropTypes.string,
+  /** Provides helper text for the control.  When provided with no `assistiveText`, `isRequired` will add a default '*Required` helper text.  When provided with `validationError`, `assistiveText`'s value will not be displayed on the UI. */
   assistiveText: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.string,
   ]),
+  /** Allows for custom props to be passed down to the `AsssistiveText` component. */
   assistiveTextProps: PropTypes.object,
+  /** Defines the background color for the control. */
   bg: PropTypes.string,
+  /** Allows for custom props to be passed down to the `ControlGroup` component. */
   controlGroupProps: PropTypes.object,
+  /** Will pass its value to the control's `id` as well as the label's `htmlFor`.
+   * @deprecated Do not use! Use `name` instead!
+  */
   controlId: PropTypes.string,
+  /** Allows for custom props to be passed down to the `ControlLabel` component. */
   controlLabelProps: PropTypes.object,
+  /** Basic HTML attribute, needed for styling. */
+  disabled: PropTypes.bool,
+  /** Allows for custom font family to be passed down to the control. */
   fontFamily: PropTypes.string,
+  /**
+  * Use 'filled' or 'outlined'
+  * @see See [Material Design](https://material.io/components/text-fields/#usage) for options */
   formStyle: PropTypes.string,
+  /** Allows for a ref to be defined to the DOM input.
+  * @see See [React-Select/Replacing Components](https://react-select.com/props#replacing-components) for more */
+  inputRef: refType,
+  /** This will add an asterisk (*) to the `labelText` and provided `assistiveText` if none is provided. */
   isRequired: PropTypes.bool,
+  /** The string value displayed on top of the control in the `ControlLabel` component. */
   labelText: PropTypes.string,
+  /** Should be used on each form control.  When no `id` or `controlId` are provided, `name` will populate both fields. */
   name: PropTypes.string,
+  /** Used to render a dropdown control as a `PlainText` element. */
+  plainText: PropTypes.bool,
+  /** Error text that will appear below the control when validation fires. */
   validationError: PropTypes.string,
   ...borderRadius.propTypes,
 };
@@ -130,10 +154,13 @@ TextField.defaultProps = {
   controlGroupProps: {},
   controlId: '',
   controlLabelProps: {},
+  disabled: false,
   fontFamily: defaultControlStyles.fontFamily,
   formStyle: '',
+  inputRef: () => {},
   isRequired: false,
   labelText: '',
   name: '',
+  plainText: false,
   validationError: '',
 };

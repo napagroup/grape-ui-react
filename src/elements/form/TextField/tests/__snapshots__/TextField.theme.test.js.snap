@@ -18,6 +18,7 @@ exports[`TextField using Theme Font Family should return a TextField object with
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: "DejaVu Sans Mono","Bitstream Vera Sans Mono",Courier;
   font-size: inherit;
@@ -96,6 +97,7 @@ exports[`TextField using Theme Font Family should return a TextField object with
 >
   <input
     className="c1"
+    disabled={false}
     id="myButton"
     name="myButton"
     readOnly={false}
@@ -125,6 +127,7 @@ exports[`TextField using Theme color should return a TextField object with custo
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -203,6 +206,7 @@ exports[`TextField using Theme color should return a TextField object with custo
 >
   <input
     className="c1"
+    disabled={false}
     id="myButton"
     name="myButton"
     readOnly={false}
@@ -232,6 +236,7 @@ exports[`TextField using custom brand colors should return a TextField object wi
   border-radius: 4px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   font-family: Nunito,sans-serif;
   font-size: inherit;
@@ -310,6 +315,7 @@ exports[`TextField using custom brand colors should return a TextField object wi
 >
   <input
     className="c1"
+    disabled={false}
     id="myButton"
     name="myButton"
     readOnly={false}

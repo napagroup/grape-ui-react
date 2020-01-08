@@ -51,6 +51,7 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   border-radius: 2px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -281,6 +282,7 @@ exports[`SelectField using Theme color should return a SelectField object with c
   border-radius: 2px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 
@@ -511,6 +513,7 @@ exports[`SelectField using custom brand colors should return a SelectField objec
   border-radius: 2px;
   outline: 0;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
 }
 

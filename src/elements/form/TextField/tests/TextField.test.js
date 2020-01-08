@@ -101,48 +101,136 @@ describe('TextField with an email attribute', () => {
 });
 
 describe('TextField with a currency attribute', () => {
-  it('should return a TextField of input type currency', () => {
+  it('should return a value in a currency format', () => {
     const component = mount(<ThemeProvider theme={{}}><TextField currency name="currency" /></ThemeProvider>);
-    expect(component.find('TextInputComponent')).toMatchSnapshot();
+    const inputWrapper = component.find('input');
+    const value = '314159.2653';
+    const expected = '$314,159.26';
+    inputWrapper.simulate('change', { target: { value } });
+    const actual = inputWrapper.instance().value;
+    expect(actual).toEqual(expected);
+  });
+  it('should mask characters inappropriate for currency format', () => {
+    const component = mount(<ThemeProvider theme={{}}><TextField currency name="currency" /></ThemeProvider>);
+    const inputWrapper = component.find('input');
+    const value = '314a1-59$.2653';
+    const expected = '$314,159.26';
+    inputWrapper.simulate('change', { target: { value } });
+    const actual = inputWrapper.instance().value;
+    expect(actual).toEqual(expected);
   });
 });
 
 describe('TextField with a numeric attribute', () => {
-  it('should return a TextField of input type numeric', () => {
+  it('should return a value in a numeric format', () => {
     const component = mount(<ThemeProvider theme={{}}><TextField name="numeric" numeric /></ThemeProvider>);
-    expect(component.find('TextInputComponent')).toMatchSnapshot();
+    const inputWrapper = component.find('input');
+    const value = '31415926.5385';
+    const expected = '31,415,926.53';
+    inputWrapper.simulate('change', { target: { value } });
+    const actual = inputWrapper.instance().value;
+    expect(actual).toEqual(expected);
+  });
+  it('should mask characters inappropriate for numeric format', () => {
+    const component = mount(<ThemeProvider theme={{}}><TextField name="numeric" numeric /></ThemeProvider>);
+    const inputWrapper = component.find('input');
+    const value = '($314)a15!926.5358';
+    const expected = '31,415,926.53';
+    inputWrapper.simulate('change', { target: { value } });
+    const actual = inputWrapper.instance().value;
+    expect(actual).toEqual(expected);
   });
 });
 
 describe('TextField with an integer attribute', () => {
-  it('should return a TextField of input type integer', () => {
+  it('should return a value in integer format', () => {
     const component = mount(<ThemeProvider theme={{}}><TextField integer name="integer" /></ThemeProvider>);
-    expect(component.find('TextInputComponent')).toMatchSnapshot();
+    const inputWrapper = component.find('input');
+    const value = '31415926.5358';
+    const expected = '31,415,926';
+    inputWrapper.simulate('change', { target: { value } });
+    const actual = inputWrapper.instance().value;
+    expect(actual).toEqual(expected);
+  });
+  it('should mask characters inappropriate for integer format', () => {
+    const component = mount(<ThemeProvider theme={{}}><TextField integer name="integer" /></ThemeProvider>);
+    const inputWrapper = component.find('input');
+    const value = '($314)a15!926.5358';
+    const expected = '31,415,926';
+    inputWrapper.simulate('change', { target: { value } });
+    const actual = inputWrapper.instance().value;
+    expect(actual).toEqual(expected);
   });
 });
 
 describe('TextField with a postalCode attribute', () => {
   it('should return a TextField of input type postalCode', () => {
     const component = mount(<ThemeProvider theme={{}}><TextField name="postalCode" postalCode /></ThemeProvider>);
-    expect(component.find('TextInputComponent')).toMatchSnapshot();
+    const inputWrapper = component.find('input');
+    const value = '100-16';
+    const expected = '10016';
+    inputWrapper.simulate('change', { target: { value } });
+    const actual = inputWrapper.instance().value;
+    expect(actual).toEqual(expected);
+  });
+  it('should mask characters inappropriate for integer format', () => {
+    const component = mount(<ThemeProvider theme={{}}><TextField name="postalCode" postalCode /></ThemeProvider>);
+    const inputWrapper = component.find('input');
+    const value = '100ab16-abc-12345';
+    const expected = '10016-1234';
+    inputWrapper.simulate('change', { target: { value } });
+    const actual = inputWrapper.instance().value;
+    expect(actual).toEqual(expected);
   });
 });
 
 describe('TextField with a phone attribute', () => {
-  it('should return a TextField of input type phone', () => {
+  it('should return a value in US phone format', () => {
     const component = mount(<ThemeProvider theme={{}}><TextField name="phone" phone /></ThemeProvider>);
-    expect(component.find('TextInputComponent')).toMatchSnapshot();
+    const inputWrapper = component.find('input');
+    const value = '(718)-55577-77';
+    const expected = '718-555-7777';
+    inputWrapper.simulate('change', { target: { value } });
+    const actual = inputWrapper.instance().value;
+    expect(actual).toEqual(expected);
+  });
+  it('should mask characters inappropriate for the US Phone Format', () => {
+    const component = mount(<ThemeProvider theme={{}}><TextField name="phone" phone /></ThemeProvider>);
+    const inputWrapper = component.find('input');
+    const value = '718a5557b777';
+    const expected = '718-555-7777';
+    inputWrapper.simulate('change', { target: { value } });
+    const actual = inputWrapper.instance().value;
+    expect(actual).toEqual(expected);
   });
 });
 
 describe('TextField with a formatterOptions attribute', () => {
-  it('should return a TextField with formatterOptions', () => {
+  it('should return a value based on formatterOptions', () => {
     const option = {
       numeral: true,
       numeralThousandsGroupStyle: 'thousand',
     };
     const component = mount(<ThemeProvider theme={{}}><TextField formatterOptions={option} name="formatterOptions" /></ThemeProvider>);
-    expect(component.find('TextInputComponent')).toMatchSnapshot();
+    const inputWrapper = component.find('input');
+    const value = '31415926.5385';
+    const expected = '31,415,926.53';
+    inputWrapper.simulate('change', { target: { value } });
+    const actual = inputWrapper.instance().value;
+    expect(actual).toEqual(expected);
+  });
+  it('should mask characters inappropriate based on formatterOptions', () => {
+    const option = {
+      numeral: true,
+      numeralThousandsGroupStyle: 'thousand',
+    };
+    const component = mount(<ThemeProvider theme={{}}><TextField formatterOptions={option} name="formatterOptions" /></ThemeProvider>);
+    const inputWrapper = component.find('input');
+    const value = '($314)a15!926.5358';
+    const expected = '31,415,926.53';
+    inputWrapper.simulate('change', { target: { value } });
+    const actual = inputWrapper.instance().value;
+    expect(actual).toEqual(expected);
   });
 });
 

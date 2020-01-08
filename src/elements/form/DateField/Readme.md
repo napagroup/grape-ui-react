@@ -177,7 +177,6 @@ const styles = {
 
 The state is being set via the `onChange` function. `onChange` is calling a function that gets 4 parameters:
    * `formattedDay`: string format output based on valueFormat,
-   * `input`: the inner input which has the value,
    * `modifiers`: matching day for the given modifiers,
    * `selectedDay`: the date object of the selected date.
 
@@ -200,32 +199,30 @@ class DateFieldExample extends React.Component {
     this.state = {
       birthday: new Date("5/25/2018"),
       isBirthdayEmpty: false,
-      isDisabled: false,
       isEmpty: true,
       selectedDay: "2020-01-09",
     };
   }
 
-  handleDayChange({ formattedDay, input, modifiers, selectedDay }) {
+  handleDayChange({ formattedDay, modifiers, selectedDay }) {
+    console.log({ formattedDay, modifiers, selectedDay })
     this.setState({
-      selectedDay:formattedDay,
-      isEmpty: !input.value.trim(),
-      isDisabled: modifiers.disabled === true,
+      selectedDay: formattedDay,
+      isEmpty: !selectedDay,
     });
   }
 
 
-  handleBirthdayChange({ formattedDay, input, modifiers, selectedDay }) {
+  handleBirthdayChange({ formattedDay, modifiers, selectedDay }) {
     this.setState({
       birthday: selectedDay,
       isBirthdayEmpty: !selectedDay,
-      isDisabled: modifiers.disabled === true,
     });
   }
 
 
   render() {
-    const { birthday, selectedDay, isDisabled, isEmpty, isBirthdayEmpty } = this.state;
+    const { birthday, selectedDay, isEmpty, isBirthdayEmpty } = this.state;
     const selectedLocalString= `You chose ${selectedDay}`;
     const birthdayLocalString= `You chose ${new Date(birthday).toLocaleDateString()}`;
       return (
@@ -234,9 +231,8 @@ class DateFieldExample extends React.Component {
             <Box px={1} width={[1, 1 / 2]}>
               <DateField
                 assistiveText={
-                  isEmpty && 'Please type or pick a day' ||
+                  isEmpty && 'Please pick a day' ||
                   selectedDay &&
-                  !isDisabled &&
                   selectedLocalString
                   }
                 dayPickerProps={{
@@ -244,24 +240,18 @@ class DateFieldExample extends React.Component {
                     daysOfWeek: [0, 6],
                   },
                 }}
-                labelText="Selected Date"
+                labelText="Custom Date Format"
                 format="YYYY-MM-DD"
                 name="exampleDateFieldState"
                 onChange={this.handleDayChange}
-                validationError={
-                  !isEmpty && !selectedDay && 'This day is invalid' ||
-                  selectedDay && isDisabled && 'This day is disabled' ||
-                  ''
-                }
                 value={selectedDay}
               />
             </Box>
             <Box px={1} width={[1, 1 / 2]}>
               <DateField
                 assistiveText={
-                  isEmpty && 'Please pick a birthday' ||
+                  isBirthdayEmpty && 'Please pick a day' ||
                   birthday &&
-                  !isDisabled &&
                   birthdayLocalString
                   }
                 dayPickerProps={{
@@ -270,15 +260,10 @@ class DateFieldExample extends React.Component {
                   },
                 }}
                 isRequired
-                labelText="Birthday"
+                labelText="Default Date format"
                 formStyle="filled"
                 name="exampleDateFieldStateFilled"
                 onChange={this.handleBirthdayChange}
-                validationError={
-                  !birthday && 'This day is invalid' ||
-                  birthday && isDisabled && 'This day is disabled' ||
-                  ''
-                }
                 value={birthday}
               />
             </Box>
@@ -322,17 +307,17 @@ class DateFieldExample extends React.Component {
     });
   }
 
- handleFromChange({ formattedDay, input, modifiers, selectedDay }) {
+ handleFromChange({ formattedDay, modifiers, selectedDay }) {
    this.setState({
       from: selectedDay,
-      isFromValid: !input.value || moment(selectedDay, "M/D/YYYY").isValid(),
+      isFromValid: moment(selectedDay, "M/D/YYYY").isValid(),
     });
   }
 
-  handleToChange({ formattedDay, input, modifiers, selectedDay }) {
+  handleToChange({ formattedDay, modifiers, selectedDay }) {
      this.setState({
       to: selectedDay,
-      isToValid: !input.value || moment(selectedDay, "M/D/YYYY").isValid(),
+      isToValid: moment(selectedDay, "M/D/YYYY").isValid(),
     });
   }
 
@@ -355,14 +340,14 @@ class DateFieldExample extends React.Component {
                   numberOfMonths: 2,
                   toMonth: to,
                 }}
+                labelText="From"
                 menuDirection={['column', null, 'row']}
                 menuDirectionViewportBreakpoint={{ column:  '879px', row: '880px' }}
-                labelText="From"
                 name="fromDateFieldState"
                 onChange={this.handleFromChange}
+                validationError={!isFromValid ? 'This day is invalid' : ''}
                 value={from}
                 valueFormat="M/D/YYYY"
-                validationError={!isFromValid ? 'This day is invalid' : ''}
               />
             </Box>
             <Box px={1} width={[1, 1 / 2]}>
@@ -381,9 +366,9 @@ class DateFieldExample extends React.Component {
                 menuDirection={['column', null, 'row']}
                 name="toDateFieldState"
                 onChange={this.handleToChange}
+                validationError={!isToValid ? 'This day is invalid' : ''}
                 value={to}
                 valueFormat="M/D/YYYY"
-                validationError={!isToValid ? 'This day is invalid' : ''}
               />
             </Box>
           </Flex>
@@ -440,6 +425,63 @@ import MomentLocaleUtils from 'react-day-picker/moment';
         name="exampleJaDateField"
         value={new Date("1/5/1941")}
         valueFormat="LL"
+      />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```
+
+`<DateField>` Supports a ref attribute to get to the underlying input element.
+You can pass in either a createRef(), or via "callback refs". Examples are demonstrated below
+#### Ref support - Getting to the element
+```jsx inside Markdown
+import { useRef } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+import { Button } from '../../Button';
+
+const onBtnClick = inputName => () => {
+  if(this[inputName]) {
+    this[inputName].focus();
+  }
+};
+const calendarRef = useRef();
+const onRegisterClick = () => {
+  calendarRef.current.focus();
+};
+
+const colorOptions = [
+  { label: 'Red', value: 'red' },
+  { label: 'Yellow', value: 'yellow' },
+  { label: 'Green', value: 'green' },
+  { label: 'Blue', value: 'blue' },
+];
+const linkState = () => null;
+<ThemeProvider theme={{}}>
+  <Flex flexDirection={['column', 'row']} justifyContent="center" mb={[1, 2]}>
+    <Button onClick={onRegisterClick}>
+      Focus Outlined
+    </Button>
+    <Button onClick={onBtnClick('exampleRefFilled')}>
+      Focus Filled
+    </Button>
+  </Flex>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <DateField
+        inputRef={e => { calendarRef.current = e; }}
+        labelText="Calendar"
+        name="exampleRefOutlined"
+        onChange={this.handleDayChange}
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <DateField
+        formStyle="filled"
+        inputRef={ref => { this.exampleRefFilled = ref; }}
+        labelText="Calendar"
+        menuAlignment={['left','right']}
+        name="exampleRefFilled"
       />
     </Box>
   </Flex>
