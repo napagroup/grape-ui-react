@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {
+  flexbox,
   layout,
   position,
   space,
@@ -7,6 +8,7 @@ import {
 import { BoxComponent } from './component';
 
 const Box = styled(BoxComponent)`
+  ${flexbox}
   ${layout}
   ${position}
   ${space}

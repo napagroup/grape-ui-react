@@ -62,6 +62,19 @@ describe('DateField Component base', () => {
     );
     expect(assertReactElement(element)).toMatchSnapshot();
   });
+  it('should return a DateField Input object with custom menu overlay values', () => {
+    const element = (
+      <ThemeProvider theme={{}}>
+        <DateField
+          menuOverlayBottom={['auto', 20, null, 40]}
+          menuOverlayLeft={[100, 'auto', 300]}
+          menuOverlayRight={[10, null, 30, 'auto']}
+          menuOverlayTop={['auto', 20, null, 'auto']}
+        />
+      </ThemeProvider>
+    );
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
   it('should return a DateFieldComponent object as Input with Japanese locale (日本語ロケールの入力としてDateFieldComponentオブジェクトを返す必要があります)', () => {
     const element = (
       <ThemeProvider theme={{}}>

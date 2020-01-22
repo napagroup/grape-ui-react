@@ -9,6 +9,7 @@ import DayPickerInput from 'react-day-picker/DayPickerInput';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import { formatForOnChange } from './utils';
 import { DEFAULT_DATE_FORMAT, DEFAULT_DATE_VALUE_FORMAT } from './constants';
+import { OverlayComponent } from './OverlayComponent';
 
 const propsToTrim = null;
 const dayPickerInputStyle = {
@@ -28,7 +29,6 @@ export const DateFieldComponent = props => {
     value,
     valueFormat,
   } = props;
-
   const handleDayPickerClick = selectedDay => {
     const formattedDay = formatForOnChange(selectedDay, valueFormat, locale);
     if (onChange) {
@@ -63,6 +63,7 @@ export const DateFieldComponent = props => {
       locale={locale}
       localeUtils={MomentLocaleUtils}
       onDayChange={handleOnChange}
+      overlayComponent={OverlayComponent}
       parseDate={parseDate}
       style={dayPickerInputStyle}
       value={value}

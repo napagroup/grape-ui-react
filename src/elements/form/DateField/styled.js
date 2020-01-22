@@ -237,6 +237,8 @@ DateField.propTypes = {
   controlColorProps: PropTypes.object,
   /** Allows for custom props to be passed down to the `ControlGroup` component. */
   controlGroupProps: PropTypes.object,
+  /** Define the height of the component.  Useful for definining the menu placement offset. */
+  controlHeight: PropTypes.string,
   /** Will pass its value to the control's `id` as well as the label's `htmlFor`.
    * @deprecated Do not use! Use `name` instead!
    */
@@ -286,6 +288,35 @@ DateField.propTypes = {
   menuDirectionViewportBreakpoint: PropTypes.object,
   /** `'01'`, `'02'`, `'03'`, `'04'`, `'05'`, `'06'`.  Use these to define the boxShadow and zIndex styles. */
   menuElevation: PropTypes.string,
+  /** Defines the bottom CSS property of the menu's overlay */
+  menuOverlayBottom: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
+  /** Defines the left CSS property of the menu's overlay */
+  menuOverlayLeft: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
+  /** Defines the right CSS property of the menu's overlay */
+  menuOverlayRight: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
+  /** Defines the top CSS property of the menu's overlay */
+  menuOverlayTop: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.number,
+    PropTypes.string,
+  ]),
+  /** Defines the placement of the dropdown menu */
+  menuPlacement: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.string,
+  ]),
   /** Should be used on each form control.  When no `id` or `controlId` are provided, `name` will populate both fields. */
   name: PropTypes.string,
   /** Used to render a dropdown control as a `PlainText` element. */
@@ -321,6 +352,7 @@ DateField.defaultProps = {
   calendarOnly: false,
   controlColorProps: defaultControlColorProps,
   controlGroupProps: {},
+  controlHeight: '58px',
   controlId: '',
   controlLabelProps: {},
   dayPickerProps: defaultDayPickerProps,
@@ -336,6 +368,11 @@ DateField.defaultProps = {
   menuDirection: 'column',
   menuDirectionViewportBreakpoint: {},
   menuElevation: '01',
+  menuOverlayBottom: '',
+  menuOverlayLeft: '',
+  menuOverlayRight: '',
+  menuOverlayTop: '',
+  menuPlacement: 'bottom',
   name: '',
   plainText: false,
   validationError: '',

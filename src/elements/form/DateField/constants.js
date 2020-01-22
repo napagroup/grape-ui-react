@@ -31,7 +31,6 @@ export const dayPickerClassTypes = [
   'weekNumber',
 ];
 
-
 export const DateFieldControlOverrides = `
   .DayPickerInput > input {
     background: transparent;

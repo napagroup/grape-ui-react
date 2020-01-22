@@ -39,6 +39,10 @@ export const plaintextPropsToTrim = [
   'menuDirection',
   'menuDirectionViewportBreakpoint',
   'menuElevation',
+  'menuOverlayBottom',
+  'menuOverlayLeft',
+  'menuOverlayRight',
+  'menuOverlayTop',
   'validationError',
   'valueFormat',
 ];

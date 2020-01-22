@@ -1,0 +1,550 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box Component flexbox base should return a Box object with alignSelf 1`] = `
+.c1 {
+  -webkit-align-self: baseline;
+  -ms-flex-item-align: baseline;
+  align-self: baseline;
+}
+
+.c2 {
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media screen and (min-width:40em) {
+  .c2 {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c2 {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c2 {
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className=""
+  >
+    I stay centered.
+  </div>
+  <div
+    className="c1"
+  >
+    I am at baseline.
+  </div>
+  <div
+    className="c2"
+  >
+    I am responsive.
+  </div>
+</div>
+`;
+
+exports[`Box Component flexbox base should return a Box object with flex 1`] = `
+.c1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c2 {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+.c3 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width:40em) {
+  .c2 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c2 {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c2 {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    I have Flex of 1
+  </div>
+  <div
+    className="c2"
+  >
+    I have a responsive Flex
+  </div>
+  <div
+    className="c3"
+  >
+    I have a flex string
+  </div>
+</div>
+`;
+
+exports[`Box Component flexbox base should return a Box object with flexBasis 1`] = `
+.c1 {
+  -webkit-flex-basis: 1px;
+  -ms-flex-preferred-size: 1px;
+  flex-basis: 1px;
+}
+
+.c2 {
+  -webkit-flex-basis: 2px;
+  -ms-flex-preferred-size: 2px;
+  flex-basis: 2px;
+}
+
+.c3 {
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width:40em) {
+  .c2 {
+    -webkit-flex-basis: 1px;
+    -ms-flex-preferred-size: 1px;
+    flex-basis: 1px;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c2 {
+    -webkit-flex-basis: 3px;
+    -ms-flex-preferred-size: 3px;
+    flex-basis: 3px;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c2 {
+    -webkit-flex-basis: 2px;
+    -ms-flex-preferred-size: 2px;
+    flex-basis: 2px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    I have flex basis of 1
+  </div>
+  <div
+    className="c2"
+  >
+    I have a responsive flex basis
+  </div>
+  <div
+    className="c3"
+  >
+    I have flex basis of 1
+  </div>
+</div>
+`;
+
+exports[`Box Component flexbox base should return a Box object with flexGrow 1`] = `
+.c1 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c2 {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width:40em) {
+  .c2 {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c2 {
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c2 {
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    I have flex grow of 1
+  </div>
+  <div
+    className="c2"
+  >
+    I have a responsive flex grow
+  </div>
+</div>
+`;
+
+exports[`Box Component flexbox base should return a Box object with flexShrink 1`] = `
+.c1 {
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+
+.c2 {
+  -webkit-flex-shrink: 2;
+  -ms-flex-negative: 2;
+  flex-shrink: 2;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width:40em) {
+  .c2 {
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c2 {
+    -webkit-flex-shrink: 3;
+    -ms-flex-negative: 3;
+    flex-shrink: 3;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c2 {
+    -webkit-flex-shrink: 2;
+    -ms-flex-negative: 2;
+    flex-shrink: 2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    I have flex shrink of 1
+  </div>
+  <div
+    className="c2"
+  >
+    I have a responsive flex shrink
+  </div>
+</div>
+`;
+
+exports[`Box Component flexbox base should return a Box object with justifySelf 1`] = `
+.c1 {
+  justify-self: baseline;
+}
+
+.c2 {
+  justify-self: auto;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media screen and (min-width:40em) {
+  .c2 {
+    justify-self: flex-start;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c2 {
+    justify-self: flex-end;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c2 {
+    justify-self: stretch;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className=""
+  >
+    I stay centered.
+  </div>
+  <div
+    className="c1"
+  >
+    I am at baseline.
+  </div>
+  <div
+    className="c2"
+  >
+    I am responsive.
+  </div>
+</div>
+`;
+
+exports[`Box Component flexbox base should return a Box object with order 1`] = `
+.c1 {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.c2 {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.c3 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c4 {
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width:40em) {
+  .c1 {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c1 {
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c1 {
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c2 {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c2 {
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c2 {
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c3 {
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c3 {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c3 {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media screen and (min-width:40em) {
+  .c4 {
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+}
+
+@media screen and (min-width:52em) {
+  .c4 {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media screen and (min-width:64em) {
+  .c4 {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    I am first xs, second sm, third md, fourth lg
+  </div>
+  <div
+    className="c2"
+  >
+    I am second xs, first sm, fourth md, third lg
+  </div>
+  <div
+    className="c3"
+  >
+    I am third xs, fourth sm, second md, first lg
+  </div>
+  <div
+    className="c4"
+  >
+    I am fourth xs, third sm, first md, second lg
+  </div>
+</div>
+`;

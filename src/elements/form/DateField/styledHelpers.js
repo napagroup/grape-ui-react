@@ -1,10 +1,21 @@
 import { css } from 'styled-components';
-import { variant } from 'styled-system';
+import { system, variant } from 'styled-system';
 
-export const menuStyledHelper = css`
+export const menuStyledHelper = props => css`
   .DayPickerInput-OverlayWrapper {
     pointer-events: none;
-    ${variant({
+    .DayPickerInput-OverlayWrapper--Offset {
+  ${variant({
+    prop: 'menuPlacement',
+    variants: {
+      bottom: {},
+      top: {
+        transform: `translateX(0) translateY(calc(-100% - ${props.controlHeight}))`,
+      },
+    },
+  })}
+    }
+  ${variant({
     prop: 'menuAlignment',
     variants: {
       left: {
@@ -17,10 +28,17 @@ export const menuStyledHelper = css`
       },
     },
   })}
+    ${system({
+    menuOverlayBottom: { property: 'bottom' },
+    menuOverlayLeft: { property: 'left' },
+    menuOverlayRight: { property: 'right' },
+    menuOverlayTop: { property: 'top' },
+  })}
+
     .DayPickerInput-Overlay {
       justify-content: flex-end;
       width: 100%;
-      ${variant({
+  ${variant({
     prop: 'menuAlignment',
     variants: {
       left: {
@@ -35,7 +53,7 @@ export const menuStyledHelper = css`
   }
   .DayPicker-Months {
     flex-wrap: nowrap;
-    ${variant({
+  ${variant({
     prop: 'menuDirection',
     variants: {
       column: {

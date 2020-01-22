@@ -68,6 +68,8 @@ export const flexboxProps = {
     flex: PropTypes.any,
     flexBasis: PropTypes.any,
     flexDirection: PropTypes.any,
+    flexGrow: PropTypes.any,
+    flexShrink: PropTypes.any,
     flexWrap: PropTypes.any,
     justifyContent: PropTypes.any,
     justifyItems: PropTypes.any,

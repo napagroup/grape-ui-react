@@ -14,7 +14,7 @@ import { Text } from '../../typography'; // ... from 'grape-ui-react'
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
-      <DateField name="exampleDateField" />
+      <DateField name="exampleDateFieldOverlayProps" />
     </Box>
     <Box px={1} width={[1, 1 / 2]}>
       <DateField formStyle="filled" name="exampleDateField" />
@@ -91,6 +91,136 @@ import { Box, Flex } from '../../grid'; // ... from 'grape-ui-react'
         placeholder="The time where you are going."
         value="October 21, 2015"
         valueFormat="X"
+      />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```
+
+#### Alignment and Overrides
+You can specify the left or right alignment of the menu by using `menuAlignment`.
+
+> <small>**NOTE:** This same prop is used in `SelectField`.</small>
+
+```jsx inside Markdown
+import { ThemeProvider } from 'styled-components';
+import { Box, Flex } from '../../grid'; // ... from 'grape-ui-react'
+import { Text } from '../../typography'; // ... from 'grape-ui-react'
+
+<ThemeProvider theme={{}}>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <DateField
+        assistiveText="I dropdown on the right"
+        menuAlignment="right"
+        name="exampleDateFieldAlignmentRight"
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <DateField
+        assistiveText="I dropdown responsively"
+        formStyle="filled"
+        menuAlignment={['left', 'right', 'left', 'right']}
+        name="exampleDateFieldAlignmentResponsive"
+      />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```
+You can define if the menu will appear above or below the control by using `menuPlacement="top"` or `menuPlacement="bottom"`.
+
+> <small>**NOTE:** If the height of the control is not <code>58px</code>, please update <code>controlHeight</code>.</small>
+
+```jsx inside Markdown
+import { ThemeProvider } from 'styled-components';
+import { Box, Flex } from '../../grid'; // ... from 'grape-ui-react'
+import { Text } from '../../typography'; // ... from 'grape-ui-react'
+
+<ThemeProvider theme={{}}>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <DateField
+        assistiveText="menuPlacement='top'"
+        menuPlacement="top"
+        name="exampleDateFieldPlacementTop"
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <DateField
+        assistiveText="menuPlacement={['top', 'bottom', 'top', 'bottom']}"
+        formStyle="filled"
+        menuPlacement={['top', 'bottom', 'top', 'bottom']}
+        name="exampleDateFieldPlacementTopResponsive"
+      />
+    </Box>
+  </Flex>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <DateField
+        assistiveText="menuPlacement='bottom'"
+        menuPlacement="bottom"
+        name="exampleDateFieldPlacementTop"
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <DateField
+        assistiveText="menuPlacement={['bottom', 'top', 'bottom', 'top']}"
+        formStyle="filled"
+        menuPlacement={['bottom', 'top', 'bottom', 'top']}
+        name="exampleDateFieldPlacementBottomResponsive"
+      />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```
+
+You can override specific position values by using either:
+* `menuOverlayBottom`
+* `menuOverlayLeft`
+* `menuOverlayRight`
+* `menuOverlayTop`
+
+> <small>**NOTE:** If using this with a responsive array in `menuAlignment`, you will also need to use a responsive array for this to avoid CSS hierarchy.</small>
+
+```jsx inside Markdown
+import { ThemeProvider } from 'styled-components';
+import { Box, Flex } from '../../grid'; // ... from 'grape-ui-react'
+import { Text } from '../../typography'; // ... from 'grape-ui-react'
+
+<ThemeProvider theme={{}}>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <DateField
+        assistiveText="menuOverlayBottom={[6, 12, 25, 50]}"
+        menuOverlayBottom={[6, 12, 25, 50]}
+        name="exampleDateFieldOverlayBottom"
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <DateField
+        assistiveText="menuOverlayRight={[12, 25, 50, 100]}"
+        formStyle="filled"
+        menuAlignment="right"
+        menuOverlayRight={[12, 25, 50, 100]}
+        name="exampleDateFieldOverlayRight"
+      />
+    </Box>
+  </Flex>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <DateField
+        assistiveText="menuOverlayLeft={[12, 25, 50, 100]}"
+        menuOverlayLeft={[12, 25, 50, 100]}
+        name="exampleDateFieldOverlayLeft"
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <DateField
+        assistiveText="menuOverlayTop={[6, 12, 25, 50]}"
+        formStyle="filled"
+        menuAlignment="right"
+        menuOverlayTop={[6, 12, 25, 50]}
+        name="exampleDateFieldOverlayTop"
       />
     </Box>
   </Flex>
@@ -205,7 +335,6 @@ class DateFieldExample extends React.Component {
   }
 
   handleDayChange({ formattedDay, modifiers, selectedDay }) {
-    console.log({ formattedDay, modifiers, selectedDay })
     this.setState({
       selectedDay: formattedDay,
       isEmpty: !selectedDay,

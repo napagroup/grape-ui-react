@@ -206,3 +206,72 @@ const linkState = () => null;
   </Flex>
 </ThemeProvider>
 ```
+
+#### Custom Components and Format Option Label
+You can also use custom components within the SelectField control.  This is useful when you need more than what is given from a simple dropdown.  [Read this article for info on Custom Components](https://blog.logrocket.com/getting-started-with-react-select/).
+
+```jsx inside Markdown
+import { ThemeProvider } from 'styled-components';
+import { Box, Flex } from '../../grid'; // ... from 'grape-ui-react'
+import { Text } from '../../typography'; // ... from 'grape-ui-react'
+import { components } from 'react-select';
+
+const roguesOptions = [
+  { label: 'Bane', value: 'bane' },
+  { label: 'Joker', value: 'joker' },
+  { label: 'Hush', value: 'hush' },
+  { label: 'Scarecrow', value: 'scarecrow' },
+  { label: 'Two-Face', value: 'twoFace' },
+  { label: 'Ventriloquist', value: 'ventriloquist' },
+  { label: 'Harley Quinn', value: 'harleyQuinn' },
+  { label: 'Black Mask', value: 'blackMask' },
+  { label: 'Mr. Freeze', value: 'mrFreeze' },
+  { label: 'Deadshot', value: 'deadshot' },
+  { label: 'Riddler', value: 'riddler' },
+  { label: 'Killer Croc', value: 'killerCroc' },
+];
+const linkState = () => null;
+const formatOptionLabel = ({ value, label }) => (
+  <Flex flexDirection="row">
+    <Box>
+      <Text>{label}</Text>
+    </Box>
+    <Box ml={[1, 2]}>
+      <Text color="gray.light">{value}</Text>
+    </Box>
+  </Flex>
+);
+const CustomOption = ({ children, ...props }) => (
+  <components.Option {...props}>
+    <Flex flexDirection="column">
+      <Text>{children}</Text>
+      <Text color="gray.light" sm>{props.data.value}</Text>
+    </Flex>
+  </components.Option>
+);
+<ThemeProvider theme={{}}>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <SelectField
+        assistiveText="This uses components"
+        components={{ Option: CustomOption }}
+        labelText="Custom Option"
+        name="exampleCustomOptionsOutlined"
+        onChange={linkState()}
+        options={roguesOptions}
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <SelectField
+        assistiveText="This uses format options"
+        formatOptionLabel={formatOptionLabel}
+        formStyle="filled"
+        labelText="Format Option Label"
+        name="exampleFormatOptionFilled"
+        onChange={linkState()}
+        options={roguesOptions}
+      />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```

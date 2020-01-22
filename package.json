@@ -1,6 +1,6 @@
 {
   "name": "grape-ui-react",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A React component library built with styled-components.",
   "main": "lib/index.js",
   "scripts": {
@@ -71,6 +71,7 @@
     ]
   },
   "dependencies": {
+    "@styled-system/css": "^5.1.4",
     "@styled-system/prop-types": "^5.1.2",
     "@styled-system/theme-get": "^5.1.2",
     "babel-polyfill": "^6.26.0",
