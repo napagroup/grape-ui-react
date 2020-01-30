@@ -45,6 +45,27 @@ import { Paragraph, Text } from '../../typography';
       />
     </Box>
   </Flex>
+  <Paragraph lg>Plain Text <code>plainText=&#123;true&#125;</code></Paragraph>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TextField
+        labelText="Address"
+        name="examplePlainTextOutlined"
+        plainText
+        value="5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235"
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TextField
+        ellipsis
+        formStyle="filled"
+        labelText="Address"
+        name="examplePlainTextFilled"
+        plainText
+        value="5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235"
+      />
+    </Box>
+  </Flex>
   <Text lg>Email <code>email=&#123;true&#125;</code></Text>
   <Paragraph sm><Text fontWeight="bold">NOTE:</Text> Email validation would still need to be handled separately</Paragraph>
   <Flex flexDirection={['column', 'row']}>

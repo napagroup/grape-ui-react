@@ -7,7 +7,7 @@ const isArrayOptionsValue = value => !!value && Array.isArray(value);
 const getDisplayValue = props => {
   const { value } = props;
   if (isArrayOptionsValue(value)) {
-    return value.map(e => e.label).join(',');
+    return value.map(e => e.label).join(', ');
   }
   if (!!value && !!value.label) {
     return value.label;
@@ -26,7 +26,11 @@ const propsToTrim = [
 ];
 export const PlainTextComponent = props => {
   const displayString = getDisplayValue(props);
-  return (<div {...removeSomeProps(props, propsToTrim)}>{displayString}</div>);
+  return (
+    <div {...removeSomeProps(props, propsToTrim)}>
+      <div>{displayString}</div>
+    </div>
+  );
 };
 
 PlainTextComponent.propTypes = {

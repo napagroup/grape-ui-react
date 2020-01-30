@@ -3042,6 +3042,125 @@ exports[`SelectField that is disabled should return a SelectField with isDisable
 </div>
 `;
 
+exports[`SelectField that is plainText should return a SelectField with plainText set to true 1`] = `
+.c3 {
+  background-color: transparent;
+  color: hsl(0,0%,50%);
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c2 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  height: 0.4rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  width: 100%;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    id="exampleColor"
+    isDisabled={true}
+    name=""
+    options={
+      Array [
+        Object {
+          "color": "#FF5630",
+          "label": "Red",
+          "value": "red",
+        },
+        Object {
+          "color": "#FFC400",
+          "label": "Yellow",
+          "value": "yellow",
+        },
+        Object {
+          "color": "#36B37E",
+          "label": "Green",
+          "value": "green",
+        },
+      ]
+    }
+  >
+    <div>
+      Yellow, Green
+    </div>
+  </div>
+  <label
+    className="c2"
+    htmlFor="exampleColor"
+  >
+    Color
+  </label>
+  <div
+    className="c3"
+    id="exampleColorHelp"
+  >
+    Please tell me your color
+  </div>
+</div>
+`;
+
 exports[`SelectField with custom assistive text props should return a SelectField with custom assistive text props 1`] = `
 .c3 {
   background-color: transparent;

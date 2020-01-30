@@ -80,6 +80,14 @@ export const textAlignCore = props => textAlign({ ...props, textAlign: props.tex
 export const textDecorationCore = props => `text-decoration: ${props.textDecoration || defaultStylesBase.textDecoration};`;
 
 export const ellipsisCore = props => {
+  if (props.ellipsis > 1) {
+    return {
+      display: '-webkit-box',
+      overflow: 'hidden',
+      WebkitBoxOrient: 'vertical',
+      WebkitLineClamp: props.ellipsis,
+    };
+  }
   if (props.ellipsis) {
     return {
       overflow: 'hidden',

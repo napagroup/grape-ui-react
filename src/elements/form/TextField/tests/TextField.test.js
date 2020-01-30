@@ -27,13 +27,13 @@ describe('TextField with an id attribute provided', () => {
   });
 });
 describe('TextField with assistive text', () => {
-  it('should return a TextField object contain Assistive Text', () => {
+  it('should return a TextField object contain Assistive Text string', () => {
     const element = <ThemeProvider theme={{}}><TextField assistiveText="Please tell me your name" labelText="Full name" name="exampleFullName" /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
 describe('TextField with object in assistive text', () => {
-  it('should return a TextField object contain Assistive Text', () => {
+  it('should return a TextField object contain Assistive Text object', () => {
     const element = <ThemeProvider theme={{}}><TextField assistiveText={proclaimersSong} labelText="Full name" name="exampleFullName" /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
@@ -75,7 +75,7 @@ describe('TextField a small TextField object', () => {
   });
 });
 describe('TextField a plainText TextField', () => {
-  it('should return a disabled TextField', () => {
+  it('should return a PlainText div TextField', () => {
     const element = <ThemeProvider theme={{}}><TextField activeColor="red" labelText="Full name2" name="exampleFullName2" plainText /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
@@ -283,14 +283,14 @@ describe('TextField with formStyle set to filled', () => {
 
 describe('TextField with formStyle set to filled and plain text', () => {
   it('should return a formStyle filled readonly TextField', () => {
-    const element = <ThemeProvider theme={{}}><TextField formStyle="filled" labelText="Full name" name="exampleFullName" plainText /></ThemeProvider>;
+    const element = <ThemeProvider theme={{}}><TextField formStyle="filled" labelText="Full name" name="exampleFullName" plainText value="I should be contained in a plain div" /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });
 
 describe('TextField with formStyle set to filled, multiline and plain text', () => {
   it('should return a formStyle filled multline readonly TextField', () => {
-    const element = <ThemeProvider theme={{}}><TextField formStyle="filled" labelText="Full name" multiline name="exampleFullName" plainText value="I should have tabIndex of -1" /></ThemeProvider>;
+    const element = <ThemeProvider theme={{}}><TextField formStyle="filled" labelText="Full name" multiline name="exampleFullName" plainText value="I should be contained in a plain div" /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
 });

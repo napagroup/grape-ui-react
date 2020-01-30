@@ -22,31 +22,6 @@ export const defaultDayPickerProps = {
   weekdaysShort: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
 };
 
-export const plaintextPropsToTrim = [
-  'assistiveText',
-  'assistiveTextProps',
-  'calendarOnly',
-  'controlColorProps',
-  'controlGroupProps',
-  'controlLabelProps',
-  'controlId',
-  'dayPickerProps',
-  'formStyle',
-  'inputProps',
-  'inputRef',
-  'isRequired',
-  'menuAlignment',
-  'menuDirection',
-  'menuDirectionViewportBreakpoint',
-  'menuElevation',
-  'menuOverlayBottom',
-  'menuOverlayLeft',
-  'menuOverlayRight',
-  'menuOverlayTop',
-  'validationError',
-  'valueFormat',
-];
-
 export const propsToTrim = [
   'assistiveText',
   'color',

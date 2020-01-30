@@ -132,21 +132,6 @@ export const controlStyles = (props = {}) => {
     ...props,
     padding: gridSchema[props.gutter] || defaultControlStyles.padding,
   };
-  const {
-    formStyle,
-    labelText,
-    padding,
-    plainText,
-  } = overrides;
-  if (plainText) {
-    return `
-      border: 0;
-      display: block;
-      outline: 0;
-      width: 100%;
-      ${getFinalFieldPadding(padding, formStyle, labelText)}
-    `;
-  }
   return getFinalStyle({
     ...props,
     ...overrides,

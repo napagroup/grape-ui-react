@@ -233,6 +233,14 @@ describe('SelectField that is disabled', () => {
   });
 });
 
+
+describe('SelectField that is plainText', () => {
+  it('should return a SelectField with plainText set to true', () => {
+    const element = <ThemeProvider theme={{}}><SelectField assistiveText="Please tell me your color" controlId="exampleColor" id="exampleColor" isDisabled labelText="Color" menuElevation="03" menuZIndex="2000" options={colorOptions} plainText value={[colorOptions[1], colorOptions[2]]} /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+
 // TODO: This test down below isn't running.  Not sure why.  --R
 describe('SelectField Component with react-select predefined props', () => {
   it('should return a SelectField with isClearable set to true', () => {

@@ -14,18 +14,21 @@ exports[`PlainText using Theme Font Family should return a PlainText object with
   letter-spacing: inherit;
   line-height: 1.5;
   padding-bottom: 1rem;
+  padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 1rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  box-sizing: border-box;
 }
 
 <div
   className="c0"
 >
-  
+  <div>
+    
+  </div>
 </div>
 `;
 
@@ -43,17 +46,20 @@ exports[`PlainText using Theme color should return a PlainText object with custo
   letter-spacing: inherit;
   line-height: 1.5;
   padding-bottom: 1rem;
+  padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 1rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  box-sizing: border-box;
 }
 
 <div
   className="c0"
 >
-  
+  <div>
+    
+  </div>
 </div>
 `;

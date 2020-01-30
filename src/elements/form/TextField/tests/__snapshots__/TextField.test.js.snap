@@ -405,7 +405,7 @@ exports[`TextField a TextField object should return a TextField object with a re
 </div>
 `;
 
-exports[`TextField a plainText TextField should return a disabled TextField 1`] = `
+exports[`TextField a plainText TextField should return a PlainText div TextField 1`] = `
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -440,48 +440,37 @@ exports[`TextField a plainText TextField should return a disabled TextField 1`] 
 .c1 {
   background-color: transparent;
   color: inherit;
-  border: 0;
-  display: block;
-  outline: 0;
-  width: 100%;
-  padding: 1rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  font-weight: inherit;
+  width: 100%;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c1 .grape-ui-select__control,
-.c1 .DayPickerInput > input {
-  margin: -1rem;
-  padding: 1rem;
-}
-
-.c1 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
-.c1 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
-  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  box-sizing: border-box;
 }
 
 <div
   className="c0"
 >
-  <input
+  <div
     className="c1"
-    disabled={false}
     id="exampleFullName2"
     name="exampleFullName2"
-    readOnly={true}
-    tabIndex="-1"
-    type="text"
-  />
+  >
+    <div>
+      
+    </div>
+  </div>
   <label
     className="c2"
     htmlFor="exampleFullName2"
@@ -1520,7 +1509,7 @@ exports[`TextField with an id attribute provided should return a TextField with 
 </div>
 `;
 
-exports[`TextField with assistive text should return a TextField object contain Assistive Text 1`] = `
+exports[`TextField with assistive text should return a TextField object contain Assistive Text string 1`] = `
 .c3 {
   background-color: transparent;
   color: hsl(0,0%,50%);
@@ -2089,56 +2078,39 @@ exports[`TextField with formStyle set to filled and plain text should return a f
 }
 
 .c1 {
-  background-color: hsl(0,0%,90%);
+  background-color: transparent;
   color: inherit;
-  border: 0;
-  display: block;
-  outline: 0;
-  width: 100%;
-  padding: 1.5rem 1rem 0.5rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  font-weight: inherit;
+  width: 100%;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  padding-bottom: 0.5rem;
+  padding-top: calc(0.7rem + 1px);
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c1 .grape-ui-select__control,
-.c1 .DayPickerInput > input {
-  margin: -1.5rem -1rem -0.5rem;
-  padding: 1.5rem 1rem 0.5rem;
-}
-
-.c1 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
-.c1 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
-  -webkit-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
-  -ms-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
-  transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
-}
-
-.c1 + label {
-  background: transparent;
-  line-height: 1;
-  top: 0.8rem;
+  box-sizing: border-box;
 }
 
 <div
   className="c0"
 >
-  <input
+  <div
     className="c1"
-    disabled={false}
     id="exampleFullName"
     name="exampleFullName"
-    readOnly={true}
-    tabIndex="-1"
-    type="text"
-  />
+  >
+    <div>
+      I should be contained in a plain div
+    </div>
+  </div>
   <label
     className="c2"
     htmlFor="exampleFullName"
@@ -2323,66 +2295,39 @@ exports[`TextField with formStyle set to filled, multiline and plain text should
 }
 
 .c1 {
-  background-color: hsl(0,0%,90%);
+  background-color: transparent;
   color: inherit;
-  border: 0;
-  display: block;
-  outline: 0;
-  width: 100%;
-  padding: 1.5rem 1rem 0.5rem;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  font-weight: inherit;
+  width: 100%;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  resize: none;
+  padding-bottom: 0.5rem;
+  padding-top: calc(0.7rem + 1px);
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c1 .grape-ui-select__control,
-.c1 .DayPickerInput > input {
-  margin: -1.5rem -1rem -0.5rem;
-  padding: 1.5rem 1rem 0.5rem;
-}
-
-.c1 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
-.c1 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
-  -webkit-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
-  -ms-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
-  transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
-}
-
-.c1 + label {
-  background: transparent;
-  line-height: 1;
-  top: 0.8rem;
+  box-sizing: border-box;
 }
 
 <div
   className="c0"
 >
   <div
-    className="multiline-scroll-shield"
-  />
-  <textarea
     className="c1"
-    disabled={false}
     id="exampleFullName"
     name="exampleFullName"
-    onChange={[Function]}
-    readOnly={true}
-    style={
-      Object {
-        "height": 0,
-      }
-    }
-    tabIndex="-1"
-    value="I should have tabIndex of -1"
-  />
+  >
+    <div>
+      I should be contained in a plain div
+    </div>
+  </div>
   <label
     className="c2"
     htmlFor="exampleFullName"
@@ -2392,7 +2337,7 @@ exports[`TextField with formStyle set to filled, multiline and plain text should
 </div>
 `;
 
-exports[`TextField with object in assistive text should return a TextField object contain Assistive Text 1`] = `
+exports[`TextField with object in assistive text should return a TextField object contain Assistive Text object 1`] = `
 .c4 {
   background-color: transparent;
   color: hsl(186.8,100%,41.6%);

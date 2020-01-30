@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { getAssistiveText } from 'src/elements/form/AssistiveText';
 import { ControlGroup } from 'src/elements/form/ControlGroup';
+import { PlainText } from 'src/elements/form/PlainText';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import {
   control,
@@ -13,6 +14,7 @@ import {
   fontStyleCore,
   letterSpacingCore,
   lineHeightCore,
+  plaintextPropsToTrim,
   refType,
   spaceProps,
   textAlignCore,
@@ -59,6 +61,17 @@ const propsToTrim = [
   'validationError',
   ...Object.keys(spaceProps.propTypes),
 ];
+
+const renderValueOrComponent = propsFromComponent => {
+  const {
+    plainText,
+  } = propsFromComponent;
+  if (plainText) {
+    const plainTextProps = removeSomeProps(propsFromComponent, plaintextPropsToTrim);
+    return <PlainText {...plainTextProps} />;
+  }
+  return <TextFieldComponent {...propsFromComponent} />;
+};
 export const TextField = props => {
   const {
     activeColor,
@@ -67,6 +80,7 @@ export const TextField = props => {
     controlGroupProps,
     controlId,
     controlLabelProps,
+    formStyle,
     isRequired,
     labelText,
     name,
@@ -76,6 +90,7 @@ export const TextField = props => {
   const childProps = {
     activeColor,
     bg,
+    formStyle,
     id: controlId || name,
     isRequired,
     labelText,
@@ -97,7 +112,7 @@ export const TextField = props => {
       validationError={validationError}
       {...controlGroupProps}
     >
-      <TextFieldComponent {...childProps} />
+      {renderValueOrComponent({ ...childProps })}
     </ControlGroup>
   );
 };

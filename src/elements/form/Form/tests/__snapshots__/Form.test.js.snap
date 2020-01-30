@@ -297,7 +297,7 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
 }
 
 .c5 {
-  background-color: transparent;
+  background-color: hsl(0,0%,90%);
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
@@ -310,26 +310,33 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  border: 1px solid hsl(0,0%,25%);
-  border-radius: 2px;
-  border-radius: 2px;
+  border: 0;
+  border-bottom: 1px solid hsl(0,0%,25%);
+  border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
   outline: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 1.5rem 1rem 0.5rem;
 }
 
 .c5 .grape-ui-select__control,
 .c5 .DayPickerInput > input {
-  margin: -1rem;
-  padding: 1rem;
+  margin: -1.5rem -1rem -0.5rem;
+  padding: 1.5rem 1rem 0.5rem;
 }
 
 .c5 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
 .c5 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
-  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
-  transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -webkit-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+  transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+}
+
+.c5 + label {
+  background: transparent;
+  line-height: 1;
+  top: 0.8rem;
 }
 
 .c5[disabled] {
@@ -342,8 +349,8 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
 
 .c5:focus,
 .c5:focus-within {
-  border-color: hsl(323.3,84.6%,28%);
-  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+  border-bottom: 2px solid hsl(323.3,84.6%,28%);
+  margin-bottom: -1px;
 }
 
 .c5:focus + label,

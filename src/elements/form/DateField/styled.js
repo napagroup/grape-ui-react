@@ -15,6 +15,7 @@ import {
   fontStyleCore,
   letterSpacingCore,
   lineHeightCore,
+  plaintextPropsToTrim,
   refType,
   spaceProps,
   textAlignCore,
@@ -33,7 +34,6 @@ import {
 import {
   defaultControlColorProps,
   defaultDayPickerProps,
-  plaintextPropsToTrim,
   propsToTrim,
   styledWrapperPropsToTrim,
 } from './props';
@@ -358,7 +358,7 @@ DateField.defaultProps = {
   dayPickerProps: defaultDayPickerProps,
   disabled: false,
   format: DEFAULT_DATE_FORMAT,
-  formStyle: 'outlined',
+  formStyle: '',
   inputProps: {},
   inputRef: () => {},
   isRequired: false,

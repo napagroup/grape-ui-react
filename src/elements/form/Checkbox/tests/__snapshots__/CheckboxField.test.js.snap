@@ -956,12 +956,13 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
   letter-spacing: inherit;
   line-height: 1.5;
   padding-bottom: 1rem;
+  padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 1rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  box-sizing: border-box;
 }
 
 .c1 {
@@ -1026,7 +1027,9 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
     className="c2"
     disabled={false}
   >
-    Red
+    <div>
+      Red
+    </div>
   </div>
   <div
     className="c3"
@@ -1051,12 +1054,13 @@ exports[`CheckboxFieldComponent Component with 2 plaintext should return a Check
   letter-spacing: inherit;
   line-height: 1.5;
   padding-bottom: 1rem;
+  padding-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 1rem;
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  box-sizing: border-box;
 }
 
 .c1 {
@@ -1103,7 +1107,9 @@ exports[`CheckboxFieldComponent Component with 2 plaintext should return a Check
     className="c2"
     disabled={false}
   >
-    Red,Yellow
+    <div>
+      Red, Yellow
+    </div>
   </div>
 </div>
 `;

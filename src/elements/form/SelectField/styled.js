@@ -17,6 +17,7 @@ import {
   fontStyleCore,
   letterSpacingCore,
   lineHeightCore,
+  plaintextPropsToTrim,
   refType,
   spaceProps,
   textAlignCore,
@@ -102,14 +103,7 @@ const propsToTrim = [
   'isRequired',
   'plainText',
 ];
-const plaintextPropsToTrim = [
-  'assistiveText',
-  'controlGroupProps',
-  'controlId',
-  'formStyle',
-  'isRequired',
-  'validationError',
-];
+
 const renderValueOrComponent = propsFromComponent => {
   const {
     controlId,
@@ -213,6 +207,9 @@ SelectField.propTypes = {
   name: PropTypes.string,
   /** Used to render a dropdown control as a `PlainText` element. */
   plainText: PropTypes.bool,
+  /** Can be used to override specific styling on particular aspects of the control.
+   * @see See [React-Select/Styles](https://react-select.com/styles) for a full list of style keys. */
+  styleOverrides: PropTypes.object,
   /** Error text that will appear below the control when validation fires. */
   validationError: PropTypes.string,
   ...borderRadius.propTypes,
@@ -227,7 +224,7 @@ SelectField.defaultProps = {
   controlId: '',
   controlLabelProps: {},
   disabled: false,
-  formStyle: 'outlined',
+  formStyle: '',
   inputRef: () => {},
   isClearable: false,
   isCreatable: false,
@@ -238,6 +235,7 @@ SelectField.defaultProps = {
   menuZIndex: '',
   name: '',
   plainText: false,
+  styleOverrides: {},
   validationError: '',
 };
 
