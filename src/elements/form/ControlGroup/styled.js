@@ -7,7 +7,7 @@ import {
 } from 'src/utils/styledHelpers';
 import { ControlGroupComponent } from './component';
 
-export const ControlGroup = styled(ControlGroupComponent)`
+const ControlGroup = styled(ControlGroupComponent)`
   position: relative;
   ${colorCore}
   ${space}
@@ -23,3 +23,6 @@ ControlGroup.defaultProps = {
   pb: 3,
   pt: 1,
 };
+
+/** @component */
+export { ControlGroup };

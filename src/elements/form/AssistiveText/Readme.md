@@ -4,6 +4,8 @@
 * `<SelectField>`
 * `<TextField>`
 
+[Style usage for this element can be found here](https://material.io/components/text-fields/#anatomy).
+
 ```jsx inside Markdown
 import { Flex } from '../../grid'; // ... from 'grape-ui-react'
 import { CheckboxField } from '../CheckboxField';

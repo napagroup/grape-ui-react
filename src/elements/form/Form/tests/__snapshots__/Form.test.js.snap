@@ -1,13 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Form Component base should return a Form object 1`] = `
+.c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 <form
-  className=""
+  className="c0"
 />
 `;
 
 exports[`Form Component base should return a Form object and textField with filled formStyle 1`] = `
 .c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -161,6 +174,9 @@ exports[`Form Component base should return a Form object and textField with fill
 
 exports[`Form Component base should return a Form object with 2 filled formStyle with 2 textField and 1 SelectField 1`] = `
 .c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -546,6 +562,9 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
 
 exports[`Form Component base should return a Form object with div that do not get formStyle="filled" 1`] = `
 .c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -563,6 +582,9 @@ exports[`Form Component base should return a Form object with div that do not ge
 
 exports[`Form Component base should return a Form object with filled formStyle and textField with outlined 1`] = `
 .c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -709,17 +731,16 @@ exports[`Form Component base should return a Form object with filled formStyle a
 
 exports[`Form Component base should return a Form object with flex direction column 1`] = `
 .c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 <form
   className="c0"
-  flexDirection="column"
 />
 `;

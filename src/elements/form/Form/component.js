@@ -4,10 +4,13 @@ import { removeSomeProps } from 'src/utils/componentHelpers';
 import propTypes from '@styled-system/prop-types';
 
 const formComponentPropsToRemove = {
+  ...propTypes.flexbox,
   ...propTypes.layout,
+  ...propTypes.position,
   ...propTypes.space,
   formInline: false,
 };
+
 export const applyFormStyleToChild = (child, formStyleFromParent) => {
   const { formStyle } = child.props;
   let output;

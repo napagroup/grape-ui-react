@@ -94,7 +94,7 @@ const renderValueOrComponent = propsFromComponent => {
     />
   );
 };
-export const CheckboxField = props => {
+const CheckboxField = props => {
   const {
     activeColor,
     assistiveText,
@@ -180,3 +180,6 @@ CheckboxField.defaultProps = {
   validationError: '',
   wrapperProps: {},
 };
+
+/** @component */
+export { CheckboxField };

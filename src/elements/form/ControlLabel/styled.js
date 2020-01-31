@@ -11,6 +11,7 @@ import {
   colorCore,
   defaultStylesBase,
   defaultControlStyles,
+  ellipsisCore,
   fontFamilyCore,
   fontSizeCore,
   fontStyleCore,
@@ -29,8 +30,9 @@ const colorLabel = props => colorCore({
   color: !props.validationError ? props.color : 'brandDanger',
 });
 const fontSizeLabel = props => fontSizeCore({ ...props, sm: true });
-export const ControlLabel = styled(ControlLabelComponent)`
+const ControlLabel = styled(ControlLabelComponent)`
   ${colorLabel}
+  ${ellipsisCore}
   ${fontFamilyCore}
   ${fontSizeLabel}
   ${fontStyleCore}
@@ -63,3 +65,6 @@ ControlLabel.defaultProps = {
   top: '-1px',
   validationError: '',
 };
+
+/** @component */
+export { ControlLabel };

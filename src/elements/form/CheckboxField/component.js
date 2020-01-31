@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { flexDirection, fontWeight, space } from 'styled-system';
 import {
   colorCore,
+  ellipsisCore,
   fontFamilyCore,
   fontSizeCore,
   fontStyleCore,
@@ -47,6 +48,7 @@ CheckboxLabelComponent.defaultProps = {
 
 const CheckboxLabel = styled(CheckboxLabelComponent)`
   ${colorCore}
+  ${ellipsisCore}
   ${fontFamilyCore}
   ${fontSizeCore}
   ${fontWeight}

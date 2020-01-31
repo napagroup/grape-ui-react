@@ -54,7 +54,7 @@ PlainTextStyledComponent.defaultProps = {
   width: 1,
 };
 
-export const PlainText = props => {
+const PlainText = props => {
   const {
     formStyle,
     pb,
@@ -82,3 +82,6 @@ PlainText.defaultProps = {
   pr: gridSchema.gutter || defaultControlStyles.padding,
   pt: gridSchema.gutter || defaultControlStyles.padding,
 };
+
+/** @component */
+export { PlainText };
