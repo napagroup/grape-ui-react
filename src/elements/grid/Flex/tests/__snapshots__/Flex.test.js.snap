@@ -630,6 +630,14 @@ exports[`Flex with specified layout properties should return a Flex object with 
   max-height: 768px;
 }
 
+@media screen and (min-width:40em) {
+
+}
+
+@media screen and (min-width:52em) {
+
+}
+
 @media screen and (min-width:64em) {
   .c0 {
     max-height: 1024px;
@@ -666,6 +674,14 @@ exports[`Flex with specified layout properties should return a Flex object with 
   display: -ms-flexbox;
   display: flex;
   max-width: 768px;
+}
+
+@media screen and (min-width:40em) {
+
+}
+
+@media screen and (min-width:52em) {
+
 }
 
 @media screen and (min-width:64em) {

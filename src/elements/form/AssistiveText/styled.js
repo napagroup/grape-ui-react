@@ -3,6 +3,7 @@ import { fontWeight, space } from 'styled-system';
 import {
   colorCore,
   defaultStylesBase,
+  ellipsisCore,
   fontFamilyCore,
   fontSizeCore,
   fontStyleCore,
@@ -16,8 +17,10 @@ import {
 import { AssistiveTextComponent } from './component';
 
 const fontSizeAssistiveText = props => fontSizeCore({ ...props, sm: true });
-export const AssistiveText = styled(AssistiveTextComponent)`
+
+const AssistiveText = styled(AssistiveTextComponent)`
   ${colorCore}
+  ${ellipsisCore}
   ${fontFamilyCore}
   ${fontSizeAssistiveText}
   ${fontWeight}
@@ -39,3 +42,6 @@ AssistiveText.defaultProps = {
   color: 'gray',
   px: 3,
 };
+
+/** @component */
+export { AssistiveText };

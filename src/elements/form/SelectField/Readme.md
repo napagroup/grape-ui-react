@@ -156,7 +156,7 @@ const linkState = () => null;
 
 #### Demonstrating Controlled Components (via react-hook-form-input)
 ```jsx inside Markdown
-import useForm from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { RHFInput } from 'react-hook-form-input';
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'

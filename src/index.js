@@ -6,7 +6,7 @@ import { Image } from './elements/Image';
 import { Form } from './elements/form/Form';
 import { TextField } from './elements/form/TextField';
 import { SelectField } from './elements/form/SelectField';
-import { CheckboxField } from './elements/form/Checkbox';
+import { CheckboxField } from './elements/form/CheckboxField';
 import {
   Header,
   Link,
