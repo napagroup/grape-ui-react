@@ -23,7 +23,7 @@ import { getGlobalStyles } from 'src/global-styles';
 
 const { grid: { gutter } } = getGlobalStyles();
 const opacity = props => `${props.disabled ? 'opacity: 0.6;' : ''}`;
-const marginRight = () => `margin-right: ${scaleFont(gutter, 1)}`;
+const marginRight = () => `margin-right: ${scaleFont(gutter, 1)};`;
 const CheckboxLabelComponent = ({ children, ...props }) => {
   const propsToTrim = [
     ...Object.keys(typography.propTypes),

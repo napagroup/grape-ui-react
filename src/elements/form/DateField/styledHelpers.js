@@ -4,7 +4,7 @@ import { system, variant } from 'styled-system';
 export const menuStyledHelper = props => css`
   .DayPickerInput-OverlayWrapper {
     pointer-events: none;
-    .DayPickerInput-OverlayWrapper--Offset {
+    .DayPickerInput-Overlay {
   ${variant({
     prop: 'menuPlacement',
     variants: {
