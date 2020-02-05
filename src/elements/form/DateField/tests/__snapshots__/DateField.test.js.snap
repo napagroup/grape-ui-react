@@ -2816,6 +2816,469 @@ exports[`DateField Component base should return a DateField object as Input disp
 </div>
 `;
 
+exports[`DateField Component base should return a DateField object as Input displaying value as 2019-12-18 with Format YYYY-MM-DD and a validationError message 1`] = `
+.c2 {
+  color: hsl(4.1,89.6%,58.4%);
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid hsl(4.1,89.6%,58.4%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.c1 .DayPicker {
+  background-color: hsl(0,0%,100%);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+  display: inline-block;
+  font: inherit;
+  outline: 0;
+}
+
+.c1 .DayPicker-wrapper {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c1 .DayPicker-Months {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 .DayPicker-Month {
+  margin: 1rem;
+}
+
+.c1 .DayPickerInput-OverlayWrapper {
+  position: absolute;
+  z-index: 1010;
+  max-width: 100%;
+}
+
+.c1 .DayPicker-NavButton {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  left: auto;
+  display: inline-block;
+  margin-top: 2px;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.c1 .DayPicker-NavButton:hover {
+  opacity: 0.8;
+}
+
+.c1 .DayPicker-NavButton--prev {
+  margin-right: 1.5rem;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAwCAYAAAB5R9gVAAAABGdBTUEAALGPC/xhBQAAAVVJREFUWAnN2G0KgjAYwPHpGfRkaZeqvgQaK+hY3SUHrk1YzNLay/OiEFp92I+/Mp2F2Mh2lLISWnflFjzH263RQjzMZ19wgs73ez0o1WmtW+dgA01VxrE3p6l2GLsnBy1VYQOtVSEH/atCCgqpQgKKqYIOiq2CBkqtggLKqQIKgqgCBjpJ2Y5CdJ+zrT9A7HHSTA1dxUdHgzCqJIEwq0SDsKsEg6iqBIEoq/wEcVRZBXFV+QJxV5mBtlDFB5VjYTaGZ2sf4R9PM7U9ZU+lLuaetPP/5Die3ToO1+u+MKtHs06qODB2zBnI/jBd4MPQm1VkY79Tb18gB+C62FdBFsZR6yeIo1YQiLJWMIiqVjQIu1YSCLNWFgijVjYIuhYYCKoWKAiiFgoopxYaKLUWOii2FgkophYp6F3r42W5A9s9OcgNvva8xQaysKXlFytoqdYmQH6tF3toSUo0INq9AAAAAElFTkSuQmCC');
+}
+
+.c1 .DayPicker-NavButton--next {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAwCAYAAAB5R9gVAAAABGdBTUEAALGPC/xhBQAAAXRJREFUWAnN119ugjAcwPHWzJ1gnmxzB/BBE0n24m4xfNkTaOL7wOtsl3AXMMb+Vjaa1BG00N8fSEibPpAP3xAKKs2yjzTPH9RAjhEo9WzPr/Vm8zgE0+gXATAxxuxtqeJ9t5tIwv5AtQAApsfT6TPdbp+kUBcgVwvO51KqVhMkXKsVJFXrOkigVhCIs1Y4iKlWZxB1rX4gwlpRIIpa8SDkWmggrFq4IIRaJKCYWnSgnrXIQV1r8YD+1Vrn+bReagysIFfLABRt31v8oBu1xEBttfRbltmfjgEcWh9snUS2kNdBK6WN1vrOWxObWsz+fjxevsxmB1GQDfINWiev83nhaoiB/CoOU438oPrhXS0WpQ9xc1ZQWxWHqUYe0I0qrKCQKjygDlXIQV2r0IF6ViEBxVTBBSFUQQNhVYkHIVeJAtkNsbQ7c1LtzP6FsObhb2rCKv7NBIGoq4SDmKoEgTirXAcJVGkFSVVpgoSrXICGUMUH/QBZNSUy5XWUhwAAAABJRU5ErkJggg==');
+}
+
+.c1 .DayPicker-NavButton--interactionDisabled {
+  display: none;
+}
+
+.c1 .DayPicker-Caption {
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+  text-align: left;
+  color: inherit;
+}
+
+.c1 .DayPicker-Caption > div {
+  font-weight: 500;
+  font-size: large;
+}
+
+.c1 .DayPicker-Weekdays {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.c1 .DayPicker-WeekdaysRow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 .DayPicker-Weekday {
+  color: hsl(0,0%,75%);
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  box-sizing: border-box;
+}
+
+.c1 .DayPicker-Weekday abbr[title] {
+  border-bottom: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 .DayPicker-Body {
+  display: block;
+}
+
+.c1 .DayPicker-Week {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 .DayPicker-Day {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0.1rem 0;
+  padding: 0.4rem 0.5rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  pointer-events: auto;
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+.c1 .DayPicker-Day:not(.DayPicker-Day--disabled):hover {
+  background-color: hsl(207,90%,54%);
+  color: hsl(0,0%,100%);
+}
+
+.c1 .DayPicker-WeekNumber {
+  font-size: small;
+  padding: 0.5rem;
+  min-width: 1rem;
+  pointer-events: auto;
+  border-right: 1px solid hsl(0,0%,75%);
+  color: hsl(0,0%,50%);
+  vertical-align: middle;
+  text-align: right;
+  cursor: pointer;
+}
+
+.c1 .DayPicker--interactionDisabled .DayPicker-Day {
+  cursor: default;
+}
+
+.c1 .DayPicker-Footer {
+  padding-top: 0.5em;
+}
+
+.c1 .DayPicker-TodayButton {
+  border: none;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+  color: #4A90E2;
+  font-size: 0.875em;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.c1 .DayPicker-Day--today {
+  position: relative;
+}
+
+.c1 .DayPicker-Day--today:after {
+  position: absolute;
+  content: "";
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  top: 0;
+  left: 0;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 50%;
+}
+
+.c1 .DayPicker-Day--selected {
+  background-color: hsl(186.8,100%,41.6%);
+  color: hsl(0,0%,100%);
+}
+
+.c1 .DayPicker-Day--selected.DayPicker-Day--start {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.c1 .DayPicker-Day--selected.DayPicker-Day--end {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c1 .DayPicker-Day--outside {
+  color: hsl(0,0%,40%);
+  cursor: default;
+  background: transparent !important;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.c1 .DayPicker-Day--disabled {
+  color: hsl(0,0%,75%);
+  cursor: default;
+  pointer-events: none;
+}
+
+.c1.c1.c1 .DayPickerInput {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.c1 .grape-ui-select__control,
+.c1 .DayPickerInput > input {
+  margin: -1rem;
+  padding: 1rem;
+}
+
+.c1 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c1 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
+}
+
+.c1[disabled] {
+  opacity: 0.3;
+}
+
+.c1[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c1:focus,
+.c1:focus-within {
+  border-color: hsl(4.1,89.6%,58.4%);
+  box-shadow: 0 0 0 1px hsl(4.1,89.6%,58.4%);
+}
+
+.c1:focus + label,
+.c1:focus-within + label {
+  color: hsl(4.1,89.6%,58.4%);
+}
+
+.c1::-webkit-input-placeholder,
+.c1 input::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::-moz-placeholder,
+.c1 input::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1:-ms-input-placeholder,
+.c1 input:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1::placeholder,
+.c1 input::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c1 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
+}
+
+.c1:focus-within {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c1:focus-within + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c1 .DayPickerInput-OverlayWrapper {
+  pointer-events: none;
+  left: 1rem;
+  right: auto;
+}
+
+.c1 .DayPickerInput-OverlayWrapper .DayPickerInput-Overlay {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 100%;
+  display: block;
+}
+
+.c1 .DayPicker-Months {
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    id=""
+    multiple={false}
+    name=""
+  >
+    <div
+      className="DayPickerInput"
+      style={
+        Object {
+          "container": Object {
+            "input": Object {
+              "padding": "1rem",
+            },
+          },
+        }
+      }
+    >
+      <input
+        disabled={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        placeholder="YYYY-MM-DD"
+        value="2019-12-18"
+      />
+    </div>
+  </div>
+  <div
+    className="c2"
+    id="Error"
+  >
+    You cannot select this date
+  </div>
+</div>
+`;
+
+exports[`DateField Component base should return a DateField object as PlainText component displaying value as 12/18/2019 with default format 1`] = `
+.c0 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  width: 100%;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  box-sizing: border-box;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    format="M/D/YYYY"
+    locale="en"
+    name=""
+  >
+    <div>
+      
+    </div>
+  </div>
+</div>
+`;
+
 exports[`DateField Component base should return a DateFieldComponent object as Input with Japanese locale (日本語ロケールの入力としてDateFieldComponentオブジェクトを返す必要があります) 1`] = `
 .c2 {
   background-color: hsl(0,0%,100%);

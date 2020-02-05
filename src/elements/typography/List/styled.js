@@ -82,4 +82,6 @@ List.propTypes = {
 List.defaultProps = {
   ...defaultStylesBase,
 };
+
+/** @component */
 export { List };

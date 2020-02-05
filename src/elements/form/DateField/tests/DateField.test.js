@@ -43,11 +43,34 @@ describe('DateField Component base', () => {
     );
     expect(assertReactElement(element)).toMatchSnapshot();
   });
+  it('should return a DateField object as PlainText component displaying value as 12/18/2019 with default format', () => {
+    const element = (
+      <ThemeProvider theme={{}}>
+        <DateField
+          plainText
+          value={new Date('12/18/2019')}
+        />
+      </ThemeProvider>
+    );
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
   it('should return a DateField object as Input displaying value as 2019-12-18 with Format YYYY-MM-DD', () => {
     const element = (
       <ThemeProvider theme={{}}>
         <DateField
           format="YYYY-MM-DD"
+          value={new Date('12/18/2019')}
+        />
+      </ThemeProvider>
+    );
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+  it('should return a DateField object as Input displaying value as 2019-12-18 with Format YYYY-MM-DD and a validationError message', () => {
+    const element = (
+      <ThemeProvider theme={{}}>
+        <DateField
+          format="YYYY-MM-DD"
+          validationError="You cannot select this date"
           value={new Date('12/18/2019')}
         />
       </ThemeProvider>

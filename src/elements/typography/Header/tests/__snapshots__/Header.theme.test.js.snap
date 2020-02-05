@@ -2,7 +2,6 @@
 
 exports[`Header using Theme Font Family should return a Header object with a custom font family 1`] = `
 .c0 {
-  margin: 0 0 1rem;
   background-color: transparent;
   color: inherit;
   font-family: "DejaVu Sans Mono","Bitstream Vera Sans Mono",Courier;
@@ -16,6 +15,8 @@ exports[`Header using Theme Font Family should return a Header object with a cus
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 <h1
@@ -27,7 +28,6 @@ exports[`Header using Theme Font Family should return a Header object with a cus
 
 exports[`Header using Theme color should return a Header object with custom color 1`] = `
 .c0 {
-  margin: 0 0 1rem;
   background-color: hsl(305,33.9%,23.7%);
   color: hsl(313,67.8%,47.5%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -41,6 +41,8 @@ exports[`Header using Theme color should return a Header object with custom colo
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 <h1
@@ -52,7 +54,6 @@ exports[`Header using Theme color should return a Header object with custom colo
 
 exports[`Header using overridden base Font Family should return a Header object with the custom base font family 1`] = `
 .c0 {
-  margin: 0 0 1rem;
   background-color: transparent;
   color: inherit;
   font-family: Frutiger,"Frutiger Linotype",Univers,Calibri,"Gill Sans","Gill Sans MT","Myriad Pro",Myriad,"DejaVu Sans Condensed","Liberation Sans","Nimbus Sans L",Tahoma,Geneva,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -66,6 +67,8 @@ exports[`Header using overridden base Font Family should return a Header object 
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 <h2

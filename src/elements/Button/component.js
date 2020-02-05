@@ -51,7 +51,7 @@ export const ButtonComponent = ({
   if (href) {
     output = (
       <a {...removeSomeProps(props, Object.keys(propsToTrimForLink))} href={href}>
-        {children}
+        <div>{children}</div>
       </a>
     );
   } else if (to) {
@@ -60,13 +60,13 @@ export const ButtonComponent = ({
     };
     output = (
       <ReactRouterLink {...removeSomeProps(props, Object.keys(propsToTrimForLink))} {...linkProps}>
-        {children}
+        <div>{children}</div>
       </ReactRouterLink>
     );
   } else {
     output = (
       <button type="button" {...removeSomeProps(props, Object.keys(propsToTrimForButton))}>
-        {children}
+        <div>{children}</div>
       </button>
     );
   }

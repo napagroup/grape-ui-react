@@ -25,10 +25,10 @@ const getHeaderFontSizeFromTag = factoryProps => {
   const { tag: factoryPropsTag } = factoryProps;
   const tag = factoryPropsTag || 'h1';
   const getHeaderFontSizeMemoized = props => {
-    const { display } = props;
+    const { displayHeader } = props;
     const overrides = {
       ...props,
-      fontSize: display ? fontSizeSchema.display[tag] : fontSizeSchema[tag],
+      fontSize: displayHeader ? fontSizeSchema.displayHeader[tag] : fontSizeSchema[tag],
     };
     return fontSizeCore(overrides);
   };
@@ -37,11 +37,11 @@ const getHeaderFontSizeFromTag = factoryProps => {
 
 const getHeaderFontWeight = props => {
   const {
-    display, fontWeight: fontWeightFromProps,
+    displayHeader, fontWeight: fontWeightFromProps,
   } = props;
   const overrides = {
     ...props,
-    fontWeight: display ? '300' : fontWeightFromProps || defaultStylesBase.fontWeight,
+    fontWeight: displayHeader ? '300' : fontWeightFromProps || defaultStylesBase.fontWeight,
   };
   return fontWeight(overrides);
 };
@@ -49,7 +49,7 @@ const propsToTrim = {
   ...spaceProps.propTypes,
   ...typography.propTypes,
   children: PropTypes.any.isRequired,
-  display: PropTypes.bool,
+  displayHeader: PropTypes.bool,
 };
 
 const headerFactory = factoryProps => {
@@ -63,7 +63,6 @@ const headerFactory = factoryProps => {
   };
   const getHeaderFontSize = getHeaderFontSizeFromTag(factoryProps);
   return styled(HeaderComponent)`
-    margin: 0 0 ${gridSchema.gutter};
     ${colorCore}
     ${ellipsisCore}
     ${fontFamilyCore}
@@ -83,28 +82,33 @@ const Header = headerFactory({ tag: 'h1' });
 Header.h1 = Header;
 
 Header.propTypes = {
-  display: PropTypes.bool,
+  displayHeader: PropTypes.bool,
   ...typography.propTypes,
 };
 
 Header.defaultProps = {
   ...defaultStylesBase,
-  display: false,
+  displayHeader: false,
   fontWeight: defaultStylesBase.fontWeight,
+  mb: gridSchema.gutter,
+  mt: 0,
 };
 for (let i = 2; i <= 6; i++) {
   const subHeaderTag = `h${i}`;
   Header[subHeaderTag] = headerFactory({ tag: subHeaderTag });
 
   Header[subHeaderTag].propTypes = {
-    display: PropTypes.bool,
+    displayHeader: PropTypes.bool,
     ...typography.propTypes,
   };
   Header[subHeaderTag].defaultProps = {
     ...defaultStylesBase,
-    display: false,
+    displayHeader: false,
     fontWeight: defaultStylesBase.fontWeight,
+    mb: gridSchema.gutter,
+    mt: 0,
   };
 }
 
+/** @component */
 export { Header };

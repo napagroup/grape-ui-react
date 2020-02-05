@@ -1,20 +1,4 @@
-import { style } from 'styled-system';
-import { POSITION_DEFAULT_VALUE, resolveColor } from 'src/utils/styledHelpers';
-
-const positionStyle = style({
-  // The corresponding CSS property (defaults to prop argument)
-  cssProperty: 'position',
-  // key for theme values
-  key: 'position',
-  // React prop name
-  prop: 'position',
-  // add a fallback scale object or array, if theme is not present
-  scale: ['', '', '', '', ''],
-  // accessor function for transforming the value
-  transformValue: position => position || POSITION_DEFAULT_VALUE,
-});
-
-export const positionButton = props => (props.position ? positionStyle(props) : `position: ${POSITION_DEFAULT_VALUE};`);
+import { resolveColor } from 'src/utils/styledHelpers';
 
 const hasVariant = variant => {
   if (!variant) {

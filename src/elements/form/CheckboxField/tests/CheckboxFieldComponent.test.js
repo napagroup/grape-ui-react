@@ -21,4 +21,9 @@ describe('CheckboxFieldComponent Component base', () => {
     const element = <ThemeProvider theme={{}}><CheckboxFieldComponent id="exampleColor" name="Color" options={colorOptions} value={selectedValue} /></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
+  it('should return a CheckboxFieldComponent that contains PlainText object', () => {
+    const selectedValue = ['red'];
+    const element = <ThemeProvider theme={{}}><CheckboxFieldComponent id="exampleColor" name="Color" options={colorOptions} plainText value={selectedValue} /></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
 });

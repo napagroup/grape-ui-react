@@ -1,60 +1,42 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
-  alignContent,
-  alignItems,
-  alignSelf,
   border,
-  borderRadius,
-  borderWidth,
-  bottom,
   boxShadow,
   buttonStyle,
   display,
-  flexBasis,
-  flexDirection,
-  flexWrap,
+  flexbox,
   fontWeight,
-  height,
-  justifyContent,
-  left,
+  layout,
   lineHeight,
-  maxHeight,
   maxWidth,
-  minHeight,
-  minWidth,
   position,
-  right,
-  size,
   space,
-  top,
-  width,
-  zIndex,
+  verticalAlign,
 } from 'styled-system';
 import {
   borderRadiusCore,
   colorCore,
   defaultStylesBase,
+  ellipsisCore,
   fontFamilyCore,
   fontSizeCore,
   fontStyleCore,
   letterSpacingCore,
+  POSITION_DEFAULT_VALUE,
   resolveBoxShadow,
   resolveColor,
   textAlignCore,
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
-import {
-  activeColorButton,
-  hoverColorButton,
-  positionButton,
-} from './utils';
+import propTypes from '@styled-system/prop-types';
+import { activeColorButton, hoverColorButton } from './utils';
 import { ButtonComponent } from './component';
 
 const borderButton = props => border({
   ...props,
-  border: props.outline ? props.border : '',
+  border: props.outline ? props.border : '0',
 });
 
 const boxShadowButtonMemoized = (value = '01') => props => boxShadow({
@@ -96,43 +78,24 @@ const scaleButton = props => {
 };
 
 
-export const Button = styled(ButtonComponent)`
-  ${alignContent}
-  ${alignItems}
-  ${alignSelf}
+const Button = styled(ButtonComponent)`
   ${borderButton}
   ${borderRadiusCore}
-  ${borderWidth}
   ${boxShadowButtonMemoized()}
-  ${bottom}
   ${buttonStyle}
   ${colorCore}
-  ${display}
-  ${flexBasis}
-  ${flexDirection}
-  ${flexWrap}
+  ${flexbox}
   ${fontFamilyCore}
   ${fontSizeCore}
   ${fontStyleCore}
   ${fontWeight}
-  ${height}
-  ${justifyContent}
-  ${left}
+  ${layout}
   ${letterSpacingCore}
   ${lineHeight}
-  ${maxHeight}
-  ${maxWidth}
-  ${minHeight}
-  ${minWidth}
-  ${positionButton}
-  ${right}
+  ${position}
   ${scaleButton}
-  ${size}
   ${textAlignCore}
   ${textDecorationCore}
-  ${top}
-  ${width}
-  ${zIndex}
   outline: 0;
   text-transform: uppercase;
   &:hover {
@@ -148,45 +111,35 @@ export const Button = styled(ButtonComponent)`
     pointer-events: none;
     cursor: not-allowed;
   }
+  > div {
+    ${borderRadiusCore}
+    ${display}
+    ${ellipsisCore}
+    ${maxWidth}
+    ${verticalAlign}
+  }
 `;
 
 Button.propTypes = {
-  ...alignContent.propTypes,
-  ...alignItems.propTypes,
-  ...alignSelf.propTypes,
   bgActiveColor: PropTypes.string,
   bgHoverColor: PropTypes.string,
-  ...border.propTypes,
-  ...borderRadius.propTypes,
-  ...bottom.propTypes,
   ...boxShadow.propTypes,
   contained: PropTypes.bool,
   ...display.propTypes,
-  ...flexBasis.propTypes,
-  ...flexDirection.propTypes,
-  ...flexWrap.propTypes,
   ...fontWeight.propTypes,
-  ...height.propTypes,
   href: PropTypes.string,
-  ...justifyContent.propTypes,
-  ...left.propTypes,
   ...lineHeight.propTypes,
-  ...maxHeight.propTypes,
   ...maxWidth.propTypes,
-  ...minHeight.propTypes,
-  ...minWidth.propTypes,
   outline: PropTypes.bool,
   ...position.propTypes,
   raised: PropTypes.bool,
-  ...right.propTypes,
-  ...size.propTypes,
   ...space.propTypes,
   to: PropTypes.string,
-  ...top.propTypes,
   ...typography.propTypes,
-  ...width.propTypes,
-  ...zIndex.propTypes,
-
+  ...propTypes.border,
+  ...propTypes.flexbox,
+  ...propTypes.layout,
+  ...propTypes.position,
 };
 
 Button.defaultProps = {
@@ -201,13 +154,19 @@ Button.defaultProps = {
   display: 'inline-block',
   href: null,
   m: 1,
+  maxWidth: '100%',
   outline: false,
   pb: 1,
   pl: 3,
+  position: POSITION_DEFAULT_VALUE,
   pr: 3,
   pt: 1,
   raised: false,
   textAlign: 'center',
   textDecoration: 'none',
   to: null,
+  verticalAlign: 'top',
 };
+
+/** @component */
+export { Button };

@@ -15,7 +15,7 @@ import {
 } from 'src/utils/styledHelpers';
 import { TextComponent } from './component';
 
-export const Text = styled(TextComponent)`
+const Text = styled(TextComponent)`
   ${colorCore}
   ${ellipsisCore}
   ${fontFamilyCore}
@@ -36,3 +36,6 @@ Text.propTypes = {
 Text.defaultProps = {
   ...defaultStylesBase,
 };
+
+/** @component */
+export { Text };

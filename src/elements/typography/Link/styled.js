@@ -19,10 +19,10 @@ import {
 import { LinkComponent } from './component';
 
 
-const hoverStyle = props => `&:active {
+const hoverStyle = props => `
   color: ${resolveColor(props.hoverStyle, getGlobalOverrides(props))};
   cursor: pointer;
-}`;
+`;
 
 const Link = styled(LinkComponent)`
   ${colorCore}
@@ -37,8 +37,10 @@ const Link = styled(LinkComponent)`
   ${textDecorationCore}
   ${space}
   &:hover,
-  ${hoverStyle}
-  `;
+  &:active {
+    ${hoverStyle}
+  }
+`;
 
 Link.propTypes = {
   ...typography.propTypes,
@@ -54,4 +56,6 @@ Link.defaultProps = {
 };
 
 Link.Router = Link;
+
+/** @component */
 export { Link };

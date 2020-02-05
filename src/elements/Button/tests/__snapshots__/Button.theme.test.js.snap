@@ -2,13 +2,16 @@
 
 exports[`Button using Theme Font Family should return a Button object with a custom font family 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: transparent;
   color: inherit;
-  display: inline-block;
   font-family: "DejaVu Sans Mono","Bitstream Vera Sans Mono",Courier;
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -42,23 +45,35 @@ exports[`Button using Theme Font Family should return a Button object with a cus
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   type="button"
 >
-  Lorem Ipsum
+  <div>
+    Lorem Ipsum
+  </div>
 </button>
 `;
 
 exports[`Button using Theme color should return a Button object with custom color 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: hsl(305,33.9%,23.7%);
   color: hsl(313,67.8%,47.5%);
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -92,23 +107,35 @@ exports[`Button using Theme color should return a Button object with custom colo
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   type="button"
 >
-  Lorem Ipsum
+  <div>
+    Lorem Ipsum
+  </div>
 </button>
 `;
 
 exports[`Button using theme border radius Button should return a Button with lg border radius styling based on theme.border.borderRadius 1`] = `
 .c0 {
+  border: 0;
   border-radius: 12px;
   background-color: transparent;
   color: inherit;
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -142,21 +169,33 @@ exports[`Button using theme border radius Button should return a Button with lg 
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 12px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   type="button"
 >
-  Custom lg button
+  <div>
+    Custom lg button
+  </div>
 </button>
 `;
 
 exports[`Button using variant styles Button set to an unknown variant should return a Button with no variant styling 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -185,23 +224,35 @@ exports[`Button using variant styles Button set to an unknown variant should ret
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   type="button"
 >
-  Do this
+  <div>
+    Do this
+  </div>
 </button>
 `;
 
 exports[`Button using variant styles Button set with no variant should return a Button with bg and color styling preserved 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: hsl(53.9,100%,61.6%);
   color: hsl(53.9,100%,41.6%);
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -235,25 +286,37 @@ exports[`Button using variant styles Button set with no variant should return a 
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   type="button"
 >
-  Do this
+  <div>
+    Do this
+  </div>
 </button>
 `;
 
 exports[`Button using variant styles Button set with variant, bg and color should return a Button with bg and color styling overwriting the variant bg and color style 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: hsl(4.1,89.6%,58.4%);
   color: hsl(0,0%,98%);
   background-color: hsl(53.9,100%,61.6%);
   color: hsl(53.9,100%,41.6%);
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -290,23 +353,35 @@ exports[`Button using variant styles Button set with variant, bg and color shoul
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   type="button"
 >
-  Do this
+  <div>
+    Do this
+  </div>
 </button>
 `;
 
 exports[`Button using variant styles Button with variant set to contained-danger should return a Button with contained-danger styling 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: hsl(4.1,89.6%,58.4%);
   color: hsl(0,0%,98%);
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -343,23 +418,35 @@ exports[`Button using variant styles Button with variant set to contained-danger
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   type="button"
 >
-  Do this
+  <div>
+    Do this
+  </div>
 </button>
 `;
 
 exports[`Button using variant styles Button with variant set to contained-light should return a Button with contained-light styling 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: hsl(0,0%,98%);
   color: hsl(0,0%,25%);
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -396,22 +483,34 @@ exports[`Button using variant styles Button with variant set to contained-light 
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   type="button"
 >
-  Do this
+  <div>
+    Do this
+  </div>
 </button>
 `;
 
 exports[`Button using variant styles Button with variant set to danger should return a Button with danger styling 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   color: hsl(4.1,89.6%,58.4%);
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -440,22 +539,34 @@ exports[`Button using variant styles Button with variant set to danger should re
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   type="button"
 >
-  Do this
+  <div>
+    Do this
+  </div>
 </button>
 `;
 
 exports[`Button using variant styles Button with variant set to primary should return a Button with primary styling 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   color: hsl(323.3,84.6%,28%);
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -484,23 +595,35 @@ exports[`Button using variant styles Button with variant set to primary should r
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   type="button"
 >
-  Do this
+  <div>
+    Do this
+  </div>
 </button>
 `;
 
 exports[`Button using variant styles with theme colors Button with variant set to contained-primary should return a Button with contained-primary styling based on theme.colors 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: hsl(323.31,85.61%,29.98%);
   color: hsl(0,0%,98%);
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -537,10 +660,19 @@ exports[`Button using variant styles with theme colors Button with variant set t
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   type="button"
 >
-  Do this
+  <div>
+    Do this
+  </div>
 </button>
 `;

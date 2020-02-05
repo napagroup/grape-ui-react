@@ -2,18 +2,22 @@
 
 exports[`Button Component base with style should return a Button with a zIndex when using a number 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: transparent;
   color: inherit;
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  z-index: 500;
   position: relative;
   margin: 4px;
   padding-bottom: 4px;
@@ -23,7 +27,6 @@ exports[`Button Component base with style should return a Button with a zIndex w
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  z-index: 500;
   outline: 0;
   text-transform: uppercase;
 }
@@ -43,28 +46,41 @@ exports[`Button Component base with style should return a Button with a zIndex w
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   type="button"
 >
-  Do this
+  <div>
+    Do this
+  </div>
 </button>
 `;
 
 exports[`Button Component base with style should return a Button with a zIndex when using a string 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: transparent;
   color: inherit;
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
+  z-index: 500;
   position: relative;
   margin: 4px;
   padding-bottom: 4px;
@@ -74,7 +90,6 @@ exports[`Button Component base with style should return a Button with a zIndex w
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  z-index: 500;
   outline: 0;
   text-transform: uppercase;
 }
@@ -92,25 +107,37 @@ exports[`Button Component base with style should return a Button with a zIndex w
   opacity: 0.4;
   pointer-events: none;
   cursor: not-allowed;
+}
+
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
 }
 
 <button
   className="c0"
   type="button"
 >
-  Do this
+  <div>
+    Do this
+  </div>
 </button>
 `;
 
 exports[`Button Component base with style should return a Button with bg and color 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: hsl(122.4,39.4%,49.2%);
   color: hsl(0,0%,98%);
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -142,6 +169,13 @@ exports[`Button Component base with style should return a Button with bg and col
   opacity: 0.4;
   pointer-events: none;
   cursor: not-allowed;
+}
+
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
 }
 
 <button
@@ -149,19 +183,24 @@ exports[`Button Component base with style should return a Button with bg and col
   id="exampleColor"
   type="button"
 >
-  Happy St. Patrick's Day!
+  <div>
+    Happy St. Patrick's Day!
+  </div>
 </button>
 `;
 
 exports[`Button Component base with style should return a Button with bg and color and bgActiveColor and bgHoverColor  1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: hsl(122.4,39.4%,49.2%);
   color: hsl(0,0%,98%);
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -195,24 +234,36 @@ exports[`Button Component base with style should return a Button with bg and col
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   id="exampleColor"
   type="button"
 >
-  Happy St. Patrick's Day!
+  <div>
+    Happy St. Patrick's Day!
+  </div>
 </button>
 `;
 
 exports[`Button Component base with style should return a Button with lg 1`] = `
 .c0 {
+  border: 0;
   border-radius: 8px;
   background-color: transparent;
   color: inherit;
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -246,24 +297,36 @@ exports[`Button Component base with style should return a Button with lg 1`] = `
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 8px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   id="exampleColor"
   type="button"
 >
-  Do this
+  <div>
+    Do this
+  </div>
 </button>
 `;
 
 exports[`Button Component base with style should return a Button with sm 1`] = `
 .c0 {
+  border: 0;
   border-radius: 2px;
   background-color: transparent;
   color: inherit;
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -297,24 +360,36 @@ exports[`Button Component base with style should return a Button with sm 1`] = `
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 2px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   id="exampleColor"
   type="button"
 >
-  Do this
+  <div>
+    Do this
+  </div>
 </button>
 `;
 
 exports[`Button Component base with style should return a Link with href with button look 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: transparent;
   color: inherit;
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -346,6 +421,13 @@ exports[`Button Component base with style should return a Link with href with bu
   opacity: 0.4;
   pointer-events: none;
   cursor: not-allowed;
+}
+
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
 }
 
 <a
@@ -353,19 +435,24 @@ exports[`Button Component base with style should return a Link with href with bu
   href="https://www.google.com/"
   target="_blank"
 >
-  google
+  <div>
+    google
+  </div>
 </a>
 `;
 
 exports[`Button Component base with style should return a Link with to with button look 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: transparent;
   color: inherit;
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -397,6 +484,13 @@ exports[`Button Component base with style should return a Link with to with butt
   opacity: 0.4;
   pointer-events: none;
   cursor: not-allowed;
+}
+
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
 }
 
 <a
@@ -404,19 +498,24 @@ exports[`Button Component base with style should return a Link with to with butt
   href="/404"
   onClick={[Function]}
 >
-  404
+  <div>
+    404
+  </div>
 </a>
 `;
 
 exports[`Button base should return a Button 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: transparent;
   color: inherit;
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -448,25 +547,37 @@ exports[`Button base should return a Button 1`] = `
   opacity: 0.4;
   pointer-events: none;
   cursor: not-allowed;
+}
+
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
 }
 
 <button
   className="c0"
   type="button"
 >
-  Button Base
+  <div>
+    Button Base
+  </div>
 </button>
 `;
 
 exports[`Button base should return a Button with disabled 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: transparent;
   color: inherit;
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -498,6 +609,13 @@ exports[`Button base should return a Button with disabled 1`] = `
   opacity: 0.4;
   pointer-events: none;
   cursor: not-allowed;
+}
+
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
 }
 
 <button
@@ -506,19 +624,24 @@ exports[`Button base should return a Button with disabled 1`] = `
   id="exampleColor"
   type="button"
 >
-  Disabled button
+  <div>
+    Disabled button
+  </div>
 </button>
 `;
 
 exports[`Button base should return an contained Button 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   background-color: transparent;
   color: inherit;
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -552,25 +675,37 @@ exports[`Button base should return an contained Button 1`] = `
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   id="buttonContained"
   type="button"
 >
-  Button Contained
+  <div>
+    Button Contained
+  </div>
 </button>
 `;
 
 exports[`Button base should return an contained raised Button 1`] = `
 .c0 {
+  border: 0;
   border-radius: 4px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
   background-color: transparent;
   color: inherit;
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -605,12 +740,21 @@ exports[`Button base should return an contained raised Button 1`] = `
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   id="buttonContainedRaised"
   type="button"
 >
-  Button Contained and Raised
+  <div>
+    Button Contained and Raised
+  </div>
 </button>
 `;
 
@@ -620,10 +764,12 @@ exports[`Button base should return an outlined Button 1`] = `
   border-radius: 4px;
   background-color: transparent;
   color: inherit;
-  display: inline-block;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -657,11 +803,20 @@ exports[`Button base should return an outlined Button 1`] = `
   cursor: not-allowed;
 }
 
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
 <button
   className="c0"
   id="buttonOutline"
   type="button"
 >
-  Button Outline
+  <div>
+    Button Outline
+  </div>
 </button>
 `;
