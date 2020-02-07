@@ -7,10 +7,16 @@ import {
 } from 'styled-system';
 import { FlexComponent } from './component';
 
-export const Flex = styled(FlexComponent)`
-  display: flex;
+const Flex = styled(FlexComponent)`
   ${flexbox}
   ${layout}
   ${position}
   ${space}
 `;
+
+Flex.defaultProps = {
+  display: 'flex',
+};
+
+/** @component */
+export { Flex };

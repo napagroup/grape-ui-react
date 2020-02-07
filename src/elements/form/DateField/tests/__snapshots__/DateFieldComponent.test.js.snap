@@ -204,7 +204,7 @@ exports[`DateFieldComponent Component base should return a DateFieldComponent ob
               aria-disabled={false}
               aria-label="Tue Feb 4, 2020"
               aria-selected={false}
-              className="DayPicker-Day DayPicker-Day--today"
+              className="DayPicker-Day"
               onClick={[Function]}
               onKeyDown={[Function]}
               role="gridcell"
@@ -240,7 +240,7 @@ exports[`DateFieldComponent Component base should return a DateFieldComponent ob
               aria-disabled={false}
               aria-label="Fri Feb 7, 2020"
               aria-selected={false}
-              className="DayPicker-Day"
+              className="DayPicker-Day DayPicker-Day--today"
               onClick={[Function]}
               onKeyDown={[Function]}
               role="gridcell"

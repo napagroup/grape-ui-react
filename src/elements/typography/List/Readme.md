@@ -59,26 +59,21 @@ import { ListItem } from '../index';
 ```
 
 ### Style variations
-Add the attribute `unstyled` to have an unstyled view.
+Add the attribute `unstyled` to have an unstyled view. Add the attribute `inline` to have an inline view.
 
 ```jsx in Markdown
 import { ListItem } from '../index';
 
-<List unstyled>
-  <ListItem>List Item 1</ListItem>
-  <ListItem>List Item 2</ListItem>
-  <ListItem>List Item 3</ListItem>
-</List>
-```
-
-Add the attribute `inline` to have an inline view.
-
-```jsx in Markdown
-import { ListItem } from '../index';
-
-<List inline>
-  <ListItem>List Item 1</ListItem>
-  <ListItem>List Item 2</ListItem>
-  <ListItem>List Item 3</ListItem>
-</List>
+<div>
+  <List unstyled>
+    <ListItem>This List component was set to <code>unstyled</code>.</ListItem>
+    <ListItem>List Item 2</ListItem>
+    <ListItem>List Item 3</ListItem>
+  </List>
+  <List inline>
+    <ListItem>This List component was set to <code>inline</code>.</ListItem>
+    <ListItem>List Item 2</ListItem>
+    <ListItem>List Item 3</ListItem>
+  </List>
+</div>
 ```
