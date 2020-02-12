@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ControlLabel } from 'src/elements/form/ControlLabel';
-import { ControlGroup } from 'src/elements/form/ControlGroup';
+import {
+  ControlGroup,
+  ControlLabel,
+  getAssistiveText,
+  PlainText,
+} from 'src/elements/form/utils';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import { PlainText } from 'src/elements/form/PlainText';
 import { defaultControlStyles } from 'src/utils/styledHelpers';
-import { getAssistiveText } from 'src/elements/form/AssistiveText';
 import { CheckboxFieldComponent } from './component';
 
 const renderControlGroupLabel = propsFromControlGroup => {

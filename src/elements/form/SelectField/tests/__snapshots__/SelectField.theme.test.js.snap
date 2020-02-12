@@ -1,6 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SelectField using Theme Font Family should return a SelectField object with a custom font family 1`] = `
+.c0 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -21,15 +30,6 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: transparent;
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -232,6 +232,15 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
 `;
 
 exports[`SelectField using Theme color should return a SelectField object with custom color 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(305,33.9%,23.7%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(305,33.9%,23.7%);
   color: inherit;
@@ -252,15 +261,6 @@ exports[`SelectField using Theme color should return a SelectField object with c
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(305,33.9%,23.7%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -463,6 +463,15 @@ exports[`SelectField using Theme color should return a SelectField object with c
 `;
 
 exports[`SelectField using custom brand colors should return a SelectField object with custom brand primary color 1`] = `
+.c0 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -483,15 +492,6 @@ exports[`SelectField using custom brand colors should return a SelectField objec
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: transparent;
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {

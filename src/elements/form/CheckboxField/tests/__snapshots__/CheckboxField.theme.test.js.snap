@@ -1,6 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxField using Theme Font Family should return a CheckboxField object with a custom base font family defined 1`] = `
+.c0 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: Nunito,sans-serif;
+  font-size: 0.8rem;
+  font-weight: inherit;
+  height: auto;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  position: relative;
+  top: auto;
+  left: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
 .c3 {
   color: hsl(4.1,89.6%,58.4%);
   background-color: transparent;
@@ -36,37 +67,6 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.c1 {
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  font-family: Nunito,sans-serif;
-  font-size: 0.8rem;
-  font-weight: inherit;
-  height: auto;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 0.8;
-  position: relative;
-  top: auto;
-  left: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: transparent;
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 <div
@@ -174,6 +174,37 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
 `;
 
 exports[`CheckboxField using Theme Font Family should return a CheckboxField object with a custom font family 1`] = `
+.c0 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  height: auto;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  position: relative;
+  top: auto;
+  left: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
 .c3 {
   background-color: transparent;
   color: inherit;
@@ -209,37 +240,6 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.c1 {
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 0.8rem;
-  font-weight: inherit;
-  height: auto;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 0.8;
-  position: relative;
-  top: auto;
-  left: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: transparent;
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 <div
@@ -347,6 +347,37 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
 `;
 
 exports[`CheckboxField using Theme color should return a CheckboxField object with custom color 1`] = `
+.c0 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: hsl(305,33.9%,23.7%);
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  height: auto;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  position: relative;
+  top: auto;
+  left: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
 .c3 {
   color: hsl(313,67.8%,47.5%);
   background-color: transparent;
@@ -382,37 +413,6 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.c1 {
-  background-color: hsl(305,33.9%,23.7%);
-  color: inherit;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 0.8rem;
-  font-weight: inherit;
-  height: auto;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 0.8;
-  position: relative;
-  top: auto;
-  left: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: transparent;
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 <div

@@ -1,12 +1,14 @@
 import * as styledComponents from 'styled-components';
 import { Button } from './elements/Button';
-import { DateField } from './elements/form/DateField';
 import { Box, Flex } from './elements/grid';
 import { Image } from './elements/Image';
-import { Form } from './elements/form/Form';
-import { TextField } from './elements/form/TextField';
-import { SelectField } from './elements/form/SelectField';
-import { CheckboxField } from './elements/form/CheckboxField';
+import {
+  CheckboxField,
+  DateField,
+  Form,
+  SelectField,
+  TextField,
+} from './elements/form';
 import {
   Header,
   Link,

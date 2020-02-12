@@ -1,10 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
-import { Form } from '..';
+import { Form, SelectField, TextField } from 'src/elements/form';
 import 'jest-styled-components';
-import { TextField } from '../../TextField';
-import { SelectField } from '../../SelectField';
 
 const assertReactElement = element => {
   const component = renderer.create(element);

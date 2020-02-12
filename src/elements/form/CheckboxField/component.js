@@ -18,9 +18,8 @@ import {
 } from 'src/utils/styledHelpers';
 import { passThrough, removeSomeProps } from 'src/utils/componentHelpers';
 import { CheckboxGroup, Checkbox } from 'react-checkbox-group';
-import { PlainText } from 'src/elements/form/PlainText';
+import { PlainText } from 'src/elements/form/utils';
 import { getGlobalStyles } from 'src/global-styles';
-// import { defaultStylesBase } from '../../../utils/styledHelpers';
 
 const { grid: { gutter } } = getGlobalStyles();
 const opacity = props => `${props.disabled ? 'opacity: 0.6;' : ''}`;

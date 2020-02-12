@@ -22,9 +22,7 @@ import {
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
-import { getAssistiveText } from 'src/elements/form/AssistiveText';
-import { ControlGroup } from 'src/elements/form/ControlGroup';
-import { PlainText } from 'src/elements/form/PlainText';
+import { ControlGroup, getAssistiveText, PlainText } from 'src/elements/form/utils';
 import { DateFieldComponent } from './component';
 import {
   DayPickerControlStyles,

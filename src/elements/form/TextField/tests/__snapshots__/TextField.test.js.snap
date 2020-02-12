@@ -1,6 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextField  a large TextField object should return a large TextField object  1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -21,15 +30,6 @@ exports[`TextField  a large TextField object should return a large TextField obj
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -136,6 +136,15 @@ exports[`TextField  a large TextField object should return a large TextField obj
 `;
 
 exports[`TextField Component base should return a TextField object 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -156,15 +165,6 @@ exports[`TextField Component base should return a TextField object 1`] = `
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -271,6 +271,15 @@ exports[`TextField Component base should return a TextField object 1`] = `
 `;
 
 exports[`TextField a TextField object should return a TextField object with a red bg 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -291,15 +300,6 @@ exports[`TextField a TextField object should return a TextField object with a re
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -406,6 +406,15 @@ exports[`TextField a TextField object should return a TextField object with a re
 `;
 
 exports[`TextField a plainText TextField should return a PlainText div TextField 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -426,15 +435,6 @@ exports[`TextField a plainText TextField should return a PlainText div TextField
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -481,6 +481,15 @@ exports[`TextField a plainText TextField should return a PlainText div TextField
 `;
 
 exports[`TextField a small TextField object should return a disabled TextField 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -501,15 +510,6 @@ exports[`TextField a small TextField object should return a disabled TextField 1
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -616,6 +616,15 @@ exports[`TextField a small TextField object should return a disabled TextField 1
 `;
 
 exports[`TextField a small TextField object should return a small TextField object  1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -636,15 +645,6 @@ exports[`TextField a small TextField object should return a small TextField obje
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -751,6 +751,15 @@ exports[`TextField a small TextField object should return a small TextField obje
 `;
 
 exports[`TextField a small TextField object should return a small TextField object with a red activeColor  1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -771,15 +780,6 @@ exports[`TextField a small TextField object should return a small TextField obje
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -886,6 +886,15 @@ exports[`TextField a small TextField object should return a small TextField obje
 `;
 
 exports[`TextField a small TextField object should return a small TextField object with space mb  1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -906,15 +915,6 @@ exports[`TextField a small TextField object should return a small TextField obje
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -1369,6 +1369,15 @@ exports[`TextField with an id attribute provided should return a TextField with 
   text-decoration: inherit;
 }
 
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -1389,15 +1398,6 @@ exports[`TextField with an id attribute provided should return a TextField with 
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -1528,6 +1528,15 @@ exports[`TextField with assistive text should return a TextField object contain 
   text-decoration: inherit;
 }
 
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -1548,15 +1557,6 @@ exports[`TextField with assistive text should return a TextField object contain 
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -1909,6 +1909,15 @@ exports[`TextField with custom control group props should return a TextField wit
 `;
 
 exports[`TextField with custom control label props should return a TextField with custom control label props 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -1931,15 +1940,6 @@ exports[`TextField with custom control label props should return a TextField wit
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -2046,6 +2046,15 @@ exports[`TextField with custom control label props should return a TextField wit
 `;
 
 exports[`TextField with formStyle set to filled and plain text should return a formStyle filled readonly TextField 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -2066,15 +2075,6 @@ exports[`TextField with formStyle set to filled and plain text should return a f
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -2121,6 +2121,15 @@ exports[`TextField with formStyle set to filled and plain text should return a f
 `;
 
 exports[`TextField with formStyle set to filled should return a formStyle filled TextField 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -2141,15 +2150,6 @@ exports[`TextField with formStyle set to filled should return a formStyle filled
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -2263,6 +2263,15 @@ exports[`TextField with formStyle set to filled should return a formStyle filled
 `;
 
 exports[`TextField with formStyle set to filled, multiline and plain text should return a formStyle filled multline readonly TextField 1`] = `
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -2283,15 +2292,6 @@ exports[`TextField with formStyle set to filled, multiline and plain text should
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -2378,6 +2378,15 @@ exports[`TextField with object in assistive text should return a TextField objec
   text-decoration: inherit;
 }
 
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: inherit;
@@ -2398,15 +2407,6 @@ exports[`TextField with object in assistive text should return a TextField objec
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -2543,6 +2543,15 @@ exports[`TextField with some other props should return a TextField object contai
   text-decoration: inherit;
 }
 
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: hsl(4.1,89.6%,58.4%);
@@ -2563,15 +2572,6 @@ exports[`TextField with some other props should return a TextField object contai
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {
@@ -2703,6 +2703,15 @@ exports[`TextField with validation error should return a TextField object contai
   text-decoration: inherit;
 }
 
+.c0 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
 .c2 {
   background-color: hsl(0,0%,100%);
   color: hsl(4.1,89.6%,58.4%);
@@ -2723,15 +2732,6 @@ exports[`TextField with validation error should return a TextField object contai
   text-align: inherit;
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-}
-
-.c0 {
-  position: relative;
-  background-color: hsl(0,0%,100%);
-  color: inherit;
-  padding-bottom: 16px;
-  padding-top: 4px;
-  width: 100%;
 }
 
 .c1 {

@@ -42,11 +42,37 @@ module.exports = {
       content: './src/elements/grid/Readme.md',
       description: 'All flexbox elements',
       name: 'Flexbox',
-      sectionDepth: 1,
+      sectionDepth: 2,
       sections: [
+        {
+          content: 'src/elements/grid/breakpointsAndSpace.md',
+          name: 'Breakpoints & Space',
+        },
         {
           components: () => ['./src/elements/grid/**/styled.js'],
           name: 'Components',
+          sectionDepth: 1,
+        },
+      ],
+    },
+    {
+      content: './src/elements/Image/Readme.md',
+      name: 'Image',
+    },
+    {
+      content: './src/elements/form/Readme.md',
+      description: 'All form elements',
+      name: 'Form',
+      sectionDepth: 2,
+      sections: [
+        {
+          components: () => ['./src/elements/form/utils/*/styled.js'],
+          name: 'Form Utilities',
+        },
+        {
+          components: () => ['./src/elements/form/*/styled.js'],
+          name: 'Components',
+          sectionDepth: 1,
         },
       ],
     },

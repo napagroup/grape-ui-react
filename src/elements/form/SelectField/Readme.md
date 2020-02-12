@@ -5,8 +5,8 @@
 #### Basic Usage
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
-import { Paragraph, Text } from '../../typography';
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Paragraph, Text } from 'src/elements/typography';
 
 const colorOptions = [
   { label: 'Red', value: 'red' },
@@ -99,7 +99,7 @@ You can pass in either a createRef(), or via "callback refs". Examples are demon
 ```jsx inside Markdown
 import { useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Button } from '../../Button';
 
 const onBtnClick = inputName => () => {
@@ -159,8 +159,8 @@ const linkState = () => null;
 import { useForm } from "react-hook-form";
 import { RHFInput } from 'react-hook-form-input';
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
-import { Header } from '../../typography';
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Header } from 'src/elements/typography';
 import { Button } from '../../Button';
 
 const colorOptions = [
@@ -206,7 +206,7 @@ const getValue = colorOption => {myColor ? myColor.value : ''}
 #### Kitchen Sink Usage
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
 const roguesOptions = [
   { label: 'Bane', value: 'bane' },
   { label: 'Joker', value: 'joker' },
@@ -280,8 +280,8 @@ You can also use custom components within the SelectField control.  This is usef
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from '../../grid'; // ... from 'grape-ui-react'
-import { Text } from '../../typography'; // ... from 'grape-ui-react'
+import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 import { components } from 'react-select';
 
 const roguesOptions = [
@@ -348,7 +348,7 @@ You can also use custom styles within the SelectField control.  Simply use `styl
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
 
 const princeSongOptions = [
   { label: 'Purple Rain', value: 'purpleRain' },

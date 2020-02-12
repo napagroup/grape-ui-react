@@ -12,15 +12,9 @@ const componentPropsToRemove = {
   ...spaceProps.propTypes,
 };
 
-export const ImageComponent = ({ alt, ...props }) => {
-  if (!alt) {
-    // eslint-disable-next-line no-console
-    console.error('🍇: alt property is required for Image'); // there is an explicit requirement scenerio to use console here.
-  }
-  return (
-    <Img alt={alt} {...removeSomeProps(props, Object.keys(componentPropsToRemove))} />
-  );
-};
+export const ImageComponent = ({ alt, ...props }) => (
+  <Img alt={alt} {...removeSomeProps(props, Object.keys(componentPropsToRemove))} />
+);
 
 ImageComponent.propTypes = {
   alt: PropTypes.string,

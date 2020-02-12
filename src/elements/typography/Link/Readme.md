@@ -4,7 +4,7 @@ When adding in links, you can use `<Link>`. What's cool about this tag is that i
 
 ```jsx in Markdown
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Flex } from '../../grid'; // ... from 'grape-ui-react'
+import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
 
 <Router>
   <Flex flexDirection="column">

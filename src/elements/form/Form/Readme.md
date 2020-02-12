@@ -1,7 +1,7 @@
 `<Form>` is the wrapping flex container for all form control elements. It displays all controls in a column layout.
 
 ```jsx inside Markdown
-import { TextField } from '../TextField';
+import { TextField } from 'src/elements/form';
 
 <Form>
   <TextField
@@ -19,8 +19,8 @@ import { TextField } from '../TextField';
 `<Form>` can have `formStyle` applied which will trickle down to all children form components without their `formStyle` explicitly stated.  And since `<Form>` uses principles found in `flexbox`, you can apply all sorts of [styled system props](https://styled-system.com/api).
 
 ```jsx inside Markdown
-import { Box, Flex } from '../../grid';
-import { TextField } from '../TextField';
+import { Box, Flex } from 'src/elements/grid';
+import { TextField } from 'src/elements/form';
 
 <Flex flexDirection={['column', 'row']}>
   <Box pr={[null, 1, 2, 3]} width={[1, 1 / 2]}>

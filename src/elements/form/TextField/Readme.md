@@ -6,8 +6,8 @@
 #### Basic Usage
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
-import { Paragraph, Text } from '../../typography';
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Paragraph, Text } from 'src/elements/typography';
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -110,7 +110,7 @@ import { Paragraph, Text } from '../../typography';
 #### Kitchen Sink Usage
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -153,8 +153,8 @@ import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
-import { Paragraph, Text } from '../../typography';
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Paragraph, Text } from 'src/elements/typography';
 
 <ThemeProvider theme={{}}>
   <Text lg>Currency <code>currency=&#123;true&#125;</code></Text>
@@ -289,7 +289,7 @@ You can pass in either a createRef(), or via "callback refs". Examples are demon
 ```jsx inside Markdown
 import { useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Button } from '../../Button';
 
 const onBtnClick = inputName => () => {
@@ -355,8 +355,8 @@ import { useRef } from 'react';
 import { useForm } from "react-hook-form";
 import { RHFInput } from 'react-hook-form-input';
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
-import { Header } from '../../typography';
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Header } from 'src/elements/typography';
 import { Button } from '../../Button';
 
 const onBtnClick = inputName => () => {

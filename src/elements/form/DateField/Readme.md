@@ -8,8 +8,8 @@ All props that were introduced by 🍇UI as well as some important existing can 
 #### Basic Usage
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from '../../grid'; // ... from 'grape-ui-react'
-import { Text } from '../../typography'; // ... from 'grape-ui-react'
+import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -60,7 +60,7 @@ import { Text } from '../../typography'; // ... from 'grape-ui-react'
 #### Kitchen Sink Usage
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from '../../grid'; // ... from 'grape-ui-react'
+import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -104,8 +104,8 @@ You can specify the left or right alignment of the menu by using `menuAlignment`
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from '../../grid'; // ... from 'grape-ui-react'
-import { Text } from '../../typography'; // ... from 'grape-ui-react'
+import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -133,8 +133,8 @@ You can define if the menu will appear above or below the control by using `menu
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from '../../grid'; // ... from 'grape-ui-react'
-import { Text } from '../../typography'; // ... from 'grape-ui-react'
+import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -184,8 +184,8 @@ You can override specific position values by using either:
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from '../../grid'; // ... from 'grape-ui-react'
-import { Text } from '../../typography'; // ... from 'grape-ui-react'
+import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -230,7 +230,7 @@ import { Text } from '../../typography'; // ... from 'grape-ui-react'
 #### Theme Overrides
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from '../../grid'; // ... from 'grape-ui-react'
+import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
 
 const styles = {
   assistiveTextProps: {
@@ -319,7 +319,7 @@ The state is being set via the `onChange` function. `onChange` is calling a func
 #### Selected Date in State
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
 
 class DateFieldExample extends React.Component {
   constructor(props) {
@@ -409,8 +409,8 @@ This example shows how two `DateField` components can work together for selectin
 #### Selected Date Range in State
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
-import { Paragraph } from '../../typography'; // ... from 'grape-ui-react'
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Paragraph } from 'src/elements/typography'; // ... from 'grape-ui-react'
 import { Button } from '../../Button'; // ... from 'grape-ui-react'
 import moment from 'moment';
 class DateFieldExample extends React.Component {
@@ -518,7 +518,7 @@ class DateFieldExample extends React.Component {
 #### Date Field with locale
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import 'moment/locale/it';
 import 'moment/locale/ja';
 import MomentLocaleUtils from 'react-day-picker/moment';
@@ -566,7 +566,7 @@ You can pass in either a createRef(), or via "callback refs". Examples are demon
 ```jsx inside Markdown
 import { useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Button } from '../../Button';
 
 const onBtnClick = inputName => () => {

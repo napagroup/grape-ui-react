@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { getAssistiveText } from 'src/elements/form/AssistiveText';
-import { ControlGroup } from 'src/elements/form/ControlGroup';
-import { PlainText } from 'src/elements/form/PlainText';
+import { ControlGroup, getAssistiveText, PlainText } from 'src/elements/form/utils';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import {
   control,
