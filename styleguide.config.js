@@ -33,6 +33,8 @@ module.exports = {
         },
         {
           components: () => ['./src/elements/typography/**/styled.js'],
+          content: 'src/elements/typography/components.md',
+          description: 'Component directory',
           name: 'Components',
           sectionDepth: 1,
         },
@@ -50,6 +52,8 @@ module.exports = {
         },
         {
           components: () => ['./src/elements/grid/**/styled.js'],
+          content: 'src/elements/grid/components.md',
+          description: 'Component directory',
           name: 'Components',
           sectionDepth: 1,
         },
@@ -67,10 +71,19 @@ module.exports = {
       sections: [
         {
           components: () => ['./src/elements/form/utils/*/styled.js'],
+          content: 'src/elements/form/utils/Readme.md',
+          description: 'Form utilities directory',
           name: 'Form Utilities',
+          sectionDepth: 1,
+          sections: [{
+            content: './src/elements/form/utils/validationError.md',
+            name: 'Validation Error',
+          }],
         },
         {
           components: () => ['./src/elements/form/*/styled.js'],
+          content: 'src/elements/form/components.md',
+          description: 'Component directory',
           name: 'Components',
           sectionDepth: 1,
         },

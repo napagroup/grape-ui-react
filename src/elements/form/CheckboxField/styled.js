@@ -161,7 +161,10 @@ CheckboxField.propTypes = {
   isRequired: PropTypes.bool,
   labelText: PropTypes.string,
   plainText: PropTypes.bool,
-  validationError: PropTypes.string,
+  validationError: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.string,
+  ]),
   wrapperProps: PropTypes.object,
 };
 

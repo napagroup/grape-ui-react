@@ -71,7 +71,10 @@ SelectFieldComponent.propTypes = {
   menuSelectedColor: PropTypes.string,
   multiple: PropTypes.bool,
   ...typography.propTypes,
-  validationError: PropTypes.string,
+  validationError: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.string,
+  ]),
 };
 
 SelectFieldComponent.defaultProps = {
@@ -209,7 +212,10 @@ SelectField.propTypes = {
    * @see See [React-Select/Styles](https://react-select.com/styles) for a full list of style keys. */
   styleOverrides: PropTypes.object,
   /** Error text that will appear below the control when validation fires. */
-  validationError: PropTypes.string,
+  validationError: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.string,
+  ]),
   ...borderRadius.propTypes,
   ...spaceProps.propTypes,
 };

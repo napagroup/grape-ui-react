@@ -155,7 +155,10 @@ TextField.propTypes = {
   /** Used to render a dropdown control as a `PlainText` element. */
   plainText: PropTypes.bool,
   /** Error text that will appear below the control when validation fires. */
-  validationError: PropTypes.string,
+  validationError: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.string,
+  ]),
   ...borderRadius.propTypes,
 };
 

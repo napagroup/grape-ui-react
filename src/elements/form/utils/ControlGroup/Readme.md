@@ -3,6 +3,7 @@
 * `<DateField>`
 * `<SelectField>`
 * `<TextField>`
+
 `<ControlGroup` holds the control together and maps the other components in the field including the `<AssistiveText>`, `<ControlLabel>`, and styling for `validationError`. Props for `<ControlGroup>` can be modified by using `controlGroupProps` on the form element.
 
 ```jsx inside Markdown

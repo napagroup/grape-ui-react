@@ -7,7 +7,32 @@
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
-import { Paragraph, Text } from 'src/elements/typography';
+import { Link, Paragraph, Text } from 'src/elements/typography';
+
+const multilineAssistiveText = <Link href="https://www.youtube.com/watch?v=siiylkcrnhw" target="_blank">The Replacements - Can't Hardly Wait</Link>
+
+const cantHardlyWaitLyrics = 'I\'ll write you a letter tomorrow \
+\nTonight I can\'t hold a pen \
+\nSomeone\'s got a stamp that I can borrow \
+\nI promise not to blow the address again \
+\n\
+\nLights that flash in the evening, \
+\nThrough a crack in the drapes \
+\n\
+\nJesus rides beside me \
+\nHe never buys any smokes \
+\nHurry up, hurry up, ain\'t you had enough of this stuff \
+\nAshtray floors, dirty clothes, and filthy jokes \
+\n\
+\nSee you\'re high and lonesome \
+\nTry and try and try \
+\n\
+\nLights that flash in the evening, \
+\nThrough a hole in the drapes \
+\nI\'ll be home when I\'m sleeping \
+\nI can\'t hardly wait \
+\n\
+\nI can\'t wait. Hardly wait.';
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -45,27 +70,6 @@ import { Paragraph, Text } from 'src/elements/typography';
       />
     </Box>
   </Flex>
-  <Paragraph lg>Plain Text <code>plainText=&#123;true&#125;</code></Paragraph>
-  <Flex flexDirection={['column', 'row']}>
-    <Box px={1} width={[1, 1 / 2]}>
-      <TextField
-        labelText="Address"
-        name="examplePlainTextOutlined"
-        plainText
-        value="5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235"
-      />
-    </Box>
-    <Box px={1} width={[1, 1 / 2]}>
-      <TextField
-        ellipsis
-        formStyle="filled"
-        labelText="Address"
-        name="examplePlainTextFilled"
-        plainText
-        value="5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235"
-      />
-    </Box>
-  </Flex>
   <Text lg>Email <code>email=&#123;true&#125;</code></Text>
   <Paragraph sm><Text fontWeight="bold">NOTE:</Text> Email validation would still need to be handled separately</Paragraph>
   <Flex flexDirection={['column', 'row']}>
@@ -85,6 +89,26 @@ import { Paragraph, Text } from 'src/elements/typography';
       />
     </Box>
   </Flex>
+  <Paragraph lg>Multiline <code>multiline=&#123;true&#125;</code></Paragraph>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TextField
+        assistiveText={multilineAssistiveText}
+        labelText="Lyrics"
+        multiline
+        name="exampleMultilineOutlined"
+        defaultValue={cantHardlyWaitLyrics}
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TextField
+        formStyle="filled"
+        labelText="Lyrics"
+        multiline
+        name="exampleMultilineOutlined"
+      />
+    </Box>
+  </Flex>
   <Paragraph lg>Password <code>password=&#123;true&#125;</code></Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -101,6 +125,27 @@ import { Paragraph, Text } from 'src/elements/typography';
         labelText="Password"
         name="examplePasswordFilled"
         password
+      />
+    </Box>
+  </Flex>
+  <Paragraph lg>Plain Text <code>plainText=&#123;true&#125;</code></Paragraph>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TextField
+        labelText="Address"
+        name="examplePlainTextOutlined"
+        plainText
+        value="5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235"
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TextField
+        ellipsis
+        formStyle="filled"
+        labelText="Address"
+        name="examplePlainTextFilled"
+        plainText
+        value="5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235 5919 Trussville Crossings Pkwy, Birmingham AL 35235"
       />
     </Box>
   </Flex>

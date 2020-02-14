@@ -37,6 +37,14 @@ const renderControlGroupLabel = propsFromControlGroup => {
   );
 };
 
+const renderAssistiveContent = propsFromControlGroup => {
+  const { assistiveText, validationError } = propsFromControlGroup;
+  if (validationError.length > 0) {
+    return validationError;
+  }
+  return assistiveText;
+};
+
 const renderControlGroupAssistive = propsFromControlGroup => {
   const {
     assistiveText,
@@ -47,9 +55,9 @@ const renderControlGroupAssistive = propsFromControlGroup => {
   if (!assistiveText && !error) {
     return null;
   } if (assistiveText && !error) {
-    return <AssistiveText id={`${id}Help`} {...assistiveTextProps}>{assistiveText}</AssistiveText>;
+    return <AssistiveText id={`${id}Help`} {...assistiveTextProps}>{renderAssistiveContent(propsFromControlGroup)}</AssistiveText>;
   }
-  return <AssistiveText color="brandDanger" id={`${id}Error`} {...assistiveTextProps}>{error}</AssistiveText>;
+  return <AssistiveText color="brandDanger" id={`${id}Error`} {...assistiveTextProps}>{renderAssistiveContent(propsFromControlGroup)}</AssistiveText>;
 };
 
 const propsToTrim = [
@@ -123,7 +131,10 @@ ControlGroupComponent.propTypes = {
   hideLabel: PropTypes.bool,
   labelText: PropTypes.string,
   name: PropTypes.string,
-  validationError: PropTypes.string,
+  validationError: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.string,
+  ]),
 };
 
 ControlGroupComponent.defaultProps = {

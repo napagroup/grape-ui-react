@@ -101,7 +101,10 @@ StyledWrapper.propTypes = {
   menuSelectedBg: PropTypes.string,
   menuSelectedColor: PropTypes.string,
   multiple: PropTypes.bool,
-  validationError: PropTypes.string,
+  validationError: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.string,
+  ]),
 };
 
 StyledWrapper.defaultProps = {
@@ -320,7 +323,10 @@ DateField.propTypes = {
   /** Used to render a dropdown control as a `PlainText` element. */
   plainText: PropTypes.bool,
   /** Error text that will appear below the control when validation fires. */
-  validationError: PropTypes.string,
+  validationError: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.string,
+  ]),
   /** The value of the input field.  It can either be a string or a Date object.
    * @see See [React-Day-Picker API](https://react-day-picker.js.org/api/DayPickerInput#value) for more about the prop.
    * @see See [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) for more about Date objects.

@@ -50,7 +50,10 @@ ControlLabel.propTypes = {
   bg: PropTypes.string,
   disabled: PropTypes.bool,
   ...typography.propTypes,
-  validationError: PropTypes.string,
+  validationError: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.string,
+  ]),
 };
 
 ControlLabel.defaultProps = {

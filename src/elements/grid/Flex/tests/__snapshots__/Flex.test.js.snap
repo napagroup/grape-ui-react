@@ -2,10 +2,12 @@
 
 exports[`Flex base should return a Flex object with 2 responsive Box elements as the children 1`] = `
 .c1 {
+  box-sizing: border-box;
   width: 100%;
 }
 
 .c2 {
+  box-sizing: border-box;
   width: 100%;
 }
 
@@ -52,6 +54,10 @@ exports[`Flex base should return a Flex object with 2 responsive Box elements as
 `;
 
 exports[`Flex base should return a Flex object with a box element as the child 1`] = `
+.c1 {
+  box-sizing: border-box;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -63,7 +69,7 @@ exports[`Flex base should return a Flex object with a box element as the child 1
   className="c0"
 >
   <div
-    className=""
+    className="c1"
   >
     Lorem Ipsum
   </div>
