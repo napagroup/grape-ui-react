@@ -19,10 +19,10 @@
     "pretest": "npm run test:clean && npm run lint",
     "start": "npx styleguidist server",
     "test:clean": "rimraf ./coverage",
-    "test:quick": "cross-env NODE_ENV=test jest",
-    "test": "cross-env NODE_ENV=test jest --coverage",
-    "test:watch": "cross-env NODE_ENV=test jest --watchAll",
-    "test:update": "cross-env NODE_ENV=test jest -u"
+    "test:quick": "cross-env NODE_ENV=test jest --config jestconfig.json",
+    "test": "cross-env NODE_ENV=test jest --config jestconfig.json --coverage",
+    "test:watch": "cross-env NODE_ENV=test jest --config jestconfig.json --watchAll",
+    "test:update": "cross-env NODE_ENV=test jest --config jestconfig.json -u"
   },
   "repository": {
     "type": "git",
@@ -31,45 +31,6 @@
   "author": "",
   "license": "ISC",
   "homepage": "https://bitbucket.org/napagroupnyc/grape-ui#readme",
-  "jest": {
-    "testURL": "http://localhost",
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}",
-      "!src/**/*.test.{js,jsx}",
-      "!src/*/RbGenerated*/*.{js,jsx}",
-      "!src/index.js",
-      "!src/global-styles.js",
-      "!src/*/*/Loadable.{js,jsx}"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "statements": 91,
-        "branches": 91,
-        "functions": 91,
-        "lines": 91
-      }
-    },
-    "moduleDirectories": [
-      "node_modules",
-      "src"
-    ],
-    "moduleNameMapper": {
-      ".*\\.(css|less|styl|scss|sass)$": "<rootDir>/internals/mocks/cssModule.js",
-      ".*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/internals/mocks/image.js"
-    },
-    "modulePathIgnorePatterns": [
-      "<rootDir>/lib",
-      "<rootDir>/src/internals",
-      "<rootDir>/src/elements/typography/index.js"
-    ],
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/internals/testing/test-bundler.js"
-    ],
-    "testRegex": "tests/.*\\.test\\.js$",
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
-  },
   "dependencies": {
     "@styled-system/css": "^5.1.4",
     "@styled-system/prop-types": "^5.1.4",

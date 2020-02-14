@@ -6,7 +6,7 @@
 ```jsx in Markdown
 import { Flex } from '../';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledBox as Box } from '../examples';
+import { StyledBox as Box } from 'docs/examples';
 
 <Flex>
   <Box>
@@ -27,7 +27,7 @@ When applying margin to `<Box>`, simply use the `m` attribute for margins.
 ```jsx
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledBox as Box } from '../examples';
+import { StyledBox as Box } from 'docs/examples';
 
 <ThemeProvider theme={{}}>
   <Box m={48}>
@@ -40,7 +40,7 @@ import { StyledBox as Box } from '../examples';
 ```jsx
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledBox as Box } from '../examples';
+import { StyledBox as Box } from 'docs/examples';
 
 <ThemeProvider theme={{}}>
   <Box m={3}>
@@ -72,7 +72,7 @@ When applying padding to `<Box>`, simply use the `p` attribute for padding.
 ```jsx
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledBox as Box } from '../examples';
+import { StyledBox as Box } from 'docs/examples';
 
 <ThemeProvider theme={{}}>
   <Box p={48}>
@@ -86,7 +86,7 @@ import { StyledBox as Box } from '../examples';
 ```jsx
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledBox as Box } from '../examples';
+import { StyledBox as Box } from 'docs/examples';
 
 <ThemeProvider theme={{}}>
   <Box p={3}>
@@ -118,7 +118,7 @@ When applying width to `<Box>`, simply use the `width` attribute for widths.
 ```jsx
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledBox as Box } from '../examples';
+import { StyledBox as Box } from 'docs/examples';
 
 <ThemeProvider theme={{}}>
   <Box width={1 / 8}>
@@ -133,7 +133,7 @@ import { StyledBox as Box } from '../examples';
 import { ThemeProvider } from 'styled-components';
 import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledBox as Box } from '../examples';
+import { StyledBox as Box } from 'docs/examples';
 
 <ThemeProvider theme={{}}>
   <Flex flexWrap="wrap">
@@ -159,7 +159,7 @@ There are times when you may need to apply various layout attributes on `<Box>`.
 import { ThemeProvider } from 'styled-components';
 import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledBox as Box } from '../examples';
+import { StyledBox as Box } from 'docs/examples';
 
 <ThemeProvider theme={{}}>
   <Flex flexWrap="wrap">
@@ -218,7 +218,7 @@ There are times when you may need to apply various position attributes on `<Box>
 import { ThemeProvider } from 'styled-components';
 import { Flex } from 'src/elements/grid'; // from 'grape-ui-react'
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledBox as Box } from '../examples';
+import { StyledBox as Box } from 'docs/examples';
 
 <ThemeProvider theme={{}}>
   <Flex p={[1, 2, 3, 4]} position="relative">
@@ -247,7 +247,7 @@ import { StyledBox as Box } from '../examples';
 import { ThemeProvider } from 'styled-components';
 import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Link, Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledBox as Box } from '../examples';
+import { StyledBox as Box } from 'docs/examples';
 
 <ThemeProvider theme={{}}>
   <Text lg>

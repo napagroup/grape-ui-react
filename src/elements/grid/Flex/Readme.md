@@ -34,7 +34,7 @@ import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
 ```jsx
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledFlex as Flex } from '../examples';
+import { StyledFlex as Flex } from 'docs/examples';
 
 <ThemeProvider theme={{}}>
   <Flex m={12}>
@@ -79,7 +79,7 @@ import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
 ```jsx
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledFlex as Flex } from '../examples';
+import { StyledFlex as Flex } from 'docs/examples';
 
 <ThemeProvider theme={{}}>
   <Flex p={12}>
@@ -124,7 +124,7 @@ import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
 ```jsx in Markdown
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledFlex as Flex } from '../examples';
+import { StyledFlex as Flex } from 'docs/examples';
 
 <ThemeProvider theme={{}}>
   <Flex width={1 / 2}>
@@ -147,7 +147,7 @@ There are times when you may need to apply various layout attributes on `<Flex>`
 ```jsx
 import styled, { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledFlex as Flex } from '../examples';
+import { StyledFlex as Flex } from 'docs/examples';
 
 const FlexWrapper = styled(Flex)`background: transparent;`;
 
@@ -207,7 +207,7 @@ There are times when you may need to apply various position attributes on `<Flex
 ```jsx
 import styled, { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
-import { StyledFlex as Flex } from '../examples';
+import { StyledFlex as Flex } from 'docs/examples';
 
 const FlexWrapper = styled(Flex)`background: transparent;`;
 
@@ -245,7 +245,7 @@ import {
   ElementSix,
   ElementSeven,
   ElementEight,
-} from '../examples';
+} from 'docs/examples';
 import { Link, Text } from 'src/elements/typography'; // from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>

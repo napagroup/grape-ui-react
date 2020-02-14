@@ -2,8 +2,9 @@
 
 ```jsx in Markdown
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Flex } from '../grid'; // ... from 'grape-ui-react'
-import { Paragraph } from '../typography'; // ... from 'grape-ui-react'
+import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
+import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Paragraph } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 <Flex alignItems="flex-start" flexDirection="column">
   <Button>Basic Button <code>&lt;button&gt;</code></Button>
@@ -18,8 +19,9 @@ import { Paragraph } from '../typography'; // ... from 'grape-ui-react'
 #### Kitchen Sink Usage
 ```jsx in Markdown
 import { useState } from 'react';
-import { Flex } from '../grid'; // ... from 'grape-ui-react'
-import { Text } from '../typography'; // ... from 'grape-ui-react'
+import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
+import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 const [count, setCount] = useState(0);
 
@@ -85,7 +87,8 @@ Instead of typing in the background and foreground colors manually, you can util
 
 ```jsx in Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex } from '../grid'; // ... from 'grape-ui-react'
+import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
+import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import * as styledHelpers from '../../utils/styledHelpers'; // ... import { styledHelpers} from 'grape-ui-react'
 
 const theme = {
@@ -165,7 +168,8 @@ const theme = {
 #### Custom Styles
 ```jsx in Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex } from '../grid'; // ... from 'grape-ui-react'
+import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
+import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import * as styledHelpers from '../../utils/styledHelpers'; // ... import { styledHelpers} from 'grape-ui-react'
 import { getGlobalOverrides, getGlobalStyles } from 'src/global-styles'; // ... from 'grape-ui-react'
 

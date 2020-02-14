@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Box, Flex } from '..';
+import { Box, Flex } from 'src/elements/grid';
 
 const colors = `
   background: palevioletred;

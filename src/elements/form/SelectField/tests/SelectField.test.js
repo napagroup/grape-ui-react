@@ -4,8 +4,8 @@ import Adapter from 'enzyme-adapter-react-16';
 import { configure, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
+import { colorOptions } from './examples';
 import { SelectField } from '..';
-import { colorOptions } from '../examples';
 
 const assertReactElement = element => {
   const component = renderer.create(element);

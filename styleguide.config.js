@@ -89,6 +89,10 @@ module.exports = {
         },
       ],
     },
+    {
+      content: './src/elements/Button/Readme.md',
+      name: 'Button',
+    },
   ],
   skipComponentsWithoutExample: true,
   title: '🍇UI Style Guide',
