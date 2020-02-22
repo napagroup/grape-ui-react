@@ -1,5 +1,9 @@
 
-`<TextField>` is our control that handles input groups. Its basic props are `name` which defines the multiple identifiers for aspects of the control, and `labelText` for displaying the control's label.
+`<TextField>` is our control that handles input groups (Control Label, Control, Assistive Text). Its basic props are `labelText` for displaying the control's label, and `name`, which defines the following identifiers:
+* `input[id]`
+* `input[name]`
+* `label[for]`
+* `AsssitiveText[id]`
 
 > <small>**NOTE:** All examples below will demonstrate both Outlined and Filled views for each example.</small>
 
@@ -8,31 +12,7 @@
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Link, Paragraph, Text } from 'src/elements/typography';
-
-const multilineAssistiveText = <Link href="https://www.youtube.com/watch?v=siiylkcrnhw" target="_blank">The Replacements - Can't Hardly Wait</Link>
-
-const cantHardlyWaitLyrics = 'I\'ll write you a letter tomorrow \
-\nTonight I can\'t hold a pen \
-\nSomeone\'s got a stamp that I can borrow \
-\nI promise not to blow the address again \
-\n\
-\nLights that flash in the evening, \
-\nThrough a crack in the drapes \
-\n\
-\nJesus rides beside me \
-\nHe never buys any smokes \
-\nHurry up, hurry up, ain\'t you had enough of this stuff \
-\nAshtray floors, dirty clothes, and filthy jokes \
-\n\
-\nSee you\'re high and lonesome \
-\nTry and try and try \
-\n\
-\nLights that flash in the evening, \
-\nThrough a hole in the drapes \
-\nI\'ll be home when I\'m sleeping \
-\nI can\'t hardly wait \
-\n\
-\nI can\'t wait. Hardly wait.';
+import { cantHardlyWaitAssistiveText, cantHardlyWaitLyrics } from '../examples';
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -93,7 +73,7 @@ const cantHardlyWaitLyrics = 'I\'ll write you a letter tomorrow \
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <TextField
-        assistiveText={multilineAssistiveText}
+        assistiveText={cantHardlyWaitAssistiveText}
         labelText="Lyrics"
         multiline
         name="exampleMultilineOutlined"

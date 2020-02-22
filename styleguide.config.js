@@ -6,7 +6,7 @@ module.exports = {
   sections: [
     {
       content: 'README.md',
-      description: 'A React component library built with styled-components',
+      description: 'A React component library built with styled-components and styled-system',
       name: `🍇UI ${version}`,
     },
     {
@@ -35,6 +35,7 @@ module.exports = {
           components: () => ['./src/elements/typography/**/styled.js'],
           content: 'src/elements/typography/components.md',
           description: 'Component directory',
+          ignore: ['**/ListItem'],
           name: 'Components',
           sectionDepth: 1,
         },
@@ -60,7 +61,7 @@ module.exports = {
       ],
     },
     {
-      content: './src/elements/Image/Readme.md',
+      components: './src/elements/Image/styled.js',
       name: 'Image',
     },
     {
@@ -90,12 +91,13 @@ module.exports = {
       ],
     },
     {
-      content: './src/elements/Button/Readme.md',
+      components: './src/elements/Button/styled.js',
       name: 'Button',
     },
   ],
   skipComponentsWithoutExample: true,
   title: '🍇UI Style Guide',
+  tocMode: 'collapse',
   version,
   webpackConfig: require('./src/internals/webpack/webpack.config.js'), // eslint-disable-line global-require
 };

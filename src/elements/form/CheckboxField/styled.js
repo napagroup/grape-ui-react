@@ -142,16 +142,25 @@ const CheckboxField = props => {
 };
 
 CheckboxField.propTypes = {
+  /** Defines the color for the label and border color when the focus is in the control. */
   activeColor: PropTypes.string,
+  /** Provides helper text for the control.  When provided with no `assistiveText`, `isRequired` will add a default '*Required` helper text.  When provided with `validationError`, `assistiveText`'s value will not be displayed on the UI. */
   assistiveText: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.string,
   ]),
+  /** Allows for custom props to be passed down to the `AsssistiveText` component. */
   assistiveTextProps: PropTypes.object,
   bg: PropTypes.string,
+  /** Allows for custom props to be passed down to the `ControlGroup` component. */
   controlGroupProps: PropTypes.object,
+  /** Will pass its value to the control's `id` as well as the label's `htmlFor`.
+   * @deprecated Do not use! Use `name` instead!
+  */
   controlId: PropTypes.string,
+  /** Allows for custom props to be passed down to the `ControlLabel` component. */
   controlLabelProps: PropTypes.object,
+  /** Basic HTML attribute, needed for styling. */
   disabled: PropTypes.bool,
   flexDirection: PropTypes.oneOfType([
     PropTypes.string,

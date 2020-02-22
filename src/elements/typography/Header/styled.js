@@ -81,18 +81,6 @@ const Header = headerFactory({ tag: 'h1' });
 
 Header.h1 = Header;
 
-Header.propTypes = {
-  displayHeader: PropTypes.bool,
-  ...typography.propTypes,
-};
-
-Header.defaultProps = {
-  ...defaultStylesBase,
-  displayHeader: false,
-  fontWeight: defaultStylesBase.fontWeight,
-  mb: gridSchema.gutter,
-  mt: 0,
-};
 for (let i = 2; i <= 6; i++) {
   const subHeaderTag = `h${i}`;
   Header[subHeaderTag] = headerFactory({ tag: subHeaderTag });
@@ -109,6 +97,19 @@ for (let i = 2; i <= 6; i++) {
     mt: 0,
   };
 }
+
+Header.propTypes = {
+  ...typography.propTypes,
+  displayHeader: PropTypes.bool,
+};
+
+Header.defaultProps = {
+  ...defaultStylesBase,
+  displayHeader: false,
+  fontWeight: defaultStylesBase.fontWeight,
+  mb: gridSchema.gutter,
+  mt: 0,
+};
 
 /** @component */
 export { Header };

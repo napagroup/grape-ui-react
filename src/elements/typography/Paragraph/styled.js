@@ -44,6 +44,7 @@ const Paragraph = styled(ParagraphComponent)`
 
 Paragraph.propTypes = {
   ...typography.propTypes,
+  /** Use the lead font size */
   lead: PropTypes.bool,
 };
 

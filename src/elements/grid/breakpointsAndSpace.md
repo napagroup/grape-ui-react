@@ -14,16 +14,16 @@ const theme = {
 <ThemeProvider theme={theme}>
   <Flex flexDirection={['column', null, 'row']}>
     <Box m={[1, 2, 3, 4]}>
-      Margin is 7px, 8px, 18px, 27px depending on resolution.
+      Margin is 7px at 0 - 35em, 8px at 35em - 47em, 18px at 47em - 59em, 27px at 59em+.
     </Box>
     <Box m={[2, 3, 4]}>
-      Margin is 8px, 18px, 27px depending on resolution.
+      Margin is 8px at 0 - 35em, 18px at 35em - 47em, 27px at 47em+.
     </Box>
-    <Box m={[3, 4]}>
-      Margin is 18px or 27px depending on resolution.
+    <Box m={[3, null, 4]}>
+      Margin is 18px at 0 - 47em, and 27px at 47em+.
     </Box>
     <Box m={4}>
-      Margin is 27px.
+      Margin is 27px at all resolutions.
     </Box>
   </Flex>
 </ThemeProvider>

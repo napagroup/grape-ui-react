@@ -7,6 +7,7 @@ import { ImageComponent } from './component';
 const Image = styled(ImageComponent)`${layout}`;
 
 Image.propTypes = {
+  /** Required for web accessibility. Should be short and descriptive. */
   alt: PropTypes.string.isRequired,
   maxWidth: PropTypes.string,
   ...propTypes.layout,

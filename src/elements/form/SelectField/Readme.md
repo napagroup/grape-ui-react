@@ -14,6 +14,7 @@ const colorOptions = [
   { label: 'Green', value: 'green' },
   { label: 'Blue', value: 'blue' },
 ];
+
 const linkState = () => null;
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -118,7 +119,9 @@ const colorOptions = [
   { label: 'Green', value: 'green' },
   { label: 'Blue', value: 'blue' },
 ];
+
 const linkState = () => null;
+
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']} justifyContent="center" mb={[1, 2]}>
     <Button onClick={onRegisterClick}>
@@ -207,20 +210,8 @@ const getValue = colorOption => {myColor ? myColor.value : ''}
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
-const roguesOptions = [
-  { label: 'Bane', value: 'bane' },
-  { label: 'Joker', value: 'joker' },
-  { label: 'Hush', value: 'hush' },
-  { label: 'Scarecrow', value: 'scarecrow' },
-  { label: 'Two-Face', value: 'twoFace' },
-  { label: 'Ventriloquist', value: 'ventriloquist' },
-  { label: 'Harley Quinn', value: 'harleyQuinn' },
-  { label: 'Black Mask', value: 'blackMask' },
-  { label: 'Mr. Freeze', value: 'mrFreeze' },
-  { label: 'Deadshot', value: 'deadshot' },
-  { label: 'Riddler', value: 'riddler' },
-  { label: 'Killer Croc', value: 'killerCroc' },
-];
+import { rogueOptions } from '../examples/';
+
 const linkState = () => null;
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -236,7 +227,7 @@ const linkState = () => null;
         menuElevation="03"
         name="exampleKitchenSinkUsageOutlined"
         onChange={linkState()}
-        options={roguesOptions}
+        options={rogueOptions}
         placeholder="Choose as many as you'd like."
         styleOverrides={{
           multiValue: {
@@ -267,7 +258,7 @@ const linkState = () => null;
         menuElevation="03"
         name="exampleKitchenSinkUsageFilled"
         onChange={linkState()}
-        options={roguesOptions}
+        options={rogueOptions}
         placeholder="Choose as many as you'd like."
       />
     </Box>
@@ -283,21 +274,8 @@ import { ThemeProvider } from 'styled-components';
 import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 import { components } from 'react-select';
+import { rogueOptions } from '../examples/';
 
-const roguesOptions = [
-  { label: 'Bane', value: 'bane' },
-  { label: 'Joker', value: 'joker' },
-  { label: 'Hush', value: 'hush' },
-  { label: 'Scarecrow', value: 'scarecrow' },
-  { label: 'Two-Face', value: 'twoFace' },
-  { label: 'Ventriloquist', value: 'ventriloquist' },
-  { label: 'Harley Quinn', value: 'harleyQuinn' },
-  { label: 'Black Mask', value: 'blackMask' },
-  { label: 'Mr. Freeze', value: 'mrFreeze' },
-  { label: 'Deadshot', value: 'deadshot' },
-  { label: 'Riddler', value: 'riddler' },
-  { label: 'Killer Croc', value: 'killerCroc' },
-];
 const linkState = () => null;
 const formatOptionLabel = ({ value, label }) => (
   <Flex flexDirection="row">
@@ -326,7 +304,7 @@ const CustomOption = ({ children, ...props }) => (
         labelText="Custom Option"
         name="exampleCustomOptionsOutlined"
         onChange={linkState()}
-        options={roguesOptions}
+        options={rogueOptions}
       />
     </Box>
     <Box px={1} width={[1, 1 / 2]}>
@@ -337,7 +315,7 @@ const CustomOption = ({ children, ...props }) => (
         labelText="Format Option Label"
         name="exampleFormatOptionFilled"
         onChange={linkState()}
-        options={roguesOptions}
+        options={rogueOptions}
       />
     </Box>
   </Flex>
@@ -349,41 +327,12 @@ You can also use custom styles within the SelectField control.  Simply use `styl
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
-
-const princeSongOptions = [
-  { label: 'Purple Rain', value: 'purpleRain' },
-  { label: 'When Doves Cry', value: 'whenDovesCry' },
-  { label: 'Kiss', value: 'kiss' },
-  { label: 'Little Red Corvette', value: 'littleRedCorvette' },
-  { label: 'Let\'s Go Crazy', value: 'letsGoCrazy' },
-  { label: 'Raspberry Beret', value: 'raspberryBeret' },
-  { label: '1999', value: '1999' },
-  { label: 'I Would Die 4 U', value: 'iWouldDie4U' },
-  { label: 'Controversy', value: 'controversy' },
-  { label: 'I Wanna Be Your Lover', value: 'iWannaBeYourLover' },
-  { label: 'If I Was Your Girlfriend', value: 'ifIWasYourGirlfriend' },
-  { label: 'Sign ☮the Times', value: 'signOTheTimes' },
-];
-
-const afkapSongOptions = [
-  { label: 'Most Beautiful Girl in the World', value: 'mostBeautifulGirlInTheWorld' },
-  { label: '7', value: '7' },
-  { label: 'Sexy M.F.', value: 'sexyMF' },
-  { label: 'P. Control', value: 'pControl' },
-  { label: 'Pink Cashmere', value: 'pinkCashmere' },
-  { label: 'I Hate U', value: 'iHateU' },
-  { label: 'Dolphin', value: 'dolphin' },
-  { label: 'Endorphinmachine', value: 'endorphinmachine' },
-  { label: 'Crystal Ball', value: 'crystalBall' },
-  { label: 'Gold', value: 'gold' },
-  { label: 'One', value: 'one' },
-  { label: 'Shhh!', value: 'shhh' },
-];
+import { afkapSongOptions, princeSongOptions } from '../examples';
 
 const linkState = () => null;
 
 <ThemeProvider theme={{}}>
-  <Flex flexDirection={['column', 'row']}>
+  <Flex flexDirection={['column', 'row']} mb={180}>
     <Box px={1} width={[1, 1 / 2]}>
       <SelectField
         activeColor="purple.dark"

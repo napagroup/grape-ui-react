@@ -121,19 +121,29 @@ const Button = styled(ButtonComponent)`
 `;
 
 Button.propTypes = {
+  /** Defines the active background color for the control. */
   bgActiveColor: PropTypes.string,
+  /** Defines the hover background color for the control. */
   bgHoverColor: PropTypes.string,
   ...boxShadow.propTypes,
+  /** Makes the button a "contained" button.
+   * @see See [Material Design/Components/Buttons/Contained Button](https://material.io/components/buttons/#contained-button) for more on this style. */
   contained: PropTypes.bool,
   ...display.propTypes,
   ...fontWeight.propTypes,
+  /** Will use an anchor tag instead of a button tag. */
   href: PropTypes.string,
   ...lineHeight.propTypes,
   ...maxWidth.propTypes,
+  /** Makes the button a "contained" button.
+   * @see See [Material Design/Components/Buttons/Outlined Button](https://material.io/components/buttons/#outlined-button) for more on this style. */
   outline: PropTypes.bool,
   ...position.propTypes,
+  /** Makes the button a "raised" button.
+   * @see See [Material Design/Components/Buttons/Hierarchy and Placement](https://material.io/components/buttons/#hierarchy-placement) for more on this style. */
   raised: PropTypes.bool,
   ...space.propTypes,
+  /** Will use react-router's Link component. You will still need to wrap this in a Router component. */
   to: PropTypes.string,
   ...typography.propTypes,
   ...propTypes.border,

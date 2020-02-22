@@ -16,6 +16,8 @@ const Form = styled(FormComponent)`
 `;
 
 Form.propTypes = {
+  /** Define which style of form controls should be used
+  * @see See [Material Design/Components/Text Fields/Usage](https://material.io/components/text-fields/#usage) for more on these styles. */
   formStyle: PropTypes.string,
 };
 

@@ -3,6 +3,7 @@
 ```jsx inside Markdown
 import { TextField } from 'src/elements/form';
 
+<div>
 <Form>
   <TextField
     assistiveText="First and Last Name"
@@ -14,6 +15,19 @@ import { TextField } from 'src/elements/form';
     labelText="Address"
   />
 </Form>
+
+<Form flexDirection="row">
+  <TextField
+    assistiveText="First and Last Name"
+    labelText="Full name"
+    name="exampleFormTextField1"
+  />
+  <TextField
+    name="exampleFormTextField2"
+    labelText="Address"
+  />
+</Form>
+</div>
 ```
 
 `<Form>` can have `formStyle` applied which will trickle down to all children form components without their `formStyle` explicitly stated.  And since `<Form>` uses principles found in `flexbox`, you can apply all sorts of [styled system props](https://styled-system.com/api).

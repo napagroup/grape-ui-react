@@ -1,31 +1,19 @@
-```jsx in Markdown
-import { HashRouter as Router } from 'react-router-dom';
-import { Header, Link, Paragraph } from 'src/elements/typography';
-import { Box, Flex } from 'src/elements/grid';
+## [`<CheckboxField>`](#/Form/Components/CheckboxField)
+Learn about our CheckboxField component, which is built on react-checkbox-group.
+***
 
-<Router>
-  <Header.h3>Form</Header.h3>
-  <Flex flexWrap="wrap">
-    <Box p={[2, 3]} width={[1, null, 1 / 2, 1 / 3]}>
-      <Link lg to="./Components/CheckboxField">CheckboxField</Link>
-      <Paragraph>Learn about our CheckboxField component.</Paragraph>
-    </Box>
-    <Box p={[2, 3]} width={[1, null, 1 / 2, 1 / 3]}>
-      <Link lg to="./Components/DateField">DateField</Link>
-      <Paragraph>Learn about our DateField component.</Paragraph>
-    </Box>
-    <Box p={[2, 3]} width={[1, null, 1 / 2, 1 / 3]}>
-      <Link lg to="./Components/Form">Form</Link>
-      <Paragraph>Learn about our Form component.</Paragraph>
-    </Box>
-    <Box p={[2, 3]} width={[1, null, 1 / 2, 1 / 3]}>
-      <Link lg to="./Components/SelectField">SelectField</Link>
-      <Paragraph>Learn about our SelectField component.</Paragraph>
-    </Box>
-    <Box p={[2, 3]} width={[1, null, 1 / 2, 1 / 3]}>
-      <Link lg to="./Components/TextField">TextField</Link>
-      <Paragraph>Learn about our TextField component.</Paragraph>
-    </Box>
-  </Flex>
-</Router>
-```
+## [`<DateField>`](#/Form/Components/DateField)
+Learn about our DateField component, which is built on react-day-picker.
+***
+
+## [`<Form>`](#/Form/Components/Form)
+Learn about our Form component, including defining the formStyle.
+***
+
+## [`<SelectField>`](#/Form/Components/SelectField)
+Learn about our SelectField component, which is built on react-select.
+***
+
+## [`<TextField>`](#/Form/Components/TextField)
+Learn about our TextField component, including integration with Cleave.js, multiline text fields, and react-hook implementations.
+***
