@@ -1,7 +1,7 @@
 {
   "root": true,
   "parser": "babel-eslint",
-  "plugins": ["jsx-a11y", "react", "jest"],
+  "plugins": ["jsx-a11y", "react", "jest", "react-hooks"],
   "env": {
       "browser": true,
       "commonjs": true,
@@ -66,6 +66,8 @@
       "react/jsx-uses-vars": 2,
       "react/no-danger": "error",
       "react/react-in-jsx-scope": 2,
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
       "strict": [2, "never"],
       "arrow-parens": ["error", "as-needed"],
       "complexity": ["warn", { "max": 5 }],

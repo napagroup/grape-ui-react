@@ -1,30 +1,19 @@
-```jsx in Markdown
-import { HashRouter as Router } from 'react-router-dom';
-import { Link, Paragraph } from 'src/elements/typography';
-import { Box, Flex } from 'src/elements/grid';
+## [`assistiveText`](#/Form/Form%20Utilities/AssistiveText)
+Learn about the assistiveText prop, which is intended for definining inline helper text.
+***
 
-<Router>
-  <Flex flexWrap="wrap">
-    <Box p={[2, 3]} width={[1, null, 1 / 2, 1 / 3]}>
-      <Link lg to="/Form/Form Utilities/AssistiveText">assistiveText</Link>
-      <Paragraph>Learn about the assistiveText prop.</Paragraph>
-    </Box>
-    <Box p={[2, 3]} width={[1, null, 1 / 2, 1 / 3]}>
-      <Link lg to="/Form/Form Utilities/ControlGroup">ControlGroup</Link>
-      <Paragraph>Learn about the ControlGroup component.</Paragraph>
-    </Box>
-    <Box p={[2, 3]} width={[1, null, 1 / 2, 1 / 3]}>
-      <Link lg to="/Form/Form Utilities/ControlLabel">controlLabel</Link>
-      <Paragraph>Learn about the controlLabel prop.</Paragraph>
-    </Box>
-    <Box p={[2, 3]} width={[1, null, 1 / 2, 1 / 3]}>
-      <Link lg to="/Form/Form Utilities/PlainText">plainText</Link>
-      <Paragraph>Learn about the plainText prop.</Paragraph>
-    </Box>
-    <Box p={[2, 3]} width={[1, null, 1 / 2, 1 / 3]}>
-      <Link lg to="/Form/Form Utilities/Validation Error">validationError</Link>
-      <Paragraph>Learn about the validationError prop.</Paragraph>
-    </Box>
-  </Flex>
-</Router>
-```
+## [`<ControlGroup>`](#/Form/Form%20Utilities/ControlGroup)
+Learn about the ControlGroup component, which wraps all input field form controls.
+***
+
+## [`controlLabel`](#/Form/Form%20Utilities/ControlLabel)
+Learn about the controlLabel prop, which is intended for defining a control's label text.
+***
+
+## [`plainText`](#/Form/Form%20Utilities/PlainText)
+Learn about the plainText prop, which allows a form control to appear as plain text.
+***
+
+## [`validationError`](#/Form/Form%20Utilities/PlainText)
+Learn about the validationError prop, which is intended for definining inline error text.
+***

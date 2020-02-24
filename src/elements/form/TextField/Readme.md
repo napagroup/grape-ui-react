@@ -374,7 +374,7 @@ const theme = {
 </ThemeProvider>
 ```
 
-#### Demonstrating Controlled Components (via react-hook-form-input)
+<!-- #### Demonstrating Controlled Components (via react-hook-form-input)
 ```jsx inside Markdown
 import { useRef } from 'react';
 import { useForm } from "react-hook-form";
@@ -470,4 +470,4 @@ const theme = {
     </Box>
   </Flex>
 </ThemeProvider>
-```
+``` -->

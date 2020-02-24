@@ -47,9 +47,12 @@ const ControlLabel = styled(ControlLabelComponent)`
 `;
 
 ControlLabel.propTypes = {
+  /** Background of the label component.  For 'outlined' styled controls, this assures that the label is making space on the control's border. */
   bg: PropTypes.string,
+  /** When true, this will change the label text color to the control disabled color. */
   disabled: PropTypes.bool,
   ...typography.propTypes,
+  /** When true, this will change the label text color to brandDanger. */
   validationError: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.string,

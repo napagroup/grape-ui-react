@@ -157,7 +157,7 @@ const linkState = () => null;
 </ThemeProvider>
 ```
 
-#### Demonstrating Controlled Components (via react-hook-form-input)
+<!-- #### Demonstrating Controlled Components (via react-hook-form-input)
 ```jsx inside Markdown
 import { useForm } from "react-hook-form";
 import { RHFInput } from 'react-hook-form-input';
@@ -205,7 +205,8 @@ const getValue = colorOption => {myColor ? myColor.value : ''}
     </Button>
   </Flex>
 </ThemeProvider>
-```
+``` -->
+
 #### Kitchen Sink Usage
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';

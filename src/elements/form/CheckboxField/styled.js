@@ -167,13 +167,18 @@ CheckboxField.propTypes = {
     PropTypes.array,
   ]),
   fontFamily: PropTypes.string,
+  /** This will add an asterisk (*) to the `labelText` and provided `assistiveText` if none is provided. */
   isRequired: PropTypes.bool,
+  /** The string value displayed on top of the control in the `ControlLabel` component. */
   labelText: PropTypes.string,
+  /** Used to render a dropdown control as a `PlainText` element. */
   plainText: PropTypes.bool,
+  /** Error text that will appear below the control when validation fires. */
   validationError: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.string,
   ]),
+  /** Allows for custom props to be passed down to the `CheckboxGroupWrapper` component. */
   wrapperProps: PropTypes.object,
 };
 
