@@ -2340,7 +2340,7 @@ exports[`TextField with formStyle set to filled, multiline and plain text should
 exports[`TextField with object in assistive text should return a TextField object contain Assistive Text object 1`] = `
 .c4 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -2356,7 +2356,7 @@ exports[`TextField with object in assistive text should return a TextField objec
 
 .c4:hover,
 .c4:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 

@@ -52,8 +52,9 @@ TomatoBox.defaultProps = {
 ```jsx in Markdown
 import { Box, Flex } from './'; // ... from 'grape-ui-react';
 import { Link } from '../typography';
+import styled from 'styled-components';
 
-const NavLink = Link;
+const NavLink = styled(Link);
 
 NavLink.defaultProps = {
   color: 'white',
@@ -82,7 +83,7 @@ import { Box, Flex } from './'; // ... from 'grape-ui-react';
 import { Paragraph } from '../typography';
 import styled from 'styled-components';
 
-const BaseBox = Box;
+const BaseBox = styled(Box)``;
 
 BaseBox.defaultProps = {
   flex: '1 100%',

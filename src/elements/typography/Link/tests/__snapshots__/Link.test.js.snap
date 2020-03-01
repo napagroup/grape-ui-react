@@ -3,7 +3,7 @@
 exports[`Link Component base should return a react router tag, given a 'to' attribute 1`] = `
 .c0 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -19,7 +19,7 @@ exports[`Link Component base should return a react router tag, given a 'to' attr
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -35,7 +35,7 @@ exports[`Link Component base should return a react router tag, given a 'to' attr
 exports[`Link Component base should return an anchor tag 1`] = `
 .c0 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -51,7 +51,7 @@ exports[`Link Component base should return an anchor tag 1`] = `
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -65,7 +65,7 @@ exports[`Link Component base should return an anchor tag 1`] = `
 exports[`Link Component base should return an anchor tag with an href, given the href attribute 1`] = `
 .c0 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -81,7 +81,7 @@ exports[`Link Component base should return an anchor tag with an href, given the
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -112,7 +112,7 @@ exports[`Link Component specified styles should return a Link object with a base
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -142,7 +142,7 @@ exports[`Link Component specified styles should return a Link object with a base
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -172,7 +172,7 @@ exports[`Link Component specified styles should return a Link object with a dark
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -202,7 +202,7 @@ exports[`Link Component specified styles should return a Link object with a ligh
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -216,7 +216,7 @@ exports[`Link Component specified styles should return a Link object with a ligh
 exports[`Link Component specified styles should return a Link object with a specified font-family 1`] = `
 .c0 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
   font-size: inherit;
   font-weight: inherit;
@@ -232,7 +232,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -246,7 +246,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 exports[`Link Component specified styles should return a Link object with a specified font-weight 1`] = `
 .c0 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: bold;
@@ -262,7 +262,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -276,7 +276,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 exports[`Link Component specified styles should return a Link object with a specified kerning 1`] = `
 .c0 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -292,7 +292,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -306,7 +306,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 exports[`Link Component specified styles should return a Link object with a specified text-align 1`] = `
 .c0 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -322,7 +322,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -336,7 +336,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 exports[`Link Component specified styles should return a Link object with a specified text-decoration 1`] = `
 .c0 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -352,7 +352,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -366,7 +366,7 @@ exports[`Link Component specified styles should return a Link object with a spec
 exports[`Link Component specified styles should return a Link object with custom margin & padding 1`] = `
 .c0 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -384,7 +384,7 @@ exports[`Link Component specified styles should return a Link object with custom
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -398,7 +398,7 @@ exports[`Link Component specified styles should return a Link object with custom
 exports[`Link Component specified styles should return a Link object with ellipsis 1`] = `
 .c0 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -417,7 +417,7 @@ exports[`Link Component specified styles should return a Link object with ellips
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -431,7 +431,7 @@ exports[`Link Component specified styles should return a Link object with ellips
 exports[`Link Component specified styles should return a Link object with font-size: lg 1`] = `
 .c0 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 1.2rem;
   font-weight: inherit;
@@ -447,7 +447,7 @@ exports[`Link Component specified styles should return a Link object with font-s
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -461,7 +461,7 @@ exports[`Link Component specified styles should return a Link object with font-s
 exports[`Link Component specified styles should return a Link object with font-size: sm 1`] = `
 .c0 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
@@ -477,7 +477,7 @@ exports[`Link Component specified styles should return a Link object with font-s
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 
@@ -491,7 +491,7 @@ exports[`Link Component specified styles should return a Link object with font-s
 exports[`Link Component specified styles should return a Link object with font-style: italic 1`] = `
 .c0 {
   background-color: transparent;
-  color: hsl(186.8,100%,41.6%);
+  color: hsl(196.9,95%,47.8%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
   font-weight: inherit;
@@ -508,7 +508,7 @@ exports[`Link Component specified styles should return a Link object with font-s
 
 .c0:hover,
 .c0:active {
-  color: hsl(207,90%,54%);
+  color: hsl(210.9,71.5%,44.9%);
   cursor: pointer;
 }
 

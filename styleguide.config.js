@@ -1,13 +1,11 @@
 const { version } = require('./package');
 
 module.exports = {
-  // components: 'src/elements/**/styled.js',
   pagePerSection: true,
   sections: [
     {
       content: 'README.md',
-      description: 'A React component library built with styled-components and styled-system',
-      name: `🍇UI ${version}`,
+      name: `v${version}`,
     },
     {
       content: 'src/elements/typography/Readme.md',
@@ -82,7 +80,7 @@ module.exports = {
           }],
         },
         {
-          components: () => ['./src/elements/form/*/styled.js'],
+          components: ['./src/elements/form/*/styled.js'],
           content: 'src/elements/form/components.md',
           description: 'Component directory',
           name: 'Components',
@@ -96,6 +94,9 @@ module.exports = {
     },
   ],
   skipComponentsWithoutExample: true,
+  styleguideComponents: require('./styleguide/containers/index.js'), // eslint-disable-line global-require
+  styles: './styleguide/styles.js',
+  theme: './styleguide/themes.js',
   title: '🍇UI Style Guide',
   tocMode: 'collapse',
   version,

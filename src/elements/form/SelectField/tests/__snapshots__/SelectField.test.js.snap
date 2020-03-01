@@ -2,7 +2,7 @@
 
 exports[`SelectField Component dropdown should return a dropdown menu with the selected option is in the proper color 1`] = `
 <div
-  className="css-hgq3ry grape-ui-select__option grape-ui-select__option--is-selected"
+  className="css-r0hx78 grape-ui-select__option grape-ui-select__option--is-selected"
   id="react-select-6-option-1"
   onClick={[Function]}
   onMouseMove={[Function]}

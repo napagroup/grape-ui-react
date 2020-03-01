@@ -178,7 +178,7 @@ exports[`DateField Component base should return a DateField Input object as disa
 }
 
 .c1 .DayPicker-Day:not(.DayPicker-Day--disabled):hover {
-  background-color: hsl(207,90%,54%);
+  background-color: hsl(210.9,71.5%,44.9%);
   color: hsl(0,0%,100%);
 }
 
@@ -229,7 +229,7 @@ exports[`DateField Component base should return a DateField Input object as disa
 }
 
 .c1 .DayPicker-Day--selected {
-  background-color: hsl(186.8,100%,41.6%);
+  background-color: hsl(196.9,95%,47.8%);
   color: hsl(0,0%,100%);
 }
 
@@ -572,7 +572,7 @@ exports[`DateField Component base should return a DateField Input object with cu
 }
 
 .c1 .DayPicker-Day:not(.DayPicker-Day--disabled):hover {
-  background-color: hsl(207,90%,54%);
+  background-color: hsl(210.9,71.5%,44.9%);
   color: hsl(0,0%,100%);
 }
 
@@ -623,7 +623,7 @@ exports[`DateField Component base should return a DateField Input object with cu
 }
 
 .c1 .DayPicker-Day--selected {
-  background-color: hsl(186.8,100%,41.6%);
+  background-color: hsl(196.9,95%,47.8%);
   color: hsl(0,0%,100%);
 }
 
@@ -985,7 +985,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
 }
 
 .c1 .DayPicker-Day:not(.DayPicker-Day--disabled):hover {
-  background-color: hsl(207,90%,54%);
+  background-color: hsl(210.9,71.5%,44.9%);
   color: hsl(0,0%,100%);
 }
 
@@ -1036,7 +1036,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
 }
 
 .c1 .DayPicker-Day--selected {
-  background-color: hsl(186.8,100%,41.6%);
+  background-color: hsl(196.9,95%,47.8%);
   color: hsl(0,0%,100%);
 }
 
@@ -1565,7 +1565,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                   aria-disabled={false}
                   aria-label="Mon Feb 24, 2020"
                   aria-selected={false}
-                  className="DayPicker-Day DayPicker-Day--today"
+                  className="DayPicker-Day"
                   onClick={[Function]}
                   onKeyDown={[Function]}
                   role="gridcell"
@@ -1613,7 +1613,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                   aria-disabled={false}
                   aria-label="Fri Feb 28, 2020"
                   aria-selected={false}
-                  className="DayPicker-Day"
+                  className="DayPicker-Day DayPicker-Day--today"
                   onClick={[Function]}
                   onKeyDown={[Function]}
                   role="gridcell"
@@ -1820,7 +1820,7 @@ exports[`DateField Component base should return a DateField object as Input 1`] 
 }
 
 .c1 .DayPicker-Day:not(.DayPicker-Day--disabled):hover {
-  background-color: hsl(207,90%,54%);
+  background-color: hsl(210.9,71.5%,44.9%);
   color: hsl(0,0%,100%);
 }
 
@@ -1871,7 +1871,7 @@ exports[`DateField Component base should return a DateField object as Input 1`] 
 }
 
 .c1 .DayPicker-Day--selected {
-  background-color: hsl(186.8,100%,41.6%);
+  background-color: hsl(196.9,95%,47.8%);
   color: hsl(0,0%,100%);
 }
 
@@ -2211,7 +2211,7 @@ exports[`DateField Component base should return a DateField object as Input disp
 }
 
 .c1 .DayPicker-Day:not(.DayPicker-Day--disabled):hover {
-  background-color: hsl(207,90%,54%);
+  background-color: hsl(210.9,71.5%,44.9%);
   color: hsl(0,0%,100%);
 }
 
@@ -2262,7 +2262,7 @@ exports[`DateField Component base should return a DateField object as Input disp
 }
 
 .c1 .DayPicker-Day--selected {
-  background-color: hsl(186.8,100%,41.6%);
+  background-color: hsl(196.9,95%,47.8%);
   color: hsl(0,0%,100%);
 }
 
@@ -2602,7 +2602,7 @@ exports[`DateField Component base should return a DateField object as Input disp
 }
 
 .c1 .DayPicker-Day:not(.DayPicker-Day--disabled):hover {
-  background-color: hsl(207,90%,54%);
+  background-color: hsl(210.9,71.5%,44.9%);
   color: hsl(0,0%,100%);
 }
 
@@ -2653,7 +2653,7 @@ exports[`DateField Component base should return a DateField object as Input disp
 }
 
 .c1 .DayPicker-Day--selected {
-  background-color: hsl(186.8,100%,41.6%);
+  background-color: hsl(196.9,95%,47.8%);
   color: hsl(0,0%,100%);
 }
 
@@ -3011,7 +3011,7 @@ exports[`DateField Component base should return a DateField object as Input disp
 }
 
 .c1 .DayPicker-Day:not(.DayPicker-Day--disabled):hover {
-  background-color: hsl(207,90%,54%);
+  background-color: hsl(210.9,71.5%,44.9%);
   color: hsl(0,0%,100%);
 }
 
@@ -3062,7 +3062,7 @@ exports[`DateField Component base should return a DateField object as Input disp
 }
 
 .c1 .DayPicker-Day--selected {
-  background-color: hsl(186.8,100%,41.6%);
+  background-color: hsl(196.9,95%,47.8%);
   color: hsl(0,0%,100%);
 }
 
@@ -3479,7 +3479,7 @@ exports[`DateField Component base should return a DateFieldComponent object as I
 }
 
 .c1 .DayPicker-Day:not(.DayPicker-Day--disabled):hover {
-  background-color: hsl(207,90%,54%);
+  background-color: hsl(210.9,71.5%,44.9%);
   color: hsl(0,0%,100%);
 }
 
@@ -3530,7 +3530,7 @@ exports[`DateField Component base should return a DateFieldComponent object as I
 }
 
 .c1 .DayPicker-Day--selected {
-  background-color: hsl(186.8,100%,41.6%);
+  background-color: hsl(196.9,95%,47.8%);
   color: hsl(0,0%,100%);
 }
 
