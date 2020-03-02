@@ -1,5 +1,5 @@
-import React from 'react';
 import 'jest-styled-components';
+import React from 'react';
 import renderer from 'react-test-renderer';
 import Adapter from 'enzyme-adapter-react-16';
 import { configure } from 'enzyme';
@@ -22,7 +22,8 @@ describe('DateField Component base', () => {
     );
     expect(assertReactElement(element)).toMatchSnapshot();
   });
-  it('should return a DateField object as Calendar', () => {
+  // TODO: Should be replace with a proper test of the underlying value, not a snapshot test.
+  test.skip('should return a DateField object as Calendar', () => {
     const element = (
       <ThemeProvider theme={{}}>
         <DateField

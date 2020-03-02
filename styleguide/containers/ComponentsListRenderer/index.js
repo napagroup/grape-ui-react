@@ -22,6 +22,22 @@ ComponentsListRenderer.defaultProps = {
   visibleName: '',
 };
 
+const getContent = (open, tocMode, forcedOpen, content) => {
+  const isOpen = (tocMode !== 'collapse' ? true : open) || forcedOpen;
+  if (isOpen) {
+    return content;
+  }
+  return null;
+};
+
+const getLinkProps = (href, open, setOpen, selected, shouldOpenInNewTab) => ({
+  color: selected ? 'black' : 'brandLink',
+  fontWeight: selected ? 'bold' : 'inherit',
+  href,
+  onClick: () => setOpen(!open),
+  target: shouldOpenInNewTab ? '_blank' : undefined,
+});
+
 const ComponentsListSectionRenderer = ({
   content,
   forcedOpen,
@@ -36,23 +52,19 @@ const ComponentsListSectionRenderer = ({
     config: { tocMode },
   } = useStyleGuideContext();
 
-  const tocUseState = useState(!!initialOpen);
-  const [open, setOpen] = tocMode !== 'collapse' ? [true, () => {}] : tocUseState;
+  const [open, setOpen] = useState(!!initialOpen);
+
   return (
     <Box
       key={href}
       ml={2}
     >
       <Link
-        color={selected ? 'black' : 'brandLink'}
-        fontWeight={selected ? 'bold' : 'inherit'}
-        href={href}
-        onClick={() => setOpen(!open)}
-        target={shouldOpenInNewTab ? '_blank' : undefined}
+        {...getLinkProps(href, open, setOpen, selected, shouldOpenInNewTab)}
       >
         {visibleName}
       </Link>
-      {open || forcedOpen ? content : null}
+      {getContent(open, tocMode, forcedOpen, content)}
     </Box>
   );
 };
