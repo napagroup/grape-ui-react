@@ -316,6 +316,7 @@ import { useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Button } from '../../Button';
+import { Paragraph } from 'src/elements/typography';
 
 const onBtnClick = inputName => () => {
   if(this[inputName]) {
@@ -327,25 +328,21 @@ const onRegisterClick = () => {
   nameRef.current.focus();
 };
 
-const theme = {
-  colors: {
-    grapeSoda: {
-      base: 'hsl(325, 84.6%, 28%)',
-      dark: 'hsl(305, 33.9%, 23.7%)',
-      light: 'hsl(313, 67.8%, 47.5%)',
-    },
-  },
-};
-
-<ThemeProvider theme={theme}>
+<ThemeProvider theme={{}}>
+  <Paragraph lg>With <code>useRef</code></Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <TextField
         color="grapeSoda.light"
-        inputRef={e => { nameRef.current = e; }}
+        inputRef={ref => { nameRef.current = ref; }}
         labelText="Name"
         name="name"
       />
+    </Box>
+  </Flex>
+  <Paragraph lg>With callback refs</Paragraph>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
       <TextField
         color="grapeSoda.light"
         inputRef={ref => { this.age = ref; }}
@@ -374,100 +371,36 @@ const theme = {
 </ThemeProvider>
 ```
 
-<!-- #### Demonstrating Controlled Components (via react-hook-form-input)
+🍇UI controls can be integrated with Form Validation libraries. Below we demonstrate registering the component(s) as controlled inputs via [react-hook-form](https://react-hook-form.com/).
+For further documentation on integrating UI component libraries with react-hook-form refer to [Working with UI Library](https://react-hook-form.com/get-started/#WorkwithUIlibrary).
+
+#### Demonstrating Controlled Components (via react-hook-form)
 ```jsx inside Markdown
-import { useRef } from 'react';
-import { useForm } from "react-hook-form";
-import { RHFInput } from 'react-hook-form-input';
+import { useForm, Controller } from 'react-hook-form';
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Header } from 'src/elements/typography';
-import { Button } from '../../Button';
 
-const onBtnClick = inputName => () => {
-  if(this[inputName]) {
-    this[inputName].focus();
-  }
-};
-const nameRef = useRef();
-const onRegisterClick = () => {
-  nameRef.current.focus();
-};
-const { getValues, register, setValue, watch } = useForm();
+const {
+  control,
+  register,
+  watch,
+} = useForm({ defaultValues: { name: 'Bruce Wayne'} });
+
 const name = watch('name');
-const age = watch('age');
-const description = watch('description');
-const theme = {
-  colors: {
-    grapeSoda: {
-      base: 'hsl(325, 84.6%, 28%)',
-      dark: 'hsl(305, 33.9%, 23.7%)',
-      light: 'hsl(313, 67.8%, 47.5%)',
-    },
-  },
-};
-
-<ThemeProvider theme={theme}>
-  <Header.h5 margin="0 0 1rem">Name: {name} Age: {age} Description: {description}</Header.h5>
+<ThemeProvider theme={{}}>
+  <Header.h5 margin="0 0 1rem">Name: {name} </Header.h5>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
-      <RHFInput
-        as={<TextField
-          color="grapeSoda.light"
-          labelText="Name"
-          name="innerName"
-          inputRef={e => { nameRef.current = e; }}
-        />}
-        register={register}
-        setValue={setValue}
+     <Controller
+        as={<TextField />}
+        control={control}
+        inputRef={register}
+        labelText="Name"
         name="name"
+        isRequired
       />
-      <RHFInput
-        as={<TextField
-          integer
-          inputRef={ref => { this.ageRhf = ref; }}
-          labelText="Age"
-          name="innerAge"
-
-        />}
-        register={register}
-        setValue={setValue}
-        name="age"
-      />
-      <RHFInput
-        as={<TextField
-          inputRef={ref => { this.descRhf = ref; }}
-          multiline
-          labelText="Description"
-          name="innerDescription"
-        />}
-        register={register}
-        setValue={setValue}
-        name="description"
-      />
-      <Button
-        onClick={onRegisterClick}
-      >
-        Focus on Name
-      </Button>
-      <Button
-        onClick={onBtnClick('ageRhf')}
-      >
-        Focus on Age
-      </Button>
-      <Button
-        onClick={onBtnClick('descRhf')}
-      >
-        Focus on Desc
-      </Button>
-      <Button
-        onClick={() => {
-          alert(JSON.stringify(getValues()));
-        }}
-      >
-        Get Values
-      </Button>
     </Box>
   </Flex>
 </ThemeProvider>
-``` -->
+```

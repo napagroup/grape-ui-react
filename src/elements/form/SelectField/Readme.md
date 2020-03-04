@@ -373,3 +373,100 @@ const linkState = () => null;
   </Flex>
 </ThemeProvider>
 ```
+
+🍇UI controls can be integrated with Form Validation libraries. Below we demonstrate registering the component(s) as controlled inputs via [react-hook-form](https://react-hook-form.com/).
+For further documentation on integrating UI component libraries with react-hook-form refer to [Working with UI Library](https://react-hook-form.com/get-started/#WorkwithUIlibrary).
+
+#### Demonstrating Controlled Components (via react-hook-form)
+```jsx inside Markdown
+import { useForm, Controller } from 'react-hook-form';
+import { ThemeProvider } from 'styled-components';
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Header } from 'src/elements/typography';
+import { Button } from '../../Button';
+
+const {
+  control,
+  register,
+  watch,
+} = useForm();
+
+const enrollmentStatusOptions = [
+  {
+    label: 'Active',
+    value: 'active',
+  },
+  {
+    label: 'Inactive',
+    value: 'inactive',
+  },
+  {
+    label: 'Free (Audit Only)',
+    value: 'audit',
+  },
+];
+
+const courseOptions = [
+  {
+    label: '🎨 Arts & Humanities',
+    value: 'artsHumanities',
+  },
+  {
+    label: '👔 Business',
+    value: 'business',
+  },
+  {
+    label: '🤖 Artificial Intelligence',
+    value: 'artificialIntelligence',
+  },
+  {
+    label: '🤸‍♀️ Health',
+    value: 'health',
+  },
+  {
+    label: '💃 Music & Dance',
+    value: 'musicDance',
+  },
+  {
+    label: '🌎 Language Learning',
+    value: 'languageLearning',
+  },
+];
+const selectedStatusOption = watch('status');
+const selectedCourseOptions = watch('courses') || [];
+const chosenCourses = selectedCourseOptions.map(option => option.label).join(', ');
+
+<ThemeProvider theme={{}}>
+  <Header.h5 margin="0 0 1rem">{selectedStatusOption && selectedStatusOption.label ? `Your Enrollment Status is currently ${selectedStatusOption.label}` : '' } </Header.h5>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <Controller
+        as={<SelectField />}
+        control={control}
+        isClearable
+        labelText="Status"
+        name="status"
+        options={enrollmentStatusOptions}
+        onChange={([selected]) => ({ value: selected })}
+        placeholder="Please choose an enrollment status"
+      />
+    </Box>
+  </Flex>
+  <Header.h5 margin="0 0 1rem">{chosenCourses ? `You've chosen interest in the following courses: ${chosenCourses}.` : ''} </Header.h5>
+  <Flex flexDirection={['column', 'row']} pb={7}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <Controller
+        as={<SelectField />}
+        control={control}
+        isClearable
+        isMulti
+        labelText="Courses"
+        name="courses"
+        options={courseOptions}
+        onChange={([selected]) => ({ value: selected })}
+        placeholder="Choose as many courses that interest you"
+      />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```

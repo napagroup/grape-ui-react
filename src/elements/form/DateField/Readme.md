@@ -616,3 +616,41 @@ const linkState = () => null;
   </Flex>
 </ThemeProvider>
 ```
+
+🍇UI controls can be integrated with Form Validation libraries. Below we demonstrate registering the component(s) as controlled inputs via [react-hook-form](https://react-hook-form.com/).
+For further documentation on integrating UI component libraries with react-hook-form refer to [Working with UI Library](https://react-hook-form.com/get-started/#WorkwithUIlibrary).
+
+#### Demonstrating Controlled Components (via react-hook-form)
+```jsx inside Markdown
+import moment from 'moment';
+import { useForm, Controller } from 'react-hook-form';
+import { ThemeProvider } from 'styled-components';
+import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Header } from 'src/elements/typography';
+
+const {
+  control,
+  register,
+  watch,
+} = useForm({ defaultValues: { enrollmentDate: new Date() } });
+
+const enrollmentDate = watch('enrollmentDate');
+moment.locale('en'); 
+
+<ThemeProvider theme={{}}>
+  <Header.h5 margin="0 0 1rem">Enrollment Date: {moment(enrollmentDate).format('MMMM Do, YYYY')} </Header.h5>
+  <Flex flexDirection={['column', 'row']} pb={7}>
+    <Box px={1} width={[1, 1 / 2]} pb={50}>
+      <Controller
+        as={<DateField />}
+        control={control}
+        labelText="Enrollment Date"
+        locale="it"
+        name="enrollmentDate"
+        onChange={selected => selected[0].selectedDay}
+      />
+    </Box>
+
+  </Flex>
+</ThemeProvider>
+```
