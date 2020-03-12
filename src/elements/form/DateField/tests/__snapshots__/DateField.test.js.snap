@@ -1150,7 +1150,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
               <div
                 onKeyUp={[Function]}
               >
-                February 2020
+                March 2020
               </div>
             </div>
             <div
@@ -1242,32 +1242,8 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 role="row"
               >
                 <div
-                  aria-disabled={true}
-                  className="DayPicker-Day DayPicker-Day--outside"
-                />
-                <div
-                  aria-disabled={true}
-                  className="DayPicker-Day DayPicker-Day--outside"
-                />
-                <div
-                  aria-disabled={true}
-                  className="DayPicker-Day DayPicker-Day--outside"
-                />
-                <div
-                  aria-disabled={true}
-                  className="DayPicker-Day DayPicker-Day--outside"
-                />
-                <div
-                  aria-disabled={true}
-                  className="DayPicker-Day DayPicker-Day--outside"
-                />
-                <div
-                  aria-disabled={true}
-                  className="DayPicker-Day DayPicker-Day--outside"
-                />
-                <div
                   aria-disabled={false}
-                  aria-label="Sat Feb 1, 2020"
+                  aria-label="Sun Mar 1, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1277,14 +1253,9 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   1
                 </div>
-              </div>
-              <div
-                className="DayPicker-Week"
-                role="row"
-              >
                 <div
                   aria-disabled={false}
-                  aria-label="Sun Feb 2, 2020"
+                  aria-label="Mon Mar 2, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1296,9 +1267,9 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Mon Feb 3, 2020"
+                  aria-label="Tue Mar 3, 2020"
                   aria-selected={false}
-                  className="DayPicker-Day DayPicker-Day--today"
+                  className="DayPicker-Day"
                   onClick={[Function]}
                   onKeyDown={[Function]}
                   role="gridcell"
@@ -1308,7 +1279,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Tue Feb 4, 2020"
+                  aria-label="Wed Mar 4, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1320,7 +1291,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Wed Feb 5, 2020"
+                  aria-label="Thu Mar 5, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1332,7 +1303,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Thu Feb 6, 2020"
+                  aria-label="Fri Mar 6, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1344,7 +1315,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Fri Feb 7, 2020"
+                  aria-label="Sat Mar 7, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1354,9 +1325,14 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   7
                 </div>
+              </div>
+              <div
+                className="DayPicker-Week"
+                role="row"
+              >
                 <div
                   aria-disabled={false}
-                  aria-label="Sat Feb 8, 2020"
+                  aria-label="Sun Mar 8, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1366,14 +1342,9 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   8
                 </div>
-              </div>
-              <div
-                className="DayPicker-Week"
-                role="row"
-              >
                 <div
                   aria-disabled={false}
-                  aria-label="Sun Feb 9, 2020"
+                  aria-label="Mon Mar 9, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1385,7 +1356,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Mon Feb 10, 2020"
+                  aria-label="Tue Mar 10, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1397,7 +1368,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Tue Feb 11, 2020"
+                  aria-label="Wed Mar 11, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1409,9 +1380,9 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Wed Feb 12, 2020"
+                  aria-label="Thu Mar 12, 2020"
                   aria-selected={false}
-                  className="DayPicker-Day"
+                  className="DayPicker-Day DayPicker-Day--today"
                   onClick={[Function]}
                   onKeyDown={[Function]}
                   role="gridcell"
@@ -1421,7 +1392,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Thu Feb 13, 2020"
+                  aria-label="Fri Mar 13, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1433,7 +1404,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Fri Feb 14, 2020"
+                  aria-label="Sat Mar 14, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1443,9 +1414,14 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   14
                 </div>
+              </div>
+              <div
+                className="DayPicker-Week"
+                role="row"
+              >
                 <div
                   aria-disabled={false}
-                  aria-label="Sat Feb 15, 2020"
+                  aria-label="Sun Mar 15, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1455,14 +1431,9 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   15
                 </div>
-              </div>
-              <div
-                className="DayPicker-Week"
-                role="row"
-              >
                 <div
                   aria-disabled={false}
-                  aria-label="Sun Feb 16, 2020"
+                  aria-label="Mon Mar 16, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1474,7 +1445,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Mon Feb 17, 2020"
+                  aria-label="Tue Mar 17, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1486,7 +1457,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Tue Feb 18, 2020"
+                  aria-label="Wed Mar 18, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1498,7 +1469,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Wed Feb 19, 2020"
+                  aria-label="Thu Mar 19, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1510,7 +1481,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Thu Feb 20, 2020"
+                  aria-label="Fri Mar 20, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1522,7 +1493,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Fri Feb 21, 2020"
+                  aria-label="Sat Mar 21, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1532,9 +1503,14 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   21
                 </div>
+              </div>
+              <div
+                className="DayPicker-Week"
+                role="row"
+              >
                 <div
                   aria-disabled={false}
-                  aria-label="Sat Feb 22, 2020"
+                  aria-label="Sun Mar 22, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1544,14 +1520,9 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   22
                 </div>
-              </div>
-              <div
-                className="DayPicker-Week"
-                role="row"
-              >
                 <div
                   aria-disabled={false}
-                  aria-label="Sun Feb 23, 2020"
+                  aria-label="Mon Mar 23, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1563,7 +1534,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Mon Feb 24, 2020"
+                  aria-label="Tue Mar 24, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1575,7 +1546,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Tue Feb 25, 2020"
+                  aria-label="Wed Mar 25, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1587,7 +1558,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Wed Feb 26, 2020"
+                  aria-label="Thu Mar 26, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1599,7 +1570,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Thu Feb 27, 2020"
+                  aria-label="Fri Mar 27, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1611,7 +1582,7 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 </div>
                 <div
                   aria-disabled={false}
-                  aria-label="Fri Feb 28, 2020"
+                  aria-label="Sat Mar 28, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1621,9 +1592,14 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   28
                 </div>
+              </div>
+              <div
+                className="DayPicker-Week"
+                role="row"
+              >
                 <div
                   aria-disabled={false}
-                  aria-label="Sat Feb 29, 2020"
+                  aria-label="Sun Mar 29, 2020"
                   aria-selected={false}
                   className="DayPicker-Day"
                   onClick={[Function]}
@@ -1633,6 +1609,46 @@ exports[`DateField Component base should return a DateField object as Calendar 1
                 >
                   29
                 </div>
+                <div
+                  aria-disabled={false}
+                  aria-label="Mon Mar 30, 2020"
+                  aria-selected={false}
+                  className="DayPicker-Day"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  role="gridcell"
+                  tabIndex={-1}
+                >
+                  30
+                </div>
+                <div
+                  aria-disabled={false}
+                  aria-label="Tue Mar 31, 2020"
+                  aria-selected={false}
+                  className="DayPicker-Day"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  role="gridcell"
+                  tabIndex={-1}
+                >
+                  31
+                </div>
+                <div
+                  aria-disabled={true}
+                  className="DayPicker-Day DayPicker-Day--outside"
+                />
+                <div
+                  aria-disabled={true}
+                  className="DayPicker-Day DayPicker-Day--outside"
+                />
+                <div
+                  aria-disabled={true}
+                  className="DayPicker-Day DayPicker-Day--outside"
+                />
+                <div
+                  aria-disabled={true}
+                  className="DayPicker-Day DayPicker-Day--outside"
+                />
               </div>
             </div>
           </div>
