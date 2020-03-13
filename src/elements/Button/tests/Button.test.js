@@ -74,4 +74,23 @@ describe('Button Component base with style', () => {
     const element = <ThemeProvider theme={emptyTheme}><Router><Button to="/404">404</Button></Router></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
+  it('should return a Button object with mailto props filled out', () => {
+    const component = renderer.create(
+      <ThemeProvider theme={{}}>
+        <Button
+          emailHref={{
+            bcc: 'email@napa.com',
+            body: 'Body text for email.',
+            cc: 'email@napa.com',
+            subject: 'Subject line',
+            to: 'email@napa.com',
+          }}
+        >
+          Lorem Ipsum
+        </Button>
+      </ThemeProvider>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
