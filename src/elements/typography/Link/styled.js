@@ -44,6 +44,19 @@ const Link = styled(LinkComponent)`
 
 Link.propTypes = {
   ...typography.propTypes,
+  /** Define properties for an email.  Fill in props and the control will generate the proper string. */
+  emailHref: PropTypes.shape({
+    /** Sets the BCC line. Can be comma-seperatred list. */
+    bcc: PropTypes.string,
+    /** Sets the Body. */
+    body: PropTypes.string,
+    /** Sets the CC line. Can be comma-seperatred list. */
+    cc: PropTypes.string,
+    /** Sets the Subject Line. */
+    subject: PropTypes.string,
+    /** Sets who to send it to. Can be comma-seperatred list. */
+    to: PropTypes.string,
+  }),
   /** Define a custom color for a link element.  This is intended for single use primarily, brandLinkHover should be defined in the theme. */
   hoverColor: PropTypes.string,
   /** The base component will utilize react-router's Link component.  You will still need to wrap this in a Router component. */
@@ -53,6 +66,7 @@ Link.propTypes = {
 Link.defaultProps = {
   ...defaultStylesBase,
   color: 'brandLink',
+  emailHref: {},
   hoverColor: 'brandLinkHover',
   textDecoration: 'none',
 };

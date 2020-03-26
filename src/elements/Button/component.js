@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { removeSomeProps } from 'src/utils/componentHelpers';
+import { emailHrefString } from 'src/elements/typography/Link/utils';
 import { boxShadow } from 'styled-system';
 import { Link as ReactRouterLink } from 'react-router-dom';
 import {
@@ -43,14 +44,17 @@ const propsToTrimForLink = {
 };
 export const ButtonComponent = ({
   children,
+  emailHref,
   href,
   to,
   ...props
 }) => {
   let output = null;
+  const trimmedPropsLink = removeSomeProps(props, Object.keys(propsToTrimForLink));
+  const emailLinkHref = emailHrefString(emailHref);
   if (href) {
     output = (
-      <a {...removeSomeProps(props, Object.keys(propsToTrimForLink))} href={href}>
+      <a href={href} {...trimmedPropsLink}>
         <div>{children}</div>
       </a>
     );
@@ -59,9 +63,15 @@ export const ButtonComponent = ({
       to,
     };
     output = (
-      <ReactRouterLink {...removeSomeProps(props, Object.keys(propsToTrimForLink))} {...linkProps}>
+      <ReactRouterLink {...trimmedPropsLink} {...linkProps}>
         <div>{children}</div>
       </ReactRouterLink>
+    );
+  } else if (emailLinkHref) {
+    return (
+      <a href={emailLinkHref} {...trimmedPropsLink}>
+        <div>{children}</div>
+      </a>
     );
   } else {
     output = (
@@ -74,11 +84,19 @@ export const ButtonComponent = ({
 };
 ButtonComponent.propTypes = {
   children: PropTypes.any,
+  emailHref: PropTypes.shape({
+    bcc: PropTypes.string,
+    body: PropTypes.string,
+    cc: PropTypes.string,
+    subject: PropTypes.string,
+    to: PropTypes.string,
+  }),
   href: PropTypes.string,
   to: PropTypes.string,
 };
 ButtonComponent.defaultProps = {
   children: null,
+  emailHref: {},
   href: null,
   to: null,
 };

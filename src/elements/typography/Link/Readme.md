@@ -10,8 +10,17 @@ import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
   <Flex flexDirection="column">
     <Link to="./">By using <code>to</code>, it is using React Router.</Link>
     <Link href="#">Leaving out <code>to</code>, it is using a native anchor tag.</Link>
-    <Link href="mailto:respin@napa.com">
-      Emailing will also use the native anchor tag when using <code>href=&quot;mailto:emailaddress@grape-ui.com&quot;</code>.
+    <Link href="http://www.google.com" target="_blank">Basic <code>target</code> attribute works as well.</Link>
+    <Link emailHref={{ to: 'emailaddress@grape-ui.com' }}>
+      For mailto links <code>href=&quot;mailto:emailaddress@grape-ui.com&quot;</code>.
+    </Link>
+    <Link emailHref={{
+      bcc: 'bcc@grape-ui.com, bcc2@grape-ui.com',
+      body: 'WHOAAAAAAAAAAA big body.',
+      cc: 'cc@grape-ui.com',
+      subject: 'Kitchen Sink Example',
+    }}>
+      Kitchen sink email example.
     </Link>
   </Flex>
 </Router>

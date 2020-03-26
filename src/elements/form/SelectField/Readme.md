@@ -470,3 +470,58 @@ const chosenCourses = selectedCourseOptions.map(option => option.label).join(', 
   </Flex>
 </ThemeProvider>
 ```
+
+#### isAsync
+
+Enable loading options asynchronously by adding the isAsync property and a callback function in loadOptions.
+
+*Note: isClearable is always set to true when using isAsync.*
+
+```jsx inside Markdown
+import { ThemeProvider } from 'styled-components';
+import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
+import { Paragraph, Text } from '../../typography';
+
+const colorOptions = [
+  { label: 'Black', value: 'black' },
+  { label: 'Blue', value: 'blue' },
+  { label: 'Green', value: 'green' },
+  { label: 'Orange', value: 'orange' },
+  { label: 'Red', value: 'red' },
+  { label: 'White', value: 'white' },
+  { label: 'Yellow', value: 'yellow' },
+];
+const loadOptionsPromise = inputValue => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      const sInputValue = inputValue ? inputValue.toLowerCase() : '';
+      resolve(colorOptions.filter(colorOption => colorOption.label === sInputValue || colorOption.value === sInputValue));
+    }, 1000);
+  });
+};
+const linkState = () => null;
+const formatCreateLabel = value => `Set value to "${value}"`;
+<ThemeProvider theme={{}}>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <SelectField
+        isAsync
+        labelText="Outlined"
+        loadOptions={loadOptionsPromise}
+        name="exampleBasicUsageOutlined"
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <SelectField
+        isAsync
+        isCreatable
+        formatCreateLabel={formatCreateLabel}
+        formStyle="filled"
+        labelText="Filled & Creatable"
+        name="exampleBasicUsageFilled"
+        loadOptions={loadOptionsPromise}
+      />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```

@@ -1,5 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button Component base with style should return a Button object with mailto props filled out 1`] = `
+.c0 {
+  border: 0;
+  border-radius: 4px;
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.c0 > div {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+<a
+  className="c0"
+  href="mailto:email@napa.com?bcc=email@napa.com&body=Body%20text%20for%20email.&cc=email@napa.com&subject=Subject%20line"
+>
+  <div>
+    Lorem Ipsum
+  </div>
+</a>
+`;
+
 exports[`Button Component base with style should return a Button with a zIndex when using a number 1`] = `
 .c0 {
   border: 0;

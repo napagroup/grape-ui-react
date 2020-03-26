@@ -93,4 +93,23 @@ describe('Link Component specified styles', () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('should return a Link object with mailto props filled out', () => {
+    const component = renderer.create(
+      <ThemeProvider theme={{}}>
+        <Link
+          emailHref={{
+            bcc: 'email@napa.com',
+            body: 'Body text for email.',
+            cc: 'email@napa.com',
+            subject: 'Subject line',
+            to: 'email@napa.com',
+          }}
+        >
+          Lorem Ipsum
+        </Link>
+      </ThemeProvider>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

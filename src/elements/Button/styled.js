@@ -130,6 +130,19 @@ Button.propTypes = {
    * @see See [Material Design/Components/Buttons/Contained Button](https://material.io/components/buttons/#contained-button) for more on this style. */
   contained: PropTypes.bool,
   ...display.propTypes,
+  /** Define properties for an email.  Fill in props and the control will generate the proper string. */
+  emailHref: PropTypes.shape({
+    /** Sets the BCC line. Can be comma-seperatred list. */
+    bcc: PropTypes.string,
+    /** Sets the Body. */
+    body: PropTypes.string,
+    /** Sets the CC line. Can be comma-seperatred list. */
+    cc: PropTypes.string,
+    /** Sets the Subject Line. */
+    subject: PropTypes.string,
+    /** Sets who to send it to. Can be comma-seperatred list. */
+    to: PropTypes.string,
+  }),
   ...fontWeight.propTypes,
   /** Will use an anchor tag instead of a button tag. */
   href: PropTypes.string,
@@ -162,6 +175,7 @@ Button.defaultProps = {
   color: null,
   contained: false,
   display: 'inline-block',
+  emailHref: {},
   href: null,
   m: 1,
   maxWidth: '100%',
