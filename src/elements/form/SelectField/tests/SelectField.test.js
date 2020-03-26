@@ -2,6 +2,8 @@ import React from 'react';
 import 'jest-styled-components';
 import Adapter from 'enzyme-adapter-react-16';
 import { configure, mount } from 'enzyme';
+import AsyncSelect from 'react-select/lib/Async';
+import AsyncCreatableSelect from 'react-select/lib/AsyncCreatable';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { SelectField } from '..';
@@ -259,6 +261,45 @@ describe('SelectField with isCreatable prop set to true', () => {
           isCreatable
           labelText="Color"
           options={colorOptions}
+          sm
+          value={colorOptions[1]}
+        />
+      </ThemeProvider>
+    );
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+describe('SelectField with isAsync prop set to true', () => {
+  it('should return an AsyncSelect SelectField component', () => {
+    const loadOptions = () => Promise.resolve(colorOptions);
+    const element = (
+      <ThemeProvider theme={{}}>
+        <AsyncSelect
+          controlId="exampleColor"
+          id="exampleColor"
+          isAsync
+          labelText="Color"
+          loadOptions={loadOptions}
+          sm
+          value={colorOptions[1]}
+        />
+      </ThemeProvider>
+    );
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+});
+describe('SelectField with isAsync and isCreatable prop set to true', () => {
+  it('should return an AsyncCreatableSelect SelectField component', () => {
+    const loadOptions = () => Promise.resolve(colorOptions);
+    const element = (
+      <ThemeProvider theme={{}}>
+        <AsyncCreatableSelect
+          controlId="exampleColor"
+          id="exampleColor"
+          isAsync
+          isCreatable
+          labelText="Color"
+          loadOptions={loadOptions}
           sm
           value={colorOptions[1]}
         />
