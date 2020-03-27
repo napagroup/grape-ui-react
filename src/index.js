@@ -20,7 +20,7 @@ import {
 import { getGlobalStyles, getGlobalOverrides } from './global-styles';
 import * as styledHelpers from './utils/styledHelpers';
 
-module.exports = {
+export {
   Box,
   Button,
   CheckboxField,

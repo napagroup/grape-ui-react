@@ -2,8 +2,6 @@ import React from 'react';
 import 'jest-styled-components';
 import Adapter from 'enzyme-adapter-react-16';
 import { configure, mount } from 'enzyme';
-import AsyncSelect from 'react-select/lib/Async';
-import AsyncCreatableSelect from 'react-select/lib/AsyncCreatable';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { colorOptions } from './examples';
@@ -274,7 +272,7 @@ describe('SelectField with isAsync prop set to true', () => {
     const loadOptions = () => Promise.resolve(colorOptions);
     const element = (
       <ThemeProvider theme={{}}>
-        <AsyncSelect
+        <SelectField
           controlId="exampleColor"
           id="exampleColor"
           isAsync
@@ -293,7 +291,7 @@ describe('SelectField with isAsync and isCreatable prop set to true', () => {
     const loadOptions = () => Promise.resolve(colorOptions);
     const element = (
       <ThemeProvider theme={{}}>
-        <AsyncCreatableSelect
+        <SelectField
           controlId="exampleColor"
           id="exampleColor"
           isAsync

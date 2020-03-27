@@ -1,7 +1,7 @@
 import * as colors from 'src/assets/json/colors.json';
 import * as fontFamily from 'src/assets/json/fontFamily.json';
 
-module.exports = {
+export default {
   color: {
     base: colors.black.base,
     baseBackground: colors.white.light,

@@ -1,4 +1,5 @@
 <img src="src/assets/images/vert-logo.svg" style="max-height: 100px; max-width: 80%;" />
+NEED CDN HERE
 
 ## Getting Started
 These instructions will allow you to use the extensible 🍇UI component library in any React project.

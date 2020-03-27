@@ -1,5 +1,6 @@
 import { ReactSVG } from 'react-svg';
 import styled from 'styled-components';
+import logo from 'src/assets/images/vert-logo.svg'
 
 export const Logo = styled(ReactSVG)`
   height: 40px;
@@ -11,6 +12,6 @@ export const Logo = styled(ReactSVG)`
 `;
 
 Logo.defaultProps = {
-  src: 'src/assets/images/vert-logo.svg',
+  src: logo,
   wrapper: 'span',
 };
