@@ -29,17 +29,22 @@ export const resolveBorderRadius = (props, globalOverrides, defaultBorderRadius 
   // Grape UI lg or sm options
   const globalStyles = resolveGlobal(globalOverrides);
   const { border: borderSchema } = globalStyles;
-  const { formStyle, lg, sm } = props;
+  const {
+    borderRadius,
+    formStyle,
+    lg,
+    sm,
+  } = props;
+  if (borderRadius) {
+    return getBorderRadiusForFormFieldType(borderRadius, formStyle);
+  }
   if (lg) {
     return getBorderRadiusForFormFieldType(borderSchema.borderRadius.lg, formStyle);
   }
   if (sm) {
     return getBorderRadiusForFormFieldType(borderSchema.borderRadius.sm, formStyle);
   }
-
-  // User specified or base value
-  const { borderRadius } = props;
-  return getBorderRadiusForFormFieldType((borderRadius || borderSchema.borderRadius.base), formStyle);
+  return getBorderRadiusForFormFieldType(borderSchema.borderRadius.base, formStyle);
 };
 
 export const resolveColor = (colorToResolve, globalOverrides, defaultColor = defaultStylesBase.color) => {

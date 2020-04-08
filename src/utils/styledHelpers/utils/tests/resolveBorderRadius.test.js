@@ -16,7 +16,7 @@ describe('resolveBorderRadius', () => {
   });
   it('should return the base value 4px if no props', () => {
     // Act
-    const actual = resolveBorderRadius(undefined);
+    const actual = resolveBorderRadius({});
     // Assert
     const expected = '4px';
     expect(actual).toBe(expected);

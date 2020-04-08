@@ -1,0 +1,746 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Component base should return a Form object 1`] = `
+.c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<form
+  className="c0"
+/>
+`;
+
+exports[`Form Component base should return a Form object and textField with filled formStyle 1`] = `
+.c1 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c3 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  height: 0.4rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  background-color: hsl(0,0%,90%);
+  color: inherit;
+  border: 0;
+  border-bottom: 1px solid hsl(0,0%,25%);
+  border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  outline: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem 1rem 0.5rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c2 .grape-ui-select__control,
+.c2 .DayPickerInput > input {
+  margin: -1.5rem -1rem -0.5rem;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.c2 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c2 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+  transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+}
+
+.c2 + label {
+  background: transparent;
+  line-height: 1;
+  top: 0.8rem;
+}
+
+.c2[disabled] {
+  opacity: 0.3;
+}
+
+.c2[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c2:focus,
+.c2:focus-within {
+  border-bottom: 2px solid hsl(323.3,84.6%,28%);
+  margin-bottom: -1px;
+}
+
+.c2:focus + label,
+.c2:focus-within + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c2::-webkit-input-placeholder,
+.c2 input::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c2::-moz-placeholder,
+.c2 input::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c2:-ms-input-placeholder,
+.c2 input:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c2::placeholder,
+.c2 input::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c2 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
+}
+
+<form
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <input
+      className="c2"
+      disabled={false}
+      id="exampleFullName"
+      name=""
+      readOnly={false}
+      tabIndex="0"
+      type="text"
+    />
+    <label
+      className="c3"
+      htmlFor="exampleFullName"
+    >
+      Full name
+    </label>
+  </div>
+</form>
+`;
+
+exports[`Form Component base should return a Form object with 2 filled formStyle with 2 textField and 1 SelectField 1`] = `
+.c1 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c4 {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c3 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  height: 0.4rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 {
+  background-color: hsl(0,0%,90%);
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  border: 0;
+  border-bottom: 1px solid hsl(0,0%,25%);
+  border-radius: 2px 2px 0 0;
+  border-radius: 2px 2px 0 0;
+  outline: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.c5 .grape-ui-select__control,
+.c5 .DayPickerInput > input {
+  margin: -1.5rem -1rem -0.5rem;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.c5 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c5 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+  transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+}
+
+.c5 + label {
+  background: transparent;
+  line-height: 1;
+  top: 0.8rem;
+}
+
+.c5[disabled] {
+  opacity: 0.3;
+}
+
+.c5[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c5:focus,
+.c5:focus-within {
+  border-bottom: 2px solid hsl(323.3,84.6%,28%);
+  margin-bottom: -1px;
+}
+
+.c5:focus + label,
+.c5:focus-within + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c5::-webkit-input-placeholder,
+.c5 input::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c5::-moz-placeholder,
+.c5 input::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c5:-ms-input-placeholder,
+.c5 input:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c5::placeholder,
+.c5 input::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c5 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
+}
+
+.c2 {
+  background-color: hsl(0,0%,90%);
+  color: inherit;
+  border: 0;
+  border-bottom: 1px solid hsl(0,0%,25%);
+  border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  outline: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem 1rem 0.5rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c2 .grape-ui-select__control,
+.c2 .DayPickerInput > input {
+  margin: -1.5rem -1rem -0.5rem;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.c2 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c2 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+  transform: translateX(-1rem) translateY(calc(0.5rem + 2px));
+}
+
+.c2 + label {
+  background: transparent;
+  line-height: 1;
+  top: 0.8rem;
+}
+
+.c2[disabled] {
+  opacity: 0.3;
+}
+
+.c2[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c2:focus,
+.c2:focus-within {
+  border-bottom: 2px solid hsl(323.3,84.6%,28%);
+  margin-bottom: -1px;
+}
+
+.c2:focus + label,
+.c2:focus-within + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c2::-webkit-input-placeholder,
+.c2 input::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c2::-moz-placeholder,
+.c2 input::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c2:-ms-input-placeholder,
+.c2 input:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c2::placeholder,
+.c2 input::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c2 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
+}
+
+<form
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <input
+      className="c2"
+      disabled={false}
+      id="exampleFullName"
+      name=""
+      readOnly={false}
+      tabIndex="0"
+      type="text"
+    />
+    <label
+      className="c3"
+      htmlFor="exampleFullName"
+    >
+      Full name
+    </label>
+  </div>
+  <div
+    className="c1"
+  >
+    <input
+      className="c2"
+      disabled={false}
+      id="address"
+      name=""
+      readOnly={false}
+      tabIndex="0"
+      type="text"
+    />
+    <label
+      className="c3"
+      htmlFor="address"
+    >
+      Address
+    </label>
+  </div>
+  <div
+    className="c4"
+  >
+    <div
+      className="css-1pcexqc-container c5"
+      id="exampleColor"
+      onKeyDown={[Function]}
+    >
+      <div
+        className="css-mazh0z grape-ui-select__control"
+        onMouseDown={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div
+          className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        >
+          <div
+            className="css-8uhtka grape-ui-select__single-value"
+          >
+            Yellow
+          </div>
+          <div
+            className="css-0"
+          >
+            <div
+              className="grape-ui-select__input"
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              <input
+                aria-autocomplete="list"
+                autoCapitalize="none"
+                autoComplete="off"
+                autoCorrect="off"
+                disabled={false}
+                id="react-select-2-input"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                spellCheck="false"
+                style={
+                  Object {
+                    "background": 0,
+                    "border": 0,
+                    "boxSizing": "content-box",
+                    "color": "inherit",
+                    "fontSize": "inherit",
+                    "label": "input",
+                    "opacity": 1,
+                    "outline": 0,
+                    "padding": 0,
+                    "width": "1px",
+                  }
+                }
+                tabIndex="0"
+                type="text"
+                value=""
+              />
+              <div
+                style={
+                  Object {
+                    "height": 0,
+                    "left": 0,
+                    "overflow": "scroll",
+                    "position": "absolute",
+                    "top": 0,
+                    "visibility": "hidden",
+                    "whiteSpace": "pre",
+                  }
+                }
+              >
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="css-1rtnzd2 grape-ui-select__indicators"
+        >
+          <span
+            className="css-1hyfx7x grape-ui-select__indicator-separator"
+          />
+          <div
+            aria-hidden="true"
+            className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="css-19bqh2r"
+              focusable="false"
+              height={20}
+              viewBox="0 0 20 20"
+              width={20}
+            >
+              <path
+                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label
+      className="c3"
+      htmlFor="exampleColor"
+    >
+      Color
+    </label>
+  </div>
+</form>
+`;
+
+exports[`Form Component base should return a Form object with div that do not get formStyle="filled" 1`] = `
+.c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<form
+  className="c0"
+>
+  <div
+    id="1"
+  />
+</form>
+`;
+
+exports[`Form Component base should return a Form object with filled formStyle and textField with outlined 1`] = `
+.c1 {
+  position: relative;
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.c3 {
+  background-color: hsl(0,0%,100%);
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  height: 0.4rem;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 0.8;
+  left: 8px;
+  position: absolute;
+  top: -1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 {
+  background-color: transparent;
+  color: inherit;
+  border: 1px solid hsl(0,0%,25%);
+  border-radius: 4px;
+  border-radius: 4px;
+  outline: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c2 .grape-ui-select__control,
+.c2 .DayPickerInput > input {
+  margin: -1rem;
+  padding: 1rem;
+}
+
+.c2 .grape-ui-select__control + .DayPickerInput-OverlayWrapper,
+.c2 .DayPickerInput > input + .DayPickerInput-OverlayWrapper {
+  -webkit-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  -ms-transform: translateX(-1rem) translateY(calc(1rem + 2px));
+  transform: translateX(-1rem) translateY(calc(1rem + 2px));
+}
+
+.c2[disabled] {
+  opacity: 0.3;
+}
+
+.c2[disabled] ~ * {
+  color: rgba(0,0,0,0.3);
+}
+
+.c2:focus,
+.c2:focus-within {
+  border-color: hsl(323.3,84.6%,28%);
+  box-shadow: 0 0 0 1px hsl(323.3,84.6%,28%);
+}
+
+.c2:focus + label,
+.c2:focus-within + label {
+  color: hsl(323.3,84.6%,28%);
+}
+
+.c2::-webkit-input-placeholder,
+.c2 input::-webkit-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c2::-moz-placeholder,
+.c2 input::-moz-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c2:-ms-input-placeholder,
+.c2 input:-ms-input-placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c2::placeholder,
+.c2 input::placeholder {
+  color: hsl(0,0%,75%);
+}
+
+.c2 .DayPickerInput > input {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  outline: 0;
+  width: 100%;
+}
+
+<form
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <input
+      className="c2"
+      disabled={false}
+      id="exampleFullName"
+      name=""
+      readOnly={false}
+      tabIndex="0"
+      type="text"
+    />
+    <label
+      className="c3"
+      htmlFor="exampleFullName"
+    >
+      Full name
+    </label>
+  </div>
+</form>
+`;
+
+exports[`Form Component base should return a Form object with flex direction column 1`] = `
+.c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<form
+  className="c0"
+/>
+`;

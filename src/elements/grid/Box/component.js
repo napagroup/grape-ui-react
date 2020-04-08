@@ -14,6 +14,10 @@ const propsToTrim = {
   ...layoutProps.propTypes,
   ...positionProps.propTypes,
   ...spaceProps.propTypes,
+  boxSizing: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.string,
+  ]),
 };
 export const BoxComponent = ({ children, ...props }) => (
   <div {...removeSomeProps(props, Object.keys(propsToTrim))}>

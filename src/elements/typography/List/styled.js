@@ -74,12 +74,16 @@ const listFactory = factoryProps => {
 const List = listFactory({ tag: 'ul' });
 List.ul = List;
 List.ol = listFactory({ tag: 'ol' });
+
 List.propTypes = {
-  inline: PropTypes.bool,
   ...typography.propTypes,
+  inline: PropTypes.bool,
   unstyled: PropTypes.bool,
 };
+
 List.defaultProps = {
   ...defaultStylesBase,
 };
+
+/** @component */
 export { List };

@@ -19,7 +19,7 @@ import { ListItemComponent } from './component';
 
 const { grid: { gutter } } = getGlobalStyles();
 
-export const ListItem = styled(ListItemComponent)`
+const ListItem = styled(ListItemComponent)`
   ${colorCore}
   ${ellipsisCore}
   ${fontFamilyCore}
@@ -41,3 +41,6 @@ ListItem.defaultProps = {
   ...defaultStylesBase,
   mb: scaleFont(gutter, 0.25),
 };
+
+/** @component */
+export { ListItem };

@@ -6,7 +6,8 @@
     "!src/*/RbGenerated*/*.{js,jsx}",
     "!src/index.js",
     "!src/global-styles.js",
-    "!src/*/*/Loadable.{js,jsx}"
+    "!src/*/*/Loadable.{js,jsx}",
+    "!src/**/examples/**"
   ],
   "coverageThreshold": {
     "global": {

@@ -1,6 +1,6 @@
 {
   "baseFontSize": "1rem",
-  "display": {
+  "displayHeader": {
     "h1": "6rem",
     "h2": "4.8rem",
     "h3": "4.2rem",

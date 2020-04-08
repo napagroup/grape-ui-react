@@ -1,12 +1,15 @@
 import * as styledComponents from 'styled-components';
 import { Button } from './elements/Button';
-import { DateField } from './elements/form/DateField';
 import { Box, Flex } from './elements/grid';
 import { Image } from './elements/Image';
-import { Form } from './elements/form/Form';
-import { TextField } from './elements/form/TextField';
-import { SelectField } from './elements/form/SelectField';
-import { CheckboxField } from './elements/form/Checkbox';
+import { Table } from './elements/Table';
+import {
+  CheckboxField,
+  DateField,
+  Form,
+  SelectField,
+  TextField,
+} from './elements/forms';
 import {
   Header,
   Link,
@@ -18,7 +21,7 @@ import {
 import { getGlobalStyles, getGlobalOverrides } from './global-styles';
 import * as styledHelpers from './utils/styledHelpers';
 
-module.exports = {
+export {
   Box,
   Button,
   CheckboxField,
@@ -36,6 +39,7 @@ module.exports = {
   SelectField,
   styledComponents,
   styledHelpers,
+  Table,
   Text,
   TextField,
 };

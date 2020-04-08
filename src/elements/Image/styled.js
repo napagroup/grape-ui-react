@@ -1,40 +1,22 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import {
-  width,
-  display,
-  maxWidth,
-  minWidth,
-  height,
-  maxHeight,
-  minHeight,
-} from 'styled-system';
+import { layout } from 'styled-system';
+import propTypes from '@styled-system/prop-types';
 import { ImageComponent } from './component';
 
-export const Image = styled(ImageComponent)`
-  ${width}
-  ${display}
-  ${maxWidth}
-  ${minWidth}
-  ${height}
-  ${maxHeight}
-  ${minHeight}
-`;
+const Image = styled(ImageComponent)`${layout}`;
 
 Image.propTypes = {
-  alt: PropTypes.string,
+  /** Required for web accessibility. Should be short and descriptive. */
+  alt: PropTypes.string.isRequired,
   maxWidth: PropTypes.string,
-  ...width.propTypes,
-  ...display.propTypes,
-  ...maxWidth.propTypes,
-  ...minWidth.propTypes,
-  ...height.propTypes,
-  ...maxHeight.propTypes,
-  ...minHeight.propTypes,
+  ...propTypes.layout,
 };
 
 Image.defaultProps = {
-  alt: '',
   maxWidth: '100%',
   width: '100%',
 };
+
+/** @component */
+export { Image };

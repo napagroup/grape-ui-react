@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table - basic rendering should not have rendered children when hide is true 1`] = `<div />`;
+
+exports[`Table - basic rendering should not return any markup if no children 1`] = `<div />`;
+
+exports[`Table - basic rendering should render children when hide is false 1`] = `
+<div>
+  <div>
+    innerText
+  </div>
+</div>
+`;

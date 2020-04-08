@@ -1,5 +1,5 @@
 import { getGlobalStyles, getGlobalOverrides } from 'src/global-styles';
-import { DateFieldControlOverrides } from 'src/elements/form/DateField/constants';
+import { DateFieldControlOverrides } from 'src/elements/forms/DateField/constants';
 import { resolveBorderRadius, resolveColor } from './utils';
 import { defaultControlStyles, defaultStylesBase } from './cssDefaults';
 import { colorCore } from './core';

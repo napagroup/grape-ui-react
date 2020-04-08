@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Box Component base should return a Box object with acceptable attributes 1`] = `
+.c0 {
+  box-sizing: border-box;
+}
+
 <div
-  className=""
+  className="c0"
   id="my-box-id"
 >
   Lorem Ipsum
@@ -10,13 +14,18 @@ exports[`Box Component base should return a Box object with acceptable attribute
 `;
 
 exports[`Box Component base should return an empty Box object with base styling 1`] = `
+.c0 {
+  box-sizing: border-box;
+}
+
 <div
-  className=""
+  className="c0"
 />
 `;
 
 exports[`Box Component using custom theme breakpoints for Core Styling should return a Box object with overridden breakpoints for margin 1`] = `
 .c0 {
+  box-sizing: border-box;
   margin: 2px;
 }
 
@@ -47,6 +56,7 @@ exports[`Box Component using custom theme breakpoints for Core Styling should re
 
 exports[`Box Component using custom theme breakpoints for Core Styling should return a Box object with overridden breakpoints for margin top 1`] = `
 .c0 {
+  box-sizing: border-box;
   margin-top: 2px;
 }
 
@@ -77,6 +87,7 @@ exports[`Box Component using custom theme breakpoints for Core Styling should re
 
 exports[`Box Component using custom theme breakpoints for Core Styling should return a Box object with overridden breakpoints for padding 1`] = `
 .c0 {
+  box-sizing: border-box;
   padding: 2px;
 }
 
@@ -107,6 +118,7 @@ exports[`Box Component using custom theme breakpoints for Core Styling should re
 
 exports[`Box Component using custom theme breakpoints for Core Styling should return a Box object with overridden breakpoints for padding top 1`] = `
 .c0 {
+  box-sizing: border-box;
   padding-top: 2px;
 }
 
@@ -137,6 +149,7 @@ exports[`Box Component using custom theme breakpoints for Core Styling should re
 
 exports[`Box Component using custom theme breakpoints for Layout should return a Box object with overridden breakpoints for display 1`] = `
 .c0 {
+  box-sizing: border-box;
   display: block;
 }
 
@@ -155,6 +168,7 @@ exports[`Box Component using custom theme breakpoints for Layout should return a
 
 exports[`Box Component using custom theme breakpoints for Position should return a Box object with overridden breakpoints for position 1`] = `
 .c0 {
+  box-sizing: border-box;
   position: block;
 }
 
@@ -173,6 +187,7 @@ exports[`Box Component using custom theme breakpoints for Position should return
 
 exports[`Box Component with specified layout properties Box Component with specified position properties should return a Box object with bottom 1`] = `
 .c0 {
+  box-sizing: border-box;
   bottom: 0;
 }
 
@@ -185,6 +200,7 @@ exports[`Box Component with specified layout properties Box Component with speci
 
 exports[`Box Component with specified layout properties Box Component with specified position properties should return a Box object with left 1`] = `
 .c0 {
+  box-sizing: border-box;
   left: 0;
 }
 
@@ -197,6 +213,7 @@ exports[`Box Component with specified layout properties Box Component with speci
 
 exports[`Box Component with specified layout properties Box Component with specified position properties should return a Box object with position 1`] = `
 .c0 {
+  box-sizing: border-box;
   position: absolute;
 }
 
@@ -209,6 +226,7 @@ exports[`Box Component with specified layout properties Box Component with speci
 
 exports[`Box Component with specified layout properties Box Component with specified position properties should return a Box object with right 1`] = `
 .c0 {
+  box-sizing: border-box;
   right: 0;
 }
 
@@ -221,6 +239,7 @@ exports[`Box Component with specified layout properties Box Component with speci
 
 exports[`Box Component with specified layout properties Box Component with specified position properties should return a Box object with top 1`] = `
 .c0 {
+  box-sizing: border-box;
   top: 0;
 }
 
@@ -233,6 +252,7 @@ exports[`Box Component with specified layout properties Box Component with speci
 
 exports[`Box Component with specified layout properties Box Component with specified position properties should return a Box object with zIndex 1`] = `
 .c0 {
+  box-sizing: border-box;
   z-index: 2;
 }
 
@@ -245,6 +265,7 @@ exports[`Box Component with specified layout properties Box Component with speci
 
 exports[`Box Component with specified layout properties should return a Box object with display 1`] = `
 .c0 {
+  box-sizing: border-box;
   display: inline-block;
 }
 
@@ -257,6 +278,7 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified layout properties should return a Box object with display applied to different breakpoints 1`] = `
 .c0 {
+  box-sizing: border-box;
   display: block;
 }
 
@@ -275,6 +297,7 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified layout properties should return a Box object with height 1`] = `
 .c0 {
+  box-sizing: border-box;
   height: 64px;
 }
 
@@ -287,6 +310,7 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified layout properties should return a Box object with height applied to different breakpoints 1`] = `
 .c0 {
+  box-sizing: border-box;
   height: 48px;
 }
 
@@ -305,6 +329,7 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified layout properties should return a Box object with maxHeight 1`] = `
 .c0 {
+  box-sizing: border-box;
   max-height: 1024px;
 }
 
@@ -317,7 +342,16 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified layout properties should return a Box object with maxHeight applied to different breakpoints 1`] = `
 .c0 {
+  box-sizing: border-box;
   max-height: 768px;
+}
+
+@media screen and (min-width:40em) {
+
+}
+
+@media screen and (min-width:52em) {
+
 }
 
 @media screen and (min-width:64em) {
@@ -335,6 +369,7 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified layout properties should return a Box object with maxWidth 1`] = `
 .c0 {
+  box-sizing: border-box;
   max-width: 1024px;
 }
 
@@ -347,7 +382,16 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified layout properties should return a Box object with maxWidth applied to different breakpoints 1`] = `
 .c0 {
+  box-sizing: border-box;
   max-width: 768px;
+}
+
+@media screen and (min-width:40em) {
+
+}
+
+@media screen and (min-width:52em) {
+
 }
 
 @media screen and (min-width:64em) {
@@ -365,6 +409,7 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified layout properties should return a Box object with minHeight 1`] = `
 .c0 {
+  box-sizing: border-box;
   min-height: 128px;
 }
 
@@ -377,6 +422,7 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified layout properties should return a Box object with minHeight applied to different breakpoints 1`] = `
 .c0 {
+  box-sizing: border-box;
   min-height: 384px;
 }
 
@@ -395,6 +441,7 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified layout properties should return a Box object with minWidth 1`] = `
 .c0 {
+  box-sizing: border-box;
   min-width: 128px;
 }
 
@@ -407,6 +454,7 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified layout properties should return a Box object with minWidth applied to different breakpoints 1`] = `
 .c0 {
+  box-sizing: border-box;
   min-width: 96px;
 }
 
@@ -425,6 +473,7 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified layout properties should return a Box object with size 1`] = `
 .c0 {
+  box-sizing: border-box;
   width: 32px;
   height: 32px;
 }
@@ -438,6 +487,7 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified layout properties should return a Box object with size applied to different breakpoints 1`] = `
 .c0 {
+  box-sizing: border-box;
   width: 32px;
   height: 32px;
 }
@@ -458,6 +508,7 @@ exports[`Box Component with specified layout properties should return a Box obje
 
 exports[`Box Component with specified margins should return a Box object with margin 1`] = `
 .c0 {
+  box-sizing: border-box;
   margin: 8px;
 }
 
@@ -470,6 +521,7 @@ exports[`Box Component with specified margins should return a Box object with ma
 
 exports[`Box Component with specified margins should return a Box object with margin bottom 1`] = `
 .c0 {
+  box-sizing: border-box;
   margin-bottom: 8px;
 }
 
@@ -482,6 +534,7 @@ exports[`Box Component with specified margins should return a Box object with ma
 
 exports[`Box Component with specified margins should return a Box object with margin left 1`] = `
 .c0 {
+  box-sizing: border-box;
   margin-left: 8px;
 }
 
@@ -494,6 +547,7 @@ exports[`Box Component with specified margins should return a Box object with ma
 
 exports[`Box Component with specified margins should return a Box object with margin left and right 1`] = `
 .c0 {
+  box-sizing: border-box;
   margin-left: 8px;
   margin-right: 8px;
 }
@@ -507,6 +561,7 @@ exports[`Box Component with specified margins should return a Box object with ma
 
 exports[`Box Component with specified margins should return a Box object with margin right 1`] = `
 .c0 {
+  box-sizing: border-box;
   margin-right: 8px;
 }
 
@@ -519,6 +574,7 @@ exports[`Box Component with specified margins should return a Box object with ma
 
 exports[`Box Component with specified margins should return a Box object with margin top and bottom 1`] = `
 .c0 {
+  box-sizing: border-box;
   margin-top: 8px;
   margin-bottom: 8px;
 }
@@ -532,6 +588,7 @@ exports[`Box Component with specified margins should return a Box object with ma
 
 exports[`Box Component with specified margins should return a Box object with top margin 1`] = `
 .c0 {
+  box-sizing: border-box;
   margin-top: 8px;
 }
 
@@ -544,6 +601,7 @@ exports[`Box Component with specified margins should return a Box object with to
 
 exports[`Box Component with specified padding should return a Box object with padding 1`] = `
 .c0 {
+  box-sizing: border-box;
   padding: 8px;
 }
 
@@ -556,6 +614,7 @@ exports[`Box Component with specified padding should return a Box object with pa
 
 exports[`Box Component with specified padding should return a Box object with padding bottom 1`] = `
 .c0 {
+  box-sizing: border-box;
   padding-bottom: 8px;
 }
 
@@ -568,6 +627,7 @@ exports[`Box Component with specified padding should return a Box object with pa
 
 exports[`Box Component with specified padding should return a Box object with padding left 1`] = `
 .c0 {
+  box-sizing: border-box;
   padding-left: 8px;
 }
 
@@ -580,6 +640,7 @@ exports[`Box Component with specified padding should return a Box object with pa
 
 exports[`Box Component with specified padding should return a Box object with padding left and right 1`] = `
 .c0 {
+  box-sizing: border-box;
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -593,6 +654,7 @@ exports[`Box Component with specified padding should return a Box object with pa
 
 exports[`Box Component with specified padding should return a Box object with padding right 1`] = `
 .c0 {
+  box-sizing: border-box;
   padding-right: 8px;
 }
 
@@ -605,6 +667,7 @@ exports[`Box Component with specified padding should return a Box object with pa
 
 exports[`Box Component with specified padding should return a Box object with padding top 1`] = `
 .c0 {
+  box-sizing: border-box;
   padding-top: 8px;
 }
 
@@ -617,6 +680,7 @@ exports[`Box Component with specified padding should return a Box object with pa
 
 exports[`Box Component with specified padding should return a Box object with padding top and bottom 1`] = `
 .c0 {
+  box-sizing: border-box;
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -630,6 +694,7 @@ exports[`Box Component with specified padding should return a Box object with pa
 
 exports[`Box Component with specified widths should return a Box object with a percentage width 1`] = `
 .c0 {
+  box-sizing: border-box;
   width: 50%;
 }
 
@@ -642,6 +707,7 @@ exports[`Box Component with specified widths should return a Box object with a p
 
 exports[`Box Component with specified widths should return a Box object with an exact pixel width 1`] = `
 .c0 {
+  box-sizing: border-box;
   width: 256px;
 }
 
@@ -654,6 +720,7 @@ exports[`Box Component with specified widths should return a Box object with an 
 
 exports[`Box Component with specified widths should return a Box object with an exact pixel width in the stated unit 1`] = `
 .c0 {
+  box-sizing: border-box;
   width: 2em;
 }
 
@@ -666,6 +733,7 @@ exports[`Box Component with specified widths should return a Box object with an 
 
 exports[`Box Component with specified widths should return a Box object with width applied to different breakpoints 1`] = `
 .c0 {
+  box-sizing: border-box;
   width: 100%;
 }
 

@@ -2,18 +2,16 @@
 
 exports[`Flex base should return a Flex object with 2 responsive Box elements as the children 1`] = `
 .c1 {
+  box-sizing: border-box;
   width: 100%;
 }
 
 .c2 {
+  box-sizing: border-box;
   width: 100%;
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -21,6 +19,10 @@ exports[`Flex base should return a Flex object with 2 responsive Box elements as
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (min-width:40em) {
@@ -52,6 +54,10 @@ exports[`Flex base should return a Flex object with 2 responsive Box elements as
 `;
 
 exports[`Flex base should return a Flex object with a box element as the child 1`] = `
+.c1 {
+  box-sizing: border-box;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -63,7 +69,7 @@ exports[`Flex base should return a Flex object with a box element as the child 1
   className="c0"
 >
   <div
-    className=""
+    className="c1"
   >
     Lorem Ipsum
   </div>
@@ -223,11 +229,11 @@ exports[`Flex using custom theme breakpoints for Core Styling should return a Fl
 
 exports[`Flex using custom theme breakpoints for Core Styling should return a Flex object with overridden breakpoints for width 1`] = `
 .c0 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
 }
 
 @media screen and (min-width:40em) {
@@ -257,11 +263,11 @@ exports[`Flex using custom theme breakpoints for Core Styling should return a Fl
 
 exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for height 1`] = `
 .c0 {
+  height: 1.1px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 1.1px;
 }
 
 @media screen and (min-width:40em) {
@@ -291,11 +297,11 @@ exports[`Flex using custom theme breakpoints for Layout should return a Flex obj
 
 exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for maxHeight 1`] = `
 .c0 {
+  max-height: 1.1px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-height: 1.1px;
 }
 
 @media screen and (min-width:40em) {
@@ -325,11 +331,11 @@ exports[`Flex using custom theme breakpoints for Layout should return a Flex obj
 
 exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for maxWidth 1`] = `
 .c0 {
+  max-width: 1.1px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1.1px;
 }
 
 @media screen and (min-width:40em) {
@@ -359,11 +365,11 @@ exports[`Flex using custom theme breakpoints for Layout should return a Flex obj
 
 exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for minHeight 1`] = `
 .c0 {
+  min-height: 1px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 1px;
 }
 
 @media screen and (min-width:40em) {
@@ -393,11 +399,11 @@ exports[`Flex using custom theme breakpoints for Layout should return a Flex obj
 
 exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for minWidth 1`] = `
 .c0 {
+  min-width: 1px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-width: 1px;
 }
 
 @media screen and (min-width:40em) {
@@ -421,12 +427,12 @@ exports[`Flex using custom theme breakpoints for Layout should return a Flex obj
 
 exports[`Flex using custom theme breakpoints for Layout should return a Flex object with overridden breakpoints for size 1`] = `
 .c0 {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100%;
 }
 
 @media screen and (min-width:40em) {
@@ -459,13 +465,13 @@ exports[`Flex using custom theme breakpoints for Layout should return a Flex obj
 
 exports[`Flex with specified alignment properties should return a Flex object with auto flex basis applied 1`] = `
 .c0 {
+  -webkit-flex-basis: wrap;
+  -ms-flex-preferred-size: wrap;
+  flex-basis: wrap;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-basis: wrap;
-  -ms-flex-preferred-size: wrap;
-  flex-basis: wrap;
 }
 
 <div
@@ -477,13 +483,13 @@ exports[`Flex with specified alignment properties should return a Flex object wi
 
 exports[`Flex with specified alignment properties should return a Flex object with column flex direction 1`] = `
 .c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 <div
@@ -495,13 +501,13 @@ exports[`Flex with specified alignment properties should return a Flex object wi
 
 exports[`Flex with specified alignment properties should return a Flex object with content aligned to the the center 1`] = `
 .c0 {
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
 }
 
 <div
@@ -513,14 +519,14 @@ exports[`Flex with specified alignment properties should return a Flex object wi
 
 exports[`Flex with specified alignment properties should return a Flex object with content justified to the the center 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 <div
@@ -532,13 +538,13 @@ exports[`Flex with specified alignment properties should return a Flex object wi
 
 exports[`Flex with specified alignment properties should return a Flex object with flex-wrap styling applied 1`] = `
 .c0 {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 <div
@@ -550,14 +556,14 @@ exports[`Flex with specified alignment properties should return a Flex object wi
 
 exports[`Flex with specified alignment properties should return a Flex object with items aligned to the the center 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 <div
@@ -569,11 +575,11 @@ exports[`Flex with specified alignment properties should return a Flex object wi
 
 exports[`Flex with specified layout properties should return a Flex object with height 1`] = `
 .c0 {
+  height: 64px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 64px;
 }
 
 <div
@@ -585,11 +591,11 @@ exports[`Flex with specified layout properties should return a Flex object with 
 
 exports[`Flex with specified layout properties should return a Flex object with height based on defined breakpoints 1`] = `
 .c0 {
+  height: 48px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 48px;
 }
 
 @media screen and (min-width:40em) {
@@ -607,11 +613,11 @@ exports[`Flex with specified layout properties should return a Flex object with 
 
 exports[`Flex with specified layout properties should return a Flex object with maxHeight 1`] = `
 .c0 {
+  max-height: 1024px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-height: 1024px;
 }
 
 <div
@@ -623,11 +629,19 @@ exports[`Flex with specified layout properties should return a Flex object with 
 
 exports[`Flex with specified layout properties should return a Flex object with maxHeight based on defined breakpoints 1`] = `
 .c0 {
+  max-height: 768px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-height: 768px;
+}
+
+@media screen and (min-width:40em) {
+
+}
+
+@media screen and (min-width:52em) {
+
 }
 
 @media screen and (min-width:64em) {
@@ -645,11 +659,11 @@ exports[`Flex with specified layout properties should return a Flex object with 
 
 exports[`Flex with specified layout properties should return a Flex object with maxWidth 1`] = `
 .c0 {
+  max-width: 1024px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1024px;
 }
 
 <div
@@ -661,11 +675,19 @@ exports[`Flex with specified layout properties should return a Flex object with 
 
 exports[`Flex with specified layout properties should return a Flex object with maxWidth based on defined breakpoints 1`] = `
 .c0 {
+  max-width: 768px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 768px;
+}
+
+@media screen and (min-width:40em) {
+
+}
+
+@media screen and (min-width:52em) {
+
 }
 
 @media screen and (min-width:64em) {
@@ -683,11 +705,11 @@ exports[`Flex with specified layout properties should return a Flex object with 
 
 exports[`Flex with specified layout properties should return a Flex object with minWidth 1`] = `
 .c0 {
+  min-width: 128px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-width: 128px;
 }
 
 <div
@@ -699,11 +721,11 @@ exports[`Flex with specified layout properties should return a Flex object with 
 
 exports[`Flex with specified layout properties should return a Flex object with minWidth based on defined breakpoints 1`] = `
 .c0 {
+  min-width: 96px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-width: 96px;
 }
 
 @media screen and (min-width:40em) {
@@ -737,12 +759,12 @@ exports[`Flex with specified layout properties should return a Flex object with 
 
 exports[`Flex with specified layout properties should return a Flex object with size (width and height) 1`] = `
 .c0 {
+  width: 32px;
+  height: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 32px;
-  height: 32px;
 }
 
 <div
@@ -754,12 +776,12 @@ exports[`Flex with specified layout properties should return a Flex object with 
 
 exports[`Flex with specified layout properties should return a Flex object with size (width and height) based on defined breakpoints 1`] = `
 .c0 {
+  width: 32px;
+  height: 32px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 32px;
-  height: 32px;
 }
 
 @media screen and (min-width:40em) {
@@ -1006,11 +1028,11 @@ exports[`Flex with specified padding should return a Flex object with padding ap
 
 exports[`Flex with specified widths should return a Flex object with a percentage width 1`] = `
 .c0 {
+  width: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
 }
 
 <div
@@ -1022,11 +1044,11 @@ exports[`Flex with specified widths should return a Flex object with a percentag
 
 exports[`Flex with specified widths should return a Flex object with a specified width 1`] = `
 .c0 {
+  width: 2px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 2px;
 }
 
 <div
@@ -1038,11 +1060,11 @@ exports[`Flex with specified widths should return a Flex object with a specified
 
 exports[`Flex with specified widths should return a Flex object with an exact pixel width 1`] = `
 .c0 {
+  width: 256px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 256px;
 }
 
 <div
@@ -1054,11 +1076,11 @@ exports[`Flex with specified widths should return a Flex object with an exact pi
 
 exports[`Flex with specified widths should return a Flex object with the exact width enter with the stated unit 1`] = `
 .c0 {
+  width: 2em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 2em;
 }
 
 <div
@@ -1070,11 +1092,11 @@ exports[`Flex with specified widths should return a Flex object with the exact w
 
 exports[`Flex with specified widths should return a Flex object with width applied to different breakpoints 1`] = `
 .c0 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
 }
 
 @media screen and (min-width:40em) {

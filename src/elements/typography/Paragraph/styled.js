@@ -29,7 +29,6 @@ const fontWeightParagraph = props => {
 };
 
 const Paragraph = styled(ParagraphComponent)`
-  margin: 0 0 ${gridSchema.gutter};
   ${colorCore}
   ${ellipsisCore}
   ${fontFamilyCore}
@@ -45,12 +44,15 @@ const Paragraph = styled(ParagraphComponent)`
 
 Paragraph.propTypes = {
   ...typography.propTypes,
+  /** Use the lead font size */
   lead: PropTypes.bool,
 };
 
 Paragraph.defaultProps = {
   ...defaultStylesBase,
   lead: false,
+  mb: gridSchema.gutter,
+  mt: 0,
 };
 
 /** @component */
