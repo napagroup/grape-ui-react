@@ -1,4 +1,4 @@
-<img src="src/assets/images/vert-logo.svg" style="max-height: 100px; max-width: 80%;" />
+<img src="src/assets/images/grape-ui-header-logo.svg" style="max-height: 100px; max-width: 80%;" />
 NEED CDN HERE
 
 ## Getting Started

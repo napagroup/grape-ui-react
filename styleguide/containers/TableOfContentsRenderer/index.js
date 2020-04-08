@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Box, Button, TextField } from 'src';
 
+const tocMaxWidth = 176.05;
+const tocWidth = [1, null, tocMaxWidth];
+
 function TocToggle({ children }) {
   const [showToc, setShowToc] = useState(false);
   return (
-    <Box p={1} width={1}>
+    <Box maxWidth={tocMaxWidth} width={tocWidth}>
       <Button
         display={['block', 'none']}
         m="auto"
@@ -39,7 +42,9 @@ const TableOfContentsRenderer = ({
       placeholder="Filter by name"
       value={searchTerm}
     />
-    {children}
+    <Box ml={-2}>
+      {children}
+    </Box>
   </TocToggle>
 );
 

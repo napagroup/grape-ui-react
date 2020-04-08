@@ -5,27 +5,28 @@ import {
   Box,
   Button,
   Flex,
-  Header,
+  Image,
   Link,
   Text,
 } from 'src';
-import { resolveBoxShadow, resolveZIndex } from 'src/utils/styledHelpers';
 import { HashRouter as Router } from 'react-router-dom';
-import { faBitbucket } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Logo } from '../index';
+import logo from 'src/assets/images/grape-ui-header-logo.svg'
+import urlRoutes from '../constants';
 
-const ToolbarOuter = styled(Flex)`
-  box-shadow: ${resolveBoxShadow('01')};
-  box-sizing: border-box;
+const HeaderFlex = styled(Flex)`
+  border-bottom: 1px solid #CB27A8;
+  box-shadow: 0 1px 0 #840B55;
 `;
 
-ToolbarOuter.defaultProps = {
-  alignContent: 'center',
-  position: 'relative',
-  py: 1,
-  width: 1,
-  zIndex: resolveZIndex('01'),
+HeaderFlex.defaultProps = {
+  alignItems: 'center',
+  flexDirection: ['column', 'row'],
+  justifyContent: 'center',
+  mb: '1px',
+  px: [2, 3, 4, 5],
+  py: [1, null, 2],
 };
 
 const ToolbarInner = styled(Flex)`
@@ -40,33 +41,37 @@ ToolbarInner.defaultProps = {
 };
 
 export const Toolbar = ({ title, version }) => (
-  <ToolbarOuter>
-    <Flex height={40} justifyContent="center" mx="auto" width={200}>
-      <Router>
-        <Link to="./">
-          <Logo
-            beforeInjection={svg => {
-              svg.setAttribute('style', 'height: 40px');
-            }}
-          />
+  <HeaderFlex>
+    <Router>
+      <Box maxWidth={175}>
+        <Link to={urlRoutes.homePage}>
+          <Image alt="grape-ui" src={logo} />
         </Link>
-      </Router>
-      <Box p={2}>
-        <Text>
-          v
-          {version}
-        </Text>
       </Box>
-    </Flex>
-    <Box width="calc(100vw - 200px)">
-      <ToolbarInner>
-        <Header.h6>{title}</Header.h6>
-        <Button href="https://bitbucket.org/napagroupnyc/grape-ui-react/src/master/" target="_blank">
-          <FontAwesomeIcon icon={faBitbucket} />
-        </Button>
-      </ToolbarInner>
-    </Box>
-  </ToolbarOuter>
+      <Flex flex={1} justifyContent={['center', 'space-between']} marginTop="-3px" style={{ boxSizing: 'border-box' }} width={[1, 'auto']}>
+        <Link to={urlRoutes.docsPage}>
+          <Button color="black" fontWeight="bold">DOCS</Button>
+        </Link>
+        <Box flex={[1, 'none']} />
+        <Flex alignItems="center">
+          <Box mx={1} px={[1, 2, 3]}>
+            <Text>v{version}</Text>
+          </Box>
+          <Button href={urlRoutes.externalGithub} pl={[1, 2]} pr={[1, 2]}>
+            <FontAwesomeIcon icon={faGithub} />
+          </Button>
+          <Button href={urlRoutes.externalTwitter} pl={[1, 2]} pr={[1, 2]}>
+            <FontAwesomeIcon icon={faTwitter} />
+          </Button>
+          <Box display={['none', 'block']}>
+            <Link to={urlRoutes.docsPage}>
+              <Button color="brandPrimary">Getting Started</Button>
+            </Link>
+          </Box>
+        </Flex>
+      </Flex>
+    </Router>
+  </HeaderFlex>
 );
 
 Toolbar.propTypes = {

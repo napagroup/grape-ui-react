@@ -1,16 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  Box,
-  Flex,
-  Link,
-  Paragraph,
-} from 'src';
+import { Box, Flex } from 'src';
 import * as styledHelpers from 'src/utils/styledHelpers';
-import { ThemeProvider } from 'styled-components';
-import { Toolbar } from '../../components';
-
-const pageMaxHeight = [null, 'calc(100vh - 48px)'];
+import styled, { ThemeProvider } from 'styled-components';
+import { Footer, Toolbar } from '../../components';
 
 const theme = {
   buttons: {
@@ -18,6 +11,15 @@ const theme = {
   },
 };
 
+const TocFlex = styled(Box)`
+  background: linear-gradient(180deg, rgba(219, 219, 219, 0.086) 0%, rgba(219, 219, 219, 0.014) 100%);
+  border-right: 1px solid rgba(36, 36, 36, 0.1);
+`;
+
+TocFlex.defaultProps = {
+  px: [2, 3, 4, 5],
+  py: [1, 2, 3],
+};
 
 const StyleGuideRenderer = ({
   version,
@@ -26,30 +28,23 @@ const StyleGuideRenderer = ({
   children,
 }) => (
   <ThemeProvider theme={theme}>
-    <Flex className="root" flexDirection="column">
+    <Flex className="root" flexDirection="column" minHeight="100vh">
       <Toolbar version={version} />
-      <Flex flexDirection={['column', 'row']} justifyContent="center" maxHeight={pageMaxHeight} overflow="hidden">
-        <Flex height={pageMaxHeight} maxWidth={[null, 200]} minWidth={200} overflow="auto" width={1}>
+      <Flex
+        flex={1}
+        flexDirection={['column', 'row']}
+        justifyContent={['center', 'flex-start']}
+      >
+        <TocFlex>
           {toc}
-        </Flex>
-        <Box height={pageMaxHeight} overflow="auto" px={[1, 2, 3, 4]} width={1}>
-          <Box maxWidth={960} mx="auto" py={[1, 2, 3]}>
+        </TocFlex>
+        <Box flex={[null, 1]}>
+          <Box maxWidth={960} mx="auto" px={[1, 2, 3, 4]} py={[1, 2, 3]}>
             {children}
           </Box>
         </Box>
       </Flex>
-      <Paragraph sm textAlign="center">
-        <span aria-label="grape" role="img">🍇</span>
-        UI created by
-        {' '}
-        <Link href="http://www.napa.com">Napa Group LLC</Link>
-        .
-        {' '}
-        Documentation created with
-        {' '}
-        <Link href={homepageUrl} target="_blank">React Styleguidist</Link>
-        .
-      </Paragraph>
+      <Footer />
     </Flex>
   </ThemeProvider>
 );
