@@ -6,7 +6,10 @@ import { spaceProps, typography } from 'src/utils/styledHelpers';
 import { emailHrefString } from './utils';
 
 export const LinkComponent = ({
-  children, emailHref, to, ...props
+  children,
+  emailHref,
+  to,
+  ...props
 }) => {
   const trimmedProps = removeSomeProps(props, Object.keys({ ...spaceProps.propTypes, ...typography.propTypes }));
   const emailLinkHref = emailHrefString(emailHref);

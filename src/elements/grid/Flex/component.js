@@ -1,18 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import {
-  flexboxProps,
-  layoutProps,
-  positionProps,
-  spaceProps,
-} from 'src/utils/styledHelpers';
+import propTypes from '@styled-system/prop-types';
 
 const propsToTrim = {
-  ...flexboxProps.propTypes,
-  ...layoutProps.propTypes,
-  ...positionProps.propTypes,
-  ...spaceProps.propTypes,
+  ...propTypes.flexbox,
+  ...propTypes.layout,
+  ...propTypes.position,
+  ...propTypes.space,
 };
 
 export const FlexComponent = ({ children, ...props }) => (
