@@ -2,13 +2,14 @@ import * as styledComponents from 'styled-components';
 import { Button } from './elements/Button';
 import { Box, Flex } from './elements/grid';
 import { Image } from './elements/Image';
+import { Table } from './elements/Table';
 import {
   CheckboxField,
   DateField,
   Form,
   SelectField,
   TextField,
-} from './elements/form';
+} from './elements/forms';
 import {
   Header,
   Link,
@@ -38,6 +39,7 @@ export {
   SelectField,
   styledComponents,
   styledHelpers,
+  Table,
   Text,
   TextField,
 };

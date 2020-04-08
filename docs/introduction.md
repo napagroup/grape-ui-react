@@ -1,5 +1,5 @@
 ## Getting Started
-These instructions will allow you to use the extensible 🍇UI component library in any React project.
+These instructions will allow you to use the extensible grape-ui component library in any React project.
 
 ### Prerequisites
 * [ReactJS](https://reactjs.org/)
@@ -8,7 +8,7 @@ These instructions will allow you to use the extensible 🍇UI component library
 * [GemFury](https://gemfury.com/)
 
 ### Installing
-Add 🍇UI as a dependency to your project
+Add grape-ui as a dependency to your project
 ```bash
 npm install grape-ui-react
 ```
@@ -22,7 +22,7 @@ or
 ```
 
 ### Usage
-Import 🍇UI components into your project
+Import grape-ui components into your project
 ```jsx static
 import { Paragraph } from 'grape-ui-react';
 ```

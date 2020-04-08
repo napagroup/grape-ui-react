@@ -1,4 +1,4 @@
-🍇UI has five different font families that it uses. Simply call to them by entering `fontFamily="fontFamilyName"` as an attribute to any text component. By default, we use `base` as the system-wide font family.
+grape-ui has five different font families that it uses. Simply call to them by entering `fontFamily="fontFamilyName"` as an attribute to any text component. By default, we use `base` as the system-wide font family.
 
 ### List of font families available
 ```jsx in Markdown

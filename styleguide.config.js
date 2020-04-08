@@ -63,25 +63,25 @@ module.exports = {
       name: 'Image',
     },
     {
-      content: './src/elements/form/Readme.md',
+      content: './src/elements/forms/Readme.md',
       description: 'All form elements',
       name: 'Form',
       sectionDepth: 2,
       sections: [
         {
-          components: () => ['./src/elements/form/utils/*/styled.js'],
-          content: 'src/elements/form/utils/Readme.md',
+          components: () => ['./src/elements/forms/utils/*/styled.js'],
+          content: 'src/elements/forms/utils/Readme.md',
           description: 'Form utilities directory',
           name: 'Form Utilities',
           sectionDepth: 1,
           sections: [{
-            content: './src/elements/form/utils/validationError.md',
+            content: './src/elements/forms/utils/validationError.md',
             name: 'Validation Error',
           }],
         },
         {
-          components: ['./src/elements/form/*/styled.js'],
-          content: 'src/elements/form/components.md',
+          components: ['./src/elements/forms/*/styled.js'],
+          content: 'src/elements/forms/components.md',
           description: 'Component directory',
           name: 'Components',
           sectionDepth: 1,
@@ -92,12 +92,57 @@ module.exports = {
       components: './src/elements/Button/styled.js',
       name: 'Button',
     },
+    {
+      content: './src/elements/Table/Readme.md',
+      name: 'Table',
+      sectionDepth: 2,
+      sections: [
+        {
+          content: 'src/elements/Table/styles.md',
+          description: 'Remember, styling is fun! 🖌',
+          name: 'Styles',
+        },
+        {
+          content: 'src/elements/Table/examples/examples.md',
+          description: 'Live Demos on grape-ui `<Table>`',
+          name: 'Examples',
+          sectionDepth: 1,
+          sections: [
+            {
+              content: 'src/elements/Table/examples/pagination.md',
+              description: 'Demonstrating controlled pagination',
+              name: 'Pagination',
+            },
+            {
+              content: 'src/elements/Table/examples/manualPagination.md',
+              description: 'Demonstrating manual pagination',
+              name: 'Manual Pagination',
+            },
+            {
+              content: 'src/elements/Table/examples/expandedRows.md',
+              description: 'Demonstrating row expansion (toggable)',
+              name: 'Expandable Rows',
+            },
+            {
+              content: 'src/elements/Table/examples/tableStriped.md',
+              description: 'Demonstrating striped table',
+              name: 'Table Striped',
+            },
+            {
+              content: 'src/elements/Table/examples/hideColumns.md',
+              description: 'Demonstrating hideable columns',
+              name: 'Hide Columns',
+            },
+          ],
+        },
+      ],
+    },
   ],
   skipComponentsWithoutExample: true,
   styleguideComponents: require('./styleguide/containers/index.js'), // eslint-disable-line global-require
   styles: './styleguide/styles.js',
   theme: './styleguide/themes.js',
-  title: '🍇UI Style Guide',
+  title: 'Docs | grape-ui',
   tocMode: 'collapse',
   version,
   webpackConfig: require('./src/internals/webpack/webpack.config.js'), // eslint-disable-line global-require

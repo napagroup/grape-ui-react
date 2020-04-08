@@ -1,4 +1,4 @@
-There are many colors available to be used in 🍇UI. Just add the `color="colorName"` attribute to any text element. To use the lightened version of a color, use `color="colorName.light"` or `color="colorName.dark"` for the darkened version.
+There are many colors available to be used in grape-ui. Just add the `color="colorName"` attribute to any text element. To use the lightened version of a color, use `color="colorName.light"` or `color="colorName.dark"` for the darkened version.
 
 ### List of Colors Available
 ```jsx in Markdown

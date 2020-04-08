@@ -1,7 +1,8 @@
 ### "Typography is the craft of endowing human language with a durable visual form.”
+
 &mdash; Robert Bringhurst, [The Elements of Typographic Style](https://www.amazon.com/Elements-Typographic-Style-Version-Anniversary/dp/088179211X/ref=dp_ob_title_bk)
 
-Typography is important in 🍇UI.  Here is an example using the typography components in 🍇UI based on [an example from Simon Friffee](https://www.simongriffee.com/typography/)
+Typography is important in grape-ui.  Here is an example using the typography components in grape-ui based on [an example from Simon Friffee](https://www.simongriffee.com/typography/)
 
 ```jsx in Markdown
 import {

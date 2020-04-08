@@ -7,7 +7,7 @@
     "!src/index.js",
     "!src/global-styles.js",
     "!src/*/*/Loadable.{js,jsx}",
-    "!src/**/examples/index.js"
+    "!src/**/examples/**"
   ],
   "coverageThreshold": {
     "global": {

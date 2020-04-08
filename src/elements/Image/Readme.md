@@ -1,4 +1,4 @@
-The Image component in 🍇UI was built upon [react-image](https://www.npmjs.com/package/react-image). `<Image>` is set to a default `width` and a `maxWidth` of 100%. The `alt` attribute is a requirement for the `<Image>`, and descriptive alt content is recommended for the image. [Here is a great article from Moz to know what kind of alt text is considered to be optimal](https://moz.com/learn/seo/alt-text).
+The Image component in grape-ui was built upon [react-image](https://www.npmjs.com/package/react-image). `<Image>` is set to a default `width` and a `maxWidth` of 100%. The `alt` attribute is a requirement for the `<Image>`, and descriptive alt content is recommended for the image. [Here is a great article from Moz to know what kind of alt text is considered to be optimal](https://moz.com/learn/seo/alt-text).
 
 ```jsx in Markdown
 import ExampleImg from './examples/nacho-dominguez-argenta-cCVzi_mKovs-unsplash.jpg';
@@ -76,5 +76,4 @@ const altText01 = "Green grapes hanging from a vine; Photo by Nacho Domínguez A
   />
   <Paragraph fontFamily="monospace">maxHeight=&#123;[384, 512]&#125;</Paragraph>
 </div>
-
 ```

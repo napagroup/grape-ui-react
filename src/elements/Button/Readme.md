@@ -1,4 +1,4 @@
-`<Button>` is 🍇UI's button component. It will translate to either a `<button>`, `<Link>`, or `<a>` element depending on what properties are given to it.
+`<Button>` is grape-ui's button component. It will translate to either a `<button>`, `<Link>`, or `<a>` element depending on what properties are given to it.
 
 ```jsx in Markdown
 import { BrowserRouter as Router } from 'react-router-dom';
@@ -18,6 +18,7 @@ import { Paragraph } from 'src/elements/typography'; // ... from 'grape-ui-react
 ```
 
 #### Kitchen Sink Usage
+
 ```jsx in Markdown
 import { useState } from 'react';
 import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
@@ -84,6 +85,7 @@ const [count, setCount] = useState(0);
 ```
 
 ### Variants
+
 Instead of typing in the background and foreground colors manually, you can utilize `<Button>`'s `variant` attribute. You can also combine this with `<ThemeProvider>` to fully define direct variant colors.
 
 ```jsx in Markdown
@@ -167,6 +169,7 @@ const theme = {
 ```
 
 #### Custom Styles
+
 ```jsx in Markdown
 import { ThemeProvider } from 'styled-components';
 import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'

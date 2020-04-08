@@ -1,4 +1,4 @@
-The grid found in 🍇UI is a Flexbox Grid that was created using [styled-system](https://styled-system.com/).
+The grid found in grape-ui is a Flexbox Grid that was created using [styled-system](https://styled-system.com/).
 
 A lot of the props for these components were created using styled-system's functions.
 
