@@ -71,7 +71,7 @@ const columns = React.useMemo(
 );
 
 const theme = {};
-const data = React.useMemo(() => makeData(200), []);
+const data = React.useMemo(() => makeData(10), []);
 
 <ThemeProvider theme={theme}>
   <Table
