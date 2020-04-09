@@ -13,6 +13,7 @@
 ```
 
 ### Lead Paragraphs
+
 To define a lead paragraph, just add `lead` to `<Paragraph>`.
 
 ```jsx in Markdown

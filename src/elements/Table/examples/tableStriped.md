@@ -1,4 +1,3 @@
-<!-- markdownlint-disable MD033 MD041 -->
 ```jsx in Markdown
 import React from 'react';
 import { ThemeProvider } from 'styled-components';

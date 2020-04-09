@@ -59,6 +59,7 @@ import { ListItem } from '../index';
 ```
 
 ### Style variations
+
 Add the attribute `unstyled` to have an unstyled view. Add the attribute `inline` to have an inline view.
 
 ```jsx in Markdown

@@ -1,6 +1,7 @@
 grape-ui has five different font families that it uses. Simply call to them by entering `fontFamily="fontFamilyName"` as an attribute to any text component. By default, we use `base` as the system-wide font family.
 
 ### List of font families available
+
 ```jsx in Markdown
 import { getGlobalStyles } from 'src/global-styles'; // ... from 'grape-ui-react'
 import { List, ListItem, Text } from './index';
@@ -16,6 +17,7 @@ renderFontFamilyListItems = () => {
 ```
 
 ### Style Overrides
+
 To overwrite the font family definitions, or introduce any new families, simply call `fonts` followed by the name of the font stack, and defining its font families.
 
 ```jsx in Markdown

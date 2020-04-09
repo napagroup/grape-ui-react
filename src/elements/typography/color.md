@@ -1,6 +1,7 @@
 There are many colors available to be used in grape-ui. Just add the `color="colorName"` attribute to any text element. To use the lightened version of a color, use `color="colorName.light"` or `color="colorName.dark"` for the darkened version.
 
 ### List of Colors Available
+
 ```jsx in Markdown
 import { getGlobalStyles } from 'src/global-styles'; // ... from 'grape-ui-react'
 import { List, ListItem, Text } from './index';
@@ -16,6 +17,7 @@ renderColorListItems = () => {
 ```
 
 ### Style Overrides
+
 To overwrite the colors, or introduce any new colors, simply call `colors` followed by the name of the color, and defining its `base`, `dark`, and `light` variants.
 
 ```jsx in Markdown

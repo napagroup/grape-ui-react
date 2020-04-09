@@ -10,9 +10,10 @@ Use a `<Header>` when defining sections. You can set the Header size by doing `<
 ```
 
 ### Display Headers
+
 Use a display header when you want to have more emphasis with a header. Just add `displayHeader` as a part of your `<Header>`.
 
-> <small>**NOTE:** You may want to consider using <code>ellipsis</code> when using <code>displayHeader</code>.</small>
+**NOTE:** You may want to consider using `ellipsis` when using `displayHeader`.
 
 ```jsx in Markdown
 <Header displayHeader ellipsis>Header/Header.h1</Header>
@@ -24,6 +25,7 @@ Use a display header when you want to have more emphasis with a header. Just add
 ```
 
 ### Style Overrides
+
 To overwrite the font family definitions, or introduce any new families, simply call fonts followed by the name of the font stack, and defining its font families.
 
 ```jsx in Markdown

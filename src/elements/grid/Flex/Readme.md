@@ -1,8 +1,9 @@
-<small>**NOTE:** Some <code>Flex</code> examples below that have background colors are only to demonstrate the components boundaries.</small>
+**NOTE:** Some `Flex` examples below that have background colors are only to demonstrate the components boundaries.
 
 `<Flex>` is a container level element that can be used to wrap children into a grid.  It is meant to be a parent element of `<Box>`, but can wrap any elements.
 
 ### Basic Usage
+
 ```jsx in Markdown
 import { Box } from 'src/elements/grid';
 import { Paragraph, Text } from 'src/elements/typography'; // from 'grape-ui-react'
@@ -17,7 +18,9 @@ import { Paragraph, Text } from 'src/elements/typography'; // from 'grape-ui-rea
 ```
 
 ### Margins
+
 When applying margin to `<Flex>`, simply use the `m` attribute for margins.
+
 ```jsx
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
@@ -29,8 +32,10 @@ import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
 </ThemeProvider>
 ```
 
-#### Variants
+#### Margin Variants
+
 `<Flex>` can have different variants defined for margin.
+
 ```jsx
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
@@ -62,7 +67,9 @@ import { StyledFlex as Flex } from '../examples';
 ```
 
 ### Padding
+
 When applying padding to `<Flex>`, simply use the `p` attribute for padding.
+
 ```jsx
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
@@ -74,8 +81,10 @@ import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
 </ThemeProvider>
 ```
 
-#### Variants
+#### Padding Variants
+
 `<Flex>` can have different variants defined for padding.
+
 ```jsx
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
@@ -107,7 +116,9 @@ import { StyledFlex as Flex } from '../examples';
 ```
 
 ### Width
+
 When applying width to `<Flex>`, simply use the `width` attribute for widths.
+
 ```jsx
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
@@ -119,8 +130,10 @@ import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
 </ThemeProvider>
 ```
 
-#### Variants
+#### Width Variants
+
 `<Flex>` can have different variants defined for `width`, including responsive ones!
+
 ```jsx in Markdown
 import { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
@@ -143,7 +156,9 @@ import { StyledFlex as Flex } from '../examples';
 ```
 
 ### Layout
+
 There are times when you may need to apply various layout attributes on `<Flex>`.  Here are some examples:
+
 ```jsx
 import styled, { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
@@ -203,7 +218,9 @@ const FlexWrapper = styled(Flex)`background: transparent;`;
 ```
 
 ### Position
+
 There are times when you may need to apply various position attributes on `<Flex>`.  Here are some examples:
+
 ```jsx
 import styled, { ThemeProvider } from 'styled-components';
 import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
@@ -233,7 +250,9 @@ const FlexWrapper = styled(Flex)`background: transparent;`;
 ```
 
 ### Flexbox
+
 `<Flex>` supports different flexbox attributes.  This is essential for creating layouts.  A great read about Flexbox can be found [here on CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).  Here are some examples:
+
 ```jsx in Markdown
 import { ThemeProvider } from 'styled-components';
 import {

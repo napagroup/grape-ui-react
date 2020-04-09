@@ -44,7 +44,7 @@ const controlGroupSpacing = [1, 2, 3];
 </Flex>
 ```
 
-### Part of Form Controls <span style="font-size: 0.8rem">`<CheckboxField>` `<DateField>` `<SelectField>` `<TextField>`</span>
+### Part of Form Controls
 
 `<AssistiveText>` can be used directly through the `assistiveText` prop on any form control.  When no `assistiveText` is provided on a form control marked with `isRequired`, it will populate with "*Required" (see Example 1).  If any `validationError` is provided, `assistiveText`'s content will not appear (see Example 2).  Since `<AssistiveText>` is a block element with minimal styling, you can also pass in any element through the `assistiveText` prop (see Example 3).  And if you'd like to make specific changes to the `<AssistiveText>` element via its props, you can utilize `assistiveTextProps` on any form element (see Example 4).
 

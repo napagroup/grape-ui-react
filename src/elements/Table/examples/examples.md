@@ -1,4 +1,3 @@
-<!-- markdownlint-disable MD041 -->
 ## [`Pagination`](#/Table/Examples/Pagination)
 
 Example on controlled pagination.
