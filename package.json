@@ -59,15 +59,9 @@
     "react-image": "2.4.0",
     "react-moment": "0.9.7",
     "react-router-dom": "5.0.0",
-<<<<<<< HEAD
     "react-select": "3.1.0",
     "react-select-event": "4.1.4",
     "react-styleguidist": "11.0.5",
-=======
-    "react-select": "2.4.4",
-    "react-select-event": "4.1.4",
-    "react-styleguidist": "11.0.4",
->>>>>>> master
     "react-svg": "11.0.15",
     "react-table": "7.0.4",
     "react-textarea-autosize": "7.1.2",

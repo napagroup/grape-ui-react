@@ -2,11 +2,7 @@
 
 exports[`SelectField Component dropdown should return a dropdown menu with the selected option is in the proper color 1`] = `
 <div
-<<<<<<< HEAD:src/elements/forms/SelectField/tests/__snapshots__/SelectField.test.js.snap
   className="grape-ui-select__option grape-ui-select__option--is-selected css-1364k45-Option"
-=======
-  className="css-r0hx78 grape-ui-select__option grape-ui-select__option--is-selected"
->>>>>>> master:src/elements/forms/SelectField/tests/__snapshots__/SelectField.test.js.snap
   id="react-select-6-option-1"
   onClick={[Function]}
   onMouseMove={[Function]}
