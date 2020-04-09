@@ -216,6 +216,7 @@ describe('Paginator - page captions', () => {
 });
 
 describe('Paginator - page size', () => {
+<<<<<<< HEAD
   let setPageSize;
   let renderUtils;
   const pageOptions = [7, 14, 28];
@@ -247,5 +248,25 @@ describe('Paginator - page size', () => {
     const nextPageSize = pageOptions[1];
     await selectEvent.select(getByLabelText('Rows Per Page'), [`Show ${nextPageSize}`]);
     expect(setPageSize).toHaveBeenCalledWith(nextPageSize);
+=======
+  let renderUtils;
+  beforeEach(() => {
+    renderUtils = render(
+      <ThemeProvider theme={{}}>
+        <Paginator />
+      </ThemeProvider>
+    );
+  });
+  // TODO: Attempt to restore test once react-select is upgraded. Possibly fails due to current version of react-select library.
+  test.skip('should set new page size on change', async () => {
+    const { getByLabelText, getByRole } = renderUtils;
+    await selectEvent.select(getByLabelText('Rows Per Page'), [{ value: defaultPageOptions[2] }]);
+    expect(getByRole('form')).toHaveFormValues({
+      jumpToPage: 1,
+      selectedPageOption: defaultPageOptions[2].toString(),
+    });
+  });
+  test.skip('should invoke setPageSize when a pageOption is selected', () => {
+>>>>>>> master
   });
 });

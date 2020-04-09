@@ -2,8 +2,12 @@ The grid found in grape-ui is a Flexbox Grid that was created using [styled-syst
 
 A lot of the props for these components were created using styled-system's functions.
 
+<<<<<<< HEAD
 **Both `<Flex>` and `<Box>` use:**
 
+=======
+Both `<Flex>` and `<Box>` use:
+>>>>>>> master
 * `flexbox` [(API)](https://styled-system.com/api#flexbox)
 * `layout` [(API)](https://styled-system.com/api#layout)
 * `position` [(API)](https://styled-system.com/api#position)
@@ -14,7 +18,10 @@ A lot of the props for these components were created using styled-system's funct
 Here are some examples that were based on the examples found in the above article:
 
 #### CSS Tricks Example 1 [source](https://codepen.io/team/css-tricks/pen/EKEYob)
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 ```jsx in Markdown
 import { Box, Flex } from './'; // ... from 'grape-ui-react';
 import styled from 'styled-components';
@@ -51,13 +58,20 @@ TomatoBox.defaultProps = {
 ```
 
 #### CSS Tricks Example 2 [source](https://codepen.io/team/css-tricks/pen/YqaKYR)
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 ```jsx in Markdown
 import { Box, Flex } from './'; // ... from 'grape-ui-react';
 import { Link } from '../typography';
 import styled from 'styled-components';
 
+<<<<<<< HEAD
 const NavLink = styled(Link)``;
+=======
+const NavLink = styled(Link);
+>>>>>>> master
 
 NavLink.defaultProps = {
   color: 'white',
@@ -81,7 +95,10 @@ NavLink.defaultProps = {
 ```
 
 #### CSS Tricks Example 3 [source](https://codepen.io/team/css-tricks/pen/YqaKYR)
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 ```jsx in Markdown
 import { Box, Flex } from './'; // ... from 'grape-ui-react';
 import { Paragraph } from '../typography';
@@ -122,4 +139,8 @@ FlexWrapper.defaultProps = {
   <BoxAside bg="hotpink" order={[null, null, 3]}>Aside 2</BoxAside>
   <BoxFooter order={[null, null, 4]}>Footer</BoxFooter>
 </FlexWrapper>
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> master

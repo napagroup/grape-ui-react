@@ -29,4 +29,8 @@ const theme = {
 </ThemeProvider>
 ```
 
+<<<<<<< HEAD
 [Additional reading on styled-system theme keys can be found here](https://styled-system.com/theme-specification#keys).
+=======
+[Additional reading on styled-system theme keys can be found here](https://styled-system.com/theme-specification#keys).
+>>>>>>> master
