@@ -1,4 +1,5 @@
 `<ControlGroup>` is a wrapping block element for use within a form control, such as:
+
 * `<CheckboxField>`
 * `<DateField>`
 * `<SelectField>`

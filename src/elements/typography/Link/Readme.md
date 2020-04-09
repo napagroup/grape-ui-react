@@ -1,6 +1,6 @@
 When adding in links, you can use `<Link>`. What's cool about this tag is that it will determine if it should use React Router's `<Link>` or `<a>`.
 
-> <small>**NOTE:** A Router needs to be defined if using Link the React Router way.</small>
+**NOTE:** A Router needs to be defined if using Link the React Router way.
 
 ```jsx in Markdown
 import { BrowserRouter as Router } from 'react-router-dom';

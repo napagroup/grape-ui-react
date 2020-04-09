@@ -1,4 +1,5 @@
 `<ControlLabel>` is a plain `<label>` element that is intended for text and for use within a form control, such as:
+
 * `<CheckboxField>`
 * `<DateField>`
 * `<SelectField>`
@@ -77,7 +78,7 @@ const controlGroupSpacing = [1, 2, 3];
 </Box>
 ```
 
-### Part of Form Controls <span style="font-size: 0.8rem">`<CheckboxField>` `<DateField>` `<SelectField>` `<TextField>`</span>
+### Part of Form Controls
 
 `<ControlLabel>` can be used directly through the `label` prop on any form control.  When a `label` is provided on a form control marked with `isRequired`, it will append an asterisk to the label text (see Example 1).If you'd like to make specific changes to the `<LabelText>` element via its props, you can utilize `labelTextProps` on any form element (see Example 2).
 

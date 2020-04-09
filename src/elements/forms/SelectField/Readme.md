@@ -1,8 +1,9 @@
 `<SelectField>` is our basic select control. It was built on top of [React Select](http://react-select.com).  All props that were introduced by grape-ui as well as some important existing can be found in the props table above, but for a full list of props that come with React Select, visit [React Select's Props list](https://react-select.com/props).
 
-> <small>**NOTE:** All examples below will demonstrate both Outlined and Filled views for each example.</small>
+**NOTE:** All examples below will demonstrate both Outlined and Filled views for each example.
 
 #### Basic Usage
+
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
@@ -96,7 +97,9 @@ const linkState = () => null;
 
 `<SelectField>` Supports a ref attribute to get to the underlying input element.
 You can pass in either a createRef(), or via "callback refs". Examples are demonstrated below
+
 #### Ref support - Getting to the element
+
 ```jsx inside Markdown
 import { useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
@@ -158,6 +161,7 @@ const linkState = () => null;
 ```
 
 #### Kitchen Sink Usage
+
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
@@ -218,6 +222,7 @@ const linkState = () => null;
 ```
 
 #### Custom Components, Styles, and Format Option Label
+
 You can also use custom components within the SelectField control.  This is useful when you need more than what is given from a simple dropdown.  [Read this article for info on Custom Components](https://blog.logrocket.com/getting-started-with-react-select/).
 
 ```jsx inside Markdown
@@ -328,6 +333,7 @@ grape-ui controls can be integrated with Form Validation libraries. Below we dem
 For further documentation on integrating UI component libraries with react-hook-form refer to [Working with UI Library](https://react-hook-form.com/get-started/#WorkwithUIlibrary).
 
 #### Demonstrating Controlled Components (via react-hook-form)
+
 ```jsx inside Markdown
 import { useForm, Controller } from 'react-hook-form';
 import { ThemeProvider } from 'styled-components';

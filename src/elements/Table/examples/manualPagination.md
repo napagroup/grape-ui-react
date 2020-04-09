@@ -1,4 +1,3 @@
-<!-- markdownlint-disable MD041 -->
 ```jsx in Markdown
 import React, { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';

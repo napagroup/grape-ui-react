@@ -1,13 +1,15 @@
 
 `<TextField>` is our control that handles input groups (Control Label, Control, Assistive Text). Its basic props are `labelText` for displaying the control's label, and `name`, which defines the following identifiers:
+
 * `input[id]`
 * `input[name]`
 * `label[for]`
 * `AsssitiveText[id]`
 
-> <small>**NOTE:** All examples below will demonstrate both Outlined and Filled views for each example.</small>
+**NOTE:** All examples below will demonstrate both Outlined and Filled views for each example.
 
 #### Basic Usage
+
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
@@ -133,6 +135,7 @@ import { cantHardlyWaitAssistiveText, cantHardlyWaitLyrics } from '../examples';
 ```
 
 #### Kitchen Sink Usage
+
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
@@ -169,7 +172,9 @@ import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
 ```
 
 #### Numeric Controls
+
 `<TextField>` also allows for numeric controls. All numeric text components use [Cleave.js](https://nosir.github.io/cleave.js/). Here is what we support out of the box:
+
 * `currency`
 * `integer`
 * `numeric`
@@ -310,7 +315,9 @@ import { Paragraph, Text } from 'src/elements/typography';
 
 `<TextField>` Supports a ref attribute to get to the underlying input element.
 You can pass in either a createRef(), or via "callback refs". Examples are demonstrated below
+
 #### Ref support - Getting to the element
+
 ```jsx inside Markdown
 import { useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
@@ -375,6 +382,7 @@ grape-ui controls can be integrated with Form Validation libraries. Below we dem
 For further documentation on integrating UI component libraries with react-hook-form refer to [Working with UI Library](https://react-hook-form.com/get-started/#WorkwithUIlibrary).
 
 #### Demonstrating Controlled Components (via react-hook-form)
+
 ```jsx inside Markdown
 import { useForm, Controller } from 'react-hook-form';
 import { ThemeProvider } from 'styled-components';

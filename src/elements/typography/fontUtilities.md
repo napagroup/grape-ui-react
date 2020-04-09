@@ -1,4 +1,5 @@
 Here are some more utilities that could be used:
+
 * `ellipsis`
 * `fontWeight`
 * `italic`

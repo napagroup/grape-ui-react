@@ -3,9 +3,10 @@ All props that were introduced by grape-ui as well as some important existing ca
 
 [^1] Kept to this version until bug React-Day-Picker#955 is resolved.
 
-> <small>**NOTE:** All examples below will demonstrate both Outlined and Filled views for each example.</small>
+**NOTE:** All examples below will demonstrate both Outlined and Filled views for each example.
 
 #### Basic Usage
+
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
@@ -58,6 +59,7 @@ import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 ```
 
 #### Kitchen Sink Usage
+
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
@@ -98,9 +100,10 @@ import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
 ```
 
 #### Alignment and Overrides
+
 You can specify the left or right alignment of the menu by using `menuAlignment`.
 
-> <small>**NOTE:** This same prop is used in `SelectField`.</small>
+**NOTE:** This same prop is used in `SelectField`.
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
@@ -127,9 +130,10 @@ import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
   </Flex>
 </ThemeProvider>
 ```
+
 You can define if the menu will appear above or below the control by using `menuPlacement="top"` or `menuPlacement="bottom"`.
 
-> <small>**NOTE:** If the height of the control is not <code>58px</code>, please update <code>controlHeight</code>.</small>
+**NOTE:** If the height of the control is not `58px`, please update `controlHeight`.
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
@@ -175,12 +179,13 @@ import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 ```
 
 You can override specific position values by using either:
+
 * `menuOverlayBottom`
 * `menuOverlayLeft`
 * `menuOverlayRight`
 * `menuOverlayTop`
 
-> <small>**NOTE:** If using this with a responsive array in `menuAlignment`, you will also need to use a responsive array for this to avoid CSS hierarchy.</small>
+**NOTE:** If using this with a responsive array in `menuAlignment`, you will also need to use a responsive array for this to avoid CSS hierarchy.
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
@@ -228,6 +233,7 @@ import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 ```
 
 #### Theme Overrides
+
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
@@ -303,20 +309,23 @@ const styles = {
 ```
 
 ### Formats and State Usage
+
 `<DateField>` can accept value from string format or date format. In the example below, `selectedDay` is set to `"2020-01-09"` and `birthday` is set to a date object.
 
 The state is being set via the `onChange` function. `onChange` is calling a function that gets 4 parameters:
-   * `formattedDay`: string format output based on valueFormat,
-   * `modifiers`: matching day for the given modifiers,
-   * `selectedDay`: the date object of the selected date.
 
+* `formattedDay`: string format output based on valueFormat,
+* `modifiers`: matching day for the given modifiers,
+* `selectedDay`: the date object of the selected date.
 
-> <small>**NOTE:**
-   * Selected date example `format` prop is set as `"YYYY-MM-DD"` explicitly so that input text date will display in "YYYY-MM-DD".
-   * `valueFormat` prop is `"YYYY-MM-DD"` by default so that the value `formattedDay` on the `onChange` will be `"YYYY-MM-DD"`.
-   * Birthday example uses `selectedDay` which is the date object to set the state. `format` prop is `"M/D/YYYY"` by default so that it input text date will display in "YYYY-MM-DD".</small>
+**NOTE:**
+
+* Selected date example `format` prop is set as `"YYYY-MM-DD"` explicitly so that input text date will display in "YYYY-MM-DD".
+* `valueFormat` prop is `"YYYY-MM-DD"` by default so that the value `formattedDay` on the `onChange` will be `"YYYY-MM-DD"`.
+* Birthday example uses `selectedDay` which is the date object to set the state. `format` prop is `"M/D/YYYY"` by default so that it input text date will display in "YYYY-MM-DD".
 
 #### Selected Date in State
+
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
@@ -404,9 +413,11 @@ class DateFieldExample extends React.Component {
 ```
 
 ### Date Range
+
 This example shows how two `DateField` components can work together for selecting a range of dates.
 
 #### Selected Date Range in State
+
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
@@ -511,11 +522,13 @@ class DateFieldExample extends React.Component {
 ### Locale
 
 `<DateField>` can be localized to any language. Make sure you need to import the locale from moment/locale.
+
 > * ex: import 'moment/locale/ja';
 
 [More details can be found here](https://react-day-picker.js.org/docs/localization).
 
 #### Date Field with locale
+
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
@@ -562,7 +575,9 @@ import MomentLocaleUtils from 'react-day-picker/moment';
 
 `<DateField>` Supports a ref attribute to get to the underlying input element.
 You can pass in either a createRef(), or via "callback refs". Examples are demonstrated below
+
 #### Ref support - Getting to the element
+
 ```jsx inside Markdown
 import { useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
@@ -621,6 +636,7 @@ grape-ui controls can be integrated with Form Validation libraries. Below we dem
 For further documentation on integrating UI component libraries with react-hook-form refer to [Working with UI Library](https://react-hook-form.com/get-started/#WorkwithUIlibrary).
 
 #### Demonstrating Controlled Components (via react-hook-form)
+
 ```jsx inside Markdown
 import moment from 'moment';
 import { useForm, Controller } from 'react-hook-form';

@@ -2,7 +2,7 @@
 
 exports[`SelectField Component dropdown should return a dropdown menu with the selected option is in the proper color 1`] = `
 <div
-  className="css-r0hx78 grape-ui-select__option grape-ui-select__option--is-selected"
+  className="grape-ui-select__option grape-ui-select__option--is-selected css-1364k45-Option"
   id="react-select-6-option-1"
   onClick={[Function]}
   onMouseMove={[Function]}
@@ -110,25 +110,25 @@ exports[`SelectField Component should return a SelectField that contains SelectF
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleBasicUsage"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container"
+        className="grape-ui-select__value-container css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-ufc069 grape-ui-select__placeholder"
+          className="grape-ui-select__placeholder css-11l6kri-Placeholder"
         >
           Select...
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -186,20 +186,20 @@ exports[`SelectField Component should return a SelectField that contains SelectF
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -414,25 +414,25 @@ exports[`SelectField Component with Assistive Text should return a SelectField w
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleAssistiveText"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container"
+        className="grape-ui-select__value-container css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-ufc069 grape-ui-select__placeholder"
+          className="grape-ui-select__placeholder css-11l6kri-Placeholder"
         >
           Select...
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -490,20 +490,20 @@ exports[`SelectField Component with Assistive Text should return a SelectField w
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -634,25 +634,25 @@ exports[`SelectField Component with custom Control Group props should return a S
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id=""
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container"
+        className="grape-ui-select__value-container css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-ufc069 grape-ui-select__placeholder"
+          className="grape-ui-select__placeholder css-11l6kri-Placeholder"
         >
           Select...
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -710,20 +710,20 @@ exports[`SelectField Component with custom Control Group props should return a S
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -879,25 +879,25 @@ exports[`SelectField Component with custom Control Label props should return a S
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -955,20 +955,20 @@ exports[`SelectField Component with custom Control Label props should return a S
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -1134,25 +1134,25 @@ exports[`SelectField Component with space should return a SelectField with space
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -1210,20 +1210,20 @@ exports[`SelectField Component with space should return a SelectField with space
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -1389,25 +1389,25 @@ exports[`SelectField Component with space should return a SelectField with space
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -1465,20 +1465,20 @@ exports[`SelectField Component with space should return a SelectField with space
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -1644,25 +1644,25 @@ exports[`SelectField Component with style should return a SelectField that is fr
   className="c0"
 >
   <div
-    className="css-xpmi2q-container c1 grape-ui-select--is-rtl"
+    className="c1 grape-ui-select--is-rtl css-1o4cuih-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -1720,20 +1720,20 @@ exports[`SelectField Component with style should return a SelectField that is fr
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -1899,25 +1899,25 @@ exports[`SelectField Component with style should return a SelectField with backg
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -1975,20 +1975,20 @@ exports[`SelectField Component with style should return a SelectField with backg
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -2154,25 +2154,25 @@ exports[`SelectField Component with style should return a SelectField with orang
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -2230,20 +2230,20 @@ exports[`SelectField Component with style should return a SelectField with orang
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -2409,25 +2409,25 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -2485,20 +2485,20 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -2664,25 +2664,25 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -2740,20 +2740,20 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -2924,25 +2924,25 @@ exports[`SelectField that is disabled should return a SelectField with isDisable
   className="c0"
 >
   <div
-    className="css-ssi0ig-container c1 grape-ui-select--is-disabled"
+    className="c1 grape-ui-select--is-disabled css-14jk2my-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control grape-ui-select__control--is-disabled"
+      className="grape-ui-select__control grape-ui-select__control--is-disabled css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value grape-ui-select__single-value--is-disabled"
+          className="grape-ui-select__single-value grape-ui-select__single-value--is-disabled css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -3000,20 +3000,20 @@ exports[`SelectField that is disabled should return a SelectField with isDisable
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -3300,25 +3300,25 @@ exports[`SelectField with custom assistive text props should return a SelectFiel
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -3376,20 +3376,20 @@ exports[`SelectField with custom assistive text props should return a SelectFiel
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -3555,25 +3555,25 @@ exports[`SelectField with custom menu elevation should return a SelectField with
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -3631,20 +3631,20 @@ exports[`SelectField with custom menu elevation should return a SelectField with
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -3810,25 +3810,25 @@ exports[`SelectField with custom z-index should return a SelectField with differ
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -3886,20 +3886,20 @@ exports[`SelectField with custom z-index should return a SelectField with differ
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -4071,25 +4071,25 @@ exports[`SelectField with focus should return a SelectField with isFocused set t
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -4147,20 +4147,20 @@ exports[`SelectField with focus should return a SelectField with isFocused set t
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -4308,25 +4308,25 @@ exports[`SelectField with isAsync and isCreatable prop set to true should return
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -4384,17 +4384,17 @@ exports[`SelectField with isAsync and isCreatable prop set to true should return
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__clear-indicator"
+          className="grape-ui-select__indicator grape-ui-select__clear-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -4406,17 +4406,17 @@ exports[`SelectField with isAsync and isCreatable prop set to true should return
           </svg>
         </div>
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -4558,25 +4558,25 @@ exports[`SelectField with isAsync prop set to true should return an AsyncSelect 
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -4634,17 +4634,17 @@ exports[`SelectField with isAsync prop set to true should return an AsyncSelect 
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__clear-indicator"
+          className="grape-ui-select__indicator grape-ui-select__clear-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -4656,17 +4656,17 @@ exports[`SelectField with isAsync prop set to true should return an AsyncSelect 
           </svg>
         </div>
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -4808,25 +4808,25 @@ exports[`SelectField with isCreatable prop set to true should return a Creatable
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleColor"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+        className="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-8uhtka grape-ui-select__single-value"
+          className="grape-ui-select__single-value css-1y5ucjk-SingleValue"
         >
           Yellow
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -4884,20 +4884,20 @@ exports[`SelectField with isCreatable prop set to true should return a Creatable
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -5057,25 +5057,25 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField t
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleControlLabelRequired"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container"
+        className="grape-ui-select__value-container css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-ufc069 grape-ui-select__placeholder"
+          className="grape-ui-select__placeholder css-11l6kri-Placeholder"
         >
           Select...
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -5133,20 +5133,20 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField t
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -5299,25 +5299,25 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField t
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleControlLabel"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container"
+        className="grape-ui-select__value-container css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-ufc069 grape-ui-select__placeholder"
+          className="grape-ui-select__placeholder css-11l6kri-Placeholder"
         >
           Select...
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -5375,20 +5375,20 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField t
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -5555,25 +5555,25 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField w
   className="c0"
 >
   <div
-    className="css-1pcexqc-container c1"
+    className="c1 css-2b097c-container"
     id="exampleControlLabelRequired"
     onKeyDown={[Function]}
   >
     <div
-      className="css-mazh0z grape-ui-select__control"
+      className="grape-ui-select__control css-6bcw64-Control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className="css-14cvlpc grape-ui-select__value-container"
+        className="grape-ui-select__value-container css-1jw5w5s-ValueContainer"
       >
         <div
-          className="css-ufc069 grape-ui-select__placeholder"
+          className="grape-ui-select__placeholder css-11l6kri-Placeholder"
         >
           Select...
         </div>
         <div
-          className="css-0"
+          className="css-17yls17-Input"
         >
           <div
             className="grape-ui-select__input"
@@ -5631,20 +5631,20 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField w
         </div>
       </div>
       <div
-        className="css-1rtnzd2 grape-ui-select__indicators"
+        className="grape-ui-select__indicators css-zededq-IndicatorsContainer"
       >
         <span
-          className="css-1hyfx7x grape-ui-select__indicator-separator"
+          className="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+          className="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
           <svg
             aria-hidden="true"
-            className="css-19bqh2r"
+            className="css-6q0nyr-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
