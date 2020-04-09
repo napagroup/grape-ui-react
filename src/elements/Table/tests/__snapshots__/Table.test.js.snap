@@ -969,22 +969,22 @@ exports[`Table - kitchen sink snapshot should return table with all components &
                 class="c20"
               >
                 <div
-                  class="css-1pcexqc-container c21"
+                  class="c21 css-2b097c-container"
                   id="selectedPageOption"
                 >
                   <div
-                    class="css-mazh0z grape-ui-select__control"
+                    class="grape-ui-select__control css-6bcw64-Control"
                   >
                     <div
-                      class="css-14cvlpc grape-ui-select__value-container grape-ui-select__value-container--has-value"
+                      class="grape-ui-select__value-container grape-ui-select__value-container--has-value css-1jw5w5s-ValueContainer"
                     >
                       <div
-                        class="css-8uhtka grape-ui-select__single-value"
+                        class="grape-ui-select__single-value css-1y5ucjk-SingleValue"
                       >
                         Show 5
                       </div>
                       <div
-                        class="css-0"
+                        class="css-17yls17-Input"
                       >
                         <div
                           class="grape-ui-select__input"
@@ -1009,18 +1009,18 @@ exports[`Table - kitchen sink snapshot should return table with all components &
                       </div>
                     </div>
                     <div
-                      class="css-1rtnzd2 grape-ui-select__indicators"
+                      class="grape-ui-select__indicators css-zededq-IndicatorsContainer"
                     >
                       <span
-                        class="css-1hyfx7x grape-ui-select__indicator-separator"
+                        class="grape-ui-select__indicator-separator css-1xjgjl1-IndicatorSeparator"
                       />
                       <div
                         aria-hidden="true"
-                        class="css-1pseabs-indicatorContainer grape-ui-select__indicator grape-ui-select__dropdown-indicator"
+                        class="grape-ui-select__indicator grape-ui-select__dropdown-indicator css-vv1fq9-indicatorContainer"
                       >
                         <svg
                           aria-hidden="true"
-                          class="css-19bqh2r"
+                          class="css-6q0nyr-Svg"
                           focusable="false"
                           height="20"
                           viewBox="0 0 20 20"

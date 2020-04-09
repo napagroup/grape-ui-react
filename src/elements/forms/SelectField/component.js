@@ -5,9 +5,10 @@ import {
   refType,
 } from 'src/utils/styledHelpers';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import Select, { Creatable } from 'react-select';
-import AsyncSelect from 'react-select/lib/Async';
-import AsyncCreatableSelect from 'react-select/lib/AsyncCreatable';
+import Select from 'react-select';
+import Creatable from 'react-select/creatable';
+import AsyncSelect from 'react-select/async';
+import AsyncCreatableSelect from 'react-select/async-creatable';
 import { styleOverridesBase } from './utils';
 
 const propsToTrim = [
