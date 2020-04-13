@@ -8,7 +8,6 @@
     "build": "babel src/ -d lib --ignore **/*.json && babel src/assets --out-dir lib/assets --copy-files",
     "build:clean": "rimraf ./lib",
     "build:styleguide": "npx styleguidist build",
-    "gemfury:publish": "npm publish --registry='https://npm.fury.io/napadev/'",
     "lint": "npm run lint:js",
     "lint:js": "npm run lint:eslint -- .",
     "lint:eslint": "eslint",
@@ -26,11 +25,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/napagroupnyc/grape-ui-react/grape-ui-react.git"
+    "url": "git+https://github.com/napagroup/grape-ui-react.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/napagroupnyc/grape-ui#readme",
+  "homepage": "https://grapeui.com/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.27",
     "@fortawesome/free-brands-svg-icons": "5.12.1",

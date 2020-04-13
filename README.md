@@ -8,8 +8,6 @@ These instructions will allow you to use the extensible grape-ui component libra
 
 * [ReactJS](https://reactjs.org/)
 * [Styled Components](https://www.styled-components.com/)
-* [React-Router](https://reacttraining.com/react-router/)
-* [GemFury](https://gemfury.com/)
 
 ### Installing
 
