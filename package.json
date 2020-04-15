@@ -8,6 +8,7 @@
     "build": "babel src/ -d lib --ignore **/*.json && babel src/assets --out-dir lib/assets --copy-files",
     "build:clean": "rimraf ./lib",
     "build:styleguide": "npx styleguidist build",
+    "clean:styleguide": "rimraf styleguide/index.html && rimraf styleguide/build && rimraf styleguide/static",
     "lint": "npm run lint:js",
     "lint:js": "npm run lint:eslint -- .",
     "lint:eslint": "eslint",
