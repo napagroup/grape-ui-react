@@ -16,7 +16,10 @@ Here are some examples that were based on the examples found in the above articl
 #### CSS Tricks Example 1 [source](https://codepen.io/team/css-tricks/pen/EKEYob)
 
 ```jsx in Markdown
-import { Box, Flex } from './'; // ... from 'grape-ui-react';
+import {
+  Box,
+  Flex,
+} from './'; // ... from 'grape-ui-react';
 import styled from 'styled-components';
 
 const TomatoBox = styled(Box)`
@@ -53,8 +56,11 @@ TomatoBox.defaultProps = {
 #### CSS Tricks Example 2 [source](https://codepen.io/team/css-tricks/pen/YqaKYR)
 
 ```jsx in Markdown
-import { Box, Flex } from './'; // ... from 'grape-ui-react';
-import { Link } from '../typography';
+import {
+  Box,
+  Flex
+} from './'; // ... from 'grape-ui-react';
+import { Link } from 'src/elements/typography';
 import styled from 'styled-components';
 
 const NavLink = styled(Link)``;
@@ -70,7 +76,9 @@ NavLink.defaultProps = {
 <Flex
   flexDirection={['column', 'row']}
   flexWrap="wrap"
-  justifyContent={['space-around', null, 'flex-end']}
+  justifyContent={
+    ['space-around', null, 'flex-end']
+  }
   style={{ background: 'deepskyblue' }}
 >
   <NavLink href="#">Home</NavLink>
@@ -80,10 +88,13 @@ NavLink.defaultProps = {
 </Flex>
 ```
 
-#### CSS Tricks Example 3 [source](https://codepen.io/team/css-tricks/pen/YqaKYR)
+#### CSS Tricks Example 3 [source](https://codepen.io/chriscoyier/pen/vWEMWw)
 
 ```jsx in Markdown
-import { Box, Flex } from './'; // ... from 'grape-ui-react';
+import {
+  Box,
+  Flex,
+} from './'; // ... from 'grape-ui-react';
 import { Paragraph } from '../typography';
 import styled from 'styled-components';
 
@@ -94,10 +105,19 @@ BaseBox.defaultProps = {
   p: 3,
 };
 
-const BoxAside = styled(BaseBox)`background: ${props => props.bg};`;
-const BoxFooter = styled(BaseBox)`background: lightgreen;`;
-const BoxHeader = styled(BaseBox)`background: tomato;`;
-const BoxMain = styled(BaseBox)`background: skyblue; text-align: left;`;
+const BoxAside = styled(BaseBox)`
+  background: ${props => props.bg};
+`;
+const BoxFooter = styled(BaseBox)`
+  background: lightgreen;
+`;
+const BoxHeader = styled(BaseBox)`
+  background: tomato;
+`;
+const BoxMain = styled(BaseBox)`
+  background: skyblue;
+  text-align: left;
+`;
 
 BoxAside.defaultProps = {
   flex: [null, '1 0 0'],
@@ -109,17 +129,38 @@ const FlexWrapper = styled(Flex)`
 `;
 
 FlexWrapper.defaultProps = {
-  flexDirection: 'row',
+  flexDirection: ['column', 'row'],
   flexWrap: 'wrap',
 };
 
 <FlexWrapper>
-  <BoxHeader>Header</BoxHeader>
-  <BoxMain flex={[null, null, '3 0px']} order={[null, null, 2]}>
-    <Paragraph>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</Paragraph>
+  <BoxHeader>
+    Header
+  </BoxHeader>
+  <BoxMain
+    flex={[null, null, '3 0px']}
+    order={[null, null, 2]}
+  >
+    <Paragraph>
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+    </Paragraph>
   </BoxMain>
-  <BoxAside bg="gold" order={[null, null, 1]}>Aside 1</BoxAside>
-  <BoxAside bg="hotpink" order={[null, null, 3]}>Aside 2</BoxAside>
-  <BoxFooter order={[null, null, 4]}>Footer</BoxFooter>
+  <BoxAside
+    bg="gold"
+    order={[null, null, 1]}
+  >
+    Aside 1
+  </BoxAside>
+  <BoxAside
+    bg="hotpink"
+    order={[null, null, 3]}
+  >
+    Aside 2
+  </BoxAside>
+  <BoxFooter
+    order={[null, null, 4]}
+  >
+    Footer
+  </BoxFooter>
 </FlexWrapper>
 ```

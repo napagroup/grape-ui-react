@@ -10,6 +10,8 @@ import { Paragraph } from '../index';
   <Text fontWeight="bold">bold</Text>
   , or
   <Text color="red" fontWeight="bold">both</Text>
-  , I can just use the inline <code>&lt;Text&gt;</code> element.
+  {', I can just use the inline '}
+  <code>&lt;Text&gt;</code>
+  {' element.'}
 </Paragraph>
 ```

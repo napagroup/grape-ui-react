@@ -64,7 +64,8 @@ const ComponentsListSectionRenderer = ({
       >
         {visibleName}
       </Link>
-      {getContent(open, tocMode, forcedOpen, content)}
+      <Box display={['none', 'block']}>{getContent(open, tocMode, forcedOpen, content)}</Box>
+      <Box display={['block', 'none']}>{getContent(open, 'expand', forcedOpen, content)}</Box>
     </Box>
   );
 };

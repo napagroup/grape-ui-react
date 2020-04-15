@@ -21,7 +21,7 @@ function TocToggle({ children }) {
         {showToc ? 'Hide ' : 'Show '}
         Table of Contents
       </Button>
-      <Box display={[showToc ? 'block' : 'none', 'block']}>
+      <Box display={[showToc ? 'block' : 'none', 'block']} onClick={() => setShowToc(!showToc)}>
         {children}
         <Box display={['block', 'none']} my={4}>
           <hr />
