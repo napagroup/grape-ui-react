@@ -5,11 +5,11 @@ import {
   Box,
   Button,
   Flex,
-  Image,
   Link,
   Text,
 } from 'src';
 import { HashRouter as Router } from 'react-router-dom';
+import { ReactSVG } from 'react-svg';
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from 'src/assets/images/grape-ui-header-logo.svg'
@@ -22,6 +22,7 @@ const HeaderFlex = styled(Flex)`
 
 HeaderFlex.defaultProps = {
   alignItems: 'center',
+  flex: 'none',
   flexDirection: ['column', 'row'],
   justifyContent: 'center',
   mb: '1px',
@@ -45,7 +46,7 @@ export const Toolbar = ({ title, version }) => (
     <Router>
       <Box maxWidth={175}>
         <Link to={urlRoutes.homePage}>
-          <Image alt="grape-ui" src={logo} />
+        <ReactSVG src={logo} />
         </Link>
       </Box>
       <Flex flex={1} justifyContent={['center', 'space-between']} marginTop="-3px" style={{ boxSizing: 'border-box' }} width={[1, 'auto']}>
