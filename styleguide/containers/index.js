@@ -33,4 +33,8 @@ module.exports = {
     __dirname,
     './TableOfContentsRenderer'
   ),
+  ToolbarButtonRenderer: path.join(
+    __dirname,
+    './ToolbarButtonRenderer'
+  )
 };
