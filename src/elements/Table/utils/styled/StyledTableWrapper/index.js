@@ -1,21 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { border } from 'styled-system';
-import propTypes from '@styled-system/prop-types';
-import { removeSomeProps } from 'src/utils/componentHelpers';
 import { Box } from 'src/elements/grid';
-import { defaultTableStylesPropsToTrim, defaultTableWrapperProps, tableWrapperPropTypes } from '../..';
-
-const propsToTrim = [
-  ...Object.keys(propTypes.border),
-  ...defaultTableStylesPropsToTrim,
-
-];
+import {
+  defaultTableWrapperProps,
+  tableWrapperPropTypes,
+} from '../..';
 
 function StyledTableWrapperComponent(props) {
   const { children, ...otherProps } = props;
-  return <Box {...removeSomeProps(otherProps, propsToTrim)}>{children}</Box>;
+  return <Box {...otherProps}>{children}</Box>;
 }
 
 StyledTableWrapperComponent.propTypes = {
@@ -26,7 +20,7 @@ StyledTableWrapperComponent.defaultProps = {
   children: '',
 };
 
-const StyledTableWrapper = styled(StyledTableWrapperComponent)(border);
+const StyledTableWrapper = styled(StyledTableWrapperComponent)``;
 
 StyledTableWrapper.propTypes = {
   ...tableWrapperPropTypes,

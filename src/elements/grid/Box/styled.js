@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
+  border,
   flexbox,
   layout,
   position,
@@ -11,6 +12,7 @@ import { BoxComponent } from './component';
 
 const Box = styled(BoxComponent)`
   ${system({ boxSizing: true })}
+  ${border}
   ${flexbox}
   ${layout}
   ${position}

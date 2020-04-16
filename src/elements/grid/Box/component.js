@@ -1,19 +1,16 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  flexboxProps,
-  layoutProps,
-  positionProps,
-  spaceProps,
-} from 'src/utils/styledHelpers';
+import propTypes from '@styled-system/prop-types';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 
+
 const propsToTrim = {
-  ...flexboxProps.propTypes,
-  ...layoutProps.propTypes,
-  ...positionProps.propTypes,
-  ...spaceProps.propTypes,
+  ...propTypes.border,
+  ...propTypes.flexbox,
+  ...propTypes.layout,
+  ...propTypes.position,
+  ...propTypes.space,
   boxSizing: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.string,

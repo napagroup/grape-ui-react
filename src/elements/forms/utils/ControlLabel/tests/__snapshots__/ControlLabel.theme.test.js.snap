@@ -7,7 +7,7 @@ exports[`ControlLabel using Theme Font Family should return a ControlLabel objec
   font-family: "DejaVu Sans Mono","Bitstream Vera Sans Mono",Courier;
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -37,7 +37,7 @@ exports[`ControlLabel using Theme color should return a ControlLabel object with
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;

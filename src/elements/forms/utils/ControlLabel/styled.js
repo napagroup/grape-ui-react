@@ -63,7 +63,7 @@ ControlLabel.defaultProps = {
   ...defaultStylesBase,
   bg: defaultControlStyles.bg,
   disabled: false,
-  height: `${fontSizeSchema.sizeVariants.sm / 2}rem`,
+  height: `${(fontSizeSchema.sizeVariants.sm / 1.5).toFixed(1)}rem`,
   left: 2,
   lineHeight: 0.8,
   position: 'absolute',
