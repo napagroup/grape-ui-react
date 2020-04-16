@@ -74,7 +74,7 @@ export function Paginator(props) {
         py={1}
       >
         <Flex>
-          <Box flex={1} m={1} maxWidth={130}>
+          <Box flex={1} m={1} maxWidth={170}>
             <Controller
               as={<TextField />}
               control={control}
@@ -89,7 +89,7 @@ export function Paginator(props) {
               type="number"
             />
           </Box>
-          <Box flex={1} maxWidth={130} mx={[1, 2]} my={1}>
+          <Box flex={1} maxWidth={170} mx={[1, 2]} my={1}>
             <Controller
               as={<SelectField />}
               control={control}

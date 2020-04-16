@@ -64,6 +64,9 @@ exports[`Form Component base should return a Form object and textField with fill
   border: 0;
   border-bottom: 1px solid hsl(0,0%,25%);
   border-radius: 4px 4px 0 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px 4px 0 0;
   outline: 0;
   width: 100%;
@@ -240,6 +243,9 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   border: 0;
   border-bottom: 1px solid hsl(0,0%,25%);
   border-radius: 2px 2px 0 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px 2px 0 0;
   outline: 0;
   width: 100%;
@@ -319,6 +325,9 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   border: 0;
   border-bottom: 1px solid hsl(0,0%,25%);
   border-radius: 4px 4px 0 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px 4px 0 0;
   outline: 0;
   width: 100%;
@@ -627,6 +636,9 @@ exports[`Form Component base should return a Form object with filled formStyle a
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;

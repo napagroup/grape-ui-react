@@ -37,6 +37,9 @@ exports[`TextField  a large TextField object should return a large TextField obj
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 8px;
   outline: 0;
   width: 100%;
@@ -172,6 +175,9 @@ exports[`TextField Component base should return a TextField object 1`] = `
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -307,6 +313,9 @@ exports[`TextField a TextField object should return a TextField object with a re
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -517,6 +526,9 @@ exports[`TextField a small TextField object should return a disabled TextField 1
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -652,6 +664,9 @@ exports[`TextField a small TextField object should return a small TextField obje
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px;
   outline: 0;
   width: 100%;
@@ -787,6 +802,9 @@ exports[`TextField a small TextField object should return a small TextField obje
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -922,6 +940,9 @@ exports[`TextField a small TextField object should return a small TextField obje
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -1035,6 +1056,9 @@ exports[`TextField with a multiline option should return a multiline TextField 1
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -1151,6 +1175,9 @@ exports[`TextField with a password attribute should return a TextField of input 
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -1258,6 +1285,9 @@ exports[`TextField with an email attribute should return a TextField of input ty
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -1405,6 +1435,9 @@ exports[`TextField with an id attribute provided should return a TextField with 
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -1564,6 +1597,9 @@ exports[`TextField with assistive text should return a TextField object contain 
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -1703,6 +1739,9 @@ exports[`TextField with custom assistive text props should return a TextField wi
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -1816,6 +1855,9 @@ exports[`TextField with custom control group props should return a TextField wit
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -1947,6 +1989,9 @@ exports[`TextField with custom control label props should return a TextField wit
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -2158,6 +2203,9 @@ exports[`TextField with formStyle set to filled should return a formStyle filled
   border: 0;
   border-bottom: 1px solid hsl(0,0%,25%);
   border-radius: 4px 4px 0 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px 4px 0 0;
   outline: 0;
   width: 100%;
@@ -2414,6 +2462,9 @@ exports[`TextField with object in assistive text should return a TextField objec
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -2579,6 +2630,9 @@ exports[`TextField with some other props should return a TextField object contai
   color: inherit;
   border: 1px solid hsl(4.1,89.6%,58.4%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -2739,6 +2793,9 @@ exports[`TextField with validation error should return a TextField object contai
   color: inherit;
   border: 1px solid hsl(4.1,89.6%,58.4%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;

@@ -67,6 +67,9 @@ exports[`Table - kitchen sink snapshot should return table with all components &
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px;
   outline: 0;
   width: 100%;
@@ -139,6 +142,9 @@ exports[`Table - kitchen sink snapshot should return table with all components &
   color: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px;
   outline: 0;
   width: 100%;
@@ -235,7 +241,7 @@ exports[`Table - kitchen sink snapshot should return table with all components &
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  max-width: 120px;
+  max-width: 170px;
   margin: 4px;
 }
 
@@ -244,7 +250,7 @@ exports[`Table - kitchen sink snapshot should return table with all components &
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  max-width: 120px;
+  max-width: 170px;
   margin-left: 4px;
   margin-right: 4px;
   margin-top: 4px;

@@ -48,6 +48,9 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px;
   outline: 0;
   width: 100%;
@@ -279,6 +282,9 @@ exports[`SelectField using Theme color should return a SelectField object with c
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px;
   outline: 0;
   width: 100%;
@@ -510,6 +516,9 @@ exports[`SelectField using custom brand colors should return a SelectField objec
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px;
   outline: 0;
   width: 100%;
