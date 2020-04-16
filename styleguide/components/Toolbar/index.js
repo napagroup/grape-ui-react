@@ -45,8 +45,8 @@ export const Toolbar = ({ title, version }) => (
   <HeaderFlex>
     <Router>
       <Box maxWidth={175}>
-        <Link to={urlRoutes.homePage}>
-        <ReactSVG src={logo} />
+        <Link href={urlRoutes.homePage}>
+          <ReactSVG src={logo} />
         </Link>
       </Box>
       <Flex flex={1} justifyContent={['center', 'space-between']} marginTop="-3px" style={{ boxSizing: 'border-box' }} width={[1, 'auto']}>

@@ -3,3 +3,7 @@ html,
 #rsg-root {
   height: 100%;
 }
+
+[data-preview="Paragraph"] {
+  display: block;
+}

@@ -1,4 +1,4 @@
-![grape-ui logo](src/assets/images/grape-ui-header-logo.svg)
+![grape-ui logo](http://www.grapeui.com/assets/images/grape-ui-header-logo.svg)
 
 ## Getting Started
 

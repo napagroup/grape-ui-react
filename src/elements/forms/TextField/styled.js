@@ -1,6 +1,10 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { ControlGroup, getAssistiveText, PlainText } from 'src/elements/forms/utils';
+import {
+  ControlGroup,
+  getAssistiveText,
+  PlainText,
+} from 'src/elements/forms/utils';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import {
   control,
@@ -20,7 +24,10 @@ import {
   typography,
 } from 'src/utils/styledHelpers';
 import styled from 'styled-components';
-import { borderRadius, fontWeight } from 'styled-system';
+import {
+  borderRadius,
+  fontWeight,
+} from 'styled-system';
 import { TextInputComponent } from './component';
 
 const controlStylesTextField = props => (!props.validationError ? controlStyles(props)
