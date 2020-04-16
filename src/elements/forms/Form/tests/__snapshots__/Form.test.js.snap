@@ -32,7 +32,7 @@ exports[`Form Component base should return a Form object and textField with fill
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -197,7 +197,7 @@ exports[`Form Component base should return a Form object with 2 filled formStyle
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -596,7 +596,7 @@ exports[`Form Component base should return a Form object with filled formStyle a
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;

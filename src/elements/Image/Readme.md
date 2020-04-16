@@ -38,7 +38,7 @@ const altText01 = "Green grapes hanging from a vine; Photo by Nacho Domínguez A
   />
   <Paragraph fontFamily="monospace">
     width=&#123;[1, 1 / 2, 1 / 3, 1 / 4]&#125;
-  </Paragraph>å
+  </Paragraph>
   <Image
     alt={altText01}
     display={['block', 'inline']}

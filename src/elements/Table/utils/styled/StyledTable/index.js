@@ -11,7 +11,11 @@ import {
 
 function StyledTableComponent(props) {
   const { children, ...otherProps } = props;
-  return <table {...removeSomeProps(otherProps, defaultTableStylesPropsToTrim)}>{children}</table>;
+  return (
+    <table {...removeSomeProps(otherProps, defaultTableStylesPropsToTrim)}>
+      {children}
+    </table>
+  );
 }
 
 StyledTableComponent.propTypes = {
