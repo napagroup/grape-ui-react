@@ -11,7 +11,9 @@ const expanderCell = {
     // Use Cell to render an expander for each row.
     // We can use the getToggleRowExpandedProps prop-getter
     // to build the expander.
-    <span {...row.getToggleRowExpandedProps()}>
+    <span
+      {...row.getToggleRowExpandedProps()}
+    >
       {row.isExpanded ? '👇' : '👉'}
     </span>);
   },

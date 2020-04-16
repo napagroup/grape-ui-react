@@ -6,13 +6,41 @@ import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
 import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Paragraph } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
-<Flex alignItems="flex-start" flexDirection="column">
-  <Button>Basic Button <code>&lt;button&gt;</code></Button>
-  <Button href="#">Basic Button <code>&lt;a&gt;</code></Button>
-  <Button emailHref={{ to: 'email@grape-ui.com' }}>Basic Button using emailHref <code>&lt;a&gt;</code></Button>
+<Flex
+  alignItems="flex-start"
+  flexDirection="column"
+>
+  <Button>
+    {'Basic Button '}
+    <code>&lt;button&gt;</code>
+  </Button>
+  <Button href="#">
+    {'Basic Button '}
+    <code>&lt;a&gt;</code>
+  </Button>
+  <Button
+    emailHref={{
+      to: 'email@grape-ui.com'
+    }}
+  >
+    {'Basic Button using emailHref '}
+    <code>&lt;a&gt;</code>
+  </Button>
   <Router>
-    <Button to="./">Basic Button <code>&lt;Link&gt;</code>*</Button>
-    <Paragraph color="gray" sm>*Please note, <code>&lt;Button&gt;</code> components that use <code>&lt;Link&gt;</code> need to be wrapped in a <code>&lt;Router&gt;</code> component from 'react-router-dom'.</Paragraph>
+    <Button to="./">
+      {'Basic Button '}
+      <code>&lt;Link&gt;</code>
+      *
+    </Button>
+    <Paragraph color="gray" sm>
+      {'*Please note, '}
+      <code>&lt;Button&gt;</code>
+      {' components that use '}
+      <code>&lt;Link&gt;</code>
+      {' need to be wrapped in a '}
+      <code>&lt;Router&gt;</code>
+      {` component from 'react-router-dom'.`}
+      </Paragraph>
   </Router>
 </Flex>
 ```
