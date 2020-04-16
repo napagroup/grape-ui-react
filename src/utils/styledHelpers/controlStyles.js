@@ -95,6 +95,7 @@ const getFinalStyle = props => {
   const resolvedBorderColor = resolveColor(borderColor, globalOverrides);
   const resolvedPlaceholderColor = resolveColor(placeholderColor, globalOverrides);
   const controlSharedStyle = `
+    appearance: none;
     border-radius: ${resolveBorderRadius(props)};
     outline: 0;
     width: 100%;
