@@ -65,7 +65,7 @@ module.exports = {
     {
       content: './src/elements/forms/Readme.md',
       description: 'All form elements',
-      name: 'Form',
+      name: 'Forms',
       sectionDepth: 2,
       sections: [
         {
