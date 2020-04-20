@@ -6,32 +6,11 @@
     [ "@babel/transform-runtime", { "corejs": 3 } ]
   ],
   "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "debug": false,
-				"modules": false,
-        "useBuiltIns": "usage",
-        "corejs": 3.6
-      }
-    ],
     "@babel/preset-react"
   ],
   "env": {
     "test": {
       "presets": [
-        [
-          "@babel/preset-env",
-          {
-            "debug": false,
-            "modules": false,
-            "useBuiltIns": "usage",
-            "corejs": 3.6,
-            "targets": {
-							"node": "current"
-						}
-          }
-        ],
         "@babel/preset-react"
       ],
       "plugins": [
