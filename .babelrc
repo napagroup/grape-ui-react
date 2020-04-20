@@ -2,7 +2,8 @@
   "plugins": [
     "@babel/plugin-transform-modules-commonjs",
     "@babel/plugin-proposal-class-properties",
-    [ "babel-plugin-webpack-alias", { "config": "src/internals/webpack/webpack.config.js" } ]
+    [ "babel-plugin-webpack-alias", { "config": "src/internals/webpack/webpack.config.js" } ],
+    [ "@babel/transform-runtime", { "corejs": 3 } ]
   ],
   "presets": [
     [
