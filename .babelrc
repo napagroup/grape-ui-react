@@ -1,5 +1,6 @@
 {
   "plugins": [
+    "@babel/plugin-transform-modules-commonjs",
     "@babel/plugin-proposal-class-properties",
     [ "babel-plugin-webpack-alias", { "config": "src/internals/webpack/webpack.config.js" } ],
     [ "@babel/transform-runtime", { "corejs": 3 } ]
@@ -11,7 +12,7 @@
         "debug": false,
 				"modules": false,
         "useBuiltIns": "usage",
-        "corejs": 3
+        "corejs": 3.6
       }
     ],
     "@babel/preset-react"
@@ -25,7 +26,7 @@
             "debug": false,
             "modules": false,
             "useBuiltIns": "usage",
-            "corejs": 3,
+            "corejs": 3.6,
             "targets": {
 							"node": "current"
 						}
