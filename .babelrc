@@ -6,13 +6,21 @@
     [ "@babel/transform-runtime", { "corejs": 3 } ]
   ],
   "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "corejs":
+        {
+          "version": 3.6,
+          "proposals": true
+        },
+        "useBuiltIns": "entry"
+      }
+    ],
     "@babel/preset-react"
   ],
   "env": {
     "test": {
-      "presets": [
-        "@babel/preset-react"
-      ],
       "plugins": [
         "transform-es2015-modules-commonjs",
         "dynamic-import-node",
