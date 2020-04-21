@@ -11,8 +11,7 @@
       {
         "corejs":
         {
-          "version": 3.6,
-          "proposals": true
+          "version": 3.6
         },
         "useBuiltIns": "entry"
       }
