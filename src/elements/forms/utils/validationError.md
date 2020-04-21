@@ -1,8 +1,13 @@
 When you need to mark a field with an error, simply provide the inline validation through the `validationError` prop as either a string or a bool.
 
 ```jsx in Markdown
-import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
-import { TextField } from 'src/elements/forms'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  TextField
+} from 'src/elements/forms'; // ... from 'grape-ui-react'
 
 <Flex flexDirection={['column', 'row']}>
   <Box px={[1, 2]} width={[1, 1 / 2]}>
@@ -27,14 +32,22 @@ import { TextField } from 'src/elements/forms'; // ... from 'grape-ui-react'
 If `validationError` is set to a string value where there is also `assistiveText` provided, it will not display the `assistiveText`. If `validationError` is set to a bool where there is also `assistiveText` provided, it will display the `assistiveText` with a `brandDanger` color.
 
 ```jsx in Markdown
-import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import {
   CheckboxField,
   DateField,
   SelectField,
   TextField,
 } from 'src/elements/forms'; // ... from 'grape-ui-react'
-import { List, ListItem, Paragraph, Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
+import {
+  List,
+  ListItem,
+  Paragraph,
+  Text,
+} from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 const cheeseOptions = [
   { label: 'Whiz', value: 'whiz' },
@@ -43,8 +56,10 @@ const cheeseOptions = [
 ];
 
 <Flex flexDirection="column">
-  <Paragraph mb="0">validationError is a string where there is also assistiveText.</Paragraph>
-  <Flex>
+  <Paragraph mb="0">
+    validationError is a string where there is also assistiveText.
+  </Paragraph>
+  <Flex flexDirection={['column', 'row']}>
     <Box px={[1, 2]} width={[1, 1 / 2]}>
       <TextField
         assistiveText="youremail@domain.com"
@@ -65,9 +80,10 @@ const cheeseOptions = [
       />
     </Box>
   </Flex>
-
-  <Paragraph mb="0">validationError is a bool where there is also assistiveText.</Paragraph>
-  <Flex>
+  <Paragraph mb="0">
+    validationError is a bool where there is also assistiveText.
+  </Paragraph>
+  <Flex flexDirection={['column', 'row']}>
     <Box px={[1, 2]} width={[1, 1 / 2]}>
       <TextField
         assistiveText="Password must contain an upper case letter, a numeric character, and a special character."
@@ -90,7 +106,6 @@ const cheeseOptions = [
       />
     </Box>
   </Flex>
-
   <Paragraph mb="0">
     validationError is a bool, isRequired is set to true, no assistiveText is provided.
   </Paragraph>

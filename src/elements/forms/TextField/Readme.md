@@ -12,9 +12,19 @@
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
-import { Link, Paragraph, Text } from 'src/elements/typography';
-import { cantHardlyWaitAssistiveText, cantHardlyWaitLyrics } from '../examples';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Link,
+  Paragraph,
+  Text,
+} from 'src/elements/typography';
+import {
+  cantHardlyWaitAssistiveText,
+  cantHardlyWaitLyrics,
+} from '../examples';
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -32,7 +42,10 @@ import { cantHardlyWaitAssistiveText, cantHardlyWaitLyrics } from '../examples';
       />
     </Box>
   </Flex>
-  <Paragraph lg>Disabled <code>disabled=&#123;true&#125;</code></Paragraph>
+  <Paragraph lg>
+    {'Disabled '}
+    <code>disabled=&#123;true&#125;</code>
+  </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <TextField
@@ -52,8 +65,14 @@ import { cantHardlyWaitAssistiveText, cantHardlyWaitLyrics } from '../examples';
       />
     </Box>
   </Flex>
-  <Text lg>Email <code>email=&#123;true&#125;</code></Text>
-  <Paragraph sm><Text fontWeight="bold">NOTE:</Text> Email validation would still need to be handled separately</Paragraph>
+  <Text lg>
+    {'Email '}
+    <code>email=&#123;true&#125;</code>
+  </Text>
+  <Paragraph sm>
+    <Text fontWeight="bold">NOTE:</Text>
+    {' Email validation would still need to be handled separately'}
+  </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <TextField
@@ -71,7 +90,10 @@ import { cantHardlyWaitAssistiveText, cantHardlyWaitLyrics } from '../examples';
       />
     </Box>
   </Flex>
-  <Paragraph lg>Multiline <code>multiline=&#123;true&#125;</code></Paragraph>
+  <Paragraph lg>
+    {'Multiline '}
+    <code>multiline=&#123;true&#125;</code>
+  </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <TextField
@@ -91,7 +113,10 @@ import { cantHardlyWaitAssistiveText, cantHardlyWaitLyrics } from '../examples';
       />
     </Box>
   </Flex>
-  <Paragraph lg>Password <code>password=&#123;true&#125;</code></Paragraph>
+  <Paragraph lg>
+    {'Password '}
+    <code>password=&#123;true&#125;</code>
+  </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <TextField
@@ -110,7 +135,10 @@ import { cantHardlyWaitAssistiveText, cantHardlyWaitLyrics } from '../examples';
       />
     </Box>
   </Flex>
-  <Paragraph lg>Plain Text <code>plainText=&#123;true&#125;</code></Paragraph>
+  <Paragraph lg>
+    {'Plain Text '}
+    <code>plainText=&#123;true&#125;</code>
+  </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <TextField
@@ -138,7 +166,10 @@ import { cantHardlyWaitAssistiveText, cantHardlyWaitLyrics } from '../examples';
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -187,8 +218,16 @@ import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Paragraph, Text } from 'src/elements/typography';
 
 <ThemeProvider theme={{}}>
-  <Text lg>Currency <code>currency=&#123;true&#125;</code></Text>
-  <Paragraph sm><Text fontWeight="bold">NOTE:</Text> Values only set in USD currently.</Paragraph>
+  <Text lg>
+    {'Currency '}
+    <code>currency=&#123;true&#125;</code>
+  </Text>
+  <Paragraph sm>
+    <Text fontWeight="bold">
+      NOTE:
+    </Text>
+    {' Values only set in USD currently.'}
+  </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <TextField
@@ -206,7 +245,10 @@ import { Paragraph, Text } from 'src/elements/typography';
       />
     </Box>
   </Flex>
-  <Paragraph lg>Integer <code>integer=&#123;true&#125;</code></Paragraph>
+  <Paragraph lg>
+    {'Integer '}
+    <code>integer=&#123;true&#125;</code>
+  </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <TextField
@@ -224,7 +266,10 @@ import { Paragraph, Text } from 'src/elements/typography';
       />
     </Box>
   </Flex>
-  <Paragraph lg>Numeric <code>numeric=&#123;true&#125;</code></Paragraph>
+  <Paragraph lg>
+    {'Numeric '}
+    <code>numeric=&#123;true&#125;</code>
+  </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <TextField
@@ -244,7 +289,10 @@ import { Paragraph, Text } from 'src/elements/typography';
       />
     </Box>
   </Flex>
-  <Paragraph lg>Phone <code>phone=&#123;true&#125;</code></Paragraph>
+  <Paragraph lg>
+    {'Phone '}
+    <code>phone=&#123;true&#125;</code>
+  </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <TextField
@@ -264,7 +312,10 @@ import { Paragraph, Text } from 'src/elements/typography';
       />
     </Box>
   </Flex>
-  <Paragraph lg>Postal Code <code>postalCode=&#123;true&#125;</code></Paragraph>
+  <Paragraph lg>
+    {'Postal Code '}
+    <code>postalCode=&#123;true&#125;</code>
+  </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <TextField
@@ -314,15 +365,18 @@ import { Paragraph, Text } from 'src/elements/typography';
 ```
 
 `<TextField>` Supports a ref attribute to get to the underlying input element.
-You can pass in either a createRef(), or via "callback refs". Examples are demonstrated below
+You can pass in either a createRef(), or via "callback refs". Examples are demonstrated below:
 
 #### Ref support - Getting to the element
 
 ```jsx inside Markdown
 import { useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
-import { Button } from '../../Button';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Button } from 'src/elements/Button';
 import { Paragraph } from 'src/elements/typography';
 
 const onBtnClick = inputName => () => {
@@ -336,12 +390,17 @@ const onRegisterClick = () => {
 };
 
 <ThemeProvider theme={{}}>
-  <Paragraph lg>With <code>useRef</code></Paragraph>
+  <Paragraph lg>
+    {'With '}
+    <code>useRef</code>
+  </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <TextField
         color="grapeSoda.light"
-        inputRef={ref => { nameRef.current = ref; }}
+        inputRef={ref => {
+          nameRef.current = ref;
+        }}
         labelText="Name"
         name="name"
       />
@@ -384,9 +443,15 @@ For further documentation on integrating UI component libraries with react-hook-
 #### Demonstrating Controlled Components (via react-hook-form)
 
 ```jsx inside Markdown
-import { useForm, Controller } from 'react-hook-form';
+import {
+  Controller,
+  useForm,
+} from 'react-hook-form';
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
 
 function MyFormComponent(props) {
@@ -395,22 +460,30 @@ function MyFormComponent(props) {
     getValues,
     register,
     watch,
-  } = useForm({ defaultValues: { name: 'Bruce Wayne'} });
+  } = useForm({
+    defaultValues: {
+      name: 'Bruce Wayne'
+    }
+  });
 
   return (
     <>
-      <Button onClick={() => alert(getValues().name)}>Get Name</Button>
+      <Button
+        onClick={() => alert(getValues().name)}
+      >
+        Get Name
+      </Button>
       <Flex flexDirection={['column', 'row']}>
         <Box px={1} width={[1, 1 / 2]}>
         <Controller
-            as={<TextField />}
-            control={control}
-            defaultValue={name}
-            inputRef={register}
-            labelText="Name"
-            name="name"
-            isRequired
-          />
+          as={<TextField />}
+          control={control}
+          defaultValue={name}
+          inputRef={register}
+          isRequired
+          labelText="Name"
+          name="name"
+        />
         </Box>
       </Flex>
     </>

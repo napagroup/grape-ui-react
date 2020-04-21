@@ -39,6 +39,9 @@ exports[`SelectField Component should return a SelectField that contains SelectF
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -311,7 +314,7 @@ exports[`SelectField Component with Assistive Text should return a SelectField w
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -343,6 +346,9 @@ exports[`SelectField Component with Assistive Text should return a SelectField w
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -563,6 +569,9 @@ exports[`SelectField Component with custom Control Group props should return a S
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -774,7 +783,7 @@ exports[`SelectField Component with custom Control Label props should return a S
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -808,6 +817,9 @@ exports[`SelectField Component with custom Control Label props should return a S
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -1031,7 +1043,7 @@ exports[`SelectField Component with space should return a SelectField with space
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1063,6 +1075,9 @@ exports[`SelectField Component with space should return a SelectField with space
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -1286,7 +1301,7 @@ exports[`SelectField Component with space should return a SelectField with space
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1318,6 +1333,9 @@ exports[`SelectField Component with space should return a SelectField with space
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -1541,7 +1559,7 @@ exports[`SelectField Component with style should return a SelectField that is fr
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1573,6 +1591,9 @@ exports[`SelectField Component with style should return a SelectField that is fr
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -1796,7 +1817,7 @@ exports[`SelectField Component with style should return a SelectField with backg
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1828,6 +1849,9 @@ exports[`SelectField Component with style should return a SelectField with backg
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -2051,7 +2075,7 @@ exports[`SelectField Component with style should return a SelectField with orang
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -2083,6 +2107,9 @@ exports[`SelectField Component with style should return a SelectField with orang
   text-decoration: inherit;
   border: 1px solid hsl(35.8,100%,50%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -2306,7 +2333,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -2338,6 +2365,9 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 8px;
   outline: 0;
   width: 100%;
@@ -2561,7 +2591,7 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -2593,6 +2623,9 @@ exports[`SelectField Component with style should return a SelectFieldComponent w
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px;
   outline: 0;
   width: 100%;
@@ -2816,7 +2849,7 @@ exports[`SelectField that is disabled should return a SelectField with isDisable
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -2848,6 +2881,9 @@ exports[`SelectField that is disabled should return a SelectField with isDisable
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -3076,7 +3112,7 @@ exports[`SelectField that is plainText should return a SelectField with plainTex
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -3197,7 +3233,7 @@ exports[`SelectField with custom assistive text props should return a SelectFiel
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -3229,6 +3265,9 @@ exports[`SelectField with custom assistive text props should return a SelectFiel
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -3452,7 +3491,7 @@ exports[`SelectField with custom menu elevation should return a SelectField with
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -3484,6 +3523,9 @@ exports[`SelectField with custom menu elevation should return a SelectField with
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -3707,7 +3749,7 @@ exports[`SelectField with custom z-index should return a SelectField with differ
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -3739,6 +3781,9 @@ exports[`SelectField with custom z-index should return a SelectField with differ
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -3962,7 +4007,7 @@ exports[`SelectField with focus should return a SelectField with isFocused set t
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -3994,6 +4039,9 @@ exports[`SelectField with focus should return a SelectField with isFocused set t
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -4205,7 +4253,7 @@ exports[`SelectField with isAsync and isCreatable prop set to true should return
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -4237,6 +4285,9 @@ exports[`SelectField with isAsync and isCreatable prop set to true should return
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px;
   outline: 0;
   width: 100%;
@@ -4455,7 +4506,7 @@ exports[`SelectField with isAsync prop set to true should return an AsyncSelect 
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -4487,6 +4538,9 @@ exports[`SelectField with isAsync prop set to true should return an AsyncSelect 
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px;
   outline: 0;
   width: 100%;
@@ -4705,7 +4759,7 @@ exports[`SelectField with isCreatable prop set to true should return a Creatable
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -4737,6 +4791,9 @@ exports[`SelectField with isCreatable prop set to true should return a Creatable
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px;
   outline: 0;
   width: 100%;
@@ -4954,7 +5011,7 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField t
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -4986,6 +5043,9 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField t
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -5196,7 +5256,7 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField t
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -5228,6 +5288,9 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField t
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;
@@ -5450,7 +5513,7 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField w
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -5484,6 +5547,9 @@ exports[`SelectFieldComponent with a Control Label should return a SelectField w
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 4px;
   outline: 0;
   width: 100%;

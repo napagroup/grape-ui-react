@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Box, Button, TextField } from 'src';
 
-const tocMaxWidth = 176.05;
+const tocMaxWidth = [null, 176.05];
 const tocWidth = [1, null, tocMaxWidth];
 
 function TocToggle({ children }) {
   const [showToc, setShowToc] = useState(false);
   return (
-    <Box maxWidth={tocMaxWidth} width={tocWidth}>
+    <Box
+      maxWidth={tocMaxWidth}
+      width={tocWidth}
+    >
       <Button
         display={['block', 'none']}
         m="auto"
@@ -18,8 +21,11 @@ function TocToggle({ children }) {
         {showToc ? 'Hide ' : 'Show '}
         Table of Contents
       </Button>
-      <Box display={[showToc ? 'block' : 'none', 'block']}>
+      <Box display={[showToc ? 'block' : 'none', 'block']} onClick={() => setShowToc(!showToc)}>
         {children}
+        <Box display={['block', 'none']} my={4}>
+          <hr />
+        </Box>
       </Box>
     </Box>
   );

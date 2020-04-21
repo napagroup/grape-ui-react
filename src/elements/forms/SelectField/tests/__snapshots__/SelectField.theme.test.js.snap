@@ -16,7 +16,7 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -48,6 +48,9 @@ exports[`SelectField using Theme Font Family should return a SelectField object 
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px;
   outline: 0;
   width: 100%;
@@ -247,7 +250,7 @@ exports[`SelectField using Theme color should return a SelectField object with c
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -279,6 +282,9 @@ exports[`SelectField using Theme color should return a SelectField object with c
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px;
   outline: 0;
   width: 100%;
@@ -478,7 +484,7 @@ exports[`SelectField using custom brand colors should return a SelectField objec
   font-family: Nunito,sans-serif;
   font-size: 0.8rem;
   font-weight: inherit;
-  height: 0.4rem;
+  height: 0.5rem;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -510,6 +516,9 @@ exports[`SelectField using custom brand colors should return a SelectField objec
   text-decoration: inherit;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 2px;
   outline: 0;
   width: 100%;

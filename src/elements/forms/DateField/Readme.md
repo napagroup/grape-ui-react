@@ -9,19 +9,30 @@ All props that were introduced by grape-ui as well as some important existing ca
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
-      <DateField name="exampleDateFieldOverlayProps" />
+      <DateField
+        name="exampleDateFieldOverlayProps"
+      />
     </Box>
     <Box px={1} width={[1, 1 / 2]}>
-      <DateField formStyle="filled" name="exampleDateField" />
+      <DateField
+        formStyle="filled"
+        name="exampleDateField"
+      />
     </Box>
   </Flex>
-  <Text lg>Calendar Only <code>calendarOnly=&#123;true&#125;</code></Text>
+  <Text lg>
+    {'Calendar Only '}
+    <code>calendarOnly=&#123;true&#125;</code>
+  </Text>
   <Flex flexDirection={['column', null, 'row']}>
     <Box px={1} width={[1, null, 1 / 2]}>
       <DateField
@@ -37,7 +48,10 @@ import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
       />
     </Box>
   </Flex>
-  <Text lg>Plain Text <code>plainText=&#123;true&#125;</code></Text>
+  <Text lg>
+    {'Plain Text '}
+    <code>plainText=&#123;true&#125;</code>
+  </Text>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <DateField
@@ -62,7 +76,10 @@ import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -107,7 +124,10 @@ You can specify the left or right alignment of the menu by using `menuAlignment`
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>
@@ -123,7 +143,12 @@ import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
       <DateField
         assistiveText="I dropdown responsively"
         formStyle="filled"
-        menuAlignment={['left', 'right', 'left', 'right']}
+        menuAlignment={[
+          'left',
+          'right',
+          'left',
+          'right'
+        ]}
         name="exampleDateFieldAlignmentResponsive"
       />
     </Box>
@@ -137,7 +162,10 @@ You can define if the menu will appear above or below the control by using `menu
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>
@@ -153,7 +181,12 @@ import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
       <DateField
         assistiveText="menuPlacement={['top', 'bottom', 'top', 'bottom']}"
         formStyle="filled"
-        menuPlacement={['top', 'bottom', 'top', 'bottom']}
+        menuPlacement={[
+          'top',
+          'bottom',
+          'top',
+          'bottom'
+        ]}
         name="exampleDateFieldPlacementTopResponsive"
       />
     </Box>
@@ -170,7 +203,12 @@ import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
       <DateField
         assistiveText="menuPlacement={['bottom', 'top', 'bottom', 'top']}"
         formStyle="filled"
-        menuPlacement={['bottom', 'top', 'bottom', 'top']}
+        menuPlacement={[
+          'bottom',
+          'top',
+          'bottom',
+          'top'
+        ]}
         name="exampleDateFieldPlacementBottomResponsive"
       />
     </Box>
@@ -189,7 +227,10 @@ You can override specific position values by using either:
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>
@@ -236,7 +277,10 @@ import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 
 const styles = {
   assistiveTextProps: {
@@ -328,7 +372,10 @@ The state is being set via the `onChange` function. `onChange` is calling a func
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 
 class DateFieldExample extends React.Component {
   constructor(props) {
@@ -343,7 +390,11 @@ class DateFieldExample extends React.Component {
     };
   }
 
-  handleDayChange({ formattedDay, modifiers, selectedDay }) {
+  handleDayChange({
+      formattedDay,
+      modifiers,
+      selectedDay
+    }) {
     this.setState({
       selectedDay: formattedDay,
       isEmpty: !selectedDay,
@@ -351,7 +402,11 @@ class DateFieldExample extends React.Component {
   }
 
 
-  handleBirthdayChange({ formattedDay, modifiers, selectedDay }) {
+  handleBirthdayChange({
+      formattedDay,
+      modifiers,
+      selectedDay
+    }) {
     this.setState({
       birthday: selectedDay,
       isBirthdayEmpty: !selectedDay,
@@ -360,12 +415,21 @@ class DateFieldExample extends React.Component {
 
 
   render() {
-    const { birthday, selectedDay, isEmpty, isBirthdayEmpty } = this.state;
+    const {
+      birthday,
+      isBirthdayEmpty,
+      isEmpty,
+      selectedDay,
+    } = this.state;
     const selectedLocalString= `You chose ${selectedDay}`;
     const birthdayLocalString= `You chose ${new Date(birthday).toLocaleDateString()}`;
       return (
         <ThemeProvider theme={{}}>
-          <Flex flexDirection={['column', 'row']}>
+          <Flex
+            flexDirection={[
+              'column',
+              'row'
+            ]}>
             <Box px={1} width={[1, 1 / 2]}>
               <DateField
                 assistiveText={
@@ -420,7 +484,10 @@ This example shows how two `DateField` components can work together for selectin
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Paragraph } from 'src/elements/typography'; // ... from 'grape-ui-react'
 import { Button } from '../../Button'; // ... from 'grape-ui-react'
 import moment from 'moment';
@@ -462,18 +529,34 @@ class DateFieldExample extends React.Component {
   }
 
   render() {
-    const { from, to, isFromValid, isToValid } = this.state;
-    const modifiers = { start: from, end: to };
+    const {
+      from,
+      isFromValid,
+      isToValid,
+      to,
+    } = this.state;
+    const modifiers = {
+      start: from,
+      end: to,
+    };
     const fromLocalString= from && isFromValid ? `From: ${new Date(from).toLocaleDateString()}` : "" ;
     const toLocalString= to && isToValid ? `To: ${new Date(to).toLocaleDateString()}` : "";
       return (
         <ThemeProvider theme={{}}>
-          <Paragraph>{`${fromLocalString}${fromLocalString && toLocalString ? ' - ' : ''}${toLocalString} `}</Paragraph>
-          <Flex flexDirection={['column', 'row']}>
+          <Paragraph>
+            {fromLocalString}
+            {fromLocalString && toLocalString ? ' - ' : ''}
+            {toLocalString}
+          </Paragraph>
+          <Flex
+            flexDirection={['column', 'row']}
+          >
             <Box px={1} width={[1, 1 / 2]}>
               <DateField
                 dayPickerProps={{
-                  selectedDays: [from, { from, to }],
+                  selectedDays: [from, {
+                    from, to
+                  }],
                   disabledDays: { after: to },
                   month: from,
                   modifiers,
@@ -481,11 +564,20 @@ class DateFieldExample extends React.Component {
                   toMonth: to,
                 }}
                 labelText="From"
-                menuDirection={['column', null, 'row']}
-                menuDirectionViewportBreakpoint={{ column:  '879px', row: '880px' }}
+                menuDirection={[
+                  'column',
+                  null,
+                  'row'
+                ]}
+                menuDirectionViewportBreakpoint={{
+                  column: '879px',
+                  row: '880px'
+                }}
                 name="fromDateFieldState"
                 onChange={this.handleFromChange}
-                validationError={!isFromValid ? 'This day is invalid' : ''}
+                validationError={
+                  !isFromValid ? 'This day is invalid' : ''
+                }
                 value={from}
                 valueFormat="M/D/YYYY"
               />
@@ -493,8 +585,12 @@ class DateFieldExample extends React.Component {
             <Box px={1} width={[1, 1 / 2]}>
               <DateField
                 dayPickerProps={{
-                  selectedDays: [to, { from, to }],
-                  disabledDays: { before: from },
+                  selectedDays: [to, {
+                    from, to
+                  }],
+                  disabledDays: {
+                    before: from
+                  },
                   modifiers,
                   month: from,
                   fromMonth: from,
@@ -502,17 +598,30 @@ class DateFieldExample extends React.Component {
                 }}
                 formStyle="filled"
                 labelText="To"
-                menuAlignment={['left','right']}
-                menuDirection={['column', null, 'row']}
+                menuAlignment={[
+                  'left',
+                  'right'
+                ]}
+                menuDirection={[
+                  'column',
+                  null,
+                  'row'
+                ]}
                 name="toDateFieldState"
                 onChange={this.handleToChange}
-                validationError={!isToValid ? 'This day is invalid' : ''}
+                validationError={
+                  !isToValid ? 'This day is invalid' : ''
+                }
                 value={to}
                 valueFormat="M/D/YYYY"
               />
             </Box>
           </Flex>
-          <Button onClick={this.handleClear}>Clear</Button>
+          <Button
+            onClick={this.handleClear}
+          >
+            Clear
+          </Button>
         </ThemeProvider>
     );
   }
@@ -531,7 +640,10 @@ class DateFieldExample extends React.Component {
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import 'moment/locale/it';
 import 'moment/locale/ja';
 import MomentLocaleUtils from 'react-day-picker/moment';
@@ -574,14 +686,17 @@ import MomentLocaleUtils from 'react-day-picker/moment';
 ```
 
 `<DateField>` Supports a ref attribute to get to the underlying input element.
-You can pass in either a createRef(), or via "callback refs". Examples are demonstrated below
+You can pass in either a createRef(), or via "callback refs". Examples are demonstrated below:
 
 #### Ref support - Getting to the element
 
 ```jsx inside Markdown
 import { useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Button } from '../../Button';
 
 const onBtnClick = inputName => () => {
@@ -602,18 +717,26 @@ const colorOptions = [
 ];
 const linkState = () => null;
 <ThemeProvider theme={{}}>
-  <Flex flexDirection={['column', 'row']} justifyContent="center" mb={[1, 2]}>
+  <Flex
+    flexDirection={['column', 'row']}
+    justifyContent="center"
+    mb={[1, 2]}
+  >
     <Button onClick={onRegisterClick}>
       Focus Outlined
     </Button>
-    <Button onClick={onBtnClick('exampleRefFilled')}>
+    <Button onClick={
+      onBtnClick('exampleRefFilled')
+    }>
       Focus Filled
     </Button>
   </Flex>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <DateField
-        inputRef={e => { calendarRef.current = e; }}
+        inputRef={
+          e => { calendarRef.current = e; }
+        }
         labelText="Calendar"
         name="exampleRefOutlined"
         onChange={this.handleDayChange}
@@ -622,7 +745,11 @@ const linkState = () => null;
     <Box px={1} width={[1, 1 / 2]}>
       <DateField
         formStyle="filled"
-        inputRef={ref => { this.exampleRefFilled = ref; }}
+        inputRef={
+          ref => {
+            this.exampleRefFilled = ref;
+          }
+        }
         labelText="Calendar"
         menuAlignment={['left','right']}
         name="exampleRefFilled"
@@ -639,23 +766,39 @@ For further documentation on integrating UI component libraries with react-hook-
 
 ```jsx inside Markdown
 import moment from 'moment';
-import { useForm, Controller } from 'react-hook-form';
+import {
+  Controller,
+  useForm,
+} from 'react-hook-form';
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Header } from 'src/elements/typography';
 
 const {
   control,
   register,
   watch,
-} = useForm({ defaultValues: { enrollmentDate: new Date() } });
+} = useForm({
+  defaultValues: {
+    enrollmentDate: new Date()
+  }
+});
 
 const enrollmentDate = watch('enrollmentDate');
 moment.locale('en');
 
 <ThemeProvider theme={{}}>
-  <Header.h5 margin="0 0 1rem">Enrollment Date: {moment(enrollmentDate).format('MMMM Do, YYYY')} </Header.h5>
-  <Flex flexDirection={['column', 'row']} pb={7}>
+  <Header.h5 margin="0 0 1rem">
+    {'Enrollment Date: '}
+    {moment(enrollmentDate).format('MMMM Do, YYYY')}
+  </Header.h5>
+  <Flex
+    flexDirection={['column', 'row']}
+    pb={7}
+  >
     <Box px={1} width={[1, 1 / 2]} pb={50}>
       <Controller
         as={<DateField />}
@@ -663,10 +806,11 @@ moment.locale('en');
         labelText="Enrollment Date"
         locale="it"
         name="enrollmentDate"
-        onChange={selected => selected[0].selectedDay}
+        onChange={
+          selected => selected[0].selectedDay
+        }
       />
     </Box>
-
   </Flex>
 </ThemeProvider>
 ```

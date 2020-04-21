@@ -6,13 +6,41 @@ import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
 import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Paragraph } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
-<Flex alignItems="flex-start" flexDirection="column">
-  <Button>Basic Button <code>&lt;button&gt;</code></Button>
-  <Button href="#">Basic Button <code>&lt;a&gt;</code></Button>
-  <Button emailHref={{ to: 'email@grape-ui.com' }}>Basic Button using emailHref <code>&lt;a&gt;</code></Button>
+<Flex
+  alignItems="flex-start"
+  flexDirection="column"
+>
+  <Button>
+    {'Basic Button '}
+    <code>&lt;button&gt;</code>
+  </Button>
+  <Button href="#">
+    {'Basic Button '}
+    <code>&lt;a&gt;</code>
+  </Button>
+  <Button
+    emailHref={{
+      to: 'email@grape-ui.com'
+    }}
+  >
+    {'Basic Button using emailHref '}
+    <code>&lt;a&gt;</code>
+  </Button>
   <Router>
-    <Button to="./">Basic Button <code>&lt;Link&gt;</code>*</Button>
-    <Paragraph color="gray" sm>*Please note, <code>&lt;Button&gt;</code> components that use <code>&lt;Link&gt;</code> need to be wrapped in a <code>&lt;Router&gt;</code> component from 'react-router-dom'.</Paragraph>
+    <Button to="./">
+      {'Basic Button '}
+      <code>&lt;Link&gt;</code>
+      *
+    </Button>
+    <Paragraph color="gray" sm>
+      {'*Please note, '}
+      <code>&lt;Button&gt;</code>
+      {' components that use '}
+      <code>&lt;Link&gt;</code>
+      {' need to be wrapped in a '}
+      <code>&lt;Router&gt;</code>
+      {` component from 'react-router-dom'.`}
+      </Paragraph>
   </Router>
 </Flex>
 ```
@@ -37,12 +65,11 @@ const [count, setCount] = useState(0);
     color="white"
     contained
     ellipsis
+    fontSize="26px"
     m={[1, 2, 3, 4]}
     name="exampleColor"
     onClick={e => this.console.log('Oink')}
     outline
-    pl={20}
-    pt={2}
     raised
     title="Click on me and check out the console."
   >
@@ -56,29 +83,20 @@ const [count, setCount] = useState(0);
     borderRadius="100%"
     color="cornflowerblue"
     contained
+    fontSize="26px"
     m={[1, 2, 3, 4]}
     name="exampleColor"
     onClick={() => setCount(count + 1)}
     outline
-    pb={0}
-    pl={0}
-    pr={0}
-    pt={0}
+    pb={2}
+    pl={3}
+    pr={3}
+    pt={2}
     raised
     textAlign="center"
     title="Click on me and check out the console."
   >
-    <Flex
-      alignItems="center"
-      justifyContent="center"
-      mb="-2px"
-      ml="2px"
-      mr={-1}
-      mt="-2px"
-      size={40}
-    >
-      🍪
-    </Flex>
+    🍪
   </Button>
   <Text>You have clicked the cookie {`${count} time${count == 1 ? '' : 's'}`}.</Text>
 </Flex>

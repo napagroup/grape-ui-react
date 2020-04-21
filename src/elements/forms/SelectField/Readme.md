@@ -6,7 +6,10 @@
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Paragraph, Text } from 'src/elements/typography';
 
 const colorOptions = [
@@ -39,7 +42,10 @@ const linkState = () => null;
       />
     </Box>
   </Flex>
-  <Paragraph lg>Disabled <code>disabled=&#123;true&#125;</code></Paragraph>
+  <Paragraph lg>
+    {'Disabled '}
+    <code>disabled=&#123;true&#125;</code>
+  </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <SelectField
@@ -65,7 +71,10 @@ const linkState = () => null;
       />
     </Box>
   </Flex>
-  <Paragraph lg>Plain Text <code>plainText=&#123;true&#125;</code></Paragraph>
+  <Paragraph lg>
+    {'Plain Text '}
+    <code>plainText=&#123;true&#125;</code>
+  </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <SelectField
@@ -76,7 +85,10 @@ const linkState = () => null;
         onChange={linkState()}
         options={colorOptions}
         plainText
-        value={[colorOptions[0], colorOptions[1]]}
+        value={[
+          colorOptions[0],
+          colorOptions[1]
+        ]}
       />
     </Box>
     <Box px={1} width={[1, 1 / 2]}>
@@ -96,14 +108,17 @@ const linkState = () => null;
 ```
 
 `<SelectField>` Supports a ref attribute to get to the underlying input element.
-You can pass in either a createRef(), or via "callback refs". Examples are demonstrated below
+You can pass in either a createRef(), or via "callback refs". Examples are demonstrated below:
 
 #### Ref support - Getting to the element
 
 ```jsx inside Markdown
 import { useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Button } from '../../Button';
 
 const onBtnClick = inputName => () => {
@@ -126,18 +141,28 @@ const colorOptions = [
 const linkState = () => null;
 
 <ThemeProvider theme={{}}>
-  <Flex flexDirection={['column', 'row']} justifyContent="center" mb={[1, 2]}>
+  <Flex
+    flexDirection={['column', 'row']}
+    justifyContent="center"
+    mb={[1, 2]}
+  >
     <Button onClick={onRegisterClick}>
       Focus Outlined
     </Button>
-    <Button onClick={onBtnClick('exampleColorFilled')}>
+    <Button
+      onClick={
+        onBtnClick('exampleColorFilled')
+      }
+    >
       Focus Filled
     </Button>
   </Flex>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <SelectField
-        inputRef={e => { nameRef.current = e; }}
+        inputRef={e => {
+          nameRef.current = e;
+        }}
         isClearable
         labelText="Color"
         name="exampleColorOutlined"
@@ -148,7 +173,9 @@ const linkState = () => null;
     <Box px={1} width={[1, 1 / 2]}>
       <SelectField
         formStyle="filled"
-        inputRef={ref => { this.exampleColorFilled = ref; }}
+        inputRef={ref => {
+          this.exampleColorFilled = ref;
+        }}
         isClearable
         labelText="Color"
         name="exampleColorFilled"
@@ -164,7 +191,10 @@ const linkState = () => null;
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { rogueOptions } from '../examples/';
 
 const linkState = () => null;
@@ -227,7 +257,10 @@ You can also use custom components within the SelectField control.  This is usef
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Box, Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 import { components } from 'react-select';
 import { rogueOptions } from '../examples/';
@@ -247,7 +280,9 @@ const CustomOption = ({ children, ...props }) => (
   <components.Option {...props}>
     <Flex flexDirection="column">
       <Text>{children}</Text>
-      <Text color="gray.light" sm>{props.data.value}</Text>
+      <Text color="gray.light" sm>
+        {props.data.value}
+      </Text>
     </Flex>
   </components.Option>
 );
@@ -282,13 +317,22 @@ You can also use custom styles within the SelectField control.  Simply use `styl
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
-import { afkapSongOptions, princeSongOptions } from '../examples';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  afkapSongOptions,
+  princeSongOptions,
+} from '../examples';
 
 const linkState = () => null;
 
 <ThemeProvider theme={{}}>
-  <Flex flexDirection={['column', 'row']} mb={180}>
+  <Flex
+    flexDirection={['column', 'row']}
+    mb={180}
+  >
     <Box px={1} width={[1, 1 / 2]}>
       <SelectField
         activeColor="purple.dark"
@@ -335,9 +379,15 @@ For further documentation on integrating UI component libraries with react-hook-
 #### Demonstrating Controlled Components (via react-hook-form)
 
 ```jsx inside Markdown
-import { useForm, Controller } from 'react-hook-form';
+import {
+  Controller,
+  useForm,
+} from 'react-hook-form';
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Header } from 'src/elements/typography';
 import { Button } from '../../Button';
 
@@ -393,7 +443,9 @@ const selectedCourseOptions = watch('courses') || [];
 const chosenCourses = selectedCourseOptions.map(option => option.label).join(', ');
 
 <ThemeProvider theme={{}}>
-  <Header.h5 margin="0 0 1rem">{selectedStatusOption && selectedStatusOption.label ? `Your Enrollment Status is currently ${selectedStatusOption.label}` : '' } </Header.h5>
+  <Header.h5 margin="0 0 1rem">
+    {selectedStatusOption && selectedStatusOption.label ? `Your Enrollment Status is currently ${selectedStatusOption.label}` : '' }
+  </Header.h5>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <Controller
@@ -408,8 +460,13 @@ const chosenCourses = selectedCourseOptions.map(option => option.label).join(', 
       />
     </Box>
   </Flex>
-  <Header.h5 margin="0 0 1rem">{chosenCourses ? `You've chosen interest in the following courses: ${chosenCourses}.` : ''} </Header.h5>
-  <Flex flexDirection={['column', 'row']} pb={7}>
+  <Header.h5 margin="0 0 1rem">
+    {chosenCourses ? `You've chosen interest in the following courses: ${chosenCourses}.` : ''}
+  </Header.h5>
+  <Flex
+    flexDirection={['column', 'row']}
+    pb={7}
+  >
     <Box px={1} width={[1, 1 / 2]}>
       <Controller
         as={<SelectField />}
@@ -435,8 +492,14 @@ Enable loading options asynchronously by adding the isAsync property and a callb
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from '../../grid'; // ... from 'grape-ui-react'
-import { Paragraph, Text } from '../../typography';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Paragraph,
+  Text,
+} from 'src/elements/typography';
 
 const colorOptions = [
   { label: 'Black', value: 'black' },
@@ -447,6 +510,7 @@ const colorOptions = [
   { label: 'White', value: 'white' },
   { label: 'Yellow', value: 'yellow' },
 ];
+
 const loadOptionsPromise = inputValue => {
   return new Promise(resolve => {
     setTimeout(() => {
@@ -455,8 +519,11 @@ const loadOptionsPromise = inputValue => {
     }, 1000);
   });
 };
+
 const linkState = () => null;
+
 const formatCreateLabel = value => `Set value to "${value}"`;
+
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>

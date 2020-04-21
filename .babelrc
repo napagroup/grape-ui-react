@@ -2,37 +2,24 @@
   "plugins": [
     "@babel/plugin-transform-modules-commonjs",
     "@babel/plugin-proposal-class-properties",
-    [ "babel-plugin-webpack-alias", { "config": "src/internals/webpack/webpack.config.js" } ]
+    [ "babel-plugin-webpack-alias", { "config": "src/internals/webpack/webpack.config.js" } ],
+    [ "@babel/transform-runtime", { "corejs": 3 } ]
   ],
   "presets": [
     [
       "@babel/preset-env",
       {
-        "debug": false,
-				"modules": false,
-        "useBuiltIns": "usage",
-        "corejs": 3
+        "corejs":
+        {
+          "version": 3.6
+        },
+        "useBuiltIns": "entry"
       }
     ],
     "@babel/preset-react"
   ],
   "env": {
     "test": {
-      "presets": [
-        [
-          "@babel/preset-env",
-          {
-            "debug": false,
-            "modules": false,
-            "useBuiltIns": "usage",
-            "corejs": 3,
-            "targets": {
-							"node": "current"
-						}
-          }
-        ],
-        "@babel/preset-react"
-      ],
       "plugins": [
         "transform-es2015-modules-commonjs",
         "dynamic-import-node",

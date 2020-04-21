@@ -5,39 +5,39 @@
       "color": null
     },
     "primary": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandPrimary"
     },
     "danger": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandDanger"
     },
     "dark": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandDark"
     },
     "info": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandInfo"
     },
     "light": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandLight"
     },
     "link": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandLink"
     },
     "secondary": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandSecondary"
     },
     "success": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandSuccess"
     },
     "warning": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandWarning"
     }
   },
@@ -107,39 +107,39 @@
       "color": null
     },
     "primary": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandPrimary"
     },
     "danger": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandDanger"
     },
     "dark": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandDark"
     },
     "info": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandInfo"
     },
     "light": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandLight"
     },
     "link": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandLink"
     },
     "secondary": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandSecondary"
     },
     "success": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandSuccess"
     },
     "warning": {
-      "backgroundColor": null,
+      "backgroundColor": "transparent",
       "color": "brandWarning"
     }
   }

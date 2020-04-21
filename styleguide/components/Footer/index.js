@@ -15,7 +15,14 @@ FooterParagraph.defaultProps = {
 };
 
 const Footer = () => (
-  <Flex alignItems="center" flexWrap="wrap" justifyContent="center" p={[1, 2, 3]} style={{ backgroundColor: '#dbdbdb' }}>
+  <Flex
+    alignItems="center"
+    flex="none"
+    flexWrap="wrap"
+    justifyContent="center"
+    p={[1, 2, 3]}
+    style={{ backgroundColor: '#dbdbdb' }}
+  >
     <FooterParagraph>
       {'grape-ui created by '}
       <Link href={urlRoutes.externalNapa}>Napa Group LLC</Link>

@@ -504,6 +504,7 @@ exports[`Button using variant styles Button with variant set to danger should re
 .c0 {
   border: 0;
   border-radius: 4px;
+  background-color: transparent;
   color: hsl(4.1,89.6%,58.4%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
@@ -560,6 +561,7 @@ exports[`Button using variant styles Button with variant set to primary should r
 .c0 {
   border: 0;
   border-radius: 4px;
+  background-color: transparent;
   color: hsl(323.3,84.6%,28%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;

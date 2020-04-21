@@ -4,6 +4,7 @@ import { Box, Flex } from 'src';
 import * as styledHelpers from 'src/utils/styledHelpers';
 import styled, { ThemeProvider } from 'styled-components';
 import { Footer, Toolbar } from '../../components';
+import '../../default.css';
 
 const theme = {
   buttons: {
@@ -19,6 +20,7 @@ const TocFlex = styled(Box)`
 TocFlex.defaultProps = {
   px: [2, 3, 4, 5],
   py: [1, 2, 3],
+  width: [1, 'auto'],
 };
 
 const StyleGuideRenderer = ({
@@ -28,18 +30,22 @@ const StyleGuideRenderer = ({
   children,
 }) => (
   <ThemeProvider theme={theme}>
-    <Flex className="root" flexDirection="column" minHeight="100vh">
+    <Flex
+      className="root"
+      flexDirection="column"
+      height="100%"
+    >
       <Toolbar version={version} />
       <Flex
-        flex={1}
+        flex="1 0 auto"
         flexDirection={['column', 'row']}
-        justifyContent={['center', 'flex-start']}
+        justifyContent="flex-start"
       >
         <TocFlex>
           {toc}
         </TocFlex>
         <Box flex={[null, 1]}>
-          <Box maxWidth={960} mx="auto" px={[1, 2, 3, 4]} py={[1, 2, 3]}>
+          <Box maxWidth={960} mx="auto" px={[2, 3, 4]} py={[1, 2, 3]}>
             {children}
           </Box>
         </Box>
