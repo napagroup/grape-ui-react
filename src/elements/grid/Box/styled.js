@@ -1,10 +1,13 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
+  background,
   border,
   flexbox,
+  grid,
   layout,
   position,
+  shadow,
   space,
   system,
 } from 'styled-system';
@@ -12,10 +15,13 @@ import { BoxComponent } from './component';
 
 const Box = styled(BoxComponent)`
   ${system({ boxSizing: true })}
+  ${background}
   ${border}
   ${flexbox}
+  ${grid}
   ${layout}
   ${position}
+  ${shadow}
   ${space}
 `;
 

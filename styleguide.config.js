@@ -56,6 +56,10 @@ module.exports = {
           name: 'Components',
           sectionDepth: 1,
         },
+        {
+          content: 'src/elements/grid/advancedExamples.md',
+          name: 'Advanced Examples',
+        },
       ],
     },
     {
