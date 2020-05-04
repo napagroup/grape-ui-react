@@ -141,6 +141,10 @@ module.exports = {
         },
       ],
     },
+    {
+      components: './src/elements/Toolbar/styled.js',
+      name: 'Toolbar',
+    },
   ],
   skipComponentsWithoutExample: true,
   styleguideComponents: require('./styleguide/containers/index.js'), // eslint-disable-line global-require
