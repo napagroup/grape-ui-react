@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Box, Flex } from 'src';
 import * as styledHelpers from 'src/utils/styledHelpers';
 import styled, { ThemeProvider } from 'styled-components';
-import { Footer, Toolbar } from '../../components';
+import { Footer, AppBar } from '../../components';
 import '../../default.css';
 
 const theme = {
@@ -35,7 +35,7 @@ const StyleGuideRenderer = ({
       flexDirection="column"
       height="100%"
     >
-      <Toolbar version={version} />
+      <AppBar version={version} />
       <Flex
         flex="1 0 auto"
         flexDirection={['column', 'row']}
