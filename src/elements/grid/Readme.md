@@ -7,7 +7,7 @@ A lot of the props for these components were created using styled-system's funct
 * `background` [(API)](https://styled-system.com/api#background)
 * `border` [(API)](https://styled-system.com/api#border)
 * `flexbox` [(API)](https://styled-system.com/api#flexbox)
-* `grid` [(API)](https://styled-system.com/api#grid)
+* `grid` [(API)](https://styled-system.com/api#grid-layout)
 * `layout` [(API)](https://styled-system.com/api#layout)
 * `position` [(API)](https://styled-system.com/api#position)
 * `shadow` [(API)](https://styled-system.com/api#shadow)
