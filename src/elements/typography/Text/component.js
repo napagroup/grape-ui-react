@@ -7,11 +7,13 @@ const propsToTrim = {
   ...spaceProps.propTypes,
   ...typography.propTypes,
 };
+
 export const TextComponent = ({ children, ...props }) => (
   <span {...removeSomeProps(props, Object.keys(propsToTrim))}>
     {children}
   </span>
 );
+
 TextComponent.propTypes = {
   children: PropTypes.any.isRequired,
 };
