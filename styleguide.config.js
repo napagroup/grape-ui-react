@@ -149,9 +149,6 @@ module.exports = {
   skipComponentsWithoutExample: true,
   styleguideComponents: require('./styleguide/containers/index.js'), // eslint-disable-line global-require
   styles: './styleguide/styles.js',
-  // template: {
-  //   favicon: 'data:;base64,iVBORw0KGgo=',
-  // },
   theme: './styleguide/themes.js',
   title: 'Docs | grape-ui',
   tocMode: 'collapse',
