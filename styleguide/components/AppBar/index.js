@@ -9,7 +9,6 @@ import {
   Text,
   Toolbar,
 } from 'src';
-import { HashRouter as Router } from 'react-router-dom';
 import { ReactSVG } from 'react-svg';
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -23,7 +22,7 @@ const leftArea = (
         <ReactSVG src={logo} />
       </Link>
     </Box>
-    <Link to={urlRoutes.docsPage}>
+    <Link href={urlRoutes.docsPage}>
       <Button color="black" fontWeight="bold">DOCS</Button>
     </Link>
   </Flex>
@@ -41,15 +40,14 @@ const rightArea = (version) => (
       <FontAwesomeIcon icon={faTwitter} />
     </Button>
     <Box display={['none', 'block']}>
-      <Link to={urlRoutes.docsPage}>
+      <Link href={urlRoutes.docsPage}>
         <Button color="brandPrimary">Getting Started</Button>
       </Link>
     </Box>
   </Flex>
 );
 
-export const AppBar = ({ title, version }) => (
-  <Router>
+export const AppBar = ({version}) => (
     <Toolbar
       borderBottom="1px solid rgb(203, 39, 168)"
       boxShadow="rgb(132, 11, 85) 0px 1px 0px"
@@ -65,15 +63,12 @@ export const AppBar = ({ title, version }) => (
         width: 1,
       }}
     />
-  </Router>
 );
 
 AppBar.propTypes = {
-  title: PropTypes.string,
   version: PropTypes.string,
 };
 
 AppBar.defaultProps = {
-  title: '',
   version: '',
 };

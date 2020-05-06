@@ -50,7 +50,7 @@ const StyleGuideRenderer = ({
           </Box>
         </Box>
       </Flex>
-      <Footer />
+      <Footer /> 
     </Flex>
   </ThemeProvider>
 );
