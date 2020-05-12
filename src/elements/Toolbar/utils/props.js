@@ -26,6 +26,7 @@ export const toolbarDefaultProps = {
     flex: 1,
   },
   display: 'flex',
+  flex: 'none',
   justifyContent: 'center',
   minHeight: [48, 56, 64],
   px: [3, null, 4],
