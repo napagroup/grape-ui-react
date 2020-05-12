@@ -31,6 +31,9 @@ exports[`Box Component base should return an empty Toolbar with base styling 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
