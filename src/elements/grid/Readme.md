@@ -4,9 +4,13 @@ A lot of the props for these components were created using styled-system's funct
 
 **Both `<Flex>` and `<Box>` use:**
 
+* `background` [(API)](https://styled-system.com/api#background)
+* `border` [(API)](https://styled-system.com/api#border)
 * `flexbox` [(API)](https://styled-system.com/api#flexbox)
+* `grid` [(API)](https://styled-system.com/api#grid-layout)
 * `layout` [(API)](https://styled-system.com/api#layout)
 * `position` [(API)](https://styled-system.com/api#position)
+* `shadow` [(API)](https://styled-system.com/api#shadow)
 * `space` [(API)](https://styled-system.com/api#space)
 
 `<Flex>` is meant to be used as the parent container, where as `<Box>` is meant to be used as the child item.  A great article on how to approach Flexbox design can be found [here on css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).

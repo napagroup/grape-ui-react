@@ -1,8 +1,5 @@
 import * as styledComponents from 'styled-components';
 import { Button } from './elements/Button';
-import { Box, Flex } from './elements/grid';
-import { Image } from './elements/Image';
-import { Table } from './elements/Table';
 import {
   CheckboxField,
   DateField,
@@ -10,6 +7,10 @@ import {
   SelectField,
   TextField,
 } from './elements/forms';
+import { Box, Flex } from './elements/grid';
+import { Image } from './elements/Image';
+import { Table } from './elements/Table';
+import { Toolbar } from './elements/Toolbar';
 import {
   Header,
   Link,
@@ -42,4 +43,5 @@ export {
   Table,
   Text,
   TextField,
+  Toolbar,
 };
