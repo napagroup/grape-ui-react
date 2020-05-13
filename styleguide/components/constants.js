@@ -1,5 +1,5 @@
 const urlRoutes = {
-  docsPage: '/',
+  docsPage: '/docs',
   externalGatsby: 'https://www.gatsbyjs.org',
   externalGithub: 'https://www.github.com/napagroup',
   externalNapa: 'https://www.napa.com',
