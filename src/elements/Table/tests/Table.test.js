@@ -9,6 +9,7 @@ import {
 } from '@testing-library/react';
 import 'jest-styled-components';
 import { ThemeProvider } from 'styled-components';
+import { CodeBlock } from 'src/elements/typography'; // from 'grape-ui-react'
 import { Table } from '..';
 import { columns, testData } from './utils';
 
@@ -29,13 +30,7 @@ describe('Table - kitchen sink snapshot', () => {
     id: 'expander', // It needs an ID
   };
   const renderRowSubComponent = ({ row }) => (
-    <pre
-      style={{
-        fontSize: '10px',
-      }}
-    >
-      <code>{JSON.stringify({ values: row.values }, null, 2)}</code>
-    </pre>
+    <CodeBlock codeString={JSON.stringify({ values: row.values }, null, 2)} />
   );
   const expandableColumns = [expanderCell, ...columns];
   let container;

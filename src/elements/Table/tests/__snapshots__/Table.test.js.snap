@@ -1,6 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Table - kitchen sink snapshot should return table with all components & styling 1`] = `
+.c3 {
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: right;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.c8 {
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c23 {
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 0.8rem;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
 .c16 {
   position: relative;
   background-color: hsl(0,0%,100%);
@@ -335,58 +387,6 @@ exports[`Table - kitchen sink snapshot should return table with all components &
   margin-bottom: 4px;
 }
 
-.c3 {
-  background-color: transparent;
-  color: inherit;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: right;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.c8 {
-  background-color: transparent;
-  color: inherit;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: inherit;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-}
-
-.c23 {
-  background-color: transparent;
-  color: inherit;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 0.8rem;
-  font-weight: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-  line-height: 1.5;
-  text-align: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 .c25 {
   border: 0;
   border-radius: 4px;
@@ -525,6 +525,13 @@ exports[`Table - kitchen sink snapshot should return table with all components &
 }
 
 @media screen and (min-width:40em) {
+  .c23 {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width:40em) {
   .c19 {
     margin-left: 8px;
     margin-right: 8px;
@@ -556,13 +563,6 @@ exports[`Table - kitchen sink snapshot should return table with all components &
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-  }
-}
-
-@media screen and (min-width:40em) {
-  .c23 {
-    margin-left: 8px;
-    margin-right: 8px;
   }
 }
 

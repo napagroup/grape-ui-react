@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import { grapeUICustomStyle, codeBlockPropTypes } from './utils';
+import { codePropTypes, grapeUICustomStyle } from './utils';
 
-export const CodeBlockComponent = ({
+export const CodeComponent = ({
   codeString,
   language,
   style,
@@ -13,19 +13,19 @@ export const CodeBlockComponent = ({
   <SyntaxHighlighter
     language={language}
     style={style}
-    {...removeSomeProps(props, Object.keys(codeBlockPropTypes))}
+    {...removeSomeProps(props, Object.keys(codePropTypes))}
   >
     {codeString}
   </SyntaxHighlighter>
 );
 
-CodeBlockComponent.propTypes = {
+CodeComponent.propTypes = {
   codeString: PropTypes.string,
   language: PropTypes.string,
   style: PropTypes.any,
 };
 
-CodeBlockComponent.defaultProps = {
+CodeComponent.defaultProps = {
   codeString: '',
   language: 'javascript',
   style: grapeUICustomStyle,

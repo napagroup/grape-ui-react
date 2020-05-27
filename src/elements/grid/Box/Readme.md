@@ -39,18 +39,21 @@ When applying margin to `<Box>`, simply use the `m` attribute for margins.
 
 ```jsx
 import { ThemeProvider } from 'styled-components';
-import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
+import {
+  Code,
+  Text,
+} from 'src/elements/typography'; // from 'grape-ui-react'
 import { StyledBox as Box } from '../examples';
 
 <ThemeProvider theme={{}}>
   <Box m={48}>
     <Text>
       {'There is a '}
-      <code>margin</code>
+      <Code codeString="margin" />
       {' set to '}
-      <code>48</code>
+      <Code codeString="{48}" />
       {' on this '}
-      <code>&lt;Box&gt;</code>
+      <Code codeString="<Box>" />
       .
     </Text>
   </Box>
@@ -111,18 +114,18 @@ When applying padding to `<Box>`, simply use the `p` attribute for padding.
 
 ```jsx
 import { ThemeProvider } from 'styled-components';
-import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
+import { Code, Text } from 'src/elements/typography'; // from 'grape-ui-react'
 import { StyledBox as Box } from '../examples';
 
 <ThemeProvider theme={{}}>
   <Box p={48}>
     <Text>
       {'There is a '}
-      <code>padding</code>
+      <Code codeString="padding" />
       {' set to '}
-      <code>48</code>
+      <Code codeString="{48}" />
       {' on this '}
-      <code>&lt;Box&gt;</code>
+      <Code codeString="<Box>" />
       .
     </Text>
   </Box>
@@ -183,18 +186,18 @@ When applying width to `<Box>`, simply use the `width` attribute for widths.
 
 ```jsx
 import { ThemeProvider } from 'styled-components';
-import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
+import { Code, Text } from 'src/elements/typography'; // from 'grape-ui-react'
 import { StyledBox as Box } from '../examples';
 
 <ThemeProvider theme={{}}>
   <Box width={1 / 8}>
     <Text>
       {'There is a '}
-      <code>width</code>
+      <Code codeString="width" />
       {' set to '}
-      <code>1 / 8</code>
+      <Code codeString="{1 / 8}" />
       {' on this '}
-      <code>&lt;Box&gt;</code>
+      <Code codeString="<Box>" />
     </Text>
   </Box>
 </ThemeProvider>
@@ -383,8 +386,51 @@ import { StyledBox as Box } from '../examples';
 ```jsx
 import { ThemeProvider } from 'styled-components';
 import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
-import { Link, Text } from 'src/elements/typography'; // from 'grape-ui-react'
+import {
+  Code,
+  CodeBlock,
+  Link,
+  Text,
+} from 'src/elements/typography'; // from 'grape-ui-react'
 import { StyledBox as Box } from '../examples';
+
+const alignSelfExample01 = [
+  'auto',
+  'flex-start',
+  'flex-end',
+  'center'
+];
+const alignSelfExample02 = 'stretch';
+const alignSelfExample03 = 'baseline';
+
+const flexExample01 = 1;
+const flexExample02 = [2, 1, 3, 2];
+const flexExample03 = '1 1 auto';
+
+const flexBasisExample01 = 120;
+const flexBasisExample02 = [200, 100, 300, 200];
+const flexBasisExample03 = 'auto';
+
+const flexGrowExample01 = [2, 1, 3, 2];
+const flexGrowExample02 = 1;
+
+const flexShrinkExample01 = [2, 1, 3, 2];
+const flexShrinkExample02 = 1;
+
+const justifySelfExample01 = [
+  'auto',
+  'flex-start',
+  'flex-end',
+  'center'
+];
+const justifySelfExample02 = 'stretch';
+const justifySelfExample03 = 'baseline';
+
+const orderExample01 = 1;
+const orderExample02 = -1;
+const orderExample03 = [9, 21, 13, 2];
+const orderExample04 = [17, 12, null, 7];
+const orderExample05 = 20;
 
 <ThemeProvider theme={{}}>
   <Text lg>
@@ -394,35 +440,31 @@ import { StyledBox as Box } from '../examples';
     >
       Align Self
     </Link>
-    <code> alignSelf="string"</code>
+    <Code codeString={'alignSelf="string"'} />
   </Text>
   <Flex
     flexDirection={['column', 'row']}
     mb={[1, 2, 3, 4]}
   >
     <Box
-      alignSelf={[
-        'auto',
-        'flex-start',
-        'flex-end',
-        'center'
-      ]}
+      alignSelf={alignSelfExample01}
     >
-      <Text fontFamily="monospace">
-        alignSelf=&#123;['auto', 'flex-start', 'flex-end', 'center']&#125;
-      </Text>
+      <CodeBlock
+        codeString={`alignSelf={[${alignSelfExample01}]}`}
+      />
     </Box>
-    <Box alignSelf="stretch">
-      <Text fontFamily="monospace">
-        alignSelf="stretch"
-      </Text>
+    <Box alignSelf={alignSelfExample02}>
+      <CodeBlock
+        codeString={`alignSelf="${alignSelfExample02}"`}
+      />
     </Box>
-    <Box alignSelf="baseline">
-      <Text fontFamily="monospace">
-        alignSelf="baseline"
-      </Text>
+    <Box alignSelf={alignSelfExample03}>
+      <CodeBlock
+        codeString={`alignSelf="${alignSelfExample03}"`}
+      />
     </Box>
   </Flex>
+
   <Text lg>
     <Link
       href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex"
@@ -430,28 +472,25 @@ import { StyledBox as Box } from '../examples';
     >
       Flex
     </Link>
-    <code> flex=&#123;number&#125; or "string"</code>
+    <Code
+      codeString={'flex={number} or "string"'}
+    />
   </Text>
   <Flex
     flexDirection={['column', 'row']}
     mb={[1, 2, 3, 4]}
   >
-    <Box flex={1}>
-      <Text fontFamily="monospace">
-        flex=&#123;1&#125;
-      </Text>
+    <Box flex={flexExample01}>
+      <CodeBlock codeString={`flex={${flexExample01}}`} />
     </Box>
-    <Box flex={[2, 1, 3, 2]}>
-      <Text fontFamily="monospace">
-        flex=&#123;[2, 1, 3, 2]&#125;
-      </Text>
+    <Box flex={flexExample02}>
+      <CodeBlock codeString={`flex={[${flexExample02}]}`} />
     </Box>
-    <Box flex="1 1 auto">
-      <Text fontFamily="monospace">
-        flex="1 1 auto"
-      </Text>
+    <Box flex={flexExample03}>
+      <CodeBlock codeString={`flex="${flexExample03}"`} />
     </Box>
   </Flex>
+
   <Text lg>
     <Link
       href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis"
@@ -459,28 +498,23 @@ import { StyledBox as Box } from '../examples';
     >
       Flex Basis
     </Link>
-    <code> flexBasis=&#123;number&#125; or "string"</code>
+    <Code codeString={'flexBasis={number} or "string"'} />
   </Text>
   <Flex
     flexDirection={['column', 'row']}
     mb={[1, 2, 3, 4]}
   >
-    <Box flexBasis={120}>
-      <Text fontFamily="monospace">
-        flexBasis=&#123;1&#125;
-      </Text>
+    <Box flexBasis={flexBasisExample01}>
+      <CodeBlock codeString={`flexBasis={${flexBasisExample01}}`} />
     </Box>
-    <Box flexBasis={[200, 100, 300, 200]}>
-      <Text fontFamily="monospace">
-        flexBasis=&#123;[2, 1, 3, 2]&#125;
-      </Text>
+    <Box flexBasis={flexBasisExample02}>
+      <CodeBlock codeString={`flexBasis={[${flexBasisExample02}]}`} />
     </Box>
-    <Box flexBasis="auto">
-      <Text fontFamily="monospace">
-        flexBasis="auto"
-      </Text>
+    <Box flexBasis={flexBasisExample03}>
+      <CodeBlock codeString={`flexBasis={${flexBasisExample03}}`} />
     </Box>
   </Flex>
+
   <Text lg>
     <Link
       href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow"
@@ -488,23 +522,20 @@ import { StyledBox as Box } from '../examples';
     >
       Flex Grow
     </Link>
-    <code> flexGrow=&#123;number&#125;</code>
+    <Code codeString="flexGrow={number}" />
   </Text>
   <Flex
     flexDirection={['column', 'row']}
     mb={[1, 2, 3, 4]}
   >
-    <Box flexGrow={[2, 1, 3, 2]}>
-      <Text fontFamily="monospace">
-        flexGrow=&#123;[2, 1, 3, 2]&#125;
-      </Text>
+    <Box flexGrow={flexGrowExample01}>
+      <CodeBlock codeString={`flexGrow={[${flexGrowExample01}]}`} />
     </Box>
-    <Box flexGrow={1}>
-      <Text fontFamily="monospace">
-        flexGrow=&#123;1&#125;
-      </Text>
+    <Box flexGrow={flexGrowExample02}>
+      <CodeBlock codeString={`flexGrow={${flexGrowExample02}}`} />
     </Box>
   </Flex>
+
   <Text lg>
     <Link
       href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink"
@@ -512,23 +543,20 @@ import { StyledBox as Box } from '../examples';
     >
       Flex Shrink
     </Link>
-    <code> flexShrink=&#123;number&#125;</code>
+    <Code codeString="flexShrink={number}" />
   </Text>
   <Flex
     flexDirection={['column', 'row']}
     mb={[1, 2, 3, 4]}
   >
-    <Box flexShrink={[2, 1, 3, 2]}>
-      <Text fontFamily="monospace">
-        flexShrink=&#123;[2, 1, 3, 2]&#125;
-      </Text>
+    <Box flexShrink={flexShrinkExample01}>
+      <CodeBlock codeString={`flexShrink={[${flexShrinkExample01}]}`} />
     </Box>
-    <Box flexShrink={1}>
-      <Text fontFamily="monospace">
-        flexShrink=&#123;1&#125;
-      </Text>
+    <Box flexShrink={flexShrinkExample02}>
+      <CodeBlock codeString={`flexShrink={${flexShrinkExample02}}`} />
     </Box>
   </Flex>
+
   <Text lg>
     <Link
       href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self"
@@ -536,35 +564,23 @@ import { StyledBox as Box } from '../examples';
     >
       Justify Self
     </Link>
-    <code> justifySelf="string"</code>
+    <Code codeString={'justifySelf="string"'} />
   </Text>
   <Flex
     flexDirection={['column', 'row']}
     mb={[1, 2, 3, 4]}
   >
-    <Box
-      justifySelf={[
-        'auto',
-        'flex-start',
-        'flex-end',
-        'center'
-      ]}
-    >
-      <Text fontFamily="monospace">
-        justifySelf=&#123;['auto', 'flex-start', 'flex-end', 'center']&#125;
-      </Text>
+    <Box justifySelf={justifySelfExample01}>
+      <CodeBlock codeString={`justifySelf={[${justifySelfExample01}]}`} />
     </Box>
-    <Box justifySelf="stretch">
-      <Text fontFamily="monospace">
-        justifySelf="stretch"
-      </Text>
+    <Box justifySelf={justifySelfExample02}>
+      <CodeBlock codeString={`justifySelf={${justifySelfExample02}}`} />
     </Box>
-    <Box justifySelf="baseline">
-      <Text fontFamily="monospace">
-        justifySelf="baseline"
-      </Text>
+    <Box justifySelf={justifySelfExample03}>
+      <CodeBlock codeString={`justifySelf={${justifySelfExample03}}`} />
     </Box>
   </Flex>
+
   <Text lg>
     <Link
       href="https://developer.mozilla.org/en-US/docs/Web/CSS/order"
@@ -572,36 +588,26 @@ import { StyledBox as Box } from '../examples';
     >
       Order
     </Link>
-    <code> order=&#123;number&#125;</code>
+    <Code codeString="order={number}" />
   </Text>
   <Flex
     flexDirection="column"
     mb={[1, 2, 3, 4]}
   >
-    <Box order={1}>
-      <Text fontFamily="monospace">
-        order=&#123;1&#125;
-      </Text>
+    <Box order={orderExample01}>
+      <Code codeString={`order={${orderExample01}}`} />
     </Box>
-    <Box order={-1}>
-      <Text fontFamily="monospace">
-        order=&#123;-1&#125;
-      </Text>
+    <Box order={orderExample02}>
+      <Code codeString={`order={${orderExample02}}`} />
     </Box>
-    <Box order={[9, 21, 13, 2]}>
-      <Text fontFamily="monospace">
-        order=&#123;[9, 21, 13, 2]&#125;
-      </Text>
+    <Box order={orderExample03}>
+      <Code codeString={`order={[${orderExample03}]}`} />
     </Box>
-    <Box order={[17, 12, null, 7]}>
-      <Text fontFamily="monospace">
-        order=&#123;[17, 12, null, 7]&#125;
-      </Text>
+    <Box order={orderExample04}>
+      <Code codeString={`order={[${orderExample04}]}`} />
     </Box>
-    <Box order={20}>
-      <Text fontFamily="monospace">
-        order=&#123;99&#125;
-      </Text>
+    <Box order={orderExample05}>
+      <Code codeString={`order={${orderExample05}}`} />
     </Box>
   </Flex>
 </ThemeProvider>

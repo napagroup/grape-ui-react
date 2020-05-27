@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 import { ThemeProvider } from 'styled-components';
-import { CodeBlock } from 'src/elements/typography/CodeBlock';
+import { Code } from 'src/elements/typography';
 
 const emptyTheme = {};
 
@@ -11,11 +11,11 @@ const assertReactElement = element => {
   return component.toJSON();
 };
 
-describe('Box Component base', () => {
-  it('should return an empty Toolbar with base styling', () => {
+describe('Code Component base', () => {
+  it('should return an empty Code with base styling', () => {
     const element = (
       <ThemeProvider theme={emptyTheme}>
-        <CodeBlock codeString={'<CodeBlock codeString="" />'} />
+        <Code codeString={'<Code codeString="" />'} />
       </ThemeProvider>
     );
     expect(assertReactElement(element)).toMatchSnapshot();

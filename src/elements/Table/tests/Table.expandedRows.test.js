@@ -29,13 +29,9 @@ describe('Table - with row expansion enabled', () => {
     id: 'expander', // It needs an ID
   };
   const renderRowSubComponent = ({ row }) => (
-    <pre
-      style={{
-        fontSize: '10px',
-      }}
-    >
-      <code>{`${expandedRowInnerText} ${row.id}`}</code>
-    </pre>
+    <div>
+      {`${expandedRowInnerText} ${row.id}`}
+    </div>
   );
   const expandableColumns = [expanderCell, ...columns];
   const titleToQuery = 'Toggle Row Expanded';

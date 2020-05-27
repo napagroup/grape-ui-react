@@ -10,7 +10,11 @@ import {
   Box,
   Flex,
 } from 'src/elements/grid'; // ... from 'grape-ui-react'
-import { Paragraph, Text } from 'src/elements/typography';
+import {
+  Code,
+  Paragraph,
+  Text,
+} from 'src/elements/typography';
 
 const colorOptions = [
   { label: 'Red', value: 'red' },
@@ -44,7 +48,7 @@ const linkState = () => null;
   </Flex>
   <Paragraph lg>
     {'Disabled '}
-    <code>disabled=&#123;true&#125;</code>
+    <Code codeString="disabled={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -73,7 +77,7 @@ const linkState = () => null;
   </Flex>
   <Paragraph lg>
     {'Plain Text '}
-    <code>plainText=&#123;true&#125;</code>
+    <Code codeString="plainText={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>

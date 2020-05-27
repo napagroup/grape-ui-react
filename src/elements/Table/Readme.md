@@ -1,5 +1,7 @@
 The `<table>` component was built off [react-table](https://react-table.js.org/). It is intended for displaying tabular data in organized and easy to read layout. It is not recommended for use outside of that requirement.
 
+*Note:* Be sure to include [`useMemo`](https://reactjs.org/docs/hooks-reference.html#usememo) for the columns and data.
+
 ### Basic Example
 
 ```jsx in Markdown

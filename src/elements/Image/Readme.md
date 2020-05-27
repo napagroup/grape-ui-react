@@ -26,7 +26,7 @@ const imageLink = "https://unsplash.com/@nachoargenta?utm_source=unsplash&utm_me
 ```jsx in Markdown
 import ImageSrc01 from './examples/nacho-dominguez-argenta-cCVzi_mKovs-unsplash.jpg';
 import { Image } from './';
-import { Paragraph } from 'src/elements/typography';
+import { CodeBlock } from 'src/elements/typography';
 
 const altText01 = "Green grapes hanging from a vine; Photo by Nacho Domínguez Argenta on Unsplash";
 
@@ -36,56 +36,42 @@ const altText01 = "Green grapes hanging from a vine; Photo by Nacho Domínguez A
     src={ImageSrc01}
     width={[1, 1 / 2, 1 / 3, 1 / 4]}
   />
-  <Paragraph fontFamily="monospace">
-    width=&#123;[1, 1 / 2, 1 / 3, 1 / 4]&#125;
-  </Paragraph>
+  <CodeBlock codeString="width={[1, 1 / 2, 1 / 3, 1 / 4]}" />
   <Image
     alt={altText01}
     display={['block', 'inline']}
     src={ImageSrc01}
   />
-  <Paragraph fontFamily="monospace">
-    display=&#123;['block', 'inline']&#125;
-  </Paragraph>
+  <CodeBlock codeString="display={['block', 'inline']}" />
   <Image
     alt={altText01}
     minWidth={128}
     src={ImageSrc01}
   />
-  <Paragraph fontFamily="monospace">
-    minWidth=&#123;128&#125;
-  </Paragraph>
+  <CodeBlock codeString="minWidth={128}" />
   <Image
     alt={altText01}
     maxWidth={1024}
     src={ImageSrc01}
   />
-  <Paragraph fontFamily="monospace">
-    maxWidth=&#123;1024&#125;
-  </Paragraph>
+  <CodeBlock codeString="maxWidth={1024}" />
   <Image
     alt={altText01}
     height={[48, 64]}
     src={ImageSrc01}
   />
-  <Paragraph fontFamily="monospace">
-    height=&#123;[48, 64]&#125;
-  </Paragraph>
+  <CodeBlock codeString="height={[48, 64]}" />
   <Image
     alt={altText01}
     minHeight={[384, 512]}
     src={ImageSrc01}
   />
-  <Paragraph fontFamily="monospace">
-    minHeight=&#123;[384, 512]&#125;
-  </Paragraph>
+  <CodeBlock codeString="minHeight={[384, 512]}" />
   <Image
     alt={altText01}
     src={ImageSrc01}
     maxHeight={[384, 512]}
   />
-  <Paragraph fontFamily="monospace">
-    maxHeight=&#123;[384, 512]&#125;
-  </Paragraph>
+  <CodeBlock codeString="maxHeight={[384, 512]}" />
 </div>
 ```
