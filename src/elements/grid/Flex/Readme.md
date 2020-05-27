@@ -473,7 +473,6 @@ const FlexExample = ({ exampleCode, count = 3, boxWidth = 1 / count }) => {
     listItems.push(elementItem);
   }
 
-  console.log({ listItems });
   return (
     <Flex
       mb={[1, 2, 3, 4]}
