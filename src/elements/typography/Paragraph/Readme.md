@@ -39,9 +39,11 @@
 To define a lead paragraph, just add `lead` to `<Paragraph>`.
 
 ```jsx in Markdown
+import { Code } from 'src/elements/typography';
+
 <Paragraph lead>
   {'This is a lead paragraph. It is leading and meant to start off a block of text. This is using '}
-  <code>&lt;Paragraph lead&gt;</code>
+  <Code codeString="<Paragraph lead>" />
   .
 </Paragraph>
 ```

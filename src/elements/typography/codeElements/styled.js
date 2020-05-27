@@ -17,10 +17,10 @@ import {
   textAlignCore,
   textDecorationCore,
 } from 'src/utils/styledHelpers';
-import { CodeBlockComponent } from './component';
-import { codeBlockDefaultProps, codeBlockPropTypes } from './utils';
+import { CodeComponent } from './component';
+import { codeDefaultProps, codePropTypes } from './utils';
 
-const CodeBlock = styled(CodeBlockComponent)`
+const Code = styled(CodeComponent)`
   ${background}
   ${border}
   ${colorCore}
@@ -39,13 +39,27 @@ const CodeBlock = styled(CodeBlockComponent)`
   }
 `;
 
+Code.propTypes = {
+  ...codePropTypes,
+};
+
+Code.defaultProps = {
+  ...codeDefaultProps,
+};
+
+const CodeBlock = styled(Code)``;
+
 CodeBlock.propTypes = {
-  ...codeBlockPropTypes,
+  ...codePropTypes,
 };
 
 CodeBlock.defaultProps = {
-  ...codeBlockDefaultProps,
+  ...codeDefaultProps,
+  display: 'block',
+  my: [1, null, 2],
+  overflowX: 'auto',
+  p: [1, 2, 3],
 };
 
 /** @component */
-export { CodeBlock };
+export { Code, CodeBlock };

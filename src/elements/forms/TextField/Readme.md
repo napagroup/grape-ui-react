@@ -17,6 +17,7 @@ import {
   Flex,
 } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import {
+  Code,
   Link,
   Paragraph,
   Text,
@@ -44,7 +45,7 @@ import {
   </Flex>
   <Paragraph lg>
     {'Disabled '}
-    <code>disabled=&#123;true&#125;</code>
+    <Code codeString="disabled={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -67,7 +68,7 @@ import {
   </Flex>
   <Text lg>
     {'Email '}
-    <code>email=&#123;true&#125;</code>
+    <Code codeString="email={true}" />
   </Text>
   <Paragraph sm>
     <Text fontWeight="bold">NOTE:</Text>
@@ -92,7 +93,7 @@ import {
   </Flex>
   <Paragraph lg>
     {'Multiline '}
-    <code>multiline=&#123;true&#125;</code>
+    <Code codeString="multiline={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -115,7 +116,7 @@ import {
   </Flex>
   <Paragraph lg>
     {'Password '}
-    <code>password=&#123;true&#125;</code>
+    <Code codeString="password={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -137,7 +138,7 @@ import {
   </Flex>
   <Paragraph lg>
     {'Plain Text '}
-    <code>plainText=&#123;true&#125;</code>
+    <Code codeString="plainText={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -214,13 +215,20 @@ import {
 
 ```jsx inside Markdown
 import { ThemeProvider } from 'styled-components';
-import { Flex, Box } from 'src/elements/grid'; // ... from 'grape-ui-react'
-import { Paragraph, Text } from 'src/elements/typography';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
+import {
+  Code,
+  Paragraph,
+  Text,
+} from 'src/elements/typography';
 
 <ThemeProvider theme={{}}>
   <Text lg>
     {'Currency '}
-    <code>currency=&#123;true&#125;</code>
+    <Code codeString="currency={true}" />
   </Text>
   <Paragraph sm>
     <Text fontWeight="bold">
@@ -247,7 +255,7 @@ import { Paragraph, Text } from 'src/elements/typography';
   </Flex>
   <Paragraph lg>
     {'Integer '}
-    <code>integer=&#123;true&#125;</code>
+    <Code codeString="integer={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -268,7 +276,7 @@ import { Paragraph, Text } from 'src/elements/typography';
   </Flex>
   <Paragraph lg>
     {'Numeric '}
-    <code>numeric=&#123;true&#125;</code>
+    <Code codeString="numeric={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -291,7 +299,7 @@ import { Paragraph, Text } from 'src/elements/typography';
   </Flex>
   <Paragraph lg>
     {'Phone '}
-    <code>phone=&#123;true&#125;</code>
+    <Code codeString="phone={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -314,7 +322,7 @@ import { Paragraph, Text } from 'src/elements/typography';
   </Flex>
   <Paragraph lg>
     {'Postal Code '}
-    <code>postalCode=&#123;true&#125;</code>
+    <Code codeString="postalCode={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -377,7 +385,10 @@ import {
   Flex,
 } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Button } from 'src/elements/Button';
-import { Paragraph } from 'src/elements/typography';
+import {
+  Code,
+  Paragraph,
+} from 'src/elements/typography';
 
 const onBtnClick = inputName => () => {
   if(this[inputName]) {
@@ -392,7 +403,7 @@ const onRegisterClick = () => {
 <ThemeProvider theme={{}}>
   <Paragraph lg>
     {'With '}
-    <code>useRef</code>
+    <Code codeString="useRef" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>

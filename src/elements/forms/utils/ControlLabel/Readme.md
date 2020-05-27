@@ -142,6 +142,7 @@ import {
   DateField,
 } from 'src/elements/forms';
 import {
+  Code,
   Link,
   Paragraph,
 } from 'src/elements/typography';
@@ -181,7 +182,7 @@ const controlGroupSpacing = [1, 2, 3];
   />
   <Paragraph color="gray.dark">
     {'Example 2. Passing through '}
-    <code>controlLabelProps</code>
+    <Code codeString="controlLabelProps" />
     :
   </Paragraph>
   <DateField

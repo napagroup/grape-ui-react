@@ -33,18 +33,21 @@ When applying margin to `<Flex>`, simply use the `m` attribute for margins.
 
 ```jsx
 import { ThemeProvider } from 'styled-components';
-import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
+import {
+  Code,
+  Text,
+} from 'src/elements/typography'; // from 'grape-ui-react'
 import { StyledFlex as Flex } from '../examples';
 
 <ThemeProvider theme={{}}>
   <Flex m={48} style={{ background: '#ee525f' }}>
     <Text>
       {'There is a '}
-      <code>margin</code>
+      <Code codeString="margin" />
       {' set to '}
-      <code>48</code>
+      <Code codeString="48" />
       {' on this '}
-      <code>&lt;Flex&gt;</code>
+      <Code codeString="<Flex>" />
       .
     </Text>
   </Flex>
@@ -105,7 +108,10 @@ When applying padding to `<Flex>`, simply use the `p` attribute for padding.
 
 ```jsx
 import { ThemeProvider } from 'styled-components';
-import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
+import {
+  Code,
+  Text,
+} from 'src/elements/typography'; // from 'grape-ui-react'
 import { StyledFlex as Flex } from '../examples';
 
 <ThemeProvider theme={{}}>
@@ -117,11 +123,11 @@ import { StyledFlex as Flex } from '../examples';
   >
     <Text>
       {'There is a '}
-      <code>padding</code>
+      <Code codeString="padding" />
       {' set to '}
-      <code>48</code>
+      <Code codeString="48" />
       {' on this '}
-      <code>&lt;Flex&gt;</code>
+      <Code codeString="<Flex>" />
       .
     </Text>
   </Flex>
@@ -182,7 +188,10 @@ When applying width to `<Flex>`, simply use the `width` attribute for widths.
 
 ```jsx
 import { ThemeProvider } from 'styled-components';
-import { Text } from 'src/elements/typography'; // from 'grape-ui-react'
+import {
+  Code,
+  Text,
+} from 'src/elements/typography'; // from 'grape-ui-react'
 import { StyledFlex as Flex } from '../examples';
 
 <ThemeProvider theme={{}}>
@@ -194,11 +203,11 @@ import { StyledFlex as Flex } from '../examples';
   >
     <Text>
       {'There is a '}
-      <code>width</code>
+      <Code codeString="width" />
       {' set to '}
-      <code>1 / 8</code>
+      <Code codeString="1 / 8" />
       {' on this '}
-      <code>&lt;Flex&gt;</code>
+      <Code codeString="<Flex>" />
     </Text>
   </Flex>
 </ThemeProvider>
@@ -424,11 +433,59 @@ import {
   ElementSix,
   ElementSeven,
   ElementEight,
+  StyledBox,
 } from '../examples';
-import { Link, Text } from 'src/elements/typography'; // from 'grape-ui-react'
+import {
+  CodeBlock,
+  Code,
+  Link,
+  Text,
+} from 'src/elements/typography'; // from 'grape-ui-react'
+
+const alignItemsExample01 = { alignItems: 'stretch' };
+const alignItemsExample02 = { alignItems: 'flex-start' };
+
+const FlexExample = ({ exampleCode, count = 3, boxWidth = 1 / count }) => {
+  const exampleString = JSON.stringify(exampleCode);
+
+  const examples = [];
+  for (let i = 0; i < count; ++i) {
+    const exampleItem = {
+      component: StyledBox,
+      props: {
+        height: 70 + (20 * i),
+        width: boxWidth,
+      },
+    };
+    examples.push(exampleItem);
+  }
+  const listItems = [];
+  for (let i = 0; i < examples.length; ++i) {
+    const ElementWrapper = examples[i].component;
+    const elementItem = (
+      <ElementWrapper
+        key={`element-wrapper-${i}`}
+        {...examples[i].props}
+      >
+        <CodeBlock codeString={exampleString} />
+      </ElementWrapper>
+    );
+    listItems.push(elementItem);
+  }
+
+  return (
+    <Flex
+      mb={[1, 2, 3, 4]}
+      {...exampleCode}
+    >
+      {listItems}
+    </Flex>
+  );
+};
 
 <ThemeProvider theme={{}}>
   <div>
+    <hr />
     <Text lg>
       <Link
         href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items"
@@ -436,131 +493,43 @@ import { Link, Text } from 'src/elements/typography'; // from 'grape-ui-react'
       >
         Align Items
       </Link>
-      <code> alignItems="string"</code>
+      <Code codeString={'alignItems="string"'} />
     </Text>
+    <FlexExample
+      exampleCode={{
+        alignItems: 'baseline',
+      }}
+    />
+    <FlexExample
+      exampleCode={{
+        alignItems: 'center',
+      }}
+    />
+    <FlexExample
+      exampleCode={{
+        alignItems: 'flex-start',
+      }}
+    />
+    <FlexExample
+      exampleCode={{
+        alignItems: 'flex-end',
+      }}
+    />
+    <FlexExample
+      exampleCode={{
+        alignItems: 'stretch',
+      }}
+    />
+    <FlexExample
+      exampleCode={{
+        alignItems: [
+          'flex-start',
+          'flex-end',
+          'center'
+        ]
+      }}
+    />
     <hr />
-    <Flex
-      alignItems="stretch"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: alignItems="stretch"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: alignItems="stretch"
-        </Text>
-      </ElementTwo>
-      <ElementThree>
-        <Text fontFamily="monospace">
-          Element 2: alignItems="stretch"
-        </Text>
-      </ElementThree>
-    </Flex>
-    <Flex
-      alignItems="flex-start"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: alignItems="flex-start"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: alignItems="flex-start"
-        </Text>
-      </ElementTwo>
-      <ElementThree>
-        <Text fontFamily="monospace">
-          Element 2: alignItems="flex-start"
-        </Text>
-      </ElementThree>
-    </Flex>
-    <Flex
-      alignItems="flex-end"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: alignItems="flex-end"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: alignItems="flex-end"
-        </Text>
-      </ElementTwo>
-      <ElementThree>
-        <Text fontFamily="monospace">
-          Element 3: alignItems="flex-end"
-        </Text>
-      </ElementThree>
-    </Flex>
-    <Flex
-      alignItems="center"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: alignItems="center"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: alignItems="center"
-        </Text>
-      </ElementTwo>
-      <ElementThree>
-        <Text fontFamily="monospace">
-          Element 3: alignItems="center"
-        </Text>
-      </ElementThree>
-    </Flex>
-    <Flex alignItems="baseline" mb={[1, 2, 3, 4]}>
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: alignItems="baseline"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: alignItems="baseline"
-        </Text>
-      </ElementTwo>
-      <ElementThree>
-        <Text fontFamily="monospace">
-          Element 3: alignItems="baseline"
-        </Text>
-      </ElementThree>
-    </Flex>
-    <Flex
-      alignItems={[
-        'flex-start',
-        'flex-end',
-        'center'
-      ]}
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementFour>
-        <Text fontFamily="monospace">
-          Element 1: justifyContent=&#123;['flex-start', 'flex-end', 'center']&#125;
-        </Text>
-      </ElementFour>
-      <ElementSix>
-        <Text fontFamily="monospace">
-          Element 2: justifyContent=&#123;['flex-start', 'flex-end', 'center']&#125;
-        </Text>
-      </ElementSix>
-      <ElementEight>
-        <Text fontFamily="monospace">
-          Element 3: justifyContent=&#123;['flex-start', 'flex-end', 'center']&#125;
-        </Text>
-      </ElementEight>
-    </Flex>
-
     <Text lg>
       <Link
         href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction"
@@ -568,188 +537,65 @@ import { Link, Text } from 'src/elements/typography'; // from 'grape-ui-react'
       >
         Flex Direction
       </Link>
-      <code> flexDirection="string"</code>
+      <Code codeString={'flexDirection="string"'} />
     </Text>
+    <FlexExample
+      count={2}
+      exampleCode={{
+        flexDirection: "column",
+      }}
+    />
+    <FlexExample
+      count={2}
+      exampleCode={{
+        flexDirection: "row",
+      }}
+    />
+    <FlexExample
+      count={2}
+      exampleCode={{
+        flexDirection: [
+          'column',
+          'row',
+          'column-reverse',
+          'row-reverse'
+        ],
+      }}
+    />
     <hr />
-    <Flex
-      flexDirection="column"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: flexDirection="column"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: flexDirection="column"
-        </Text>
-      </ElementTwo>
-    </Flex>
-    <Flex
-      flexDirection="row"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: flexDirection="row"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: flexDirection="row"
-        </Text>
-      </ElementTwo>
-    </Flex>
-    <Flex
-      flexDirection={[
-        'column',
-        'row',
-        'column-reverse',
-        'row-reverse'
-      ]}
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: flexDirection=&#123;['column', 'row', 'column-reverse', 'row-reverse']&#125;
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: flexDirection=&#123;['column', 'row', 'column-reverse', 'row-reverse']&#125;
-        </Text>
-      </ElementTwo>
-    </Flex>
-
     <Text lg>
       <Link
         href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap"
         target="_blank"
       >Flex Wrap</Link>
-      <code> flexWrap="string"</code>
+      <Code codeString={'flexWrap="string"'} />
     </Text>
+    <FlexExample
+      boxWidth={1 / 2}
+      count={6}
+      exampleCode={{
+        flexWrap: 'nowrap',
+      }}
+    />
+    <FlexExample
+      boxWidth={1 / 2}
+      count={8}
+      exampleCode={{
+        flexWrap: 'wrap',
+      }}
+    />
+    <FlexExample
+      boxWidth={1 / 2}
+      count={6}
+      exampleCode={{
+        flexWrap: [
+          'wrap',
+          'nowrap',
+          'wrap-reverse',
+        ],
+      }}
+    />
     <hr />
-    <Flex
-      flexWrap="nowrap"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: flexWrap="nowrap"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: flexWrap="nowrap"
-        </Text>
-      </ElementTwo>
-      <ElementThree>
-        <Text fontFamily="monospace">
-          Element 3: flexWrap="nowrap"
-        </Text>
-      </ElementThree>
-      <ElementFour>
-        <Text fontFamily="monospace">
-          Element 4: flexWrap="nowrap"
-        </Text>
-      </ElementFour>
-      <ElementFive>
-        <Text fontFamily="monospace">
-          Element 5: flexWrap="nowrap"
-        </Text>
-      </ElementFive>
-      <ElementSix>
-        <Text fontFamily="monospace">
-          Element 6: flexWrap="nowrap"
-        </Text>
-      </ElementSix>
-    </Flex>
-    <Flex
-      flexWrap="wrap"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: flexWrap="wrap"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: flexWrap="wrap"
-        </Text>
-      </ElementTwo>
-      <ElementThree>
-        <Text fontFamily="monospace">
-          Element 3: flexWrap="wrap"
-        </Text>
-      </ElementThree>
-      <ElementFour>
-        <Text fontFamily="monospace">
-          Element 4: flexWrap="wrap"
-        </Text>
-      </ElementFour>
-      <ElementFive>
-        <Text fontFamily="monospace">
-          Element 5: flexWrap="wrap"
-        </Text>
-      </ElementFive>
-      <ElementSix>
-        <Text fontFamily="monospace">
-          Element 6: flexWrap="wrap"
-        </Text>
-      </ElementSix>
-      <ElementSeven>
-        <Text fontFamily="monospace">
-          Element 7: flexWrap="wrap"
-        </Text>
-      </ElementSeven>
-      <ElementEight>
-        <Text fontFamily="monospace">
-          Element 8: flexWrap="wrap"
-        </Text>
-      </ElementEight>
-    </Flex>
-    <Flex
-      flexWrap={[
-        'wrap',
-        'nowrap',
-        'wrap-reverse'
-      ]}
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: flexWrap=&#123;['wrap', 'nowrap', 'wrap-reverse']&#125;
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: flexWrap=&#123;['wrap', 'nowrap', 'wrap-reverse']&#125;
-        </Text>
-      </ElementTwo>
-      <ElementThree>
-        <Text fontFamily="monospace">
-          Element 3: flexWrap=&#123;['wrap', 'nowrap', 'wrap-reverse']&#125;
-        </Text>
-      </ElementThree>
-      <ElementFour>
-        <Text fontFamily="monospace">
-          Element 4: flexWrap=&#123;['wrap', 'nowrap', 'wrap-reverse']&#125;
-        </Text>
-      </ElementFour>
-      <ElementFive>
-        <Text fontFamily="monospace">
-          Element 5: flexWrap=&#123;['wrap', 'nowrap', 'wrap-reverse']&#125;
-        </Text>
-      </ElementFive>
-      <ElementSix>
-        <Text fontFamily="monospace">
-          Element 6: flexWrap=&#123;['wrap', 'nowrap', 'wrap-reverse']&#125;
-        </Text>
-      </ElementSix>
-    </Flex>
-
     <Text lg>
       <Link
         href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
@@ -757,100 +603,50 @@ import { Link, Text } from 'src/elements/typography'; // from 'grape-ui-react'
       >
         Justify Content
       </Link>
-      <code> justifyContent="string"</code>
+      <Code codeString={'justifyContent="string"'} />
     </Text>
-    <hr />
-    <Flex
-      justifyContent="flex-start"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: justifyContent="flex-start"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: justifyContent="flex-start"
-        </Text>
-      </ElementTwo>
-    </Flex>
-    <Flex
-      justifyContent="flex-end"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: justifyContent="flex-end"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: justifyContent="flex-end"
-        </Text>
-      </ElementTwo>
-    </Flex>
-    <Flex
-      justifyContent="center"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: justifyContent="center"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: justifyContent="center"
-        </Text>
-      </ElementTwo>
-    </Flex>
-    <Flex
-      justifyContent="space-between"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: justifyContent="space-between"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: justifyContent="space-between"
-        </Text>
-      </ElementTwo>
-    </Flex>
-    <Flex
-      justifyContent="space-around"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: justifyContent="space-around"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: justifyContent="space-around"
-        </Text>
-      </ElementTwo>
-    </Flex>
-    <Flex
-      justifyContent="space-evenly"
-      mb={[1, 2, 3, 4]}
-    >
-      <ElementOne>
-        <Text fontFamily="monospace">
-          Element 1: justifyContent="space-evenly"
-        </Text>
-      </ElementOne>
-      <ElementTwo>
-        <Text fontFamily="monospace">
-          Element 2: justifyContent="space-evenly"
-        </Text>
-      </ElementTwo>
-    </Flex>
-
+    <FlexExample
+      boxWidth="auto"
+      count={2}
+      exampleCode={{
+        justifyContent: 'center',
+      }}
+    />
+    <FlexExample
+      boxWidth="auto"
+      count={2}
+      exampleCode={{
+        justifyContent: 'flex-start',
+      }}
+    />
+    <FlexExample
+      boxWidth="auto"
+      count={2}
+      exampleCode={{
+        justifyContent: 'flex-end',
+      }}
+    />
+    <FlexExample
+      boxWidth="auto"
+      count={2}
+      exampleCode={{
+        justifyContent: 'space-around',
+      }}
+    />
+    <FlexExample
+      boxWidth="auto"
+      count={2}
+      exampleCode={{
+        justifyContent: 'space-between',
+      }}
+    />
+    <FlexExample
+      boxWidth="auto"
+      count={2}
+      exampleCode={{
+        justifyContent: 'space-evenly',
+      }}
+    />
   </div>
 </ThemeProvider>
 ```

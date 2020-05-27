@@ -48,63 +48,63 @@ import { ListItem } from '../';
 `<List.ol>` takes the standard `type` attribute to define if uppercase alpha, lowercase alpha, uppercase roman, lowercase roman.
 
 ```jsx in Markdown
-import { ListItem } from '../';
+import { Code, ListItem } from 'src/elements/typography';
 
 <div>
   <List.ol type="A">
     <ListItem>
       {'Uppercase Alpha List Item 1 '}
-      <code>type=&quot;A&quot;</code>
+      <Code codeString={'type="A"'} />
     </ListItem>
     <ListItem>
       {'Uppercase Alpha List Item 2 '}
-      <code>type=&quot;A&quot;</code>
+      <Code codeString={'type="A"'} />
     </ListItem>
     <ListItem>
       {'Uppercase Alpha List Item 3 '}
-      <code>type=&quot;A&quot;</code>
+      <Code codeString={'type="A"'} />
     </ListItem>
   </List.ol>
   <List.ol type="a">
     <ListItem>
       {'Lowercase Alpha List Item 1 '}
-      <code>type=&quot;a&quot;</code>
+      <Code codeString={'type="a"'} />
     </ListItem>
     <ListItem>
       {'Lowercase Alpha List Item 2 '}
-      <code>type=&quot;a&quot;</code>
+      <Code codeString={'type="a"'} />
     </ListItem>
     <ListItem>
       {'Lowercase Alpha List Item 3 '}
-      <code>type=&quot;a&quot;</code>
+      <Code codeString={'type="a"'} />
     </ListItem>
   </List.ol>
   <List.ol type="I">
     <ListItem>
       {'Uppercase Roman List Item 1 '}
-      <code>type=&quot;I&quot;</code>
+      <Code codeString={'type="I"'} />
     </ListItem>
     <ListItem>
       {'Uppercase Roman List Item 2 '}
-      <code>type=&quot;I&quot;</code>
+      <Code codeString={'type="I"'} />
     </ListItem>
     <ListItem>
       {'Uppercase Roman List Item 3 '}
-      <code>type=&quot;I&quot;</code>
+      <Code codeString={'type="I"'} />
     </ListItem>
   </List.ol>
   <List.ol type="i">
     <ListItem>
       {'Lowercase Roman List Item 1 '}
-      <code>type=&quot;i&quot;</code>
+      <Code codeString={'type="i"'} />
     </ListItem>
     <ListItem>
       {'Lowercase Roman List Item 2 '}
-      <code>type=&quot;i&quot;</code>
+      <Code codeString={'type="i"'} />
     </ListItem>
     <ListItem>
       {'Lowercase Roman List Item 3 '}
-      <code>type=&quot;i&quot;</code>
+      <Code codeString={'type="i"'} />
     </ListItem>
   </List.ol>
 </div>
@@ -115,13 +115,13 @@ import { ListItem } from '../';
 Add the attribute `unstyled` to have an unstyled view. Add the attribute `inline` to have an inline view.
 
 ```jsx in Markdown
-import { ListItem } from '../';
+import { Code, ListItem } from 'src/elements/typography';
 
 <div>
   <List unstyled>
     <ListItem>
       {'This List component was set to '}
-      <code>unstyled</code>
+      <Code codeString="unstyled" />
       .
     </ListItem>
     <ListItem>
@@ -134,7 +134,7 @@ import { ListItem } from '../';
   <List inline>
     <ListItem>
       {'This List component was set to '}
-      <code>inline</code>
+      <Code codeString="inline" />
       .
     </ListItem>
     <ListItem>

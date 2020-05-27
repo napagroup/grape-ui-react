@@ -1,6 +1,6 @@
-## [`<CodeBlock>`](#/Typography/Components/CodeBlock)
+## [`<Code>`](#/Typography/Components/Code)
 
-Learn about our CodeBlock component, built upon [react-syntax-highlighter](https://github.com/conorhastings/react-syntax-highlighter).
+Learn about our Code and CodeBlock components, built upon [react-syntax-highlighter](https://github.com/conorhastings/react-syntax-highlighter).
 ***
 
 ## [`<Header>`](#/Typography/Components/Header)

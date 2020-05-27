@@ -1,23 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Box Component base should return an empty Toolbar with base styling 1`] = `
+exports[`Code Component base should return an empty Code with base styling 1`] = `
 .c0 {
   background: whitesmoke;
   border: 1px solid #eee;
   border-radius: 4px;
   background-color: transparent;
-  color: hsl(0,0%,25%);
-  font-size: 0.8rem;
+  color: inherit;
+  font-size: 80%;
   font-weight: inherit;
-  display: block;
-  overflow-x: auto;
+  display: inline-block;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
   letter-spacing: inherit;
   line-height: 1.5;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 4px;
   text-align: inherit;
   -webkit-text-decoration: inherit;
@@ -26,20 +25,6 @@ exports[`Box Component base should return an empty Toolbar with base styling 1`]
 
 .c0 > code {
   font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
-}
-
-@media screen and (min-width:40em) {
-  .c0 {
-    padding: 8px;
-  }
-}
-
-@media screen and (min-width:52em) {
-  .c0 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    padding: 16px;
-  }
 }
 
 <pre
@@ -51,7 +36,7 @@ exports[`Box Component base should return an empty Toolbar with base styling 1`]
   }
 >
   <code>
-    &lt;CodeBlock codeString=
+    &lt;Code codeString=
     <span
       style={
         Object {
