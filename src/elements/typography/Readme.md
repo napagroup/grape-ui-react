@@ -6,6 +6,8 @@ Typography is important in grape-ui.  Here is an example using the typography co
 
 ```jsx in Markdown
 import {
+  Code,
+  CodeBlock,
   Header,
   Link,
   List,
@@ -165,18 +167,15 @@ const urlStarMaker = "http://www.astro.sunysb.edu/fwalter/AST389/TEXTS/StarMaker
 
   <Paragraph>
     {`Here's some code: `}
-    <Text fontFamily="monospace">
-      e = mc
-      <sup>2</sup>
-    </Text>
+    <Code codeString="e=mc²" />
   </Paragraph>
-  <pre>
-    <Text fontFamily="monospace">
+  <CodeBlock
+    codeString={`
       And
       Some
       Poetry
-    </Text>
-  </pre>
+    `}
+  />
   <dl>
     <dt>
       Coldly

@@ -1,3 +1,8 @@
+## [`<Code>`](#/Typography/Components/Code)
+
+Learn about our Code and CodeBlock components, built upon [react-syntax-highlighter](https://github.com/conorhastings/react-syntax-highlighter).
+***
+
 ## [`<Header>`](#/Typography/Components/Header)
 
 Learn about our header title components, including display headers and style overrides for it.

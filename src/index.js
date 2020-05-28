@@ -12,6 +12,8 @@ import { Image } from './elements/Image';
 import { Table } from './elements/Table';
 import { Toolbar } from './elements/Toolbar';
 import {
+  Code,
+  CodeBlock,
   Header,
   Link,
   List,
@@ -26,6 +28,8 @@ export {
   Box,
   Button,
   CheckboxField,
+  Code,
+  CodeBlock,
   DateField,
   Flex,
   Form,

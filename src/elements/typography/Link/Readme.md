@@ -5,6 +5,7 @@ When adding in links, you can use `<Link>`. What's cool about this tag is that i
 ```jsx in Markdown
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Code } from 'src/elements/typography';
 
 <Router>
   <Flex
@@ -12,12 +13,12 @@ import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
   >
     <Link to="./">
       {'By using '}
-      <code>to</code>
+      <Code codeString="to" />
       , it is using React Router.
     </Link>
     <Link href="#">
       {'Leaving out '}
-      <code>to</code>
+      <Code codeString="to" />
       , it is using a native anchor tag.
     </Link>
     <Link
@@ -25,7 +26,7 @@ import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
       target="_blank"
     >
       {'Basic '}
-      <code>target</code>
+      <Code codeString="target" />
       {' attribute works as well.'}
     </Link>
     <Link
@@ -33,9 +34,7 @@ import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
         to: 'emailaddress@grapeui.com'
       }}>
       {'For mailto links '}
-      <code>
-        href=&quot;mailto:emailaddress@grape-ui.com&quot;
-      </code>
+      <Code codeString={'href="mailto:emailaddress@grape-ui.com"'} />
       .
     </Link>
     <Link

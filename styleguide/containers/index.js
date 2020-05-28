@@ -1,6 +1,10 @@
 const path = require('path');
 
 module.exports = {
+  CodeRenderer: path.join(
+    __dirname,
+    './CodeRenderer'
+  ),
   ComponentsListRenderer: path.join(
     __dirname,
     './ComponentsListRenderer'

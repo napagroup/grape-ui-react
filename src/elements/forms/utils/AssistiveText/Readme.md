@@ -91,6 +91,7 @@ import {
   TextField,
 } from 'src/elements/forms';
 import {
+  Code,
   Link,
   Paragraph,
 } from 'src/elements/typography';
@@ -150,7 +151,7 @@ const controlGroupSpacing = [1, 2, 3];
   />
   <Paragraph color="gray.dark">
     {'Example 4. Passing through '}
-    <code>assistiveTextProps</code>
+    <Code codeString="assistiveTextProps" />
     :
   </Paragraph>
   <DateField

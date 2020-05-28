@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Code Component base should return an empty Code with base styling 1`] = `
+.c0 {
+  background: whitesmoke;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: transparent;
+  color: inherit;
+  font-size: 80%;
+  font-weight: inherit;
+  display: inline-block;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 4px;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0 > code {
+  font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+}
+
+<pre
+  className="c0"
+  style={
+    Object {
+      "background": "hsl(0, 0%, 98%)",
+    }
+  }
+>
+  <code>
+    &lt;Code codeString=
+    <span
+      style={
+        Object {
+          "color": "hsl(174.4, 100%, 29.4%)",
+        }
+      }
+    >
+      ""
+    </span>
+     /&gt;
+  </code>
+</pre>
+`;

@@ -8,37 +8,41 @@ Here are some more utilities that could be used:
 * `textDecoration`
 
 ```jsx in Markdown
-import { Paragraph, Text } from './index';
+import {
+  Code,
+  Paragraph,
+  Text,
+} from './index';
 
 <div>
   <Paragraph
     ellipsis
   >
     {'Set '}
-    <code>ellipsis</code>
+    <Code codeString="ellipsis" />
     {' to true if you want the sentence to end in a single line. Set '}
-    <code>ellipsis</code>
+    <Code codeString="ellipsis" />
     {' to true if you want the sentence to end in a single line.'}
   </Paragraph>
   <Paragraph
     ellipsis={2}
   >
     {'Set '}
-    <code>ellipsis</code>
+    <Code codeString="ellipsis" />
     {' to a number if you want the sentence to end at N line.'}
     {'Set '}
-    <code>ellipsis</code>
+    <Code codeString="ellipsis" />
     {' to a number if you want the sentence to end at N line.'}
     {'Set '}
-    <code>ellipsis</code>
+    <Code codeString="ellipsis" />
     {' to a number if you want the sentence to end at N line.'}
     {'Set '}
-    <code>ellipsis</code>
+    <Code codeString="ellipsis" />
     {' to a number if you want the sentence to end at N line.'}
   </Paragraph>
   <Paragraph>
     {'Add '}
-    <code>fontWeight</code>
+    <Code codeString="fontWeight" />
     {' to make text '}
     <Text
       fontWeight="300"
@@ -61,7 +65,7 @@ import { Paragraph, Text } from './index';
   </Paragraph>
   <Paragraph>
     {'Add '}
-    <code>italic</code>
+    <Code codeString="italic" />
     {' to make text '}
     <Text italic>
       Italic
@@ -69,7 +73,7 @@ import { Paragraph, Text } from './index';
   </Paragraph>
   <Paragraph>
     {'Add '}
-    <code>kerning</code>
+    <Code codeString="kerning" />
     {' to adjust the spacing '}
     <Text
       kerning="1px"
@@ -86,9 +90,9 @@ import { Paragraph, Text } from './index';
   </Paragraph>
   <Paragraph>
     {'Add '}
-    <code>textAlign</code>
+    <Code codeString="textAlign" />
     {' to align any text element. Just use any '}
-    <code>text-align</code>
+    <Code codeString="text-align" language="css" />
     {' property as the value.'}
   </Paragraph>
   <Paragraph
@@ -96,7 +100,7 @@ import { Paragraph, Text } from './index';
   >
     Left Aligned
     <br />
-    <code>textAlign=&quot;left&quot;</code>
+    <Code codeString={'textAlign="left"'} />
     {' is set.'}
   </Paragraph>
   <Paragraph
@@ -104,7 +108,7 @@ import { Paragraph, Text } from './index';
   >
     Center Aligned
     <br />
-    <code>textAlign=&quot;center&quot;</code>
+    <Code codeString={'textAlign="center"'} />
     {' is set.'}
   </Paragraph>
   <Paragraph
@@ -112,12 +116,12 @@ import { Paragraph, Text } from './index';
   >
     Right Aligned
     <br />
-    <code>textAlign=&quot;right&quot;</code>
+    <Code codeString={'textAlign="right"'} />
     {' is set.'}
   </Paragraph>
   <Paragraph>
     {'Add '}
-    <code>textDecoration</code>
+    <Code codeString="textDecoration" />
     {' to set '}
     <Text
       textDecoration="underline"

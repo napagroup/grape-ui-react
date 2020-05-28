@@ -4,7 +4,7 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
 import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
-import { Paragraph } from 'src/elements/typography'; // ... from 'grape-ui-react'
+import { Code, Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 <Flex
   alignItems="flex-start"
@@ -12,11 +12,17 @@ import { Paragraph } from 'src/elements/typography'; // ... from 'grape-ui-react
 >
   <Button>
     {'Basic Button '}
-    <code>&lt;button&gt;</code>
+    <Code
+      codeString="<button>"
+      language="html"
+    />
   </Button>
   <Button href="#">
     {'Basic Button '}
-    <code>&lt;a&gt;</code>
+    <Code
+      codeString="<a>"
+      language="html"
+    />
   </Button>
   <Button
     emailHref={{
@@ -24,23 +30,34 @@ import { Paragraph } from 'src/elements/typography'; // ... from 'grape-ui-react
     }}
   >
     {'Basic Button using emailHref '}
-    <code>&lt;a&gt;</code>
+    <Code
+      codeString="<a>"
+      language="html"
+    />
   </Button>
   <Router>
     <Button to="./">
       {'Basic Button '}
-      <code>&lt;Link&gt;</code>
+      <Code
+        codeString="<Link>"
+      />
       *
     </Button>
-    <Paragraph color="gray" sm>
+    <Text as="span" color="gray" sm>
       {'*Please note, '}
-      <code>&lt;Button&gt;</code>
+      <Code
+        codeString="<Button>"
+      />
       {' components that use '}
-      <code>&lt;Link&gt;</code>
+      <Code
+        codeString="<Link>"
+      />
       {' need to be wrapped in a '}
-      <code>&lt;Router&gt;</code>
+      <Code
+        codeString="<Router>"
+      />
       {` component from 'react-router-dom'.`}
-      </Paragraph>
+    </Text>
   </Router>
 </Flex>
 ```

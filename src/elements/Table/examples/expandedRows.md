@@ -3,6 +3,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Table } from 'src/elements/Table';
 import { makeData } from 'src/elements/Table/examples/utils';
+import { CodeBlock } from 'src/elements/typography'; // from 'grape-ui-react'
 
 const expanderCell = {
   // Make an expander cell
@@ -84,13 +85,9 @@ const data = React.useMemo(() => makeData(200), []);
 
 const renderRowSubComponent = React.useCallback(
   ({ row }) => (
-    <pre
-      style={{
-        fontSize: '10px',
-      }}
-    >
-      <code>{JSON.stringify({ values: row.values }, null, 2)}</code>
-    </pre>
+    <CodeBlock
+      codeString={JSON.stringify({ values: row.values }, null, 2)}
+    />
   ),
   []
 );

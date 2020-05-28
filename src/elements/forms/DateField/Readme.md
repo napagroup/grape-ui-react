@@ -13,7 +13,7 @@ import {
   Box,
   Flex,
 } from 'src/elements/grid'; // ... from 'grape-ui-react'
-import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
+import { Code, Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
@@ -31,7 +31,7 @@ import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
   </Flex>
   <Text lg>
     {'Calendar Only '}
-    <code>calendarOnly=&#123;true&#125;</code>
+    <Code codeString="calendarOnly={true}" />
   </Text>
   <Flex flexDirection={['column', null, 'row']}>
     <Box px={1} width={[1, null, 1 / 2]}>
@@ -50,7 +50,7 @@ import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
   </Flex>
   <Text lg>
     {'Plain Text '}
-    <code>plainText=&#123;true&#125;</code>
+    <Code codeString="plainText={true}" />
   </Text>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>

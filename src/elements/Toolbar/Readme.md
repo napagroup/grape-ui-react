@@ -1,8 +1,8 @@
 Toolbar is grape-ui's take on the [AppBar found in Material Design](https://material.io/components/app-bars-top). It can be used to help define navigation for your site. Toolbar can take direct children, however there are shortcuts for defining content to appear in different areas of the toolbar. Use these props to achieve it:
 
-* leftArea
-* centerArea
-* rightArea
+* `leftArea`
+* `centerArea`
+* `rightArea`
 
 #### Basic Examples
 
