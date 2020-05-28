@@ -1,17 +1,19 @@
 
 import React from 'react';
-import 'jest-styled-components';
-import Adapter from 'enzyme-adapter-react-16';
-import { configure, mount } from 'enzyme';
+import renderer from 'react-test-renderer';
+import { getByLabelText } from '@testing-library/dom';
+import '@testing-library/jest-dom';
+import { render } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { TextField } from '..';
+import 'jest-styled-components';
 
-configure({ adapter: new Adapter() });
 describe('When supporting a forward ref for TextField ', () => {
+  let renderUtils;
   it('should reference the underlying input element', () => {
     const ref = React.createRef();
     const register = e => { ref.current = e; };
-    const component = mount(
+    renderUtils = render(
       <ThemeProvider theme={{}}>
         <TextField
           inputRef={register}
@@ -20,12 +22,14 @@ describe('When supporting a forward ref for TextField ', () => {
         />
       </ThemeProvider>
     );
-    expect(component.find('input').instance()).toEqual(ref.current);
+    const { container } = renderUtils;
+    const input = getByLabelText(container, 'name');
+    expect(input).toEqual(ref.current);
   });
   it('should reference the underlying Cleave DOM element', () => {
     const ref = React.createRef();
     const register = e => { ref.current = e; };
-    const component = mount(
+    renderUtils = render(
       <ThemeProvider theme={{}}>
         <TextField
           inputRef={register}
@@ -35,12 +39,15 @@ describe('When supporting a forward ref for TextField ', () => {
         />
       </ThemeProvider>
     );
-    expect(component.find('input').instance()).toEqual(ref.current);
+    const { container } = renderUtils;
+    const input = getByLabelText(container, 'Quantity');
+    expect(input).toEqual(ref.current);
   });
   it('should reference the underlying TextareaAutosize DOM element', () => {
     const ref = React.createRef();
+    const expected = document.createElement('textarea');
     const register = e => { ref.current = e; };
-    const component = mount(
+    renderer.create(
       <ThemeProvider theme={{}}>
         <TextField
           inputRef={register}
@@ -48,8 +55,11 @@ describe('When supporting a forward ref for TextField ', () => {
           multiline
           name="description"
         />
-      </ThemeProvider>
+      </ThemeProvider>,
+      {
+        createNodeMock: () => expected,
+      },
     );
-    expect(component.find('textarea').instance()).toEqual(ref.current);
+    expect(ref.current).toEqual(expected);
   });
 });

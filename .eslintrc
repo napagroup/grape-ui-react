@@ -183,10 +183,7 @@
       "react/jsx-no-comment-textnodes": "warn",
       "react/jsx-no-duplicate-props": ["warn", { "ignoreCase": true }],
       "react/jsx-no-undef": "warn",
-      "react/jsx-pascal-case": ["warn", {
-        "allowAllCaps": true,
-        "ignore": []
-      }],
+      "react/jsx-pascal-case": 0,
       "react/jsx-props-no-spreading": 0,
       "react/jsx-sort-props": "warn",
       "react/jsx-tag-spacing": "warn",
