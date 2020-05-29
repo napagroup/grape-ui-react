@@ -1,0 +1,1 @@
+branchName: 'issue/${issue.labels[0]}'
