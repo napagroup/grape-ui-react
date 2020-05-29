@@ -9,7 +9,6 @@ stats.json
 .idea
 *.log
 npm-debug.log.*
-dist/
 styleguide/index.html
 styleguide/build/
 styleguide/static/
