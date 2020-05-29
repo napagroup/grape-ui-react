@@ -1,12 +1,13 @@
 name: 'Log Github Events'
 description: 'Logs Github events'
-who-to-greet:  # id of input
-description: 'Who to greet'
-required: true
-default: 'World'
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
 outputs:
   time: # id of output
-    description: 'The time of event'
+    description: 'The time we greeted you'
 runs:
   using: 'node12'
-  main: 'dist/log-github.js'
+  main: 'index.js'
