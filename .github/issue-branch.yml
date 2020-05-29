@@ -1,1 +1,10 @@
-branchName: '${issue.labels[0]}/${issue.number}'
+branches:
+  - label: enhancement
+    prefix: feature/
+  - label: bug
+    prefix: bugfix/
+  - label: dependencies
+    prefix: dependencyupdate/
+  - label: '*'
+    prefix: issues/
+branchName: '${issue.number}'
