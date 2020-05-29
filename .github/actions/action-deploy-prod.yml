@@ -5,4 +5,4 @@ outputs:
     description: 'The time of build'
 runs:
   using: 'node12'
-  main: 'dist/deploy-prod.js'
+  main: 'deploy-prod.js'
