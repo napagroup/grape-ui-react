@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  github_log_job:
+    runs-on: ubuntu-latest
+    name: A job to log github events
+    steps:
+    - name: Initial action step
+      id: greet
+      uses: grape-ui-react@v0.11.1
+      with:
+        who-to-greet: 'User'
+    # Use the output from the `hello` step
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
