@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Initial action step
       id: greet
-      uses: napagroup/grape-ui-react@v0.11.1
+      uses: napagroup/grape-ui-react/.github/actions/log-github-events@devops/41
       with:
         who-to-greet: 'User'
     # Use the output from the `hello` step
