@@ -1,1 +1,1 @@
-branchName: '${issue.labels[0]}/${issue.number}'
+branchName: '${issue.number}'
