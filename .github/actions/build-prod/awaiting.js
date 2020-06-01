@@ -5,7 +5,7 @@ const exec = require('@actions/exec');
 
 let output = '';
 let myError = '';
-export default (async ()=> {
+const buildProcess = async () => {
   try {
     
     const options = {};
@@ -28,5 +28,5 @@ export default (async ()=> {
   } catch (error) {
     core.setFailed(error.message);
   }
-});
-export { output };
+};
+export { buildProcess, output };

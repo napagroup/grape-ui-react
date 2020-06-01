@@ -40,7 +40,7 @@ module.exports =
 /******/ 	// the startup function
 /******/ 	function startup() {
 /******/ 		// Load entry module and return exports
-/******/ 		return __webpack_require__(919);
+/******/ 		return __webpack_require__(398);
 /******/ 	};
 /******/ 	// initialize runtime
 /******/ 	runtime(__webpack_require__);
@@ -2410,6 +2410,49 @@ function factory(plugins) {
   Api.plugin = registerPlugin.bind(null, plugins || []);
   return Api;
 }
+
+
+/***/ }),
+
+/***/ 256:
+/***/ (function(__unusedmodule, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "buildProcess", function() { return buildProcess; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "output", function() { return output; });
+/* eslint-disable no-console */
+const core = __webpack_require__(299);
+const github = __webpack_require__(974);
+const exec = __webpack_require__(887);
+
+let output = '';
+let myError = '';
+const buildProcess = async () => {
+  try {
+    
+    const options = {};
+    options.listeners = {
+      stdout: data => {
+        output += data.toString();
+      },
+      stderr: data => {
+        myError += data.toString();
+      }
+    };
+    await exec.exec('pwd', null, options);
+    const { payload } = github.context;
+
+    const time = (new Date()).toTimeString();
+    core.setOutput('time', time);
+    // Get the JSON webhook payload for the event that triggered the workflow
+    const payloadAsStr = JSON.stringify(payload, undefined, 2);
+    console.log(`The event payload: ${payloadAsStr}`);
+  } catch (error) {
+    core.setFailed(error.message);
+  }
+};
+
 
 
 /***/ }),
@@ -6188,6 +6231,16 @@ function withAuthorizationPrefix(authorization) {
   return `token ${authorization}`;
 }
 
+
+/***/ }),
+
+/***/ 398:
+/***/ (function(__unusedmodule, __unusedexports, __webpack_require__) {
+
+const { buildProcess, output } = __webpack_require__(256);
+promise.then(() => {
+  console.log({ output });
+});
 
 /***/ }),
 
@@ -26198,54 +26251,6 @@ module.exports.Hook = Hook
 module.exports.Singular = Hook.Singular
 module.exports.Collection = Hook.Collection
 
-
-/***/ }),
-
-/***/ 919:
-/***/ (function(__unusedmodule, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-
-// CONCATENATED MODULE: ./.github/actions/build-prod/awaiting.js
-/* eslint-disable no-console */
-const core = __webpack_require__(299);
-const github = __webpack_require__(974);
-const exec = __webpack_require__(887);
-
-let output = '';
-let myError = '';
-/* harmony default export */ var awaiting = (async ()=> {
-  try {
-    
-    const options = {};
-    options.listeners = {
-      stdout: data => {
-        output += data.toString();
-      },
-      stderr: data => {
-        myError += data.toString();
-      }
-    };
-    await exec.exec('pwd', null, options);
-    const { payload } = github.context;
-
-    const time = (new Date()).toTimeString();
-    core.setOutput('time', time);
-    // Get the JSON webhook payload for the event that triggered the workflow
-    const payloadAsStr = JSON.stringify(payload, undefined, 2);
-    console.log(`The event payload: ${payloadAsStr}`);
-  } catch (error) {
-    core.setFailed(error.message);
-  }
-});
-
-
-// CONCATENATED MODULE: ./.github/actions/build-prod/script.js
-
-awaiting.then(() => {
-  console.log({ output: output });
-});
 
 /***/ }),
 

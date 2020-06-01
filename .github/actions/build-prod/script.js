@@ -1,4 +1,4 @@
-import promise, { output } from "./awaiting.js";
+const { buildProcess, output } = require('./awaiting.js');
 promise.then(() => {
   console.log({ output });
 });
