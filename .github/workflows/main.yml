@@ -13,9 +13,5 @@ jobs:
     # Use the output from the `greet` step
     - name: Time of log
       run: echo "The time was ${{ steps.greet.outputs.time }}"
-    - run: ls -li
-    # - name: Build grape-ui-marketing Step
-      # id: build-marketing
-      # uses: napagroup/grape-ui-react/.github/actions/build-prod@devops/41
-    - name: Time of build
-      # run: echo "The build ran at time ${{ steps.greet.outputs.time }}"
+    - name: Running console tests
+      run: ls -li
