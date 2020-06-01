@@ -17,11 +17,15 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: ${{ github.repository }}
+        path: main
     - name: Setup Node.js environment
       uses: actions/setup-node@v1
       with:
         node-version: 12
+    - name: Confirm node setup
       run: |
         node -v
         npm -v
+        echo $GITHUB_WORKSPACE 
+        ls -li GITHUB_WORKSPACE/main
 
