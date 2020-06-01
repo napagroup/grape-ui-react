@@ -27,5 +27,5 @@ jobs:
         node -v
         npm -v
         echo $GITHUB_WORKSPACE 
-        ls -li GITHUB_WORKSPACE/main
+        ls -li $GITHUB_WORKSPACE/main
 
