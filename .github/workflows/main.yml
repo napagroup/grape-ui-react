@@ -13,6 +13,8 @@ jobs:
     # Use the output from the `greet` step
     - name: Time of log
       run: echo "The time was ${{ steps.greet.outputs.time }}"
+    - name: Confirm checkout repository
+      run: echo ${{ github.repository }}
     - name: Checkout repo
       uses: actions/checkout@v2
       with:
@@ -22,10 +24,16 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12
-    - name: Confirm node setup
+    - name: Confirm node and checkout setup
       run: |
         node -v
         npm -v
         echo $GITHUB_WORKSPACE 
         ls -li $GITHUB_WORKSPACE/main
+    - name: install and build grape-ui-react
+      run: |
+        npm install
+        npm run build
+        ls -li $GITHUB_WORKSPACE/main/
+
 
