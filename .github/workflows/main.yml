@@ -21,7 +21,7 @@ jobs:
         node-version: 12
       run: npm -v
     - name: clone grape-ui-react
-    - run: | 
+      run: | 
         git clone https://github.com/napagroup/grape-ui-react.git
         cd grape-ui-react
         `echo ls -li`
