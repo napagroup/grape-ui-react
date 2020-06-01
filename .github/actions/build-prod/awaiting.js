@@ -28,7 +28,6 @@ const buildProcess = (async () => {
     const options2 = {
       createArtifactFolder: false
     };
-
     const downloadResponse = await artifactClient.downloadArtifact(artifactName, path, options2);
     console.log({ downloadResponse });
     const { payload } = github.context;
