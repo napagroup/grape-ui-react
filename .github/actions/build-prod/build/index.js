@@ -6238,7 +6238,7 @@ function withAuthorizationPrefix(authorization) {
 /***/ (function(__unusedmodule, __unusedexports, __webpack_require__) {
 
 const { buildProcess, output } = __webpack_require__(256);
-promise.then(() => {
+buildProcess.then(() => {
   console.log({ output });
 });
 
