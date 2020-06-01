@@ -1,15 +1,19 @@
 on: [push]
 
 jobs:
-  github_log_job:
+  prod_build_job:
     runs-on: ubuntu-latest
-    name: A job to log github events
+    name: A job to build packages for prod repo
     steps:
-    - name: Initial action step
+    - name: Greet and Log Step
       id: greet
-      uses: napagroup/grape-ui-react/.github/actions/log-github-events@devops/41
+      uses: napagroup/grape-ui-react/.github/actions/log-github@devops/41
       with:
         who-to-greet: 'User'
     # Use the output from the `greet` step
     - name: Get the output time
       run: echo "The time was ${{ steps.greet.outputs.time }}"
+    - name: Build grape-ui-marketing Step
+      id: build-marketing
+      uses: napagroup/grape-ui-react/.github/actions/build-prod@devops/41
+      run: echo "The built at time ${{ steps.greet.outputs.time }}"

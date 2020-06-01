@@ -1,8 +1,0 @@
-name: 'Deploy for Production'
-description: 'Build static artifacts and deploy for grape-ui-production'
-outputs:
-  time: # id of output
-    description: 'The time of build'
-runs:
-  using: 'node12'
-  main: 'deploy-prod.js'

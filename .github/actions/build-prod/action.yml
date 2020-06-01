@@ -1,0 +1,8 @@
+name: 'Build for Production'
+description: 'Build artifacts and push to grape-ui-production'
+outputs:
+  time: # id of output
+    description: 'The time of build'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

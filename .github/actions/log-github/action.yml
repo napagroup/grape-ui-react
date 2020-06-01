@@ -4,10 +4,10 @@ inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
     required: true
-    default: 'World'
+    default: 'User'
 outputs:
   time: # id of output
-    description: 'The time of git log event'
+    description: 'The time of event'
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'dist/index.js'
