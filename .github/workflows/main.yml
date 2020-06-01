@@ -14,7 +14,16 @@ jobs:
     - name: Time of log
       run: echo "The time was ${{ steps.greet.outputs.time }}"
     - name: Running console tests
-      run: |
+    # Setup Node.js environment
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - run: npm ci
+    - run: npm test
+    - name: clone grape-ui-react
+    - run: | 
+        git clone https://github.com/napagroup/grape-ui-react.git
+        cd grape-ui-react
         `echo ls -li`
-        ls -li > output.txt
-        echo $(cat output.txt)
+
