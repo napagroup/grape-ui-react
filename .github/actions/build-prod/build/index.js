@@ -40,8 +40,10 @@ module.exports =
 /******/ 	// the startup function
 /******/ 	function startup() {
 /******/ 		// Load entry module and return exports
-/******/ 		return __webpack_require__(398);
+/******/ 		return __webpack_require__(919);
 /******/ 	};
+/******/ 	// initialize runtime
+/******/ 	runtime(__webpack_require__);
 /******/
 /******/ 	// run startup
 /******/ 	return startup();
@@ -858,6 +860,14 @@ function whichSync (cmd, opt) {
 
   throw getNotFoundError(cmd)
 }
+
+
+/***/ }),
+
+/***/ 109:
+/***/ (function(module) {
+
+module.exports = eval("require")("@actions/exec");
 
 
 /***/ }),
@@ -5887,27 +5897,6 @@ function withAuthorizationPrefix(authorization) {
   }
 
   return `token ${authorization}`;
-}
-
-
-/***/ }),
-
-/***/ 398:
-/***/ (function(__unusedmodule, __unusedexports, __webpack_require__) {
-
-/* eslint-disable no-console */
-const core = __webpack_require__(299);
-const github = __webpack_require__(974);
-
-try {
-  const { payload } = github.context;
-  const time = (new Date()).toTimeString();
-  core.setOutput('time', time);
-  // Get the JSON webhook payload for the event that triggered the workflow
-  const payloadAsStr = JSON.stringify(payload, undefined, 2);
-  console.log(`The event payload: ${payloadAsStr}`);
-} catch (error) {
-  core.setFailed(error.message);
 }
 
 
@@ -25063,6 +25052,54 @@ module.exports.Collection = Hook.Collection
 
 /***/ }),
 
+/***/ 919:
+/***/ (function(__unusedmodule, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./.github/actions/build-prod/awaiting.js
+/* eslint-disable no-console */
+const core = __webpack_require__(299);
+const github = __webpack_require__(974);
+const exec = __webpack_require__(109);
+
+let output = '';
+let myError = '';
+/* harmony default export */ var awaiting = (async ()=> {
+  try {
+    
+    const options = {};
+    options.listeners = {
+      stdout: data => {
+        output += data.toString();
+      },
+      stderr: data => {
+        myError += data.toString();
+      }
+    };
+    await exec.exec('pwd', null, options);
+    const { payload } = github.context;
+
+    const time = (new Date()).toTimeString();
+    core.setOutput('time', time);
+    // Get the JSON webhook payload for the event that triggered the workflow
+    const payloadAsStr = JSON.stringify(payload, undefined, 2);
+    console.log(`The event payload: ${payloadAsStr}`);
+  } catch (error) {
+    core.setFailed(error.message);
+  }
+});
+
+
+// CONCATENATED MODULE: ./.github/actions/build-prod/script.js
+
+awaiting.then(() => {
+  console.log({ output: output });
+});
+
+/***/ }),
+
 /***/ 928:
 /***/ (function(module, __unusedexports, __webpack_require__) {
 
@@ -25428,4 +25465,31 @@ module.exports = {"_from":"@octokit/rest@^16.43.1","_id":"@octokit/rest@16.43.1"
 
 /***/ })
 
-/******/ });
+/******/ },
+/******/ function(__webpack_require__) { // webpackRuntimeModules
+/******/ 	"use strict";
+/******/ 
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getter */
+/******/ 	!function() {
+/******/ 		// define getter function for harmony exports
+/******/ 		var hasOwnProperty = Object.prototype.hasOwnProperty;
+/******/ 		__webpack_require__.d = function(exports, name, getter) {
+/******/ 			if(!hasOwnProperty.call(exports, name)) {
+/******/ 				Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ }
+);
