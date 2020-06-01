@@ -15,8 +15,9 @@ jobs:
       run: echo "The time was ${{ steps.greet.outputs.time }}"
     # Setup Node.js
     - name: Setup Node.js environment
-      uses: actions/checkout@v2
-      uses: actions/setup-node@v1
+      uses: |
+        actions/checkout@v2
+        actions/setup-node@v1
       with:
         node-version: 12
 
