@@ -13,12 +13,15 @@ jobs:
     # Use the output from the `greet` step
     - name: Time of log
       run: echo "The time was ${{ steps.greet.outputs.time }}"
-    - name: Confirm checkout repository
+    - name: Set environment variables
       run: echo ${{ github.repository }}
+      env:
+        SOURCE_REPO: napagroup/grape-ui-marketing
+        TARGET_REPO: napagroup/grape-ui-production
     - name: Checkout repo
       uses: actions/checkout@v2
       with:
-        repository: ${{ github.repository }}
+        repository: $SOURCE_REPO
         path: main
     - name: Setup Node.js environment
       uses: actions/setup-node@v1
@@ -30,7 +33,7 @@ jobs:
         npm -v
         echo $GITHUB_WORKSPACE/main
         ls -li $GITHUB_WORKSPACE/main
-    - name: install and build grape-ui-react
+    - name: install and build source repo
       run: |
         cd $GITHUB_WORKSPACE/main
         npm install
