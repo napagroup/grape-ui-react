@@ -7,7 +7,6 @@ let output = '';
 let myError = '';
 const buildProcess = async () => {
   try {
-    
     const options = {};
     options.listeners = {
       stdout: data => {
