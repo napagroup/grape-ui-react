@@ -15,8 +15,14 @@ jobs:
       run: echo "The time was ${{ steps.greet.outputs.time }}"
     - name: Checkout repo
       uses: actions/checkout@v2
+      with:
+        repository: ${{ github.repository }}
     - name: Setup Node.js environment
       uses: actions/setup-node@v1
+    - name: Confirm setup
       with:
         node-version: 12
+      run: |
+        node -v
+        npm -v
 
