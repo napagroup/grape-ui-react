@@ -19,5 +19,8 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 12
-      run: npm -v
+    - name: confirm Node.js environment
+      run: |
+        node -v
+        npm -v
 
