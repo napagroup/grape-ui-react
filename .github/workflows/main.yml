@@ -14,4 +14,7 @@ jobs:
     - name: Time of log
       run: echo "The time was ${{ steps.greet.outputs.time }}"
     - name: Running console tests
-      run: ls -li
+      run: |
+        `echo ls -li`
+        ls -li > output.txt
+        echo $(cat output.txt)
