@@ -13,11 +13,10 @@ jobs:
     # Use the output from the `greet` step
     - name: Time of log
       run: echo "The time was ${{ steps.greet.outputs.time }}"
-    # Setup Node.js
+    - name: Checkout repo
+      uses: actions/checkout@v2
     - name: Setup Node.js environment
-      uses: |
-        actions/checkout@v2
-        actions/setup-node@v1
+      uses: actions/setup-node@v1
       with:
         node-version: 12
 
