@@ -439,14 +439,16 @@ const core = __webpack_require__(299);
 const github = __webpack_require__(974);
 
 try {
+  const { payload } = github.context;
+  const { head_commit: { committer } } = payload;
   // `who-to-greet` input defined in action metadata file
-  const nameToGreet = core.getInput('who-to-greet');
-  console.log(`Hello ${nameToGreet}!`);
+  const whoStatus = core.getInput('who-to-greet');
+  console.log(`Hello ${whoStatus} ${committer.username}!`);
   const time = (new Date()).toTimeString();
   core.setOutput('time', time);
   // Get the JSON webhook payload for the event that triggered the workflow
-  const payload = JSON.stringify(github.context.payload, undefined, 2);
-  console.log(`The event payload: ${payload}`);
+  const payloadAsStr = JSON.stringify(payload, undefined, 2);
+  console.log(`The event payload: ${payloadAsStr}`);
 } catch (error) {
   core.setFailed(error.message);
 }

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=src/internals/webpack/webpack.config.js",
     "build": "babel src/ -d lib --ignore **/*.json && babel src/assets --out-dir lib/assets --copy-files",
+    "build:actions": "rimraf .github/actions/log-github-events/index.js && ncc build src/internals/github-scripts/log-github.js -o .github/actions/log-github-events/index.js",
     "build:clean": "rimraf ./lib",
     "build:styleguide": "npx styleguidist build",
     "clean:styleguide": "rimraf styleguide/index.html && rimraf styleguide/build && rimraf styleguide/static",
