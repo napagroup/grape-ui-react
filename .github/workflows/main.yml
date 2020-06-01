@@ -4,6 +4,9 @@ jobs:
   prod_build_job:
     runs-on: ubuntu-latest
     name: A job to build packages for prod repo
+    env:
+      SOURCE_REPO: napagroup/grape-ui-marketing
+      TARGET_REPO: napagroup/grape-ui-production
     steps:
     - name: Log Step
       id: greet
@@ -15,9 +18,6 @@ jobs:
       run: echo "The time was ${{ steps.greet.outputs.time }}"
     - name: Set environment variables
       run: echo ${{ github.repository }}
-      env:
-        SOURCE_REPO: napagroup/grape-ui-marketing
-        TARGET_REPO: napagroup/grape-ui-production
     - name: Checkout repo
       uses: actions/checkout@v2
       with:
