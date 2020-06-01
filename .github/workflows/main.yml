@@ -15,8 +15,9 @@ jobs:
       run: echo "The time was ${{ steps.greet.outputs.time }}"
     - name: Running console tests
     # Setup Node.js environment
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
+    - name: Setup Node.js environment
+      uses: actions/checkout@v2
+      uses: actions/setup-node@v1
       with:
         node-version: 12
       run: npm -v
