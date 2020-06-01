@@ -20,7 +20,7 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v2
       with:
-        repository: ${{ SOURCE_REPO }}
+        repository: $SOURCE_REPO
         path: main
     - name: Setup Node.js environment
       uses: actions/setup-node@v1
