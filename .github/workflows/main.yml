@@ -28,10 +28,11 @@ jobs:
       run: |
         node -v
         npm -v
-        echo $GITHUB_WORKSPACE 
+        echo $GITHUB_WORKSPACE/main
         ls -li $GITHUB_WORKSPACE/main
     - name: install and build grape-ui-react
       run: |
+        cd $GITHUB_WORKSPACE/main
         npm install
         npm run build
         ls -li $GITHUB_WORKSPACE/main/
