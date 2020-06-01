@@ -18,6 +18,8 @@ const buildProcess = (async () => {
     };
     await exec.exec('pwd', null, options);
     console.log({ output, myError });
+    await exec.exec('ls -li', null, options);
+    console.log({ output, myError });
     const { payload } = github.context;
 
     const time = (new Date()).toTimeString();
