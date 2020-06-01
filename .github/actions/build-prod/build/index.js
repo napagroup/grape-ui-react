@@ -2428,9 +2428,8 @@ const exec = __webpack_require__(887);
 
 let output = '';
 let myError = '';
-const buildProcess = async () => {
+const buildProcess = (async () => {
   try {
-    
     const options = {};
     options.listeners = {
       stdout: data => {
@@ -2451,7 +2450,7 @@ const buildProcess = async () => {
   } catch (error) {
     core.setFailed(error.message);
   }
-};
+}) ();
 
 
 
