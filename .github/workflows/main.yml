@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build packages for prod repo
     env:
-      SOURCE_REPO: napagroup/grape-ui-react
+      SOURCE_REPO: napagroup/grape-ui-marketing
       TARGET_REPO: napagroup/grape-ui-marketing
       SOURCE_REPO_PATH: $GITHUB_WORKSPACE/source
       TARGET_REPO_PATH: $GITHUB_WORKSPACE/target
@@ -32,11 +32,13 @@ jobs:
         echo '$GITHUB_WORKSPACE' $GITHUB_WORKSPACE
         echo '$SOURCE_REPO_PATH' $SOURCE_REPO_PATH
         echo '$TARGET_REPO_PATH' $TARGET_REPO_PATH
+        pwd
+        ls -li
     - name: Checkout repo
       uses: actions/checkout@v2
       with:
         repository: ${{ env.SOURCE_REPO }}
-        path: $GITHUB_WORKSPACE/source
+        path: $SOURCE_REPO_PATH
     - name: Confirm source checkout
       run: |
         ls -li $SOURCE_REPO_PATH
@@ -45,6 +47,6 @@ jobs:
         cd $SOURCE_REPO_PATH
         npm install
         npm run build
-        ls -li $SOURCE_REPO_PATH
+        ls -li
 
 
