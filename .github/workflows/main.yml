@@ -64,10 +64,13 @@ jobs:
     - name: Copy styleguide contents over to grape-ui-market/public/docs
       run: |
         pwd && ls -li
-        cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/build ${{ env.MARKETING_REPO_PATH }}/public/docs/build
+        cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/build ${{ env.MARKETING_REPO_PATH }}/public/docs
         cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/static ${{ env.MARKETING_REPO_PATH }}/public/docs
         cp ${{ env.SOURCE_REPO_PATH }}/styleguide/index.html ${{ env.MARKETING_REPO_PATH }}/public/docs
+        echo /public/docs
         ls -li ${{ env.MARKETING_REPO_PATH }}/public/docs
+        echo /public/build
         ls -li ${{ env.MARKETING_REPO_PATH }}/public/docs/build
+        echo /public/static
         ls -li ${{ env.MARKETING_REPO_PATH }}/public/docs/static
 
