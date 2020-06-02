@@ -3,7 +3,7 @@ on: [push]
 jobs:
   greet_log_job:
     runs-on: ubuntu-latest
-    name: log main event
+    name: Log Main Event
     steps:
     - name: Log Step
       id: greet-log-step
@@ -14,26 +14,30 @@ jobs:
       run: echo "The time was ${{ steps.greet.outputs.time }}"
   prod_build_job:
     runs-on: ubuntu-latest
-    name: A job to build packages for prod repo
+    name: Build packages for prod repo
     env:
       SOURCE_REPO: napagroup/grape-ui-marketing
       TARGET_REPO: napagroup/grape-ui-production
+      SOURCE_REPO_PATH: $GITHUB_WORKSPACE/main
+      TARGET_REPO_PATH: $GITHUB_WORKSPACE/main
     steps:
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - name: Confirm node and env vars
+      run: |
+        node -v
+        npm -v
+        echo '$SOURCE_REPO_PATH' $SOURCE_REPO_PATH
+        echo '$TARGET_REPO_PATH' $TARGET_REPO_PATH
+        echo $SOURCE_REPO_PATH
+        ls -li $SOURCE_REPO_PATH
     - name: Checkout repo
       uses: actions/checkout@v2
       with:
         repository: ${{ env.SOURCE_REPO }}
         path: main
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12
-    - name: Confirm node and checkout setup
-      run: |
-        node -v
-        npm -v
-        echo $GITHUB_WORKSPACE/main
-        ls -li $GITHUB_WORKSPACE/main
     - name: install and build source repo
       run: |
         cd $GITHUB_WORKSPACE/main
