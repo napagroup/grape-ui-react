@@ -38,12 +38,12 @@ jobs:
         path: $GITHUB_WORKSPACE/source
     - name: Confirm source checkout
       run: |
-        ls -li ${{ SOURCE_REPO_PATH }}
+        ls -li $SOURCE_REPO_PATH
     - name: Install and Build source repo
       run: |
-        cd ${{ SOURCE_REPO_PATH }}
+        cd $SOURCE_REPO_PATH
         npm install
         npm run build
-        ls -li ${{ SOURCE_REPO_PATH }}
+        ls -li $SOURCE_REPO_PATH
 
 
