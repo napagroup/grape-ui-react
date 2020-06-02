@@ -41,15 +41,11 @@ jobs:
       run: |
         pwd
         ls -li
-    - name: Install and Build source repo
+    - name: Install and Build repo
       run: |
         # npm install
         # npm run build
-        pwd
-        ls -li
-        cd ../
-        pwd
-        ls -li
+        pwd && ls -li
     - name: Checkout grape-ui-marketing repo
       uses: actions/checkout@v2
       with:
@@ -57,9 +53,12 @@ jobs:
         path: ${{ env.MARKETING_REPO_PATH }}
     - name: Confirm grape-ui-marketing checkout
       run: |
-        pwd
-        ls -li
+        pwd && ls -li
         cd ${{ env.MARKETING_REPO_PATH }}
-        pwd
-        ls -li
+        pwd && ls -li
+    - name: Install and Build repo
+      run: |
+        npm install
+        npm run build
+        pwd && ls -li
 
