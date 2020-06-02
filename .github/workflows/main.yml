@@ -18,8 +18,8 @@ jobs:
     env:
       SOURCE_REPO: napagroup/grape-ui-react
       TARGET_REPO: napagroup/grape-ui-marketing
-      SOURCE_REPO_PATH: $GITHUB_WORKSPACE/source
-      TARGET_REPO_PATH: ${{ GITHUB_WORKSPACE }}/target
+      SOURCE_REPO_PATH: source
+      TARGET_REPO_PATH: target
     steps:
     - name: Setup Node.js environment
       uses: actions/setup-node@v1
