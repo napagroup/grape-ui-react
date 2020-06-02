@@ -16,10 +16,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Build packages for prod repo
     env:
-      SOURCE_REPO: napagroup/grape-ui-marketing
+      SOURCE_REPO: napagroup/grape-ui-react
       TARGET_REPO: napagroup/grape-ui-marketing
       SOURCE_REPO_PATH: $GITHUB_WORKSPACE/source
-      TARGET_REPO_PATH: $GITHUB_WORKSPACE/target
+      TARGET_REPO_PATH: ${{ GITHUB_WORKSPACE }}/target
     steps:
     - name: Setup Node.js environment
       uses: actions/setup-node@v1
@@ -38,13 +38,12 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: ${{ env.SOURCE_REPO }}
-        path: $SOURCE_REPO_PATH
+        path: $GITHUB_WORKSPACE
     - name: Confirm source checkout
       run: |
-        ls -li $SOURCE_REPO_PATH
+        ls -li
     - name: Install and Build source repo
       run: |
-        cd $SOURCE_REPO_PATH
         npm install
         npm run build
         ls -li
