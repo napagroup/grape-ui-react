@@ -17,6 +17,7 @@ jobs:
     name: Build packages for prod repo
     env:
       SOURCE_REPO: napagroup/grape-ui-react
+      SOURCE_REPO_PATH: grape-ui-react-repo
       MARKETING_REPO: napagroup/grape-ui-marketing
       MARKETING_REPO_PATH: grape-ui-marketing
     steps:
@@ -24,25 +25,24 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12
-    - name: Confirm node and env vars
+    - name: Confirm node env
       run: |
         node -v
         npm -v
-        echo '$GITHUB_WORKSPACE' $GITHUB_WORKSPACE
-        echo '$MARKETING_REPO' $MARKETING_REPO
-        echo '$MARKETING_REPO_PATH' $MARKETING_REPO_PATH
-        pwd
-        ls -li
+        pwd && ls -li
     - name: Checkout grape-ui-react repo
       uses: actions/checkout@v2
       with:
         repository: ${{ env.SOURCE_REPO }}
+        path: ${{ env.SOURCE_REPO_PATH }}
     - name: Confirm source checkout
       run: |
+        cd ${{ env.SOURCE_REPO_PATH }}
         pwd
         ls -li
     - name: Install and Build repo
       run: |
+        cd ${{ env.SOURCE_REPO_PATH }}
         npm install
         npm run build:styleguide
         pwd && ls -li
@@ -53,7 +53,6 @@ jobs:
         path: ${{ env.MARKETING_REPO_PATH }}
     - name: Confirm grape-ui-marketing checkout
       run: |
-        pwd && ls -li
         cd ${{ env.MARKETING_REPO_PATH }}
         pwd && ls -li
     - name: Install and Build repo
@@ -62,7 +61,11 @@ jobs:
         npm install
         npm run build
         pwd && ls -li
-    - name: Copy styleguide contents over to 
+    - name: Copy styleguide contents over to grape-ui-market/public/docs
       run: |
         pwd && ls -li
+        cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/build ${{ env.MARKETING_REPO_PATH }}/public/docs
+        cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/static ${{ env.MARKETING_REPO_PATH }}/public/docs
+        cp ${{ env.SOURCE_REPO_PATH }}/styleguide/index.html ${{ env.MARKETING_REPO_PATH }}/public/docs
+        ls -li ${{ env.MARKETING_REPO_PATH }}/public/docs
 
