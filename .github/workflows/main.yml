@@ -44,7 +44,7 @@ jobs:
     - name: Install and Build repo
       run: |
         # npm install
-        # npm run build
+        # npm run build:styleguide
         pwd && ls -li
     - name: Checkout grape-ui-marketing repo
       uses: actions/checkout@v2
@@ -56,9 +56,7 @@ jobs:
         pwd && ls -li
         cd ${{ env.MARKETING_REPO_PATH }}
         pwd && ls -li
-    - name: Install and Build repo
+    - name: Test pwd
       run: |
-        npm install
-        npm run build
         pwd && ls -li
 
