@@ -33,7 +33,7 @@ jobs:
         echo '$MARKETING_REPO_PATH' $MARKETING_REPO_PATH
         pwd
         ls -li
-    - name: Checkout repo
+    - name: Checkout grape-ui-react repo
       uses: actions/checkout@v2
       with:
         repository: ${{ env.SOURCE_REPO }}
@@ -43,12 +43,23 @@ jobs:
         ls -li
     - name: Install and Build source repo
       run: |
-        npm install
-        npm run build
+        # npm install
+        # npm run build
         pwd
         ls -li
         cd ../
         pwd
         ls -li
-
+    - name: Checkout grape-ui-marketing repo
+      uses: actions/checkout@v2
+      with:
+        repository: ${{ env.MARKETING_REPO }}
+        path: ../${{ env.MARKETING_REPO_PATH }}
+    - name: Confirm source checkout
+      run: |
+        pwd
+        ls -li
+        cd ${{ env.MARKETING_REPO_PATH }}
+        pwd
+        ls -li
 
