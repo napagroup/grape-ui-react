@@ -1,6 +1,17 @@
 on: [push]
 
 jobs:
+  greet_log_job:
+    runs-on: ubuntu-latest
+    name: log main event
+    steps:
+    - name: Log Step
+      id: greet-log-step
+      uses: napagroup/grape-ui-react/.github/actions/log-github@devops/41
+      with:
+        who-to-greet: 'User'
+    - name: Time of log
+      run: echo "The time was ${{ steps.greet.outputs.time }}"
   prod_build_job:
     runs-on: ubuntu-latest
     name: A job to build packages for prod repo
@@ -8,14 +19,6 @@ jobs:
       SOURCE_REPO: napagroup/grape-ui-marketing
       TARGET_REPO: napagroup/grape-ui-production
     steps:
-    - name: Log Step
-      id: greet
-      uses: napagroup/grape-ui-react/.github/actions/log-github@devops/41
-      with:
-        who-to-greet: 'User'
-    # Use the output from the `greet` step
-    - name: Time of log
-      run: echo "The time was ${{ steps.greet.outputs.time }}"
     - name: Checkout repo
       uses: actions/checkout@v2
       with:
