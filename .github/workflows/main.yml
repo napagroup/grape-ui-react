@@ -2,14 +2,15 @@ on:
   push:
     branches:
       - master
-      - v*
+      - 'v**'
+      - 'devops**'
 jobs:
   greet_log_job:
     runs-on: ubuntu-latest
-    name: Log Main Event
+    name: Log Event
     steps:
     - name: Log Step
-      uses: napagroup/grape-ui-react/.github/actions/log-github@devops/41
+      uses: napagroup/grape-ui-react/.github/actions/log-github@master
     - name: Time of log
       run: echo "The time was ${{ steps.greet.outputs.time }}"
   prod_build_job:
@@ -58,6 +59,7 @@ jobs:
     - name: Install and Build repo
       run: |
         cd ${{ env.MARKETING_REPO_PATH }}
+        rm -rf docs
         npm install
         npm run build
         pwd && ls -hil

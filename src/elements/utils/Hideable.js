@@ -27,6 +27,7 @@ Hideable.defaultProps = {
  * @param {object} Child The target or child component to be composed within Hideable. The hide attribute is used to hide the Child.
  * @return {object} Returns the decorated object; The Child component is now composed within a Hideable.
  */
+
 const withHideable = Child => {
   function HideableComponent(props) {
     const { hide, ...otherProps } = props;
