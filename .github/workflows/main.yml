@@ -7,7 +7,7 @@ on:
 jobs:
   greet_log_job:
     runs-on: ubuntu-latest
-    name: Log Main Event
+    name: Log Event
     steps:
     - name: Log Step
       uses: napagroup/grape-ui-react/.github/actions/log-github
