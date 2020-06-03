@@ -70,6 +70,9 @@ jobs:
         cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/build ${{ env.MARKETING_REPO_PATH }}/public/docs
         cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/static ${{ env.MARKETING_REPO_PATH }}/public/docs
         cp ${{ env.SOURCE_REPO_PATH }}/styleguide/index.html ${{ env.MARKETING_REPO_PATH }}/public/docs
+        echo $GITHUB_REF
+        mkdir -p ${{ env.MARKETING_REPO_PATH }}/v/$GITHUB_REF
+        cp -r ${{ env.MARKETING_REPO_PATH }}/public/* ${{ env.MARKETING_REPO_PATH }}/static/v/$GITHUB_REF
         mv ${{ env.MARKETING_REPO_PATH }}/public ${{ env.MARKETING_REPO_PATH }}/docs
         echo ${{ env.MARKETING_REPO_PATH }}/docs/docs
         ls -hil ${{ env.MARKETING_REPO_PATH }}/docs/docs
