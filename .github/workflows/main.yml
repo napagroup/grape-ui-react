@@ -68,7 +68,7 @@ jobs:
         cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/build ${{ env.MARKETING_REPO_PATH }}/public/docs
         cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/static ${{ env.MARKETING_REPO_PATH }}/public/docs
         cp ${{ env.SOURCE_REPO_PATH }}/styleguide/index.html ${{ env.MARKETING_REPO_PATH }}/public/docs
-        mv ${{ env.MARKETING_REPO_PATH }}/public ${{ env.MARKETING_REPO_PATH }}/docs
+        mv ${{ env.SOURCE_REPO_PATH }}/public ${{ env.MARKETING_REPO_PATH }}/docs/docs
         echo ${{ env.MARKETING_REPO_PATH }}/docs/docs
         ls -hil ${{ env.MARKETING_REPO_PATH }}/docs/docs
         echo ${{ env.MARKETING_REPO_PATH }}/docs/build
@@ -78,12 +78,12 @@ jobs:
     - name: Perform git add & commit
       uses: EndBug/add-and-commit@v4 # You can change this to use a specific version
       with:
-        add: 'public'
+        add: 'docs'
         author_name: John Shin
         author_email: jshin@napa.com
         cwd: ${{ env.MARKETING_REPO_PATH }}
         force: true
-        message: 'Deploy /public'
+        message: 'Deploy docs'
         ref: 'staging'
       env:
         # This is necessary in order to push a commit to the repo
