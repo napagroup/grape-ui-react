@@ -32,7 +32,7 @@ jobs:
         npm -v
         pwd && ls -hil
         echo $GITHUB_REF
-        DOC_BRANCH_FOLDER=$($GITHUB_REF | sed s:refs/heads/:: | tr '\/\-' '_')
+        export DOC_BRANCH_FOLDER=$($GITHUB_REF | sed s:refs/heads/:: | tr '\/\-' '_')
         echo $DOC_BRANCH_FOLDER
         echo finish confirm
     - name: Checkout grape-ui-react repo
