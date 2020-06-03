@@ -4,7 +4,6 @@ const github = require('@actions/github');
 
 try {
   const { payload } = github.context;
-  const { head_commit: { committer } } = payload;
   const time = (new Date()).toTimeString();
   core.setOutput('time', time);
   // Get the JSON webhook payload for the event that triggered the workflow
