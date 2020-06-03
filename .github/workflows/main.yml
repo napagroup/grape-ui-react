@@ -50,6 +50,7 @@ jobs:
       with:
         repository: ${{ env.MARKETING_REPO }}
         path: ${{ env.MARKETING_REPO_PATH }}
+        token: ${{ secrets.GRAPE_DEPLOY }}
     - name: Confirm grape-ui-marketing checkout
       run: |
         cd ${{ env.MARKETING_REPO_PATH }}
@@ -85,4 +86,4 @@ jobs:
         ref: 'devops/41-2'
       env:
         # This is necessary in order to push a commit to the repo
-        GITHUB_TOKEN: ${{ secrets.GRAPE_DEPLOY }} # Leave this line unchanged
+        GITHUB_TOKEN: ${{ secrets.GRAPE_DEPLOY }}
