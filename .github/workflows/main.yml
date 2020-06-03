@@ -75,6 +75,7 @@ jobs:
         echo $DOC_BRANCH_FOLDER
         mkdir -p ${{ env.MARKETING_REPO_PATH }}/static/v/$DOC_BRANCH_FOLDER
         cp -r ${{ env.MARKETING_REPO_PATH }}/public/* ${{ env.MARKETING_REPO_PATH }}/static/v/$DOC_BRANCH_FOLDER
+        ls -hil ${{ env.MARKETING_REPO_PATH }}/static/v
         mv ${{ env.MARKETING_REPO_PATH }}/public ${{ env.MARKETING_REPO_PATH }}/docs
         echo ${{ env.MARKETING_REPO_PATH }}/docs/docs
         ls -hil ${{ env.MARKETING_REPO_PATH }}/docs/docs
