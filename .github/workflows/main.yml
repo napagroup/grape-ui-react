@@ -68,12 +68,13 @@ jobs:
         cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/build ${{ env.MARKETING_REPO_PATH }}/public/docs
         cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/static ${{ env.MARKETING_REPO_PATH }}/public/docs
         cp ${{ env.SOURCE_REPO_PATH }}/styleguide/index.html ${{ env.MARKETING_REPO_PATH }}/public/docs
-        echo ${{ env.MARKETING_REPO_PATH }}/public/docs
-        ls -hil ${{ env.MARKETING_REPO_PATH }}/public/docs
-        echo ${{ env.MARKETING_REPO_PATH }}/public/build
-        ls -hil ${{ env.MARKETING_REPO_PATH }}/public/docs/build
-        echo ${{ env.MARKETING_REPO_PATH }}/public/static
-        ls -hil ${{ env.MARKETING_REPO_PATH }}/public/docs/static
+        mv ${{ env.SOURCE_REPO_PATH }}/public ${{ env.MARKETING_REPO_PATH }}/docs/docs
+        echo ${{ env.MARKETING_REPO_PATH }}/docs/docs
+        ls -hil ${{ env.MARKETING_REPO_PATH }}/docs/docs
+        echo ${{ env.MARKETING_REPO_PATH }}/docs/build
+        ls -hil ${{ env.MARKETING_REPO_PATH }}/docs/docs/build
+        echo ${{ env.MARKETING_REPO_PATH }}/docs/static
+        ls -hil ${{ env.MARKETING_REPO_PATH }}/docs/docs/static
     - name: Perform git add & commit
       uses: EndBug/add-and-commit@v4 # You can change this to use a specific version
       with:
@@ -83,7 +84,7 @@ jobs:
         cwd: ${{ env.MARKETING_REPO_PATH }}
         force: true
         message: 'Deploy /public'
-        ref: 'devops/41-2'
+        ref: 'staging'
       env:
         # This is necessary in order to push a commit to the repo
         GITHUB_TOKEN: ${{ secrets.GRAPE_DEPLOY }}
