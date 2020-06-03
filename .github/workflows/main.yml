@@ -10,7 +10,7 @@ jobs:
     name: Log Event
     steps:
     - name: Log Step
-      uses: napagroup/grape-ui-react/.github/actions/log-github@devops/41-5
+      uses: napagroup/grape-ui-react/.github/actions/log-github@master
     - name: Time of log
       run: echo "The time was ${{ steps.greet.outputs.time }}"
   prod_build_job:
@@ -71,8 +71,9 @@ jobs:
         cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/static ${{ env.MARKETING_REPO_PATH }}/public/docs
         cp ${{ env.SOURCE_REPO_PATH }}/styleguide/index.html ${{ env.MARKETING_REPO_PATH }}/public/docs
         echo $GITHUB_REF
-        mkdir -p ${{ env.MARKETING_REPO_PATH }}/v/$GITHUB_REF
-        cp -r ${{ env.MARKETING_REPO_PATH }}/public/* ${{ env.MARKETING_REPO_PATH }}/static/v/$GITHUB_REF
+        DOC_BRANCH_FOLDER=$($GITHUB_REF | sed s:refs/heads/:: | tr '\/\-' '_')
+        mkdir -p ${{ env.MARKETING_REPO_PATH }}/v/$DOC_BRANCH_FOLDER
+        cp -r ${{ env.MARKETING_REPO_PATH }}/public/* ${{ env.MARKETING_REPO_PATH }}/static/v/$DOC_BRANCH_FOLDER
         mv ${{ env.MARKETING_REPO_PATH }}/public ${{ env.MARKETING_REPO_PATH }}/docs
         echo ${{ env.MARKETING_REPO_PATH }}/docs/docs
         ls -hil ${{ env.MARKETING_REPO_PATH }}/docs/docs
