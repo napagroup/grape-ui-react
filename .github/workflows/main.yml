@@ -1,5 +1,9 @@
 on: [push]
-
+  # Sequence of patterns matched against refs/heads
+  branches: 
+    - master
+  tags:
+    - v0.*
 jobs:
   greet_log_job:
     runs-on: ubuntu-latest
