@@ -1,6 +1,5 @@
 name: 'Log Github Events'
 description: 'Logs Github events'
-inputs:
 outputs:
   time: # id of output
     description: 'The time of event'
