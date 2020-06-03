@@ -1,7 +1,8 @@
-on: [push]
-  branches:
-    - master
-    - v0.*
+on:
+  push:
+    branches:
+      - master
+      - v0.*
 jobs:
   greet_log_job:
     runs-on: ubuntu-latest
