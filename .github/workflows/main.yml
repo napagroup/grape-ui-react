@@ -34,9 +34,9 @@ jobs:
         echo $GITHUB_REF
         TEST_VAR='hello'
         echo $TEST_VAR
-        DOC_BRANCH_FOLDER=$($GITHUB_REF)
+        DOC_BRANCH_FOLDER=$GITHUB_REF
         echo 1 $DOC_BRANCH_FOLDER
-        DOC_BRANCH_FOLDER=$($GITHUB_REF | sed s:refs/heads/::)
+        DOC_BRANCH_FOLDER=$(echo $GITHUB_REF | sed s:refs/heads/::)
         echo 2 $DOC_BRANCH_FOLDER
         export DOC_BRANCH_FOLDER=$($GITHUB_REF | sed s:refs/heads/:: | tr '\/\-' '_')
         echo $DOC_BRANCH_FOLDER
