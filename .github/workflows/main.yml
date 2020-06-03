@@ -2,6 +2,8 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
       - v0.*
 jobs:
   greet_log_job:

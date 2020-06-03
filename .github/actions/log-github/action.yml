@@ -1,10 +1,6 @@
 name: 'Log Github Events'
 description: 'Logs Github events'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'User'
 outputs:
   time: # id of output
     description: 'The time of event'
