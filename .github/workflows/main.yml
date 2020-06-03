@@ -85,7 +85,6 @@ jobs:
     - name: Perform git add & commit
       uses: EndBug/add-and-commit@v4 # You can change this to use a specific version
       with:
-        add: 'docs'
         author_name: John Shin
         author_email: jshin@napa.com
         cwd: ${{ env.MARKETING_REPO_PATH }}
