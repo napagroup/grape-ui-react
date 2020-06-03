@@ -59,6 +59,7 @@ jobs:
     - name: Install and Build repo
       run: |
         cd ${{ env.MARKETING_REPO_PATH }}
+        rm -rf public
         npm install
         npm run build
         pwd && ls -hil
