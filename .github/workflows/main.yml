@@ -3,13 +3,14 @@ on:
     branches:
       - master
       - v*
+      - devops*
 jobs:
   greet_log_job:
     runs-on: ubuntu-latest
     name: Log Main Event
     steps:
     - name: Log Step
-      uses: napagroup/grape-ui-react/.github/actions/log-github@devops/41
+      uses: napagroup/grape-ui-react/.github/actions/log-github
     - name: Time of log
       run: echo "The time was ${{ steps.greet.outputs.time }}"
   prod_build_job:
