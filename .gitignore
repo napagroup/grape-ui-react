@@ -8,8 +8,8 @@ stats.json
 .DS_Store
 .idea
 *.log
-npm-debug.log.*
 dist/
+npm-debug.log.*
 styleguide/index.html
 styleguide/build/
 styleguide/static/
