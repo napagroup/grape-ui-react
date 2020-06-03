@@ -2,8 +2,8 @@ on:
   push:
     branches:
       - master
-      - v*
-      - devops*
+      - 'v*'
+      - 'devops*'
 jobs:
   greet_log_job:
     runs-on: ubuntu-latest
