@@ -32,13 +32,9 @@ jobs:
         npm -v
         pwd && ls -hil
         echo $GITHUB_REF
-        TEST_VAR='hello'
-        echo $TEST_VAR
-        DOC_BRANCH_FOLDER=$GITHUB_REF
-        echo 1 $DOC_BRANCH_FOLDER
         DOC_BRANCH_FOLDER=$(echo $GITHUB_REF | sed s:refs/heads/::)
         echo 2 $DOC_BRANCH_FOLDER
-        export DOC_BRANCH_FOLDER=$($GITHUB_REF | sed s:refs/heads/:: | tr '\/\-' '_')
+        export DOC_BRANCH_FOLDER=$(echo $GITHUB_REF | sed s:refs/heads/:: | tr '\/\-' '_')
         echo $DOC_BRANCH_FOLDER
         echo finish confirm
     - name: Checkout grape-ui-react repo
@@ -81,7 +77,7 @@ jobs:
         cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/static ${{ env.MARKETING_REPO_PATH }}/public/docs
         cp ${{ env.SOURCE_REPO_PATH }}/styleguide/index.html ${{ env.MARKETING_REPO_PATH }}/public/docs
         echo $GITHUB_REF
-        DOC_BRANCH_FOLDER=$($GITHUB_REF | sed s:refs/heads/:: | tr '\/\-' '_')
+        DOC_BRANCH_FOLDER=$(echo $GITHUB_REF | sed s:refs/heads/:: | tr '\/\-' '_')
         echo $DOC_BRANCH_FOLDER
         mkdir -p ${{ env.MARKETING_REPO_PATH }}/static/v/$DOC_BRANCH_FOLDER
         cp -r ${{ env.MARKETING_REPO_PATH }}/public/* ${{ env.MARKETING_REPO_PATH }}/static/v/$DOC_BRANCH_FOLDER
