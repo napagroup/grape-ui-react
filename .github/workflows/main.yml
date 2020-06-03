@@ -10,7 +10,7 @@ jobs:
     name: Log Event
     steps:
     - name: Log Step
-      uses: napagroup/grape-ui-react/.github/actions/log-github@master
+      uses: napagroup/grape-ui-react/.github/actions/log-github@devops/41-5
     - name: Time of log
       run: echo "The time was ${{ steps.greet.outputs.time }}"
   prod_build_job:
