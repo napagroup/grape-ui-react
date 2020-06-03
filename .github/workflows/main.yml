@@ -11,7 +11,6 @@ jobs:
     name: Log Main Event
     steps:
     - name: Log Step
-      id: greet-log-step
       uses: napagroup/grape-ui-react/.github/actions/log-github@devops/41
     - name: Time of log
       run: echo "The time was ${{ steps.greet.outputs.time }}"
