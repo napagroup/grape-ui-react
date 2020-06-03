@@ -32,7 +32,7 @@ jobs:
         npm -v
         pwd && ls -hil
         echo $GITHUB_REF
-        echo TEST_VAR='hello'
+        TEST_VAR='hello'
         echo $TEST_VAR
         DOC_BRANCH_FOLDER=$($GITHUB_REF)
         echo 1 $DOC_BRANCH_FOLDER
