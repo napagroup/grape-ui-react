@@ -4,7 +4,7 @@ on:
       - master
   pull_request:
     branches:
-      - v0.*
+      - v*
 jobs:
   greet_log_job:
     runs-on: ubuntu-latest
@@ -13,8 +13,6 @@ jobs:
     - name: Log Step
       id: greet-log-step
       uses: napagroup/grape-ui-react/.github/actions/log-github@devops/41
-      with:
-        who-to-greet: 'User'
     - name: Time of log
       run: echo "The time was ${{ steps.greet.outputs.time }}"
   prod_build_job:
