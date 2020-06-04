@@ -26,11 +26,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12
-    - name: Confirm node env
-      run: |
-        node -v
-        npm -v
-        pwd && ls -hil
     - name: Checkout grape-ui-react repo
       uses: actions/checkout@v2
       with:
@@ -70,6 +65,12 @@ jobs:
         cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/build ${{ env.MARKETING_REPO_PATH }}/public/docs
         cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/static ${{ env.MARKETING_REPO_PATH }}/public/docs
         cp ${{ env.SOURCE_REPO_PATH }}/styleguide/index.html ${{ env.MARKETING_REPO_PATH }}/public/docs
+        echo $GITHUB_REF
+        DOC_BRANCH_FOLDER=$(echo $GITHUB_REF | sed s:refs/heads/:: | tr '\/\-' '_')
+        echo $DOC_BRANCH_FOLDER
+        mkdir -p ${{ env.MARKETING_REPO_PATH }}/static/v/$DOC_BRANCH_FOLDER
+        cp -r ${{ env.MARKETING_REPO_PATH }}/public/* ${{ env.MARKETING_REPO_PATH }}/static/v/$DOC_BRANCH_FOLDER
+        ls -hil ${{ env.MARKETING_REPO_PATH }}/static/v
         mv ${{ env.MARKETING_REPO_PATH }}/public ${{ env.MARKETING_REPO_PATH }}/docs
         echo ${{ env.MARKETING_REPO_PATH }}/docs/docs
         ls -hil ${{ env.MARKETING_REPO_PATH }}/docs/docs
@@ -80,7 +81,7 @@ jobs:
     - name: Perform git add & commit
       uses: EndBug/add-and-commit@v4 # You can change this to use a specific version
       with:
-        add: 'docs'
+        add: 'docs static'
         author_name: John Shin
         author_email: jshin@napa.com
         cwd: ${{ env.MARKETING_REPO_PATH }}
