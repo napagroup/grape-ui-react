@@ -46,7 +46,7 @@ jobs:
       with:
         repository: ${{ env.MARKETING_REPO }}
         path: ${{ env.MARKETING_REPO_PATH }}
-        token: ${{ secrets.GRAPE_DEPLOY }}
+        token: ${{ secrets.GRAPE_UI_REPO_TOKEN }}
     - name: Confirm grape-ui-marketing checkout
       run: |
         cd ${{ env.MARKETING_REPO_PATH }}
@@ -82,12 +82,12 @@ jobs:
       uses: EndBug/add-and-commit@v4 # You can change this to use a specific version
       with:
         add: 'docs static'
-        author_name: John Shin
-        author_email: jshin@napa.com
+        author_name: Ryan Espin
+        author_email: respin@napa.com
         cwd: ${{ env.MARKETING_REPO_PATH }}
         force: true
         message: 'Deploy docs'
         ref: 'staging'
       env:
         # This is necessary in order to push a commit to the repo
-        GITHUB_TOKEN: ${{ secrets.GRAPE_DEPLOY }}
+        GITHUB_TOKEN: ${{ secrets.GRAPE_UI_REPO_TOKEN }}
