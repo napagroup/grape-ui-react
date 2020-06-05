@@ -3,6 +3,11 @@
 Learn about our CheckboxField component, which is built on react-checkbox-group.
 ***
 
+## [`<CheckboxGroup>`](#/Forms/Components/CheckboxGroup)
+
+Learn about our CheckboxGroup component.
+***
+
 ## [`<DateField>`](#/Forms/Components/DateField)
 
 Learn about our DateField component, which is built on react-day-picker.
