@@ -2,6 +2,7 @@
 
 ```jsx in Markdown
 import { ThemeProvider } from 'styled-components';
+import { CheckboxInput } from 'src/elements/forms/CheckboxGroup/CheckboxInput';
 
 const beatlesOptions = [
   {
@@ -22,7 +23,7 @@ const beatlesOptions = [
   },
 ];
 
-const checkboxFields = beatlesOptions.map(option  => <CheckboxGroup option={option} />);
+const checkboxFields = beatlesOptions.map((option, idx)  => <CheckboxInput key={`beatles[${idx}]`} option={option} />);
 
 <ThemeProvider theme={{}}>
   {checkboxFields}
@@ -49,10 +50,11 @@ const {
   control,
   getValues,
   register,
+  setValue,
   watch,
 } = useForm({
   defaultValues: {
-    courses: ['🎨', false, false, false, false,],
+    courses: ['🎨'],
   },
 });
 
@@ -98,13 +100,17 @@ const checkboxFields = courseOptions.map((option, idx)  => {
     />
   );
 });
+const onSelectAll = e => {
+  const { target: { checked } } = e;
+  console.log({ checked });
+  setValue([
+    {
+      courses: courseOptions.map(option =>  checked ? option.value : false),
+    }
+  ]);
+};
 
 <ThemeProvider theme={{}}>
-  <Header.h5 margin="0 0 1rem">
-    {chosenCourses ?
-    `You've chosen interest in the following courses: ${chosenCourses}.`
-    : ''}
-  </Header.h5>
   <button
     type="button"
     onClick={() => {
@@ -116,7 +122,20 @@ const checkboxFields = courseOptions.map((option, idx)  => {
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       {checkboxFields}
+      <CheckboxInput
+        inputRef={register}
+        name={`selectAll`}
+        option={{ label: 'Select All', value:'select_all' }}
+        placeholder="Choose as many courses that interest you"
+        value="select_all"
+        onChange={onSelectAll}
+      />
     </Box>
   </Flex>
+  <Header.h5 margin="0 0 1rem">
+    {chosenCourses ?
+    `You've chosen interest in the following courses: ${chosenCourses}.`
+    : ''}
+  </Header.h5>
 </ThemeProvider>
 ```
