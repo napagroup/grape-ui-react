@@ -72,12 +72,30 @@ const plainTextPropsToTrim = [
   ...propsToTrim,
 ];
 
+const getSelectAllOption = selectAllOption => {
+  const defaultSelectAllOption = { label: 'Select All', value: 'select_all' };
+  return selectAllOption || defaultSelectAllOption;
+};
 const renderValueOrComponent = propsFromComponent => {
+  const { name, options, setValue } = propsFromComponent;
+  const onSelectAll = e => {
+    const { target: { checked } } = e;
+    setValue([
+      {
+        [`${name}`]: options.map(option => (checked ? option.value : false)),
+      },
+    ]);
+  };
   const {
     controlId,
     disabled,
     flexDirection,
+    onChange = () => {},
+    onSelectAllChange = onSelectAll,
     plainText,
+    inputRef,
+    hasSelectAll,
+    selectAllOption,
   } = propsFromComponent;
   if (plainText) {
     const plainTextProps = {
@@ -86,14 +104,40 @@ const renderValueOrComponent = propsFromComponent => {
     return (<PlainText {...plainTextProps} />);
   }
   const childProps = { id: controlId, ...removeSomeProps(propsFromComponent, propsToTrim) };
-  return (
+  const values = options.map(option => option.value);
+
+  const checkboxFields = options.map((option, idx) => (
     <CheckboxInput
       {...childProps}
+      // eslint-disable-next-line react/no-array-index-key
+      key={`${name}[${idx}]`}
       disabled={disabled}
       flexDirection={flexDirection}
+      inputRef={inputRef}
+      name={`${name}[${idx}]`}
+      onChange={onChange}
+      option={option}
+      value={values[idx]}
     />
+  ));
+  const nextSelectAllOption = getSelectAllOption(selectAllOption);
+  return (
+    <>
+      {hasSelectAll
+        && (
+          <CheckboxInput
+            inputRef={inputRef}
+            name={`${name}_selectAll`}
+            onChange={onSelectAllChange}
+            option={nextSelectAllOption}
+            value={nextSelectAllOption.value}
+          />
+        )}
+      {checkboxFields}
+    </>
   );
 };
+
 const CheckboxGroup = props => {
   const {
     activeColor,

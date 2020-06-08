@@ -92,7 +92,6 @@ const checkboxFields = courseOptions.map((option, idx)  => {
     <CheckboxInput
       inputRef={register}
       key={`courses[${idx}]`}
-      labelText={option.label}
       name={`courses[${idx}]`}
       option={option}
       placeholder="Choose as many courses that interest you"
@@ -121,14 +120,97 @@ const onSelectAll = e => {
   </button>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
-      {checkboxFields}
       <CheckboxInput
         inputRef={register}
         name={`selectAll`}
         option={{ label: 'Select All', value:'select_all' }}
-        placeholder="Choose as many courses that interest you"
         value="select_all"
         onChange={onSelectAll}
+      />
+      {checkboxFields}
+    </Box>
+  </Flex>
+  <Header.h5 margin="0 0 1rem">
+    {chosenCourses ?
+    `You've chosen interest in the following courses: ${chosenCourses}.`
+    : ''}
+  </Header.h5>
+</ThemeProvider>
+```
+
+#### Demonstrating Group Controlled Components (via react-hook-form)
+
+```jsx inside Markdown
+import {
+  Controller,
+  useForm,
+} from 'react-hook-form';
+import { ThemeProvider } from 'styled-components';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Header } from 'src/elements/typography';
+import { Button } from 'src/elements/Button';
+
+const defaultValues = {
+  courses: ['🎨', false, false, false, '💃', false, ],
+};
+const {
+  control,
+  getValues,
+  register,
+  setValue,
+  watch,
+} = useForm({ defaultValues });
+
+const courseOptions = [
+  {
+    label: '🎨 Arts & Humanities',
+    value: '🎨',
+  },
+  {
+    label: '👔 Business',
+    value: '👔',
+  },
+  {
+    label: '🤖 Artificial Intelligence',
+    value: '🤖',
+  },
+  {
+    label: '🤸‍♀️ Health',
+    value: '🤸‍♀️',
+  },
+  {
+    label: '💃 Music & Dance',
+    value: '💃',
+  },
+  {
+    label: '🌎 Language Learning',
+    value: '🌎',
+  },
+];
+const selectedCourseOptions = watch('courses') || [];
+const chosenCourses = selectedCourseOptions.filter(option => option).map(option => option).join(', ');
+
+<ThemeProvider theme={{}}>
+  <button
+    type="button"
+    onClick={() => {
+      console.log({ formData: getValues({ nest: true }) });
+    }}
+  >
+    get values
+  </button>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <CheckboxGroup
+        inputRef={register}
+        name="courses"
+        options={courseOptions}
+        hasSelectAll
+        setValue={setValue}
+        values={courseOptions.map(option => option.values)}
       />
     </Box>
   </Flex>
