@@ -6,6 +6,7 @@ import { fontWeight } from 'styled-system';
 import {
   colorCore,
   ellipsisCore,
+  flexboxProps,
   fontFamilyCore,
   fontSizeCore,
   fontStyleCore,
@@ -24,6 +25,7 @@ const opacity = props => `${props.disabled ? 'opacity: 0.6;' : ''}`;
 const marginRight = () => `margin-right: ${scaleFont(gutter, 1)};`;
 const CheckboxLabelComponent = ({ children, ...props }) => {
   const propsToTrim = [
+    ...Object.keys(flexboxProps.propTypes),
     ...Object.keys(typography.propTypes),
   ];
   const labelProps = removeSomeProps(props, propsToTrim);

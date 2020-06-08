@@ -8,7 +8,7 @@ import {
   PlainText,
 } from 'src/elements/forms/utils';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import { defaultControlStyles } from 'src/utils/styledHelpers';
+import { defaultControlStyles, refType } from 'src/utils/styledHelpers';
 import { CheckboxInput } from './CheckboxInput';
 
 const renderControlGroupLabel = propsFromControlGroup => {
@@ -75,11 +75,9 @@ const plainTextPropsToTrim = [
 const renderValueOrComponent = propsFromComponent => {
   const {
     controlId,
-    defaultValue,
     disabled,
     flexDirection,
     plainText,
-    value,
   } = propsFromComponent;
   if (plainText) {
     const plainTextProps = {
@@ -93,7 +91,6 @@ const renderValueOrComponent = propsFromComponent => {
       {...childProps}
       disabled={disabled}
       flexDirection={flexDirection}
-      value={value || defaultValue}
     />
   );
 };
@@ -128,7 +125,6 @@ const CheckboxGroup = props => {
     validationError,
   };
   const assistiveProps = { assistiveText, isRequired };
-
   return (
     <ControlGroup
       {...additionalControlGroupProps}
@@ -137,7 +133,7 @@ const CheckboxGroup = props => {
       validationError={validationError}
     >
       {renderControlGroupLabel(labelProps)}
-      {renderValueOrComponent({ ...props, plainText })}
+      {renderValueOrComponent(props)}
     </ControlGroup>
   );
 };
@@ -168,6 +164,8 @@ CheckboxGroup.propTypes = {
     PropTypes.array,
   ]),
   fontFamily: PropTypes.string,
+  /** Allows for a ref to be defined to the DOM input. */
+  inputRef: refType,
   /** This will add an asterisk (*) to the `labelText` and provided `assistiveText` if none is provided. */
   isRequired: PropTypes.bool,
   /** The string value displayed on top of the control in the `ControlLabel` component. */
@@ -194,6 +192,7 @@ CheckboxGroup.defaultProps = {
   disabled: false,
   flexDirection: 'column',
   fontFamily: 'base',
+  inputRef: () => {},
   isRequired: false,
   labelText: '',
   plainText: false,
