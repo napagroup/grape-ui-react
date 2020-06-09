@@ -11,24 +11,24 @@ import { getGlobalStyles } from 'src/global-styles';
 import { CheckboxLabel } from '../CheckboxLabel';
 
 const { grid: { gutter } } = getGlobalStyles();
-const propsToTrimLabel = [
+const commonPropsToTrim = [
   'controlId',
   'controlLabelProps',
+  'hasSelectAll',
+  'inputRef',
   'plainText',
+  'setValue',
+  'wrapperProps',
+];
+const propsToTrimLabel = [
+  ...commonPropsToTrim,
   'name',
   'onChange',
   'option',
-  'inputRef',
-  'wrapperProps',
 ];
 
 const propsToTrimControl = [
-  'controlId',
-  'controlLabelProps',
-  'inputRef',
-  'plainText',
-  'option',
-  'wrapperProps',
+  ...commonPropsToTrim,
   ...Object.keys(typography.propTypes),
   ...Object.keys(flexboxProps.propTypes),
 ];
