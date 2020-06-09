@@ -53,6 +53,18 @@ jobs:
       run: |
         cd ${{ env.MARKETING_REPO_PATH }}
         pwd && ls -hil
+    - name: Add doc version folder to marketing static/docs
+      run: |
+        echo $GITHUB_REF
+        DOC_BRANCH_FOLDER=$(echo $GITHUB_REF | sed s:refs/heads/:: | sed 's/[^A-Za-z0-9._]/_/g')
+        echo $DOC_BRANCH_FOLDER
+        # create the doc branch folder
+        mkdir -p ${{ env.MARKETING_REPO_PATH }}/static/docs/v/$DOC_BRANCH_FOLDER
+        # copy the styleguide contents to the doc branch folder
+        cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/build ${{ env.MARKETING_REPO_PATH }}/static/docs/v/$DOC_BRANCH_FOLDER
+        cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/static ${{ env.MARKETING_REPO_PATH }}/static/docs/v/$DOC_BRANCH_FOLDER
+        cp ${{ env.SOURCE_REPO_PATH }}/styleguide/index.html ${{ env.MARKETING_REPO_PATH }}/static/docs/v/$DOC_BRANCH_FOLDER
+        ls -hil ${{ env.MARKETING_REPO_PATH }}/static/docs/v
     - name: Install and Build repo
       run: |
         cd ${{ env.MARKETING_REPO_PATH }}
@@ -64,15 +76,9 @@ jobs:
       run: |
         pwd && ls -hil
         mkdir -p ${{ env.MARKETING_REPO_PATH }}/public/docs/build
-        cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/build ${{ env.MARKETING_REPO_PATH }}/public/docs
-        cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/static ${{ env.MARKETING_REPO_PATH }}/public/docs
-        cp ${{ env.SOURCE_REPO_PATH }}/styleguide/index.html ${{ env.MARKETING_REPO_PATH }}/public/docs
-        echo $GITHUB_REF
-        DOC_BRANCH_FOLDER=$(echo $GITHUB_REF | sed s:refs/heads/:: | tr '\/\-' '_')
-        echo $DOC_BRANCH_FOLDER
-        mkdir -p ${{ env.MARKETING_REPO_PATH }}/static/docs/v/$DOC_BRANCH_FOLDER
-        cp -r ${{ env.MARKETING_REPO_PATH }}/public/* ${{ env.MARKETING_REPO_PATH }}/static/docs/v/$DOC_BRANCH_FOLDER
-        ls -hil ${{ env.MARKETING_REPO_PATH }}/static/docs/v
+        cp -r ${{ env.MARKETING_REPO_PATH }}/node_modules/grape-ui-react/styleguide/build ${{ env.MARKETING_REPO_PATH }}/public/docs
+        cp -r ${{ env.MARKETING_REPO_PATH }}/node_modules/grape-ui-react/styleguide/static ${{ env.MARKETING_REPO_PATH }}/public/docs
+        cp ${{ env.MARKETING_REPO_PATH }}/node_modules/grape-ui-react/styleguide/index.html ${{ env.MARKETING_REPO_PATH }}/public/docs
         mv ${{ env.MARKETING_REPO_PATH }}/public ${{ env.MARKETING_REPO_PATH }}/docs
         echo ${{ env.MARKETING_REPO_PATH }}/docs/docs
         ls -hil ${{ env.MARKETING_REPO_PATH }}/docs/docs
