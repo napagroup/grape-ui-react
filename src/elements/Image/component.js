@@ -2,14 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import Img from 'react-image';
-import {
-  layoutProps,
-  spaceProps,
-} from 'src/utils/styledHelpers';
+import propTypes from '@styled-system/prop-types';
 
 const componentPropsToRemove = {
-  ...layoutProps.propTypes,
-  ...spaceProps.propTypes,
+  ...propTypes.border,
+  ...propTypes.layout,
+  ...propTypes.space,
 };
 
 export const ImageComponent = ({ alt, ...props }) => (

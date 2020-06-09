@@ -63,6 +63,10 @@ module.exports = {
       ],
     },
     {
+      components: './src/elements/Card/styled.js',
+      name: 'Card',
+    },
+    {
       components: './src/elements/Image/styled.js',
       name: 'Image',
     },
