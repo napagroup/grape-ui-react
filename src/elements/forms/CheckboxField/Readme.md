@@ -1,6 +1,9 @@
-`<CheckboxField>` uses [react-checkbox-group v4](https://github.com/ziad-saab/react-checkbox-group/tree/v4.0.0).
+`<CheckboxField>` is our control that handles Checkbox groups.
 
-```jsx inside Markdown
+```jsx in Markdown
+import { ThemeProvider } from 'styled-components';
+import { CheckboxInput } from 'src/elements/forms/CheckboxField/CheckboxInput';
+
 const beatlesOptions = [
   {
     label: 'George Harrison',
@@ -11,7 +14,7 @@ const beatlesOptions = [
     value: 'john'
   },
   {
-    label: 'Paul McCartney',
+    label: <span>Paul McCartney</span>,
     value: 'paul'
   },
   {
@@ -20,12 +23,12 @@ const beatlesOptions = [
   },
 ];
 
-<CheckboxField options={beatlesOptions} />
+const checkboxFields = beatlesOptions.map((option, idx)  => <CheckboxInput key={`beatles[${idx}]`} option={option} />);
+
+<ThemeProvider theme={{}}>
+  {checkboxFields}
+</ThemeProvider>
 ```
-
-grape-ui controls can be integrated with Form Validation libraries. Below we demonstrate registering the component(s) as controlled inputs via [react-hook-form](https://react-hook-form.com/).
-
-For further documentation on integrating UI component libraries with react-hook-form refer to [Working with UI Library](https://react-hook-form.com/get-started/#WorkwithUIlibrary).
 
 #### Demonstrating Controlled Components (via react-hook-form)
 
@@ -39,14 +42,21 @@ import {
   Box,
   Flex,
 } from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { CheckboxInput } from 'src/elements/forms/CheckboxField/CheckboxInput';
 import { Header } from 'src/elements/typography';
 import { Button } from 'src/elements/Button';
 
 const {
   control,
+  getValues,
   register,
+  setValue,
   watch,
-} = useForm();
+} = useForm({
+  defaultValues: {
+    courses: ['🎨'],
+  },
+});
 
 const courseOptions = [
   {
@@ -74,28 +84,138 @@ const courseOptions = [
     value: '🌎',
   },
 ];
-
 const selectedCourseOptions = watch('courses') || [];
-const chosenCourses = selectedCourseOptions.map(option => option).join(', ');
+const chosenCourses = selectedCourseOptions.filter(option => option).map(option => option).join(', ');
+const checkboxFields = courseOptions.map((option, idx)  => {
+
+  return (
+    <CheckboxInput
+      inputRef={register}
+      key={`courses[${idx}]`}
+      name={`courses[${idx}]`}
+      option={option}
+      placeholder="Choose as many courses that interest you"
+      value={option.value}
+    />
+  );
+});
+const onSelectAll = e => {
+  const { target: { checked } } = e;
+  setValue([
+    {
+      courses: courseOptions.map(option =>  checked ? option.value : false),
+    }
+  ]);
+};
 
 <ThemeProvider theme={{}}>
+  <button
+    type="button"
+    onClick={() => {
+      console.log({ formData: getValues({ nest: true }) });
+    }}
+  >
+    Get values
+  </button>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <CheckboxInput
+        inputRef={register}
+        name={`selectAll`}
+        option={{ label: 'Select All', value:'select_all' }}
+        value="select_all"
+        onChange={onSelectAll}
+      />
+      {checkboxFields}
+    </Box>
+  </Flex>
   <Header.h5 margin="0 0 1rem">
     {chosenCourses ?
     `You've chosen interest in the following courses: ${chosenCourses}.`
     : ''}
   </Header.h5>
+</ThemeProvider>
+```
+
+#### Demonstrating Group Controlled Components (via react-hook-form)
+
+```jsx inside Markdown
+import {
+  Controller,
+  useForm,
+} from 'react-hook-form';
+import { ThemeProvider } from 'styled-components';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Header } from 'src/elements/typography';
+import { Button } from 'src/elements/Button';
+
+const defaultValues = {
+  courses: ['🎨', false, false, false, '💃', false, ],
+};
+const {
+  control,
+  getValues,
+  register,
+  setValue,
+  watch,
+} = useForm({ defaultValues });
+
+const courseOptions = [
+  {
+    label: '🎨 Arts & Humanities',
+    value: '🎨',
+  },
+  {
+    label: '👔 Business',
+    value: '👔',
+  },
+  {
+    label: '🤖 Artificial Intelligence',
+    value: '🤖',
+  },
+  {
+    label: '🤸‍♀️ Health',
+    value: '🤸‍♀️',
+  },
+  {
+    label: '💃 Music & Dance',
+    value: '💃',
+  },
+  {
+    label: '🌎 Language Learning',
+    value: '🌎',
+  },
+];
+const selectedCourseOptions = watch('courses') || [];
+const chosenCourses = selectedCourseOptions.filter(option => option).map(option => option).join(', ');
+
+<ThemeProvider theme={{}}>
+  <button
+    type="button"
+    onClick={() => {
+      console.log({ formData: getValues({ nest: true }) });
+    }}
+  >
+    Get values
+  </button>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
-      <Controller
-        as={<CheckboxField />}
-        control={control}
-        labelText="Courses"
+      <CheckboxField
+        inputRef={register}
         name="courses"
         options={courseOptions}
-        onChange={([selected]) => selected}
-        placeholder="Choose as many courses that interest you"
+        hasSelectAll
+        setValue={setValue}
       />
     </Box>
   </Flex>
+  <Header.h5 margin="0 0 1rem">
+    {chosenCourses ?
+    `You've chosen interest in the following courses: ${chosenCourses}.`
+    : ''}
+  </Header.h5>
 </ThemeProvider>
 ```

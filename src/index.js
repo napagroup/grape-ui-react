@@ -2,6 +2,8 @@ import * as styledComponents from 'styled-components';
 import { Button } from './elements/Button';
 import {
   CheckboxField,
+  CheckboxLabel,
+  CheckboxInput,
   DateField,
   Form,
   SelectField,
@@ -28,6 +30,8 @@ export {
   Box,
   Button,
   CheckboxField,
+  CheckboxLabel,
+  CheckboxInput,
   Code,
   CodeBlock,
   DateField,

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -6,9 +7,10 @@ import {
   getAssistiveText,
   PlainText,
 } from 'src/elements/forms/utils';
+import { Flex } from 'src/elements/grid';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import { defaultControlStyles } from 'src/utils/styledHelpers';
-import { CheckboxFieldComponent } from './component';
+import { defaultControlStyles, refType } from 'src/utils/styledHelpers';
+import { CheckboxInput } from './CheckboxInput';
 
 const renderControlGroupLabel = propsFromControlGroup => {
   const {
@@ -71,14 +73,38 @@ const plainTextPropsToTrim = [
   ...propsToTrim,
 ];
 
+const getSelectAllOption = selectAllOption => {
+  const defaultSelectAllOption = { label: 'Select All', value: 'select_all' };
+  return selectAllOption || defaultSelectAllOption;
+};
+const getCheckedProps = (checkedValues, idx) => {
+  const checkedProps = {};
+  if (checkedValues) {
+    checkedProps.checked = checkedValues[idx] !== false;
+  }
+  return checkedProps;
+};
 const renderValueOrComponent = propsFromComponent => {
+  const { name, options, setValue } = propsFromComponent;
+  const handleSelectAll = e => {
+    const { target: { checked } } = e;
+    setValue([
+      {
+        [`${name}`]: options.map(option => (checked ? option.value : false)),
+      },
+    ]);
+  };
   const {
     controlId,
-    defaultValue,
+    values,
     disabled,
     flexDirection,
+    onChange = () => {},
+    onChangeSelectAll = handleSelectAll,
     plainText,
-    value,
+    inputRef,
+    hasSelectAll,
+    selectAllOption,
   } = propsFromComponent;
   if (plainText) {
     const plainTextProps = {
@@ -87,15 +113,40 @@ const renderValueOrComponent = propsFromComponent => {
     return (<PlainText {...plainTextProps} />);
   }
   const childProps = { id: controlId, ...removeSomeProps(propsFromComponent, propsToTrim) };
-  return (
-    <CheckboxFieldComponent
+  const optionValues = options.map(option => option.value);
+  const checkboxFields = options.map((option, idx) => (
+    <CheckboxInput
       {...childProps}
+      {...getCheckedProps(values, idx)}
+      // eslint-disable-next-line react/no-array-index-key
+      key={`${name}[${idx}]`}
       disabled={disabled}
       flexDirection={flexDirection}
-      value={value || defaultValue}
+      inputRef={inputRef}
+      name={`${name}[${idx}]`}
+      onChange={onChange}
+      option={option}
+      value={optionValues[idx]}
     />
+  ));
+  const nextSelectAllOption = getSelectAllOption(selectAllOption);
+  return (
+    <Flex flexDirection="column">
+      {hasSelectAll
+        && (
+          <CheckboxInput
+            inputRef={inputRef}
+            name={`${name}_selectAll`}
+            onChange={onChangeSelectAll}
+            option={nextSelectAllOption}
+            value={nextSelectAllOption.value}
+          />
+        )}
+      {checkboxFields}
+    </Flex>
   );
 };
+
 const CheckboxField = props => {
   const {
     activeColor,
@@ -127,7 +178,6 @@ const CheckboxField = props => {
     validationError,
   };
   const assistiveProps = { assistiveText, isRequired };
-
   return (
     <ControlGroup
       {...additionalControlGroupProps}
@@ -136,7 +186,7 @@ const CheckboxField = props => {
       validationError={validationError}
     >
       {renderControlGroupLabel(labelProps)}
-      {renderValueOrComponent({ ...props, plainText })}
+      {renderValueOrComponent(props)}
     </ControlGroup>
   );
 };
@@ -167,6 +217,8 @@ CheckboxField.propTypes = {
     PropTypes.array,
   ]),
   fontFamily: PropTypes.string,
+  /** Allows for a ref to be defined to the DOM input. */
+  inputRef: refType,
   /** This will add an asterisk (*) to the `labelText` and provided `assistiveText` if none is provided. */
   isRequired: PropTypes.bool,
   /** The string value displayed on top of the control in the `ControlLabel` component. */
@@ -178,7 +230,7 @@ CheckboxField.propTypes = {
     PropTypes.bool,
     PropTypes.string,
   ]),
-  /** Allows for custom props to be passed down to the `CheckboxGroupWrapper` component. */
+  /** Allows for custom props to be passed down to the `CheckboxFieldWrapper` component. */
   wrapperProps: PropTypes.object,
 };
 
@@ -193,6 +245,7 @@ CheckboxField.defaultProps = {
   disabled: false,
   flexDirection: 'column',
   fontFamily: 'base',
+  inputRef: () => {},
   isRequired: false,
   labelText: '',
   plainText: false,
