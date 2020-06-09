@@ -215,9 +215,7 @@ export function TableComponent(props) {
   const tableViewState = getTableViewState(props);
   const { indeterminate, title } = getToggleHideAllColumnsProps();
   const indetVal = indeterminate === 0 ? ['indeterminate'] : [];
-  const indeterminateOptions = [
-    { label: 'All', value: 'indeterminate' },
-  ];
+  const indeterminateOptions = { label: 'All', value: 'indeterminate' };
   const hiddenColumnsSelectOptions = [];
   const hiddenColumnsSelectValues = [];
   allColumns.forEach(column => {
@@ -243,7 +241,7 @@ export function TableComponent(props) {
               wrapperProps={{ pb: 0 }}
             />
             <CheckboxField
-              controlGroupProps={{ pb: 0, pt: 0 }}
+              controlGroupProps={{ pt: 0 }}
               name="CheckboxFieldToggleHideColumn"
               onChange={e => {
                 onChangeToggleHideColumn(e, toggleHideColumn);

@@ -2,11 +2,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { fontWeight } from 'styled-system';
+import {
+  fontWeight,
+  layout,
+  space,
+} from 'styled-system';
+import propTypes from '@styled-system/prop-types';
 import {
   colorCore,
   ellipsisCore,
-  flexboxProps,
   fontFamilyCore,
   fontSizeCore,
   fontStyleCore,
@@ -22,11 +26,13 @@ import { getGlobalStyles } from 'src/global-styles';
 
 const { grid: { gutter } } = getGlobalStyles();
 const opacity = props => `${props.disabled ? 'opacity: 0.6;' : ''}`;
-const marginRight = () => `margin-right: ${scaleFont(gutter, 1)};`;
 const CheckboxLabelComponent = ({ children, ...props }) => {
   const propsToTrim = [
-    ...Object.keys(flexboxProps.propTypes),
     ...Object.keys(typography.propTypes),
+    ...Object.keys(propTypes.flexbox),
+    ...Object.keys(propTypes.layout),
+    ...Object.keys(propTypes.space),
+    'controlGroupProps',
   ];
   const labelProps = removeSomeProps(props, propsToTrim);
   return (
@@ -51,16 +57,20 @@ const CheckboxLabel = styled(CheckboxLabelComponent)`
   ${fontFamilyCore}
   ${fontSizeCore}
   ${fontWeight}
+  ${layout}
   ${letterSpacingCore}
   ${lineHeightCore}
   ${fontStyleCore}
   ${textAlignCore}
   ${textDecorationCore}
-  ${marginRight}
   ${opacity}
-  align-items: baseline;
-  align-self: flex-start;
+  ${space}
   cursor: pointer;
 `;
+
+CheckboxLabel.defaultProps = {
+  display: 'inline-block',
+  mr: scaleFont(gutter, 1),
+};
 
 export { CheckboxLabel };

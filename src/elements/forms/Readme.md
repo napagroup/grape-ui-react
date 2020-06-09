@@ -28,7 +28,7 @@ const courseOptions = [
     value: '👔',
   },
   {
-    label: '🤖 Artificial Intelligence',
+    label: '🤖 Artificial Intelligence 100101 1 10 10 0100001 101 10100 1001 01001010 101 01001 10 10 101 00000111 100101 0101111  11111 1001 010 1111101 01 ',
     value: '🤖',
   },
   {

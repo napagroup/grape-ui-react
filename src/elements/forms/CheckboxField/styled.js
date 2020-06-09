@@ -7,6 +7,7 @@ import {
   getAssistiveText,
   PlainText,
 } from 'src/elements/forms/utils';
+import { Flex } from 'src/elements/grid';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import { defaultControlStyles, refType } from 'src/utils/styledHelpers';
 import { CheckboxInput } from './CheckboxInput';
@@ -130,7 +131,7 @@ const renderValueOrComponent = propsFromComponent => {
   ));
   const nextSelectAllOption = getSelectAllOption(selectAllOption);
   return (
-    <>
+    <Flex flexDirection="column">
       {hasSelectAll
         && (
           <CheckboxInput
@@ -142,7 +143,7 @@ const renderValueOrComponent = propsFromComponent => {
           />
         )}
       {checkboxFields}
-    </>
+    </Flex>
   );
 };
 

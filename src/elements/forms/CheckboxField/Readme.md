@@ -199,7 +199,7 @@ const chosenCourses = selectedCourseOptions.filter(option => option).map(option 
       console.log({ formData: getValues({ nest: true }) });
     }}
   >
-    get values
+    Get values
   </button>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
