@@ -1,6 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Card } from 'src/elements/Card';
+import {
+  cardRichMediaBasePropTypes,
+  cardRichMediaBaseDefaultProps,
+} from 'src/elements/Card/utils';
 
 export const getCardRichMedia = ({
   cardRichMedia,
@@ -13,11 +16,9 @@ export const getCardRichMedia = ({
 };
 
 getCardRichMedia.propTypes = {
-  cardRichMedia: PropTypes.node,
-  cardRichMediaProps: PropTypes.object,
+  ...cardRichMediaBasePropTypes,
 };
 
 getCardRichMedia.defaultProps = {
-  cardRichMedia: '',
-  cardRichMediaProps: {},
+  ...cardRichMediaBaseDefaultProps,
 };

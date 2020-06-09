@@ -2,7 +2,7 @@ import React from 'react';
 import { Box } from 'src/elements/grid';
 import { Card } from 'src/elements/Card';
 
-export const CardActions = ({
+export const getCardActions = ({
   cardActions,
   cardActionsProps,
   cardActionsLeft,

@@ -1,23 +1,55 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Card } from 'src/elements/Card';
+import {
+  cardBaseDefaultProps,
+  cardBasePropTypes,
+  cardBodyBaseDefaultProps,
+  cardBodyBasePropTypes,
+  cardSecondaryMediaBasePropTypes,
+  cardSecondaryMediaBaseDefaultProps,
+} from 'src/elements/Card/utils';
 
-export const getCardBody = ({
-  cardBody,
-  cardBodyProps,
+const getPaddingTop = ({
+  cardPadding,
+  cardSubtitle,
+  cardThumbnail,
+  cardTitle,
 }) => {
+  if (!cardTitle && !cardThumbnail && !cardSubtitle) {
+    return cardPadding;
+  }
+  return '';
+};
+
+export const getCardBody = props => {
+  const {
+    cardBody,
+    cardBodyProps,
+    cardPadding,
+    cardSecondaryMedia,
+  } = props;
   if (cardBody) {
-    return <Card.Body {...cardBodyProps}>{cardBody}</Card.Body>;
+    return (
+      <Card.Body
+        pt={getPaddingTop(props)}
+        px={cardSecondaryMedia ? cardPadding : ''}
+        {...cardBodyProps}
+      >
+        {cardBody}
+      </Card.Body>
+    );
   }
   return null;
 };
 
 getCardBody.propTypes = {
-  cardBody: PropTypes.node,
-  cardBodyProps: PropTypes.object,
+  ...cardBasePropTypes,
+  ...cardBodyBasePropTypes,
+  ...cardSecondaryMediaBasePropTypes,
 };
 
 getCardBody.defaultProps = {
-  cardBody: '',
-  cardBodyProps: {},
+  ...cardBaseDefaultProps,
+  ...cardBodyBaseDefaultProps,
+  ...cardSecondaryMediaBaseDefaultProps,
 };

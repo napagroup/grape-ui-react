@@ -1,7 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Card } from 'src/elements/Card';
-import { Box } from 'src/elements/grid';
+import {
+  cardBasePropTypes,
+  cardBaseDefaultProps,
+  cardBodyBaseDefaultProps,
+  cardBodyBasePropTypes,
+  cardHeaderBaseDefaultProps,
+  cardHeaderBasePropTypes,
+  cardSecondaryMediaBasePropTypes,
+  cardSecondaryMediaBaseDefaultProps,
+} from 'src/elements/Card/utils';
+import { Box, Flex } from 'src/elements/grid';
 
 const getCardTitle = ({ cardTitle, cardTitleProps }) => {
   if (cardTitle) {
@@ -25,34 +34,72 @@ const getCardSubtitle = ({ cardSubtitle, cardSubtitleProps }) => {
   return '';
 };
 
+const getCardThumbnail = ({
+  cardPadding,
+  cardThumbnail,
+  cardThumbnailProps,
+}) => {
+  if (cardThumbnail) {
+    return (
+      <Card.Thumbnail
+        pr={cardPadding}
+        {...cardThumbnailProps}
+      >
+        {cardThumbnail}
+      </Card.Thumbnail>
+    );
+  }
+  return '';
+};
+
+const getPaddingBottom = ({
+  cardPadding,
+  cardSubtitle,
+  cardThumbnail,
+  cardTitle,
+}) => {
+  if (!cardTitle && !cardSubtitle && !cardThumbnail) {
+    return '';
+  }
+  return cardPadding;
+};
+
 export const CardHeader = props => {
   const {
     cardBody,
+    cardHeaderProps,
     cardPadding,
+    cardSecondaryMedia,
     cardSubtitle,
     cardTitle,
+    cardTitleContainerProps,
   } = props;
   return (
-    <Box
-      pb={cardBody ? cardPadding : ''}
+    <Flex
+      alignItems="center"
+      pb={!cardBody && !cardSecondaryMedia ? '' : getPaddingBottom(props)}
       pt={cardTitle || cardSubtitle ? cardPadding : ''}
+      {...cardHeaderProps}
     >
-      {getCardTitle(props)}
-      {getCardSubtitle(props)}
-    </Box>
+      {getCardThumbnail(props)}
+      <Box {...cardTitleContainerProps}>
+        {getCardTitle(props)}
+        {getCardSubtitle(props)}
+      </Box>
+    </Flex>
   );
 };
 
 CardHeader.propTypes = {
-  cardBody: PropTypes.node,
-  cardPadding: PropTypes.any,
-  cardSubtitle: PropTypes.string,
-  cardTitle: PropTypes.string,
+  ...cardBasePropTypes,
+  ...cardBodyBasePropTypes,
+  ...cardHeaderBasePropTypes,
+  ...cardSecondaryMediaBasePropTypes,
 };
 
 CardHeader.defaultProps = {
-  cardBody: '',
-  cardPadding: [2, null, 3],
-  cardSubtitle: '',
-  cardTitle: '',
+  ...cardBaseDefaultProps,
+  ...cardBodyBaseDefaultProps,
+  ...cardHeaderBaseDefaultProps,
+  ...cardSecondaryMediaBaseDefaultProps,
 };

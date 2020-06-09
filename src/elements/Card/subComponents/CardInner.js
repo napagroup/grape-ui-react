@@ -1,8 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Box } from 'src/elements/grid';
+import {
+  cardBaseDefaultProps,
+  cardBasePropTypes,
+  cardBodyBaseDefaultProps,
+  cardBodyBasePropTypes,
+  cardHeaderBaseDefaultProps,
+  cardHeaderBasePropTypes,
+  cardInnerBaseDefaultProps,
+  cardInnerBasePropTypes,
+} from 'src/elements/Card/utils';
 
-const getPadding = props => {
+const getPaddingBottom = props => {
+  const {
+    cardBody,
+    cardPadding,
+    cardSecondaryMedia,
+    cardSubtitle,
+    cardTitle,
+  } = props;
+  if ((cardTitle || cardSubtitle || cardBody) && !cardSecondaryMedia) {
+    return cardPadding;
+  }
+  return '';
+};
+
+const getPaddingX = props => {
   const {
     cardBody,
     cardPadding,
@@ -36,9 +60,9 @@ export const CardInner = props => {
   } = props;
   return (
     <Box
-      pb={getPadding(props)}
+      pb={getPaddingBottom(props)}
       pt={getPaddingTop(props)}
-      px={getPadding(props)}
+      px={getPaddingX(props)}
       {...cardInnerProps}
     >
       {children}
@@ -47,19 +71,18 @@ export const CardInner = props => {
 };
 
 CardInner.propTypes = {
-  cardBody: PropTypes.node,
-  cardInnerProps: PropTypes.object,
-  cardPadding: PropTypes.any,
-  cardSubtitle: PropTypes.string,
-  cardTitle: PropTypes.string,
+  ...cardBasePropTypes,
+  ...cardBodyBasePropTypes,
+  ...cardHeaderBasePropTypes,
+  ...cardInnerBasePropTypes,
   children: PropTypes.node,
 };
 
 CardInner.defaultProps = {
-  cardBody: '',
-  cardInnerProps: {},
+  ...cardBaseDefaultProps,
+  ...cardBodyBaseDefaultProps,
+  ...cardHeaderBaseDefaultProps,
+  ...cardInnerBaseDefaultProps,
   cardPadding: [2, null, 3],
-  cardSubtitle: '',
-  cardTitle: '',
   children: '',
 };

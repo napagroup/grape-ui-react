@@ -1,32 +1,113 @@
 import PropTypes from 'prop-types';
-import propTypes from '@styled-system/prop-types';
-// import { resolveBoxShadow } from 'src/utils/styledHelpers';
 
-export const cardPropTypes = {
-  ...propTypes.background,
-  ...propTypes.border,
-  ...propTypes.color,
-  ...propTypes.flexbox,
-  ...propTypes.layout,
-  ...propTypes.position,
-  ...propTypes.shadow,
-  ...propTypes.space,
-  boxSizing: PropTypes.oneOfType([
-    PropTypes.array,
-    PropTypes.string,
-  ]),
-  cardImageProps: PropTypes.object,
+export const cardActionsBasePropTypes = {
+  cardActions: PropTypes.node,
+  cardActionsLeft: PropTypes.node,
+  cardActionsLeftProps: PropTypes.object,
+  cardActionsProps: PropTypes.object,
+  cardActionsRight: PropTypes.node,
+  cardActionsRightProps: PropTypes.object,
+};
+
+export const cardActionsBaseDefaultProps = {
+  cardActions: '',
+  cardActionsLeft: '',
+  cardActionsLeftProps: {},
+  cardActionsProps: {},
+  cardActionsRight: '',
+  cardActionsRightProps: {},
+};
+
+export const cardBasePropTypes = {
+  cardPadding: PropTypes.any,
+};
+
+export const cardBaseDefaultProps = {
+  cardPadding: [2, null, 3],
+};
+
+export const cardBodyBasePropTypes = {
+  cardBody: PropTypes.node,
+  cardBodyProps: PropTypes.object,
+};
+
+export const cardBodyBaseDefaultProps = {
+  cardBody: '',
+  cardBodyProps: {},
+};
+
+export const cardHeaderBasePropTypes = {
+  cardHeaderProps: PropTypes.object,
+  cardSubtitle: PropTypes.string,
+  cardSubtitleProps: PropTypes.object,
+  cardThumbnail: PropTypes.node,
+  cardThumbnailProps: PropTypes.object,
+  cardTitle: PropTypes.string,
+  cardTitleContainerProps: PropTypes.object,
+  cardTitleProps: PropTypes.object,
+};
+
+export const cardHeaderBaseDefaultProps = {
+  cardHeaderProps: {},
+  cardSubtitle: '',
+  cardSubtitleProps: {},
+  cardThumbnail: '',
+  cardThumbnailProps: {},
+  cardTitle: '',
+  cardTitleContainerProps: {},
+  cardTitleProps: {},
+};
+
+export const cardInnerBasePropTypes = {
   cardInnerProps: PropTypes.object,
 };
 
-export const cardImageProps = {
-  display: 'block',
+export const cardInnerBaseDefaultProps = {
+  cardInnerProps: {},
+};
+
+export const cardRichMediaBasePropTypes = {
+  cardRichMedia: PropTypes.node,
+  cardRichMediaProps: PropTypes.object,
+};
+
+export const cardRichMediaBaseDefaultProps = {
+  cardRichMedia: '',
+  cardRichMediaProps: {},
+};
+
+export const cardSecondaryMediaBasePropTypes = {
+  cardSecondaryMedia: PropTypes.node,
+  cardSecondaryMediaProps: PropTypes.object,
+};
+
+export const cardSecondaryMediaBaseDefaultProps = {
+  cardSecondaryMedia: '',
+  cardSecondaryMediaProps: {},
+};
+
+export const cardPropTypes = {
+  ...cardActionsBasePropTypes,
+  ...cardBasePropTypes,
+  ...cardBodyBasePropTypes,
+  ...cardHeaderBasePropTypes,
+  ...cardInnerBasePropTypes,
+  ...cardRichMediaBasePropTypes,
+  ...cardSecondaryMediaBasePropTypes,
+  children: PropTypes.node,
 };
 
 export const cardDefaultProps = {
+  ...cardActionsBaseDefaultProps,
+  ...cardBaseDefaultProps,
+  ...cardBodyBaseDefaultProps,
+  ...cardHeaderBaseDefaultProps,
+  ...cardInnerBaseDefaultProps,
+  ...cardRichMediaBaseDefaultProps,
+  ...cardSecondaryMediaBaseDefaultProps,
+  background: 'white',
   border: '1px solid #ddd',
   borderRadius: 4,
-  cardImageProps: { ...cardImageProps },
+  children: '',
   mb: [1, null, 2],
-  p: [2, null, 3],
 };
