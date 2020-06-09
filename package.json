@@ -1,11 +1,14 @@
 {
   "name": "grape-ui-react",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "description": "A React component library built with styled-components.",
   "main": "lib/index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=src/internals/webpack/webpack.config.js",
     "build": "babel src/ -d lib --ignore **/*.json && babel src/assets --out-dir lib/assets --copy-files",
+    "build:actions": "npm run build:action:log && npm run build:action:buildprod",
+    "build:action:log": "rimraf .github/actions/log-github/build/index.js && ncc build .github/actions/log-github/script.js -o .github/actions/log-github/build",
+    "build:action:buildprod": "rimraf .github/actions/build-prod/build/index.js && ncc build .github/actions/build-prod/script.js -o .github/actions/build-prod/build",
     "build:clean": "rimraf ./lib",
     "build:styleguide": "npx styleguidist build",
     "clean:styleguide": "rimraf styleguide/index.html && rimraf styleguide/build && rimraf styleguide/static",
@@ -74,6 +77,10 @@
     "react-dom": "16.12.0"
   },
   "devDependencies": {
+    "@actions/artifact": "^0.3.2",
+    "@actions/core": "^1.2.4",
+    "@actions/exec": "^1.0.4",
+    "@actions/github": "^2.2.0",
     "@babel/cli": "7.8.4",
     "@babel/core": "7.9.0",
     "@babel/plugin-proposal-class-properties": "7.8.3",

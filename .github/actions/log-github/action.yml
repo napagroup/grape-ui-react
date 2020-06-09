@@ -1,0 +1,8 @@
+name: 'Log Github Events'
+description: 'Logs Github events'
+outputs:
+  time: # id of output
+    description: 'The time of event'
+runs:
+  using: 'node12'
+  main: 'build/index.js'

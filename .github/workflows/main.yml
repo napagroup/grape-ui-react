@@ -1,0 +1,93 @@
+on:
+  push:
+    branches:
+      - master
+      - 'v**'
+      - 'devops**'
+jobs:
+  greet_log_job:
+    runs-on: ubuntu-latest
+    name: Log Event
+    steps:
+    - name: Log Step
+      uses: napagroup/grape-ui-react/.github/actions/log-github@master
+    - name: Time of log
+      run: echo "The time was ${{ steps.greet.outputs.time }}"
+  prod_build_job:
+    runs-on: ubuntu-latest
+    name: Build packages for prod repo
+    env:
+      SOURCE_REPO: napagroup/grape-ui-react
+      SOURCE_REPO_PATH: grape-ui-react-repo
+      MARKETING_REPO: napagroup/grape-ui-marketing
+      MARKETING_REPO_PATH: grape-ui-marketing
+    steps:
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - name: Checkout grape-ui-react repo
+      uses: actions/checkout@v2
+      with:
+        repository: ${{ env.SOURCE_REPO }}
+        path: ${{ env.SOURCE_REPO_PATH }}
+    - name: Confirm source checkout
+      run: |
+        cd ${{ env.SOURCE_REPO_PATH }}
+        pwd && ls -hil
+    - name: Install and Build repo
+      run: |
+        cd ${{ env.SOURCE_REPO_PATH }}
+        npm install
+        npm run build:styleguide
+        pwd && ls -hil
+    - name: Checkout grape-ui-marketing repo
+      uses: actions/checkout@v2
+      with:
+        repository: ${{ env.MARKETING_REPO }}
+        path: ${{ env.MARKETING_REPO_PATH }}
+        token: ${{ secrets.GRAPE_UI_REPO_TOKEN }}
+    - name: Confirm grape-ui-marketing checkout
+      run: |
+        cd ${{ env.MARKETING_REPO_PATH }}
+        pwd && ls -hil
+    - name: Install and Build repo
+      run: |
+        cd ${{ env.MARKETING_REPO_PATH }}
+        rm -rf docs
+        npm install
+        npm run build
+        pwd && ls -hil
+    - name: Copy styleguide contents over to grape-ui-market/public/docs
+      run: |
+        pwd && ls -hil
+        mkdir -p ${{ env.MARKETING_REPO_PATH }}/public/docs/build
+        cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/build ${{ env.MARKETING_REPO_PATH }}/public/docs
+        cp -r ${{ env.SOURCE_REPO_PATH }}/styleguide/static ${{ env.MARKETING_REPO_PATH }}/public/docs
+        cp ${{ env.SOURCE_REPO_PATH }}/styleguide/index.html ${{ env.MARKETING_REPO_PATH }}/public/docs
+        echo $GITHUB_REF
+        DOC_BRANCH_FOLDER=$(echo $GITHUB_REF | sed s:refs/heads/:: | tr '\/\-' '_')
+        echo $DOC_BRANCH_FOLDER
+        mkdir -p ${{ env.MARKETING_REPO_PATH }}/static/docs/v/$DOC_BRANCH_FOLDER
+        cp -r ${{ env.MARKETING_REPO_PATH }}/public/* ${{ env.MARKETING_REPO_PATH }}/static/docs/v/$DOC_BRANCH_FOLDER
+        ls -hil ${{ env.MARKETING_REPO_PATH }}/static/docs/v
+        mv ${{ env.MARKETING_REPO_PATH }}/public ${{ env.MARKETING_REPO_PATH }}/docs
+        echo ${{ env.MARKETING_REPO_PATH }}/docs/docs
+        ls -hil ${{ env.MARKETING_REPO_PATH }}/docs/docs
+        echo ${{ env.MARKETING_REPO_PATH }}/docs/build
+        ls -hil ${{ env.MARKETING_REPO_PATH }}/docs/docs/build
+        echo ${{ env.MARKETING_REPO_PATH }}/docs/static
+        ls -hil ${{ env.MARKETING_REPO_PATH }}/docs/docs/static
+    - name: Perform git add & commit
+      uses: EndBug/add-and-commit@v4 # You can change this to use a specific version
+      with:
+        add: 'docs static'
+        author_name: Ryan Espin
+        author_email: respin@napa.com
+        cwd: ${{ env.MARKETING_REPO_PATH }}
+        force: true
+        message: 'Deploy docs'
+        ref: 'staging'
+      env:
+        # This is necessary in order to push a commit to the repo
+        GITHUB_TOKEN: ${{ secrets.GRAPE_UI_REPO_TOKEN }}
