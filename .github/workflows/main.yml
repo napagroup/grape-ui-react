@@ -25,7 +25,9 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v1
       with:
-        node-version: 12
+        node-version: 13.3
+    - name: Upgrade npm version
+      run : npm install -g npm@latest
     - name: Checkout grape-ui-react repo
       uses: actions/checkout@v2
       with:
