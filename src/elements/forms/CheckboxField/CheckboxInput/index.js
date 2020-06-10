@@ -17,8 +17,11 @@ const { grid: { gutter } } = getGlobalStyles();
 const commonPropsToTrim = [
   'controlId',
   'controlLabelProps',
+  'enableAutoChecking',
   'hasSelectAll',
   'inputRef',
+  'onChangeSelectAll',
+  'optionSelectAll',
   'plainText',
   'setValue',
   'wrapperProps',
@@ -48,7 +51,9 @@ CheckboxInputComponent.defaultProps = {
 };
 
 const CheckboxInput = props => {
-  const { inputRef, disabled, option } = props;
+  const {
+    disabled, id, inputRef, name, option,
+  } = props;
   const propsForCheckboxLabel = removeSomeProps(passThrough(CheckboxInput, props), propsToTrimLabel);
   const propsForCheckboxControl = removeSomeProps(passThrough(CheckboxInput, props), propsToTrimControl);
   return (
@@ -61,7 +66,7 @@ const CheckboxInput = props => {
           key={option.label}
           ref={inputRef}
           disabled={disabled}
-          id={option.value}
+          id={id || name}
           type="checkbox"
           {...propsForCheckboxControl}
         />

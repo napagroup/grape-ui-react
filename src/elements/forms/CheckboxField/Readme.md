@@ -30,7 +30,7 @@ const checkboxFields = beatlesOptions.map((option, idx)  => <CheckboxInput key={
 </ThemeProvider>
 ```
 
-#### Demonstrating Controlled Components (via react-hook-form)
+#### Demonstrating Individual Controlled Components with `<CheckboxInput>` and react-hook-form
 
 ```jsx inside Markdown
 import {
@@ -100,36 +100,42 @@ const checkboxFields = courseOptions.map((option, idx)  => {
   );
 });
 
-const onSelectAll = e => {
+// const onSelectAll = e => {
+//   const { target: { checked } } = e;
+//   setValue([
+//     {
+//       courses: courseOptions.map(option =>  checked ? option.value : false),
+//     }
+//   ]);
+// };
+
+const handleSelectAll = e => {
   const { target: { checked } } = e;
   setValue([
     {
-      courses: courseOptions.map(option =>  checked ? option.value : false),
-    }
+      courses: checked ? courseOptions.map(option =>  option.value) : new Array(courseOptions.length).fill(false),
+    },
   ]);
 };
-
 <ThemeProvider theme={{}}>
-  <button
-    type="button"
-    onClick={() => {
-      console.log({ formData: getValues({ nest: true }) });
-    }}
-  >
-    Get values
-  </button>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <CheckboxInput
         inputRef={register}
         name={`selectAll`}
-        option={{ label: 'Select All', value:'select_all' }}
-        value="select_all"
-        onChange={onSelectAll}
+        option={{ label: 'Select All', value: true }}
+        onChange={handleSelectAll}
       />
       {checkboxFields}
     </Box>
   </Flex>
+  <Button
+    onClick={() => {
+      console.log({ formData: getValues({ nest: true }) });
+    }}
+  >
+    Get values (shown in console)
+  </Button>
   <Header.h5 margin="0 0 1rem">
     {chosenCourses ?
     `You've chosen interest in the following courses: ${chosenCourses}.`
@@ -138,7 +144,7 @@ const onSelectAll = e => {
 </ThemeProvider>
 ```
 
-#### Demonstrating Group Controlled Components (via react-hook-form)
+#### Demonstrating Group Controlled Components with `<CheckboxField>` and react-hook-form
 
 ```jsx inside Markdown
 import {
@@ -191,7 +197,6 @@ const courseOptions = [
   },
 ];
 const courses = watch('courses') || [];
-console.log({ courses })
 const chosenCourses = courses.filter(value => value).map(value => value).join(', ');
 const handleSelectAll = e => {
   const { target: { checked } } = e;
@@ -202,14 +207,6 @@ const handleSelectAll = e => {
   ]);
 };
 <ThemeProvider theme={{}}>
-  <button
-    type="button"
-    onClick={() => {
-      console.log({ formData: getValues({ nest: true }) });
-    }}
-  >
-    Get values
-  </button>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <CheckboxField
@@ -222,6 +219,13 @@ const handleSelectAll = e => {
       />
     </Box>
   </Flex>
+  <Button
+    onClick={() => {
+      console.log({ formData: getValues({ nest: true }) });
+    }}
+  >
+    Get values (shown in console)
+  </Button>
   <Header.h5 margin="0 0 1rem">
     {chosenCourses ?
     `You've chosen interest in the following courses: ${chosenCourses}.`
