@@ -84,8 +84,8 @@ const courseOptions = [
     value: '🌎',
   },
 ];
-const selectedCourseOptions = watch('courses') || [];
-const chosenCourses = selectedCourseOptions.filter(option => option).map(option => option).join(', ');
+const courses = watch('courses') || [];
+const chosenCourses = courses.filter(value => value).map(value => value).join(', ');
 const checkboxFields = courseOptions.map((option, idx)  => {
 
   return (
@@ -99,6 +99,7 @@ const checkboxFields = courseOptions.map((option, idx)  => {
     />
   );
 });
+
 const onSelectAll = e => {
   const { target: { checked } } = e;
   setValue([
@@ -189,9 +190,17 @@ const courseOptions = [
     value: '🌎',
   },
 ];
-const selectedCourseOptions = watch('courses') || [];
-const chosenCourses = selectedCourseOptions.filter(option => option).map(option => option).join(', ');
-
+const courses = watch('courses') || [];
+console.log({ courses })
+const chosenCourses = courses.filter(value => value).map(value => value).join(', ');
+const handleSelectAll = e => {
+  const { target: { checked } } = e;
+  setValue([
+    {
+      courses: checked ? courseOptions.map(option =>  option.value) : new Array(courseOptions.length).fill(false),
+    },
+  ]);
+};
 <ThemeProvider theme={{}}>
   <button
     type="button"
@@ -207,8 +216,9 @@ const chosenCourses = selectedCourseOptions.filter(option => option).map(option 
         inputRef={register}
         name="courses"
         options={courseOptions}
+        onChangeSelectAll={handleSelectAll}
         hasSelectAll
-        setValue={setValue}
+        values={courses}
       />
     </Box>
   </Flex>

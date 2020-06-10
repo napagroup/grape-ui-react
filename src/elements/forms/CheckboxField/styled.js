@@ -73,38 +73,23 @@ const plainTextPropsToTrim = [
   ...propsToTrim,
 ];
 
-const getSelectAllOption = selectAllOption => {
-  const defaultSelectAllOption = { label: 'Select All', value: 'select_all' };
-  return selectAllOption || defaultSelectAllOption;
-};
-const getCheckedProps = (checkedValues, idx) => {
-  const checkedProps = {};
-  if (checkedValues) {
-    checkedProps.checked = checkedValues[idx] !== false;
-  }
-  return checkedProps;
-};
+const isChecked = values => values && values.filter(val => !val).length === 0;
+
 const renderValueOrComponent = propsFromComponent => {
-  const { name, options, setValue } = propsFromComponent;
-  const handleSelectAll = e => {
-    const { target: { checked } } = e;
-    setValue([
-      {
-        [`${name}`]: options.map(option => (checked ? option.value : false)),
-      },
-    ]);
-  };
+  const { name, options } = propsFromComponent;
+
   const {
     controlId,
-    values,
     disabled,
     flexDirection,
-    onChange = () => {},
-    onChangeSelectAll = handleSelectAll,
-    plainText,
-    inputRef,
     hasSelectAll,
-    selectAllOption,
+    inputRef,
+    enableAutoChecking,
+    onChange = () => {},
+    onChangeSelectAll = () => {},
+    plainText,
+    optionSelectAll = { label: 'Select All', value: true },
+    values,
   } = propsFromComponent;
   if (plainText) {
     const plainTextProps = {
@@ -114,32 +99,38 @@ const renderValueOrComponent = propsFromComponent => {
   }
   const childProps = { id: controlId, ...removeSomeProps(propsFromComponent, propsToTrim) };
   const optionValues = options.map(option => option.value);
-  const checkboxFields = options.map((option, idx) => (
-    <CheckboxInput
-      {...childProps}
-      {...getCheckedProps(values, idx)}
-      // eslint-disable-next-line react/no-array-index-key
-      key={`${name}[${idx}]`}
-      disabled={disabled}
-      flexDirection={flexDirection}
-      inputRef={inputRef}
-      name={`${name}[${idx}]`}
-      onChange={onChange}
-      option={option}
-      value={optionValues[idx]}
-    />
-  ));
-  const nextSelectAllOption = getSelectAllOption(selectAllOption);
+  const checkboxFields = options.map((option, idx) => {
+    const checkedProp = {};
+    if (enableAutoChecking) {
+      checkedProp.checked = values[idx];
+    }
+    return (
+      <CheckboxInput
+        {...childProps}
+        {...checkedProp}
+        // eslint-disable-next-line react/no-array-index-key
+        key={`${name}[${idx}]`}
+        disabled={disabled}
+        flexDirection={flexDirection}
+        inputRef={inputRef}
+        name={`${name}[${idx}]`}
+        onChange={onChange}
+        option={option}
+        value={optionValues[idx]}
+      />
+    );
+  });
   return (
     <Flex flexDirection="column">
       {hasSelectAll
         && (
           <CheckboxInput
+            checked={isChecked(values)}
             inputRef={inputRef}
             name={`${name}_selectAll`}
             onChange={onChangeSelectAll}
-            option={nextSelectAllOption}
-            value={nextSelectAllOption.value}
+            option={optionSelectAll}
+            value={optionSelectAll.value}
           />
         )}
       {checkboxFields}

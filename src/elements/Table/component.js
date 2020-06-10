@@ -10,7 +10,7 @@ import {
   faArrowUp,
 } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
-import { CheckboxField, CheckboxInput } from 'src/elements/forms';
+import { CheckboxField } from 'src/elements/forms';
 import { Box, Flex } from 'src/elements/grid';
 import { Paragraph, Text } from 'src/elements/typography';
 import { Hideable } from 'src/elements/utils';
@@ -177,7 +177,6 @@ export function TableComponent(props) {
     allColumns,
     canNextPage,
     canPreviousPage,
-    getToggleHideAllColumnsProps,
     getTableBodyProps,
     getTableProps,
     gotoPage,
@@ -213,9 +212,6 @@ export function TableComponent(props) {
   }, [manual, pageCount, pageIndex, pageSize, sortBy]);
 
   const tableViewState = getTableViewState(props);
-  const { indeterminate, title } = getToggleHideAllColumnsProps();
-  const indetVal = indeterminate === 0 ? ['indeterminate'] : [];
-  const indeterminateOptions = { label: 'All', value: 'indeterminate' };
   const hiddenColumnsSelectOptions = [];
   const hiddenColumnsSelectValues = [];
   allColumns.forEach(column => {
@@ -231,22 +227,17 @@ export function TableComponent(props) {
       >
         <Hideable hide={!showToggleHideColumns}>
           <div>
-            <CheckboxInput
-              controlGroupProps={{ pb: 0 }}
-              name="toggleHideAll"
-              onChange={() => toggleHideAllColumns()}
-              option={indeterminateOptions}
-              title={title}
-              value={indetVal}
-              wrapperProps={{ pb: 0 }}
-            />
             <CheckboxField
               controlGroupProps={{ pt: 0 }}
+              enableAutoChecking
+              hasSelectAll
               name="CheckboxFieldToggleHideColumn"
               onChange={e => {
                 onChangeToggleHideColumn(e, toggleHideColumn);
               }}
+              onChangeSelectAll={() => toggleHideAllColumns()}
               options={hiddenColumnsSelectOptions}
+              optionSelectAll={{ label: 'All', value: true }}
               values={hiddenColumnsSelectValues}
             />
           </div>
