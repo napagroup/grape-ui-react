@@ -244,5 +244,7 @@ CheckboxField.defaultProps = {
   wrapperProps: {},
 };
 
+CheckboxField.Input = CheckboxInput;
+
 /** @component */
 export { CheckboxField };

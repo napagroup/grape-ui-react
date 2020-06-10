@@ -2,7 +2,6 @@
 
 ```jsx in Markdown
 import { ThemeProvider } from 'styled-components';
-import { CheckboxInput } from 'src/elements/forms/CheckboxField/CheckboxInput';
 
 const beatlesOptions = [
   {
@@ -23,14 +22,15 @@ const beatlesOptions = [
   },
 ];
 
-const checkboxFields = beatlesOptions.map((option, idx)  => <CheckboxInput key={`beatles[${idx}]`} option={option} />);
-
 <ThemeProvider theme={{}}>
-  {checkboxFields}
+  <CheckboxField
+    name="courses"
+    options={beatlesOptions}
+  />
 </ThemeProvider>
 ```
 
-#### Demonstrating Individual Controlled Components with `<CheckboxInput>` and react-hook-form
+#### Demonstrating Individual Controlled Components with `<CheckboxField.Input>` and react-hook-form
 
 ```jsx inside Markdown
 import {
@@ -42,7 +42,6 @@ import {
   Box,
   Flex,
 } from 'src/elements/grid'; // ... from 'grape-ui-react'
-import { CheckboxInput } from 'src/elements/forms/CheckboxField/CheckboxInput';
 import { Header } from 'src/elements/typography';
 import { Button } from 'src/elements/Button';
 
@@ -89,7 +88,7 @@ const chosenCourses = courses.filter(value => value).map(value => value).join(',
 const checkboxFields = courseOptions.map((option, idx)  => {
 
   return (
-    <CheckboxInput
+    <CheckboxField.Input
       inputRef={register}
       key={`courses[${idx}]`}
       name={`courses[${idx}]`}
@@ -108,11 +107,14 @@ const handleSelectAll = e => {
     },
   ]);
 };
+const isChecked = values => values && values.filter(val => !val).length === 0;
+
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
-      <CheckboxInput
+      <CheckboxField.Input
         inputRef={register}
+        checked={isChecked(courses)}
         name={`selectAll`}
         option={{ label: 'Select All', value: true }}
         onChange={handleSelectAll}
