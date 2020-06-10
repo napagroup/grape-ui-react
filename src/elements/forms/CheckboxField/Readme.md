@@ -100,15 +100,6 @@ const checkboxFields = courseOptions.map((option, idx)  => {
   );
 });
 
-// const onSelectAll = e => {
-//   const { target: { checked } } = e;
-//   setValue([
-//     {
-//       courses: courseOptions.map(option =>  checked ? option.value : false),
-//     }
-//   ]);
-// };
-
 const handleSelectAll = e => {
   const { target: { checked } } = e;
   setValue([
