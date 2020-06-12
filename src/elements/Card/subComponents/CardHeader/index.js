@@ -13,6 +13,13 @@ import {
 import { Box, Flex } from 'src/elements/grid';
 
 const getCardTitle = ({ cardTitle, cardTitleProps }) => {
+  if (typeof cardTitle === 'object') {
+    return (
+      <Box {...cardTitleProps}>
+        {cardTitle}
+      </Box>
+    );
+  }
   if (cardTitle) {
     return (
       <Card.Title {...cardTitleProps}>
@@ -24,6 +31,13 @@ const getCardTitle = ({ cardTitle, cardTitleProps }) => {
 };
 
 const getCardSubtitle = ({ cardSubtitle, cardSubtitleProps }) => {
+  if (typeof cardSubtitle === 'object') {
+    return (
+      <Box {...cardSubtitleProps}>
+        {cardSubtitle}
+      </Box>
+    );
+  }
   if (cardSubtitle) {
     return (
       <Card.Subtitle {...cardSubtitleProps}>
@@ -64,21 +78,30 @@ const getPaddingBottom = ({
   return cardPadding;
 };
 
+export const getCardHeader = ({
+  cardSubtitle,
+  cardThumbnail,
+  cardTitle,
+}) => {
+  if (cardSubtitle || cardThumbnail || cardTitle) {
+    return true;
+  }
+  return false;
+};
+
 export const CardHeader = props => {
   const {
     cardBody,
     cardHeaderProps,
     cardPadding,
     cardSecondaryMedia,
-    cardSubtitle,
-    cardTitle,
     cardTitleContainerProps,
   } = props;
   return (
     <Flex
       alignItems="center"
       pb={!cardBody && !cardSecondaryMedia ? '' : getPaddingBottom(props)}
-      pt={cardTitle || cardSubtitle ? cardPadding : ''}
+      pt={getCardHeader(props) ? cardPadding : ''}
       {...cardHeaderProps}
     >
       {getCardThumbnail(props)}

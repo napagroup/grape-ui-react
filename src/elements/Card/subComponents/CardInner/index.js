@@ -11,16 +11,15 @@ import {
   cardInnerBaseDefaultProps,
   cardInnerBasePropTypes,
 } from 'src/elements/Card/utils';
+import { getCardHeader } from '../CardHeader';
 
 const getPaddingBottom = props => {
   const {
     cardBody,
     cardPadding,
     cardSecondaryMedia,
-    cardSubtitle,
-    cardTitle,
   } = props;
-  if ((cardTitle || cardSubtitle || cardBody) && !cardSecondaryMedia) {
+  if ((getCardHeader(props) || cardBody) && !cardSecondaryMedia) {
     return cardPadding;
   }
   return '';
@@ -30,10 +29,8 @@ const getPaddingX = props => {
   const {
     cardBody,
     cardPadding,
-    cardSubtitle,
-    cardTitle,
   } = props;
-  if (cardTitle || cardSubtitle || cardBody) {
+  if (getCardHeader(props) || cardBody) {
     return cardPadding;
   }
   return '';
@@ -42,12 +39,11 @@ const getPaddingX = props => {
 const getPaddingTop = props => {
   const {
     cardActions,
-    cardBody,
+    cardActionsLeft,
+    cardActionsRight,
     cardPadding,
-    cardSubtitle,
-    cardTitle,
   } = props;
-  if (!cardTitle && !cardSubtitle && !cardBody && cardActions) {
+  if (!getCardHeader(props) && (cardActions || cardActionsLeft || cardActionsRight)) {
     return cardPadding;
   }
   return '';
