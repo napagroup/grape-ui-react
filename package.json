@@ -67,7 +67,7 @@
     "react-svg": "^11.0.23",
     "react-syntax-highlighter": "12.2.1",
     "react-table": "^7.1.0",
-    "react-textarea-autosize": "^7.1.2",
+    "react-textarea-autosize": "^8.0.1",
     "regenerator-runtime": "0.13.5",
     "styled-components": "^5.1.1",
     "styled-system": "5.1.5"
