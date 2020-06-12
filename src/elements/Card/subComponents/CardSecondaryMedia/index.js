@@ -1,19 +1,17 @@
 import React from 'react';
 import { Card } from 'src/elements/Card';
 import {
-  cardActionsBasePropTypes,
-  cardActionsBaseDefaultProps,
   cardBasePropTypes,
   cardBaseDefaultProps,
   cardSecondaryMediaBasePropTypes,
   cardSecondaryMediaBaseDefaultProps,
 } from 'src/elements/Card/utils';
 import { Box } from 'src/elements/grid';
-import { getCardBody } from './CardBody';
+import { getCardBody } from 'src/elements/Card/subComponents';
+import { getCardActions } from '../CardActions';
 
 export const getCardSecondaryMedia = props => {
   const {
-    cardActions,
     cardBody,
     cardPadding,
     cardSecondaryMedia,
@@ -23,7 +21,7 @@ export const getCardSecondaryMedia = props => {
     return (
       <Box pb={cardBody ? cardPadding : ''}>
         <Card.SecondaryMedia
-          pb={(cardBody || cardActions) ? cardPadding : ''}
+          pb={(cardBody || getCardActions(props)) ? cardPadding : ''}
           {...cardSecondaryMediaProps}
         >
           {cardSecondaryMedia}
@@ -36,13 +34,11 @@ export const getCardSecondaryMedia = props => {
 };
 
 getCardSecondaryMedia.propTypes = {
-  ...cardActionsBasePropTypes,
   ...cardBasePropTypes,
   ...cardSecondaryMediaBasePropTypes,
 };
 
 getCardSecondaryMedia.defaultProps = {
-  ...cardActionsBaseDefaultProps,
   ...cardBaseDefaultProps,
   ...cardSecondaryMediaBaseDefaultProps,
 };

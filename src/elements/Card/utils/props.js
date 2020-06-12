@@ -38,11 +38,17 @@ export const cardBodyBaseDefaultProps = {
 
 export const cardHeaderBasePropTypes = {
   cardHeaderProps: PropTypes.object,
-  cardSubtitle: PropTypes.string,
+  cardSubtitle: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.string,
+  ]),
   cardSubtitleProps: PropTypes.object,
   cardThumbnail: PropTypes.node,
   cardThumbnailProps: PropTypes.object,
-  cardTitle: PropTypes.string,
+  cardTitle: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.string,
+  ]),
   cardTitleContainerProps: PropTypes.object,
   cardTitleProps: PropTypes.object,
 };

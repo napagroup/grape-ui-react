@@ -16,6 +16,7 @@ export const getCardActions = ({
       <Card.Actions
         justifyContent="space-between"
         pb={cardPadding}
+        px={cardPadding}
         {...cardActionsProps}
       >
         {cardActions}

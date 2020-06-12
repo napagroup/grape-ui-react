@@ -3,6 +3,7 @@ The `Card` component is intended to convey content and actions relating to a sin
 #### Basic Example
 
 ```jsx is Markdown
+import { Card } from 'src/elements/Card';
 import { Box, Flex } from 'src/elements/grid';
 import { CodeBlock } from 'src/elements/typography';
 
@@ -42,174 +43,38 @@ const containerStyleProps = {
 </Flex>
 ```
 
-### `cardPadding`
-
-The `<Card>` component is meant to be easy for quick designs that match Material's guidelines, while still allowing for styled-system's built in styling functions.  When defining the base spacing settings for your `<Card>`, please use the prop `cardPadding` to define props.  This will assure that al of the additional prop provided areas having the proper spacing.
-
-**Note:** if you are using `<Card>` via subComponents, please default `cardPadding: 0`.
-
-#### `cardPadding` Example
+#### Kitchen Sink
 
 ```jsx is Markdown
 import { Button } from 'src/elements/Button';
-import { Box, Flex } from 'src/elements/grid';
+import { Card } from 'src/elements/Card';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid';
 import { Image } from 'src/elements/Image';
-import { CodeBlock, Paragraph } from 'src/elements/typography';
+import {
+  CodeBlock,
+  Paragraph,
+} from 'src/elements/typography';
 
 const getRandomBill = (min, max, ratio) => {
   const numberX = Math.floor(Math.random() * (max - min) + min);
   const numberY = Math.floor(numberX / ratio);
   return `http://www.fillmurray.com/${numberX}/${numberY}`;
-}
-
-const ExampleActions01 = (
-  <div>
-    <Button>Action 1</Button>
-    <Button>Action 2</Button>
-  </div>
-);
-
-const ExampleActions02 = (
-  <Button>🍕</Button>
-);
-
-const ExampleBody01 = (
-  <Paragraph mb={0}>
-    Bacon ipsum dolor amet drumstick pork chop cupim tenderloin picanha short ribs landjaeger chicken, strip steak venison.
-  </Paragraph>
-);
-
-const ExampleCardImage01 = (
-  <Image
-    alt="Placeholder photo from FillMurray.com"
-    display="block" // be sure to mark this as block or else the image can cause unwanted spacing on the bottom of the card
-    src={getRandomBill(400, 1000, 4 / 3)}
-  />
-);
-
-const ExampleThumbnail01 = (
-  <Image
-    alt="Placeholder photo from FillMurray.com"
-    borderRadius="50%"
-    display="block" // be sure to mark this as block or else the image can cause unwanted spacing on the bottom of the card
-    src={getRandomBill(40, 100, 1 / 1)}
-    width={40}
-  />
-);
-
-const baseCardStyleProps = {
-  m: 1,
-  maxWidth: 300,
-  width: 1,
 };
 
-const containerStyleProps = {
-  alignItems: 'center',
-  background: '#fdf4fb',
-  justifyContent: 'space-evenly',
-  p: [2, null, 3],
-};
-
-const codeStringProps = `// Passed in through Props
-// cardPadding using default value
-`;
-
-const codeStringSub = `// Using subComponents
-// cardPadding: 0
-`;
-
-<Flex {...containerStyleProps}>
-  <Box {...baseCardStyleProps}>
-    <CodeBlock codeString={codeStringProps} />
-    <Card
-      cardActions={ExampleActions01}
-      cardActionsRight={ExampleActions02}
-      cardBody={ExampleBody01}
-      cardSecondaryMedia={ExampleCardImage01}
-      cardSubtitle="Secondary text"
-      cardThumbnail={ExampleThumbnail01}
-      cardTitle="Card title"
-      {...baseCardStyleProps}
-    />
-  </Box>
-  <Box {...baseCardStyleProps}>
-    <CodeBlock codeString={codeStringSub} />
-    <Card cardPadding={0}  pb={[2, null, 3]} {...baseCardStyleProps}>
-      <Flex alignItems="center" p={[2, null, 3]}>
-        <Card.Thumbnail>
-          {ExampleThumbnail01}
-        </Card.Thumbnail>
-        <Box pl={[2, null, 3]}>
-          <Card.Title>
-            Card title
-          </Card.Title>
-          <Card.Subtitle>
-            Secondary text
-          </Card.Subtitle>
-        </Box>
-      </Flex>
-      <Card.SecondaryMedia>
-        {ExampleCardImage01}
-      </Card.SecondaryMedia>
-      <Card.Body p={[2, null, 3]}>
-        {ExampleBody01}
-      </Card.Body>
-      <Card.Actions>
-        {ExampleActions01}
-        {ExampleActions02}
-      </Card.Actions>
-    </Card>
-  </Box>
-</Flex>
-```
-
-### Component Props
-
-Here is a list of all the props and subComponents for a card, sorted in order of appearance on the UI from top to bottom:
-
-| Prop Name | Passed Props |Subcomponent Name | Parent Component | Default Props | Description |
-| - | - | - | - | - | - |
-| `cardRichMedia` | `cardRichMediaProps` | `<Card.RichMedia>` | [`<Box>`](#/Flexbox/Components/Box) | `width: 1` | Intended for media to be displayed at the top of the card.  Usually an image, but can be other content. **NOTE:** Should not be used with `cardSecondaryMedia`. |
-| N/A | `cardInnerProps` | N/A | [`<Box>`](#/Flexbox/Components/Box) | None | Only for card components where props are passed through. Intended to control the padding of the card.  Contains the contents of `cardThumbnail`, `cardTitle`, `cardSubtitle`, `cardSecondaryMedia`, and the `children` of `<Card>`. |
-| N/A | `cardHeaderProps` | N/A | [`<Flex>`](#/Flexbox/Components/Flex) | `alignItems: 'center'` | A surrounding flex container for the header area that contains the thumbnail, title, and subtitle. |
-| `cardThumbnail` | `cardThumbnailProps` | `<Card.Thumbnail>` | [`<Box>`](#/Flexbox/Components/Box) | None | Defines placements for the thumbnail area. Intended for a 40px image circle, but can hold any content. |
-| N/A | `cardTitleContainerProps` | N/A | [`<Box>`](#/Flexbox/Components/Box) | None | A surrounding container for the title and subtitle. |
-| `cardTitle` | `cardTitleProps` | `<Card.Title>` | [`<Header.h5>`](#/Typography/Components/Header) | `mb: 0` | The title of the card. |
-| `cardSubtitle` | `cardSubtitleProps` | `<Card.Subtitle>` | [`<Paragraph>`](#/Typography/Components/Paragraph) | `color: 'gray', mb: 0, sm: true` | The subtitle of the card. |
-| `cardSecondaryMedia` | `cardSecondaryMediaProps` | `<Card.SecondaryMedia>` | [`<Box>`](#/Flexbox/Components/Box) | `width: 1` | Intended for media to be displayed under the header area.  Usually an image, but can be other content. **NOTE:** Should not be used with `cardRichMedia`. |
-| `cardBody` | `cardBodyProps` | `<Card.Body>` | [`<Box>`](#/Flexbox/Components/Box) | None | Container for the body content of the card. |
-| `cardActions` | `cardActionsProps` | `<Card.Actions>` | [`<Flex>`](#/Flexbox/Components/Flex) | `pb: cardPadding` | Container for the action area of the card that appears on the bottom. |
-| `cardActionsLeft` | `cardActionsLeftProps` | N/A | [`<Box>`](#/Flexbox/Components/Box) | None | Container for the left side area of the actions area. **NOTE:** Items will only appear on the left side if no elements are passed through `cardActions`. |
-| `cardActionsRight` | `cardActionsRightProps` | N/A | [`<Box>`](#/Flexbox/Components/Box) | None | Container for the right side area of the actions area. |
-
-#### Kitchen Sink Example
-
-```jsx is Markdown
-import { Button } from 'src/elements/Button';
-import { Flex } from 'src/elements/grid';
-import { Image } from 'src/elements/Image';
-import { Header, Paragraph } from 'src/elements/typography';
-
-const getRandomBill = (min, max, ratio) => {
-  const numberX = Math.floor(Math.random() * (max - min) + min);
-  const numberY = Math.floor(numberX / ratio);
-  return `http://www.fillmurray.com/${numberX}/${numberY}`;
-}
-
-const ExampleActions01 = (
-  <div>
-    <Button>Action 1</Button>
-    <Button>Action 2</Button>
-  </div>
+const ExampleCardActions01 = (
+  <Button bg="brandPrimary" bgHoverColor="brandPrimary.light" color="white" m={0}>Action</Button>
 );
 
-const ExampleActions02 = (
-  <Button>🍕</Button>
+const ExampleCardActions02 = (
+  <Button>🏌️‍♀️</Button>
 );
 
-const ExampleBody01 = (
-  <Paragraph mb={0}>
-    Bacon ipsum dolor amet drumstick pork chop cupim tenderloin picanha short ribs landjaeger chicken, strip steak venison.
+const ExampleCardBody01 = (
+  <Paragraph ellipsis={5} mb="0">
+    What an incredible Cinderella story. This unknown comes outta nowhere to lead the pack at Augusta. He’s at the final hole. He’s about 455 yards away, he’s gonna hit about a two iron, I think … (Carl reels back and swats the head off of a mum. Petals fly like confetti) Boy, he got all of that. The crowd is standing on its feet here at Augusta. The normally reserved Augusta crowd is going wild … (he pauses as he notices some golfers coming) for this young Cinderella who’s come out of nowhere. He’s got about 350 yards left. He’s going to hit about a five iron, it looks like, don’t you think? (Carl pulls the grass whip back to demolish the next mum) He’s got a beautiful backswing … That’s … Oh! He got all of that one! He’s gotta be pleased with that. The crowd is just on its feet here. He’s a Cinderella boy, tears in his eyes, I guess, as he lines up this last shot. And he’s got about 195 yards left, and he’s got a, it looks like he’s got about an eight iron. This crowd has gone deadly silent. Cinderella story, out of nowhere, former greenskeeper, now about to become the Masters champion. (Carl reels back one last time and — Swat! — blasts the third mum to smithereens) It looks like a mirac . . . It’s in the hole! IT’S IN THE HOLE!!!
   </Paragraph>
 );
 
@@ -229,15 +94,17 @@ const ExampleCardImage02 = (
   />
 );
 
-const ExampleThumbnail01 = (
+const ExampleCardThumbnail01 = (
   <Image
     alt="Placeholder photo from FillMurray.com"
     borderRadius="50%"
     display="block" // be sure to mark this as block or else the image can cause unwanted spacing on the bottom of the card
-    src={getRandomBill(40, 100, 1 / 1)}
+    src={getRandomBill(40, 100, 1)}
     width={40}
   />
 );
+
+const exampleCardPadding = [2, null, 3];
 
 const baseCardStyleProps = {
   m: 1,
@@ -245,474 +112,92 @@ const baseCardStyleProps = {
   width: 1,
 };
 
-<div>
+const containerStyleProps = {
+  alignItems: 'center',
+  background: '#fdf4fb',
+  flexWrap: 'wrap',
+  justifyContent: 'space-evenly',
+  p: exampleCardPadding,
+};
 
-
-  <Header.h3 textAlign="center">Card w/ Rich Media</Header.h3>
-  <Flex
-    alignItems="center"
-    flexDirection={['column', 'row']}
-    flexWrap="wrap"
-    justifyContent="space-evenly"
-    width={1}
-  >
+<Flex {...containerStyleProps}>
+  <Box {...baseCardStyleProps}>
+    <CodeBlock codeString="// Passed in through Props" />
     <Card
-      cardRichMedia={ExampleCardImage01}
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.RichMedia>
-        {ExampleCardImage01}
-      </Card.RichMedia>
-    </Card>
-
-    <Card
-      cardRichMedia={ExampleCardImage01}
+      cardActions={ExampleCardActions01}
+      cardActionsRight={ExampleCardActions02}
+      cardBody={ExampleCardBody01}
+      cardRichMedia={ExampleCardImage02}
       cardSubtitle="Secondary text"
+      cardThumbnail={ExampleCardThumbnail01}
       cardTitle="Card title"
       {...baseCardStyleProps}
     />
-
-    <Card {...baseCardStyleProps}>
+  </Box>
+  <Box {...baseCardStyleProps}>
+    <CodeBlock codeString="// Using subComponents" />
+    <Card cardPadding={0} pb={exampleCardPadding} {...baseCardStyleProps}>
       <Card.RichMedia>
         {ExampleCardImage01}
       </Card.RichMedia>
-      <Card.Title>
-        Card title
-      </Card.Title>
-      <Card.Subtitle>
-        Secondary text
-      </Card.Subtitle>
-    </Card>
-
-  </Flex>
-
-  <Header.h3 textAlign="center">Card w/ Body</Header.h3>
-  <Flex
-    alignItems="center"
-    flexDirection={['column', 'row']}
-    flexWrap="wrap"
-    justifyContent="space-evenly"
-    width={1}
-  >
-    <Card
-      cardBody={ExampleBody01}
-      cardRichMedia={ExampleCardImage01}
-      cardSubtitle="Secondary text"
-      cardTitle="Card title"
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.RichMedia>
-        {ExampleCardImage01}
-      </Card.RichMedia>
-      <Card.Title>
-        Card title
-      </Card.Title>
-      <Card.Subtitle>
-        Secondary text
-      </Card.Subtitle>
-      <Card.Body>
-        {ExampleBody01}
+      <Flex alignItems="center" p={exampleCardPadding}>
+        {ExampleCardThumbnail01}
+        <Box pl={exampleCardPadding}>
+          <Card.Title>
+            Card title
+          </Card.Title>
+          <Card.Subtitle>
+            Secondary text
+          </Card.Subtitle>
+        </Box>
+      </Flex>
+      <Card.Body pb={exampleCardPadding} px={exampleCardPadding}>
+        {ExampleCardBody01}
       </Card.Body>
+      <Card.Actions justifyContent="space-between" px={exampleCardPadding}>
+        {ExampleCardActions01}
+        {ExampleCardActions02}
+      </Card.Actions>
     </Card>
-
+  </Box>
+  <Box {...baseCardStyleProps}>
+    <CodeBlock codeString="// Passed in through Props" />
     <Card
-      cardBody={ExampleBody01}
+      cardActions={ExampleCardActions01}
+      cardActionsRight={ExampleCardActions02}
+      cardBody={ExampleCardBody01}
+      cardSecondaryMedia={ExampleCardImage01}
       cardSubtitle="Secondary text"
+      cardThumbnail={ExampleCardThumbnail01}
       cardTitle="Card title"
       {...baseCardStyleProps}
     />
-
-    <Card {...baseCardStyleProps}>
-      <Card.Title>
-        Card title
-      </Card.Title>
-      <Card.Subtitle>
-        Secondary text
-      </Card.Subtitle>
-      <Card.Body>
-        {ExampleBody01}
-      </Card.Body>
-    </Card>
-
-    <Card
-      cardBody={ExampleBody01}
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.Body>
-        {ExampleBody01}
-      </Card.Body>
-    </Card>
-
-  </Flex>
-
-  <Header.h3 textAlign="center">Card w/ Action Buttons</Header.h3>
-  <Flex
-    alignItems="center"
-    flexDirection={['column', 'row']}
-    flexWrap="wrap"
-    justifyContent="space-evenly"
-    width={1}
-  >
-    <Card
-      cardActions={ExampleActions01}
-      cardActionsRight={ExampleActions02}
-      cardBody={ExampleBody01}
-      cardRichMedia={ExampleCardImage01}
-      cardSubtitle="Secondary text"
-      cardTitle="Card title"
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.RichMedia>
-        {ExampleCardImage01}
-      </Card.RichMedia>
-      <Card.Title>
-        Card title
-      </Card.Title>
-      <Card.Subtitle>
-        Secondary text
-      </Card.Subtitle>
-      <Card.Body>
-        {ExampleBody01}
-      </Card.Body>
-      <Card.Actions>
-        {ExampleActions01}
-        {ExampleActions02}
-      </Card.Actions>
-    </Card>
-
-    <Card
-      cardActions={ExampleActions01}
-      cardActionsRight={ExampleActions02}
-      cardRichMedia={ExampleCardImage01}
-      cardSubtitle="Secondary text"
-      cardTitle="Card title"
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.RichMedia>
-        {ExampleCardImage01}
-      </Card.RichMedia>
-      <Card.Title>
-        Card title
-      </Card.Title>
-      <Card.Subtitle>
-        Secondary text
-      </Card.Subtitle>
-      <Card.Actions>
-        {ExampleActions01}
-        {ExampleActions02}
-      </Card.Actions>
-    </Card>
-
-    <Card
-      cardActions={ExampleActions01}
-      cardActionsRight={ExampleActions02}
-      cardRichMedia={ExampleCardImage01}
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.RichMedia>
-        {ExampleCardImage01}
-      </Card.RichMedia>
-      <Card.Actions>
-        {ExampleActions01}
-        {ExampleActions02}
-      </Card.Actions>
-    </Card>
-
-    <Card
-      cardActions={ExampleActions01}
-      cardActionsRight={ExampleActions02}
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.Actions>
-        {ExampleActions01}
-        {ExampleActions02}
-      </Card.Actions>
-    </Card>
-
-  </Flex>
-
-  <Header.h3 textAlign="center">Card w/ Action Buttons</Header.h3>
-  <Flex
-    alignItems="center"
-    flexDirection={['column', 'row']}
-    flexWrap="wrap"
-    justifyContent="space-evenly"
-    width={1}
-  >
-    <Card
-      cardActions={ExampleActions01}
-      cardActionsRight={ExampleActions02}
-      cardBody={ExampleBody01}
-      cardRichMedia={ExampleCardImage01}
-      cardSubtitle="Secondary text"
-      cardTitle="Card title"
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.RichMedia>
-        {ExampleCardImage01}
-      </Card.RichMedia>
-      <Card.Title>
-        Card title
-      </Card.Title>
-      <Card.Subtitle>
-        Secondary text
-      </Card.Subtitle>
-      <Card.Body>
-        {ExampleBody01}
-      </Card.Body>
-      <Card.Actions>
-        {ExampleActions01}
-        {ExampleActions02}
-      </Card.Actions>
-    </Card>
-
-    <Card
-      cardActions={ExampleActions01}
-      cardActionsRight={ExampleActions02}
-      cardRichMedia={ExampleCardImage01}
-      cardSubtitle="Secondary text"
-      cardTitle="Card title"
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.RichMedia>
-        {ExampleCardImage01}
-      </Card.RichMedia>
-      <Card.Title>
-        Card title
-      </Card.Title>
-      <Card.Subtitle>
-        Secondary text
-      </Card.Subtitle>
-      <Card.Actions>
-        {ExampleActions01}
-        {ExampleActions02}
-      </Card.Actions>
-    </Card>
-
-    <Card
-      cardActions={ExampleActions01}
-      cardActionsRight={ExampleActions02}
-      cardRichMedia={ExampleCardImage01}
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.RichMedia>
-        {ExampleCardImage01}
-      </Card.RichMedia>
-      <Card.Actions>
-        {ExampleActions01}
-        {ExampleActions02}
-      </Card.Actions>
-    </Card>
-
-    <Card
-      cardActions={ExampleActions01}
-      cardActionsRight={ExampleActions02}
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.Actions>
-        {ExampleActions01}
-        {ExampleActions02}
-      </Card.Actions>
-    </Card>
-
-  </Flex>
-
-  <Header.h3 textAlign="center">Card w/ Thumbnail</Header.h3>
-  <Flex
-    alignItems="center"
-    flexDirection={['column', 'row']}
-    flexWrap="wrap"
-    justifyContent="space-evenly"
-    width={1}
-  >
-    <Card
-      cardActions={ExampleActions01}
-      cardActionsRight={ExampleActions02}
-      cardBody={ExampleBody01}
-      cardSubtitle="Secondary text"
-      cardThumbnail={ExampleThumbnail01}
-      cardTitle="Card title"
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.Thumbnail>
-        {ExampleThumbnail01}
-      </Card.Thumbnail>
-      <Card.Title>
-        Card title
-      </Card.Title>
-      <Card.Subtitle>
-        Secondary text
-      </Card.Subtitle>
-      <Card.Body>
-        {ExampleBody01}
-      </Card.Body>
-      <Card.Actions>
-        {ExampleActions01}
-        {ExampleActions02}
-      </Card.Actions>
-    </Card>
-
-    <Card
-      cardSubtitle="Secondary text"
-      cardTitle="Card title"
-      cardThumbnail={ExampleThumbnail01}
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.Thumbnail>
-        {ExampleThumbnail01}
-      </Card.Thumbnail>
-      <Card.Title>
-        Card title
-      </Card.Title>
-      <Card.Subtitle>
-        Secondary text
-      </Card.Subtitle>
-    </Card>
-
-    <Card
-      cardThumbnail={ExampleThumbnail01}
-      cardTitle="Card title"
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.Thumbnail>
-        {ExampleThumbnail01}
-      </Card.Thumbnail>
-      <Card.Title>
-        Card title
-      </Card.Title>
-    </Card>
-  </Flex>
-
-  <Header.h3 textAlign="center">Card w/ Secondary Media</Header.h3>
-  <Flex
-    alignItems="center"
-    flexDirection={['column', 'row']}
-    flexWrap="wrap"
-    justifyContent="space-evenly"
-    width={1}
-  >
-    <Card
-      cardActions={ExampleActions01}
-      cardActionsRight={ExampleActions02}
-      cardBody={ExampleBody01}
-      cardSecondaryMedia={ExampleCardImage02}
-      cardSubtitle="Secondary text"
-      cardThumbnail={ExampleThumbnail01}
-      cardTitle="Card title"
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.Thumbnail>
-        {ExampleThumbnail01}
-      </Card.Thumbnail>
-      <Card.Title>
-        Card title
-      </Card.Title>
-      <Card.Subtitle>
-        Secondary text
-      </Card.Subtitle>
+  </Box>
+  <Box {...baseCardStyleProps}>
+    <CodeBlock codeString="// Using subComponents" />
+    <Card cardPadding={0} pb={exampleCardPadding} {...baseCardStyleProps}>
+      <Flex alignItems="center" p={exampleCardPadding}>
+        {ExampleCardThumbnail01}
+        <Box pl={exampleCardPadding}>
+          <Card.Title>
+            Card title
+          </Card.Title>
+          <Card.Subtitle>
+            Secondary text
+          </Card.Subtitle>
+        </Box>
+      </Flex>
       <Card.SecondaryMedia>
         {ExampleCardImage02}
       </Card.SecondaryMedia>
-      <Card.Body>
-        {ExampleBody01}
+      <Card.Body p={exampleCardPadding}>
+        {ExampleCardBody01}
       </Card.Body>
-      <Card.Actions>
-        {ExampleActions01}
-        {ExampleActions02}
+      <Card.Actions justifyContent="space-between" px={exampleCardPadding}>
+        {ExampleCardActions01}
+        {ExampleCardActions02}
       </Card.Actions>
     </Card>
-
-    <Card
-      cardBody={ExampleBody01}
-      cardSecondaryMedia={ExampleCardImage02}
-      cardSubtitle="Secondary text"
-      cardThumbnail={ExampleThumbnail01}
-      cardTitle="Card title"
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.Thumbnail>
-        {ExampleThumbnail01}
-      </Card.Thumbnail>
-      <Card.Title>
-        Card title
-      </Card.Title>
-      <Card.Subtitle>
-        Secondary text
-      </Card.Subtitle>
-      <Card.SecondaryMedia>
-        {ExampleCardImage02}
-      </Card.SecondaryMedia>
-      <Card.Body>
-        {ExampleBody01}
-      </Card.Body>
-    </Card>
-
-    <Card
-      cardSecondaryMedia={ExampleCardImage02}
-      cardSubtitle="Secondary text"
-      cardThumbnail={ExampleThumbnail01}
-      cardTitle="Card title"
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.Thumbnail>
-        {ExampleThumbnail01}
-      </Card.Thumbnail>
-      <Card.Title>
-        Card title
-      </Card.Title>
-      <Card.Subtitle>
-        Secondary text
-      </Card.Subtitle>
-      <Card.SecondaryMedia>
-        {ExampleCardImage02}
-      </Card.SecondaryMedia>
-    </Card>
-
-    <Card
-      cardSecondaryMedia={ExampleCardImage02}
-      {...baseCardStyleProps}
-    />
-
-    <Card {...baseCardStyleProps}>
-      <Card.SecondaryMedia>
-        {ExampleCardImage02}
-      </Card.SecondaryMedia>
-    </Card>
-
-  </Flex>
-</div>
+  </Box>
+</Flex>
 ```
