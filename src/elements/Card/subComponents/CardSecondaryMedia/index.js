@@ -1,8 +1,6 @@
 import React from 'react';
 import { Card } from 'src/elements/Card';
 import {
-  cardActionsBasePropTypes,
-  cardActionsBaseDefaultProps,
   cardBasePropTypes,
   cardBaseDefaultProps,
   cardSecondaryMediaBasePropTypes,
