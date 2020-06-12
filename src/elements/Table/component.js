@@ -129,13 +129,10 @@ const getRowSubComponent = (
     </StyledTableRow>
   ) : null);
 };
-const onChangeToggleHideColumn = (checkboxFieldArgs, toggleHideColumn) => {
-  if (checkboxFieldArgs.length >= 2) {
-    const [, e] = checkboxFieldArgs;
-    if (e && e.target && e.target.value) {
-      const { target: { value } } = e;
-      toggleHideColumn(value);
-    }
+const onChangeToggleHideColumn = (e, toggleHideColumn) => {
+  if (e && e.target && e.target.value) {
+    const { target: { value } } = e;
+    toggleHideColumn(value);
   }
 };
 
@@ -180,7 +177,6 @@ export function TableComponent(props) {
     allColumns,
     canNextPage,
     canPreviousPage,
-    getToggleHideAllColumnsProps,
     getTableBodyProps,
     getTableProps,
     gotoPage,
@@ -216,18 +212,11 @@ export function TableComponent(props) {
   }, [manual, pageCount, pageIndex, pageSize, sortBy]);
 
   const tableViewState = getTableViewState(props);
-  const { indeterminate, title } = getToggleHideAllColumnsProps();
-  const indetVal = indeterminate === 0 ? ['indeterminate'] : [];
-  const indeterminateOptions = [
-    { label: 'All', value: 'indeterminate' },
-  ];
   const hiddenColumnsSelectOptions = [];
   const hiddenColumnsSelectValues = [];
   allColumns.forEach(column => {
     hiddenColumnsSelectOptions.push({ label: column.Header, value: column.id });
-    if (column.isVisible) {
-      hiddenColumnsSelectValues.push(column.id);
-    }
+    hiddenColumnsSelectValues.push(column.isVisible ? column.id : false);
   });
   return (
     <Box {...wrapperProps}>
@@ -239,23 +228,17 @@ export function TableComponent(props) {
         <Hideable hide={!showToggleHideColumns}>
           <div>
             <CheckboxField
-              controlGroupProps={{ pb: 0 }}
-              labelText="Display Columns"
-              name="toggleHideAll"
-              onChange={() => toggleHideAllColumns()}
-              options={indeterminateOptions}
-              title={title}
-              value={indetVal}
-              wrapperProps={{ pb: 0 }}
-            />
-            <CheckboxField
-              controlGroupProps={{ pb: 0, pt: 0 }}
+              controlGroupProps={{ pt: 0 }}
+              enableAutoChecking
+              hasSelectAll
               name="CheckboxFieldToggleHideColumn"
-              onChange={(...checkboxFieldArgs) => {
-                onChangeToggleHideColumn(checkboxFieldArgs, toggleHideColumn);
+              onChange={e => {
+                onChangeToggleHideColumn(e, toggleHideColumn);
               }}
+              onChangeSelectAll={() => toggleHideAllColumns()}
               options={hiddenColumnsSelectOptions}
-              value={hiddenColumnsSelectValues}
+              optionSelectAll={{ label: 'All', value: true }}
+              values={hiddenColumnsSelectValues}
             />
           </div>
         </Hideable>

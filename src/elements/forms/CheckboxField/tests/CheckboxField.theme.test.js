@@ -9,7 +9,7 @@ const colorOptions = [
   { label: 'Yellow', value: 'yellow' },
   { label: 'Green', value: 'green' },
 ];
-const selectedValue = ['red'];
+const selectedValues = ['red', false, false];
 
 describe('CheckboxField using Theme color', () => {
   it('should return a CheckboxField object with custom color', () => {
@@ -24,7 +24,7 @@ describe('CheckboxField using Theme color', () => {
     };
     const element = (
       <ThemeProvider theme={theme}>
-        <CheckboxField bg="grapeSoda.dark" color="grapeSoda.light" controlId="checkbox" labelText="Color" name="Color" options={colorOptions} value={selectedValue}>Lorem Ipsum</CheckboxField>
+        <CheckboxField bg="grapeSoda.dark" color="grapeSoda.light" controlId="checkbox" labelText="Color" name="Color" options={colorOptions} values={selectedValues}>Lorem Ipsum</CheckboxField>
       </ThemeProvider>
     );
     const component = renderer.create(element);
@@ -42,7 +42,7 @@ describe('CheckboxField using Theme Font Family', () => {
     };
     const element = (
       <ThemeProvider theme={theme}>
-        <CheckboxField controlId="checkbox" fontFamily="trueSpace" labelText="Color" name="Color" options={colorOptions} value={selectedValue}>Lorem Ipsum</CheckboxField>
+        <CheckboxField controlId="checkbox" fontFamily="trueSpace" labelText="Color" name="Color" options={colorOptions} values={selectedValues}>Lorem Ipsum</CheckboxField>
       </ThemeProvider>
     );
     const component = renderer.create(element);
@@ -64,7 +64,7 @@ describe('CheckboxField using Theme Font Family', () => {
           name="Color"
           options={colorOptions}
           sm
-          value={selectedValue}
+          values={selectedValues}
         >
           This should be Nunito and red
         </CheckboxField>

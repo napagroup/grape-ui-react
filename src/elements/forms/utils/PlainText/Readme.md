@@ -35,10 +35,6 @@ const swallowOptions = [
     labelText="How did the coconuts get to England?"
     options={swallowOptions}
     plainText
-    value={[
-      swallowOptions[1],
-      swallowOptions[2]
-    ]}
   />
   <DateField
     labelText="When is it?"

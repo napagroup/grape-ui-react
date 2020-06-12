@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxField Component with custom assistive text props should return a CheckboxField that contains custom assistive text props 1`] = `
-.c3 {
+.c6 {
   background-color: transparent;
   color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -30,11 +30,37 @@ exports[`CheckboxField Component with custom assistive text props should return 
   width: 100%;
 }
 
+.c5 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c2 {
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  display: inline-block;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -44,27 +70,14 @@ exports[`CheckboxField Component with custom assistive text props should return 
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   margin-right: 1rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
   cursor: pointer;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c4 {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 <div
@@ -72,92 +85,172 @@ exports[`CheckboxField Component with custom assistive text props should return 
 >
   <div
     className="c1"
-    id=""
   >
     <label
       className="c2"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="red"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={true}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c3"
+      >
+        <input
+          className="c4"
+          disabled={false}
+          id="exampleColor"
+          name="Color[0]"
+          onChange={[Function]}
+          type="checkbox"
+          value="red"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="red"
-      />
-      Red
+        />
+        <div
+          className="c5"
+        >
+          Red
+        </div>
+      </div>
     </label>
     <label
       className="c2"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="yellow"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c3"
+      >
+        <input
+          className="c4"
+          disabled={false}
+          id="exampleColor"
+          name="Color[1]"
+          onChange={[Function]}
+          type="checkbox"
+          value="yellow"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="yellow"
-      />
-      Yellow
+        />
+        <div
+          className="c5"
+        >
+          Yellow
+        </div>
+      </div>
     </label>
     <label
       className="c2"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="green"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c3"
+      >
+        <input
+          className="c4"
+          disabled={false}
+          id="exampleColor"
+          name="Color[2]"
+          onChange={[Function]}
+          type="checkbox"
+          value="green"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="green"
-      />
-      Green
+        />
+        <div
+          className="c5"
+        >
+          Green
+        </div>
+      </div>
     </label>
   </div>
   <div
-    className="c3"
+    className="c6"
     id="exampleColorHelp"
   >
     Select at least one
@@ -175,11 +268,37 @@ exports[`CheckboxField Component with custom controlGroupProps should return a C
   width: 100%;
 }
 
+.c5 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c2 {
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  display: inline-block;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -189,35 +308,14 @@ exports[`CheckboxField Component with custom controlGroupProps should return a C
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   margin-right: 1rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
   cursor: pointer;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-@media screen and (min-width:40em) {
-  .c1 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
+.c4 {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 <div
@@ -225,88 +323,168 @@ exports[`CheckboxField Component with custom controlGroupProps should return a C
 >
   <div
     className="c1"
-    id=""
   >
     <label
       className="c2"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="red"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={true}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c3"
+      >
+        <input
+          className="c4"
+          disabled={false}
+          id="exampleColor"
+          name="Color[0]"
+          onChange={[Function]}
+          type="checkbox"
+          value="red"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="red"
-      />
-      Red
+        />
+        <div
+          className="c5"
+        >
+          Red
+        </div>
+      </div>
     </label>
     <label
       className="c2"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="yellow"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c3"
+      >
+        <input
+          className="c4"
+          disabled={false}
+          id="exampleColor"
+          name="Color[1]"
+          onChange={[Function]}
+          type="checkbox"
+          value="yellow"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="yellow"
-      />
-      Yellow
+        />
+        <div
+          className="c5"
+        >
+          Yellow
+        </div>
+      </div>
     </label>
     <label
       className="c2"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="green"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c3"
+      >
+        <input
+          className="c4"
+          disabled={false}
+          id="exampleColor"
+          name="Color[2]"
+          onChange={[Function]}
+          type="checkbox"
+          value="green"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="green"
-      />
-      Green
+        />
+        <div
+          className="c5"
+        >
+          Green
+        </div>
+      </div>
     </label>
   </div>
 </div>
@@ -346,11 +524,37 @@ exports[`CheckboxField Component with custom controlLabelProps should return a C
   text-decoration: inherit;
 }
 
+.c6 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c3 {
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  display: inline-block;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -360,27 +564,14 @@ exports[`CheckboxField Component with custom controlLabelProps should return a C
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   margin-right: 1rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
   cursor: pointer;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c5 {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 <div
@@ -394,88 +585,168 @@ exports[`CheckboxField Component with custom controlLabelProps should return a C
   </label>
   <div
     className="c2"
-    id=""
   >
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="red"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={true}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[0]"
+          onChange={[Function]}
+          type="checkbox"
+          value="red"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="red"
-      />
-      Red
+        />
+        <div
+          className="c6"
+        >
+          Red
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="yellow"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[1]"
+          onChange={[Function]}
+          type="checkbox"
+          value="yellow"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="yellow"
-      />
-      Yellow
+        />
+        <div
+          className="c6"
+        >
+          Yellow
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="green"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[2]"
+          onChange={[Function]}
+          type="checkbox"
+          value="green"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="green"
-      />
-      Green
+        />
+        <div
+          className="c6"
+        >
+          Green
+        </div>
+      </div>
     </label>
   </div>
 </div>
@@ -491,11 +762,37 @@ exports[`CheckboxField Component with custom wrapper props should return a Check
   width: 100%;
 }
 
+.c5 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c2 {
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  display: inline-block;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -505,35 +802,14 @@ exports[`CheckboxField Component with custom wrapper props should return a Check
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   margin-right: 1rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
   cursor: pointer;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-@media screen and (min-width:40em) {
-  .c1 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
+.c4 {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 <div
@@ -541,88 +817,168 @@ exports[`CheckboxField Component with custom wrapper props should return a Check
 >
   <div
     className="c1"
-    id=""
   >
     <label
       className="c2"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="red"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={true}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c3"
+      >
+        <input
+          className="c4"
+          disabled={false}
+          id="exampleColor"
+          name="Color[0]"
+          onChange={[Function]}
+          type="checkbox"
+          value="red"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="red"
-      />
-      Red
+        />
+        <div
+          className="c5"
+        >
+          Red
+        </div>
+      </div>
     </label>
     <label
       className="c2"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="yellow"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c3"
+      >
+        <input
+          className="c4"
+          disabled={false}
+          id="exampleColor"
+          name="Color[1]"
+          onChange={[Function]}
+          type="checkbox"
+          value="yellow"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="yellow"
-      />
-      Yellow
+        />
+        <div
+          className="c5"
+        >
+          Yellow
+        </div>
+      </div>
     </label>
     <label
       className="c2"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="green"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c3"
+      >
+        <input
+          className="c4"
+          disabled={false}
+          id="exampleColor"
+          name="Color[2]"
+          onChange={[Function]}
+          type="checkbox"
+          value="green"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="green"
-      />
-      Green
+        />
+        <div
+          className="c5"
+        >
+          Green
+        </div>
+      </div>
     </label>
   </div>
 </div>
@@ -638,11 +994,37 @@ exports[`CheckboxField Component with no label should return a CheckboxField tha
   width: 100%;
 }
 
+.c5 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c2 {
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  display: inline-block;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -652,35 +1034,14 @@ exports[`CheckboxField Component with no label should return a CheckboxField tha
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   margin-right: 1rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
   cursor: pointer;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-@media screen and (min-width:40em) {
-  .c1 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
+.c4 {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 <div
@@ -688,88 +1049,168 @@ exports[`CheckboxField Component with no label should return a CheckboxField tha
 >
   <div
     className="c1"
-    id=""
   >
     <label
       className="c2"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="red"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={true}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c3"
+      >
+        <input
+          className="c4"
+          disabled={false}
+          id="exampleColor"
+          name="Color[0]"
+          onChange={[Function]}
+          type="checkbox"
+          value="red"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="red"
-      />
-      Red
+        />
+        <div
+          className="c5"
+        >
+          Red
+        </div>
+      </div>
     </label>
     <label
       className="c2"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="yellow"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c3"
+      >
+        <input
+          className="c4"
+          disabled={false}
+          id="exampleColor"
+          name="Color[1]"
+          onChange={[Function]}
+          type="checkbox"
+          value="yellow"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="yellow"
-      />
-      Yellow
+        />
+        <div
+          className="c5"
+        >
+          Yellow
+        </div>
+      </div>
     </label>
     <label
       className="c2"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="green"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c3"
+      >
+        <input
+          className="c4"
+          disabled={false}
+          id="exampleColor"
+          name="Color[2]"
+          onChange={[Function]}
+          type="checkbox"
+          value="green"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="green"
-      />
-      Green
+        />
+        <div
+          className="c5"
+        >
+          Green
+        </div>
+      </div>
     </label>
   </div>
 </div>
@@ -807,11 +1248,37 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
   text-decoration: inherit;
 }
 
+.c6 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c3 {
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  display: inline-block;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -821,27 +1288,14 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   margin-right: 1rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
   cursor: pointer;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c5 {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 <div
@@ -855,88 +1309,168 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
   </label>
   <div
     className="c2"
-    id=""
   >
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="red"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={true}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[0]"
+          onChange={[Function]}
+          type="checkbox"
+          value="red"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="red"
-      />
-      Red
+        />
+        <div
+          className="c6"
+        >
+          Red
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="yellow"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[1]"
+          onChange={[Function]}
+          type="checkbox"
+          value="yellow"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="yellow"
-      />
-      Yellow
+        />
+        <div
+          className="c6"
+        >
+          Yellow
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="green"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[2]"
+          onChange={[Function]}
+          type="checkbox"
+          value="green"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="green"
-      />
-      Green
+        />
+        <div
+          className="c6"
+        >
+          Green
+        </div>
+      </div>
     </label>
   </div>
 </div>
@@ -1026,9 +1560,17 @@ exports[`CheckboxFieldComponent Component with 1 plaintext should return a Check
   <div
     className="c2"
     disabled={false}
+    inputRef={[Function]}
+    values={
+      Array [
+        "red",
+        false,
+        false,
+      ]
+    }
   >
     <div>
-      Red
+      
     </div>
   </div>
   <div
@@ -1106,16 +1648,24 @@ exports[`CheckboxFieldComponent Component with 2 plaintext should return a Check
   <div
     className="c2"
     disabled={false}
+    inputRef={[Function]}
+    values={
+      Array [
+        "red",
+        "yellow",
+        "false",
+      ]
+    }
   >
     <div>
-      Red, Yellow
+      
     </div>
   </div>
 </div>
 `;
 
 exports[`CheckboxFieldComponent Component with assistive text should return a CheckboxFieldComponent that contains CheckboxComponent with assistive text 1`] = `
-.c4 {
+.c7 {
   background-color: transparent;
   color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -1164,11 +1714,37 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
   text-decoration: inherit;
 }
 
+.c6 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c3 {
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  display: inline-block;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1178,27 +1754,14 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   margin-right: 1rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
   cursor: pointer;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c5 {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 <div
@@ -1212,80 +1775,136 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
   </label>
   <div
     className="c2"
-    id=""
   >
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={null}
-    >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
+      options={
+        Array [
           Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
-          }
-        }
-        type="checkbox"
-        value="red"
-      />
-      Red
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="red"
+      values=""
+    >
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[0]"
+          onChange={[Function]}
+          type="checkbox"
+          value="red"
+          values=""
+        />
+        <div
+          className="c6"
+        >
+          Red
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={null}
-    >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
+      options={
+        Array [
           Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
-          }
-        }
-        type="checkbox"
-        value="yellow"
-      />
-      Yellow
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="yellow"
+      values=""
+    >
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[1]"
+          onChange={[Function]}
+          type="checkbox"
+          value="yellow"
+          values=""
+        />
+        <div
+          className="c6"
+        >
+          Yellow
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={null}
-    >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
+      options={
+        Array [
           Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
-          }
-        }
-        type="checkbox"
-        value="green"
-      />
-      Green
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="green"
+      values=""
+    >
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[2]"
+          onChange={[Function]}
+          type="checkbox"
+          value="green"
+          values=""
+        />
+        <div
+          className="c6"
+        >
+          Green
+        </div>
+      </div>
     </label>
   </div>
   <div
-    className="c4"
+    className="c7"
     id="exampleColorHelp"
   >
     Tell me your color
@@ -1325,11 +1944,37 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
   text-decoration: inherit;
 }
 
+.c6 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c3 {
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  display: inline-block;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1339,28 +1984,14 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   margin-right: 1rem;
-  opacity: 0.6;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
   cursor: pointer;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c5 {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 <div
@@ -1374,88 +2005,168 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
   </label>
   <div
     className="c2"
-    id=""
   >
     <label
       className="c3"
-      disabled={true}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="red"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={true}
-        disabled={true}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={true}
+          id="exampleColor"
+          name="Color[0]"
+          onChange={[Function]}
+          type="checkbox"
+          value="red"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="red"
-      />
-      Red
+        />
+        <div
+          className="c6"
+        >
+          Red
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={true}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="yellow"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={true}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={true}
+          id="exampleColor"
+          name="Color[1]"
+          onChange={[Function]}
+          type="checkbox"
+          value="yellow"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="yellow"
-      />
-      Yellow
+        />
+        <div
+          className="c6"
+        >
+          Yellow
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={true}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="green"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={true}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={true}
+          id="exampleColor"
+          name="Color[2]"
+          onChange={[Function]}
+          type="checkbox"
+          value="green"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="green"
-      />
-      Green
+        />
+        <div
+          className="c6"
+        >
+          Green
+        </div>
+      </div>
     </label>
   </div>
 </div>
@@ -1493,11 +2204,37 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
   text-decoration: inherit;
 }
 
+.c6 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c3 {
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  display: inline-block;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1507,35 +2244,14 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   margin-right: 1rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
   cursor: pointer;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-@media screen and (min-width:40em) {
-  .c2 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
+.c5 {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 <div
@@ -1549,88 +2265,168 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
   </label>
   <div
     className="c2"
-    id=""
   >
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="red"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={true}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[0]"
+          onChange={[Function]}
+          type="checkbox"
+          value="red"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="red"
-      />
-      Red
+        />
+        <div
+          className="c6"
+        >
+          Red
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="yellow"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[1]"
+          onChange={[Function]}
+          type="checkbox"
+          value="yellow"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="yellow"
-      />
-      Yellow
+        />
+        <div
+          className="c6"
+        >
+          Yellow
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="green"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[2]"
+          onChange={[Function]}
+          type="checkbox"
+          value="green"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="green"
-      />
-      Green
+        />
+        <div
+          className="c6"
+        >
+          Green
+        </div>
+      </div>
     </label>
   </div>
 </div>
@@ -1668,11 +2464,37 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
   text-decoration: inherit;
 }
 
+.c6 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c3 {
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  display: inline-block;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1682,35 +2504,14 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   margin-right: 1rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
   cursor: pointer;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-@media screen and (min-width:40em) {
-  .c2 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
+.c5 {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 <div
@@ -1724,95 +2525,175 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
   </label>
   <div
     className="c2"
-    id=""
   >
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="red"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={true}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[0]"
+          onChange={[Function]}
+          type="checkbox"
+          value="red"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="red"
-      />
-      Red
+        />
+        <div
+          className="c6"
+        >
+          Red
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="yellow"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[1]"
+          onChange={[Function]}
+          type="checkbox"
+          value="yellow"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="yellow"
-      />
-      Yellow
+        />
+        <div
+          className="c6"
+        >
+          Yellow
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="green"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[2]"
+          onChange={[Function]}
+          type="checkbox"
+          value="green"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="green"
-      />
-      Green
+        />
+        <div
+          className="c6"
+        >
+          Green
+        </div>
+      </div>
     </label>
   </div>
 </div>
 `;
 
 exports[`CheckboxFieldComponent Component with required should return a CheckboxFieldComponent that contains CheckboxComponent is required 1`] = `
-.c4 {
+.c7 {
   background-color: transparent;
   color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -1861,11 +2742,37 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
   text-decoration: inherit;
 }
 
+.c6 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c3 {
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  display: inline-block;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -1875,27 +2782,14 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   margin-right: 1rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
   cursor: pointer;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c5 {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 <div
@@ -1909,80 +2803,136 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
   </label>
   <div
     className="c2"
-    id=""
   >
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={null}
-    >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
+      options={
+        Array [
           Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
-          }
-        }
-        type="checkbox"
-        value="red"
-      />
-      Red
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="red"
+      values=""
+    >
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[0]"
+          onChange={[Function]}
+          type="checkbox"
+          value="red"
+          values=""
+        />
+        <div
+          className="c6"
+        >
+          Red
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={null}
-    >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
+      options={
+        Array [
           Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
-          }
-        }
-        type="checkbox"
-        value="yellow"
-      />
-      Yellow
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="yellow"
+      values=""
+    >
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[1]"
+          onChange={[Function]}
+          type="checkbox"
+          value="yellow"
+          values=""
+        />
+        <div
+          className="c6"
+        >
+          Yellow
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={null}
-    >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
+      options={
+        Array [
           Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
-          }
-        }
-        type="checkbox"
-        value="green"
-      />
-      Green
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="green"
+      values=""
+    >
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[2]"
+          onChange={[Function]}
+          type="checkbox"
+          value="green"
+          values=""
+        />
+        <div
+          className="c6"
+        >
+          Green
+        </div>
+      </div>
     </label>
   </div>
   <div
-    className="c4"
+    className="c7"
     id="exampleColorHelp"
   >
     *Required
@@ -1991,7 +2941,7 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
 `;
 
 exports[`CheckboxFieldComponent Component with validationError should return a CheckboxFieldComponent that contains CheckboxComponent validationError 1`] = `
-.c4 {
+.c7 {
   color: hsl(4.1,89.6%,58.4%);
   background-color: transparent;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -2040,11 +2990,37 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
   text-decoration: inherit;
 }
 
+.c6 {
+  box-sizing: border-box;
+}
+
+.c2 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c4 {
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c3 {
   background-color: transparent;
   color: inherit;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: inherit;
+  display: inline-block;
   -webkit-letter-spacing: inherit;
   -moz-letter-spacing: inherit;
   -ms-letter-spacing: inherit;
@@ -2054,27 +3030,14 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
   margin-right: 1rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
   cursor: pointer;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c5 {
+  margin: 0;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 <div
@@ -2088,92 +3051,172 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
   </label>
   <div
     className="c2"
-    id=""
   >
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="red"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={true}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[0]"
+          onChange={[Function]}
+          type="checkbox"
+          value="red"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="red"
-      />
-      Red
+        />
+        <div
+          className="c6"
+        >
+          Red
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="yellow"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[1]"
+          onChange={[Function]}
+          type="checkbox"
+          value="yellow"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="yellow"
-      />
-      Yellow
+        />
+        <div
+          className="c6"
+        >
+          Yellow
+        </div>
+      </div>
     </label>
     <label
       className="c3"
-      disabled={false}
       id="exampleColor"
-      value={
+      options={
+        Array [
+          Object {
+            "label": "Red",
+            "value": "red",
+          },
+          Object {
+            "label": "Yellow",
+            "value": "yellow",
+          },
+          Object {
+            "label": "Green",
+            "value": "green",
+          },
+        ]
+      }
+      value="green"
+      values={
         Array [
           "red",
+          false,
+          false,
         ]
       }
     >
-      <input
-        checked={false}
-        disabled={false}
-        id="exampleColor"
-        name="Color"
-        onChange={[Function]}
-        style={
-          Object {
-            "cursor": "pointer",
-            "marginRight": "0.5rem",
+      <div
+        className="c4"
+      >
+        <input
+          className="c5"
+          disabled={false}
+          id="exampleColor"
+          name="Color[2]"
+          onChange={[Function]}
+          type="checkbox"
+          value="green"
+          values={
+            Array [
+              "red",
+              false,
+              false,
+            ]
           }
-        }
-        type="checkbox"
-        value="green"
-      />
-      Green
+        />
+        <div
+          className="c6"
+        >
+          Green
+        </div>
+      </div>
     </label>
   </div>
   <div
-    className="c4"
+    className="c7"
     id="exampleColorError"
   >
     This is required

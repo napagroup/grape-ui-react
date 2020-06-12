@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -6,9 +7,10 @@ import {
   getAssistiveText,
   PlainText,
 } from 'src/elements/forms/utils';
+import { Flex } from 'src/elements/grid';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import { defaultControlStyles } from 'src/utils/styledHelpers';
-import { CheckboxFieldComponent } from './component';
+import { defaultControlStyles, refType } from 'src/utils/styledHelpers';
+import { CheckboxInput } from './CheckboxInput';
 
 const renderControlGroupLabel = propsFromControlGroup => {
   const {
@@ -71,14 +73,23 @@ const plainTextPropsToTrim = [
   ...propsToTrim,
 ];
 
+const isChecked = values => values && values.filter(val => !val).length === 0;
+
 const renderValueOrComponent = propsFromComponent => {
+  const { name, options } = propsFromComponent;
+
   const {
     controlId,
-    defaultValue,
     disabled,
     flexDirection,
+    hasSelectAll,
+    inputRef,
+    enableAutoChecking,
+    onChange = () => {},
+    onChangeSelectAll = () => {},
     plainText,
-    value,
+    optionSelectAll = { label: 'Select All', value: true },
+    values,
   } = propsFromComponent;
   if (plainText) {
     const plainTextProps = {
@@ -87,15 +98,46 @@ const renderValueOrComponent = propsFromComponent => {
     return (<PlainText {...plainTextProps} />);
   }
   const childProps = { id: controlId, ...removeSomeProps(propsFromComponent, propsToTrim) };
+  const optionValues = options.map(option => option.value);
+  const checkboxFields = options.map((option, idx) => {
+    const checkedProp = {};
+    if (enableAutoChecking) {
+      checkedProp.checked = values[idx];
+    }
+    return (
+      <CheckboxInput
+        {...childProps}
+        {...checkedProp}
+        // eslint-disable-next-line react/no-array-index-key
+        key={`${name}[${idx}]`}
+        disabled={disabled}
+        flexDirection={flexDirection}
+        inputRef={inputRef}
+        name={`${name}[${idx}]`}
+        onChange={onChange}
+        option={option}
+        value={optionValues[idx]}
+      />
+    );
+  });
   return (
-    <CheckboxFieldComponent
-      {...childProps}
-      disabled={disabled}
-      flexDirection={flexDirection}
-      value={value || defaultValue}
-    />
+    <Flex flexDirection="column">
+      {hasSelectAll
+        && (
+          <CheckboxInput
+            checked={isChecked(values)}
+            inputRef={inputRef}
+            name={`${name}_selectAll`}
+            onChange={onChangeSelectAll}
+            option={optionSelectAll}
+            value={optionSelectAll.value}
+          />
+        )}
+      {checkboxFields}
+    </Flex>
   );
 };
+
 const CheckboxField = props => {
   const {
     activeColor,
@@ -127,7 +169,6 @@ const CheckboxField = props => {
     validationError,
   };
   const assistiveProps = { assistiveText, isRequired };
-
   return (
     <ControlGroup
       {...additionalControlGroupProps}
@@ -136,7 +177,7 @@ const CheckboxField = props => {
       validationError={validationError}
     >
       {renderControlGroupLabel(labelProps)}
-      {renderValueOrComponent({ ...props, plainText })}
+      {renderValueOrComponent(props)}
     </ControlGroup>
   );
 };
@@ -167,6 +208,8 @@ CheckboxField.propTypes = {
     PropTypes.array,
   ]),
   fontFamily: PropTypes.string,
+  /** Allows for a ref to be defined to the DOM input. */
+  inputRef: refType,
   /** This will add an asterisk (*) to the `labelText` and provided `assistiveText` if none is provided. */
   isRequired: PropTypes.bool,
   /** The string value displayed on top of the control in the `ControlLabel` component. */
@@ -178,7 +221,7 @@ CheckboxField.propTypes = {
     PropTypes.bool,
     PropTypes.string,
   ]),
-  /** Allows for custom props to be passed down to the `CheckboxGroupWrapper` component. */
+  /** Allows for custom props to be passed down to the `CheckboxFieldWrapper` component. */
   wrapperProps: PropTypes.object,
 };
 
@@ -193,12 +236,15 @@ CheckboxField.defaultProps = {
   disabled: false,
   flexDirection: 'column',
   fontFamily: 'base',
+  inputRef: () => {},
   isRequired: false,
   labelText: '',
   plainText: false,
   validationError: '',
   wrapperProps: {},
 };
+
+CheckboxField.Input = CheckboxInput;
 
 /** @component */
 export { CheckboxField };
