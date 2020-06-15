@@ -31,8 +31,11 @@ const getInitialPageVm = data => ({
   pageSize: defaultPageOptions[0],
   sortBy: [],
 });
+let initialLoad = true;
+const sourceData = makeData(200);
+
 function TableView(props) {
-  const originalData = React.useMemo(() => makeData(200), []);
+
   const columns = React.useMemo(() => [
     {
       columns: [
@@ -93,35 +96,58 @@ function TableView(props) {
   ],
 []);
 
-  const [pageVm, setPageVm] = useState(getInitialPageVm(originalData));
+  const [ pageVm, setPageVm ] = useState(getInitialPageVm([]));
+  const [ paginatedData, setPaginatedData ] = useState([]);
+  const [ loading, setLoading] = useState(false);
+  console.log({ initalPv: getInitialPageVm([]), pageVm })
   /**
    * Simulate fetch logic - This section represents fetched data typically from an api call
+   * Fn requestData will update the pageVm via setter which is being watched by useEffect below it
+   * simulating an async fetch call via setTimeout.
   **/
-  const paginatedData = React.useMemo(() => getPaginatedData(pageVm, originalData), [pageVm]);
 
-  const fetchData = ({
+  const requestData = ({
     pageCount,
     pageIndex,
     pageSize,
     sortBy,
   }) => {
+    if (loading) {
+      return;
+    }
     const nextPageVm = {
-      pageCount: parseInt(originalData.length / pageSize),
+      pageCount: parseInt(sourceData.length / pageSize),
       pageIndex,
       pageSize,
       sortBy,
     };
     setPageVm(nextPageVm);
   };
+  useEffect(() => {
+    setLoading(true);
+    const paginatedData = getPaginatedData(pageVm, sourceData);
+    setTimeout(() => {
+      setLoading(false);
+      setPaginatedData(paginatedData)
+    }, 1000);
+  }, [pageVm]);
+
+  if (initialLoad) {
+    initialLoad = false;
+    requestData(pageVm);
+  }
   /**
    * End of fetch data logic
   **/
 
+ const data = React.useMemo(() => paginatedData, [paginatedData]);
+ console.log({ data })
   return (
     <Table
       columns={columns}
-      data={paginatedData}
-      fetchData={fetchData}
+      data={data}
+      fetchData={requestData}
+      loading={loading}
       manual
       pageCount={pageVm.pageCount}
       pageIndex={pageVm.pageIndex}
