@@ -61,7 +61,7 @@ export const TextInputComponent = props => {
       <>
         <div className="multiline-scroll-shield" />
         <TextareaAutosize
-          inputRef={inputRef}
+          ref={inputRef}
           maxRows={maxRows}
           readOnly={plainText}
           tabIndex={getTabIndex(plainText)}
