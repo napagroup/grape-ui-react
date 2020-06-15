@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { removeSomeProps } from 'src/utils/componentHelpers';
-import Img from 'react-image';
+import { Img } from 'react-image';
 import propTypes from '@styled-system/prop-types';
 
 const componentPropsToRemove = {
