@@ -62,7 +62,7 @@ const headerProps = (props, { column }) => {
 
 const cellProps = (props, { cell }) => getStyles(props, cell.column.styleProps);
 
-const getOptionForUseTable = props => {
+const createTableOptions = props => {
   const {
     columns,
     data,
@@ -73,7 +73,7 @@ const getOptionForUseTable = props => {
     pageSize,
   } = props;
 
-  const useTableProps = {
+  const tableOptions = {
     columns,
     data,
     initialState: {
@@ -85,12 +85,12 @@ const getOptionForUseTable = props => {
     manualSortBy: manual,
   };
   if (manual) {
-    useTableProps.pageCount = manualPageCount;
-    useTableProps.initialState = {
-      ...useTableProps.initialState,
+    tableOptions.pageCount = manualPageCount;
+    tableOptions.initialState = {
+      ...tableOptions.initialState,
     };
   }
-  return useTableProps;
+  return tableOptions;
 };
 const getCaptionForSortBy = column => {
   if (!column.canSort) {
@@ -156,7 +156,7 @@ export function TableComponent(props) {
     tableWrapperProps,
     wrapperProps,
   } = props;
-  const tableOptions = getOptionForUseTable({
+  const tableOptions = createTableOptions({
     columns,
     data,
     hiddenColumns,
