@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxField Component with custom assistive text props should return a CheckboxField that contains custom assistive text props 1`] = `
-.c6 {
+.c5 {
   background-color: transparent;
   color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -30,10 +30,6 @@ exports[`CheckboxField Component with custom assistive text props should return 
   width: 100%;
 }
 
-.c5 {
-  box-sizing: border-box;
-}
-
 .c1 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -74,6 +70,10 @@ exports[`CheckboxField Component with custom assistive text props should return 
 }
 
 .c4 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -133,11 +133,9 @@ exports[`CheckboxField Component with custom assistive text props should return 
             ]
           }
         />
-        <div
-          className="c5"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -187,11 +185,9 @@ exports[`CheckboxField Component with custom assistive text props should return 
             ]
           }
         />
-        <div
-          className="c5"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -241,16 +237,14 @@ exports[`CheckboxField Component with custom assistive text props should return 
             ]
           }
         />
-        <div
-          className="c5"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
   <div
-    className="c6"
+    className="c5"
     id="exampleColorHelp"
   >
     Select at least one
@@ -268,10 +262,6 @@ exports[`CheckboxField Component with custom controlGroupProps should return a C
   width: 100%;
 }
 
-.c5 {
-  box-sizing: border-box;
-}
-
 .c1 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -312,6 +302,10 @@ exports[`CheckboxField Component with custom controlGroupProps should return a C
 }
 
 .c4 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -371,11 +365,9 @@ exports[`CheckboxField Component with custom controlGroupProps should return a C
             ]
           }
         />
-        <div
-          className="c5"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -425,11 +417,9 @@ exports[`CheckboxField Component with custom controlGroupProps should return a C
             ]
           }
         />
-        <div
-          className="c5"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -479,11 +469,9 @@ exports[`CheckboxField Component with custom controlGroupProps should return a C
             ]
           }
         />
-        <div
-          className="c5"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
@@ -524,10 +512,6 @@ exports[`CheckboxField Component with custom controlLabelProps should return a C
   text-decoration: inherit;
 }
 
-.c6 {
-  box-sizing: border-box;
-}
-
 .c2 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -568,6 +552,10 @@ exports[`CheckboxField Component with custom controlLabelProps should return a C
 }
 
 .c5 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -633,11 +621,9 @@ exports[`CheckboxField Component with custom controlLabelProps should return a C
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -687,11 +673,9 @@ exports[`CheckboxField Component with custom controlLabelProps should return a C
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -741,11 +725,9 @@ exports[`CheckboxField Component with custom controlLabelProps should return a C
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
@@ -762,10 +744,6 @@ exports[`CheckboxField Component with custom wrapper props should return a Check
   width: 100%;
 }
 
-.c5 {
-  box-sizing: border-box;
-}
-
 .c1 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -806,6 +784,10 @@ exports[`CheckboxField Component with custom wrapper props should return a Check
 }
 
 .c4 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -865,11 +847,9 @@ exports[`CheckboxField Component with custom wrapper props should return a Check
             ]
           }
         />
-        <div
-          className="c5"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -919,11 +899,9 @@ exports[`CheckboxField Component with custom wrapper props should return a Check
             ]
           }
         />
-        <div
-          className="c5"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -973,11 +951,9 @@ exports[`CheckboxField Component with custom wrapper props should return a Check
             ]
           }
         />
-        <div
-          className="c5"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
@@ -994,10 +970,6 @@ exports[`CheckboxField Component with no label should return a CheckboxField tha
   width: 100%;
 }
 
-.c5 {
-  box-sizing: border-box;
-}
-
 .c1 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -1038,6 +1010,10 @@ exports[`CheckboxField Component with no label should return a CheckboxField tha
 }
 
 .c4 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -1097,11 +1073,9 @@ exports[`CheckboxField Component with no label should return a CheckboxField tha
             ]
           }
         />
-        <div
-          className="c5"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -1151,11 +1125,9 @@ exports[`CheckboxField Component with no label should return a CheckboxField tha
             ]
           }
         />
-        <div
-          className="c5"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -1205,11 +1177,9 @@ exports[`CheckboxField Component with no label should return a CheckboxField tha
             ]
           }
         />
-        <div
-          className="c5"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
@@ -1248,10 +1218,6 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
   text-decoration: inherit;
 }
 
-.c6 {
-  box-sizing: border-box;
-}
-
 .c2 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -1292,6 +1258,10 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
 }
 
 .c5 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -1357,11 +1327,9 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -1411,11 +1379,9 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -1465,11 +1431,9 @@ exports[`CheckboxFieldComponent Component base should return a CheckboxFieldComp
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
@@ -1665,7 +1629,7 @@ exports[`CheckboxFieldComponent Component with 2 plaintext should return a Check
 `;
 
 exports[`CheckboxFieldComponent Component with assistive text should return a CheckboxFieldComponent that contains CheckboxComponent with assistive text 1`] = `
-.c7 {
+.c6 {
   background-color: transparent;
   color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -1714,10 +1678,6 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
   text-decoration: inherit;
 }
 
-.c6 {
-  box-sizing: border-box;
-}
-
 .c2 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -1758,6 +1718,10 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
 }
 
 .c5 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -1811,11 +1775,9 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
           value="red"
           values=""
         />
-        <div
-          className="c6"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -1853,11 +1815,9 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
           value="yellow"
           values=""
         />
-        <div
-          className="c6"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -1895,16 +1855,14 @@ exports[`CheckboxFieldComponent Component with assistive text should return a Ch
           value="green"
           values=""
         />
-        <div
-          className="c6"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
   <div
-    className="c7"
+    className="c6"
     id="exampleColorHelp"
   >
     Tell me your color
@@ -1944,10 +1902,6 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
   text-decoration: inherit;
 }
 
-.c6 {
-  box-sizing: border-box;
-}
-
 .c2 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -1988,6 +1942,10 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
 }
 
 .c5 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -2053,11 +2011,9 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -2107,11 +2063,9 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -2161,11 +2115,9 @@ exports[`CheckboxFieldComponent Component with disabled should return a Checkbox
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
@@ -2204,10 +2156,6 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
   text-decoration: inherit;
 }
 
-.c6 {
-  box-sizing: border-box;
-}
-
 .c2 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -2248,6 +2196,10 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
 }
 
 .c5 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -2313,11 +2265,9 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -2367,11 +2317,9 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -2421,11 +2369,9 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
@@ -2464,10 +2410,6 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
   text-decoration: inherit;
 }
 
-.c6 {
-  box-sizing: border-box;
-}
-
 .c2 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -2508,6 +2450,10 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
 }
 
 .c5 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -2573,11 +2519,9 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -2627,11 +2571,9 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -2681,11 +2623,9 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
@@ -2693,7 +2633,7 @@ exports[`CheckboxFieldComponent Component with flex-direction should return a Ch
 `;
 
 exports[`CheckboxFieldComponent Component with required should return a CheckboxFieldComponent that contains CheckboxComponent is required 1`] = `
-.c7 {
+.c6 {
   background-color: transparent;
   color: hsl(0,0%,50%);
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -2742,10 +2682,6 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
   text-decoration: inherit;
 }
 
-.c6 {
-  box-sizing: border-box;
-}
-
 .c2 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -2786,6 +2722,10 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
 }
 
 .c5 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -2839,11 +2779,9 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
           value="red"
           values=""
         />
-        <div
-          className="c6"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -2881,11 +2819,9 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
           value="yellow"
           values=""
         />
-        <div
-          className="c6"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -2923,16 +2859,14 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
           value="green"
           values=""
         />
-        <div
-          className="c6"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
   <div
-    className="c7"
+    className="c6"
     id="exampleColorHelp"
   >
     *Required
@@ -2941,7 +2875,7 @@ exports[`CheckboxFieldComponent Component with required should return a Checkbox
 `;
 
 exports[`CheckboxFieldComponent Component with validationError should return a CheckboxFieldComponent that contains CheckboxComponent validationError 1`] = `
-.c7 {
+.c6 {
   color: hsl(4.1,89.6%,58.4%);
   background-color: transparent;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -2990,10 +2924,6 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
   text-decoration: inherit;
 }
 
-.c6 {
-  box-sizing: border-box;
-}
-
 .c2 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -3034,6 +2964,10 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
 }
 
 .c5 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -3099,11 +3033,9 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -3153,11 +3085,9 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -3207,16 +3137,14 @@ exports[`CheckboxFieldComponent Component with validationError should return a C
             ]
           }
         />
-        <div
-          className="c6"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
   <div
-    className="c7"
+    className="c6"
     id="exampleColorError"
   >
     This is required

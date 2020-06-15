@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { layout, space } from 'styled-system';
 import { Flex } from 'src/elements/grid';
-import { Text } from 'src/elements/typography';
 import {
   refType,
   scaleFont,
@@ -79,9 +78,9 @@ const CheckboxInput = props => {
           type="checkbox"
           {...propsForCheckboxControl}
         />
-        <Text>
+        <span>
           {option.label}
-        </Text>
+        </span>
       </Flex>
     </CheckboxLabel>
   );
