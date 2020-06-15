@@ -62,11 +62,7 @@ const headerProps = (props, { column }) => {
 
 const cellProps = (props, { cell }) => getStyles(props, cell.column.styleProps);
 
-const sanitizePageSize = (showPagination, pageSize, data) => {
-  const result = showPagination ? pageSize : data.length;
-  return result < 1 ? 1 : result;
-};
-const getOptionForUseTable = props => {
+const createTableOptions = props => {
   const {
     columns,
     data,
@@ -75,27 +71,26 @@ const getOptionForUseTable = props => {
     manualPageCount,
     pageIndex,
     pageSize,
-    showPagination,
   } = props;
 
-  const useTableProps = {
+  const tableOptions = {
     columns,
     data,
     initialState: {
       hiddenColumns,
       pageIndex,
-      pageSize: sanitizePageSize(showPagination, pageSize, data),
+      pageSize,
     },
     manualPagination: manual,
     manualSortBy: manual,
   };
   if (manual) {
-    useTableProps.pageCount = manualPageCount;
-    useTableProps.initialState = {
-      ...useTableProps.initialState,
+    tableOptions.pageCount = manualPageCount;
+    tableOptions.initialState = {
+      ...tableOptions.initialState,
     };
   }
-  return useTableProps;
+  return tableOptions;
 };
 const getCaptionForSortBy = column => {
   if (!column.canSort) {
@@ -150,7 +145,6 @@ export function TableComponent(props) {
     pageOptions,
     pageSize: userPageSize,
     renderRowSubComponent,
-    showPagination,
     showSkipButtons,
     showToggleHideColumns,
     tableBodyProps,
@@ -162,7 +156,7 @@ export function TableComponent(props) {
     tableWrapperProps,
     wrapperProps,
   } = props;
-  const tableOptions = getOptionForUseTable({
+  const tableOptions = createTableOptions({
     columns,
     data,
     hiddenColumns,
@@ -170,7 +164,6 @@ export function TableComponent(props) {
     manualPageCount,
     pageIndex: userPageIndex,
     pageSize: userPageSize,
-    showPagination,
   });
   // Use the state and functions returned from useTable to build your UI
   const {
