@@ -9,11 +9,7 @@ exports[`Image Component base should return a Image object with a console error 
 <Img
   alt=""
   className="c0"
-  container={[Function]}
-  decode={true}
-  loader={false}
   src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg"
-  unloader={false}
 />
 `;
 
@@ -26,11 +22,7 @@ exports[`Image Component base should return a Image object with maxWidth applied
 <Img
   alt="blue flower"
   className="c0"
-  container={[Function]}
-  decode={true}
-  loader={false}
   src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg"
-  unloader={false}
 />
 `;
 
@@ -61,11 +53,7 @@ exports[`Image Component base should return a Image object with width applied 1`
 <Img
   alt="blue flower"
   className="c0"
-  container={[Function]}
-  decode={true}
-  loader={false}
   src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg"
-  unloader={false}
 />
 `;
 
@@ -78,10 +66,6 @@ exports[`Image Component base should return a shallow Image object with base sty
 <Img
   alt="blue flower"
   className="c0"
-  container={[Function]}
-  decode={true}
-  loader={false}
   src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg"
-  unloader={false}
 />
 `;

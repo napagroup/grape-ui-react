@@ -57,7 +57,7 @@
     "prop-types": "15.7.2",
     "react-day-picker": "7.3.2",
     "react-hook-form": "^5.7.2",
-    "react-image": "2.4.0",
+    "react-image": "^4.0.1",
     "react-moment": "0.9.7",
     "react-router-dom": "^5.2.0",
     "react-select": "3.1.0",
