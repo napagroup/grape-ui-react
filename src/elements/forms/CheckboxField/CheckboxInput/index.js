@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { space } from 'styled-system';
-import { Box, Flex } from 'src/elements/grid';
+import { layout, space } from 'styled-system';
+import { Flex } from 'src/elements/grid';
 import {
   refType,
   scaleFont,
@@ -40,6 +40,7 @@ const propsToTrimControl = [
 ];
 
 const CheckboxInputComponent = styled('input')`
+  ${layout}
   ${space}
   cursor: pointer;
 `;
@@ -52,7 +53,7 @@ CheckboxInputComponent.defaultProps = {
 
 const CheckboxInput = props => {
   const {
-    disabled, id, inputRef, name, option,
+    checkboxSize, disabled, flexContainerProps, id, inputRef, name, option,
   } = props;
   const propsForCheckboxLabel = removeSomeProps(passThrough(CheckboxInput, props), propsToTrimLabel);
   const propsForCheckboxControl = removeSomeProps(passThrough(CheckboxInput, props), propsToTrimControl);
@@ -61,31 +62,42 @@ const CheckboxInput = props => {
       key={`${option.label}-label`}
       {...propsForCheckboxLabel}
     >
-      <Flex alignItems="baseline">
+      <Flex
+        alignItems="baseline"
+        {...flexContainerProps}
+      >
         <CheckboxInputComponent
           key={option.label}
           ref={inputRef}
           disabled={disabled}
           id={id || name}
+          maxHeight={checkboxSize}
+          maxWidth={checkboxSize}
+          minHeight={checkboxSize}
+          minWidth={checkboxSize}
           type="checkbox"
           {...propsForCheckboxControl}
         />
-        <Box>
+        <span>
           {option.label}
-        </Box>
+        </span>
       </Flex>
     </CheckboxLabel>
   );
 };
 
 CheckboxInput.propTypes = {
+  checkboxSize: PropTypes.any,
   disabled: PropTypes.bool,
+  flexContainerProps: PropTypes.object,
   inputRef: refType,
   option: PropTypes.any.isRequired,
   ...typography.propTypes,
 };
 CheckboxInput.defaultProps = {
+  checkboxSize: 12,
   disabled: false,
+  flexContainerProps: {},
   inputRef: () => {},
 };
 

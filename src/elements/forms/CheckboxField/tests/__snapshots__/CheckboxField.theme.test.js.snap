@@ -32,10 +32,6 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
   text-decoration: inherit;
 }
 
-.c6 {
-  box-sizing: border-box;
-}
-
 .c2 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -76,6 +72,10 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
 }
 
 .c5 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -143,11 +143,9 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
         >
           This should be Nunito and red
         </input>
-        <div
-          className="c6"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -199,11 +197,9 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
         >
           This should be Nunito and red
         </input>
-        <div
-          className="c6"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -255,11 +251,9 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
         >
           This should be Nunito and red
         </input>
-        <div
-          className="c6"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
@@ -298,10 +292,6 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
   text-decoration: inherit;
 }
 
-.c6 {
-  box-sizing: border-box;
-}
-
 .c2 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -342,6 +332,10 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
 }
 
 .c5 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -409,11 +403,9 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
         >
           Lorem Ipsum
         </input>
-        <div
-          className="c6"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -465,11 +457,9 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
         >
           Lorem Ipsum
         </input>
-        <div
-          className="c6"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -521,11 +511,9 @@ exports[`CheckboxField using Theme Font Family should return a CheckboxField obj
         >
           Lorem Ipsum
         </input>
-        <div
-          className="c6"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
@@ -564,10 +552,6 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
   text-decoration: inherit;
 }
 
-.c6 {
-  box-sizing: border-box;
-}
-
 .c2 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -608,6 +592,10 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
 }
 
 .c5 {
+  max-height: 12px;
+  max-width: 12px;
+  min-height: 12px;
+  min-width: 12px;
   margin: 0;
   margin-left: 1rem;
   margin-right: 0.5rem;
@@ -675,11 +663,9 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
         >
           Lorem Ipsum
         </input>
-        <div
-          className="c6"
-        >
+        <span>
           Red
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -731,11 +717,9 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
         >
           Lorem Ipsum
         </input>
-        <div
-          className="c6"
-        >
+        <span>
           Yellow
-        </div>
+        </span>
       </div>
     </label>
     <label
@@ -787,11 +771,9 @@ exports[`CheckboxField using Theme color should return a CheckboxField object wi
         >
           Lorem Ipsum
         </input>
-        <div
-          className="c6"
-        >
+        <span>
           Green
-        </div>
+        </span>
       </div>
     </label>
   </div>
