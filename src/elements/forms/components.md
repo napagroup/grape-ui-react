@@ -1,6 +1,6 @@
 ## [`<CheckboxField>`](#/Forms/Components/CheckboxField)
 
-Learn about our CheckboxField component, which is built on react-checkbox-group.
+Learn about our CheckboxField component.
 ***
 
 ## [`<DateField>`](#/Forms/Components/DateField)

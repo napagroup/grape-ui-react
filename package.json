@@ -55,7 +55,6 @@
     "moment": "^2.26.0",
     "moment-timezone": "^0.5.31",
     "prop-types": "15.7.2",
-    "react-checkbox-group": "4.0.1",
     "react-day-picker": "7.3.2",
     "react-hook-form": "^5.7.2",
     "react-image": "2.4.0",
