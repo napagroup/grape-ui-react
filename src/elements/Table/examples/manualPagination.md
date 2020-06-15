@@ -99,7 +99,6 @@ function TableView(props) {
   const [ pageVm, setPageVm ] = useState(getInitialPageVm([]));
   const [ paginatedData, setPaginatedData ] = useState([]);
   const [ loading, setLoading] = useState(false);
-  console.log({ initalPv: getInitialPageVm([]), pageVm })
   /**
    * Simulate fetch logic - This section represents fetched data typically from an api call
    * Fn requestData will update the pageVm via setter which is being watched by useEffect below it
@@ -141,7 +140,6 @@ function TableView(props) {
   **/
 
  const data = React.useMemo(() => paginatedData, [paginatedData]);
- console.log({ data })
   return (
     <Table
       columns={columns}
@@ -154,7 +152,6 @@ function TableView(props) {
       pageOptions={defaultPageOptions}
       pageSize={pageVm.pageSize}
       showPagination
-      showSkipButtons
     />
   );
 }
