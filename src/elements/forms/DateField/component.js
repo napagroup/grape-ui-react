@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import DayPicker from 'react-day-picker';
-import MomentLocaleUtils, {
-  formatDate,
-  parseDate,
-} from 'react-day-picker/moment';
+import * as MomentLocaleUtils from 'src/utils/momentHelpers';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import { formatForOnChange } from './utils';
 import { DEFAULT_DATE_FORMAT, DEFAULT_DATE_VALUE_FORMAT } from './constants';
 
+const {
+  formatDate,
+  parseDate,
+} = MomentLocaleUtils;
 const propsToTrim = null;
 const dayPickerInputStyle = {
   container: {
