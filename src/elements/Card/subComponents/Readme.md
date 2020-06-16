@@ -68,6 +68,9 @@ const containerStyleProps = {
         }
       />
     }
+    cardActionsProps={{
+      flexDirection: ['column', 'row'],
+    }}
     cardActionsLeft={
       <CodeBlock
         codeString={
@@ -131,7 +134,7 @@ const containerStyleProps = {
 
 ## SubComponent Directory
 
-### [Card Media](#/Card/Subcomponents/CardMedia)
+### [Card Media](#/Card/Subcomponents/Card%20Media)
 
 The area of card reserved for images, videos, or any other media that is meant to in the card.
 
@@ -148,7 +151,7 @@ Includes:
 
 ***
 
-### [Card Header](#/Card/Subcomponents/CardHeader)
+### [Card Header](#/Card/Subcomponents/Card%20Header)
 
 The area of card reserved for the top area of the card.
 
@@ -170,7 +173,7 @@ Includes:
 
 ***
 
-### [Card Body](#/Card/Subcomponents/CardBody)
+### [Card Body](#/Card/Subcomponents/Card%20Body)
 
 The area of card reserved for body of the card.
 
@@ -182,7 +185,7 @@ Includes:
 
 ***
 
-### [Card Actions](#/Card/Subcomponents/CardActions)
+### [Card Actions](#/Card/Subcomponents/Card%20Actions)
 
 The area of card reserved for the top area of the card.
 
@@ -201,7 +204,7 @@ Includes:
 
 ***
 
-### [Additional Card Props](#/Card/Subcomponents/AdditionalCardProps)
+### [Additional Card Props](#/Card/Subcomponents/Additional%20Card%20Props)
 
 The rest of the props reserved for the card.
 

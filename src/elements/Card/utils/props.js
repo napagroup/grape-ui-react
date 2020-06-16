@@ -23,7 +23,7 @@ export const cardBasePropTypes = {
 };
 
 export const cardBaseDefaultProps = {
-  cardPadding: [2, null, 3],
+  cardPadding: 3,
 };
 
 export const cardBodyBasePropTypes = {

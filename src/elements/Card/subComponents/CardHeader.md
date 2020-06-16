@@ -2,7 +2,7 @@ The header is comprised of a thumbnail, title, and subtitle.
 
 ### Card Title
 
-Card title is the reserved spot for the title of the card in the header.  When provided a string, the content will render as a [`<Header.h5>`](#/Typography/Components/Header). If its provided with an object, it will just render the object as is in a [`<Box>`](#/Flexbox/Components/Box) component.
+Card title is the reserved spot for the title of the card in the header.  When provided a string, the content will render as a [`<Header.h5>`](#/Typography/Components/Header). If its provided with an object, it will just render the object in a [`<Box>`](#/Flexbox/Components/Box) component.
 
 #### Card Title Example
 

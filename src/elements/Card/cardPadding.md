@@ -61,6 +61,7 @@ const baseCardStyleProps = {
 const containerStyleProps = {
   alignItems: 'center',
   background: '#fdf4fb',
+  flexDirection: ['column', 'row'],
   justifyContent: 'space-evenly',
   p: [2, null, 3],
 };
@@ -89,12 +90,12 @@ const codeStringSub = `// Using subComponents
   </Box>
   <Box {...baseCardStyleProps}>
     <CodeBlock codeString={codeStringSub} />
-    <Card cardPadding={0}  pb={[2, null, 3]} {...baseCardStyleProps}>
-      <Flex alignItems="center" p={[2, null, 3]}>
+    <Card cardPadding={0}  pb={3} {...baseCardStyleProps}>
+      <Flex alignItems="center" p={3}>
         <Card.Thumbnail>
           {ExampleThumbnail01}
         </Card.Thumbnail>
-        <Box pl={[2, null, 3]}>
+        <Box pl={3}>
           <Card.Title>
             Card title
           </Card.Title>
@@ -106,10 +107,10 @@ const codeStringSub = `// Using subComponents
       <Card.SecondaryMedia>
         {ExampleCardImage01}
       </Card.SecondaryMedia>
-      <Card.Body p={[2, null, 3]}>
+      <Card.Body p={3}>
         {ExampleBody01}
       </Card.Body>
-      <Card.Actions justifyContent="space-between" px={[2, null, 3]}>
+      <Card.Actions justifyContent="space-between" px={3}>
         {ExampleActions01}
         {ExampleActions02}
       </Card.Actions>

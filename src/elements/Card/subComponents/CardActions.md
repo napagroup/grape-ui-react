@@ -53,9 +53,18 @@ const exampleBox = (propName) => (
   </Box>
   <Box {...baseCardStyleProps}>
     <Card
-      cardActions={exampleBox('cardActions')}
+      cardActions={exampleBox('cardActions and am responsive through cardActionsProps')}
+      cardActionsProps={{
+        flexDirection: ['column', 'row'],
+      }}
       cardActionsLeft={exampleBox('cardActionsLeft')}
+      cardActionsLeftProps={{
+        py: [2, 0],
+      }}
       cardActionsRight={exampleBox('cardActionsRight')}
+      cardActionsRightProps={{
+        py: [2, 0],
+      }}
       {...baseCardStyleProps}
     />
   </Box>
