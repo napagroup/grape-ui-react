@@ -16,13 +16,13 @@ exports[`Box Component base should return a Card with base styling 1`] = `
 
 .c2 {
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .c4 {
   box-sizing: border-box;
-  padding-right: 8px;
+  padding-right: 16px;
 }
 
 .c5 {
@@ -31,18 +31,18 @@ exports[`Box Component base should return a Card with base styling 1`] = `
 
 .c8 {
   box-sizing: border-box;
-  padding: 8px;
+  padding: 16px;
 }
 
 .c9 {
   box-sizing: border-box;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
 }
 
 .c10 {
   box-sizing: border-box;
   width: 100%;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
 }
 
 .c3 {
@@ -54,8 +54,8 @@ exports[`Box Component base should return a Card with base styling 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
 .c11 {
@@ -67,9 +67,9 @@ exports[`Box Component base should return a Card with base styling 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .c6 {
@@ -115,80 +115,6 @@ exports[`Box Component base should return a Card with base styling 1`] = `
 @media screen and (min-width:52em) {
   .c0 {
     margin-bottom: 8px;
-  }
-}
-
-@media screen and (min-width:40em) {
-
-}
-
-@media screen and (min-width:52em) {
-  .c2 {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-@media screen and (min-width:40em) {
-
-}
-
-@media screen and (min-width:52em) {
-  .c4 {
-    padding-right: 16px;
-  }
-}
-
-@media screen and (min-width:40em) {
-
-}
-
-@media screen and (min-width:52em) {
-  .c8 {
-    padding: 16px;
-  }
-}
-
-@media screen and (min-width:40em) {
-
-}
-
-@media screen and (min-width:52em) {
-  .c9 {
-    padding-bottom: 16px;
-  }
-}
-
-@media screen and (min-width:40em) {
-
-}
-
-@media screen and (min-width:52em) {
-  .c10 {
-    padding-bottom: 16px;
-  }
-}
-
-@media screen and (min-width:40em) {
-
-}
-
-@media screen and (min-width:52em) {
-  .c3 {
-    padding-bottom: 16px;
-    padding-top: 16px;
-  }
-}
-
-@media screen and (min-width:40em) {
-
-}
-
-@media screen and (min-width:52em) {
-  .c11 {
-    padding-bottom: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 
@@ -276,10 +202,10 @@ exports[`Box Component base should return a Card with nuances 1`] = `
 
 .c1 {
   box-sizing: border-box;
-  padding-bottom: 8px;
-  padding-top: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .c3 {
@@ -288,7 +214,7 @@ exports[`Box Component base should return a Card with nuances 1`] = `
 
 .c4 {
   box-sizing: border-box;
-  padding-top: 8px;
+  padding-top: 16px;
 }
 
 .c2 {
@@ -311,7 +237,7 @@ exports[`Box Component base should return a Card with nuances 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
 }
 
 @media screen and (min-width:40em) {
@@ -321,39 +247,6 @@ exports[`Box Component base should return a Card with nuances 1`] = `
 @media screen and (min-width:52em) {
   .c0 {
     margin-bottom: 8px;
-  }
-}
-
-@media screen and (min-width:40em) {
-
-}
-
-@media screen and (min-width:52em) {
-  .c1 {
-    padding-bottom: 16px;
-    padding-top: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-@media screen and (min-width:40em) {
-
-}
-
-@media screen and (min-width:52em) {
-  .c4 {
-    padding-top: 16px;
-  }
-}
-
-@media screen and (min-width:40em) {
-
-}
-
-@media screen and (min-width:52em) {
-  .c5 {
-    padding-bottom: 16px;
   }
 }
 
@@ -404,9 +297,9 @@ exports[`Box Component base should return a Card with objects in title 1`] = `
 
 .c1 {
   box-sizing: border-box;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .c3 {
@@ -422,7 +315,7 @@ exports[`Box Component base should return a Card with objects in title 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 8px;
+  padding-top: 16px;
 }
 
 @media screen and (min-width:40em) {
@@ -432,28 +325,6 @@ exports[`Box Component base should return a Card with objects in title 1`] = `
 @media screen and (min-width:52em) {
   .c0 {
     margin-bottom: 8px;
-  }
-}
-
-@media screen and (min-width:40em) {
-
-}
-
-@media screen and (min-width:52em) {
-  .c1 {
-    padding-bottom: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-@media screen and (min-width:40em) {
-
-}
-
-@media screen and (min-width:52em) {
-  .c2 {
-    padding-top: 16px;
   }
 }
 

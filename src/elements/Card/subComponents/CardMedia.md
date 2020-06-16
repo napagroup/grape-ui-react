@@ -65,7 +65,7 @@ const ExampleCardImage = (ratio) => (
       <Card.RichMedia>
         {ExampleCardImage(16/9)}
       </Card.RichMedia>
-      <Box p={[2, null, 3]}>
+      <Box p={3}>
         <Card.Title>
           Rich Media
         </Card.Title>
@@ -80,7 +80,7 @@ const ExampleCardImage = (ratio) => (
       cardPadding={0}
       {...baseCardStyleProps}
     >
-      <Box p={[2, null, 3]}>
+      <Box p={3}>
         <Card.Title>
           Secondary Media
         </Card.Title>

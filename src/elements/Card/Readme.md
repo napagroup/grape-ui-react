@@ -16,6 +16,7 @@ const baseCardStyleProps = {
 const containerStyleProps = {
   alignItems: 'center',
   background: '#fdf4fb',
+  flexDirection: ['column', 'row'],
   justifyContent: 'space-evenly',
   p: [2, null, 3],
 };
@@ -104,7 +105,7 @@ const ExampleCardThumbnail01 = (
   />
 );
 
-const exampleCardPadding = [2, null, 3];
+const exampleCardPadding = 3;
 
 const baseCardStyleProps = {
   m: 1,
