@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import Adapter from 'enzyme-adapter-react-16';
 import { configure } from 'enzyme';
 import { ThemeProvider } from 'styled-components';
-import MomentLocaleUtils from 'react-day-picker/moment';
+import * as MomentLocaleUtils from 'src/utils/momentHelpers';
 import 'moment/locale/ja';
 import { DateField } from '../styled';
 

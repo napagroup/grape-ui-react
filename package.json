@@ -55,7 +55,7 @@
     "moment": "^2.26.0",
     "moment-timezone": "^0.5.31",
     "prop-types": "15.7.2",
-    "react-day-picker": "7.3.2",
+    "react-day-picker": "^7.4.8",
     "react-hook-form": "^5.7.2",
     "react-image": "^4.0.1",
     "react-moment": "0.9.7",
