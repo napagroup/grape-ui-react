@@ -63,6 +63,48 @@ module.exports = {
       ],
     },
     {
+      content: 'src/elements/Card/Readme.md',
+      description: 'The card element',
+      name: 'Card',
+      sectionDepth: 2,
+      sections: [
+        {
+          content: 'src/elements/Card/cardPadding.md',
+          description: 'How padding works in the card',
+          name: 'cardPadding',
+        },
+        {
+          components: () => ['./src/elements/Card/subComponents/*/index.js'],
+          content: 'src/elements/Card/subComponents/Readme.md',
+          description: 'Subcomponent directory',
+          name: 'Subcomponents',
+          sectionDepth: 1,
+          sections: [
+            {
+              content: 'src/elements/Card/subComponents/CardMedia.md',
+              name: 'Card Media',
+            },
+            {
+              content: 'src/elements/Card/subComponents/CardHeader.md',
+              name: 'Card Header',
+            },
+            {
+              content: 'src/elements/Card/subComponents/CardBody.md',
+              name: 'Card Body',
+            },
+            {
+              content: 'src/elements/Card/subComponents/CardActions.md',
+              name: 'Card Actions',
+            },
+            {
+              content: 'src/elements/Card/subComponents/AdditionalCardProps.md',
+              name: 'Additional Card Props',
+            },
+          ],
+        },
+      ],
+    },
+    {
       components: './src/elements/Image/styled.js',
       name: 'Image',
     },

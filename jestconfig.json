@@ -7,7 +7,8 @@
     "!src/index.js",
     "!src/global-styles.js",
     "!src/*/*/Loadable.{js,jsx}",
-    "!src/**/examples/**"
+    "!src/**/examples/**",
+    "!src/utils/momentHelpers/*"
   ],
   "coverageThreshold": {
     "global": {
