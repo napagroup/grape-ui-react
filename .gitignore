@@ -10,6 +10,3 @@ stats.json
 *.log
 dist/
 npm-debug.log.*
-styleguide/index.html
-styleguide/build/
-styleguide/static/
