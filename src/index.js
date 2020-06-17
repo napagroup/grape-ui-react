@@ -1,5 +1,6 @@
 import * as styledComponents from 'styled-components';
 import { Button } from './elements/Button';
+import { Card } from './elements/Card';
 import {
   CheckboxField,
   DateField,
@@ -27,6 +28,7 @@ import * as styledHelpers from './utils/styledHelpers';
 export {
   Box,
   Button,
+  Card,
   CheckboxField,
   Code,
   CodeBlock,
