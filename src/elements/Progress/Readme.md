@@ -11,9 +11,6 @@ import {
   <CircularProgress
     circleOneStroke="#7ea9e1"
     circleTwoStroke="#4fffe1"
-    progress={70}
-    size={500}
-    strokeWidth={15}
   />
 </Box>
 

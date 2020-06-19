@@ -1,11 +1,39 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const size = 100;
+const strokeWidth = 15;
+const radius = size / 2 - strokeWidth / 2;
+const circumference = 2 * Math.PI * radius;
+
+const circularRotate = keyframes`
+from {
+  transform: rotate(0deg);
+}
+
+to {
+  transform: rotate(360deg);
+}
+`;
+const circularDash = keyframes`
+from {
+  stroke-dashoffset: ${circumference};
+}
+to {
+  stroke-dashoffset: ${-1 * circumference};
+}
+`;
+
+const StyledDiv = styled('div')`
+  animation: ${circularRotate} 2s linear infinite;
+`;
 
 const StyledSvg = styled('svg')`
   display: block;
   margin: 20px auto;
   max-width: 100%;
+
 `;
 
 const StyledCircleBg = styled('circle')`
@@ -14,34 +42,17 @@ const StyledCircleBg = styled('circle')`
 
 const StyledCircleFg = styled('circle')`
   fill: none;
+  animation: ${circularDash} 4s ease-in-out infinite;
 `;
 
-const StyledCircleText = styled('text')`
-  font-size: 2rem;
-  text-anchor: middle;
-  fill: #fff;
-  font-weight: bold;
-`;
 export const CircularProgress = props => {
   const {
-    size,
-    progress,
-    strokeWidth,
     circleOneStroke,
     circleTwoStroke,
   } = props;
   const center = size / 2;
-  const radius = size / 2 - strokeWidth / 2;
-  const circumference = 2 * Math.PI * radius;
-  const [offset, setOffset] = useState(0);
-  const circleRef = useRef(null);
-  useEffect(() => {
-    const progressOffset = ((100 - progress) / 100) * circumference;
-    setOffset(progressOffset);
-    circleRef.current.style = 'transition: stroke-dashoffset 850ms ease-in-out;';
-  }, [setOffset, circumference, progress, offset]);
   return (
-    <>
+    <StyledDiv>
       <StyledSvg className="svg" height={size} width={size}>
         <StyledCircleBg
           className="svg-circle-bg"
@@ -52,33 +63,19 @@ export const CircularProgress = props => {
           strokeWidth={strokeWidth}
         />
         <StyledCircleFg
-          ref={circleRef}
-          className="svg-circle"
           cx={center}
           cy={center}
           r={radius}
           stroke={circleTwoStroke}
           strokeDasharray={circumference}
-          strokeDashoffset={offset}
           strokeWidth={strokeWidth}
         />
-        <StyledCircleText
-          className="svg-circle-text"
-          x={center}
-          y={center}
-        >
-          {progress}
-          {'%'}
-        </StyledCircleText>
       </StyledSvg>
-    </>
+    </StyledDiv>
   );
 };
 
 CircularProgress.propTypes = {
   circleOneStroke: PropTypes.string.isRequired,
   circleTwoStroke: PropTypes.string.isRequired,
-  progress: PropTypes.number.isRequired,
-  size: PropTypes.number.isRequired,
-  strokeWidth: PropTypes.number.isRequired,
 };
