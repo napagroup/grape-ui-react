@@ -1,11 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
-
-const size = 100;
-const strokeWidth = 15;
-const radius = size / 2 - strokeWidth / 2;
-const circumference = 2 * Math.PI * radius;
+import { resolveColor } from 'src/utils/styledHelpers';
+import { Hideable } from 'src/elements/utils';
 
 const circularRotate = keyframes`
 from {
@@ -16,17 +13,18 @@ to {
   transform: rotate(360deg);
 }
 `;
-const circularDash = keyframes`
+
+const circularDash = props => keyframes`
 from {
-  stroke-dashoffset: ${circumference};
+  stroke-dashoffset: ${props.circumference};
 }
 to {
-  stroke-dashoffset: ${-1 * circumference};
+  stroke-dashoffset: ${-1 * props.circumference};
 }
 `;
 
 const StyledDiv = styled('div')`
-  animation: ${circularRotate} 2s linear infinite;
+  animation: ${circularRotate} 2.4s linear infinite;
 `;
 
 const StyledSvg = styled('svg')`
@@ -38,44 +36,135 @@ const StyledSvg = styled('svg')`
 
 const StyledCircleBg = styled('circle')`
   fill: none;
+  stroke: ${props => resolveColor(props.strokeColor)};
 `;
 
 const StyledCircleFg = styled('circle')`
+  animation: ${circularDash} 2.4s ease-in-out infinite;
   fill: none;
-  animation: ${circularDash} 4s ease-in-out infinite;
+  stroke: ${props => resolveColor(props.strokeColor)};
 `;
 
-export const CircularProgress = props => {
+const StyledDivDet = styled('div')`
+  transform: rotate(-90deg);
+`;
+
+const determinateCircularDash = props => keyframes`
+from {
+  stroke-dashoffset: ${props.circumference};
+}
+to {
+  stroke-dashoffset: ${0};
+}
+`;
+
+const StyledDeterminateCircleFg = styled('circle')`
+  animation: ${determinateCircularDash} 4.2s ease-in-out infinite;
+  fill: none;
+  stroke: ${props => resolveColor(props.strokeColor)};
+`;
+
+const CircularProgress = props => {
   const {
-    circleOneStroke,
-    circleTwoStroke,
+    circleBgStroke,
+    circleFgStroke,
+    hideTrack,
+    isDeterminate,
+    size,
+    strokeWidth,
   } = props;
+  const radius = size / 2 - strokeWidth / 2;
+  const circumference = 2 * Math.PI * radius;
   const center = size / 2;
   return (
-    <StyledDiv>
-      <StyledSvg className="svg" height={size} width={size}>
-        <StyledCircleBg
-          className="svg-circle-bg"
-          cx={center}
-          cy={center}
-          r={radius}
-          stroke={circleOneStroke}
-          strokeWidth={strokeWidth}
-        />
-        <StyledCircleFg
-          cx={center}
-          cy={center}
-          r={radius}
-          stroke={circleTwoStroke}
-          strokeDasharray={circumference}
-          strokeWidth={strokeWidth}
-        />
-      </StyledSvg>
-    </StyledDiv>
+    <>
+      <Hideable hide={!isDeterminate}>
+        <StyledDivDet>
+          <StyledSvg className="svg" height={size} width={size}>
+            <Hideable hide={hideTrack}>
+              <StyledCircleBg
+                circumference={circumference}
+                cx={center}
+                cy={center}
+                r={radius}
+                strokeColor={circleBgStroke}
+                strokeWidth={strokeWidth}
+              />
+            </Hideable>
+            <StyledDeterminateCircleFg
+              circumference={circumference}
+              cx={center}
+              cy={center}
+              r={radius}
+              strokeColor={circleFgStroke}
+              strokeDasharray={circumference}
+              strokeWidth={strokeWidth}
+            />
+          </StyledSvg>
+        </StyledDivDet>
+      </Hideable>
+      <Hideable hide={isDeterminate}>
+        <StyledDiv>
+          <StyledSvg className="svg" height={size} width={size}>
+            <Hideable hide={hideTrack}>
+              <StyledCircleBg
+                circumference={circumference}
+                cx={center}
+                cy={center}
+                r={radius}
+                strokeColor={circleBgStroke}
+                strokeWidth={strokeWidth}
+              />
+            </Hideable>
+            <StyledCircleFg
+              circumference={circumference}
+              cx={center}
+              cy={center}
+              r={radius}
+              strokeColor={circleFgStroke}
+              strokeDasharray={circumference}
+              strokeWidth={strokeWidth}
+            />
+          </StyledSvg>
+        </StyledDiv>
+      </Hideable>
+    </>
   );
 };
 
 CircularProgress.propTypes = {
-  circleOneStroke: PropTypes.string.isRequired,
-  circleTwoStroke: PropTypes.string.isRequired,
+  circleBgStroke: PropTypes.string,
+  circleFgStroke: PropTypes.string,
+  hideTrack: PropTypes.bool,
+  isDeterminate: PropTypes.bool,
+  size: PropTypes.number,
+  strokeWidth: PropTypes.number,
+};
+
+CircularProgress.defaultProps = {
+  circleBgStroke: 'indigo.light',
+  circleFgStroke: 'indigo.dark',
+  hideTrack: false,
+  isDeterminate: false,
+  size: 35,
+  strokeWidth: 5,
+};
+
+const showCircular = props => props.progressType === 'circular';
+
+export const Progress = props => (
+  <>
+    <Hideable hide={!showCircular(props)}>
+      <CircularProgress {...props} />
+    </Hideable>
+  </>
+);
+
+
+Progress.propTypes = {
+  progressType: PropTypes.string,
+};
+
+Progress.defaultProps = {
+  progressType: 'circular',
 };
