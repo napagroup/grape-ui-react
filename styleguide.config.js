@@ -109,6 +109,10 @@ module.exports = {
       name: 'Image',
     },
     {
+      components: './src/elements/Progress/styled.js',
+      name: 'Progress',
+    },
+    {
       content: './src/elements/forms/Readme.md',
       description: 'All form elements',
       name: 'Forms',
