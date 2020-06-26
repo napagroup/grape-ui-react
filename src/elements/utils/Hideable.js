@@ -2,8 +2,8 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 
 const Hideable = props => {
-  const { hide, children } = props;
-  if (hide) {
+  const { isHidden, children } = props;
+  if (isHidden) {
     return null;
   }
   return (
@@ -15,11 +15,11 @@ const Hideable = props => {
 
 Hideable.propTypes = {
   children: PropTypes.any.isRequired,
-  hide: PropTypes.bool,
+  isHidden: PropTypes.bool,
 };
 
 Hideable.defaultProps = {
-  hide: false,
+  isHidden: false,
 };
 
 /**
@@ -30,14 +30,14 @@ Hideable.defaultProps = {
 
 const withHideable = Child => {
   function HideableComponent(props) {
-    const { hide, ...otherProps } = props;
-    return (<Hideable hide={hide}><Child {...otherProps} /></Hideable>);
+    const { isHidden, ...otherProps } = props;
+    return (<Hideable isHidden={isHidden}><Child {...otherProps} /></Hideable>);
   }
   HideableComponent.propTypes = {
-    hide: PropTypes.bool,
+    isHidden: PropTypes.bool,
   };
   HideableComponent.defaultProps = {
-    hide: false,
+    isHidden: false,
   };
   return HideableComponent;
 };

@@ -90,14 +90,14 @@ export const LinearProgress = props => {
   return (
     <StyledRoot>
       <StyledDiv trackColor={getTrackColor({ hideTrack, trackColor })}>
-        <Hideable hide={!isDeterminate}>
+        <Hideable isHidden={!isDeterminate}>
           <StyledLineDet
             duration={duration}
             indicatorColor={indicatorColor}
             loop={loop}
           />
         </Hideable>
-        <Hideable hide={isDeterminate}>
+        <Hideable isHidden={isDeterminate}>
           <StyledLineIndet
             indicatorColor={indicatorColor}
             loop={loop}

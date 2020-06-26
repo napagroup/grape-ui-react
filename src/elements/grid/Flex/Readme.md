@@ -650,3 +650,33 @@ const FlexExample = ({ exampleCode, count = 3, boxWidth = 1 / count }) => {
   </div>
 </ThemeProvider>
 ```
+
+#### Hide Flex
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Text } from 'src/elements/typography';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Flex flexDirection={['column', 'row']} isHidden={hide}>
+    <Box px={1}>
+    <Text>
+      Hideable
+    </Text>
+    </Box>
+  </Flex>
+</ThemeProvider>
+```
