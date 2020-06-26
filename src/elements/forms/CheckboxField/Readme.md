@@ -243,3 +243,60 @@ const handleSelectAll = e => {
   </Header.h5>
 </ThemeProvider>
 ```
+
+#### Hide TextField
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
+
+const [hide, setHidden] = useState(false);
+
+const courseOptions = [
+  {
+    label: '🎨 Arts & Humanities',
+    value: '🎨',
+  },
+  {
+    label: '👔 Business',
+    value: '👔',
+  },
+  {
+    label: '🤖 Artificial Intelligence',
+    value: '🤖',
+  },
+  {
+    label: '🤸‍♀️ Health',
+    value: '🤸‍♀️',
+  },
+  {
+    label: '💃 Music & Dance',
+    value: '💃',
+  },
+  {
+    label: '🌎 Language Learning',
+    value: '🌎',
+  },
+];
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+    <CheckboxField
+      isHidden={hide}
+      name="courses"
+      options={courseOptions}
+    />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```

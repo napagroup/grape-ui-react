@@ -132,6 +132,7 @@ export const plaintextPropsToTrim = [
   'isClearable',
   'isCreatable',
   'isMulti',
+  'isHidden',
   'isRequired',
   'menuAlignment',
   'menuDirection',

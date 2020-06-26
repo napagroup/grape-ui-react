@@ -513,8 +513,8 @@ import { ThemeProvider } from 'styled-components';
 import {
   Box,
   Flex,
-} from 'src/elements/grid'; // ... from 'grape-ui-react'
-import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
+} from 'src/elements/grid';
+import { Button } from 'src/elements/Button';
 
 const [hide, setHidden] = useState(false);
 

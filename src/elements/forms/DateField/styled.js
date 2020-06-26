@@ -182,6 +182,7 @@ const DateField = props => {
     controlLabelProps,
     dayPickerProps,
     disabled,
+    isHidden,
     isRequired,
     labelText,
     locale,
@@ -210,6 +211,7 @@ const DateField = props => {
       controlId={controlId}
       controlLabelProps={controlLabelProps}
       disabled={disabled}
+      isHidden={isHidden}
       labelText={newLabel}
       name={name}
       validationError={validationError}
@@ -263,6 +265,8 @@ DateField.propTypes = {
   inputProps: PropTypes.object,
   /** Allows for a ref to be defined to the DOM input */
   inputRef: refType,
+  /** Hides component */
+  isHidden: PropTypes.bool,
   /** This will add an asterisk (*) to the `labelText` and provided `assistiveText` if none is provided. */
   isRequired: PropTypes.bool,
   /** The string value displayed on top of the control in the `ControlLabel` component. */
@@ -365,6 +369,7 @@ DateField.defaultProps = {
   formStyle: '',
   inputProps: {},
   inputRef: () => {},
+  isHidden: false,
   isRequired: false,
   labelText: '',
   locale: 'en',

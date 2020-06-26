@@ -26,6 +26,7 @@ export const propsToTrim = [
   'assistiveText',
   'color',
   'controlId',
+  'isHidden',
   'isRequired',
   'plainText',
 ];
