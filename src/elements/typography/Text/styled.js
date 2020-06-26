@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { fontWeight, space } from 'styled-system';
 import {
@@ -13,9 +14,10 @@ import {
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
+import { withHideable } from 'src/elements/utils/Hideable';
 import { TextComponent } from './component';
 
-const Text = styled(TextComponent)`
+const Text = styled(withHideable(TextComponent))`
   ${colorCore}
   ${ellipsisCore}
   ${fontFamilyCore}
@@ -31,10 +33,13 @@ const Text = styled(TextComponent)`
 
 Text.propTypes = {
   ...typography.propTypes,
+  /** Hides component */
+  isHidden: PropTypes.bool,
 };
 
 Text.defaultProps = {
   ...defaultStylesBase,
+  isHidden: false,
 };
 
 /** @component */

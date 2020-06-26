@@ -12,13 +12,10 @@ const Card = styled(withHideable(CardComponent))``;
 
 Card.propTypes = {
   ...cardPropTypes,
-  /** Hides component */
-  isHidden: PropTypes.bool,
 };
 
 Card.defaultProps = {
   ...cardDefaultProps,
-  isHidden: false,
 };
 
 const subComponentStarter = [

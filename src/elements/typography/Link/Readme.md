@@ -50,3 +50,31 @@ import { Code } from 'src/elements/typography';
   </Flex>
 </Router>
 ```
+
+#### Hide Header
+
+```jsx inside Markdown
+import { BrowserRouter as Router } from 'react-router-dom';
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Flex } from 'src/elements/grid';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Router>
+    <Flex
+      flexDirection="column"
+    >
+      <Link href="#" isHidden={hide}>
+        Hideable Link
+      </Link>
+    </Flex>
+  </Router>
+</ThemeProvider>
+```

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import propTypes from '@styled-system/prop-types';
 import { defaultStylesBase, typography } from 'src/utils/styledHelpers';
 
@@ -11,6 +12,7 @@ export const codePropTypes = {
   ...propTypes.position,
   ...propTypes.shadow,
   ...propTypes.space,
+  isHidden: PropTypes.bool,
 };
 
 export const codeDefaultProps = {
@@ -22,6 +24,7 @@ export const codeDefaultProps = {
   display: 'inline-block',
   fontFamily: 'monospace',
   fontSize: '80%',
+  isHidden: false,
   my: 0,
   p: 1,
 };
