@@ -392,8 +392,8 @@ const [hide, setHidden] = useState(false);
     Toggle Visibility
   </Button>
   <Flex flexDirection={['column', 'row']}>
-    <Box px={1} isHidden={hide}>
-    <Button>
+    <Box px={1}>
+    <Button isHidden={hide}>
       Hideable
     </Button>
     </Box>

@@ -179,9 +179,9 @@ module.exports = {
               name: 'Table Striped',
             },
             {
-              content: 'src/elements/Table/examples/hideColumns.md',
-              description: 'Demonstrating hideable columns',
-              name: 'Hide Columns',
+              content: 'src/elements/Table/examples/hideComponents.md',
+              description: 'Demonstrating hideable components',
+              name: 'Hide Components',
             },
           ],
         },
