@@ -51,7 +51,7 @@ import { Code } from 'src/elements/typography';
 </Router>
 ```
 
-#### Hide Header
+#### Hide Link
 
 ```jsx inside Markdown
 import { BrowserRouter as Router } from 'react-router-dom';

@@ -244,7 +244,7 @@ const handleSelectAll = e => {
 </ThemeProvider>
 ```
 
-#### Hide TextField
+#### Hide CheckboxField
 
 ```jsx inside Markdown
 import { useState } from 'react';
