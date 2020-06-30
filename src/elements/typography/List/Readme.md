@@ -146,3 +146,65 @@ import { Code, ListItem } from 'src/elements/typography';
   </List>
 </div>
 ```
+
+#### Hide List
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Button } from 'src/elements/Button';
+import { ListItem } from 'src/elements/typography';
+
+const [hide, setHidden] = useState(false);
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+<List isHidden={hide}>
+  <ListItem>
+    List Item 1
+  </ListItem>
+  <ListItem>
+    List Item 2
+  </ListItem>
+</List>
+</ThemeProvider>
+```
+
+#### Hide List Item
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid';
+import { Button } from 'src/elements/Button';
+import { ListItem } from 'src/elements/typography';
+
+const [hide, setHidden] = useState(false);
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+<List>
+  <ListItem isHidden={hide}>
+    List Item 1
+  </ListItem>
+  <ListItem>
+    List Item 2
+  </ListItem>
+  <ListItem isHidden={hide}>
+    List Item 3
+  </ListItem>
+  <ListItem>
+    List Item 4
+  </ListItem>
+</List>
+</ThemeProvider>
+```

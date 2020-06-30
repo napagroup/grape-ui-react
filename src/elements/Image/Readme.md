@@ -75,3 +75,29 @@ const altText01 = "Green grapes hanging from a vine; Photo by Nacho Domínguez A
   <CodeBlock codeString="maxHeight={[384, 512]}" />
 </div>
 ```
+
+#### Hide Image
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Button } from 'src/elements/Button';
+import ImageSrc01 from './examples/nacho-dominguez-argenta-cCVzi_mKovs-unsplash.jpg';
+import { Image } from './';
+
+const altText01 = "Green grapes hanging from a vine; Photo by Nacho Domínguez Argenta on Unsplash";
+const [hide, setHidden] = useState(false);
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Image
+    alt={altText01}
+    isHidden={hide}
+    src={ImageSrc01}
+    width={[1, 1 / 2, 1 / 3, 1 / 4]}
+  />
+</ThemeProvider>
+```

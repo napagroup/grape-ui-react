@@ -79,10 +79,10 @@ export const CircularProgress = props => {
   const center = diameter / 2;
   return (
     <>
-      <Hideable hide={!isDeterminate}>
+      <Hideable isHidden={!isDeterminate}>
         <StyledRootDet>
           <StyledSvg height={diameter} width={diameter}>
-            <Hideable hide={hideTrack}>
+            <Hideable isHidden={hideTrack}>
               <StyledCircleBg
                 circumference={circumference}
                 cx={center}
@@ -104,10 +104,10 @@ export const CircularProgress = props => {
           </StyledSvg>
         </StyledRootDet>
       </Hideable>
-      <Hideable hide={isDeterminate}>
+      <Hideable isHidden={isDeterminate}>
         <StyledRootInDet>
           <StyledSvg height={diameter} width={diameter}>
-            <Hideable hide={hideTrack}>
+            <Hideable isHidden={hideTrack}>
               <StyledCircleBg
                 circumference={circumference}
                 cx={center}

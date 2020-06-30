@@ -15,6 +15,7 @@ import {
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
+import { withHideable } from 'src/elements/utils/Hideable';
 import { ParagraphComponent } from './component';
 
 const { grid: gridSchema } = getGlobalStyles();
@@ -28,7 +29,7 @@ const fontWeightParagraph = props => {
   return lead ? fontWeight({ ...props, fontWeight: '300' }) : fontWeight(props);
 };
 
-const Paragraph = styled(ParagraphComponent)`
+const Paragraph = styled(withHideable(ParagraphComponent))`
   ${colorCore}
   ${ellipsisCore}
   ${fontFamilyCore}
@@ -44,12 +45,15 @@ const Paragraph = styled(ParagraphComponent)`
 
 Paragraph.propTypes = {
   ...typography.propTypes,
+  /** Hides component */
+  isHidden: PropTypes.bool,
   /** Use the lead font size */
   lead: PropTypes.bool,
 };
 
 Paragraph.defaultProps = {
   ...defaultStylesBase,
+  isHidden: false,
   lead: false,
   mb: gridSchema.gutter,
   mt: 0,

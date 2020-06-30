@@ -5,9 +5,10 @@ import {
   spaceProps,
   typography,
 } from 'src/utils/styledHelpers';
+import { withHideable } from 'src/elements/utils/Hideable';
 import { ControlGroupComponent } from './component';
 
-const ControlGroup = styled(ControlGroupComponent)`
+const ControlGroup = styled(withHideable(ControlGroupComponent))`
   position: relative;
   ${colorCore}
   ${space}

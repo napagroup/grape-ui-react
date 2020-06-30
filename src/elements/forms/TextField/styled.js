@@ -86,6 +86,7 @@ export const TextField = props => {
     controlId,
     controlLabelProps,
     formStyle,
+    isHidden,
     isRequired,
     labelText,
     name,
@@ -112,6 +113,7 @@ export const TextField = props => {
       bg={defaultControlStyles.bg}
       controlId={controlId}
       controlLabelProps={controlLabelProps}
+      isHidden={isHidden}
       labelText={newlabel}
       name={name}
       validationError={validationError}
@@ -153,6 +155,8 @@ TextField.propTypes = {
   /** Allows for a ref to be defined to the DOM input.
   * @see See [React-Select/Replacing Components](https://react-select.com/props#replacing-components) for more */
   inputRef: refType,
+  /** Hides component */
+  isHidden: PropTypes.bool,
   /** This will add an asterisk (*) to the `labelText` and provided `assistiveText` if none is provided. */
   isRequired: PropTypes.bool,
   /** The string value displayed on top of the control in the `ControlLabel` component. */
@@ -181,6 +185,7 @@ TextField.defaultProps = {
   fontFamily: defaultControlStyles.fontFamily,
   formStyle: '',
   inputRef: () => {},
+  isHidden: false,
   isRequired: false,
   labelText: '',
   name: '',

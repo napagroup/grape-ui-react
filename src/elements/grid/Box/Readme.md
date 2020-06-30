@@ -612,3 +612,33 @@ const orderExample05 = 20;
   </Flex>
 </ThemeProvider>
 ```
+
+#### Hide Box
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Text } from 'src/elements/typography';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} isHidden={hide}>
+    <Text>
+      Hideable
+    </Text>
+    </Box>
+  </Flex>
+</ThemeProvider>
+```

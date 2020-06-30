@@ -2,12 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import propTypes from '@styled-system/prop-types';
+import { withHideable } from 'src/elements/utils/Hideable';
 import { Box, Flex } from 'src/elements/grid';
 import { Header, Paragraph } from 'src/elements/typography';
 import { CardComponent } from './component';
 import { cardPropTypes, cardDefaultProps } from './utils';
 
-const Card = styled(CardComponent)``;
+const Card = styled(withHideable(CardComponent))``;
 
 Card.propTypes = {
   ...cardPropTypes,

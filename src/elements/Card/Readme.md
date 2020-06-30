@@ -202,3 +202,38 @@ const containerStyleProps = {
   </Box>
 </Flex>
 ```
+
+#### Hide Card
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Card } from 'src/elements/Card';
+import { Text } from 'src/elements/typography';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Card isHidden={hide}>
+    <Card.Body>
+      <Flex flexDirection={['column', 'row']}>
+        <Box px={1}>
+        <Text>
+          Hideable
+        </Text>
+        </Box>
+      </Flex>
+    </Card.Body>
+  </Card>
+</ThemeProvider>
+```

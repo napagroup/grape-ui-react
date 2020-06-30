@@ -15,6 +15,8 @@ export const toolbarPropTypes = {
     PropTypes.array,
     PropTypes.string,
   ]),
+  /** Hides component */
+  isHidden: PropTypes.bool,
   toolbarInnerProps: PropTypes.object,
 };
 
@@ -27,6 +29,7 @@ export const toolbarDefaultProps = {
   },
   display: 'flex',
   flex: 'none',
+  isHidden: false,
   justifyContent: 'center',
   minHeight: [48, 56, 64],
   px: [3, null, 4],

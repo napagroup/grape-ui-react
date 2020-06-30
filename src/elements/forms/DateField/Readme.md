@@ -814,3 +814,33 @@ moment.locale('en');
   </Flex>
 </ThemeProvider>
 ```
+
+#### Hide DateField
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
+
+const [hide, setHidden] = useState(false);
+
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+    <DateField
+      isHidden={hide}
+      name="myDate"
+    />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```

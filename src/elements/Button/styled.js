@@ -30,6 +30,7 @@ import {
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
+import { withHideable } from 'src/elements/utils/Hideable';
 import propTypes from '@styled-system/prop-types';
 import { activeColorButton, hoverColorButton } from './utils';
 import { ButtonComponent } from './component';
@@ -78,7 +79,7 @@ const scaleButton = props => {
 };
 
 
-const Button = styled(ButtonComponent)`
+const Button = styled(withHideable(ButtonComponent))`
   ${borderButton}
   ${borderRadiusCore}
   ${boxShadowButtonMemoized()}
@@ -148,6 +149,8 @@ Button.propTypes = {
   href: PropTypes.string,
   ...lineHeight.propTypes,
   ...maxWidth.propTypes,
+  /** Hides component */
+  isHidden: PropTypes.bool,
   /** Makes the button a "contained" button.
    * @see See [Material Design/Components/Buttons/Outlined Button](https://material.io/components/buttons/#outlined-button) for more on this style. */
   outline: PropTypes.bool,
@@ -177,6 +180,7 @@ Button.defaultProps = {
   display: 'inline-block',
   emailHref: {},
   href: null,
+  isHidden: false,
   m: 1,
   maxWidth: '100%',
   outline: false,
