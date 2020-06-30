@@ -218,7 +218,7 @@ export function TableComponent(props) {
         flexDirection={['column', 'row']}
         justifyContent="space-between"
       >
-        <Hideable hide={!showToggleHideColumns}>
+        <Hideable isHidden={!showToggleHideColumns}>
           <div>
             <CheckboxField
               controlGroupProps={{ pt: 0 }}
@@ -242,7 +242,7 @@ export function TableComponent(props) {
         </Flex>
       </Flex>
       <StyledTableWrapper {...tableWrapperProps}>
-        <Hideable hide={!tableViewState.paginationTop.visible}>
+        <Hideable isHidden={!tableViewState.paginationTop.visible}>
           <Paginator
             canNextPage={canNextPage}
             canPreviousPage={canPreviousPage}
@@ -302,7 +302,7 @@ export function TableComponent(props) {
             </StyledTableBody>
           </StyledTable>
         </StyledTableResponsiveWrapper>
-        <Hideable hide={!tableViewState.paginationBottom.visible}>
+        <Hideable isHidden={!tableViewState.paginationBottom.visible}>
           <Paginator
             canNextPage={canNextPage}
             canPreviousPage={canPreviousPage}

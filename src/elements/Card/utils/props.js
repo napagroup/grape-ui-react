@@ -101,6 +101,7 @@ export const cardPropTypes = {
   ...cardRichMediaBasePropTypes,
   ...cardSecondaryMediaBasePropTypes,
   children: PropTypes.node,
+  isHidden: PropTypes.bool,
 };
 
 export const cardDefaultProps = {
@@ -115,5 +116,6 @@ export const cardDefaultProps = {
   border: '1px solid #ddd',
   borderRadius: 4,
   children: '',
+  isHidden: false,
   mb: [1, null, 2],
 };

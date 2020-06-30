@@ -9,10 +9,10 @@ const showLinear = props => props.progressType === 'linear';
 
 export const Progress = props => (
   <>
-    <Hideable hide={!showCircular(props)}>
+    <Hideable isHidden={!showCircular(props)}>
       <CircularProgress {...props} />
     </Hideable>
-    <Hideable hide={!showLinear(props)}>
+    <Hideable isHidden={!showLinear(props)}>
       <LinearProgress {...props} />
     </Hideable>
   </>

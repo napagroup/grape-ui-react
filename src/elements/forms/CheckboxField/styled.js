@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -58,6 +57,7 @@ const propsToTrim = [
   'controlGroupProps',
   'controlId',
   'controlLabelProps',
+  'isHidden',
   'isRequired',
   'labelText',
   'plainText',
@@ -66,6 +66,7 @@ const propsToTrim = [
 
 const plainTextPropsToTrim = [
   'flexDirection',
+  'isHidden',
   'name',
   'onChange',
   'options',
@@ -148,6 +149,7 @@ const CheckboxField = props => {
     controlId,
     controlLabelProps,
     disabled,
+    isHidden,
     isRequired,
     labelText,
     plainText,
@@ -174,6 +176,7 @@ const CheckboxField = props => {
       {...additionalControlGroupProps}
       assistiveText={getAssistiveText(assistiveProps)}
       assistiveTextProps={assistiveTextProps}
+      isHidden={isHidden}
       validationError={validationError}
     >
       {renderControlGroupLabel(labelProps)}
@@ -210,6 +213,8 @@ CheckboxField.propTypes = {
   fontFamily: PropTypes.string,
   /** Allows for a ref to be defined to the DOM input. */
   inputRef: refType,
+  /** Hides component */
+  isHidden: PropTypes.bool,
   /** This will add an asterisk (*) to the `labelText` and provided `assistiveText` if none is provided. */
   isRequired: PropTypes.bool,
   /** The string value displayed on top of the control in the `ControlLabel` component. */
@@ -237,6 +242,7 @@ CheckboxField.defaultProps = {
   flexDirection: 'column',
   fontFamily: 'base',
   inputRef: () => {},
+  isHidden: false,
   isRequired: false,
   labelText: '',
   plainText: false,

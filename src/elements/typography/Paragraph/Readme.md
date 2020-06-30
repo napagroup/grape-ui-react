@@ -47,3 +47,23 @@ import { Code } from 'src/elements/typography';
   .
 </Paragraph>
 ```
+
+#### Hide Paragraph
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+<Paragraph isHidden={hide}>
+  This paragraph is hideable.
+</Paragraph>
+</ThemeProvider>
+```

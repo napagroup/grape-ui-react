@@ -143,3 +143,67 @@ const rightArea = (version) => (
 />
 
 ```
+
+#### Hide Toolbar
+
+```jsx in Markdown
+import { useState } from 'react';
+import styled, { ThemeProvider } from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { Button } from 'src/elements/Button';
+import { TextField } from 'src/elements/forms';
+import { Flex } from 'src/elements/grid';
+import { Header } from 'src/elements/typography';
+
+const ToolbarButton = styled(Button)``;
+
+ToolbarButton.defaultProps = {
+  bgActiveColor: 'purple.light',
+  bgHoverColor: 'purple',
+  color: 'white'
+};
+
+const leftArea = (
+  <Flex alignItems="center" ml={-3}>
+    <ToolbarButton>
+      <FontAwesomeIcon icon={faBars} />
+    </ToolbarButton>
+    <Header.h5
+      color="white"
+      mb="0"
+    >
+      App
+    </Header.h5>
+  </Flex>
+);
+
+const rightArea = (
+  <ToolbarButton>
+    Login
+  </ToolbarButton>
+);
+
+const [hide, setHidden] = useState(false);
+
+<ThemeProvider
+  theme={{
+    colors: {
+      brandPrimary: 'rgb(203, 39, 168)',
+    },
+  }}
+>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Toolbar
+    bg="brandPrimary"
+    isHidden={hide}
+    leftArea={leftArea}
+    rightArea={rightArea}
+  />
+</ThemeProvider>
+
+```

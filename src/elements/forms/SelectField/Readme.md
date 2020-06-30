@@ -552,3 +552,61 @@ const formatCreateLabel = value => `Set value to "${value}"`;
   </Flex>
 </ThemeProvider>
 ```
+
+#### Hide SelectField
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+const courseOptions = [
+  {
+    label: '🎨 Arts & Humanities',
+    value: 'artsHumanities',
+  },
+  {
+    label: '👔 Business',
+    value: 'business',
+  },
+  {
+    label: '🤖 Artificial Intelligence',
+    value: 'artificialIntelligence',
+  },
+  {
+    label: '🤸‍♀️ Health',
+    value: 'health',
+  },
+  {
+    label: '💃 Music & Dance',
+    value: 'musicDance',
+  },
+  {
+    label: '🌎 Language Learning',
+    value: 'languageLearning',
+  },
+];
+
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+    <SelectField
+      isHidden={hide}
+      labelText="Courses"
+      name="courses"
+      options={courseOptions}
+    />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```

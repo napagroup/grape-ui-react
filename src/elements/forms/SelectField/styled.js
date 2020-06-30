@@ -101,6 +101,7 @@ const propsToTrim = [
   'controlGroupProps',
   'controlId',
   'disabled',
+  'isHidden',
   'isRequired',
   'plainText',
 ];
@@ -133,6 +134,7 @@ const SelectField = props => {
     controlLabelProps,
     disabled,
     assistiveText,
+    isHidden,
     isRequired,
     labelText,
     name,
@@ -149,6 +151,7 @@ const SelectField = props => {
       controlId={controlId}
       controlLabelProps={controlLabelProps}
       disabled={disabled}
+      isHidden={isHidden}
       labelText={newlabel}
       name={name}
       validationError={validationError}
@@ -194,6 +197,8 @@ SelectField.propTypes = {
   /** Using React-Select's `Creatable` control, this allows dropdowns to allow for custom values.
    * @see See [React-Select/Creatable](https://react-select.com/creatable) for more on this control. */
   isCreatable: PropTypes.bool,
+  /** Hides component */
+  isHidden: PropTypes.bool,
   /** Allows for multiple options, each displayed as a chip. */
   isMulti: PropTypes.bool,
   /** This will add an asterisk (*) to the `labelText` and provided `assistiveText` if none is provided. */
@@ -232,6 +237,7 @@ SelectField.defaultProps = {
   inputRef: () => {},
   isClearable: false,
   isCreatable: false,
+  isHidden: false,
   isMulti: false,
   isRequired: false,
   labelText: '',

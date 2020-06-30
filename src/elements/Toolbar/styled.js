@@ -10,10 +10,11 @@ import {
   space,
   system,
 } from 'styled-system';
+import { withHideable } from 'src/elements/utils/Hideable';
 import { ToolbarComponent } from './component';
 import { toolbarDefaultProps, toolbarPropTypes } from './utils';
 
-const Toolbar = styled(ToolbarComponent)`
+const Toolbar = styled(withHideable(ToolbarComponent))`
   ${system({ boxSizing: true })}
   ${background}
   ${border}

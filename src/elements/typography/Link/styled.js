@@ -16,6 +16,7 @@ import {
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
+import { withHideable } from 'src/elements/utils/Hideable';
 import { LinkComponent } from './component';
 
 
@@ -24,7 +25,7 @@ const hoverStyle = props => `
   cursor: pointer;
 `;
 
-const Link = styled(LinkComponent)`
+const Link = styled(withHideable(LinkComponent))`
   ${colorCore}
   ${ellipsisCore}
   ${fontFamilyCore}
@@ -63,11 +64,17 @@ Link.propTypes = {
   to: PropTypes.string,
 };
 
+Link.propTypes = {
+  /** Hides component */
+  isHidden: PropTypes.bool,
+};
+
 Link.defaultProps = {
   ...defaultStylesBase,
   color: 'brandLink',
   emailHref: {},
   hoverColor: 'brandLinkHover',
+  isHidden: false,
   textDecoration: 'none',
 };
 

@@ -11,9 +11,10 @@ import {
   space,
   system,
 } from 'styled-system';
+import { withHideable } from 'src/elements/utils/Hideable';
 import { BoxComponent } from './component';
 
-const Box = styled(BoxComponent)`
+const Box = styled(withHideable(BoxComponent))`
   ${system({ boxSizing: true })}
   ${background}
   ${border}
@@ -31,10 +32,13 @@ Box.propTypes = {
     PropTypes.array,
     PropTypes.string,
   ]),
+  /** Hides component */
+  isHidden: PropTypes.bool,
 };
 
 Box.defaultProps = {
   boxSizing: 'border-box',
+  isHidden: false,
 };
 
 /** @component */

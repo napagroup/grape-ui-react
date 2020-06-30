@@ -93,7 +93,7 @@ export const CircularProgress = props => {
         height={diameter}
         width={diameter}
       >
-        <Hideable hide={hideTrack}>
+        <Hideable isHidden={hideTrack}>
           <StyledCircleBg
             circumference={circumference}
             cx={center}
