@@ -18,11 +18,10 @@ export const Progress = props => (
   </>
 );
 
-
 Progress.propTypes = {
   progressType: PropTypes.string,
 };
 
 Progress.defaultProps = {
-  progressType: 'circular',
+  progressType: 'linear',
 };
