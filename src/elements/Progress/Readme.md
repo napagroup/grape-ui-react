@@ -30,10 +30,7 @@ const inDetText = 'Indeterminate circular indicators grow and shrink in size whi
 <Flex {...containerStyleProps}>
   <Card
     cardBody={(
-      <Progress
-        isDeterminate
-        progressType="linear"
-      />
+      <Progress isDeterminate />
     )}
     cardSubtitle={detText}
     cardTitle="Determinate progress"
@@ -41,10 +38,7 @@ const inDetText = 'Indeterminate circular indicators grow and shrink in size whi
   />
   <Card
     cardBody={(
-      <Progress
-        isDeterminate={false}
-        progressType="linear"
-      />
+      <Progress isDeterminate={false} />
     )}
     cardSubtitle={inDetText}
     cardTitle="Indeterminate progress"
@@ -55,7 +49,6 @@ const inDetText = 'Indeterminate circular indicators grow and shrink in size whi
       <Progress
         hideTrack
         isDeterminate
-        progressType="linear"
       />
     )}
     cardSubtitle={detText}
@@ -67,11 +60,21 @@ const inDetText = 'Indeterminate circular indicators grow and shrink in size whi
       <Progress
         hideTrack
         isDeterminate={false}
-        progressType="linear"
       />
     )}
     cardSubtitle={inDetText}
     cardTitle="Indeterminate progress (hideTrack)"
+    {...baseCardStyleProps}
+  />
+  <Card
+    cardBody={(
+      <Progress
+        total={6}
+        value={5}
+      />
+    )}
+    cardSubtitle={detText}
+    cardTitle="Manual Progress Value"
     {...baseCardStyleProps}
   />
 </Flex>
@@ -96,68 +99,74 @@ const baseCardStyleProps = {
 
 const containerStyleProps = {
   alignItems: 'center',
-  background: '#e0e0e0',
+  background: '#f9e8d7',
   flexDirection: ['column', 'row'],
+  flexWrap: 'wrap',
   justifyContent: 'space-evenly',
   p: [2, null, 3],
 };
-const circularDetText = 'Determinate circular indicators fill the circular track with color, as the indicator moves from 0 to 360 degrees.';
-const circularInDetText = 'Indeterminate circular indicators grow and shrink in size while moving along the track.';
-<>
+const detText = 'Determinate circular indicators fill the circular track with color, as the indicator moves from 0 to 360 degrees.';
+const inDetText = 'Indeterminate circular indicators grow and shrink in size while moving along the track.';
+
 <Flex {...containerStyleProps}>
-  <Box {...baseCardStyleProps}>
-    <Card
-      cardSubtitle={circularDetText}
-      cardTitle="Determinate progress"
-      {...baseCardStyleProps}
-    >
+  <Card
+    cardBody={(
+      <Progress
+        isDeterminate
+        progressType="circular"
+      />
+    )}
+    cardSubtitle={detText}
+    cardTitle="Determinate progress"
+    {...baseCardStyleProps}
+  />
+  <Card
+    cardBody={(
+      <Progress
+        isDeterminate={false}
+        progressType="circular"
+      />
+    )}
+    cardSubtitle={inDetText}
+    cardTitle="Indeterminate progress"
+    {...baseCardStyleProps}
+  />
+  <Card
+    cardBody={(
       <Progress
         hideTrack
         isDeterminate
+        progressType="circular"
       />
-    </Card>
-  </Box>
-  <Box {...baseCardStyleProps}>
-    <Card
-      cardSubtitle={circularInDetText}
-      cardTitle="Indeterminate progress"
-      {...baseCardStyleProps}
-    >
+    )}
+    cardSubtitle={detText}
+    cardTitle="Determinate progress (hideTrack)"
+    {...baseCardStyleProps}
+  />
+  <Card
+    cardBody={(
       <Progress
         hideTrack
         isDeterminate={false}
+        progressType="circular"
       />
-    </Card>
-  </Box>
-</Flex>
-<Flex {...containerStyleProps}>
-  <Box {...baseCardStyleProps}>
-    <Card
-      cardSubtitle={circularDetText}
-      cardTitle="Determinate progress (filled)"
-      {...baseCardStyleProps}
-    >
+    )}
+    cardSubtitle={inDetText}
+    cardTitle="Indeterminate progress (hideTrack)"
+    {...baseCardStyleProps}
+  />
+  <Card
+    cardBody={(
       <Progress
-        isDeterminate
-        indicatorColor="indigo.dark"
-        trackColor="brandLight.dark"
+        progressType="circular"
+        total={12}
+        value={10.85}
       />
-    </Card>
-  </Box>
-  <Box {...baseCardStyleProps}>
-    <Card
-      cardSubtitle={circularInDetText}
-      cardTitle="Indeterminate progress (filled)"
-      {...baseCardStyleProps}
-    >
-      <Progress
-        isDeterminate={false}
-        indicatorColor="indigo.dark"
-        trackColor="brandLight.dark"
-      />
-    </Card>
-  </Box>
+    )}
+    cardSubtitle={detText}
+    cardTitle="Manual Progress Value"
+    {...baseCardStyleProps}
+  />
 </Flex>
-</>
 
 ```

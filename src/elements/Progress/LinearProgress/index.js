@@ -1,41 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { Box } from 'src/elements/grid';
-import { makeColorResolver } from '../utils';
+import {
+  determinateKeyframes,
+  indeterminateKeyframes,
+  getProgressProps,
+  makeColorResolver,
+  progressBaseDefaultProps,
+  progressBasePropTypes,
+  styledSystemAnimation,
+} from '../utils';
 
 const backgroundIndicatorColor = makeColorResolver('background', 'indicatorColor');
 const backgroundTrackColor = makeColorResolver('background', 'trackColor');
-
-const determinate1 = keyframes`
-  0% {
-    transform: translate(-100%, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-`;
-
-const indeterminate1 = keyframes`
-  0% {
-    transform: translate(-100%, 0);
-  }
-  50% {
-    transform: translate(60%, 0);
-  }
-  65% {
-    transform: translate(100%, 0);
-  }
-  65.1% {
-    transform: translate(-100%, 100%);
-  }
-  65.2% {
-    transform: translate(-100%, 0);
-  }
-  100% {
-    transform: translate(100%, 0);
-  }
-`;
 
 const Track = styled(Box)`${backgroundTrackColor}`;
 
@@ -44,11 +22,24 @@ Track.defaultProps = {
   overflow: 'hidden',
 };
 
+const getAnimationName = props => {
+  const {
+    animationName,
+    isDeterminate,
+  } = props;
+  if (animationName) {
+    return animationName;
+  }
+  if (isDeterminate) {
+    return determinateKeyframes();
+  }
+  return indeterminateKeyframes();
+};
+
 const Line = styled(Box)`
   ${backgroundIndicatorColor}
-  transition: transform 0.2s linear;
-  transformOrigin: left;
-  animation: ${props => (props.isDeterminate ? determinate1 : indeterminate1)} ${props => props.duration}s linear ${props => (props.loop ? 'infinite' : '')};
+  animation-name: ${getAnimationName};
+  ${styledSystemAnimation}
 `;
 
 Line.defaultProps = {
@@ -60,43 +51,35 @@ const getTrackColor = props => (props.hideTrack ? 'transparent' : props.trackCol
 
 export const LinearProgress = props => {
   const {
-    duration,
     hideTrack,
     indicatorColor,
-    isDeterminate,
-    loop,
+    indicatorProps,
     trackColor,
+    trackProps,
   } = props;
   return (
     <Track
       trackColor={
         getTrackColor({ hideTrack, trackColor })
       }
+      {...trackProps}
     >
       <Line
-        duration={duration}
+        {...getProgressProps(props)}
         indicatorColor={indicatorColor}
-        isDeterminate={isDeterminate}
-        loop={loop}
+        {...indicatorProps}
       />
     </Track>
   );
 };
 
 LinearProgress.propTypes = {
-  duration: PropTypes.number,
-  hideTrack: PropTypes.bool,
-  indicatorColor: PropTypes.string,
-  isDeterminate: PropTypes.bool,
-  loop: PropTypes.bool,
-  trackColor: PropTypes.string,
+  ...progressBasePropTypes,
+  value: PropTypes.number,
 };
 
 LinearProgress.defaultProps = {
-  duration: 1.5,
-  hideTrack: false,
-  indicatorColor: 'brandPrimary.light',
-  isDeterminate: false,
-  loop: true,
-  trackColor: 'gray.light',
+  ...progressBaseDefaultProps,
+  total: 100,
+  value: -1,
 };
