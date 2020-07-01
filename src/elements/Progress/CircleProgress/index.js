@@ -6,6 +6,7 @@ import {
   space,
   system,
 } from 'styled-system';
+import { withHideable } from 'src/elements/utils';
 import {
   getAnimationIterationCount,
   getProgressProps,
@@ -53,7 +54,7 @@ const Track = styled(CircleComponent)`
   ${stroke};
 `;
 
-const StyledRoot = styled(RootComponent)`
+const StyledRoot = styled(withHideable(RootComponent))`
   animation-name: ${circularRotate};
   ${system({ transform: true })}
   ${styledSystemAnimation}
@@ -110,6 +111,7 @@ export const CircularProgress = props => {
     indicatorColor,
     indicatorProps,
     indicatorPropsToTrim,
+    isHidden,
     strokeWidth,
     trackProps,
     trackPropsToTrim,
@@ -133,7 +135,10 @@ export const CircularProgress = props => {
   };
 
   return (
-    <StyledRoot {...getStyledRootProps(props)}>
+    <StyledRoot
+      isHidden={isHidden}
+      {...getStyledRootProps(props)}
+    >
       <StyledSvg
         height={diameter}
         width={diameter}
