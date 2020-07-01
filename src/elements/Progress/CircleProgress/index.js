@@ -6,7 +6,6 @@ import {
   space,
   system,
 } from 'styled-system';
-import { Box } from 'src/elements/grid';
 import {
   getAnimationIterationCount,
   getProgressProps,
@@ -15,6 +14,7 @@ import {
   progressBasePropTypes,
   styledSystemAnimation,
 } from '../utils';
+import { CircleComponent, RootComponent } from './component';
 
 const stroke = makeColorResolver('stroke', 'strokeColor');
 
@@ -48,12 +48,12 @@ StyledSvg.defaultProps = {
   overflow: 'hidden',
 };
 
-const Track = styled('circle')`
+const Track = styled(CircleComponent)`
   fill: none;
   ${stroke};
 `;
 
-const StyledRoot = styled(Box)`
+const StyledRoot = styled(RootComponent)`
   animation-name: ${circularRotate};
   ${system({ transform: true })}
   ${styledSystemAnimation}
@@ -109,8 +109,10 @@ export const CircularProgress = props => {
     diameter,
     indicatorColor,
     indicatorProps,
+    indicatorPropsToTrim,
     strokeWidth,
     trackProps,
+    trackPropsToTrim,
   } = props;
 
   const centerMath = diameter / 2;
@@ -140,6 +142,7 @@ export const CircularProgress = props => {
           {...baseCircleProps}
           strokeColor={getTrackColor(props)}
           {...trackProps}
+          trackPropsToTrim={trackPropsToTrim}
         />
         <Circle
           {...baseCircleProps}
@@ -147,6 +150,7 @@ export const CircularProgress = props => {
           strokeColor={indicatorColor}
           strokeDasharray={circumferenceMath}
           {...indicatorProps}
+          indicatorPropsToTrim={indicatorPropsToTrim}
         />
       </StyledSvg>
     </StyledRoot>
