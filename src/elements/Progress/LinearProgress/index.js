@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Box } from 'src/elements/grid';
 import {
   determinateKeyframes,
   indeterminateKeyframes,
@@ -11,11 +10,12 @@ import {
   progressBasePropTypes,
   styledSystemAnimation,
 } from '../utils';
+import { LineComponent, TrackComponent } from './component';
 
 const backgroundIndicatorColor = makeColorResolver('background', 'indicatorColor');
 const backgroundTrackColor = makeColorResolver('background', 'trackColor');
 
-const Track = styled(Box)`${backgroundTrackColor}`;
+const Track = styled(TrackComponent)`${backgroundTrackColor}`;
 
 Track.defaultProps = {
   height: 5,
@@ -36,7 +36,7 @@ const getAnimationName = props => {
   return indeterminateKeyframes();
 };
 
-const Line = styled(Box)`
+const Line = styled(LineComponent)`
   ${backgroundIndicatorColor}
   animation-name: ${getAnimationName};
   ${styledSystemAnimation}

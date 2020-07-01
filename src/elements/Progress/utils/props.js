@@ -83,4 +83,5 @@ export const progressBaseDefaultProps = {
 
 export const defaultProgressPropsToTrim = [
   ...Object.keys(progressBaseDefaultProps),
+  'strokeColor',
 ];
