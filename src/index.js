@@ -10,6 +10,7 @@ import {
 } from './elements/forms';
 import { Box, Flex } from './elements/grid';
 import { Image } from './elements/Image';
+import { Progress } from './elements/Progress';
 import { Table } from './elements/Table';
 import { Toolbar } from './elements/Toolbar';
 import {
@@ -43,6 +44,7 @@ export {
   List,
   ListItem,
   Paragraph,
+  Progress,
   SelectField,
   styledComponents,
   styledHelpers,

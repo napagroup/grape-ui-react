@@ -1,152 +1,166 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
-import { Hideable } from 'src/elements/utils';
-import { makeColorResolver } from '../utils';
+import {
+  layout,
+  space,
+  system,
+} from 'styled-system';
+import { Box } from 'src/elements/grid';
+import {
+  getAnimationIterationCount,
+  getProgressProps,
+  makeColorResolver,
+  progressBaseDefaultProps,
+  progressBasePropTypes,
+  styledSystemAnimation,
+} from '../utils';
 
 const stroke = makeColorResolver('stroke', 'strokeColor');
 
 const circularRotate = keyframes`
-from {
-  transform: rotate(0deg);
-}
-
-to {
-  transform: rotate(360deg);
-}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 `;
 
 const circularDash = props => keyframes`
-from {
-  stroke-dashoffset: ${props.circumference};
-}
-to {
-  stroke-dashoffset: ${-1 * props.circumference};
-}
+  from {
+    stroke-dashoffset: ${props.circumference};
+  }
+  to {
+    stroke-dashoffset: ${-1 * props.circumference};
+  }
 `;
 
 const StyledSvg = styled('svg')`
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-
+  ${layout}
+  ${space}
 `;
 
-const StyledCircleBg = styled('circle')`
+StyledSvg.defaultProps = {
+  display: 'block',
+  m: 'auto',
+  maxWidth: '100%',
+  overflow: 'hidden',
+};
+
+const Track = styled('circle')`
   fill: none;
   ${stroke};
 `;
 
-const StyledRootDet = styled('div')`
-  transform: rotate(-90deg);
+const StyledRoot = styled(Box)`
+  animation-name: ${circularRotate};
+  ${system({ transform: true })}
+  ${styledSystemAnimation}
 `;
 
 const determinateCircularDash = props => keyframes`
-from {
-  stroke-dashoffset: ${props.circumference};
-}
-to {
-  stroke-dashoffset: ${0};
-}
+  from {
+    stroke-dashoffset: ${props.circumference};
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 `;
 
-const DeterminateCircleFg = styled('circle')`
-  animation: ${determinateCircularDash} 4.2s ease-in-out infinite;
-  fill: none;
-  ${stroke};
+const getCircleAnimationName = props => {
+  const { animationName, isDeterminate } = props;
+  if (animationName) {
+    return animationName;
+  }
+  if (isDeterminate) {
+    return determinateCircularDash;
+  }
+  return circularDash;
+};
+
+const Circle = styled(Track)`
+  animation-name: ${getCircleAnimationName};
+  ${system({ strokeDashoffset: true })}
+  ${styledSystemAnimation}
 `;
 
-const StyledRootInDet = styled('div')`
-  animation: ${circularRotate} 2.4s linear infinite;
-`;
-const IndeterminateCircleFg = styled('circle')`
-  animation: ${circularDash} 2.4s ease-in-out infinite;
-  fill: none;
-  ${stroke};
-`;
+const getStyledRootProps = props => {
+  const {
+    animationDuration,
+    animationTimingFunction,
+    isDeterminate,
+    value,
+  } = props;
+  if (isDeterminate || value >= 0) {
+    return { transform: 'rotate(-90deg)' };
+  }
+  return {
+    animationDuration,
+    animationIterationCount: getAnimationIterationCount(props),
+    animationTimingFunction,
+  };
+};
+
+const getTrackColor = props => (props.hideTrack ? 'transparent' : props.trackColor);
 
 export const CircularProgress = props => {
   const {
-    indicatorColor,
-    hideTrack,
-    isDeterminate,
     diameter,
+    indicatorColor,
+    indicatorProps,
     strokeWidth,
-    trackColor,
+    trackProps,
   } = props;
-  const radius = diameter / 2 - strokeWidth / 2;
-  const circumference = 2 * Math.PI * radius;
-  const center = diameter / 2;
+
+  const centerMath = diameter / 2;
+  const radiusMath = centerMath - strokeWidth / 2;
+  const circumferenceMath = 2 * Math.PI * radiusMath;
+
+  const baseCircleProps = {
+    circumference: circumferenceMath,
+    cx: centerMath,
+    cy: centerMath,
+    r: radiusMath,
+    strokeWidth,
+  };
+
+  const progressProps = {
+    ...baseCircleProps,
+    ...props,
+  };
+
   return (
-    <>
-      <Hideable isHidden={!isDeterminate}>
-        <StyledRootDet>
-          <StyledSvg height={diameter} width={diameter}>
-            <Hideable isHidden={hideTrack}>
-              <StyledCircleBg
-                circumference={circumference}
-                cx={center}
-                cy={center}
-                r={radius}
-                strokeColor={trackColor}
-                strokeWidth={strokeWidth}
-              />
-            </Hideable>
-            <DeterminateCircleFg
-              circumference={circumference}
-              cx={center}
-              cy={center}
-              r={radius}
-              strokeColor={indicatorColor}
-              strokeDasharray={circumference}
-              strokeWidth={strokeWidth}
-            />
-          </StyledSvg>
-        </StyledRootDet>
-      </Hideable>
-      <Hideable isHidden={isDeterminate}>
-        <StyledRootInDet>
-          <StyledSvg height={diameter} width={diameter}>
-            <Hideable isHidden={hideTrack}>
-              <StyledCircleBg
-                circumference={circumference}
-                cx={center}
-                cy={center}
-                r={radius}
-                strokeColor={trackColor}
-                strokeWidth={strokeWidth}
-              />
-            </Hideable>
-            <IndeterminateCircleFg
-              circumference={circumference}
-              cx={center}
-              cy={center}
-              r={radius}
-              strokeColor={indicatorColor}
-              strokeDasharray={circumference}
-              strokeWidth={strokeWidth}
-            />
-          </StyledSvg>
-        </StyledRootInDet>
-      </Hideable>
-    </>
+    <StyledRoot {...getStyledRootProps(props)}>
+      <StyledSvg
+        height={diameter}
+        width={diameter}
+      >
+        <Track
+          {...baseCircleProps}
+          strokeColor={getTrackColor(props)}
+          {...trackProps}
+        />
+        <Circle
+          {...baseCircleProps}
+          {...getProgressProps(progressProps)}
+          strokeColor={indicatorColor}
+          strokeDasharray={circumferenceMath}
+          {...indicatorProps}
+        />
+      </StyledSvg>
+    </StyledRoot>
   );
 };
 
 CircularProgress.propTypes = {
+  ...progressBasePropTypes,
   diameter: PropTypes.number,
-  hideTrack: PropTypes.bool,
-  indicatorColor: PropTypes.string,
-  isDeterminate: PropTypes.bool,
   strokeWidth: PropTypes.number,
-  trackColor: PropTypes.string,
 };
 
 CircularProgress.defaultProps = {
+  ...progressBaseDefaultProps,
   diameter: 35,
-  hideTrack: false,
-  indicatorColor: 'indigo.dark',
-  isDeterminate: false,
   strokeWidth: 5,
-  trackColor: 'indigo.light',
 };
