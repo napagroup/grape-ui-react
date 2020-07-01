@@ -1,4 +1,4 @@
-When showing example code, `<Code>` and `<CodeBlock>` are the components you should use.  It is built on top of the powerful [react-syntax-highlighter](https://github.com/conorhastings/react-syntax-highlighter) and uses the same utilities that can be found on all typography elements in grape-ui.  Just provide your code as a string in the `codeString` prop, and you're ready to go.
+When showing example code, `<Code>` and `<CodeBlock>` are the components you should use.  It is built on top of the powerful [react-syntax-highlighter](https://github.com/conorhastings/react-syntax-highlighter) and uses the same utilities that can be found on all typography elements in grape-ui.  Just provide your code either as a string or as a valid React element in the `code` prop, and you're ready to go.
 
 * `<Code>`: for inline code.
 * `<CodeBlock>`: for block code.
@@ -6,9 +6,12 @@ When showing example code, `<Code>` and `<CodeBlock>` are the components you sho
 ### Examples
 
 ```jsx in Markdown
-import { CodeBlock } from 'src/elements/typography';
+import {
+  CodeBlock,
+  Text,
+} from 'src/elements/typography';
 
-const exampleCode01 = `<Code codeString={exampleCode01} />`;
+const exampleCode01 = `<Code code={exampleCode01} />`;
 const exampleCode02 = `
 import React from 'react';
 import { Paragraph } from 'grape-ui-react';
@@ -74,18 +77,26 @@ And that's it!
 
 <div>
   <Code
-    codeString={exampleCode01}
+    code={exampleCode01}
   />
   <CodeBlock
-    codeString={exampleCode02}
+    code={exampleCode02}
   />
   <CodeBlock
-    codeString={exampleCode03}
+    code={exampleCode03}
     language="bash"
   />
   <CodeBlock
-    codeString={exampleCode04}
+    code={exampleCode04}
     language="markdown"
+  />
+
+  <CodeBlock
+    code={(<Text>I'm a valid React element!</Text>)}
+    codeOptions={{
+      displayName: () => 'Text',
+      showDefaultProps: false,
+    }}
   />
 </div>
 ```
@@ -104,7 +115,7 @@ import {
 import { Button } from 'src/elements/Button';
 import { CodeBlock } from 'src/elements/typography';
 
-const exampleCode01 = `<Code codeString={exampleCode01} isHidden={hide} />`;
+const exampleCode01 = `<Code code={exampleCode01} isHidden={hide} />`;
 const exampleCode02 = `
 const [hide, setHidden] = useState(false);
 
@@ -117,11 +128,11 @@ const [hide, setHidden] = useState(false);
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <Code
-        codeString={exampleCode01}
+        code={exampleCode01}
         isHidden={hide}
       />
       <CodeBlock
-        codeString={exampleCode02}
+        code={exampleCode02}
         isHidden={hide}
       />
     </Box>
@@ -139,11 +150,11 @@ const [hide, setHidden] = useState(false);
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <Code
-        codeString={exampleCode01}
+        code={exampleCode01}
         isHidden={hide}
       />
       <CodeBlock
-        codeString={exampleCode02}
+        code={exampleCode02}
         isHidden={hide}
       />
     </Box>

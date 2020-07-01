@@ -16,7 +16,7 @@ export default {
     codeOperator: colors.orange.dark,
     codeProperty: colors.grape.base,
     codePunctuation: colors.gray.base,
-    codeString: colors.teal.base,
+    code: colors.teal.base,
     codeVariable: colors.orange.base,
     error: colors.brandDanger.base,
     focus: colors.brandLinkHover.light,

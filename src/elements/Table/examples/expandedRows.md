@@ -86,7 +86,7 @@ const data = React.useMemo(() => makeData(200), []);
 const renderRowSubComponent = React.useCallback(
   ({ row }) => (
     <CodeBlock
-      codeString={JSON.stringify({ values: row.values }, null, 2)}
+      code={JSON.stringify({ values: row.values }, null, 2)}
     />
   ),
   []

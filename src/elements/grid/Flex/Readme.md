@@ -43,11 +43,11 @@ import { StyledFlex as Flex } from '../examples';
   <Flex m={48} style={{ background: '#ee525f' }}>
     <Text>
       {'There is a '}
-      <Code codeString="margin" />
+      <Code code="margin" />
       {' set to '}
-      <Code codeString="48" />
+      <Code code="48" />
       {' on this '}
-      <Code codeString="<Flex>" />
+      <Code code="<Flex>" />
       .
     </Text>
   </Flex>
@@ -123,11 +123,11 @@ import { StyledFlex as Flex } from '../examples';
   >
     <Text>
       {'There is a '}
-      <Code codeString="padding" />
+      <Code code="padding" />
       {' set to '}
-      <Code codeString="48" />
+      <Code code="48" />
       {' on this '}
-      <Code codeString="<Flex>" />
+      <Code code="<Flex>" />
       .
     </Text>
   </Flex>
@@ -203,11 +203,11 @@ import { StyledFlex as Flex } from '../examples';
   >
     <Text>
       {'There is a '}
-      <Code codeString="width" />
+      <Code code="width" />
       {' set to '}
-      <Code codeString="1 / 8" />
+      <Code code="1 / 8" />
       {' on this '}
-      <Code codeString="<Flex>" />
+      <Code code="<Flex>" />
     </Text>
   </Flex>
 </ThemeProvider>
@@ -467,7 +467,7 @@ const FlexExample = ({ exampleCode, count = 3, boxWidth = 1 / count }) => {
         key={`element-wrapper-${i}`}
         {...examples[i].props}
       >
-        <CodeBlock codeString={exampleString} />
+        <CodeBlock code={exampleString} />
       </ElementWrapper>
     );
     listItems.push(elementItem);
@@ -493,7 +493,7 @@ const FlexExample = ({ exampleCode, count = 3, boxWidth = 1 / count }) => {
       >
         Align Items
       </Link>
-      <Code codeString={'alignItems="string"'} />
+      <Code code={'alignItems="string"'} />
     </Text>
     <FlexExample
       exampleCode={{
@@ -537,7 +537,7 @@ const FlexExample = ({ exampleCode, count = 3, boxWidth = 1 / count }) => {
       >
         Flex Direction
       </Link>
-      <Code codeString={'flexDirection="string"'} />
+      <Code code={'flexDirection="string"'} />
     </Text>
     <FlexExample
       count={2}
@@ -568,7 +568,7 @@ const FlexExample = ({ exampleCode, count = 3, boxWidth = 1 / count }) => {
         href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap"
         target="_blank"
       >Flex Wrap</Link>
-      <Code codeString={'flexWrap="string"'} />
+      <Code code={'flexWrap="string"'} />
     </Text>
     <FlexExample
       boxWidth={1 / 2}
@@ -603,7 +603,7 @@ const FlexExample = ({ exampleCode, count = 3, boxWidth = 1 / count }) => {
       >
         Justify Content
       </Link>
-      <Code codeString={'justifyContent="string"'} />
+      <Code code={'justifyContent="string"'} />
     </Text>
     <FlexExample
       boxWidth="auto"

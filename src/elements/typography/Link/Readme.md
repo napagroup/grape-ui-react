@@ -13,12 +13,12 @@ import { Code } from 'src/elements/typography';
   >
     <Link to="./">
       {'By using '}
-      <Code codeString="to" />
+      <Code code="to" />
       , it is using React Router.
     </Link>
     <Link href="#">
       {'Leaving out '}
-      <Code codeString="to" />
+      <Code code="to" />
       , it is using a native anchor tag.
     </Link>
     <Link
@@ -26,7 +26,7 @@ import { Code } from 'src/elements/typography';
       target="_blank"
     >
       {'Basic '}
-      <Code codeString="target" />
+      <Code code="target" />
       {' attribute works as well.'}
     </Link>
     <Link
@@ -34,7 +34,7 @@ import { Code } from 'src/elements/typography';
         to: 'emailaddress@grapeui.com'
       }}>
       {'For mailto links '}
-      <Code codeString={'href="mailto:emailaddress@grape-ui.com"'} />
+      <Code code={'href="mailto:emailaddress@grape-ui.com"'} />
       .
     </Link>
     <Link

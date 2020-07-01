@@ -36,43 +36,43 @@ const altText01 = "Green grapes hanging from a vine; Photo by Nacho Domínguez A
     src={ImageSrc01}
     width={[1, 1 / 2, 1 / 3, 1 / 4]}
   />
-  <CodeBlock codeString="width={[1, 1 / 2, 1 / 3, 1 / 4]}" />
+  <CodeBlock code="width={[1, 1 / 2, 1 / 3, 1 / 4]}" />
   <Image
     alt={altText01}
     display={['block', 'inline']}
     src={ImageSrc01}
   />
-  <CodeBlock codeString="display={['block', 'inline']}" />
+  <CodeBlock code="display={['block', 'inline']}" />
   <Image
     alt={altText01}
     minWidth={128}
     src={ImageSrc01}
   />
-  <CodeBlock codeString="minWidth={128}" />
+  <CodeBlock code="minWidth={128}" />
   <Image
     alt={altText01}
     maxWidth={1024}
     src={ImageSrc01}
   />
-  <CodeBlock codeString="maxWidth={1024}" />
+  <CodeBlock code="maxWidth={1024}" />
   <Image
     alt={altText01}
     height={[48, 64]}
     src={ImageSrc01}
   />
-  <CodeBlock codeString="height={[48, 64]}" />
+  <CodeBlock code="height={[48, 64]}" />
   <Image
     alt={altText01}
     minHeight={[384, 512]}
     src={ImageSrc01}
   />
-  <CodeBlock codeString="minHeight={[384, 512]}" />
+  <CodeBlock code="minHeight={[384, 512]}" />
   <Image
     alt={altText01}
     src={ImageSrc01}
     maxHeight={[384, 512]}
   />
-  <CodeBlock codeString="maxHeight={[384, 512]}" />
+  <CodeBlock code="maxHeight={[384, 512]}" />
 </div>
 ```
 

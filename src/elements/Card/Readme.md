@@ -23,7 +23,7 @@ const containerStyleProps = {
 
 <Flex {...containerStyleProps}>
   <Box {...baseCardStyleProps}>
-    <CodeBlock codeString="// Passed in through Props" />
+    <CodeBlock code="// Passed in through Props" />
     <Card
       cardSubtitle="Secondary text"
       cardTitle="Card title"
@@ -31,7 +31,7 @@ const containerStyleProps = {
     />
   </Box>
   <Box {...baseCardStyleProps}>
-    <CodeBlock codeString="// Using subComponents" />
+    <CodeBlock code="// Using subComponents" />
     <Card {...baseCardStyleProps}>
       <Card.Title>
         Card title
@@ -123,7 +123,7 @@ const containerStyleProps = {
 
 <Flex {...containerStyleProps}>
   <Box {...baseCardStyleProps}>
-    <CodeBlock codeString="// Passed in through Props" />
+    <CodeBlock code="// Passed in through Props" />
     <Card
       cardActions={ExampleCardActions01}
       cardActionsRight={ExampleCardActions02}
@@ -136,7 +136,7 @@ const containerStyleProps = {
     />
   </Box>
   <Box {...baseCardStyleProps}>
-    <CodeBlock codeString="// Using subComponents" />
+    <CodeBlock code="// Using subComponents" />
     <Card cardPadding={0} pb={exampleCardPadding} {...baseCardStyleProps}>
       <Card.RichMedia>
         {ExampleCardImage01}
@@ -162,7 +162,7 @@ const containerStyleProps = {
     </Card>
   </Box>
   <Box {...baseCardStyleProps}>
-    <CodeBlock codeString="// Passed in through Props" />
+    <CodeBlock code="// Passed in through Props" />
     <Card
       cardActions={ExampleCardActions01}
       cardActionsRight={ExampleCardActions02}
@@ -175,7 +175,7 @@ const containerStyleProps = {
     />
   </Box>
   <Box {...baseCardStyleProps}>
-    <CodeBlock codeString="// Using subComponents" />
+    <CodeBlock code="// Using subComponents" />
     <Card cardPadding={0} pb={exampleCardPadding} {...baseCardStyleProps}>
       <Flex alignItems="center" p={exampleCardPadding}>
         {ExampleCardThumbnail01}
