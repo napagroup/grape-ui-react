@@ -11,7 +11,6 @@ const getCode = props => {
     codeOptions,
   } = props;
   if (React.isValidElement(code)) {
-    console.log({ codeOptions });
     return reactElementToJSXString(code, codeOptions);
   }
   return code;
