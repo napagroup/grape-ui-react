@@ -109,8 +109,10 @@ export const CircularProgress = props => {
     diameter,
     indicatorColor,
     indicatorProps,
+    indicatorPropsToTrim,
     strokeWidth,
     trackProps,
+    trackPropsToTrim,
   } = props;
 
   const centerMath = diameter / 2;
@@ -140,6 +142,7 @@ export const CircularProgress = props => {
           {...baseCircleProps}
           strokeColor={getTrackColor(props)}
           {...trackProps}
+          trackPropsToTrim={trackPropsToTrim}
         />
         <Circle
           {...baseCircleProps}
@@ -147,6 +150,7 @@ export const CircularProgress = props => {
           strokeColor={indicatorColor}
           strokeDasharray={circumferenceMath}
           {...indicatorProps}
+          indicatorPropsToTrim={indicatorPropsToTrim}
         />
       </StyledSvg>
     </StyledRoot>

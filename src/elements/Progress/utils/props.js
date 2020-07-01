@@ -52,11 +52,13 @@ export const progressBasePropTypes = {
   hideTrack: PropTypes.bool,
   indicatorColor: PropTypes.string,
   indicatorProps: PropTypes.object,
+  indicatorPropsToTrim: PropTypes.arrayOf(PropTypes.string),
   isDeterminate: PropTypes.bool,
   loop: PropTypes.bool,
   total: PropTypes.number,
   trackColor: PropTypes.string,
   trackProps: PropTypes.object,
+  trackPropsToTrim: PropTypes.arrayOf(PropTypes.string),
   value: PropTypes.number,
 };
 
@@ -73,11 +75,13 @@ export const progressBaseDefaultProps = {
   hideTrack: false,
   indicatorColor: 'brandPrimary.light',
   indicatorProps: {},
+  indicatorPropsToTrim: [],
   isDeterminate: false,
   loop: true,
   total: 100,
   trackColor: 'gray.light',
   trackProps: {},
+  trackPropsToTrim: [],
   value: -1,
 };
 

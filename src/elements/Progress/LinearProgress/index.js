@@ -54,8 +54,10 @@ export const LinearProgress = props => {
     hideTrack,
     indicatorColor,
     indicatorProps,
+    indicatorPropsToTrim,
     trackColor,
     trackProps,
+    trackPropsToTrim,
   } = props;
   return (
     <Track
@@ -63,11 +65,13 @@ export const LinearProgress = props => {
         getTrackColor({ hideTrack, trackColor })
       }
       {...trackProps}
+      trackPropsToTrim={trackPropsToTrim}
     >
       <Line
         {...getProgressProps(props)}
         indicatorColor={indicatorColor}
         {...indicatorProps}
+        indicatorPropsToTrim={indicatorPropsToTrim}
       />
     </Track>
   );

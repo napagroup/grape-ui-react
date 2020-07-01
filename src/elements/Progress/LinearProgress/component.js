@@ -19,16 +19,28 @@ TrackComponent.defaultProps = {
   children: null,
 };
 
-export const LineComponent = ({ children, ...props }) => (
-  <Box {...removeSomeProps(props, defaultProgressPropsToTrim)}>
-    {children}
-  </Box>
-);
+export const LineComponent = ({ children, ...props }) => {
+  const { indicatorPropsToTrim, trackPropsToTrim } = props;
+  const propsToTrim = [
+    ...defaultProgressPropsToTrim,
+    ...indicatorPropsToTrim,
+    ...trackPropsToTrim,
+  ];
+  return (
+    <Box {...removeSomeProps(props, propsToTrim)}>
+      {children}
+    </Box>
+  );
+};
 
 LineComponent.propTypes = {
   children: PropTypes.any,
+  indicatorPropsToTrim: PropTypes.arrayOf(PropTypes.string),
+  trackPropsToTrim: PropTypes.arrayOf(PropTypes.string),
 };
 
 LineComponent.defaultProps = {
   children: null,
+  indicatorPropsToTrim: [],
+  trackPropsToTrim: [],
 };

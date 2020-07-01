@@ -10,7 +10,6 @@ export const RootComponent = ({ children, ...props }) => (
     {children}
   </Box>
 );
-
 RootComponent.propTypes = {
   children: PropTypes.any,
 };
@@ -19,16 +18,28 @@ RootComponent.defaultProps = {
   children: null,
 };
 
-export const CircleComponent = ({ children, ...props }) => (
-  <circle {...removeSomeProps(props, defaultProgressPropsToTrim)}>
-    {children}
-  </circle>
-);
+export const CircleComponent = ({ children, ...props }) => {
+  const { indicatorPropsToTrim, trackPropsToTrim } = props;
+  const propsToTrim = [
+    ...defaultProgressPropsToTrim,
+    ...indicatorPropsToTrim,
+    ...trackPropsToTrim,
+  ];
+  return (
+    <circle {...removeSomeProps(props, propsToTrim)}>
+      {children}
+    </circle>
+  );
+};
 
 CircleComponent.propTypes = {
   children: PropTypes.any,
+  indicatorPropsToTrim: PropTypes.arrayOf(PropTypes.string),
+  trackPropsToTrim: PropTypes.arrayOf(PropTypes.string),
 };
 
 CircleComponent.defaultProps = {
   children: null,
+  indicatorPropsToTrim: [],
+  trackPropsToTrim: [],
 };
