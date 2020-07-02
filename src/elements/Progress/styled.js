@@ -16,6 +16,9 @@ const getCaption = props => {
   if (React.isValidElement(caption)) {
     return caption;
   }
+  if (caption === undefined) {
+    return null;
+  }
   return (
     <Paragraph
       isHidden={!caption}
