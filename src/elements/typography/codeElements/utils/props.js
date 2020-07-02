@@ -13,6 +13,7 @@ export const codePropTypes = {
   ...propTypes.shadow,
   ...propTypes.space,
   code: PropTypes.any,
+  codeOptions: PropTypes.object,
   isHidden: PropTypes.bool,
 };
 
@@ -22,6 +23,9 @@ export const codeDefaultProps = {
   border: '1px solid #eee',
   borderRadius: 4,
   code: '',
+  codeOptions: {
+    showDefaultProps: false,
+  },
   color: 'inherit',
   display: 'inline-block',
   fontFamily: 'monospace',

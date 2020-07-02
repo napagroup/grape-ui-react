@@ -207,14 +207,14 @@ import {
 
 const customKeyframe = props => keyframes`
   0% {
-    stroke: rgba(0,0,0,0);
+    stroke: rgba(50, 205, 50, 0.5);
     stroke-dashoffset: ${props.circumference};
   }
   50% {
-    stroke: #32cd32;
+    stroke: rgba(50, 205, 50, 1);
   }
   100% {
-    stroke: rgba(0,0,0,0);
+    stroke: rgba(50, 205, 50, 0.4);
     stroke-dashoffset: ${-1 * props.circumference};
   }
 `;
@@ -303,11 +303,12 @@ const examples = [
     description: 'Circular indicators can have custom animations via styled props.',
     example: (
       <Progress
-        animationDuration="5s"
+        animationDuration="1s"
         animationName={
           // styled components keyframes and css functions
           css`${customKeyframe}`
         }
+        hideTrack
         progressType="circular"
       />
     ),
