@@ -11,7 +11,7 @@ import { Code, Paragraph } from 'src/elements/typography';
   , or
   <Text color="red" fontWeight="bold">both</Text>
   {', I can just use the inline '}
-  <Code codeString="<Text>" />
+  <Code code="<Text>" />
   {' element.'}
 </Paragraph>
 ```

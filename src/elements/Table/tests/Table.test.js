@@ -30,7 +30,7 @@ describe('Table - kitchen sink snapshot', () => {
     id: 'expander', // It needs an ID
   };
   const renderRowSubComponent = ({ row }) => (
-    <CodeBlock codeString={JSON.stringify({ values: row.values }, null, 2)} />
+    <CodeBlock code={JSON.stringify({ values: row.values }, null, 2)} />
   );
   const expandableColumns = [expanderCell, ...columns];
   let container;

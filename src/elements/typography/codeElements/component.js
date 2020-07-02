@@ -1,11 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import reactElementToJSXString from 'react-element-to-jsx-string';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import { codePropTypes, grapeUICustomStyle } from './utils';
 
+const getCode = props => {
+  const {
+    code,
+    codeOptions,
+  } = props;
+  if (React.isValidElement(code)) {
+    return reactElementToJSXString(code, codeOptions);
+  }
+  return code;
+};
+
 export const CodeComponent = ({
-  codeString,
   language,
   style,
   ...props
@@ -15,18 +26,16 @@ export const CodeComponent = ({
     style={style}
     {...removeSomeProps(props, Object.keys(codePropTypes))}
   >
-    {codeString}
+    {getCode(props)}
   </SyntaxHighlighter>
 );
 
 CodeComponent.propTypes = {
-  codeString: PropTypes.string,
   language: PropTypes.string,
   style: PropTypes.any,
 };
 
 CodeComponent.defaultProps = {
-  codeString: '',
   language: 'javascript',
   style: grapeUICustomStyle,
 };

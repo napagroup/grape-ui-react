@@ -50,6 +50,7 @@ StyledSvg.defaultProps = {
 };
 
 const Track = styled(CircleComponent)`
+  -webkit-backface-visibility: hidden;
   fill: none;
   ${stroke};
 `;
@@ -170,6 +171,6 @@ CircularProgress.propTypes = {
 
 CircularProgress.defaultProps = {
   ...progressBaseDefaultProps,
-  diameter: 35,
-  strokeWidth: 5,
+  diameter: 24,
+  strokeWidth: 4,
 };

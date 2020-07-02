@@ -48,7 +48,7 @@ const linkState = () => null;
   </Flex>
   <Paragraph lg>
     {'Disabled '}
-    <Code codeString="disabled={true}" />
+    <Code code="disabled={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -77,7 +77,7 @@ const linkState = () => null;
   </Flex>
   <Paragraph lg>
     {'Plain Text '}
-    <Code codeString="plainText={true}" />
+    <Code code="plainText={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>

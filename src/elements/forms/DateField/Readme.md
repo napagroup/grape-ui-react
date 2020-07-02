@@ -31,7 +31,7 @@ import { Code, Text } from 'src/elements/typography'; // ... from 'grape-ui-reac
   </Flex>
   <Text lg>
     {'Calendar Only '}
-    <Code codeString="calendarOnly={true}" />
+    <Code code="calendarOnly={true}" />
   </Text>
   <Flex flexDirection={['column', null, 'row']}>
     <Box px={1} width={[1, null, 1 / 2]}>
@@ -50,7 +50,7 @@ import { Code, Text } from 'src/elements/typography'; // ... from 'grape-ui-reac
   </Flex>
   <Text lg>
     {'Plain Text '}
-    <Code codeString="plainText={true}" />
+    <Code code="plainText={true}" />
   </Text>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>

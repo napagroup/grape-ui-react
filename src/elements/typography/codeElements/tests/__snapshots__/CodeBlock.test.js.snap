@@ -36,7 +36,7 @@ exports[`Code Component base should return an empty Code with base styling 1`] =
   }
 >
   <code>
-    &lt;Code codeString=
+    &lt;Code code=
     <span
       style={
         Object {

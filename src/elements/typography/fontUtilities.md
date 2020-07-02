@@ -19,30 +19,30 @@ import {
     ellipsis
   >
     {'Set '}
-    <Code codeString="ellipsis" />
+    <Code code="ellipsis" />
     {' to true if you want the sentence to end in a single line. Set '}
-    <Code codeString="ellipsis" />
+    <Code code="ellipsis" />
     {' to true if you want the sentence to end in a single line.'}
   </Paragraph>
   <Paragraph
     ellipsis={2}
   >
     {'Set '}
-    <Code codeString="ellipsis" />
+    <Code code="ellipsis" />
     {' to a number if you want the sentence to end at N line.'}
     {'Set '}
-    <Code codeString="ellipsis" />
+    <Code code="ellipsis" />
     {' to a number if you want the sentence to end at N line.'}
     {'Set '}
-    <Code codeString="ellipsis" />
+    <Code code="ellipsis" />
     {' to a number if you want the sentence to end at N line.'}
     {'Set '}
-    <Code codeString="ellipsis" />
+    <Code code="ellipsis" />
     {' to a number if you want the sentence to end at N line.'}
   </Paragraph>
   <Paragraph>
     {'Add '}
-    <Code codeString="fontWeight" />
+    <Code code="fontWeight" />
     {' to make text '}
     <Text
       fontWeight="300"
@@ -65,7 +65,7 @@ import {
   </Paragraph>
   <Paragraph>
     {'Add '}
-    <Code codeString="italic" />
+    <Code code="italic" />
     {' to make text '}
     <Text italic>
       Italic
@@ -73,7 +73,7 @@ import {
   </Paragraph>
   <Paragraph>
     {'Add '}
-    <Code codeString="kerning" />
+    <Code code="kerning" />
     {' to adjust the spacing '}
     <Text
       kerning="1px"
@@ -90,9 +90,9 @@ import {
   </Paragraph>
   <Paragraph>
     {'Add '}
-    <Code codeString="textAlign" />
+    <Code code="textAlign" />
     {' to align any text element. Just use any '}
-    <Code codeString="text-align" language="css" />
+    <Code code="text-align" language="css" />
     {' property as the value.'}
   </Paragraph>
   <Paragraph
@@ -100,7 +100,7 @@ import {
   >
     Left Aligned
     <br />
-    <Code codeString={'textAlign="left"'} />
+    <Code code={'textAlign="left"'} />
     {' is set.'}
   </Paragraph>
   <Paragraph
@@ -108,7 +108,7 @@ import {
   >
     Center Aligned
     <br />
-    <Code codeString={'textAlign="center"'} />
+    <Code code={'textAlign="center"'} />
     {' is set.'}
   </Paragraph>
   <Paragraph
@@ -116,12 +116,12 @@ import {
   >
     Right Aligned
     <br />
-    <Code codeString={'textAlign="right"'} />
+    <Code code={'textAlign="right"'} />
     {' is set.'}
   </Paragraph>
   <Paragraph>
     {'Add '}
-    <Code codeString="textDecoration" />
+    <Code code="textDecoration" />
     {' to set '}
     <Text
       textDecoration="underline"

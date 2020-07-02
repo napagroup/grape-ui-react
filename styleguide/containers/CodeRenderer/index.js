@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Code } from 'src';
 
 const CodeRenderer = ({ children }) => (
-	<Code codeString={children} PreTag="span" />
+	<Code code={children} PreTag="span" />
 );
 
 CodeRenderer.propTypes = {

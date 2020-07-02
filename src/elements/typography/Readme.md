@@ -167,10 +167,10 @@ const urlStarMaker = "http://www.astro.sunysb.edu/fwalter/AST389/TEXTS/StarMaker
 
   <Paragraph>
     {`Here's some code: `}
-    <Code codeString="e=mc²" />
+    <Code code="e=mc²" />
   </Paragraph>
   <CodeBlock
-    codeString={`
+    code={`
       And
       Some
       Poetry

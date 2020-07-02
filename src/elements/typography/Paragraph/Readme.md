@@ -43,7 +43,7 @@ import { Code } from 'src/elements/typography';
 
 <Paragraph lead>
   {'This is a lead paragraph. It is leading and meant to start off a block of text. This is using '}
-  <Code codeString="<Paragraph lead>" />
+  <Code code="<Paragraph lead>" />
   .
 </Paragraph>
 ```

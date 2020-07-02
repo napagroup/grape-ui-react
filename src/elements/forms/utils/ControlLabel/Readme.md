@@ -182,7 +182,7 @@ const controlGroupSpacing = [1, 2, 3];
   />
   <Paragraph color="gray.dark">
     {'Example 2. Passing through '}
-    <Code codeString="controlLabelProps" />
+    <Code code="controlLabelProps" />
     :
   </Paragraph>
   <DateField

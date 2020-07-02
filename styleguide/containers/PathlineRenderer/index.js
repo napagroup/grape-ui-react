@@ -9,7 +9,7 @@ const PathlineRenderer = ({
   children,
 }) => (
   <Flex alignItems="Center" mt={-3}>
-    <Code codeString={children} />
+    <Code code={children} />
     <Button
       color="gray"
       onClick={() => children && copy(children.toString())}

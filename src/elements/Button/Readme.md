@@ -13,14 +13,14 @@ import { Code, Text } from 'src/elements/typography'; // ... from 'grape-ui-reac
   <Button>
     {'Basic Button '}
     <Code
-      codeString="<button>"
+      code="<button>"
       language="html"
     />
   </Button>
   <Button href="#">
     {'Basic Button '}
     <Code
-      codeString="<a>"
+      code="<a>"
       language="html"
     />
   </Button>
@@ -31,7 +31,7 @@ import { Code, Text } from 'src/elements/typography'; // ... from 'grape-ui-reac
   >
     {'Basic Button using emailHref '}
     <Code
-      codeString="<a>"
+      code="<a>"
       language="html"
     />
   </Button>
@@ -39,22 +39,22 @@ import { Code, Text } from 'src/elements/typography'; // ... from 'grape-ui-reac
     <Button to="./">
       {'Basic Button '}
       <Code
-        codeString="<Link>"
+        code="<Link>"
       />
       *
     </Button>
     <Text as="span" color="gray" sm>
       {'*Please note, '}
       <Code
-        codeString="<Button>"
+        code="<Button>"
       />
       {' components that use '}
       <Code
-        codeString="<Link>"
+        code="<Link>"
       />
       {' need to be wrapped in a '}
       <Code
-        codeString="<Router>"
+        code="<Router>"
       />
       {` component from 'react-router-dom'.`}
     </Text>
