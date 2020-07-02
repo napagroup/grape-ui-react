@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { withHideable } from 'src/elements/utils';
 import {
   determinateKeyframes,
   indeterminateKeyframes,
@@ -15,7 +16,7 @@ import { LineComponent, TrackComponent } from './component';
 const backgroundIndicatorColor = makeColorResolver('background', 'indicatorColor');
 const backgroundTrackColor = makeColorResolver('background', 'trackColor');
 
-const Track = styled(TrackComponent)`${backgroundTrackColor}`;
+const Track = styled(withHideable(TrackComponent))`${backgroundTrackColor}`;
 
 Track.defaultProps = {
   height: 5,
@@ -55,12 +56,14 @@ export const LinearProgress = props => {
     indicatorColor,
     indicatorProps,
     indicatorPropsToTrim,
+    isHidden,
     trackColor,
     trackProps,
     trackPropsToTrim,
   } = props;
   return (
     <Track
+      isHidden={isHidden}
       trackColor={
         getTrackColor({ hideTrack, trackColor })
       }
