@@ -166,8 +166,9 @@ const examples = [
   }
 ];
 
-const exampleCards = examples.map((example) =>
+const exampleCards = examples.map((example, idx) =>
   <Card
+    key={`progress-linear-example-${idx}`}
     cardBody={(
       <div>
         {example.example}
@@ -343,8 +344,9 @@ const examples = [
   }
 ];
 
-const exampleCards = examples.map((example) =>
+const exampleCards = examples.map((example, idx) =>
   <Card
+    key={`progress-circular-example-${idx}`}
     cardBody={(
       <div>
         {example.example}
