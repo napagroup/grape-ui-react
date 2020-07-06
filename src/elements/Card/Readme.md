@@ -32,7 +32,7 @@ const containerStyleProps = {
   </Box>
   <Box {...baseCardStyleProps}>
     <CodeBlock code="// Using subComponents" />
-    <Card {...baseCardStyleProps}>
+    <Card showProgress {...baseCardStyleProps}>
       <Card.Title>
         Card title
       </Card.Title>
