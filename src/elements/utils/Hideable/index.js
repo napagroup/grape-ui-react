@@ -15,6 +15,7 @@ const Hideable = props => {
 
 Hideable.propTypes = {
   children: PropTypes.any.isRequired,
+  /** Use this prop to pass in a boolean statement. */
   isHidden: PropTypes.bool,
 };
 
