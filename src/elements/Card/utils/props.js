@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { getProgressPropTypes } from 'src/elements/Progress';
 
 export const cardActionsBasePropTypes = {
   cardActions: PropTypes.node,
@@ -102,7 +103,6 @@ export const cardPropTypes = {
   ...cardSecondaryMediaBasePropTypes,
   children: PropTypes.node,
   isHidden: PropTypes.bool,
-  showProgress: PropTypes.bool,
 };
 
 export const cardDefaultProps = {
@@ -119,5 +119,4 @@ export const cardDefaultProps = {
   children: '',
   isHidden: false,
   mb: [1, null, 2],
-  showProgress: false,
 };

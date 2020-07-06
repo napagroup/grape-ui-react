@@ -1,4 +1,5 @@
 import propTypes from '@styled-system/prop-types';
+import { getProgressPropTypes } from 'src/elements/Progress';
 
 export const defaultFlexBoxStylesPropsToTrim = [
   ...Object.keys(propTypes.background),
@@ -9,5 +10,6 @@ export const defaultFlexBoxStylesPropsToTrim = [
   ...Object.keys(propTypes.position),
   ...Object.keys(propTypes.shadow),
   ...Object.keys(propTypes.space),
+  ...Object.keys(getProgressPropTypes),
   'boxSizing',
 ];
