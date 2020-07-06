@@ -191,6 +191,13 @@ module.exports = {
       components: './src/elements/Toolbar/styled.js',
       name: 'Toolbar',
     },
+    {
+      components: () => ['./src/elements/utils/*/index.js'],
+      content: 'src/elements/utils/components.md',
+      description: 'Component directory',
+      name: 'Utilities',
+      sectionDepth: 1,
+    },
   ],
   skipComponentsWithoutExample: true,
   styleguideComponents: require('./styleguide/containers/index.js'), // eslint-disable-line global-require

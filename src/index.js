@@ -23,6 +23,7 @@ import {
   Paragraph,
   Text,
 } from './elements/typography';
+import { Hideable, withHideable } from './elements/utils';
 import { getGlobalStyles, getGlobalOverrides } from './global-styles';
 import * as styledHelpers from './utils/styledHelpers';
 
@@ -39,6 +40,7 @@ export {
   getGlobalOverrides,
   getGlobalStyles,
   Header,
+  Hideable,
   Image,
   Link,
   List,
@@ -52,4 +54,5 @@ export {
   Text,
   TextField,
   Toolbar,
+  withHideable,
 };
