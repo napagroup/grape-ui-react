@@ -52,6 +52,7 @@ const getTrackColor = props => (props.hideTrack ? 'transparent' : props.trackCol
 
 export const LinearProgress = props => {
   const {
+    containerProps,
     hideTrack,
     indicatorColor,
     indicatorProps,
@@ -61,20 +62,25 @@ export const LinearProgress = props => {
     trackProps,
     trackPropsToTrim,
   } = props;
+  // We need to have showProgress hard coded to false to avoid recursion.
   return (
     <Track
       isHidden={isHidden}
       trackColor={
         getTrackColor({ hideTrack, trackColor })
       }
+      {...containerProps}
       {...trackProps}
       trackPropsToTrim={trackPropsToTrim}
+      // eslint-disable-next-line react/jsx-sort-props
+      showProgress={false}
     >
       <Line
         {...getProgressProps(props)}
         indicatorColor={indicatorColor}
         {...indicatorProps}
         indicatorPropsToTrim={indicatorPropsToTrim}
+        showProgress={false}
       />
     </Track>
   );

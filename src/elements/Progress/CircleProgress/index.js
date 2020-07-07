@@ -14,7 +14,7 @@ import {
   progressBaseDefaultProps,
   progressBasePropTypes,
   styledSystemAnimation,
-} from '../utils';
+} from 'src/elements/Progress/utils';
 import { CircleComponent, RootComponent } from './component';
 
 const stroke = makeColorResolver('stroke', 'strokeColor');
@@ -108,6 +108,7 @@ const getTrackColor = props => (props.hideTrack ? 'transparent' : props.trackCol
 
 export const CircularProgress = props => {
   const {
+    containerProps,
     diameter,
     indicatorColor,
     indicatorProps,
@@ -139,6 +140,7 @@ export const CircularProgress = props => {
     <StyledRoot
       isHidden={isHidden}
       {...getStyledRootProps(props)}
+      {...containerProps}
     >
       <StyledSvg
         height={diameter}

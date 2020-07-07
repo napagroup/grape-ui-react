@@ -2,9 +2,6 @@ import React from 'react';
 import * as ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
 import '@testing-library/jest-dom';
-import {
-  render,
-} from '@testing-library/react';
 import 'jest-styled-components';
 import { css, keyframes, ThemeProvider } from 'styled-components';
 import { Flex } from 'src/elements/grid';
@@ -99,6 +96,7 @@ describe('Linear Progress - snapshots', () => {
         <ThemeProvider theme={{}}>
           <Progress
             animationDuration="5s"
+            animationIterationCount={2}
             animationName={
               // styled components keyframes and css functions
               css`${customKeyframe}`

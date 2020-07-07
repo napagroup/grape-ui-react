@@ -183,6 +183,11 @@ module.exports = {
               description: 'Demonstrating hideable components',
               name: 'Hide Components',
             },
+            {
+              content: 'src/elements/Table/examples/loadingState.md',
+              description: 'Demonstrating progress components',
+              name: 'Loading State',
+            },
           ],
         },
       ],

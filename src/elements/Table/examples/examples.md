@@ -22,3 +22,8 @@ Example on striped table.
 
 Examples on hideable components.
 ***
+
+## [`Loading State`](#/Table/Examples/Loading%20State)
+
+How to use the progress component in Table.
+***

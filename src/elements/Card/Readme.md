@@ -107,10 +107,15 @@ const ExampleCardThumbnail01 = (
 
 const exampleCardPadding = 3;
 
-const baseCardStyleProps = {
+const baseBoxStyleProps = {
   m: 1,
   maxWidth: 300,
   width: 1,
+}
+
+const baseCardStyleProps = {
+  ...baseBoxStyleProps,
+  showProgress: true,
 };
 
 const containerStyleProps = {
@@ -122,7 +127,7 @@ const containerStyleProps = {
 };
 
 <Flex {...containerStyleProps}>
-  <Box {...baseCardStyleProps}>
+  <Box {...baseBoxStyleProps}>
     <CodeBlock code="// Passed in through Props" />
     <Card
       cardActions={ExampleCardActions01}
@@ -135,7 +140,7 @@ const containerStyleProps = {
       {...baseCardStyleProps}
     />
   </Box>
-  <Box {...baseCardStyleProps}>
+  <Box {...baseBoxStyleProps}>
     <CodeBlock code="// Using subComponents" />
     <Card cardPadding={0} pb={exampleCardPadding} {...baseCardStyleProps}>
       <Card.RichMedia>
@@ -161,7 +166,7 @@ const containerStyleProps = {
       </Card.Actions>
     </Card>
   </Box>
-  <Box {...baseCardStyleProps}>
+  <Box {...baseBoxStyleProps}>
     <CodeBlock code="// Passed in through Props" />
     <Card
       cardActions={ExampleCardActions01}
@@ -174,7 +179,7 @@ const containerStyleProps = {
       {...baseCardStyleProps}
     />
   </Box>
-  <Box {...baseCardStyleProps}>
+  <Box {...baseBoxStyleProps}>
     <CodeBlock code="// Using subComponents" />
     <Card cardPadding={0} pb={exampleCardPadding} {...baseCardStyleProps}>
       <Flex alignItems="center" p={exampleCardPadding}>
