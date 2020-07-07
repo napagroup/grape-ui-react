@@ -30,6 +30,7 @@ import {
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
+import { Box } from 'src/elements/grid';
 import { withHideable } from 'src/elements/utils/Hideable';
 import propTypes from '@styled-system/prop-types';
 import { activeColorButton, hoverColorButton } from './utils';
@@ -112,7 +113,7 @@ const Button = styled(withHideable(ButtonComponent))`
     pointer-events: none;
     cursor: not-allowed;
   }
-  > div {
+  > ${Box} {
     ${borderRadiusCore}
     ${display}
     ${ellipsisCore}
@@ -149,8 +150,16 @@ Button.propTypes = {
   href: PropTypes.string,
   ...lineHeight.propTypes,
   ...maxWidth.propTypes,
+  /** Passes props to the `Box` child. */
+  innerBoxProps: PropTypes.object,
+  /** Passes props to the `Flex` child that appears when a `leadingIcon` is provided. */
+  innerFlexProps: PropTypes.object,
   /** Hides component */
   isHidden: PropTypes.bool,
+  /** Placeholder spot meant for icons. */
+  leadingIcon: PropTypes.any,
+  /** Passes props to the leading icon's container. */
+  leadingIconProps: PropTypes.object,
   /** Makes the button a "contained" button.
    * @see See [Material Design/Components/Buttons/Outlined Button](https://material.io/components/buttons/#outlined-button) for more on this style. */
   outline: PropTypes.bool,
@@ -180,7 +189,11 @@ Button.defaultProps = {
   display: 'inline-block',
   emailHref: {},
   href: null,
+  innerBoxProps: {},
+  innerFlexProps: {},
   isHidden: false,
+  leadingIcon: null,
+  leadingIconProps: {},
   m: 1,
   maxWidth: '100%',
   outline: false,
@@ -188,6 +201,9 @@ Button.defaultProps = {
   pl: 3,
   position: POSITION_DEFAULT_VALUE,
   pr: 3,
+  progressProps: {
+    progressType: 'circular',
+  },
   pt: 1,
   raised: false,
   textAlign: 'center',

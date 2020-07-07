@@ -38,6 +38,16 @@ describe('Button base', () => {
     const element = <ThemeProvider theme={emptyTheme}><Button disabled id="exampleColor">Disabled button</Button></ThemeProvider>;
     expect(assertReactElement(element)).toMatchSnapshot();
   });
+
+  it('should return a Button with leading icon', () => {
+    const element = <ThemeProvider theme={emptyTheme}><Button leadingIcon="foo">Leading Icon on this button</Button></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+
+  it('should return a Button with loading indicator', () => {
+    const element = <ThemeProvider theme={emptyTheme}><Button showProgress>Loading...</Button></ThemeProvider>;
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
 });
 
 describe('Button Component base with style', () => {

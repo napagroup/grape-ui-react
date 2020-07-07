@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button Component base with style should return a Button object with mailto props filled out 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   border: 0;
   border-radius: 4px;
@@ -45,7 +49,7 @@ exports[`Button Component base with style should return a Button object with mai
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-radius: 4px;
   display: inline-block;
   max-width: 100%;
@@ -56,13 +60,19 @@ exports[`Button Component base with style should return a Button object with mai
   className="c0"
   href="mailto:email@napa.com?bcc=email@napa.com&body=Body%20text%20for%20email.&cc=email@napa.com&subject=Subject%20line"
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     Lorem Ipsum
   </div>
 </a>
 `;
 
 exports[`Button Component base with style should return a Button with a zIndex when using a number 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   border: 0;
   border-radius: 4px;
@@ -108,7 +118,7 @@ exports[`Button Component base with style should return a Button with a zIndex w
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-radius: 4px;
   display: inline-block;
   max-width: 100%;
@@ -119,13 +129,19 @@ exports[`Button Component base with style should return a Button with a zIndex w
   className="c0"
   type="button"
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     Do this
   </div>
 </button>
 `;
 
 exports[`Button Component base with style should return a Button with a zIndex when using a string 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   border: 0;
   border-radius: 4px;
@@ -171,7 +187,7 @@ exports[`Button Component base with style should return a Button with a zIndex w
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-radius: 4px;
   display: inline-block;
   max-width: 100%;
@@ -182,13 +198,19 @@ exports[`Button Component base with style should return a Button with a zIndex w
   className="c0"
   type="button"
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     Do this
   </div>
 </button>
 `;
 
 exports[`Button Component base with style should return a Button with bg and color 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   border: 0;
   border-radius: 4px;
@@ -233,7 +255,7 @@ exports[`Button Component base with style should return a Button with bg and col
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-radius: 4px;
   display: inline-block;
   max-width: 100%;
@@ -245,13 +267,19 @@ exports[`Button Component base with style should return a Button with bg and col
   id="exampleColor"
   type="button"
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     Happy St. Patrick's Day!
   </div>
 </button>
 `;
 
 exports[`Button Component base with style should return a Button with bg and color and bgActiveColor and bgHoverColor  1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   border: 0;
   border-radius: 4px;
@@ -296,7 +324,7 @@ exports[`Button Component base with style should return a Button with bg and col
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-radius: 4px;
   display: inline-block;
   max-width: 100%;
@@ -308,13 +336,19 @@ exports[`Button Component base with style should return a Button with bg and col
   id="exampleColor"
   type="button"
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     Happy St. Patrick's Day!
   </div>
 </button>
 `;
 
 exports[`Button Component base with style should return a Button with lg 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   border: 0;
   border-radius: 8px;
@@ -359,7 +393,7 @@ exports[`Button Component base with style should return a Button with lg 1`] = `
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-radius: 8px;
   display: inline-block;
   max-width: 100%;
@@ -371,13 +405,19 @@ exports[`Button Component base with style should return a Button with lg 1`] = `
   id="exampleColor"
   type="button"
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     Do this
   </div>
 </button>
 `;
 
 exports[`Button Component base with style should return a Button with sm 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   border: 0;
   border-radius: 2px;
@@ -422,7 +462,7 @@ exports[`Button Component base with style should return a Button with sm 1`] = `
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-radius: 2px;
   display: inline-block;
   max-width: 100%;
@@ -434,13 +474,19 @@ exports[`Button Component base with style should return a Button with sm 1`] = `
   id="exampleColor"
   type="button"
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     Do this
   </div>
 </button>
 `;
 
 exports[`Button Component base with style should return a Link with href with button look 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   border: 0;
   border-radius: 4px;
@@ -485,7 +531,7 @@ exports[`Button Component base with style should return a Link with href with bu
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-radius: 4px;
   display: inline-block;
   max-width: 100%;
@@ -497,13 +543,19 @@ exports[`Button Component base with style should return a Link with href with bu
   href="https://www.google.com/"
   target="_blank"
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     google
   </div>
 </a>
 `;
 
 exports[`Button Component base with style should return a Link with to with button look 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   border: 0;
   border-radius: 4px;
@@ -548,7 +600,7 @@ exports[`Button Component base with style should return a Link with to with butt
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-radius: 4px;
   display: inline-block;
   max-width: 100%;
@@ -560,13 +612,19 @@ exports[`Button Component base with style should return a Link with to with butt
   href="/404"
   onClick={[Function]}
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     404
   </div>
 </a>
 `;
 
 exports[`Button base should return a Button 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   border: 0;
   border-radius: 4px;
@@ -611,7 +669,7 @@ exports[`Button base should return a Button 1`] = `
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-radius: 4px;
   display: inline-block;
   max-width: 100%;
@@ -622,13 +680,19 @@ exports[`Button base should return a Button 1`] = `
   className="c0"
   type="button"
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     Button Base
   </div>
 </button>
 `;
 
 exports[`Button base should return a Button with disabled 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   border: 0;
   border-radius: 4px;
@@ -673,7 +737,7 @@ exports[`Button base should return a Button with disabled 1`] = `
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-radius: 4px;
   display: inline-block;
   max-width: 100%;
@@ -686,13 +750,31 @@ exports[`Button base should return a Button with disabled 1`] = `
   id="exampleColor"
   type="button"
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     Disabled button
   </div>
 </button>
 `;
 
-exports[`Button base should return an contained Button 1`] = `
+exports[`Button base should return a Button with leading icon 1`] = `
+.c3 {
+  box-sizing: border-box;
+  padding-right: 16px;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c0 {
   border: 0;
   border-radius: 4px;
@@ -737,7 +819,249 @@ exports[`Button base should return an contained Button 1`] = `
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c2 {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2 c3"
+    >
+      foo
+    </div>
+    <div
+      className="c2 c4"
+    >
+      Leading Icon on this button
+    </div>
+  </div>
+</button>
+`;
+
+exports[`Button base should return a Button with loading indicator 1`] = `
+.c6 {
+  height: 24px;
+  width: 24px;
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.c7 {
+  -webkit-backface-visibility: hidden;
+  fill: none;
+  stroke: hsl(0,0%,75%);
+}
+
+.c5 {
+  -webkit-animation-name: fvtopB;
+  animation-name: fvtopB;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.c8 {
+  -webkit-backface-visibility: hidden;
+  fill: none;
+  stroke: hsl(312.8,67.8%,47.5%);
+  -webkit-animation-name: kEfyFd;
+  animation-name: kEfyFd;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+
+.c3 {
+  box-sizing: border-box;
+  padding-right: 16px;
+}
+
+.c4 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 {
+  border: 0;
+  border-radius: 4px;
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.c0 > .c2 {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+<button
+  className="c0"
+  type="button"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2 c3"
+    >
+      <div
+        className="c2 c4 c5"
+      >
+        <svg
+          className="c6"
+          display="block"
+          height={24}
+          overflow="hidden"
+          width={24}
+        >
+          <circle
+            circumference={62.83185307179586}
+            className="c7"
+            cx={12}
+            cy={12}
+            r={10}
+            strokeWidth={4}
+          />
+          <circle
+            circumference={62.83185307179586}
+            className="c8"
+            cx={12}
+            cy={12}
+            r={10}
+            strokeDasharray={62.83185307179586}
+            strokeWidth={4}
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="c2 c4"
+    >
+      Loading...
+    </div>
+  </div>
+</button>
+`;
+
+exports[`Button base should return an contained Button 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
+.c0 {
+  border: 0;
+  border-radius: 4px;
+  background-color: transparent;
+  color: inherit;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c0:hover {
+  cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c0:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c0[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.c0 > .c1 {
   border-radius: 4px;
   display: inline-block;
   max-width: 100%;
@@ -749,13 +1073,19 @@ exports[`Button base should return an contained Button 1`] = `
   id="buttonContained"
   type="button"
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     Button Contained
   </div>
 </button>
 `;
 
 exports[`Button base should return an contained raised Button 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   border: 0;
   border-radius: 4px;
@@ -802,7 +1132,7 @@ exports[`Button base should return an contained raised Button 1`] = `
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-radius: 4px;
   display: inline-block;
   max-width: 100%;
@@ -814,13 +1144,19 @@ exports[`Button base should return an contained raised Button 1`] = `
   id="buttonContainedRaised"
   type="button"
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     Button Contained and Raised
   </div>
 </button>
 `;
 
 exports[`Button base should return an outlined Button 1`] = `
+.c2 {
+  box-sizing: border-box;
+}
+
 .c0 {
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
@@ -865,7 +1201,7 @@ exports[`Button base should return an outlined Button 1`] = `
   cursor: not-allowed;
 }
 
-.c0 > div {
+.c0 > .c1 {
   border-radius: 4px;
   display: inline-block;
   max-width: 100%;
@@ -877,7 +1213,9 @@ exports[`Button base should return an outlined Button 1`] = `
   id="buttonOutline"
   type="button"
 >
-  <div>
+  <div
+    className="c1 c2"
+  >
     Button Outline
   </div>
 </button>
