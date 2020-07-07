@@ -14,12 +14,13 @@ const Hideable = props => {
 };
 
 Hideable.propTypes = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.any,
   /** Use this prop to pass in a boolean statement. */
   isHidden: PropTypes.bool,
 };
 
 Hideable.defaultProps = {
+  children: undefined,
   isHidden: false,
 };
 
