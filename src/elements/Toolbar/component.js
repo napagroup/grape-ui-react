@@ -11,28 +11,48 @@ export const ToolbarComponent = ({
   centerArea,
   centerAreaProps,
   children,
+  containerComponent,
   leftArea,
   leftAreaProps,
   rightArea,
   rightAreaProps,
   toolbarInnerProps,
   ...props
-}) => (
-  <header {...removeSomeProps(props, Object.keys(toolbarPropTypes))}>
-    <ToolbarInner {...toolbarInnerProps}>
-      {children}
-      <Box {...leftAreaProps}>
-        {leftArea}
+}) => {
+  const {
+    progress,
+    progressPlacement,
+    progressProps,
+    showProgress,
+  } = props;
+  const boxProgressProps = {
+    progress,
+    progressPlacement,
+    progressProps,
+    showProgress,
+  };
+  return (
+    <Box {...boxProgressProps}>
+      <Box
+        as={containerComponent}
+        {...removeSomeProps(props, Object.keys(toolbarPropTypes))}
+      >
+        <ToolbarInner {...toolbarInnerProps}>
+          {children}
+          <Box {...leftAreaProps}>
+            {leftArea}
+          </Box>
+          <Box {...centerAreaProps}>
+            {centerArea}
+          </Box>
+          <Box {...rightAreaProps}>
+            {rightArea}
+          </Box>
+        </ToolbarInner>
       </Box>
-      <Box {...centerAreaProps}>
-        {centerArea}
-      </Box>
-      <Box {...rightAreaProps}>
-        {rightArea}
-      </Box>
-    </ToolbarInner>
-  </header>
-);
+    </Box>
+  );
+};
 
 ToolbarComponent.propTypes = {
   children: PropTypes.any,

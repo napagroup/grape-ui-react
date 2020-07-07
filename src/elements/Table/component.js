@@ -12,6 +12,10 @@ import {
 import styled from 'styled-components';
 import { CheckboxField } from 'src/elements/forms';
 import { Box, Flex } from 'src/elements/grid';
+import {
+  getProgressDefaultProps,
+  getProgressPropTypes,
+} from 'src/elements/Progress';
 import { Paragraph, Text } from 'src/elements/typography';
 import { Hideable } from 'src/elements/utils';
 import { Paginator } from './Paginator';
@@ -144,7 +148,11 @@ export function TableComponent(props) {
     pageIndex: userPageIndex,
     pageOptions,
     pageSize: userPageSize,
+    progress,
+    progressPlacement,
+    progressProps,
     renderRowSubComponent,
+    showProgress,
     showSkipButtons,
     showToggleHideColumns,
     tableBodyProps,
@@ -258,7 +266,12 @@ export function TableComponent(props) {
             showSkipButtons={showSkipButtons}
           />
         </Hideable>
-        <StyledTableResponsiveWrapper>
+        <StyledTableResponsiveWrapper
+          progress={progress}
+          progressPlacement={progressPlacement}
+          progressProps={progressProps}
+          showProgress={showProgress || loading}
+        >
           <StyledTable {...tableProps} {...getTableProps()}>
             <StyledTableHeader {...tableHeaderProps}>
               {headerGroups.map((headerGroup, headerGroupIndex) => (
@@ -293,12 +306,6 @@ export function TableComponent(props) {
                   </React.Fragment>
                 );
               })}
-              {loading ? (
-                // Use our custom loading state to show a loading indicator
-                <StyledTableRow>
-                  <StyledTableCell colSpan="10000">Loading...</StyledTableCell>
-                </StyledTableRow>
-              ) : []}
             </StyledTableBody>
           </StyledTable>
         </StyledTableResponsiveWrapper>
@@ -324,6 +331,7 @@ export function TableComponent(props) {
 }
 
 TableComponent.propTypes = {
+  ...getProgressPropTypes,
   columns: PropTypes.array.isRequired,
   data: PropTypes.array.isRequired,
   enableRowExpansion: PropTypes.bool,
@@ -352,6 +360,7 @@ TableComponent.propTypes = {
 };
 
 TableComponent.defaultProps = {
+  ...getProgressDefaultProps,
   enableRowExpansion: false,
   fetchData: () => {},
   hiddenColumns: [],

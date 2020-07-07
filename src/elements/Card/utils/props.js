@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { getProgressPropTypes } from 'src/elements/Progress';
 
 export const cardActionsBasePropTypes = {
   cardActions: PropTypes.node,

@@ -1,7 +1,5 @@
 import React from 'react';
 import { Box } from 'src/elements/grid';
-import { getProgress } from 'src/elements/Progress';
-import { Hideable } from 'src/elements/utils';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import {
   cardDefaultProps,
