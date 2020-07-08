@@ -112,3 +112,36 @@ import { TextField } from 'src/elements/forms';
   </Box>
 </Flex>
 ```
+
+#### Hide Form
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid';
+import { TextField } from 'src/elements/forms';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <Form isHidden={hide}>
+        <TextField
+          labelText="Name"
+          name="name"
+        />
+      </Form>
+    </Box>
+  </Flex>
+</ThemeProvider>
+```

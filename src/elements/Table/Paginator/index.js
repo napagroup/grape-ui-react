@@ -111,7 +111,7 @@ export function Paginator(props) {
             {getCaptionForPage(pageVm)}
           </Text>
           <Box mx={1}>
-            <Hideable hide={!showSkipButtons}>
+            <Hideable isHidden={!showSkipButtons}>
               <Button data-testid="gotoFirstPage" disabled={!canPreviousPage} onClick={() => gotoPage(0)} role="button">
                 <FontAwesomeIcon icon={faAngleDoubleLeft} />
               </Button>
@@ -122,7 +122,7 @@ export function Paginator(props) {
             <Button data-testid="gotoNextPage" disabled={!canNextPage} onClick={() => nextPage()} role="button">
               <FontAwesomeIcon icon={faAngleRight} />
             </Button>
-            <Hideable hide={!showSkipButtons}>
+            <Hideable isHidden={!showSkipButtons}>
               <Button data-testid="gotoLastPage" disabled={!canNextPage} onClick={() => gotoPage(pageCount - 1)} role="button">
                 <FontAwesomeIcon icon={faAngleDoubleRight} />
               </Button>

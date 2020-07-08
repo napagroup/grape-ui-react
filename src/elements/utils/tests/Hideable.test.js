@@ -22,7 +22,7 @@ describe('Table - basic rendering', () => {
     act(() => {
       ReactDOM.render(
         <ThemeProvider theme={{}}>
-          <MyHideable hide={hide} />
+          <MyHideable isHidden={hide} />
         </ThemeProvider>,
         container
       );
@@ -34,7 +34,7 @@ describe('Table - basic rendering', () => {
       const hide = true;
       ReactDOM.render(
         <ThemeProvider theme={{}}>
-          <MyHideable hide={hide}>
+          <MyHideable isHidden={hide}>
             <div title="test-div-children">
               innerText
             </div>
@@ -50,7 +50,7 @@ describe('Table - basic rendering', () => {
       const hide = false;
       ReactDOM.render(
         <ThemeProvider theme={{}}>
-          <MyHideable hide={hide}>
+          <MyHideable isHidden={hide}>
             <div title="test-div-children">
               innerText
             </div>

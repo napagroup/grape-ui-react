@@ -31,7 +31,7 @@ import { Code, Text } from 'src/elements/typography'; // ... from 'grape-ui-reac
   </Flex>
   <Text lg>
     {'Calendar Only '}
-    <Code codeString="calendarOnly={true}" />
+    <Code code="calendarOnly={true}" />
   </Text>
   <Flex flexDirection={['column', null, 'row']}>
     <Box px={1} width={[1, null, 1 / 2]}>
@@ -50,7 +50,7 @@ import { Code, Text } from 'src/elements/typography'; // ... from 'grape-ui-reac
   </Flex>
   <Text lg>
     {'Plain Text '}
-    <Code codeString="plainText={true}" />
+    <Code code="plainText={true}" />
   </Text>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -810,6 +810,36 @@ moment.locale('en');
           selected => selected[0].selectedDay
         }
       />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```
+
+#### Hide DateField
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
+
+const [hide, setHidden] = useState(false);
+
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+    <DateField
+      isHidden={hide}
+      name="myDate"
+    />
     </Box>
   </Flex>
 </ThemeProvider>

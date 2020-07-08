@@ -23,7 +23,7 @@ const containerStyleProps = {
 
 <Flex {...containerStyleProps}>
   <Box {...baseCardStyleProps}>
-    <CodeBlock codeString="// Passed in through Props" />
+    <CodeBlock code="// Passed in through Props" />
     <Card
       cardSubtitle="Secondary text"
       cardTitle="Card title"
@@ -31,7 +31,7 @@ const containerStyleProps = {
     />
   </Box>
   <Box {...baseCardStyleProps}>
-    <CodeBlock codeString="// Using subComponents" />
+    <CodeBlock code="// Using subComponents" />
     <Card {...baseCardStyleProps}>
       <Card.Title>
         Card title
@@ -107,10 +107,15 @@ const ExampleCardThumbnail01 = (
 
 const exampleCardPadding = 3;
 
-const baseCardStyleProps = {
+const baseBoxStyleProps = {
   m: 1,
   maxWidth: 300,
   width: 1,
+}
+
+const baseCardStyleProps = {
+  ...baseBoxStyleProps,
+  showProgress: true,
 };
 
 const containerStyleProps = {
@@ -122,8 +127,8 @@ const containerStyleProps = {
 };
 
 <Flex {...containerStyleProps}>
-  <Box {...baseCardStyleProps}>
-    <CodeBlock codeString="// Passed in through Props" />
+  <Box {...baseBoxStyleProps}>
+    <CodeBlock code="// Passed in through Props" />
     <Card
       cardActions={ExampleCardActions01}
       cardActionsRight={ExampleCardActions02}
@@ -135,8 +140,8 @@ const containerStyleProps = {
       {...baseCardStyleProps}
     />
   </Box>
-  <Box {...baseCardStyleProps}>
-    <CodeBlock codeString="// Using subComponents" />
+  <Box {...baseBoxStyleProps}>
+    <CodeBlock code="// Using subComponents" />
     <Card cardPadding={0} pb={exampleCardPadding} {...baseCardStyleProps}>
       <Card.RichMedia>
         {ExampleCardImage01}
@@ -161,8 +166,8 @@ const containerStyleProps = {
       </Card.Actions>
     </Card>
   </Box>
-  <Box {...baseCardStyleProps}>
-    <CodeBlock codeString="// Passed in through Props" />
+  <Box {...baseBoxStyleProps}>
+    <CodeBlock code="// Passed in through Props" />
     <Card
       cardActions={ExampleCardActions01}
       cardActionsRight={ExampleCardActions02}
@@ -174,8 +179,8 @@ const containerStyleProps = {
       {...baseCardStyleProps}
     />
   </Box>
-  <Box {...baseCardStyleProps}>
-    <CodeBlock codeString="// Using subComponents" />
+  <Box {...baseBoxStyleProps}>
+    <CodeBlock code="// Using subComponents" />
     <Card cardPadding={0} pb={exampleCardPadding} {...baseCardStyleProps}>
       <Flex alignItems="center" p={exampleCardPadding}>
         {ExampleCardThumbnail01}
@@ -201,4 +206,39 @@ const containerStyleProps = {
     </Card>
   </Box>
 </Flex>
+```
+
+#### Hide Card
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Card } from 'src/elements/Card';
+import { Text } from 'src/elements/typography';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Card isHidden={hide}>
+    <Card.Body>
+      <Flex flexDirection={['column', 'row']}>
+        <Box px={1}>
+        <Text>
+          Hideable
+        </Text>
+        </Box>
+      </Flex>
+    </Card.Body>
+  </Card>
+</ThemeProvider>
 ```

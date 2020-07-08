@@ -15,7 +15,15 @@ describe('Code Component base', () => {
   it('should return an empty Code with base styling', () => {
     const element = (
       <ThemeProvider theme={emptyTheme}>
-        <Code codeString={'<Code codeString="" />'} />
+        <Code code={'<Code code="" />'} />
+      </ThemeProvider>
+    );
+    expect(assertReactElement(element)).toMatchSnapshot();
+  });
+  it('should return an empty Code with a valid JSX element', () => {
+    const element = (
+      <ThemeProvider theme={emptyTheme}>
+        <Code code={<Code code={'<Code code="" />'} />} />
       </ThemeProvider>
     );
     expect(assertReactElement(element)).toMatchSnapshot();

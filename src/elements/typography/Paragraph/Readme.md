@@ -43,7 +43,27 @@ import { Code } from 'src/elements/typography';
 
 <Paragraph lead>
   {'This is a lead paragraph. It is leading and meant to start off a block of text. This is using '}
-  <Code codeString="<Paragraph lead>" />
+  <Code code="<Paragraph lead>" />
   .
 </Paragraph>
+```
+
+#### Hide Paragraph
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+<Paragraph isHidden={hide}>
+  This paragraph is hideable.
+</Paragraph>
+</ThemeProvider>
 ```

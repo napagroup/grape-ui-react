@@ -1,4 +1,4 @@
-When showing example code, `<Code>` and `<CodeBlock>` are the components you should use.  It is built on top of the powerful [react-syntax-highlighter](https://github.com/conorhastings/react-syntax-highlighter) and uses the same utilities that can be found on all typography elements in grape-ui.  Just provide your code as a string in the `codeString` prop, and you're ready to go.
+When showing example code, `<Code>` and `<CodeBlock>` are the components you should use.  It is built on top of the powerful [react-syntax-highlighter](https://github.com/conorhastings/react-syntax-highlighter) and uses the same utilities that can be found on all typography elements in grape-ui.  Just provide your code either as a string or as a valid React element in the `code` prop, and you're ready to go.
 
 * `<Code>`: for inline code.
 * `<CodeBlock>`: for block code.
@@ -6,9 +6,12 @@ When showing example code, `<Code>` and `<CodeBlock>` are the components you sho
 ### Examples
 
 ```jsx in Markdown
-import { CodeBlock } from 'src/elements/typography';
+import {
+  CodeBlock,
+  Text,
+} from 'src/elements/typography';
 
-const exampleCode01 = `<Code codeString={exampleCode01} />`;
+const exampleCode01 = `<Code code={exampleCode01} />`;
 const exampleCode02 = `
 import React from 'react';
 import { Paragraph } from 'grape-ui-react';
@@ -74,20 +77,87 @@ And that's it!
 
 <div>
   <Code
-    codeString={exampleCode01}
+    code={exampleCode01}
   />
   <CodeBlock
-    codeString={exampleCode02}
+    code={exampleCode02}
   />
   <CodeBlock
-    codeString={exampleCode03}
+    code={exampleCode03}
     language="bash"
   />
   <CodeBlock
-    codeString={exampleCode04}
+    code={exampleCode04}
     language="markdown"
+  />
+
+  <CodeBlock
+    code={(<Text>I'm a valid React element!</Text>)}
+    codeOptions={{
+      displayName: () => 'Text',
+      showDefaultProps: false,
+    }}
   />
 </div>
 ```
 
 The base styling for this is based off of the colors provided in ThemeProvider. For additional tools and info, please refer to [react-syntax-highlighter's docs](https://github.com/conorhastings/react-syntax-highlighter).
+
+#### Hide Code & CodeBlock
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid';
+import { Button } from 'src/elements/Button';
+import { CodeBlock } from 'src/elements/typography';
+
+const exampleCode01 = `<Code code={exampleCode01} isHidden={hide} />`;
+const exampleCode02 = `
+const [hide, setHidden] = useState(false);
+
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <Code
+        code={exampleCode01}
+        isHidden={hide}
+      />
+      <CodeBlock
+        code={exampleCode02}
+        isHidden={hide}
+      />
+    </Box>
+  </Flex>
+</ThemeProvider>
+`;
+const [hide, setHidden] = useState(false);
+
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <Code
+        code={exampleCode01}
+        isHidden={hide}
+      />
+      <CodeBlock
+        code={exampleCode02}
+        isHidden={hide}
+      />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```

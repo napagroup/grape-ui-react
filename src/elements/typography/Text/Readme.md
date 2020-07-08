@@ -11,7 +11,30 @@ import { Code, Paragraph } from 'src/elements/typography';
   , or
   <Text color="red" fontWeight="bold">both</Text>
   {', I can just use the inline '}
-  <Code codeString="<Text>" />
+  <Code code="<Text>" />
   {' element.'}
 </Paragraph>
+```
+
+#### Hide Text
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Button } from 'src/elements/Button';
+import { Paragraph } from 'src/elements/typography';
+
+const [hide, setHidden] = useState(false);
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Paragraph>
+    <Text isHidden={hide}>
+      This text is hideable.
+    </Text>
+  </Paragraph>
+</ThemeProvider>
 ```

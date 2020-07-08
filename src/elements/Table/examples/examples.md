@@ -18,7 +18,12 @@ Example on expandable rows.
 Example on striped table.
 ***
 
-## [`Hidden Columns`](#/Table/Examples/Hide%20Columns)
+## [`Hide Components`](#/Table/Examples/Hide%20Components)
 
-Example on hiding columns.
+Examples on hideable components.
+***
+
+## [`Loading State`](#/Table/Examples/Loading%20State)
+
+How to use the progress component in Table.
 ***

@@ -18,6 +18,7 @@ import {
 } from 'src/utils/styledHelpers';
 import { getGlobalStyles } from 'src/global-styles';
 import { removeSomeProps } from 'src/utils/componentHelpers';
+import { withHideable } from 'src/elements/utils/Hideable';
 
 const { fontSize: fontSizeSchema, grid: gridSchema } = getGlobalStyles();
 
@@ -62,7 +63,7 @@ const headerFactory = factoryProps => {
     children: PropTypes.any.isRequired,
   };
   const getHeaderFontSize = getHeaderFontSizeFromTag(factoryProps);
-  return styled(HeaderComponent)`
+  return styled(withHideable(HeaderComponent))`
     ${colorCore}
     ${ellipsisCore}
     ${fontFamilyCore}
@@ -87,12 +88,14 @@ for (let i = 2; i <= 6; i++) {
 
   Header[subHeaderTag].propTypes = {
     displayHeader: PropTypes.bool,
+    isHidden: PropTypes.bool,
     ...typography.propTypes,
   };
   Header[subHeaderTag].defaultProps = {
     ...defaultStylesBase,
     displayHeader: false,
     fontWeight: defaultStylesBase.fontWeight,
+    isHidden: false,
     mb: gridSchema.gutter,
     mt: 0,
   };
@@ -101,12 +104,14 @@ for (let i = 2; i <= 6; i++) {
 Header.propTypes = {
   ...typography.propTypes,
   displayHeader: PropTypes.bool,
+  isHidden: PropTypes.bool,
 };
 
 Header.defaultProps = {
   ...defaultStylesBase,
   displayHeader: false,
   fontWeight: defaultStylesBase.fontWeight,
+  isHidden: false,
   mb: gridSchema.gutter,
   mt: 0,
 };

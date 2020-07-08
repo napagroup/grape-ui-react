@@ -49,11 +49,11 @@ import { StyledBox as Box } from '../examples';
   <Box m={48}>
     <Text>
       {'There is a '}
-      <Code codeString="margin" />
+      <Code code="margin" />
       {' set to '}
-      <Code codeString="{48}" />
+      <Code code="{48}" />
       {' on this '}
-      <Code codeString="<Box>" />
+      <Code code="<Box>" />
       .
     </Text>
   </Box>
@@ -121,11 +121,11 @@ import { StyledBox as Box } from '../examples';
   <Box p={48}>
     <Text>
       {'There is a '}
-      <Code codeString="padding" />
+      <Code code="padding" />
       {' set to '}
-      <Code codeString="{48}" />
+      <Code code="{48}" />
       {' on this '}
-      <Code codeString="<Box>" />
+      <Code code="<Box>" />
       .
     </Text>
   </Box>
@@ -193,11 +193,11 @@ import { StyledBox as Box } from '../examples';
   <Box width={1 / 8}>
     <Text>
       {'There is a '}
-      <Code codeString="width" />
+      <Code code="width" />
       {' set to '}
-      <Code codeString="{1 / 8}" />
+      <Code code="{1 / 8}" />
       {' on this '}
-      <Code codeString="<Box>" />
+      <Code code="<Box>" />
     </Text>
   </Box>
 </ThemeProvider>
@@ -440,7 +440,7 @@ const orderExample05 = 20;
     >
       Align Self
     </Link>
-    <Code codeString={'alignSelf="string"'} />
+    <Code code={'alignSelf="string"'} />
   </Text>
   <Flex
     flexDirection={['column', 'row']}
@@ -450,17 +450,17 @@ const orderExample05 = 20;
       alignSelf={alignSelfExample01}
     >
       <CodeBlock
-        codeString={`alignSelf={[${alignSelfExample01}]}`}
+        code={`alignSelf={[${alignSelfExample01}]}`}
       />
     </Box>
     <Box alignSelf={alignSelfExample02}>
       <CodeBlock
-        codeString={`alignSelf="${alignSelfExample02}"`}
+        code={`alignSelf="${alignSelfExample02}"`}
       />
     </Box>
     <Box alignSelf={alignSelfExample03}>
       <CodeBlock
-        codeString={`alignSelf="${alignSelfExample03}"`}
+        code={`alignSelf="${alignSelfExample03}"`}
       />
     </Box>
   </Flex>
@@ -473,7 +473,7 @@ const orderExample05 = 20;
       Flex
     </Link>
     <Code
-      codeString={'flex={number} or "string"'}
+      code={'flex={number} or "string"'}
     />
   </Text>
   <Flex
@@ -481,13 +481,13 @@ const orderExample05 = 20;
     mb={[1, 2, 3, 4]}
   >
     <Box flex={flexExample01}>
-      <CodeBlock codeString={`flex={${flexExample01}}`} />
+      <CodeBlock code={`flex={${flexExample01}}`} />
     </Box>
     <Box flex={flexExample02}>
-      <CodeBlock codeString={`flex={[${flexExample02}]}`} />
+      <CodeBlock code={`flex={[${flexExample02}]}`} />
     </Box>
     <Box flex={flexExample03}>
-      <CodeBlock codeString={`flex="${flexExample03}"`} />
+      <CodeBlock code={`flex="${flexExample03}"`} />
     </Box>
   </Flex>
 
@@ -498,20 +498,20 @@ const orderExample05 = 20;
     >
       Flex Basis
     </Link>
-    <Code codeString={'flexBasis={number} or "string"'} />
+    <Code code={'flexBasis={number} or "string"'} />
   </Text>
   <Flex
     flexDirection={['column', 'row']}
     mb={[1, 2, 3, 4]}
   >
     <Box flexBasis={flexBasisExample01}>
-      <CodeBlock codeString={`flexBasis={${flexBasisExample01}}`} />
+      <CodeBlock code={`flexBasis={${flexBasisExample01}}`} />
     </Box>
     <Box flexBasis={flexBasisExample02}>
-      <CodeBlock codeString={`flexBasis={[${flexBasisExample02}]}`} />
+      <CodeBlock code={`flexBasis={[${flexBasisExample02}]}`} />
     </Box>
     <Box flexBasis={flexBasisExample03}>
-      <CodeBlock codeString={`flexBasis={${flexBasisExample03}}`} />
+      <CodeBlock code={`flexBasis={${flexBasisExample03}}`} />
     </Box>
   </Flex>
 
@@ -522,17 +522,17 @@ const orderExample05 = 20;
     >
       Flex Grow
     </Link>
-    <Code codeString="flexGrow={number}" />
+    <Code code="flexGrow={number}" />
   </Text>
   <Flex
     flexDirection={['column', 'row']}
     mb={[1, 2, 3, 4]}
   >
     <Box flexGrow={flexGrowExample01}>
-      <CodeBlock codeString={`flexGrow={[${flexGrowExample01}]}`} />
+      <CodeBlock code={`flexGrow={[${flexGrowExample01}]}`} />
     </Box>
     <Box flexGrow={flexGrowExample02}>
-      <CodeBlock codeString={`flexGrow={${flexGrowExample02}}`} />
+      <CodeBlock code={`flexGrow={${flexGrowExample02}}`} />
     </Box>
   </Flex>
 
@@ -543,17 +543,17 @@ const orderExample05 = 20;
     >
       Flex Shrink
     </Link>
-    <Code codeString="flexShrink={number}" />
+    <Code code="flexShrink={number}" />
   </Text>
   <Flex
     flexDirection={['column', 'row']}
     mb={[1, 2, 3, 4]}
   >
     <Box flexShrink={flexShrinkExample01}>
-      <CodeBlock codeString={`flexShrink={[${flexShrinkExample01}]}`} />
+      <CodeBlock code={`flexShrink={[${flexShrinkExample01}]}`} />
     </Box>
     <Box flexShrink={flexShrinkExample02}>
-      <CodeBlock codeString={`flexShrink={${flexShrinkExample02}}`} />
+      <CodeBlock code={`flexShrink={${flexShrinkExample02}}`} />
     </Box>
   </Flex>
 
@@ -564,20 +564,20 @@ const orderExample05 = 20;
     >
       Justify Self
     </Link>
-    <Code codeString={'justifySelf="string"'} />
+    <Code code={'justifySelf="string"'} />
   </Text>
   <Flex
     flexDirection={['column', 'row']}
     mb={[1, 2, 3, 4]}
   >
     <Box justifySelf={justifySelfExample01}>
-      <CodeBlock codeString={`justifySelf={[${justifySelfExample01}]}`} />
+      <CodeBlock code={`justifySelf={[${justifySelfExample01}]}`} />
     </Box>
     <Box justifySelf={justifySelfExample02}>
-      <CodeBlock codeString={`justifySelf={${justifySelfExample02}}`} />
+      <CodeBlock code={`justifySelf={${justifySelfExample02}}`} />
     </Box>
     <Box justifySelf={justifySelfExample03}>
-      <CodeBlock codeString={`justifySelf={${justifySelfExample03}}`} />
+      <CodeBlock code={`justifySelf={${justifySelfExample03}}`} />
     </Box>
   </Flex>
 
@@ -588,26 +588,56 @@ const orderExample05 = 20;
     >
       Order
     </Link>
-    <Code codeString="order={number}" />
+    <Code code="order={number}" />
   </Text>
   <Flex
     flexDirection="column"
     mb={[1, 2, 3, 4]}
   >
     <Box order={orderExample01}>
-      <Code codeString={`order={${orderExample01}}`} />
+      <Code code={`order={${orderExample01}}`} />
     </Box>
     <Box order={orderExample02}>
-      <Code codeString={`order={${orderExample02}}`} />
+      <Code code={`order={${orderExample02}}`} />
     </Box>
     <Box order={orderExample03}>
-      <Code codeString={`order={[${orderExample03}]}`} />
+      <Code code={`order={[${orderExample03}]}`} />
     </Box>
     <Box order={orderExample04}>
-      <Code codeString={`order={[${orderExample04}]}`} />
+      <Code code={`order={[${orderExample04}]}`} />
     </Box>
     <Box order={orderExample05}>
-      <Code codeString={`order={${orderExample05}}`} />
+      <Code code={`order={${orderExample05}}`} />
+    </Box>
+  </Flex>
+</ThemeProvider>
+```
+
+#### Hide Box
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Text } from 'src/elements/typography';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} isHidden={hide}>
+    <Text>
+      Hideable
+    </Text>
     </Box>
   </Flex>
 </ThemeProvider>

@@ -13,14 +13,14 @@ import { Code, Text } from 'src/elements/typography'; // ... from 'grape-ui-reac
   <Button>
     {'Basic Button '}
     <Code
-      codeString="<button>"
+      code="<button>"
       language="html"
     />
   </Button>
   <Button href="#">
     {'Basic Button '}
     <Code
-      codeString="<a>"
+      code="<a>"
       language="html"
     />
   </Button>
@@ -31,7 +31,7 @@ import { Code, Text } from 'src/elements/typography'; // ... from 'grape-ui-reac
   >
     {'Basic Button using emailHref '}
     <Code
-      codeString="<a>"
+      code="<a>"
       language="html"
     />
   </Button>
@@ -39,22 +39,22 @@ import { Code, Text } from 'src/elements/typography'; // ... from 'grape-ui-reac
     <Button to="./">
       {'Basic Button '}
       <Code
-        codeString="<Link>"
+        code="<Link>"
       />
       *
     </Button>
     <Text as="span" color="gray" sm>
       {'*Please note, '}
       <Code
-        codeString="<Button>"
+        code="<Button>"
       />
       {' components that use '}
       <Code
-        codeString="<Link>"
+        code="<Link>"
       />
       {' need to be wrapped in a '}
       <Code
-        codeString="<Router>"
+        code="<Router>"
       />
       {` component from 'react-router-dom'.`}
     </Text>
@@ -68,11 +68,13 @@ import { Code, Text } from 'src/elements/typography'; // ... from 'grape-ui-reac
 import { useState } from 'react';
 import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
 import { Flex } from 'src/elements/grid'; // ... from 'grape-ui-react'
-import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 
 const [count, setCount] = useState(0);
 
-<Flex alignItems="center">
+<Flex
+  alignItems="center"
+  flexDirection={['column', 'row']}
+>
   <Button
     bg="white"
     bgActiveColor="pink"
@@ -97,10 +99,11 @@ const [count, setCount] = useState(0);
     bgActiveColor="blue"
     bgHoverColor="blue.light"
     border="3px solid cornflowerblue"
-    borderRadius="100%"
+    borderRadius="12px"
     color="cornflowerblue"
     contained
-    fontSize="26px"
+    fontSize="12px"
+    leadingIcon="🍪"
     m={[1, 2, 3, 4]}
     name="exampleColor"
     onClick={() => setCount(count + 1)}
@@ -113,9 +116,8 @@ const [count, setCount] = useState(0);
     textAlign="center"
     title="Click on me and check out the console."
   >
-    🍪
+    This cookie button has been clicked {`${count} time${count == 1 ? '' : 's'}`}
   </Button>
-  <Text>You have clicked the cookie {`${count} time${count == 1 ? '' : 's'}`}.</Text>
 </Flex>
 ```
 
@@ -369,4 +371,45 @@ const theme = {
     </Button>
   </Flex>
 </ThemeProvider>
+```
+
+#### Hide Button
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Text } from 'src/elements/typography';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1}>
+    <Button isHidden={hide}>
+      Hideable
+    </Button>
+    </Box>
+  </Flex>
+</ThemeProvider>
+```
+
+#### Loading Button
+
+```jsx inside Markdown
+<Button
+  disabled
+  showProgress
+>
+  Loading...
+</Button>
 ```

@@ -13,12 +13,12 @@ import { Code } from 'src/elements/typography';
   >
     <Link to="./">
       {'By using '}
-      <Code codeString="to" />
+      <Code code="to" />
       , it is using React Router.
     </Link>
     <Link href="#">
       {'Leaving out '}
-      <Code codeString="to" />
+      <Code code="to" />
       , it is using a native anchor tag.
     </Link>
     <Link
@@ -26,7 +26,7 @@ import { Code } from 'src/elements/typography';
       target="_blank"
     >
       {'Basic '}
-      <Code codeString="target" />
+      <Code code="target" />
       {' attribute works as well.'}
     </Link>
     <Link
@@ -34,7 +34,7 @@ import { Code } from 'src/elements/typography';
         to: 'emailaddress@grapeui.com'
       }}>
       {'For mailto links '}
-      <Code codeString={'href="mailto:emailaddress@grape-ui.com"'} />
+      <Code code={'href="mailto:emailaddress@grape-ui.com"'} />
       .
     </Link>
     <Link
@@ -49,4 +49,32 @@ import { Code } from 'src/elements/typography';
     </Link>
   </Flex>
 </Router>
+```
+
+#### Hide Link
+
+```jsx inside Markdown
+import { BrowserRouter as Router } from 'react-router-dom';
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Flex } from 'src/elements/grid';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Router>
+    <Flex
+      flexDirection="column"
+    >
+      <Link href="#" isHidden={hide}>
+        Hideable Link
+      </Link>
+    </Flex>
+  </Router>
+</ThemeProvider>
 ```

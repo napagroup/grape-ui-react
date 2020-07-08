@@ -63,7 +63,7 @@ const containerStyleProps = {
   <Card
     cardActions={
       <CodeBlock
-        codeString={
+        code={
           codeCardActions
         }
       />
@@ -73,56 +73,56 @@ const containerStyleProps = {
     }}
     cardActionsLeft={
       <CodeBlock
-        codeString={
+        code={
           codeCardActionsLeft
         }
       />
     }
     cardActionsRight={
       <CodeBlock
-        codeString={
+        code={
           codeCardActionsRight
         }
       />
     }
     cardBody={
       <CodeBlock
-        codeString={
+        code={
           codeCardBody
         }
       />
     }
     cardRichMedia={
       <CodeBlock
-        codeString={
+        code={
           codeCardRichMedia
         }
       />
     }
     cardSecondaryMedia={
       <CodeBlock
-        codeString={
+        code={
           codeCardSecondaryMedia
         }
       />
     }
     cardSubtitle={
       <CodeBlock
-        codeString={
+        code={
           codeCardSubtitle
         }
       />
     }
     cardThumbnail={
       <CodeBlock
-        codeString={
+        code={
           codeCardThumbnail
         }
       />
     }
     cardTitle={
       <CodeBlock
-        codeString={
+        code={
           codeCardTitle
         }
       />

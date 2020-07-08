@@ -66,17 +66,17 @@ const containerStyleProps = {
   p: [2, null, 3],
 };
 
-const codeStringProps = `// Passed in through Props
+const codeProps = `// Passed in through Props
 // cardPadding using default value
 `;
 
-const codeStringSub = `// Using subComponents
+const codeSub = `// Using subComponents
 // cardPadding: 0
 `;
 
 <Flex {...containerStyleProps}>
   <Box {...baseCardStyleProps}>
-    <CodeBlock codeString={codeStringProps} />
+    <CodeBlock code={codeProps} />
     <Card
       cardActions={ExampleActions01}
       cardActionsRight={ExampleActions02}
@@ -89,7 +89,7 @@ const codeStringSub = `// Using subComponents
     />
   </Box>
   <Box {...baseCardStyleProps}>
-    <CodeBlock codeString={codeStringSub} />
+    <CodeBlock code={codeSub} />
     <Card cardPadding={0}  pb={3} {...baseCardStyleProps}>
       <Flex alignItems="center" p={3}>
         <Card.Thumbnail>

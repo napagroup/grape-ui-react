@@ -19,6 +19,7 @@ import {
   typography,
 } from 'src/utils/styledHelpers';
 import { removeSomeProps } from 'src/utils/componentHelpers';
+import { withHideable } from 'src/elements/utils/Hideable';
 
 const { grid: gridSchema } = getGlobalStyles();
 
@@ -52,7 +53,7 @@ const listFactory = factoryProps => {
     children: PropTypes.any.isRequired,
   };
 
-  return styled(ListComponent)`
+  return styled(withHideable(ListComponent))`
     ${colorCore}
     ${ellipsisCore}
     ${fontFamilyCore}
@@ -78,11 +79,14 @@ List.ol = listFactory({ tag: 'ol' });
 List.propTypes = {
   ...typography.propTypes,
   inline: PropTypes.bool,
+  /** Hides component */
+  isHidden: PropTypes.bool,
   unstyled: PropTypes.bool,
 };
 
 List.defaultProps = {
   ...defaultStylesBase,
+  isHidden: false,
 };
 
 /** @component */

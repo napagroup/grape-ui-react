@@ -109,6 +109,10 @@ module.exports = {
       name: 'Image',
     },
     {
+      components: './src/elements/Progress/styled.js',
+      name: 'Progress',
+    },
+    {
       content: './src/elements/forms/Readme.md',
       description: 'All form elements',
       name: 'Forms',
@@ -175,9 +179,14 @@ module.exports = {
               name: 'Table Striped',
             },
             {
-              content: 'src/elements/Table/examples/hideColumns.md',
-              description: 'Demonstrating hideable columns',
-              name: 'Hide Columns',
+              content: 'src/elements/Table/examples/hideComponents.md',
+              description: 'Demonstrating hideable components',
+              name: 'Hide Components',
+            },
+            {
+              content: 'src/elements/Table/examples/loadingState.md',
+              description: 'Demonstrating progress components',
+              name: 'Loading State',
             },
           ],
         },
@@ -186,6 +195,13 @@ module.exports = {
     {
       components: './src/elements/Toolbar/styled.js',
       name: 'Toolbar',
+    },
+    {
+      components: () => ['./src/elements/utils/*/index.js'],
+      content: 'src/elements/utils/components.md',
+      description: 'Component directory',
+      name: 'Utilities',
+      sectionDepth: 1,
     },
   ],
   skipComponentsWithoutExample: true,

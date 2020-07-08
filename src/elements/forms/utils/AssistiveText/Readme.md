@@ -151,7 +151,7 @@ const controlGroupSpacing = [1, 2, 3];
   />
   <Paragraph color="gray.dark">
     {'Example 4. Passing through '}
-    <Code codeString="assistiveTextProps" />
+    <Code code="assistiveTextProps" />
     :
   </Paragraph>
   <DateField

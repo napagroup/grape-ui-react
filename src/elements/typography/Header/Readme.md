@@ -83,3 +83,23 @@ const customBaseFontFamilyTheme = {
   </ThemeProvider>
 </div>
 ```
+
+#### Hide Header
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Header.h5 isHidden={hide}>
+    This header is hideable.
+  </Header.h5>
+</ThemeProvider>
+```

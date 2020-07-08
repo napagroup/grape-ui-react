@@ -1,7 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { removeSomeProps } from 'src/utils/componentHelpers';
+import { Box, Flex } from 'src/elements/grid';
+import {
+  getProgress,
+  getProgressDefaultProps,
+  getProgressPropTypes,
+} from 'src/elements/Progress';
 import { emailHrefString } from 'src/elements/typography/Link/utils';
+import { Hideable } from 'src/elements/utils';
 import { boxShadow } from 'styled-system';
 import { Link as ReactRouterLink } from 'react-router-dom';
 import {
@@ -18,11 +25,17 @@ const propsToTrim = {
   ...positionProps.propTypes,
   ...spaceProps.propTypes,
   ...typography.propTypes,
+  ...getProgressPropTypes,
+  innerBoxProps: PropTypes.object,
+  innerFlexProps: PropTypes.object,
+  leadingIcon: PropTypes.any,
+  leadingIconProps: PropTypes.object,
   variant: PropTypes.string,
 };
 const propsToTrimForButton = {
   ...propsToTrim,
   ...boxShadow.propTypes,
+  ...getProgressDefaultProps,
   bgActiveColor: PropTypes.string,
   bgHoverColor: PropTypes.string,
   contained: false,
@@ -42,8 +55,36 @@ const propsToTrimForLink = {
   outline: false,
   raised: false,
 };
+
+const getChildren = options => {
+  const {
+    children,
+    innerBoxProps,
+    innerFlexProps,
+    leadingIcon,
+    leadingIconProps,
+    p,
+    pl,
+    px,
+    showProgress,
+  } = options;
+  if (leadingIcon || showProgress) {
+    return (
+      <Flex {...innerFlexProps}>
+        <Box pr={pl || px || p} {...leadingIconProps}>
+          <Hideable hide={showProgress}>
+            {leadingIcon}
+          </Hideable>
+          {getProgress({ showProgress, ...options })}
+        </Box>
+        <Box {...innerBoxProps}>{children}</Box>
+      </Flex>
+    );
+  }
+  return <Box {...innerBoxProps}>{children}</Box>;
+};
+
 export const ButtonComponent = ({
-  children,
   emailHref,
   href,
   to,
@@ -55,7 +96,7 @@ export const ButtonComponent = ({
   if (href) {
     output = (
       <a href={href} {...trimmedPropsLink}>
-        <div>{children}</div>
+        {getChildren(props)}
       </a>
     );
   } else if (to) {
@@ -64,19 +105,19 @@ export const ButtonComponent = ({
     };
     output = (
       <ReactRouterLink {...trimmedPropsLink} {...linkProps}>
-        <div>{children}</div>
+        {getChildren(props)}
       </ReactRouterLink>
     );
   } else if (emailLinkHref) {
     return (
       <a href={emailLinkHref} {...trimmedPropsLink}>
-        <div>{children}</div>
+        {getChildren(props)}
       </a>
     );
   } else {
     output = (
       <button type="button" {...removeSomeProps(props, Object.keys(propsToTrimForButton))}>
-        <div>{children}</div>
+        {getChildren(props)}
       </button>
     );
   }

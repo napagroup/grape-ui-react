@@ -6,6 +6,7 @@ import {
   layout,
   space,
 } from 'styled-system';
+import { withHideable } from 'src/elements/utils/Hideable';
 import {
   colorCore,
   ellipsisCore,
@@ -20,7 +21,7 @@ import {
 import { CodeComponent } from './component';
 import { codeDefaultProps, codePropTypes } from './utils';
 
-const Code = styled(CodeComponent)`
+const Code = styled(withHideable(CodeComponent))`
   ${background}
   ${border}
   ${colorCore}
@@ -47,7 +48,7 @@ Code.defaultProps = {
   ...codeDefaultProps,
 };
 
-const CodeBlock = styled(Code)``;
+const CodeBlock = styled(withHideable(Code))``;
 
 CodeBlock.propTypes = {
   ...codePropTypes,

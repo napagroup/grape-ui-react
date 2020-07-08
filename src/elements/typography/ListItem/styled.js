@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { getGlobalStyles } from 'src/global-styles';
 import { fontWeight, space } from 'styled-system';
@@ -15,11 +16,12 @@ import {
   textDecorationCore,
   typography,
 } from 'src/utils/styledHelpers';
+import { withHideable } from 'src/elements/utils/Hideable';
 import { ListItemComponent } from './component';
 
 const { grid: { gutter } } = getGlobalStyles();
 
-const ListItem = styled(ListItemComponent)`
+const ListItem = styled(withHideable(ListItemComponent))`
   ${colorCore}
   ${ellipsisCore}
   ${fontFamilyCore}
@@ -35,10 +37,13 @@ const ListItem = styled(ListItemComponent)`
 
 ListItem.propTypes = {
   ...typography.propTypes,
+  /** Hides component */
+  isHidden: PropTypes.bool,
 };
 
 ListItem.defaultProps = {
   ...defaultStylesBase,
+  isHidden: false,
   mb: scaleFont(gutter, 0.25),
 };
 

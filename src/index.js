@@ -10,6 +10,7 @@ import {
 } from './elements/forms';
 import { Box, Flex } from './elements/grid';
 import { Image } from './elements/Image';
+import { Progress } from './elements/Progress';
 import { Table } from './elements/Table';
 import { Toolbar } from './elements/Toolbar';
 import {
@@ -22,6 +23,7 @@ import {
   Paragraph,
   Text,
 } from './elements/typography';
+import { Hideable, withHideable } from './elements/utils';
 import { getGlobalStyles, getGlobalOverrides } from './global-styles';
 import * as styledHelpers from './utils/styledHelpers';
 
@@ -38,11 +40,13 @@ export {
   getGlobalOverrides,
   getGlobalStyles,
   Header,
+  Hideable,
   Image,
   Link,
   List,
   ListItem,
   Paragraph,
+  Progress,
   SelectField,
   styledComponents,
   styledHelpers,
@@ -50,4 +54,5 @@ export {
   Text,
   TextField,
   Toolbar,
+  withHideable,
 };

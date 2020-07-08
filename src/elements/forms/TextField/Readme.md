@@ -45,7 +45,7 @@ import {
   </Flex>
   <Paragraph lg>
     {'Disabled '}
-    <Code codeString="disabled={true}" />
+    <Code code="disabled={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -68,7 +68,7 @@ import {
   </Flex>
   <Text lg>
     {'Email '}
-    <Code codeString="email={true}" />
+    <Code code="email={true}" />
   </Text>
   <Paragraph sm>
     <Text fontWeight="bold">NOTE:</Text>
@@ -93,7 +93,7 @@ import {
   </Flex>
   <Paragraph lg>
     {'Multiline '}
-    <Code codeString="multiline={true}" />
+    <Code code="multiline={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -116,7 +116,7 @@ import {
   </Flex>
   <Paragraph lg>
     {'Password '}
-    <Code codeString="password={true}" />
+    <Code code="password={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -138,7 +138,7 @@ import {
   </Flex>
   <Paragraph lg>
     {'Plain Text '}
-    <Code codeString="plainText={true}" />
+    <Code code="plainText={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -228,7 +228,7 @@ import {
 <ThemeProvider theme={{}}>
   <Text lg>
     {'Currency '}
-    <Code codeString="currency={true}" />
+    <Code code="currency={true}" />
   </Text>
   <Paragraph sm>
     <Text fontWeight="bold">
@@ -255,7 +255,7 @@ import {
   </Flex>
   <Paragraph lg>
     {'Integer '}
-    <Code codeString="integer={true}" />
+    <Code code="integer={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -276,7 +276,7 @@ import {
   </Flex>
   <Paragraph lg>
     {'Numeric '}
-    <Code codeString="numeric={true}" />
+    <Code code="numeric={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -299,7 +299,7 @@ import {
   </Flex>
   <Paragraph lg>
     {'Phone '}
-    <Code codeString="phone={true}" />
+    <Code code="phone={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -322,7 +322,7 @@ import {
   </Flex>
   <Paragraph lg>
     {'Postal Code '}
-    <Code codeString="postalCode={true}" />
+    <Code code="postalCode={true}" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -403,7 +403,7 @@ const onRegisterClick = () => {
 <ThemeProvider theme={{}}>
   <Paragraph lg>
     {'With '}
-    <Code codeString="useRef" />
+    <Code code="useRef" />
   </Paragraph>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -502,5 +502,36 @@ function MyFormComponent(props) {
 }
 <ThemeProvider theme={{}}>
   <MyFormComponent />
+</ThemeProvider>
+```
+
+#### Hide TextField
+
+```jsx inside Markdown
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid';
+import { Button } from 'src/elements/Button';
+
+const [hide, setHidden] = useState(false);
+
+<ThemeProvider theme={{}}>
+  <Button
+    onClick={() => setHidden(!hide)}
+  >
+    Toggle Visibility
+  </Button>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+    <TextField
+      isHidden={hide}
+      labelText="Name"
+      name="name"
+    />
+    </Box>
+  </Flex>
 </ThemeProvider>
 ```
