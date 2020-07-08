@@ -132,8 +132,8 @@ exports[`Circular Progress - snapshots should return a Circular Progress with cu
   -webkit-backface-visibility: hidden;
   fill: none;
   stroke: hsl(312.8,67.8%,47.5%);
-  -webkit-animation-name: kEfyFd;
-  animation-name: kEfyFd;
+  -webkit-animation-name: gObxMc;
+  animation-name: gObxMc;
   stroke-dashoffset: 25.132741228718345px;
 }
 
@@ -296,8 +296,8 @@ exports[`Circular Progress - snapshots should return an Indeterminate Circular P
   -webkit-backface-visibility: hidden;
   fill: none;
   stroke: hsl(312.8,67.8%,47.5%);
-  -webkit-animation-name: kEfyFd;
-  animation-name: kEfyFd;
+  -webkit-animation-name: gObxMc;
+  animation-name: gObxMc;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
   -webkit-animation-timing-function: linear;

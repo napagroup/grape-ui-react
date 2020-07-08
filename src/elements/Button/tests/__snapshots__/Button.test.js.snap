@@ -878,8 +878,8 @@ exports[`Button base should return a Button with loading indicator 1`] = `
   -webkit-backface-visibility: hidden;
   fill: none;
   stroke: hsl(312.8,67.8%,47.5%);
-  -webkit-animation-name: kEfyFd;
-  animation-name: kEfyFd;
+  -webkit-animation-name: gObxMc;
+  animation-name: gObxMc;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
   -webkit-animation-timing-function: linear;
