@@ -29,11 +29,11 @@ const circularRotate = keyframes`
 `;
 
 const circularDash = props => keyframes`
-  from {
-    stroke-dashoffset: ${props.circumference};
+  0% {
+    stroke-dashoffset: ${props.circumference * 2};
   }
-  to {
-    stroke-dashoffset: ${-1 * props.circumference};
+  100% {
+    stroke-dashoffset: 0;
   }
 `;
 
