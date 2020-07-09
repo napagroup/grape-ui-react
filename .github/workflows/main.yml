@@ -69,8 +69,8 @@ jobs:
       run: |
         cd ${{ env.MARKETING_REPO_PATH }}
         rm -rf docs
-        npm run clean
         npm install
+        npm run clean
         npm run build
         pwd && ls -hil
     - name: Copy styleguide contents over to grape-ui-market/public/docs
