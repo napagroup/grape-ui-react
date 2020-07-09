@@ -69,6 +69,7 @@ jobs:
       run: |
         cd ${{ env.MARKETING_REPO_PATH }}
         rm -rf docs
+        npm run clean
         npm install
         npm run build
         pwd && ls -hil
