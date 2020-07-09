@@ -1,6 +1,6 @@
 {
   "name": "grape-ui-react",
-  "version": "0.13.1",
+  "version": "0.13.2",
   "description": "A React component library built with styled-components.",
   "main": "lib/index.js",
   "scripts": {
