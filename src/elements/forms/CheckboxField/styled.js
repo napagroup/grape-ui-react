@@ -126,6 +126,7 @@ const renderValueOrComponent = propsFromComponent => {
       {hasSelectAll
         && (
           <CheckboxInput
+            alt={`${name}_selectAll`}
             checked={isChecked(values)}
             inputRef={inputRef}
             name={`${name}_selectAll`}
