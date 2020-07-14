@@ -33,10 +33,7 @@ const beatlesOptions = [
 #### Demonstrating Individual Controlled Components with `<CheckboxField.Input>` and react-hook-form
 
 ```jsx inside Markdown
-import {
-  Controller,
-  useForm,
-} from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { ThemeProvider } from 'styled-components';
 import {
   Box,
@@ -46,7 +43,6 @@ import { Header } from 'src/elements/typography';
 import { Button } from 'src/elements/Button';
 
 const {
-  control,
   getValues,
   register,
   setValue,
@@ -157,10 +153,7 @@ Here is a list of all the props and subComponents for a card, sorted in order of
 #### Demonstrating Group Controlled Components with `<CheckboxField>` and react-hook-form
 
 ```jsx inside Markdown
-import {
-  Controller,
-  useForm,
-} from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { ThemeProvider } from 'styled-components';
 import {
   Box,
@@ -173,7 +166,6 @@ const defaultValues = {
   courses: ['🎨', false, false, false, '💃', false, ],
 };
 const {
-  control,
   getValues,
   register,
   setValue,

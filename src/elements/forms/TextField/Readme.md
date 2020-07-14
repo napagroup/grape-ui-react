@@ -454,10 +454,7 @@ For further documentation on integrating UI component libraries with react-hook-
 #### Demonstrating Controlled Components (via react-hook-form)
 
 ```jsx inside Markdown
-import {
-  Controller,
-  useForm,
-} from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { ThemeProvider } from 'styled-components';
 import {
   Box,
@@ -467,7 +464,6 @@ import { Button } from 'src/elements/Button'; // ... from 'grape-ui-react'
 
 function MyFormComponent(props) {
   const {
-    control,
     getValues,
     register,
     watch,
@@ -486,9 +482,7 @@ function MyFormComponent(props) {
       </Button>
       <Flex flexDirection={['column', 'row']}>
         <Box px={1} width={[1, 1 / 2]}>
-        <Controller
-          as={<TextField />}
-          control={control}
+        <TextField
           defaultValue={name}
           inputRef={register}
           isRequired

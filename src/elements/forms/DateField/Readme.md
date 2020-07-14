@@ -766,10 +766,7 @@ For further documentation on integrating UI component libraries with react-hook-
 
 ```jsx inside Markdown
 import moment from 'moment';
-import {
-  Controller,
-  useForm,
-} from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { ThemeProvider } from 'styled-components';
 import {
   Box,
@@ -800,15 +797,12 @@ moment.locale('en');
     pb={7}
   >
     <Box px={1} width={[1, 1 / 2]} pb={50}>
-      <Controller
-        as={<DateField />}
-        control={control}
+      <DateField
+        inputRef={register}
         labelText="Enrollment Date"
         locale="it"
         name="enrollmentDate"
-        onChange={
-          selected => selected[0].selectedDay
-        }
+        onChange={selected => selected.selectedDay}
       />
     </Box>
   </Flex>
