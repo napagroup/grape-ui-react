@@ -197,6 +197,10 @@ module.exports = {
       name: 'Toolbar',
     },
     {
+      components: './src/elements/Alert/styled.js',
+      name: 'Alert',
+    },
+    {
       components: () => ['./src/elements/utils/*/index.js'],
       content: 'src/elements/utils/components.md',
       description: 'Component directory',
