@@ -766,10 +766,7 @@ For further documentation on integrating UI component libraries with react-hook-
 
 ```jsx inside Markdown
 import moment from 'moment';
-import {
-  Controller,
-  useForm,
-} from 'react-hook-form';
+import { Controller, useForm } from 'react-hook-form';
 import { ThemeProvider } from 'styled-components';
 import {
   Box,
@@ -779,7 +776,6 @@ import { Header } from 'src/elements/typography';
 
 const {
   control,
-  register,
   watch,
 } = useForm({
   defaultValues: {
@@ -797,18 +793,21 @@ moment.locale('en');
   </Header.h5>
   <Flex
     flexDirection={['column', 'row']}
-    pb={7}
   >
-    <Box px={1} width={[1, 1 / 2]} pb={50}>
+    <Box px={1} width={[1, 1 / 2]}>
       <Controller
-        as={<DateField />}
         control={control}
-        labelText="Enrollment Date"
-        locale="it"
         name="enrollmentDate"
-        onChange={
-          selected => selected[0].selectedDay
-        }
+        render={({ onChange, onBlur, value }) => {
+          return (
+          <DateField
+            labelText="Enrollment Date"
+            locale="it"
+            onChange={selected => onChange(selected.selectedDay)}
+            value={value}
+          />
+          );
+        }}
       />
     </Box>
   </Flex>
@@ -834,7 +833,7 @@ const [hide, setHidden] = useState(false);
   >
     Toggle Visibility
   </Button>
-  <Flex flexDirection={['column', 'row']}>
+  <Flex flexDirection={['column', 'row']} pb={7}>
     <Box px={1} width={[1, 1 / 2]}>
     <DateField
       isHidden={hide}

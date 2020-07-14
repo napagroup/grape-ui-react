@@ -12,6 +12,10 @@ import {
 import { Button } from 'src/elements/Button';
 import { CheckboxField } from '..';
 
+const defaultValues = {
+  courses: ['🎨', false, false, false],
+};
+
 const courseOptions = [
   {
     label: '🎨 Arts & Humanities',
@@ -30,25 +34,21 @@ const courseOptions = [
     value: '🌎',
   },
 ];
-const defaultValues = {
-  courses: ['🎨', false, false, false],
-};
-function App({ data, getFormData, options }) {
+function App({ defaultFormData, getFormData, options }) {
   const {
     getValues,
     register,
     setValue,
     watch,
-  } = useForm({ defaultValues });
+  } = useForm({ defaultValues: defaultFormData });
   const courses = watch('courses') || [];
 
   const handleSelectAll = e => {
     const { target: { checked } } = e;
-    setValue([
-      {
-        courses: checked ? options.map(option => option.value) : new Array(options.length).fill(false),
-      },
-    ]);
+    setValue(
+      'courses',
+      checked ? options.map(option => option.value) : new Array(options.length).fill(false),
+    );
   };
   return (
     <ThemeProvider theme={{}}>
@@ -69,19 +69,18 @@ function App({ data, getFormData, options }) {
   );
 }
 describe('CheckboxField - data', () => {
-  const defaultCourses = ['🎨', false, false, false];
   let getFormData;
   beforeEach(() => {
     jest.clearAllMocks();
     getFormData = jest.fn();
     render(
-      <App data={defaultValues} getFormData={getFormData} options={courseOptions} />
+      <App defaultFormData={defaultValues} getFormData={getFormData} options={courseOptions} />
     );
   });
   it('should have options with default selections', () => {
     fireEvent.click(screen.getByRole('button'));
     const actual = getFormData.mock.calls[0][0];
-    expect(actual.courses).toEqual(defaultCourses);
+    expect(actual.courses).toEqual(defaultValues.courses);
     expect(actual.courses_selectAll).toEqual(false);
   });
   it('should have the option checked when selected', () => {
@@ -89,7 +88,7 @@ describe('CheckboxField - data', () => {
     fireEvent.click(screen.getByLabelText(label));
     fireEvent.click(screen.getByRole('button'));
     const actual = getFormData.mock.calls[0][0];
-    const expected = [...defaultCourses];
+    const expected = [...defaultValues.courses];
     expected[3] = '🌎';
     expect(actual.courses).toEqual(expected);
     expect(actual.courses_selectAll).toEqual(false);
