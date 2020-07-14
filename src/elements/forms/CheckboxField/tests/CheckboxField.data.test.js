@@ -45,11 +45,10 @@ function App({ defaultFormData, getFormData, options }) {
 
   const handleSelectAll = e => {
     const { target: { checked } } = e;
-    setValue([
-      {
-        courses: checked ? options.map(option => option.value) : new Array(options.length).fill(false),
-      },
-    ]);
+    setValue(
+      'courses',
+      checked ? options.map(option => option.value) : new Array(options.length).fill(false),
+    );
   };
   return (
     <ThemeProvider theme={{}}>

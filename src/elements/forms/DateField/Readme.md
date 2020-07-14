@@ -766,7 +766,7 @@ For further documentation on integrating UI component libraries with react-hook-
 
 ```jsx inside Markdown
 import moment from 'moment';
-import { useForm } from 'react-hook-form';
+import { Controller, useForm } from 'react-hook-form';
 import { ThemeProvider } from 'styled-components';
 import {
   Box,
@@ -775,7 +775,7 @@ import {
 import { Header } from 'src/elements/typography';
 
 const {
-  register,
+  control,
   watch,
 } = useForm({
   defaultValues: {
@@ -783,6 +783,7 @@ const {
   }
 });
 
+            // onChange={selected => console.log({ selected })}
 const enrollmentDate = watch('enrollmentDate');
 moment.locale('en');
 
@@ -793,15 +794,21 @@ moment.locale('en');
   </Header.h5>
   <Flex
     flexDirection={['column', 'row']}
-    pb={7}
   >
-    <Box px={1} width={[1, 1 / 2]} pb={50}>
-      <DateField
-        inputRef={register}
-        labelText="Enrollment Date"
-        locale="it"
+    <Box px={1} width={[1, 1 / 2]}>
+      <Controller
+        control={control}
         name="enrollmentDate"
-        onChange={selected => selected.selectedDay}
+        render={({ onChange, onBlur, value }) => {
+          return (
+          <DateField
+            labelText="Enrollment Date"
+            locale="it"
+            onChange={selected => onChange(selected.selectedDay)}
+            value={value}
+          />
+          );
+        }}
       />
     </Box>
   </Flex>
@@ -827,7 +834,7 @@ const [hide, setHidden] = useState(false);
   >
     Toggle Visibility
   </Button>
-  <Flex flexDirection={['column', 'row']}>
+  <Flex flexDirection={['column', 'row']} pb={7}>
     <Box px={1} width={[1, 1 / 2]}>
     <DateField
       isHidden={hide}

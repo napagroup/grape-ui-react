@@ -97,11 +97,10 @@ const checkboxFields = courseOptions.map((option, idx)  => {
 
 const handleSelectAll = e => {
   const { target: { checked } } = e;
-  setValue([
-    {
-      courses: checked ? courseOptions.map(option =>  option.value) : new Array(courseOptions.length).fill(false),
-    },
-  ]);
+  setValue(
+    'courses',
+    checked ? courseOptions.map(option => option.value) : new Array(courseOptions.length).fill(false),
+  );
 };
 const isChecked = values => values && values.filter(val => !val).length === 0;
 
@@ -202,11 +201,10 @@ const courses = watch('courses') || [];
 const chosenCourses = courses.filter(value => value).map(value => value).join(', ');
 const handleSelectAll = e => {
   const { target: { checked } } = e;
-  setValue([
-    {
-      courses: checked ? courseOptions.map(option =>  option.value) : new Array(courseOptions.length).fill(false),
-    },
-  ]);
+  setValue(
+    'courses',
+    checked ? courseOptions.map(option => option.value) : new Array(courseOptions.length).fill(false),
+  );
 };
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
