@@ -783,7 +783,6 @@ const {
   }
 });
 
-            // onChange={selected => console.log({ selected })}
 const enrollmentDate = watch('enrollmentDate');
 moment.locale('en');
 
