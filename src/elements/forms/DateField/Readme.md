@@ -775,7 +775,6 @@ import {
 import { Header } from 'src/elements/typography';
 
 const {
-  control,
   register,
   watch,
 } = useForm({
