@@ -64,7 +64,6 @@ export const AlertComponent = ({
   pt,
   px,
   py,
-  showProgress,
   ...props
 }) => {
   const textProps = { color };
@@ -86,10 +85,7 @@ export const AlertComponent = ({
     py,
   };
   return (
-    <Box
-      showProgress={showProgress}
-      {...removeSomeProps(props, Object.keys(alertPropTypes))}
-    >
+    <Box {...removeSomeProps(props, Object.keys(alertPropTypes))}>
       <Flex
         {...flexContainerProps}
         {...paddingProps}
