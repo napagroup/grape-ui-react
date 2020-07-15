@@ -4,10 +4,42 @@ Yo.
 
 ```jsx in Markdown
 // Alert children as string.
-<div>
-  <Alert>Basic alert.</Alert>
-  <Alert variant="success">Success!</Alert>
-</div>
+import { Flex } from 'src/elements/grid';
+import { CodeBlock } from 'src/elements/typography';
+
+const examples = [
+  'default',
+  'danger',
+  'dark',
+  'info',
+  'light',
+  'link',
+  'primary',
+  'secondary',
+  'success',
+  'warning',
+];
+
+const exampleAlerts = examples.map((example, idx) =>
+  <Flex
+    key={`alert-variant-example-${idx}`}
+    flexDirection="column"
+    maxWidth={400}
+    mx={1}
+  >
+    <CodeBlock code={`// ${example}`} />
+    <Alert variant={example}>Basic {example} alert.</Alert>
+    <Alert variant={`contained-${example}`}>Basic contained-{example} alert.</Alert>
+    <Alert variant={`outlined-${example}`}>Basic outlined-{example} alert.</Alert>
+  </Flex>
+);
+
+<Flex
+  flexWrap="wrap"
+  justifyContent="space-evenly"
+>
+  {exampleAlerts}
+</Flex>
 ```
 
 #### Basic Node Example

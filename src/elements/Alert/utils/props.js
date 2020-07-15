@@ -10,10 +10,8 @@ export const alertPropTypes = {
 export const alertDefaultProps = {
   alertAction: null,
   alertActionProps: {},
-  background: 'rgba(0, 0, 0, 0.8)',
   borderRadius: 4,
   children: '',
-  color: 'white',
   display: 'inline-block',
   flexContainerProps: {
     alignItems: 'center',
@@ -22,5 +20,7 @@ export const alertDefaultProps = {
   m: [2, null, 3],
   maxWidth: [1, 600],
   minWidth: 300,
-  p: 3,
+  px: 3,
+  py: 2,
+  variant: 'contained-default',
 };
