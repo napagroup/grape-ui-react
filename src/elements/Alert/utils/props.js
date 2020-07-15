@@ -6,6 +6,7 @@ const alertStyledProps = {
   m: [2, null, 3],
   maxWidth: [1, 600],
   minWidth: 300,
+  overflow: 'hidden',
   px: 3,
   py: 2,
   variant: 'contained-default',
@@ -75,4 +76,5 @@ export const alertDefaultProps = {
     alignItems: 'center',
     justifyContent: 'space-between',
   },
+  progressPlacement: 'bottom',
 };
