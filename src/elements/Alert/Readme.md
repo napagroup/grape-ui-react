@@ -45,15 +45,9 @@ const exampleAlerts = examples.map((example, idx) =>
 #### Custom Variants Example
 
 ```jsx in Markdown
-// Alert children as string.
 import { ThemeProvider } from 'styled-components';
 import { Flex } from 'src/elements/grid';
 import { CodeBlock } from 'src/elements/typography';
-import * as styledHelpers from 'src/utils/styledHelpers'; // ... import { styledHelpers} from 'grape-ui-react'
-import { getGlobalOverrides, getGlobalStyles } from 'src/global-styles'; // ... from 'grape-ui-react'
-
-const globalStyles = getGlobalStyles();
-const { colors } = globalStyles;
 
 const colorThemeProps = {
   colors: {
