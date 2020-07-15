@@ -48,4 +48,5 @@ export const toolbarDefaultProps = {
     maxWidth: 960,
     width: 1,
   },
+  variant: 'default',
 };
