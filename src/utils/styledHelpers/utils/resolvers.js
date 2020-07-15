@@ -47,12 +47,17 @@ export const resolveBorderRadius = (props, globalOverrides, defaultBorderRadius 
   return getBorderRadiusForFormFieldType(borderSchema.borderRadius.base, formStyle);
 };
 
+const resolveBaseColor = (colorToResolve, colorSchema) => {
+  const value = resolveToProperty(`${colorToResolve}.base`, colorSchema);
+  return value || resolveToProperty(`${colorToResolve}`, colorSchema);
+};
+
 export const resolveColor = (colorToResolve, globalOverrides, defaultColor = defaultStylesBase.color) => {
   const globalStyles = resolveGlobal(globalOverrides);
   const { colors: colorSchema } = globalStyles;
   const resolvedValue = isKeyNestedProp(colorToResolve)
     ? resolveToProperty(colorToResolve, colorSchema)
-    : resolveToProperty(`${colorToResolve}.base`, colorSchema);
+    : resolveBaseColor(colorToResolve, colorSchema);
   return resolvedValue || colorToResolve || defaultColor;
 };
 

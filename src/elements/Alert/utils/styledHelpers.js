@@ -7,29 +7,31 @@ import {
 import { getGlobalOverrides } from 'src/global-styles';
 import { resolveColor } from 'src/utils/styledHelpers';
 
-const callback = (acc, cur) => ({
-  ...acc,
-  [cur.variantName]: {
-    bg: transparentize(0.825, resolveColor(cur.color, getGlobalOverrides())),
-    color: resolveColor(cur.color, getGlobalOverrides()),
-  },
-  [`contained-${[cur.variantName]}`]: {
-    bg: resolveColor(cur.color, getGlobalOverrides()),
-    color: readableColor(resolveColor(cur.color, getGlobalOverrides())),
-  },
-  [`outlined-${[cur.variantName]}`]: {
-    bg: 'transparent',
-    borderColor: resolveColor(cur.color, getGlobalOverrides()),
-    borderStyle: 'solid',
-    borderWidth: 1,
-    color: resolveColor(cur.color, getGlobalOverrides()),
-  },
-});
+const callback = props => (acc, cur) => {
+  const myColor = resolveColor(cur.color, getGlobalOverrides(props));
+  return {
+    ...acc,
+    [cur.variantName]: {
+      bg: transparentize(0.825, myColor),
+      color: myColor,
+    },
+    [`contained-${[cur.variantName]}`]: {
+      bg: myColor,
+      color: readableColor(myColor),
+    },
+    [`outlined-${[cur.variantName]}`]: {
+      bg: 'transparent',
+      borderColor: myColor,
+      borderStyle: 'solid',
+      borderWidth: 1,
+      color: myColor,
+    },
+  };
+};
 
-export const alertVariants = ({ alertThemes }) => {
-  console.log({ alertThemes });
-
-  const alertVariantsReducer = alertThemes.reduce(callback, {});
+export const alertVariants = props => {
+  const { alertThemes } = props;
+  const alertVariantsReducer = alertThemes.reduce(callback(props), {});
   return (
     css`
     ${variant({
