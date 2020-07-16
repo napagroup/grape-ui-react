@@ -469,25 +469,32 @@ function MyFormComponent(props) {
     watch,
   } = useForm({
     defaultValues: {
-      name: 'Bruce Wayne'
+      enrolleeName: 'Name',
+      enrolleeEmail: '',
     }
   });
 
   return (
     <>
       <Button
-        onClick={() => alert(getValues().name)}
+        onClick={() => alert(JSON.stringify(getValues()))}
       >
-        Get Name
+        Get Form Data
       </Button>
       <Flex flexDirection={['column', 'row']}>
         <Box px={1} width={[1, 1 / 2]}>
         <TextField
-          defaultValue={name}
           inputRef={register}
-          isRequired
           labelText="Name"
-          name="name"
+          name="enrolleeName"
+          placeholder="Enrollee Name"
+        />
+        <TextField
+          inputRef={register}
+          email
+          labelText="Email"
+          name="enrolleeEmail"
+          placeholder="enrollee@course.grape-ui.com"
         />
         </Box>
       </Flex>
