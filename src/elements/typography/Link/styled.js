@@ -19,7 +19,6 @@ import {
 import { withHideable } from 'src/elements/utils/Hideable';
 import { LinkComponent } from './component';
 
-
 const hoverStyle = props => `
   color: ${resolveColor(props.hoverColor, getGlobalOverrides(props))};
   cursor: pointer;

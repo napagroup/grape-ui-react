@@ -79,7 +79,6 @@ const scaleButton = props => {
   return space(nextProps);
 };
 
-
 const Button = styled(withHideable(ButtonComponent))`
   ${borderButton}
   ${borderRadiusCore}

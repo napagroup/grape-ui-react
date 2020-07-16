@@ -62,7 +62,6 @@ describe('TextFieldComponent with a numeric attribute', () => {
   });
 });
 
-
 describe('TextFieldComponent with a phone attribute', () => {
   it('should return a TextFieldComponent that contains has phone style', () => {
     const component = mount(<ThemeProvider theme={{}}><TextFieldComponent phone /></ThemeProvider>);

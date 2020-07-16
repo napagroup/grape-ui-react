@@ -1,4 +1,3 @@
-
 export const makeSanitizeString = (isCaseSensitive = false) => a => (isCaseSensitive ? String(a) : String(a).toLowerCase());
 export const makeSanitizeNumber = () => a => Number(a);
 
