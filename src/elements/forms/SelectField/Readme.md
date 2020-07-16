@@ -23,7 +23,6 @@ const colorOptions = [
   { label: 'Blue', value: 'blue' },
 ];
 
-const linkState = () => null;
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -31,7 +30,6 @@ const linkState = () => null;
         isClearable
         labelText="Color"
         name="exampleBasicUsageOutlined"
-        onChange={linkState()}
         options={colorOptions}
       />
     </Box>
@@ -41,7 +39,6 @@ const linkState = () => null;
         isClearable
         labelText="Color"
         name="exampleBasicUsageFilled"
-        onChange={linkState()}
         options={colorOptions}
       />
     </Box>
@@ -58,7 +55,6 @@ const linkState = () => null;
         isClearable
         labelText="Color"
         name="exampleSelectFieldDisabledOutlined"
-        onChange={linkState()}
         options={colorOptions}
       />
     </Box>
@@ -70,7 +66,6 @@ const linkState = () => null;
         isClearable
         labelText="Color"
         name="exampleSelectFieldDisabledFilled"
-        onChange={linkState()}
         options={colorOptions}
       />
     </Box>
@@ -86,7 +81,6 @@ const linkState = () => null;
         isMulti
         labelText="Color"
         name="exampleSelectFieldPlainTextOutlined"
-        onChange={linkState()}
         options={colorOptions}
         plainText
         value={[
@@ -101,7 +95,6 @@ const linkState = () => null;
         isClearable
         labelText="Color"
         name="exampleSelectFieldPlainTextFilled"
-        onChange={linkState()}
         options={colorOptions}
         plainText
         value={colorOptions[0]}
@@ -170,7 +163,6 @@ const linkState = () => null;
         isClearable
         labelText="Color"
         name="exampleColorOutlined"
-        onChange={linkState()}
         options={colorOptions}
       />
     </Box>
@@ -183,7 +175,6 @@ const linkState = () => null;
         isClearable
         labelText="Color"
         name="exampleColorFilled"
-        onChange={linkState()}
         options={colorOptions}
       />
     </Box>
@@ -201,7 +192,6 @@ import {
 } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { rogueOptions } from '../examples/';
 
-const linkState = () => null;
 <ThemeProvider theme={{}}>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
@@ -215,7 +205,6 @@ const linkState = () => null;
         labelText="Batman Villain"
         menuElevation="03"
         name="exampleKitchenSinkUsageOutlined"
-        onChange={linkState()}
         options={rogueOptions}
         placeholder="Choose as many as you'd like."
         styleOverrides={{
@@ -246,7 +235,6 @@ const linkState = () => null;
         labelText="Batman Villain"
         menuElevation="03"
         name="exampleKitchenSinkUsageFilled"
-        onChange={linkState()}
         options={rogueOptions}
         placeholder="Choose as many as you'd like."
       />
@@ -269,7 +257,6 @@ import { Text } from 'src/elements/typography'; // ... from 'grape-ui-react'
 import { components } from 'react-select';
 import { rogueOptions } from '../examples/';
 
-const linkState = () => null;
 const formatOptionLabel = ({ value, label }) => (
   <Flex flexDirection="row">
     <Box>
@@ -298,7 +285,6 @@ const CustomOption = ({ children, ...props }) => (
         components={{ Option: CustomOption }}
         labelText="Custom Option"
         name="exampleCustomOptionsOutlined"
-        onChange={linkState()}
         options={rogueOptions}
       />
     </Box>
@@ -309,7 +295,6 @@ const CustomOption = ({ children, ...props }) => (
         formStyle="filled"
         labelText="Format Option Label"
         name="exampleFormatOptionFilled"
-        onChange={linkState()}
         options={rogueOptions}
       />
     </Box>
@@ -330,7 +315,6 @@ import {
   princeSongOptions,
 } from '../examples';
 
-const linkState = () => null;
 
 <ThemeProvider theme={{}}>
   <Flex
@@ -344,7 +328,6 @@ const linkState = () => null;
         isMulti
         labelText="Prince Songs"
         name="exampleStyleOverridesOutlined"
-        onChange={linkState()}
         options={princeSongOptions}
         styleOverrides={{
           multiValue: {
@@ -363,7 +346,6 @@ const linkState = () => null;
         isMulti
         labelText="The Artist Formerly Known as Prince songs"
         name="exampleStyleOverridesFilled"
-        onChange={linkState()}
         options={afkapSongOptions}
         styleOverrides={{
           multiValue: {
@@ -394,12 +376,6 @@ import {
 } from 'src/elements/grid'; // ... from 'grape-ui-react'
 import { Header } from 'src/elements/typography';
 import { Button } from '../../Button';
-
-const {
-  control,
-  register,
-  watch,
-} = useForm();
 
 const enrollmentStatusOptions = [
   {
@@ -442,6 +418,17 @@ const courseOptions = [
     value: 'languageLearning',
   },
 ];
+const {
+  control,
+  getValues,
+  register,
+  watch,
+} = useForm({
+  defaultValues: {
+    status: enrollmentStatusOptions[0],
+  },
+});
+
 const selectedStatusOption = watch('status');
 const selectedCourseOptions = watch('courses') || [];
 const chosenCourses = selectedCourseOptions.map(option => option.label).join(', ');
@@ -450,17 +437,26 @@ const chosenCourses = selectedCourseOptions.map(option => option.label).join(', 
   <Header.h5 margin="0 0 1rem">
     {selectedStatusOption && selectedStatusOption.label ? `Your Enrollment Status is currently ${selectedStatusOption.label}` : '' }
   </Header.h5>
+  <Button
+    onClick={() => alert(JSON.stringify(getValues()))}
+  >
+    Get Form Data
+  </Button>
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
       <Controller
-        as={<SelectField />}
         control={control}
-        isClearable
-        labelText="Status"
         name="status"
-        options={enrollmentStatusOptions}
-        onChange={([selected]) => (selected)}
-        placeholder="Please choose an enrollment status"
+        render={({ onChange, onBlur, value }) => (
+          <SelectField
+            isClearable
+            labelText="Status"
+            options={enrollmentStatusOptions}
+            onChange={onChange}
+            placeholder="Please choose an enrollment status"
+            value={value}
+          />
+        )}
       />
     </Box>
   </Flex>
@@ -473,15 +469,18 @@ const chosenCourses = selectedCourseOptions.map(option => option.label).join(', 
   >
     <Box px={1} width={[1, 1 / 2]}>
       <Controller
-        as={<SelectField />}
         control={control}
-        isClearable
-        isMulti
-        labelText="Courses"
         name="courses"
-        options={courseOptions}
-        onChange={([selected]) => (selected)}
-        placeholder="Choose as many courses that interest you"
+        render={({ onChange, onBlur, value }) => (
+          <SelectField
+            isClearable
+            isMulti
+            labelText="Courses"
+            options={courseOptions}
+            onChange={onChange}
+            placeholder="Choose as many courses that interest you"
+          />
+        )}
       />
     </Box>
   </Flex>
@@ -524,7 +523,6 @@ const loadOptionsPromise = inputValue => {
   });
 };
 
-const linkState = () => null;
 
 const formatCreateLabel = value => `Set value to "${value}"`;
 

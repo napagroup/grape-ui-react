@@ -45,6 +45,7 @@ export function Paginator(props) {
   const pageSelectOptions = React.useMemo(() => pageOptions.map(valuePageSize => ({ label: getCaptionForItemsPerPage(valuePageSize), value: valuePageSize })), [pageOptions]);
   const {
     control,
+    register,
     setValue,
   } = useForm({
     defaultValues: {
@@ -75,13 +76,12 @@ export function Paginator(props) {
       >
         <Flex>
           <Box flex={1} m={1} maxWidth={170}>
-            <Controller
-              as={<TextField />}
-              control={control}
+            <TextField
               controlGroupProps={{ pb: 0 }}
+              inputRef={register}
               labelText="Jump to Page"
               name="jumpToPage"
-              onChange={([e]) => {
+              onChange={e => {
                 const nextGotoPage = e.target.value ? Number(e.target.value) - 1 : 0;
                 gotoPage(nextGotoPage);
               }}
@@ -91,18 +91,23 @@ export function Paginator(props) {
           </Box>
           <Box flex={1} maxWidth={170} mx={[1, 2]} my={1}>
             <Controller
-              as={<SelectField />}
               control={control}
-              controlGroupProps={{ pb: 0 }}
-              labelText="Rows Per Page"
-              menuPlacement={menuPlacement}
               name="selectedPageOption"
-              onChange={([selected]) => {
-                setPageSize(Number(selected.value));
-                return selected;
-              }}
-              options={pageSelectOptions}
-              sm
+              render={({ onChange, value }) => (
+                <SelectField
+                  controlGroupProps={{ pb: 0 }}
+                  labelText="Rows Per Page"
+                  menuPlacement={menuPlacement}
+                  name="selectedPageOption"
+                  onChange={selected => {
+                    onChange(selected);
+                    setPageSize(Number(selected.value));
+                  }}
+                  options={pageSelectOptions}
+                  sm
+                  value={value}
+                />
+              )}
             />
           </Box>
         </Flex>
