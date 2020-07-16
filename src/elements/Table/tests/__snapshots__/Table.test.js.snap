@@ -961,7 +961,6 @@ exports[`Table - kitchen sink snapshot should return table with all components &
                   name="jumpToPage"
                   tabindex="0"
                   type="number"
-                  value="1"
                 />
                 <label
                   class="c19"
