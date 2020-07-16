@@ -5,11 +5,11 @@ import {
 } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'jest-styled-components';
-import { ThemeProvider } from 'styled-components';
 import {
   useForm,
 } from 'react-hook-form';
 import { Button } from 'src/elements/Button';
+import { Form } from 'src/elements/forms';
 import { CheckboxField } from '..';
 
 const defaultValues = {
@@ -51,7 +51,7 @@ function App({ defaultFormData, getFormData, options }) {
     );
   };
   return (
-    <ThemeProvider theme={{}}>
+    <Form role="form">
       <CheckboxField
         hasSelectAll
         inputRef={register}
@@ -65,7 +65,7 @@ function App({ defaultFormData, getFormData, options }) {
           getFormData(getValues({ nest: true }));
         }}
       />
-    </ThemeProvider>
+    </Form>
   );
 }
 describe('CheckboxField - data', () => {

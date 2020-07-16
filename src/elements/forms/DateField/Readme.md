@@ -803,6 +803,7 @@ moment.locale('en');
           <DateField
             labelText="Enrollment Date"
             locale="it"
+            name="enrollmentDate"
             onChange={selected => onChange(selected.selectedDay)}
             value={value}
           />
