@@ -137,11 +137,12 @@ const UndoButton = () => <Button color="white">Undo</Button>;
 ```jsx in Markdown
 // Alert as toast
 import React from 'react';
+import { Toaster } from 'src/elements/Alert/utils';
 import { Button } from 'src/elements/Button';
 import { Box } from 'src/elements/grid';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
-const getToast = () => toast(<Alert isToast>This chick is toast.</Alert>);
+const getToast = () => toast(<Alert>This chick is toast!</Alert>);
 
 <div>
   <Button
@@ -149,8 +150,6 @@ const getToast = () => toast(<Alert isToast>This chick is toast.</Alert>);
   >
     Notify
   </Button>
-  <ToastContainer
-    position="bottom-center"
-  />
+  <Alert.ToastContainer />
 </div>
 ```
