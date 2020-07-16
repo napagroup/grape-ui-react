@@ -129,6 +129,12 @@ const UndoButton = () => <Button color="white">Undo</Button>;
 ```
 
 ```jsx in Markdown
+<Alert showProgress>
+  Loading...
+</Alert>
+```
+
+```jsx in Markdown
 // Alert as toast
 import React from 'react';
 import { Button } from 'src/elements/Button';

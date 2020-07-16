@@ -57,6 +57,13 @@ export const AlertComponent = ({
   children,
   color,
   flexContainerProps,
+  p,
+  pb,
+  pl,
+  pr,
+  pt,
+  px,
+  py,
   ...props
 }) => {
   const textProps = { color };
@@ -68,10 +75,20 @@ export const AlertComponent = ({
     children,
     ...textProps,
   };
+  const paddingProps = {
+    p,
+    pb,
+    pl,
+    pr,
+    pt,
+    px,
+    py,
+  };
   return (
     <Box {...removeSomeProps(props, Object.keys(alertPropTypes))}>
       <Flex
         {...flexContainerProps}
+        {...paddingProps}
       >
         {getChildren(propsForChildren)}
         {getActionButton(propsForActionButton)}
