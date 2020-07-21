@@ -142,7 +142,7 @@ import { Button } from 'src/elements/Button';
 import { Box, Flex } from 'src/elements/grid';
 
 <div>
-  <Button onClick={alertToast('Basic Alert', { closeButton: true })}>
+  <Button onClick={alertToast('Basic Alert')}>
     Basic alert
   </Button>
   <Button onClick={alertToast(

@@ -1,45 +1,46 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 import { Alert } from 'src/elements/Alert';
-import { Button } from 'src/elements/Button';
+import { removeSomeProps } from 'src/utils/componentHelpers';
 import { resolveBoxShadow } from 'src/utils/styledHelpers';
 
-const getCloseButton = ({
-  closeButton,
-  closeToast,
-}) => {
-  if (!closeButton) {
-    return null;
-  }
-  return ({
-    alertAction: (
-      <Button
-        bgActiveColor="rgba(255,255,255,0.2)"
-        bgHoverColor="rgba(255,255,255,0.1)"
-        m={0}
-        onClick={closeToast}
-        pb={0}
-        pl={2}
-        pr={2}
-        pt={0}
-        width={28}
-      >
-        &times;
-      </Button>
-    ),
-    alertActionProps: {
-      mr: -1,
-    },
-  });
-};
+// const getCloseButton = ({
+//   closeButton,
+//   // closeToast = () => {},
+// }) => {
+//   if (!closeButton) {
+//     return null;
+//   }
+//   return ({
+//     alertAction: (
+//       <Button
+//         bgActiveColor="rgba(255,255,255,0.2)"
+//         bgHoverColor="rgba(255,255,255,0.1)"
+//         m={0}
+//         // onClick={closeToast}
+//         pb={0}
+//         pl={2}
+//         pr={2}
+//         pt={0}
+//         width={28}
+//       >
+//         &times;
+//       </Button>
+//     ),
+//     alertActionProps: {
+//       mr: -1,
+//     },
+//   });
+// };
 
 const alertToast = (alertMessage, props = {}) => () => {
   const {
     autoClose,
     bodyClassName,
     className,
-    closeButton = true,
+    closeButton,
     closeOnClick,
+    closeToast,
     containerId,
     delay,
     draggable,
@@ -64,6 +65,7 @@ const alertToast = (alertMessage, props = {}) => () => {
     className,
     closeButton,
     closeOnClick,
+    closeToast,
     containerId,
     delay,
     draggable,
@@ -84,6 +86,9 @@ const alertToast = (alertMessage, props = {}) => () => {
   };
   return toast(
     <Alert
+      alertActionProps={{
+        mr: 2,
+      }}
       boxShadow={resolveBoxShadow('02')}
       progressProps={{
         animationDuration: `${autoClose}ms`,
@@ -91,8 +96,7 @@ const alertToast = (alertMessage, props = {}) => () => {
         loop: false,
       }}
       showProgress={!hideProgressBar && autoClose > 0}
-      {...getCloseButton(nativeToastProps)}
-      {...props}
+      {...removeSomeProps(props, Object.keys(nativeToastProps))}
     >
       {alertMessage}
     </Alert>, { nativeToastProps }

@@ -1,24 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Portal } from 'react-portal';
-import {
-  cssTransition,
-  ToastContainer,
-} from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import { Box } from 'src/elements/grid';
+import { removeSomeProps } from 'src/utils/componentHelpers';
 import { animationCss } from '.';
-
-export const Zoom = cssTransition({
-  duration: [250, 125],
-  enter: 'zoomIn',
-  exit: 'zoomOut',
-});
+import { toasterDefaultProps, toasterPropTypes } from './props';
 
 const ToasterComponent = props => {
   const {
     autoClose,
     closeButton,
     closeOnClick,
+    closeToast,
     draggable,
     hideProgressBar,
     limit,
@@ -28,54 +21,36 @@ const ToasterComponent = props => {
   } = props;
   const baseToastContainerProps = {
     autoClose,
-    closeButton,
     closeOnClick,
+    closeToast,
     draggable,
     hideProgressBar,
     limit,
     transition,
     ...toastContainerProps,
   };
+  const propsToTrim = {
+    ...baseToastContainerProps,
+    ...toasterPropTypes,
+  };
   return (
     <Portal {...portalProps}>
       <style>
         {animationCss}
       </style>
-      <Box {...props}>
-        <ToastContainer {...baseToastContainerProps} />
+      <Box {...removeSomeProps(props, Object.keys(propsToTrim))}>
+        <ToastContainer closeButton={closeButton} {...baseToastContainerProps} />
       </Box>
     </Portal>
   );
 };
 
 ToasterComponent.propTypes = {
-  autoClose: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.number,
-  ]),
-  closeButton: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.node,
-  ]),
-  closeOnClick: PropTypes.bool,
-  draggable: PropTypes.bool,
-  hideProgressBar: PropTypes.bool,
-  limit: PropTypes.number,
-  portalProps: PropTypes.object,
-  toastContainerProps: PropTypes.object,
-  transition: PropTypes.node,
+  ...toasterPropTypes,
 };
 
 ToasterComponent.defaultProps = {
-  autoClose: 4000,
-  closeButton: false,
-  closeOnClick: true,
-  draggable: false,
-  hideProgressBar: true,
-  limit: 1,
-  portalProps: {},
-  toastContainerProps: {},
-  transition: Zoom,
+  ...toasterDefaultProps,
 };
 
 export { ToasterComponent };

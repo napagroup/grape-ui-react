@@ -3,7 +3,11 @@ import {
   system,
   variant,
 } from 'styled-system';
-import { ToasterComponent } from '.';
+import {
+  ToasterComponent,
+  toasterDefaultProps,
+  toasterPropTypes,
+} from '.';
 
 const toastPlacementCenter = {
   display: 'flex',
@@ -27,9 +31,7 @@ const Toaster = styled(ToasterComponent)`
   .Toastify__progress-bar {
     animation: ${toastifyTrackProgress} linear 1;
   }
-  .Toastify__close-button {
-    display: none;
-  }
+  ${props => props.closeButtonCss}
   ${props => (props.closeOnClick ? 'cursor: pointer;' : '')}
   ${system({ transform: true })}
   ${
@@ -65,11 +67,12 @@ const Toaster = styled(ToasterComponent)`
 }
 `;
 
+Toaster.propTypes = {
+  ...toasterPropTypes,
+};
+
 Toaster.defaultProps = {
-  boxSizing: 'border-box',
-  closeOnClick: true,
-  position: 'fixed',
-  toastPlacement: 'bottom-center',
+  ...toasterDefaultProps,
 };
 
 export { Toaster };
