@@ -44,6 +44,7 @@ export const toasterDefaultProps = {
     }
   }`,
   closeOnClick: true,
+  closeToast: () => {},
   draggable: false,
   hideProgressBar: true,
   limit: 1,

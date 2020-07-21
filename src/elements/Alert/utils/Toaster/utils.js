@@ -4,35 +4,6 @@ import { Alert } from 'src/elements/Alert';
 import { removeSomeProps } from 'src/utils/componentHelpers';
 import { resolveBoxShadow } from 'src/utils/styledHelpers';
 
-// const getCloseButton = ({
-//   closeButton,
-//   // closeToast = () => {},
-// }) => {
-//   if (!closeButton) {
-//     return null;
-//   }
-//   return ({
-//     alertAction: (
-//       <Button
-//         bgActiveColor="rgba(255,255,255,0.2)"
-//         bgHoverColor="rgba(255,255,255,0.1)"
-//         m={0}
-//         // onClick={closeToast}
-//         pb={0}
-//         pl={2}
-//         pr={2}
-//         pt={0}
-//         width={28}
-//       >
-//         &times;
-//       </Button>
-//     ),
-//     alertActionProps: {
-//       mr: -1,
-//     },
-//   });
-// };
-
 const alertToast = (alertMessage, props = {}) => () => {
   const {
     autoClose,
