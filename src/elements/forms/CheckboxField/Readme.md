@@ -290,7 +290,9 @@ const courseOptions = [
 </ThemeProvider>
 ```
 
-#### Demonstrating Controlled Components with `<RadioField[.Input] type="radio">` using react-hook-form
+#### Demonstrating Controlled Components with `<RadioField[.Input]>` using react-hook-form
+
+<RadioField[.Input]> behind the scenes is really just a shorthand wrapper for <CheckboxField[.Input] type="radio">
 
 ```jsx inside Markdown
 import { Controller, useForm } from 'react-hook-form';
