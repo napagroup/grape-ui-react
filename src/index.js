@@ -9,6 +9,7 @@ import {
   CheckboxField,
   DateField,
   Form,
+  RadioField,
   SelectField,
   TextField,
 } from './elements/forms';
@@ -62,6 +63,7 @@ export {
   ListItem,
   Paragraph,
   Progress,
+  RadioField,
   SelectField,
   styledComponents,
   styledHelpers,

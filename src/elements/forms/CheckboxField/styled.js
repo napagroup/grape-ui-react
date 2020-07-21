@@ -71,10 +71,12 @@ const plainTextPropsToTrim = [
   'onChange',
   'options',
   'wrapperProps',
+  'type',
   ...propsToTrim,
 ];
 
 const isChecked = values => values && values.filter(val => !val).length === 0;
+const getNameProp = ({ idx, name, type }) => (type === 'checkbox' ? `${name}[${idx}]` : name);
 
 const renderValueOrComponent = propsFromComponent => {
   const { name, options } = propsFromComponent;
@@ -90,6 +92,7 @@ const renderValueOrComponent = propsFromComponent => {
     onChangeSelectAll = () => {},
     plainText,
     optionSelectAll = { label: 'Select All', value: true },
+    type,
     values,
   } = propsFromComponent;
   if (plainText) {
@@ -99,7 +102,6 @@ const renderValueOrComponent = propsFromComponent => {
     return (<PlainText {...plainTextProps} />);
   }
   const childProps = { id: controlId, ...removeSomeProps(propsFromComponent, propsToTrim) };
-  const optionValues = options.map(option => option.value);
   const checkboxFields = options.map((option, idx) => {
     const checkedProp = {};
     if (enableAutoChecking) {
@@ -114,10 +116,11 @@ const renderValueOrComponent = propsFromComponent => {
         disabled={disabled}
         flexDirection={flexDirection}
         inputRef={inputRef}
-        name={`${name}[${idx}]`}
+        name={getNameProp({ idx, name, type })}
         onChange={onChange}
         option={option}
-        value={optionValues[idx]}
+        type={type}
+        value={option.value}
       />
     );
   });
@@ -222,6 +225,8 @@ CheckboxField.propTypes = {
   labelText: PropTypes.string,
   /** Used to render a dropdown control as a `PlainText` element. */
   plainText: PropTypes.bool,
+  /** Used to set type as either checkbox or radio. Defaults to checkbox. */
+  type: PropTypes.oneOf(['checkbox', 'radio']),
   /** Error text that will appear below the control when validation fires. */
   validationError: PropTypes.oneOfType([
     PropTypes.bool,
@@ -247,6 +252,7 @@ CheckboxField.defaultProps = {
   isRequired: false,
   labelText: '',
   plainText: false,
+  type: 'checkbox',
   validationError: '',
   wrapperProps: {},
 };
