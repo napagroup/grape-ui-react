@@ -1,4 +1,4 @@
-![grape-ui logo](http://www.grapeui.com/assets/images/grape-ui-header-logo.svg)
+![grape-ui logo](https://www.grapeui.com/assets/images/grape-ui-header-logo.svg)
 
 [![UI badge](https://img.shields.io/badge/grape--ui-is%20awesome-840b55)](http://www.grapeui.com)
 [![GitHub open issues badge](https://img.shields.io/github/issues/napagroup/grape-ui-react)](https://github.com/napagroup/grape-ui-react/issues)

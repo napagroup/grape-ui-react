@@ -62,7 +62,6 @@ describe('When calling resolve global with no themes', () => {
   });
 });
 
-
 describe('When calling resolve global with themes', () => {
   beforeEach(() => {
     mockGlobalStyles.getGlobalStyles = jest.fn().mockReturnValue({

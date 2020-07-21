@@ -5,37 +5,28 @@ import {
 } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'jest-styled-components';
-import {
-  Controller,
-  useForm,
-} from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { Button } from 'src/elements/Button';
 import { Form } from 'src/elements/forms';
-import { DateField } from '..';
+import { TextField } from '..';
 
 const buttonText = 'Submit form';
+const enrolleeNameLabelText = 'Enrollee Name';
 const defaultValues = {
-  enrollmentDate: new Date('2020-07-14'),
+  enrolleeName: 'Student',
 };
 function App({ defaultFormData, getFormData }) {
   const {
-    control,
+    register,
     getValues,
   } = useForm({ defaultValues: defaultFormData });
 
   return (
     <Form role="form">
-      <Controller
-        control={control}
-        name="enrollmentDate"
-        render={({ onChange }) => (
-          <DateField
-            labelText="Enrollment Date"
-            locale="it"
-            name="enrollmentDate"
-            onChange={selected => onChange(selected.selectedDay)}
-          />
-        )}
+      <TextField
+        inputRef={register}
+        labelText={enrolleeNameLabelText}
+        name="enrolleeName"
       />
       <Button
         onClick={() => {
@@ -48,7 +39,7 @@ function App({ defaultFormData, getFormData }) {
   );
 }
 
-describe('DateField - data', () => {
+describe('TextField - data', () => {
   let getFormData;
 
   beforeEach(() => {
@@ -63,12 +54,11 @@ describe('DateField - data', () => {
     const actual = getFormData.mock.calls[0][0];
     expect(actual).toEqual(defaultValues);
   });
-  it('should have updated value when a new date is selected', () => {
-    fireEvent.click(screen.getByPlaceholderText('M/D/YYYY'));
-    const cells = screen.getAllByRole('gridcell');
-    fireEvent.click(cells[30]);
+  it('should have updated value when text is changed', () => {
+    const expected = { enrolleeName: 'Joules D.' };
+    fireEvent.change(screen.getByLabelText(enrolleeNameLabelText), { target: { value: expected.enrolleeName } });
     fireEvent.click(screen.getByText(buttonText));
     const actual = getFormData.mock.calls[0][0];
-    expect(actual.enrollmentDate.getDate()).toEqual(31);
+    expect(actual).toEqual(expected);
   });
 });

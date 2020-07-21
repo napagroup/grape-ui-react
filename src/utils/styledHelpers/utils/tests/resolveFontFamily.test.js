@@ -1,4 +1,3 @@
-
 import * as mockGlobalStyles from 'src/global-styles';
 import { defaultStylesBase, resolveFontFamily } from '../..';
 

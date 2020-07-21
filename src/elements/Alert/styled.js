@@ -4,6 +4,7 @@ import { AlertComponent } from './component';
 import {
   alertDefaultProps,
   alertVariants,
+  Toaster,
 } from './utils';
 
 const Alert = styled(withHideable(AlertComponent))`
@@ -13,6 +14,8 @@ const Alert = styled(withHideable(AlertComponent))`
 Alert.defaultProps = {
   ...alertDefaultProps,
 };
+
+Alert.ToastContainer = Toaster;
 
 /** @component */
 export { Alert };

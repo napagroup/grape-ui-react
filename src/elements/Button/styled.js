@@ -12,6 +12,7 @@ import {
   maxWidth,
   position,
   space,
+  system,
   verticalAlign,
 } from 'styled-system';
 import {
@@ -79,8 +80,8 @@ const scaleButton = props => {
   return space(nextProps);
 };
 
-
 const Button = styled(withHideable(ButtonComponent))`
+  ${system({ boxSizing: true })}
   ${borderButton}
   ${borderRadiusCore}
   ${boxShadowButtonMemoized()}
@@ -184,6 +185,7 @@ Button.defaultProps = {
   bgHoverColor: null,
   border: `1px solid ${resolveColor('borderColor')}`,
   borderRadius: '',
+  boxSizing: 'border-box',
   color: null,
   contained: false,
   display: 'inline-block',

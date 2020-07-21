@@ -1,6 +1,5 @@
 import { formatForOnChange, formatForSelectedDay } from '../utils';
 
-
 describe('formatForOnChange', () => {
   it('should return empty string if the date is invalid', () => {
     // Arrange

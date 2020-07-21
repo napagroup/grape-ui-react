@@ -6,6 +6,7 @@ exports[`Button Component base with style should return a Button object with mai
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   background-color: transparent;
@@ -74,6 +75,7 @@ exports[`Button Component base with style should return a Button with a zIndex w
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   background-color: transparent;
@@ -143,6 +145,7 @@ exports[`Button Component base with style should return a Button with a zIndex w
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   background-color: transparent;
@@ -212,6 +215,7 @@ exports[`Button Component base with style should return a Button with bg and col
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   background-color: hsl(122.4,39.4%,49.2%);
@@ -281,6 +285,7 @@ exports[`Button Component base with style should return a Button with bg and col
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   background-color: hsl(122.4,39.4%,49.2%);
@@ -350,6 +355,7 @@ exports[`Button Component base with style should return a Button with lg 1`] = `
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 8px;
   background-color: transparent;
@@ -419,6 +425,7 @@ exports[`Button Component base with style should return a Button with sm 1`] = `
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 2px;
   background-color: transparent;
@@ -488,6 +495,7 @@ exports[`Button Component base with style should return a Link with href with bu
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   background-color: transparent;
@@ -557,6 +565,7 @@ exports[`Button Component base with style should return a Link with to with butt
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   background-color: transparent;
@@ -626,6 +635,7 @@ exports[`Button base should return a Button 1`] = `
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   background-color: transparent;
@@ -694,6 +704,7 @@ exports[`Button base should return a Button with disabled 1`] = `
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   background-color: transparent;
@@ -776,6 +787,7 @@ exports[`Button base should return a Button with leading icon 1`] = `
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   background-color: transparent;
@@ -913,6 +925,7 @@ exports[`Button base should return a Button with loading indicator 1`] = `
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   background-color: transparent;
@@ -1018,6 +1031,7 @@ exports[`Button base should return an contained Button 1`] = `
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   background-color: transparent;
@@ -1087,6 +1101,7 @@ exports[`Button base should return an contained raised Button 1`] = `
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
@@ -1158,6 +1173,7 @@ exports[`Button base should return an outlined Button 1`] = `
 }
 
 .c0 {
+  box-sizing: border-box;
   border: 1px solid hsl(0,0%,25%);
   border-radius: 4px;
   background-color: transparent;

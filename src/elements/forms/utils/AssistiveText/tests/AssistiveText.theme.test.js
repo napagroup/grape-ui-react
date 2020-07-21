@@ -4,7 +4,6 @@ import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import { AssistiveText } from '..';
 
-
 describe('AssistiveText using Theme color', () => {
   it('should return a AssistiveText object with custom color', () => {
     const theme = {

@@ -1,0 +1,326 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert - Variant Example should return Alert with custom variant styling 1`] = `
+.c3 {
+  color: inherit;
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0 {
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 1px;
+  min-width: 300px;
+  overflow: hidden;
+  margin: 8px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+}
+
+.c1 {
+  background-color: #f99;
+  color: red;
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width:40em) {
+
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    margin: 16px;
+  }
+}
+
+<div>
+  <div
+    class="c0 c1"
+    variant="danger"
+  >
+    <div
+      class="c2"
+    >
+      <span
+        class="c3"
+      >
+        Variant Alert with Custom Theme.
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert - Variant Example should return Alert with variant styling 1`] = `
+.c3 {
+  color: inherit;
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  text-align: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+.c0 {
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 1px;
+  min-width: 300px;
+  overflow: hidden;
+  margin: 8px;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+}
+
+.c1 {
+  background-color: #fcc9c5;
+  color: hsl(4.1,89.6%,58.4%);
+}
+
+@media screen and (min-width:40em) {
+  .c0 {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width:40em) {
+
+}
+
+@media screen and (min-width:52em) {
+  .c0 {
+    margin: 16px;
+  }
+}
+
+<div>
+  <div
+    class="c0 c1"
+    variant="danger"
+  >
+    <div
+      class="c2"
+    >
+      <span
+        class="c3"
+      >
+        Variant Alert.
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Alert - kitchen sink snapshot should return Alert with all components & styling 1`] = `
+.c1 {
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 1px;
+  min-width: 300px;
+  overflow: hidden;
+  margin: 8px;
+}
+
+.c5 {
+  box-sizing: border-box;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c6 {
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  color: hsl(0,0%,98%);
+  background-color: transparent;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: inherit;
+  font-weight: inherit;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  line-height: 1.5;
+  position: relative;
+  margin: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 4px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  text-transform: uppercase;
+}
+
+.c6:hover {
+  cursor: pointer;
+  background-color: hsl(0,0%,90%);
+}
+
+.c6:active {
+  background-color: hsl(0,0%,100%);
+}
+
+.c6[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.c6 > .c0 {
+  border-radius: 4px;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.c2 {
+  background-color: hsl(0,0%,25%);
+  color: #fff;
+}
+
+@media screen and (min-width:40em) {
+  .c1 {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width:40em) {
+
+}
+
+@media screen and (min-width:52em) {
+  .c1 {
+    margin: 16px;
+  }
+}
+
+<div>
+  <div
+    class="c0 c1 c2"
+    variant="contained-default"
+  >
+    <div
+      class="c3"
+    >
+      <div
+        class="c4"
+      >
+        <div
+          class="c0 c5"
+        >
+          Uh oh
+        </div>
+        <div
+          class="c0 c5"
+        >
+          Spaghettios
+        </div>
+      </div>
+      <div
+        class="c0 c5"
+      >
+        <button
+          class="c6"
+          type="button"
+        >
+          <div
+            class="c0 c5"
+          >
+            Undo
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

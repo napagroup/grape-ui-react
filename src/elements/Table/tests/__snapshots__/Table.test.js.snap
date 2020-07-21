@@ -388,6 +388,7 @@ exports[`Table - kitchen sink snapshot should return table with all components &
 }
 
 .c26 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   background-color: transparent;
@@ -961,7 +962,6 @@ exports[`Table - kitchen sink snapshot should return table with all components &
                   name="jumpToPage"
                   tabindex="0"
                   type="number"
-                  value="1"
                 />
                 <label
                   class="c19"

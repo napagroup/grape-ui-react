@@ -1,4 +1,3 @@
-
 import React from 'react';
 import 'jest-styled-components';
 import Adapter from 'enzyme-adapter-react-16';
