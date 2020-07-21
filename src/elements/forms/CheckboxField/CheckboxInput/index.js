@@ -53,7 +53,7 @@ CheckboxInputComponent.defaultProps = {
 
 const CheckboxInput = props => {
   const {
-    checkboxSize, disabled, flexContainerProps, id, inputRef, name, option,
+    checkboxSize, disabled, flexContainerProps, id, inputRef, name, option, type,
   } = props;
   const propsForCheckboxLabel = removeSomeProps(passThrough(CheckboxInput, props), propsToTrimLabel);
   const propsForCheckboxControl = removeSomeProps(passThrough(CheckboxInput, props), propsToTrimControl);
@@ -75,7 +75,7 @@ const CheckboxInput = props => {
           maxWidth={checkboxSize}
           minHeight={checkboxSize}
           minWidth={checkboxSize}
-          type="checkbox"
+          type={type}
           {...propsForCheckboxControl}
         />
         <span>
@@ -93,12 +93,14 @@ CheckboxInput.propTypes = {
   inputRef: refType,
   option: PropTypes.any.isRequired,
   ...typography.propTypes,
+  type: PropTypes.oneOf(['checkbox', 'radio']),
 };
 CheckboxInput.defaultProps = {
   checkboxSize: 12,
   disabled: false,
   flexContainerProps: {},
   inputRef: () => {},
+  type: 'checkbox',
 };
 
 export { CheckboxInput };
