@@ -1,8 +1,8 @@
 import { css } from 'styled-components';
 import { variant } from 'styled-system';
 import {
+  lighten,
   readableColor,
-  transparentize,
 } from 'polished';
 import { getGlobalOverrides } from 'src/global-styles';
 import { resolveColor } from 'src/utils/styledHelpers';
@@ -12,7 +12,7 @@ const callback = props => (acc, cur) => {
   return {
     ...acc,
     [cur.variantName]: {
-      bg: transparentize(0.825, myColor),
+      bg: lighten(0.3, myColor),
       color: myColor,
     },
     [`contained-${[cur.variantName]}`]: {

@@ -119,7 +119,7 @@ import { Box, Flex } from 'src/elements/grid';
 // Alert with action
 import { Button } from 'src/elements/Button';
 
-const UndoButton = () => <Button color="white">Undo</Button>;
+const UndoButton = () => <Button color="brandLink">Undo</Button>;
 
 <Alert
   alertAction={<UndoButton />}
@@ -137,18 +137,31 @@ const UndoButton = () => <Button color="white">Undo</Button>;
 ```jsx in Markdown
 // Alert as toast
 import React from 'react';
-import { Toaster } from 'src/elements/Alert/utils';
+import { alertToast } from 'src/elements/Alert/utils';
 import { Button } from 'src/elements/Button';
-import { Box } from 'src/elements/grid';
-import { toast } from 'react-toastify';
-
-const getToast = () => toast(<Alert>This chick is toast!</Alert>);
+import { Box, Flex } from 'src/elements/grid';
 
 <div>
-  <Button
-    onClick={getToast}
-  >
-    Notify
+  <Button onClick={alertToast('Basic Alert', { closeButton: true })}>
+    Basic alert
+  </Button>
+  <Button onClick={alertToast(
+    <Flex>
+      <Box>Uh oh</Box>
+      <Box>Spaghettios</Box>
+    </Flex>
+  )}>
+    With node elements
+  </Button>
+  <Button onClick={alertToast('Success', {
+    variant: 'success',
+  })}>
+    With variant
+  </Button>
+  <Button onClick={alertToast('Changes Saved', {
+    alertAction: <Button color="brandLink">Undo</Button>
+  })}>
+    With an alert action
   </Button>
   <Alert.ToastContainer />
 </div>

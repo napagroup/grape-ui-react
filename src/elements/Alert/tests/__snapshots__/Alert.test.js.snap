@@ -47,7 +47,7 @@ exports[`Alert - Variant Example should return Alert with custom variant styling
 }
 
 .c1 {
-  background-color: rgba(255,0,0,0.175);
+  background-color: #f99;
   color: red;
 }
 
@@ -132,7 +132,7 @@ exports[`Alert - Variant Example should return Alert with variant styling 1`] = 
 }
 
 .c1 {
-  background-color: rgba(243,65,53,0.175);
+  background-color: #fcc9c5;
   color: hsl(4.1,89.6%,58.4%);
 }
 
@@ -212,6 +212,7 @@ exports[`Alert - kitchen sink snapshot should return Alert with all components &
 }
 
 .c6 {
+  box-sizing: border-box;
   border: 0;
   border-radius: 4px;
   color: hsl(0,0%,98%);

@@ -1,12 +1,9 @@
 import styled, { keyframes } from 'styled-components';
 import {
-  flexbox,
-  layout,
-  position,
   system,
   variant,
 } from 'styled-system';
-import { ToastContainer } from 'react-toastify';
+import { ToasterComponent } from '.';
 
 const toastPlacementCenter = {
   display: 'flex',
@@ -26,17 +23,15 @@ const toastifyTrackProgress = keyframes`
   }
 `;
 
-export const Toaster = styled(ToastContainer)`
+const Toaster = styled(ToasterComponent)`
   .Toastify__progress-bar {
     animation: ${toastifyTrackProgress} linear 1;
   }
-  ${system({
-    boxSizing: true,
-    transform: true,
-  })}
-  ${flexbox}
-  ${layout}
-  ${position}
+  .Toastify__close-button {
+    display: none;
+  }
+  ${props => (props.closeOnClick ? 'cursor: pointer;' : '')}
+  ${system({ transform: true })}
   ${
   variant({
     prop: 'toastPlacement',
@@ -71,15 +66,10 @@ export const Toaster = styled(ToastContainer)`
 `;
 
 Toaster.defaultProps = {
-  autoClose: false,
   boxSizing: 'border-box',
   closeOnClick: true,
-  draggable: false,
-  hideProgressBar: false,
-  newestOnTop: false,
-  pauseOnHover: false,
-  pauseOnVisibilityChange: false,
   position: 'fixed',
-  rtl: false,
   toastPlacement: 'bottom-center',
 };
+
+export { Toaster };

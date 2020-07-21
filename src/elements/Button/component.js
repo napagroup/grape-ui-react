@@ -26,6 +26,7 @@ const propsToTrim = {
   ...spaceProps.propTypes,
   ...typography.propTypes,
   ...getProgressPropTypes,
+  boxSizing: PropTypes.any,
   innerBoxProps: PropTypes.object,
   innerFlexProps: PropTypes.object,
   leadingIcon: PropTypes.any,
