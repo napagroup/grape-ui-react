@@ -11,7 +11,6 @@ const ToasterComponent = props => {
     autoClose,
     closeButton,
     closeOnClick,
-    closeToast,
     draggable,
     hideProgressBar,
     limit,
@@ -22,7 +21,6 @@ const ToasterComponent = props => {
   const baseToastContainerProps = {
     autoClose,
     closeOnClick,
-    closeToast,
     draggable,
     hideProgressBar,
     limit,

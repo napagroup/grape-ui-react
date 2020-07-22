@@ -31,7 +31,7 @@ export const toasterPropTypes = {
 export const toasterDefaultProps = {
   autoClose: 4000,
   boxSizing: 'border-box',
-  closeButton: <ToastCloseButton />,
+  closeButton: ToastCloseButton,
   closeButtonCss: css`.Toastify__toast-body {
     > div {
       margin: 0;
