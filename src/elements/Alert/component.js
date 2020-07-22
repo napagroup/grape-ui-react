@@ -33,14 +33,14 @@ const getChildren = ({
   children,
   ...props
 }) => {
-  if (React.isValidElement(children)) {
-    return children;
+  if (typeof children === 'string') {
+    return (
+      <Text {...props}>
+        {children}
+      </Text>
+    );
   }
-  return (
-    <Text {...props}>
-      {children}
-    </Text>
-  );
+  return children;
 };
 
 getChildren.propTypes = {

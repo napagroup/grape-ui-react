@@ -1,6 +1,6 @@
-## [`<CheckboxField>`](#/Forms/Components/CheckboxField)
+## [`<CheckboxField>` & `<RadioField>`](#/Forms/Components/CheckboxField)
 
-Learn about our CheckboxField component.
+Learn about our CheckboxField and RadioField components.
 ***
 
 ## [`<DateField>`](#/Forms/Components/DateField)
