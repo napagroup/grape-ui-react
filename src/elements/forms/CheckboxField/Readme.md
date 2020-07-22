@@ -314,6 +314,7 @@ const {
 } = useForm({
   defaultValues: {
     courses: '🎨',
+    coursesTwo: '🎨',
   },
 });
 
@@ -344,6 +345,7 @@ const courseOptions = [
   },
 ];
 const courses = watch('courses') || {};
+const courses2 = watch('coursesTwo') || {};
 const checkboxFields = courseOptions.map((option, idx)  => {
 
   return (
@@ -369,7 +371,7 @@ const checkboxFields = courseOptions.map((option, idx)  => {
       </Header.h5>
       <RadioField
         inputRef={register}
-        name="courses"
+        name="coursesTwo"
         options={courseOptions}
       />
     </Box>
@@ -383,7 +385,7 @@ const checkboxFields = courseOptions.map((option, idx)  => {
   </Button>
   <Header.h5 margin="0 0 1rem">
     {courses ?
-    `You've chosen interest in: ${courses}.`
+    `You've chosen interest in: ${courses} & ${courses2}.`
     : ''}
   </Header.h5>
 </ThemeProvider>
