@@ -76,4 +76,20 @@ describe('Alert - Variant Example', () => {
     });
     expect(container).toMatchSnapshot();
   });
+  it('should return Alert Toast Container', () => {
+    act(() => {
+      ReactDOM.render(
+        <ThemeProvider theme={{}}>
+          <div>
+            <div id="subContainer">
+              <span>I am the top sibling.</span>
+              <Alert.ToastContainer toastPortalTarget={document && document.getElementById('subContainer')} />
+            </div>
+          </div>
+        </ThemeProvider>,
+        container
+      );
+    });
+    expect(container).toMatchSnapshot();
+  });
 });

@@ -194,6 +194,8 @@ import { Flex } from 'src/elements/grid';
 
 And now a toast! If you would like to use the `<Alert>` as a toast notification, you would need to use `alertToast` and `<Alert.ToastContainer>`.  This is built upon the fantastic [`react-toastify`](https://github.com/fkhadra/react-toastify) library.  It is preset to follow [Material Design's Snackbar specifications](https://material.io/components/snackbars).
 
+#### Toast Example
+
 ```jsx in Markdown
 // Alert as toast
 import React from 'react';
@@ -224,5 +226,25 @@ import { Box, Flex } from 'src/elements/grid';
     With an alert action
   </Button>
   <Alert.ToastContainer />
+</Flex>
+```
+
+#### Toast No Portal Example
+
+```jsx in Markdown
+// Alert as toast
+import React from 'react';
+import { alertToast } from 'src/elements/Alert/utils';
+import { Button } from 'src/elements/Button';
+import { Box, Flex } from 'src/elements/grid';
+
+<Flex background="#efedd6">
+  <Button onClick={alertToast('Look ma no portal!')}>
+    I'm in a different portal
+  </Button>
+  <Alert.ToastContainer
+    autoClose={false}
+    toastPortalTarget={false}
+  />
 </Flex>
 ```

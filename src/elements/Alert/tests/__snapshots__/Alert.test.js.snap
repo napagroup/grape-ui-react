@@ -1,5 +1,109 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Alert - Variant Example should return Alert Toast Container 1`] = `
+.c0 {
+  box-sizing: border-box;
+}
+
+.c1 {
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.c2 {
+  cursor: pointer;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  justify-self: center;
+  left: 50vw;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c2 .Toastify__progress-bar {
+  -webkit-animation: kJyxGF linear 1;
+  animation: kJyxGF linear 1;
+}
+
+.c2 .Toastify__toast-body > div {
+  margin: 0;
+}
+
+.c2 .Toastify__toast-body + button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%) translateY(-6px);
+  -ms-transform: translateY(-50%) translateY(-6px);
+  transform: translateY(-50%) translateY(-6px);
+}
+
+<div>
+  <div>
+    <div
+      id="subContainer"
+    >
+      <span>
+        I am the top sibling.
+      </span>
+      <div
+        class="c0"
+      >
+        <style>
+          
+  @keyframes zoomInKeyframes {
+    from {
+      opacity: 0;
+      transform: scale3d(.9, .9, .9);
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes zoomOutKeyframes {
+    from {
+      opacity: 1;
+    }
+
+    50% {
+      transform: scale3d(.9, .9, .9);
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  .zoomIn { animation-name: zoomInKeyframes; }
+  .zoomOut { animation-name: zoomOutKeyframes; }
+
+        </style>
+        <div
+          class="c1 c2"
+        >
+          <div
+            class="Toastify"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Alert - Variant Example should return Alert with custom variant styling 1`] = `
 .c3 {
   color: inherit;

@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { css } from 'styled-components';
 import { ToastCloseButton, Zoom } from './styledHelpers';
@@ -24,6 +23,10 @@ export const toasterPropTypes = {
     'top-center',
     'top-left',
     'top-right',
+  ]),
+  toastPortalTarget: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.instanceOf(Element),
   ]),
   transition: PropTypes.any,
 };
@@ -52,5 +55,6 @@ export const toasterDefaultProps = {
   position: 'fixed',
   toastContainerProps: {},
   toastPlacement: 'bottom-center',
+  toastPortalTarget: document.body,
   transition: Zoom,
 };

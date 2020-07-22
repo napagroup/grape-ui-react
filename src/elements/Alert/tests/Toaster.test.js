@@ -5,9 +5,8 @@ import {
 import { act } from 'react-dom/test-utils';
 import '@testing-library/jest-dom';
 import 'jest-styled-components';
-import { ToastContainer } from 'react-toastify';
 import { Button } from 'src/elements/Button';
-import { alertToast } from 'src/elements/Alert/utils';
+import { Alert, alertToast } from 'src/elements/Alert';
 
 jest.useFakeTimers();
 
@@ -18,7 +17,7 @@ describe('Alert toasts', () => {
     renderUtils = render(
       <div>
         <Button onClick={alertToast(alertCaption)} />
-        <ToastContainer />
+        <Alert.ToastContainer limit={2} toastPortalTarget={false} />
       </div>
     );
     const { getAllByText } = renderUtils;
