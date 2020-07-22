@@ -135,6 +135,7 @@ import { Text } from 'src/elements/typography';
 <Flex background="#efedd6">
   <Alert>
     <Image
+      alt="Bill Murray avatar"
       borderRadius="50%"
       src="http://www.fillmurray.com/40/40"
       width={40}

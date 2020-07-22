@@ -23,6 +23,7 @@ export const alertPropTypes = {
   ),
   children: PropTypes.any,
   flexContainerProps: PropTypes.object,
+  variant: PropTypes.any,
 };
 
 export const alertDefaultProps = {
