@@ -70,7 +70,6 @@ exports[`Alert - Variant Example should return Alert with custom variant styling
 <div>
   <div
     class="c0 c1"
-    variant="danger"
   >
     <div
       class="c2"
@@ -155,7 +154,6 @@ exports[`Alert - Variant Example should return Alert with variant styling 1`] = 
 <div>
   <div
     class="c0 c1"
-    variant="danger"
   >
     <div
       class="c2"
@@ -287,7 +285,6 @@ exports[`Alert - kitchen sink snapshot should return Alert with all components &
 <div>
   <div
     class="c0 c1 c2"
-    variant="contained-default"
   >
     <div
       class="c3"
