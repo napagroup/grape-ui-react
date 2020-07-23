@@ -346,8 +346,7 @@ const courseOptions = [
 ];
 const courses = watch('courses') || {};
 const courses2 = watch('coursesTwo') || {};
-const checkboxFields = courseOptions.map((option, idx)  => {
-
+const radioInputs = courseOptions.map((option, idx)  => {
   return (
     <RadioField.Input
       inputRef={register}
@@ -365,7 +364,7 @@ const checkboxFields = courseOptions.map((option, idx)  => {
       <Header.h5 margin="0 0 1rem">
         Using input field Control
       </Header.h5>
-      {checkboxFields}
+      {radioInputs}
       <Header.h5 margin="0 0 1rem">
         Using group field Control
       </Header.h5>

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { cssTransition } from 'react-toastify';
 import { Button } from 'src/elements/Button';
 
@@ -56,3 +57,10 @@ export const ToastCloseButton = ({ closeToast }) => (
     &times;
   </Button>
 );
+
+ToastCloseButton.propTypes = {
+  closeToast: PropTypes.func,
+};
+ToastCloseButton.defaultProps = {
+  closeToast: () => {},
+};

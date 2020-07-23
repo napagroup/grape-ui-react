@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import {
@@ -39,14 +40,19 @@ function App({ defaultFormData, getFormData, options }) {
     getValues,
     register,
   } = useForm({ defaultValues: defaultFormData });
+  const radioInputs = courseOptions.map((option, idx) => (
+    <RadioField.Input
+      key={`courses[${idx}]`}
+      inputRef={register}
+      name="courses"
+      option={option}
+      value={option.value}
+    />
+  ));
 
   return (
     <Form role="form">
-      <RadioField
-        inputRef={register}
-        name="courses"
-        options={options}
-      />
+      {radioInputs}
       <Button
         onClick={() => {
           getFormData(getValues({ nest: true }));
@@ -55,7 +61,7 @@ function App({ defaultFormData, getFormData, options }) {
     </Form>
   );
 }
-describe('RadioField - data', () => {
+describe('RadioField.Input - data', () => {
   let getFormData;
   beforeEach(() => {
     jest.clearAllMocks();

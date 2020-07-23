@@ -85,7 +85,7 @@ export const AlertComponent = ({
     py,
   };
   return (
-    <Box {...removeSomeProps(props, Object.keys(alertPropTypes))}>
+    <Box {...removeSomeProps(props, [...Object.keys(alertPropTypes), 'closeToast'])}>
       <Flex
         {...flexContainerProps}
         {...paddingProps}
