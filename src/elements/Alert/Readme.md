@@ -228,23 +228,3 @@ import { Box, Flex } from 'src/elements/grid';
   <Alert.ToastContainer />
 </Flex>
 ```
-
-#### Toast No Portal Example
-
-```jsx in Markdown
-// Alert as toast
-import React from 'react';
-import { alertToast } from 'src/elements/Alert/utils';
-import { Button } from 'src/elements/Button';
-import { Box, Flex } from 'src/elements/grid';
-
-<Flex background="#efedd6">
-  <Button onClick={alertToast('Look ma no portal!')}>
-    I'm in a different portal
-  </Button>
-  <Alert.ToastContainer
-    autoClose={false}
-    toastPortalTarget={false}
-  />
-</Flex>
-```
