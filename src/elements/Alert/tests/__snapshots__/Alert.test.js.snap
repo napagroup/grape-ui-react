@@ -3,14 +3,10 @@
 exports[`Alert - Variant Example should return Alert Toast Container 1`] = `
 .c0 {
   box-sizing: border-box;
-}
-
-.c1 {
-  box-sizing: border-box;
   position: fixed;
 }
 
-.c2 {
+.c1 {
   cursor: pointer;
   bottom: 0;
   display: -webkit-box;
@@ -31,16 +27,16 @@ exports[`Alert - Variant Example should return Alert Toast Container 1`] = `
   transform: translateX(-50%);
 }
 
-.c2 .Toastify__progress-bar {
+.c1 .Toastify__progress-bar {
   -webkit-animation: kJyxGF linear 1;
   animation: kJyxGF linear 1;
 }
 
-.c2 .Toastify__toast-body > div {
+.c1 .Toastify__toast-body > div {
   margin: 0;
 }
 
-.c2 .Toastify__toast-body + button {
+.c1 .Toastify__toast-body + button {
   position: absolute;
   top: 50%;
   right: 0;
@@ -49,19 +45,11 @@ exports[`Alert - Variant Example should return Alert Toast Container 1`] = `
   transform: translateY(-50%) translateY(-6px);
 }
 
-<div>
-  <div>
-    <div
-      id="subContainer"
-    >
-      <span>
-        I am the top sibling.
-      </span>
-      <div
-        class="c0"
-      >
-        <style>
-          
+<div
+  id="custom"
+>
+  <style>
+    
   @keyframes zoomInKeyframes {
     from {
       opacity: 0;
@@ -90,16 +78,13 @@ exports[`Alert - Variant Example should return Alert Toast Container 1`] = `
   .zoomIn { animation-name: zoomInKeyframes; }
   .zoomOut { animation-name: zoomOutKeyframes; }
 
-        </style>
-        <div
-          class="c1 c2"
-        >
-          <div
-            class="Toastify"
-          />
-        </div>
-      </div>
-    </div>
+  </style>
+  <div
+    class="c0 c1"
+  >
+    <div
+      class="Toastify"
+    />
   </div>
 </div>
 `;

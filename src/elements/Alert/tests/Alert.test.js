@@ -78,18 +78,14 @@ describe('Alert - Variant Example', () => {
   });
   it('should return Alert Toast Container', () => {
     act(() => {
+      document.body.innerHTML = '<div id="root"></div><div id="custom"></div>';
       ReactDOM.render(
         <ThemeProvider theme={{}}>
-          <div>
-            <div id="subContainer">
-              <span>I am the top sibling.</span>
-              <Alert.ToastContainer toastPortalTarget={document && document.getElementById('subContainer')} />
-            </div>
-          </div>
+          <Alert.ToastContainer toastPortalTarget={document.getElementById('custom')} />
         </ThemeProvider>,
-        container
+        document.getElementById('root')
       );
     });
-    expect(container).toMatchSnapshot();
+    expect(document.getElementById('custom')).toMatchSnapshot();
   });
 });
