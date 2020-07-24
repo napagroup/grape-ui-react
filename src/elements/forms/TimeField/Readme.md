@@ -146,7 +146,7 @@ function onChange(e) {
 }
 const codeStr = `showHour={false}
 showMinute={false}`;
-const format = 'HH:mm:ss a';
+const format = 'HH:mm:ss:a';
 const codeFormat=`format="${format}"`;
 
 <ThemeProvider theme={{}}>
