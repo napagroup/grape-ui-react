@@ -5,27 +5,13 @@ import {
   timeFieldDefaultProps,
 } from './utils';
 
-export const TimeComponent = props => {
-  const {
-    defaultValue,
-    format,
-    onChange,
-    showSecond,
-    use12Hours,
-  } = props;
-  return (
-    <TimePicker
-      className="xxx"
-      defaultValue={defaultValue}
-      format={format}
-      name="courseTime"
-      onChange={onChange}
-      showSecond={showSecond}
-      style={{ width: 100 }}
-      use12Hours={use12Hours}
-    />
-  );
-};
+export const TimeComponent = props => (
+  <TimePicker
+    className="xxx"
+    style={{ width: 100 }}
+    {...props}
+  />
+);
 
 TimeComponent.propTypes = {
   ...timeFieldPropTypes,
