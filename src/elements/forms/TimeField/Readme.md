@@ -75,6 +75,7 @@ import moment from 'moment';
 import 'moment/locale/es-us';
 import { ThemeProvider } from 'styled-components';
 import { Flex } from 'src/elements/grid';
+import { Code } from 'src/elements/typography';
 
 function generateOptions(length, excludedOptions) {
   const arr = [];
@@ -112,12 +113,33 @@ function onChange(e) {
 }
 <ThemeProvider theme={{}}>
   <Flex background="#efedd6" flexDirection="column">
+    <Code
+      code="hideDisabledOptions={false}"
+      language="html"
+    />
     <TimeField
       className="xxx"
       defaultValue={moment()}
       disabledHours={disabledHours}
       disabledMinutes={disabledMinutes}
       disabledSeconds={disabledSeconds}
+      hideDisabledOptions={false}
+      name="courseTime"
+      onChange={onChange}
+      showSecond={showSecond}
+      style={{ width: 100 }}
+    />
+    <Code
+      code="hideDisabledOptions={true}"
+      language="html"
+    />
+    <TimeField
+      className="xxx"
+      defaultValue={moment()}
+      disabledHours={disabledHours}
+      disabledMinutes={disabledMinutes}
+      disabledSeconds={disabledSeconds}
+      hideDisabledOptions
       name="courseTime"
       onChange={onChange}
       showSecond={showSecond}
@@ -136,7 +158,7 @@ import moment from 'moment';
 import 'moment/locale/es-us';
 import { ThemeProvider } from 'styled-components';
 import { Flex } from 'src/elements/grid';
-import { Code, CodeBlock, Header } from 'src/elements/typography';
+import { Code, CodeBlock } from 'src/elements/typography';
 
 const showSecond = true;
 const str = showSecond ? 'h:mm:ss' : 'h:mm';
