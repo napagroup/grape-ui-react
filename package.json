@@ -56,6 +56,7 @@
     "moment-timezone": "^0.5.31",
     "polished": "^3.6.5",
     "prop-types": "15.7.2",
+    "rc-time-picker": "^3.7.3",
     "react-day-picker": "^7.4.8",
     "react-element-to-jsx-string": "^14.3.1",
     "react-hook-form": "^6.0.8",
