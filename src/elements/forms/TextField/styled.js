@@ -77,6 +77,7 @@ const renderValueOrComponent = propsFromComponent => {
   }
   return <TextFieldComponent {...propsFromComponent} />;
 };
+
 export const TextField = props => {
   const {
     activeColor,

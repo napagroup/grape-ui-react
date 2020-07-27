@@ -5,13 +5,16 @@ import {
   timeFieldDefaultProps,
 } from './utils';
 
-export const TimeComponent = props => (
-  <TimePicker
-    className="xxx"
-    style={{ width: 100 }}
-    {...props}
-  />
-);
+export const TimeComponent = props => {
+  const { styleOverrides } = props;
+  return (
+    <TimePicker
+      open={false}
+      style={styleOverrides}
+      {...props}
+    />
+  );
+};
 
 TimeComponent.propTypes = {
   ...timeFieldPropTypes,

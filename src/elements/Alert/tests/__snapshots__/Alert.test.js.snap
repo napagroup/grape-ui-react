@@ -32,6 +32,10 @@ exports[`Alert - Variant Example should return Alert Toast Container 1`] = `
   animation: kJyxGF linear 1;
 }
 
+.c1 .Toastify__toast {
+  position: relative;
+}
+
 .c1 .Toastify__toast-body > div {
   margin: 0;
 }

@@ -3,7 +3,6 @@
 ### TimeField Example
 
 ```jsx in Markdown
-import 'rc-time-picker/assets/index.css';
 import React, { useState } from 'react';
 import moment from 'moment';
 import 'moment/locale/es-us';
@@ -20,13 +19,11 @@ function onChange(e) {
 <ThemeProvider theme={{}}>
   <Flex background="#efedd6" flexDirection="column">
     <TimeField
-      className="xxx"
       defaultValue={moment()}
-      inputReadOnly
+      labelText="What time is it?"
       name="courseTime"
       onChange={onChange}
       showSecond={showSecond}
-      style={{ width: 100 }}
       use12Hours
     />
   </Flex>
@@ -36,7 +33,6 @@ function onChange(e) {
 ### Disabled TimeField Example
 
 ```jsx in Markdown
-import 'rc-time-picker/assets/index.css';
 import React, { useState } from 'react';
 import moment from 'moment';
 import 'moment/locale/es-us';
@@ -69,7 +65,6 @@ function onChange(e) {
 ### Disabled Picker TimeField Example
 
 ```jsx in Markdown
-import 'rc-time-picker/assets/index.css';
 import React, { useState } from 'react';
 import moment from 'moment';
 import 'moment/locale/es-us';
@@ -152,7 +147,6 @@ function onChange(e) {
 ### Format TimeField Examples
 
 ```jsx in Markdown
-import 'rc-time-picker/assets/index.css';
 import React, { useState } from 'react';
 import moment from 'moment';
 import 'moment/locale/es-us';
@@ -214,7 +208,6 @@ const codeFormat=`format="${format}"`;
 ### Minute Step Example
 
 ```jsx in Markdown
-import 'rc-time-picker/assets/index.css';
 import React, { useState } from 'react';
 import moment from 'moment';
 import 'moment/locale/es-us';
@@ -247,7 +240,6 @@ function onChange(e) {
 ### Controlled TimeField Example
 
 ```jsx in Markdown
-import 'rc-time-picker/assets/index.css';
 import React, { useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import moment from 'moment';
