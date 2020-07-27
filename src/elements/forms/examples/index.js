@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'src/elements/typography';
 
+export const timeAssistiveText = 'Your future hasn’t been written yet. No one’s has.';
+export const timeAssistiveText2 = 'Your future is whatever you make it. So make it a good one. – Doc Brown, “Back To The Future”';
+
 export const cantHardlyWaitLyrics = 'I\'ll write you a letter tomorrow\n'
 + 'Tonight I can\'t hold a pen\n'
 + 'Someone\'s got a stamp that I can borrow\n'

@@ -49,7 +49,6 @@ function onChange(e) {
 <ThemeProvider theme={{}}>
   <Flex background="#efedd6" flexDirection="column">
     <TimeField
-      className="xxx"
       defaultValue={moment()}
       disabled
       name="courseTime"
@@ -113,7 +112,6 @@ function onChange(e) {
       language="html"
     />
     <TimeField
-      className="xxx"
       defaultValue={moment()}
       disabledHours={disabledHours}
       disabledMinutes={disabledMinutes}
@@ -129,7 +127,6 @@ function onChange(e) {
       language="html"
     />
     <TimeField
-      className="xxx"
       defaultValue={moment()}
       disabledHours={disabledHours}
       disabledMinutes={disabledMinutes}
@@ -224,7 +221,6 @@ function onChange(e) {
 <ThemeProvider theme={{}}>
   <Flex background="#efedd6" flexDirection="column">
     <TimeField
-      className="xxx"
       defaultValue={moment()}
       minuteStep={15}
       name="courseTime"
@@ -272,7 +268,6 @@ const format = 'h:mm:ss:a';
       name="courseTime"
       render={({ onChange, onBlur, value }) => (
         <TimeField
-          className="xxx"
           defaultValue={value}
           format={format}
           name="courseTime"
@@ -290,6 +285,126 @@ const format = 'h:mm:ss:a';
     >
       Get values (shown in console)
     </Button>
+  </Flex>
+</ThemeProvider>
+```
+
+#### Basic Usage
+
+Doc: The way I see it, if you’re going to build a time machine into a car, why not do it with some style? – “Back To The Future”
+
+```jsx inside Markdown
+import moment from 'moment';
+import { ThemeProvider } from 'styled-components';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid';
+import {
+  Code,
+  Link,
+  Paragraph,
+  Text,
+} from 'src/elements/typography';
+import {
+  timeAssistiveText,
+  timeAssistiveText2,
+} from '../examples';
+
+<ThemeProvider theme={{}}>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TimeField
+        defaultValue={moment('Oct 26 1985, 1:00 am')}
+        format="h:mm:a"
+        labelText="One a.m., right, Marty?"
+        name="timeOutlined"
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TimeField
+        defaultValue={moment('Oct 26 1985, 1:18 am')}
+        format="h:mm:a"
+        formStyle="filled"
+        labelText="What time is it?"
+        name="timeFilled"
+      />
+    </Box>
+  </Flex>
+  <Paragraph lg>
+    {'Disabled '}
+    <Code code="disabled={true}" />
+  </Paragraph>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TimeField
+        defaultValue={moment('Nov 12 1955, 10:04 pm')}
+        disabled
+        format="h:mm:a"
+        labelText="The Clock is stopped at:"
+        name="timeDisabled"
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TimeField
+        defaultValue={moment('Oct 26 1985, 10:04 pm')}
+        disabled
+        format="h:mm:a"
+        formStyle="filled"
+        labelText="The Clock is stopped at:"
+        name="timeFilledDisabled"
+      />
+    </Box>
+  </Flex>
+  <Paragraph lg>
+    {'Assistive Text ' }
+    <Code code="assistiveText={text}" />
+  </Paragraph>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TimeField
+        assistiveText={timeAssistiveText}
+        defaultValue={moment()}
+        format="h:mm:a"
+        labelText="What time is it?"
+        name="timeAssistiveText"
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TimeField
+        assistiveText={timeAssistiveText2}
+        plainText
+        defaultValue={moment()}
+        format="h:mm:a"
+        labelText="What time is it?"
+        name="timeAssistiveText2"
+      />
+    </Box>
+  </Flex>
+  <Paragraph lg>
+    {'Plain Text '}
+    <Code code="plainText={true}" />
+  </Paragraph>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TimeField
+        defaultValue={moment('Oct 26 1985, 1:24 am')}
+        format="h:mm:a"
+        labelText="Destination Time"
+        name="timePlainText"
+        plainText
+      />
+    </Box>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TimeField
+        defaultValue={moment('Nov 5 1955, 10:04 pm')}
+        format="h:mm:a"
+        formStyle="filled"
+        labelText="Last Time Departed"
+        name="timePlainTextFilled"
+        plainText
+      />
+    </Box>
   </Flex>
 </ThemeProvider>
 ```
