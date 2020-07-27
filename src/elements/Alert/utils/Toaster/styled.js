@@ -31,6 +31,9 @@ const Toaster = styled(ToasterComponent)`
   .Toastify__progress-bar {
     animation: ${toastifyTrackProgress} linear 1;
   }
+  .Toastify__toast {
+    position: relative;
+  }
   ${props => props.closeButtonCss}
   ${props => (props.closeOnClick ? 'cursor: pointer;' : '')}
   ${system({ transform: true })}
