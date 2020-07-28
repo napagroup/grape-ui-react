@@ -281,6 +281,7 @@ const courseOptions = [
   <Flex flexDirection={['column', 'row']}>
     <Box px={1} width={[1, 1 / 2]}>
     <CheckboxField
+      assistiveText="Select courses"
       isHidden={hide}
       name="courses"
       options={courseOptions}
@@ -369,6 +370,7 @@ const radioInputs = courseOptions.map((option, idx)  => {
         Using group field Control
       </Header.h5>
       <RadioField
+        assistiveText="Select a course"
         inputRef={register}
         name="coursesTwo"
         options={courseOptions}

@@ -1,9 +1,11 @@
 `<AssistiveText>` is a plain block element that is intended for text and for use within a form control, such as:
 
-* `<CheckboxField>`
+* `<CheckboxField[.Input]>`
 * `<DateField>`
+* `<RadioField[.Input]>`
 * `<SelectField>`
 * `<TextField>`
+* `<TimeField>`
 
 [Style usage for this element can be found here](https://material.io/components/text-fields/#anatomy).
 

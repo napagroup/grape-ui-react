@@ -1,6 +1,7 @@
 Sometimes, you may find yourself wanting to show a form control as just plain text.  Luckily, `<PlainText>` handles this.  Simply use the `plainText` attribute on any form control to show the results as plain text.
 
 ```jsx inside Markdown
+import moment from 'moment';
 import {
   Box,
   Flex,
@@ -10,6 +11,7 @@ import {
   DateField,
   SelectField,
   TextField,
+  TimeField,
 } from 'src/elements/forms';
 
 const swallowOptions = [
@@ -34,7 +36,6 @@ const swallowOptions = [
   <CheckboxField
     labelText="How did the coconuts get to England?"
     options={swallowOptions}
-    plainText
   />
   <DateField
     labelText="When is it?"
@@ -55,6 +56,13 @@ const swallowOptions = [
     name="plainTextTextFieldExample"
     plainText
     value="To seek the holy grail."
+  />
+  <TimeField
+    defaultValue={moment('Oct 26 1985, 1:24 am')}
+    format="h:mm:a"
+    labelText="Destination Time"
+    name="timePlainText"
+    plainText
   />
 </Flex>
 ```

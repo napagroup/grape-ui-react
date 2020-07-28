@@ -1,9 +1,11 @@
 `<ControlGroup>` is a wrapping block element for use within a form control, such as:
 
-* `<CheckboxField>`
+* `<CheckboxField[.Input]>`
 * `<DateField>`
+* `<RadioField[.Input]>`
 * `<SelectField>`
 * `<TextField>`
+* `<TimeField>`
 
 `<ControlGroup>` holds the control together and maps the other components in the field including the `<AssistiveText>`, `<ControlLabel>`, and styling for `validationError`. Props for `<ControlGroup>` can be modified by using `controlGroupProps` on the form element.
 
