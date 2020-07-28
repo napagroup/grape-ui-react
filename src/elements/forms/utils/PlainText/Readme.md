@@ -36,6 +36,7 @@ const swallowOptions = [
   <CheckboxField
     labelText="How did the coconuts get to England?"
     options={swallowOptions}
+    plainText
   />
   <DateField
     labelText="When is it?"
