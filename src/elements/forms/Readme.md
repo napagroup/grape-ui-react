@@ -2,12 +2,15 @@ Forms in grape-ui are designed to be as easy as possible for developers. The con
 
 ```jsx in Markdown
 
+import 'rc-time-picker/assets/index.css';
+import moment from 'moment';
 import {
   CheckboxField,
   DateField,
   Form,
   SelectField,
   TextField,
+  TimeField,
 } from './';
 import {
   Box,
@@ -19,6 +22,7 @@ import {
 } from './examples';
 
 const courseOptions = [
+
   {
     label: '🎨 Arts & Humanities',
     value: '🎨',
@@ -28,7 +32,7 @@ const courseOptions = [
     value: '👔',
   },
   {
-    label: '🤖 Artificial Intelligence 100101 1 10 10 0100001 101 10100 1001 01001010 101 01001 10 10 101 00000111 100101 0101111  11111 1001 010 1111101 01 ',
+    label: '🤖 Artificial Intelligence',
     value: '🤖',
   },
   {
@@ -138,6 +142,15 @@ const ExampleFormContent = props => {
         <CheckboxField
           labelText="What courses are you interested in?"
           options={courseOptions}
+        />
+        <DateField
+          name={`exampleDate${formStyle}`}
+        />
+        <TimeField
+          value={moment('Nov 5 1955, 10:04 pm')}
+          format="h:mm:a"
+          labelText="What time is it Morty?"
+          name={`exampleTime${formStyle}`}
         />
       </Form>
     </Box>

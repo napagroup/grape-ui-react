@@ -22,3 +22,8 @@ Learn about our SelectField component, which is built on react-select.
 
 Learn about our TextField component, including integration with Cleave.js, multiline text fields, and react-hook implementations.
 ***
+
+## [`<TimeField>`](#/Forms/Components/TimeField)
+
+Learn about our TimeField component, which is built on rc-time-picker.
+***

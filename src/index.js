@@ -12,6 +12,7 @@ import {
   RadioField,
   SelectField,
   TextField,
+  TimeField,
 } from './elements/forms';
 import {
   Box,
@@ -70,6 +71,7 @@ export {
   Table,
   Text,
   TextField,
+  TimeField,
   Toolbar,
   withHideable,
 };

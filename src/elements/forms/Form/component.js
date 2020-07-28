@@ -11,11 +11,18 @@ const formComponentPropsToRemove = {
   formInline: false,
 };
 
+const formStyleWhitelist = [
+  'DateField',
+  'SelectField',
+  'TextField',
+  'TimeField',
+];
+
 export const applyFormStyleToChild = (child, formStyleFromParent) => {
   const { formStyle } = child.props;
   let output;
   // Only TextField will try to apply form style
-  if (formStyle || (child.type.name !== 'TextField' && child.type.name !== 'SelectField')) {
+  if (formStyle || (!formStyleWhitelist.filter(field => child.type.name === field).length)) {
     output = child;
   } else {
     output = React.cloneElement(child, { formStyle: formStyleFromParent });

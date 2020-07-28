@@ -9,7 +9,6 @@ export const TimeComponent = props => {
   const { styleOverrides } = props;
   return (
     <TimePicker
-      open={false}
       style={styleOverrides}
       {...props}
     />

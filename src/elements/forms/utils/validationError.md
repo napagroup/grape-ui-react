@@ -32,6 +32,8 @@ import {
 If `validationError` is set to a string value where there is also `assistiveText` provided, it will not display the `assistiveText`. If `validationError` is set to a bool where there is also `assistiveText` provided, it will display the `assistiveText` with a `brandDanger` color.
 
 ```jsx in Markdown
+import 'rc-time-picker/assets/index.css';
+import moment from 'moment';
 import {
   Box,
   Flex,
@@ -41,6 +43,7 @@ import {
   DateField,
   SelectField,
   TextField,
+  TimeField,
 } from 'src/elements/forms'; // ... from 'grape-ui-react'
 import {
   List,
@@ -80,6 +83,29 @@ const cheeseOptions = [
       />
     </Box>
   </Flex>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={[1, 2]} width={[1, 1 / 2]}>
+      <TimeField
+        defaultValue={moment('Nov 5 1955, 10:02 pm')}
+        format="h:mm:a"
+        isRequired
+        labelText="DepartureTime"
+        name="validationErrorStringAssistiveTextTimeExampleOutlined"
+        validationError="Time is invalid"
+      />
+    </Box>
+    <Box px={[1, 2]} width={[1, 1 / 2]}>
+      <TimeField
+        defaultValue={moment('Nov 5 1955, 10:02 pm')}
+        format="h:mm:a"
+        formStyle="filled"
+        isRequired
+        labelText="DepartureTime"
+        name="validationErrorStringAssistiveTextTimeExampleFilled"
+        validationError="Time is invalid"
+      />
+    </Box>
+  </Flex>
   <Paragraph mb="0">
     validationError is a bool where there is also assistiveText.
   </Paragraph>
@@ -102,6 +128,29 @@ const cheeseOptions = [
         isRequired
         name="validationErrorBoolAssistiveTextExampleFilled"
         password
+        validationError
+      />
+    </Box>
+  </Flex>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={[1, 2]} width={[1, 1 / 2]}>
+      <TimeField
+        defaultValue={moment('Nov 5 1955, 10:04 pm')}
+        format="h:mm:a"
+        isRequired
+        labelText="DepartureTime"
+        name="validationErrorBoolAssistiveTextTimeExampleOutlined"
+        validationError
+      />
+    </Box>
+    <Box px={[1, 2]} width={[1, 1 / 2]}>
+      <TimeField
+        defaultValue={moment('Nov 5 1955, 10:04 pm')}
+        format="h:mm:a"
+        formStyle="filled"
+        isRequired
+        labelText="DepartureTime"
+        name="validationErrorBoolAssistiveTextTimeExampleFilled"
         validationError
       />
     </Box>
