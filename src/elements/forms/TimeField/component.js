@@ -6,9 +6,10 @@ import {
 } from './utils';
 
 export const TimeComponent = props => {
-  const { styleOverrides } = props;
+  const { inputRef, styleOverrides } = props;
   return (
     <TimePicker
+      ref={inputRef}
       style={styleOverrides}
       {...props}
     />

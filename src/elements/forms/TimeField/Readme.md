@@ -233,6 +233,49 @@ function onChange(e) {
 </ThemeProvider>
 ```
 
+#### Ref support - Getting to the element
+
+```jsx inside Markdown
+import moment from 'moment';
+import { useRef } from 'react';
+import { ThemeProvider } from 'styled-components';
+import {
+  Box,
+  Flex,
+} from 'src/elements/grid'; // ... from 'grape-ui-react'
+import { Button } from 'src/elements/Button';
+import {
+  Code,
+  Paragraph,
+} from 'src/elements/typography';
+
+const format = 'h:mm:ss:a';
+const nameRef = useRef();
+const onRegisterClick = () => {
+  nameRef.current.focus();
+};
+
+<ThemeProvider theme={{}}>
+  <Flex flexDirection={['column', 'row']}>
+    <Box px={1} width={[1, 1 / 2]}>
+      <TimeField
+        defaultValue={moment()}
+        format={format}
+        inputRef={ref => {
+          nameRef.current = ref;
+        }}
+        name="courseTimeRef"
+        style={{ width: 100 }}
+        use12Hours
+      />
+      <Button onClick={onRegisterClick}>
+        Focus on Field
+      </Button>
+    </Box>
+  </Flex>
+</ThemeProvider>
+```
+
 ### Controlled TimeField Example
 
 ```jsx in Markdown
